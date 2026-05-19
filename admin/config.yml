@@ -1,0 +1,142 @@
+# ============================================================================
+# FANTASY FILMBALL — Decap CMS Configuration
+# This file defines what you see in the admin panel at /admin
+# Each "collection" becomes a section in the admin sidebar.
+# ============================================================================
+
+backend:
+  name: github
+  repo: Brenfred/brenfred.github.io   # Your GitHub repo
+  branch: main
+  # Our own OAuth proxy (Cloudflare Worker)
+  base_url: https://filmball-oauth.brad-derfner.workers.dev
+  # Commit messages that show up in GitHub
+  commit_messages:
+    create: "Add {{collection}} '{{slug}}'"
+    update: "Update {{collection}} '{{slug}}'"
+    delete: "Remove {{collection}} '{{slug}}'"
+    uploadMedia: "Upload poster '{{path}}'"
+    deleteMedia: "Remove poster '{{path}}'"
+
+# Where uploaded poster images go
+media_folder: "posters"
+public_folder: "/posters"
+
+# Open the editor in a side-by-side view (form on left, preview on right)
+editor:
+  preview: false
+
+# Use simple slug rules for filenames (lowercase, hyphens)
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+# ----------------------------------------------------------------------------
+# COLLECTIONS — each one becomes a sidebar entry in the admin UI
+# ----------------------------------------------------------------------------
+collections:
+
+  # ─── Site Settings ─────────────────────────────────────────────────────────
+  # Single record (a "file collection"). Edits global stuff like the hero film
+  # and the current YouTube video.
+  - name: "site"
+    label: "📺 Site Settings"
+    description: "The latest YouTube episode and which review is the current homepage hero."
+    files:
+      - name: "settings"
+        label: "Site Settings"
+        file: "content/site.json"
+        fields:
+          - { name: "youtubeVideoId", label: "Latest YouTube Video ID", widget: "string",
+              hint: "Just the ID — the part after 'v=' in a YouTube URL. Example: Yxvdm3Y4HfI" }
+          - { name: "heroReviewSlug", label: "Homepage Hero — review slug", widget: "string",
+              hint: "Match the filename of a review without .md. Example: the-odyssey" }
+          - { name: "rankingsDate", label: "Rankings — display date", widget: "string",
+              hint: "e.g. 'April 3, 2026'" }
+          - { name: "rankingsLabel", label: "Rankings — short label", widget: "string",
+              hint: "Appears in the widget header. e.g. 'Updated April 3'" }
+
+  # ─── Best Picture Rankings ─────────────────────────────────────────────────
+  # Two files: current + previous. The site auto-computes movement arrows by
+  # diffing them. To update, save a new ranking; the previous one is auto-
+  # archived via the workflow below.
+  - name: "rankings"
+    label: "📊 Best Picture Rankings"
+    description: "The Top 20. Movement arrows (▲▼—NEW) are computed automatically by comparing this list to the previous snapshot."
+    files:
+      - name: "current"
+        label: "Current Rankings (Top 20)"
+        file: "content/rankings.json"
+        fields:
+          - { name: "updatedDate", label: "Date Label", widget: "string",
+              hint: "e.g. 'April 3, 2026' — appears in the widget" }
+          - { name: "cutoffRank", label: "Nominee Cutoff Rank", widget: "number",
+              default: 10, hint: "Where the dashed line lands (usually 10)" }
+          - name: "films"
+            label: "Top 20 Films"
+            label_singular: "Film"
+            widget: "list"
+            summary: "{{fields.rank}}. {{fields.title}} — {{fields.nomPct}}"
+            fields:
+              - { name: "rank",   label: "Rank",   widget: "number", value_type: "int", min: 1, max: 20 }
+              - { name: "title",  label: "Title",  widget: "string" }
+              - { name: "nomPct", label: "Nom %", widget: "string", hint: "e.g. '95%'" }
+      - name: "previous"
+        label: "Previous Snapshot (read-only reference)"
+        file: "content/rankings-previous.json"
+        fields:
+          - { name: "updatedDate", label: "Date Label", widget: "string" }
+          - { name: "cutoffRank", label: "Cutoff", widget: "number" }
+          - name: "films"
+            label: "Films"
+            widget: "list"
+            summary: "{{fields.rank}}. {{fields.title}}"
+            fields:
+              - { name: "rank",   label: "Rank",   widget: "number", value_type: "int" }
+              - { name: "title",  label: "Title",  widget: "string" }
+              - { name: "nomPct", label: "Nom %", widget: "string" }
+
+  # ─── Reviews ───────────────────────────────────────────────────────────────
+  # A folder collection — one Markdown file per review. The CMS gives you a
+  # "+ New Review" button that creates a new file in this folder.
+  - name: "reviews"
+    label: "📝 Reviews"
+    description: "One file per review. Click '+ New Review' to add one."
+    folder: "content/reviews"
+    create: true
+    delete: true
+    slug: "{{fields.posterSlug}}"
+    summary: "{{fields.film}} — {{fields.stanceLabel}} ({{fields.rating}}/5)"
+    fields:
+      - { name: "title",    label: "Review Headline", widget: "string",
+          hint: "The big headline. e.g. 'The Odyssey takes the early lead'" }
+      - { name: "film",     label: "Film Title", widget: "string" }
+      - { name: "director", label: "Director", widget: "string", required: false }
+      - { name: "studio",   label: "Studio / Distributor", widget: "string", required: false }
+      - { name: "runtime",  label: "Runtime", widget: "string", required: false, hint: "e.g. '168 min'" }
+      - { name: "genre",    label: "Genre", widget: "string", required: false }
+      - { name: "rating",   label: "Rating (out of 5)", widget: "number", value_type: "float",
+          min: 0, max: 5, step: 0.5, default: 4.0 }
+      - name: "stance"
+        label: "Stock Stance"
+        widget: "select"
+        options: ["buy", "hold", "sell"]
+        default: "buy"
+        hint: "Drives the green/yellow/red badge color"
+      - { name: "stanceLabel", label: "Stance Label", widget: "string", default: "Buy",
+          hint: "e.g. 'Strong Buy', 'Buy', 'Hold', 'Sell', 'Strong Sell'" }
+      - { name: "posterSlug", label: "Poster filename (no extension)", widget: "string",
+          hint: "e.g. 'the-odyssey' — must match a file in /posters/" }
+      - { name: "writer", label: "Writer Byline", widget: "string", default: "[ Writer ]" }
+      - { name: "publishedDate", label: "Published Date", widget: "string",
+          hint: "e.g. 'April 3, 2026'" }
+      - { name: "deck", label: "Hero Deck (subheadline)", widget: "text",
+          hint: "2-3 sentence intro under the headline" }
+      - { name: "excerpt", label: "Card Excerpt", widget: "text",
+          hint: "Shorter version shown on review listing cards" }
+      - { name: "isHero", label: "Mark as Homepage Hero", widget: "boolean",
+          default: false,
+          hint: "Only one review should be marked as hero at a time" }
+      - { name: "body", label: "Review Body", widget: "markdown",
+          hint: "Paste your review prose here. Paragraphs are separated by blank lines." }
