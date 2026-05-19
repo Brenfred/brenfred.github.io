@@ -369,7 +369,7 @@ body::before {
 .hero-section .hero__deck { font-size: 1.05rem; }
 
 .hero__image {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 2 / 3;
   background:
     linear-gradient(160deg, rgba(32, 26, 19, 0.16) 0 38%, transparent 38%),
     radial-gradient(circle at 54% 32%, rgba(232, 184, 90, 0.24), transparent 22%),
@@ -380,6 +380,8 @@ body::before {
   box-shadow: 16px 16px 0 var(--paper-aged), 18px 18px 0 var(--ink);
   transform: rotate(-0.8deg);
   transition: transform 0.35s ease, box-shadow 0.35s ease;
+  max-width: 440px;
+  width: 100%;
 }
 .hero__image:hover { transform: rotate(0deg) translateY(-4px); box-shadow: 20px 20px 0 var(--paper-aged), 22px 22px 0 var(--ink); }
 .hero__image::before {
@@ -475,7 +477,7 @@ body::before {
 }
 .review-card:hover { transform: translateY(-4px); }
 .review-card__image {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 2 / 3;
   background:
     radial-gradient(circle at 32% 22%, rgba(232, 184, 90, 0.22), transparent 28%),
     linear-gradient(145deg, #2D5167 0%, #201A13 58%, #B7352E 100%);
@@ -1687,10 +1689,8 @@ body::before {
 
 /* =========================================================================
    POSTER IMAGES
-   When a real poster file exists at posters/{slug}.jpg, it sits on top of
-   the stylized placeholder. If the file is missing, onerror hides the img
-   and the placeholder shows through. Drop files into the posters/ folder
-   with names like "the-odyssey.jpg", "digger.jpg", etc.
+   Real poster files live in posters/{slug}.jpg. Img sits on top of the
+   stylized placeholder; onerror hides it if the file isn't uploaded yet.
    ========================================================================= */
 
 .review-card__poster,
@@ -1704,12 +1704,19 @@ body::before {
   z-index: 2;
 }
 
-/* Keep the badge row (Buy/Hold/Sell) on top of the poster image */
+/* Hide the noisy texture/border overlay when a real poster is loaded —
+   keeps the image crisp instead of layering grain on top of it. */
+.review-card__image:has(.review-card__poster)::before,
+.review-card__image:has(.review-card__poster)::after,
+.hero__image:has(.hero__poster)::before,
+.hero__image:has(.hero__poster)::after {
+  display: none;
+}
+
+/* Keep the Buy/Hold/Sell badge above the poster */
 .review-card__badge-row { z-index: 3; }
 
-.hero__image-caption { z-index: 3; }
-
-/* Full-bleed hero image on the single review page */
+/* Single-review page hero — landscape image, not a poster */
 .review__hero-img {
   width: 100%;
   height: auto;
