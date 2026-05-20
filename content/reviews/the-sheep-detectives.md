@@ -13,17 +13,7 @@ writer: Dylan McKercher
 publishedDate: May 7, 2026
 deck: 2026's most un-expected masterpiece dazzles the heart and mind of this
   reviewer.
-excerpt: >-
-  When legendary filmmaker Kyle Balda makes a new movie… you have to rush to the
-  theater. This man has cooked up heaters like Minions, Minions: The Rise of
-  Gru, & Despicable Me 3 (which has Minions in jumpsuits), so you know Balda is
-  in his bag.
-
-
-  The Sheep Detectives marks his first directorial venture outside of the MCU (Minion Cinematic Universe), as well as his first live-action flick, and honestly, you may read the above as sarcasm or a joke, but this next sentence I truly mean with all of my heart: The Sheep Detectives may just be the best movie of the year so far. It perfectly blends everything you’d want, it offers social commentary through its class of sheep, a gripping murder mystery where the film is always one step ahead, laughs that feel communal in a packed audience, heartfelt emotions that will tug at your heartstrings, complex and though provoking characters, & most importantly an incredibly fun 1:50 minute film. Those are all crazy things to say about a movie featuring talking sheep trying to solve a crime, but it just pulls it off.
-
-
-  While I think people could watch this trailer and just assume the movie is a joke, I can see this becoming the next example of a film like Paddington 2, where on the surface it’s just a fun, heartwarming family movie, but at its core it packs such an emotional punch. It gets your tears flowing, it makes you feel connected and love towards a freakin CGI sheep, and it grabs your attention from start to finish… So this five-star rating is an honest five stars.
+excerpt: "The Sheep Detectives may just be the best movie of the year so far. "
 isHero: false
 tags:
   - the-sheep-detectives
