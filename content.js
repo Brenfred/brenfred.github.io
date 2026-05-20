@@ -207,9 +207,21 @@
       return files
         .filter(function (f) { return f.name && f.name.endsWith('.md'); })
         .map(function (f) {
-          return { slug: f.name.replace(/\.md$/, ''), downloadUrl: f.download_url };
+          return {
+            slug: f.name.replace(/\.md$/, ''),
+            downloadUrl: f.download_url,
+            sha: f.sha  // useful as a stable secondary sort key
+          };
         });
     });
+  }
+
+  function parsePublishedDate(dateStr) {
+    // Accepts formats like "April 3, 2026", "2026-04-03", "Apr 3 2026"
+    if (!dateStr) return 0;
+    var parsed = Date.parse(dateStr);
+    if (!isNaN(parsed)) return parsed;
+    return 0;
   }
 
   function fetchAllReviews() {
@@ -217,14 +229,30 @@
       return Promise.all(list.map(function (item) {
         return fetchText(item.downloadUrl).then(function (md) {
           var parsed = parseFrontMatter(md);
-          return Object.assign({ slug: item.slug }, parsed.meta, { body: parsed.body });
+          return Object.assign(
+            { slug: item.slug, _sha: item.sha },
+            parsed.meta,
+            { body: parsed.body }
+          );
         });
       }));
     }).then(function (reviews) {
+      // Sort newest-first. Order of preference:
+      //   1. Reviews with a publishable hero flag float to the top
+      //   2. Reviews with a parseable publishedDate, newer first
+      //   3. Reviews without a parseable date drop to the bottom,
+      //      tiebroken alphabetically (so order is stable, not random)
       reviews.sort(function (a, b) {
-        var da = Date.parse(a.publishedDate || '') || 0;
-        var db = Date.parse(b.publishedDate || '') || 0;
-        return db - da;
+        // Hero always wins
+        if (a.isHero === true && b.isHero !== true) return -1;
+        if (b.isHero === true && a.isHero !== true) return 1;
+
+        var da = parsePublishedDate(a.publishedDate);
+        var db = parsePublishedDate(b.publishedDate);
+        if (db !== da) return db - da;
+
+        // Fall back to slug alphabetical (stable, predictable)
+        return (a.slug || '').localeCompare(b.slug || '');
       });
       return reviews;
     });
