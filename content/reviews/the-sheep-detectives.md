@@ -9,7 +9,9 @@ rating: 5
 stance: hold
 stanceLabel: No Awards Prospects
 posterSlug: the-sheep-detectives
-writer: Dylan McKercher
+writer: ""
+writers:
+  - dylan-mckercher
 publishedDate: May 7, 2026
 deck: 2026's most un-expected masterpiece dazzles the heart and mind of this
   reviewer.
