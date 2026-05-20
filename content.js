@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v6-review-asides)
+   FANTASY FILMBALL — content.js (v7-headshot-upload)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -1177,9 +1177,23 @@
   // Render an avatar — headshot if available, monogram fallback
   function writerAvatarHTML(writer, klass) {
     klass = klass || 'writer-card__avatar';
-    var slug = writer.headshotSlug || writer.slug;
-    var src = 'headshots/' + slug + '.jpg';
-    // <img> with monogram-fallback via onerror
+    // Resolve image path. Three formats are accepted, in priority order:
+    //   1. writer.headshot — set by the new CMS image widget, full path like
+    //      "/headshots/dylan.jpg" (or whatever the CMS stored).
+    //   2. writer.headshotSlug — legacy text field, just the filename stub.
+    //   3. writer.slug — final fallback, matches /headshots/<slug>.jpg.
+    var src;
+    if (writer.headshot) {
+      src = writer.headshot;
+    } else if (writer.headshotSlug) {
+      src = 'headshots/' + writer.headshotSlug + '.jpg';
+    } else if (writer.slug) {
+      src = 'headshots/' + writer.slug + '.jpg';
+    } else {
+      src = '';
+    }
+    // <img> with monogram-fallback via onerror — if no image is uploaded
+    // (or the file is missing), the inline monogram shows through.
     return '<div class="' + klass + '">' +
       '<img src="' + esc(src) + '" alt="' + esc(writer.name || '') + '" class="' + klass + '-img" onerror="this.style.display=\'none\'; this.parentNode.classList.add(\'' + klass + '--no-img\')">' +
       '<span class="' + klass + '-monogram">' + esc(writerInitials(writer.name)) + '</span>' +
@@ -1408,7 +1422,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v6-review-asides loaded');
+  if (window.console) console.log('[content.js] v7-headshot-upload loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
