@@ -505,7 +505,385 @@
     if (studio) studio.textContent = review.studio || '';
   }
 
-  // ---- bootstrap --------------------------------------------------------
+  // ============================================================
+  //  CATEGORIES + FILMS — the Oscar Race system
+  // ============================================================
+
+  // List of category slugs (matches /content/categories/*.json)
+  var CATEGORY_SLUGS = [
+    'picture', 'director',
+    'actress', 'actor',
+    'supp-actress', 'supp-actor',
+    'orig-screenplay', 'adapt-screenplay'
+  ];
+
+  function fetchAllCategories() {
+    // Fetch current + previous for all 8 categories in parallel.
+    var jobs = CATEGORY_SLUGS.map(function (slug) {
+      return Promise.all([
+        fetchJSON('categories/' + slug + '.json').catch(function () { return null; }),
+        fetchJSON('categories-previous/' + slug + '.json').catch(function () { return null; })
+      ]).then(function (pair) {
+        if (!pair[0]) return null;
+        return {
+          slug: slug,
+          current: pair[0],
+          previous: pair[1] || pair[0]  // fall back to identical so movement = flat
+        };
+      });
+    });
+    return Promise.all(jobs).then(function (cats) {
+      return cats.filter(function (c) { return c !== null; });
+    });
+  }
+
+  function computeCategoryMovement(current, previous) {
+    // current.films and previous.films are arrays of {rank, filmSlug, subtitle, ...}
+    // Match by filmSlug if present, else by subtitle (for personnel categories
+    // like Best Actress where the "key" is the performer not the film).
+    function keyOf(f) { return (f.filmSlug || '').toLowerCase() + '|' + (f.subtitle || '').toLowerCase(); }
+    var prevMap = {};
+    (previous.films || []).forEach(function (f) { prevMap[keyOf(f)] = f.rank; });
+    return (current.films || []).map(function (f) {
+      var k = keyOf(f);
+      var prevRank = prevMap[k];
+      var movement;
+      if (prevRank == null)        movement = { kind: 'new',  delta: 0 };
+      else if (prevRank > f.rank)  movement = { kind: 'up',   delta: prevRank - f.rank };
+      else if (prevRank < f.rank)  movement = { kind: 'down', delta: f.rank - prevRank };
+      else                          movement = { kind: 'flat', delta: 0 };
+      return Object.assign({}, f, { movement: movement });
+    });
+  }
+
+  function fetchAllFilms() {
+    // Discover all film files via the GitHub Contents API.
+    var cfg = repoConfig();
+    var apiUrl = 'https://api.github.com/repos/' + cfg.repo
+               + '/contents/content/films?ref=' + cfg.branch;
+    return fetch(apiUrl, { cache: 'no-cache' }).then(function (r) {
+      if (!r.ok) throw new Error('GitHub API films/ failed: ' + r.status);
+      return r.json();
+    }).then(function (files) {
+      var jsonFiles = files.filter(function (f) { return f.name && f.name.endsWith('.json'); });
+      return Promise.all(jsonFiles.map(function (f) {
+        return fetchText(f.download_url).then(function (txt) {
+          var data = JSON.parse(txt);
+          data.slug = f.name.replace(/\.json$/, '');
+          return data;
+        });
+      }));
+    });
+  }
+
+  // ---- Oscar Race page: categories grid ---------------------------------
+
+  function renderCategoriesGrid(categories, films) {
+    var grid = $('[data-categories-grid]');
+    if (!grid) return;
+
+    var filmMap = {};
+    films.forEach(function (f) { filmMap[f.slug] = f; });
+
+    var html = categories.map(function (cat) {
+      var label = cat.current.shortLabel || cat.current.label;
+      var withMove = computeCategoryMovement(cat.current, cat.previous);
+      var top5 = withMove.slice(0, 5);
+
+      var rows = top5.map(function (f) {
+        // Display name: subtitle is primary (handles Best Actress/Actor),
+        // film title as accent if filmSlug points at one.
+        var nameHTML;
+        var film = filmMap[f.filmSlug];
+        var filmTitle = film ? film.title : '';
+        if (f.subtitle && filmTitle) {
+          nameHTML = '<strong>' + esc(f.subtitle) + '</strong> · <em>' + esc(filmTitle) + '</em>';
+        } else if (filmTitle) {
+          nameHTML = '<em>' + esc(filmTitle) + '</em>';
+        } else {
+          nameHTML = '<em>' + esc(f.subtitle || '') + '</em>';
+        }
+        var moveHTML = movementSpan(f.movement, 'category-table__move');
+        return '<div class="category-table__row">' +
+          '<span class="category-table__rank">' + f.rank + '</span>' +
+          '<span class="category-table__name">' + nameHTML + '</span>' +
+          moveHTML +
+        '</div>';
+      }).join('');
+
+      var detailHref = 'category.html?cat=' + encodeURIComponent(cat.slug);
+      return '<a href="' + detailHref + '" class="category-table category-table--link">' +
+        '<div class="category-table__head">' +
+          '<span class="category-table__title">' + esc(label) + '</span>' +
+          '<span class="category-table__count">Top 5 · See Top 10 →</span>' +
+        '</div>' +
+        rows +
+      '</a>';
+    }).join('\n');
+
+    grid.innerHTML = html;
+  }
+
+  // ---- Oscar Race page: The Films section -------------------------------
+
+  function renderFilmsSection(rankingsCurrent, rankingsPrevious, categories, films) {
+    // Build a film lookup
+    var filmMap = {};
+    films.forEach(function (f) { filmMap[f.slug] = f; });
+
+    // Helper to convert a ranked title (e.g. "The Odyssey") to a film slug.
+    // rankings.json uses titles, so we need to map by title.
+    function findFilmByTitle(title) {
+      var lower = (title || '').toLowerCase();
+      for (var i = 0; i < films.length; i++) {
+        if ((films[i].title || '').toLowerCase() === lower) return films[i];
+      }
+      return null;
+    }
+
+    var bpFilms = (rankingsCurrent && rankingsCurrent.films) || [];
+
+    // TIER 1 — top 10 as poster grid
+    var tier1 = $('[data-films-grid="top10"]');
+    if (tier1) {
+      var top10HTML = bpFilms.slice(0, 10).map(function (r) {
+        var film = findFilmByTitle(r.title);
+        var slug = film ? film.slug : '';
+        var poster = film ? film.posterSlug : '';
+        var href = slug ? ('film.html?slug=' + encodeURIComponent(slug)) : '#';
+        return '<a href="' + href + '" class="film-tile">' +
+          '<div class="film-tile__image">' +
+            (poster ? '<img src="posters/' + esc(poster) + '.jpg" alt="' + esc(r.title) + ' poster" loading="lazy" onerror="this.style.display=\'none\'">' : '') +
+            '<div class="film-tile__rank">' + r.rank + '</div>' +
+          '</div>' +
+          '<div class="film-tile__title">' + esc(r.title) + '</div>' +
+          '<div class="film-tile__meta">' + esc(r.nomPct) + ' Nom</div>' +
+        '</a>';
+      }).join('');
+      tier1.innerHTML = top10HTML;
+    }
+
+    // TIER 2 — BP ranks #11-20 as a text list
+    var tier2 = $('[data-films-list="next10"]');
+    if (tier2) {
+      var next10HTML = bpFilms.slice(10, 20).map(function (r) {
+        var film = findFilmByTitle(r.title);
+        var slug = film ? film.slug : '';
+        var href = slug ? ('film.html?slug=' + encodeURIComponent(slug)) : '#';
+        return '<a href="' + href + '" class="films-list__row">' +
+          '<span class="films-list__rank">' + r.rank + '</span>' +
+          '<span class="films-list__name">' + esc(r.title) + '</span>' +
+          '<span class="films-list__meta">' + esc(r.nomPct) + '</span>' +
+        '</a>';
+      }).join('');
+      tier2.innerHTML = next10HTML;
+    }
+
+    // TIER 3 — films appearing in any category's top 10 but NOT in BP top 20
+    var tier3 = $('[data-films-list="contention"]');
+    if (tier3) {
+      var inBP20 = {};
+      bpFilms.slice(0, 20).forEach(function (r) {
+        var film = findFilmByTitle(r.title);
+        if (film) inBP20[film.slug] = true;
+      });
+
+      var extraSlugs = {};
+      categories.forEach(function (cat) {
+        (cat.current.films || []).forEach(function (row) {
+          if (row.filmSlug && !inBP20[row.filmSlug] && filmMap[row.filmSlug]) {
+            if (!extraSlugs[row.filmSlug]) extraSlugs[row.filmSlug] = [];
+            extraSlugs[row.filmSlug].push(cat.current.shortLabel || cat.current.label);
+          }
+        });
+      });
+
+      var extraSlugList = Object.keys(extraSlugs).sort(function (a, b) {
+        return (filmMap[a].title || '').localeCompare(filmMap[b].title || '');
+      });
+
+      if (extraSlugList.length === 0) {
+        tier3.innerHTML = '<p style="color: var(--ink-faded); text-align: center; padding: 1rem 0;">No additional films in contention this week.</p>';
+      } else {
+        var extraHTML = extraSlugList.map(function (slug) {
+          var f = filmMap[slug];
+          var cats = extraSlugs[slug].join(', ');
+          var href = 'film.html?slug=' + encodeURIComponent(slug);
+          return '<a href="' + href + '" class="films-list__row">' +
+            '<span class="films-list__rank">—</span>' +
+            '<span class="films-list__name">' + esc(f.title) + '</span>' +
+            '<span class="films-list__meta">' + esc(cats) + '</span>' +
+          '</a>';
+        }).join('');
+        tier3.innerHTML = extraHTML;
+      }
+    }
+  }
+
+  // ---- Category detail page (category.html?cat=...) ---------------------
+
+  function renderCategoryDetail(categories, films, reviews) {
+    if (!$('[data-category-detail]')) return;
+
+    var params = new URLSearchParams(window.location.search);
+    var slug = params.get('cat') || 'picture';
+    var cat = categories.find(function (c) { return c.slug === slug; });
+    if (!cat) {
+      $('[data-category-detail]').innerHTML = '<p style="text-align:center;padding:3rem 0;">Category not found.</p>';
+      return;
+    }
+
+    var filmMap = {};
+    films.forEach(function (f) { filmMap[f.slug] = f; });
+
+    var withMove = computeCategoryMovement(cat.current, cat.previous);
+
+    // Header bits
+    document.title = (cat.current.label || 'Category') + ' — Fantasy Filmball';
+    var label = $('[data-cat-label]');       if (label) label.textContent = cat.current.label;
+    var labelT = $('[data-cat-label-title]'); if (labelT) labelT.textContent = cat.current.label;
+    var kicker = $('[data-cat-kicker]');
+    if (kicker) kicker.textContent = '★ ' + cat.current.label + ' · Top 10 ★';
+
+    // Render top 10 with full detail
+    var html = '<div class="category-detail__table">' +
+      '<div class="category-detail__head">' +
+        '<span>Rank</span>' +
+        '<span>Contender</span>' +
+        '<span>Nom %</span>' +
+        '<span>Win %</span>' +
+        '<span>Move</span>' +
+      '</div>' +
+      withMove.slice(0, 10).map(function (f) {
+        var film = filmMap[f.filmSlug];
+        var filmTitle = film ? film.title : '';
+        var posterPath = film ? ('posters/' + film.posterSlug + '.jpg') : '';
+        var poster = posterPath
+          ? '<img src="' + esc(posterPath) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
+          : '';
+        var nameHTML;
+        if (f.subtitle && filmTitle) {
+          nameHTML = '<strong>' + esc(f.subtitle) + '</strong><span class="category-detail__sub"><em>' + esc(filmTitle) + '</em></span>';
+        } else if (filmTitle) {
+          nameHTML = '<em>' + esc(filmTitle) + '</em>';
+        } else {
+          nameHTML = esc(f.subtitle || '[ TBD ]');
+        }
+        var href = film ? ('film.html?slug=' + encodeURIComponent(film.slug)) : null;
+        var nameCell = href
+          ? '<a href="' + href + '" class="category-detail__name">' + nameHTML + '</a>'
+          : '<span class="category-detail__name">' + nameHTML + '</span>';
+        var rankClass = 'category-detail__rank' + (f.rank === 1 ? ' category-detail__rank--top' : '');
+
+        var rowContent =
+          '<span class="' + rankClass + '">' + f.rank + '</span>' +
+          '<span class="category-detail__film">' + poster + nameCell + '</span>' +
+          '<span class="category-detail__stat">' + esc(f.nomPct || '—') + '</span>' +
+          '<span class="category-detail__stat">' + esc(f.winPct || '—') + '</span>' +
+          movementSpan(f.movement, 'category-table__move');
+
+        var cutoff = (f.rank === (cat.current.cutoffRank || 5))
+          ? '<div class="category-detail__cutoff"><span>Predicted Cutoff</span></div>'
+          : '';
+
+        return '<div class="category-detail__row">' + rowContent + '</div>' + cutoff;
+      }).join('') +
+    '</div>';
+
+    $('[data-category-detail]').innerHTML = html;
+  }
+
+  // ---- Film detail page (film.html?slug=...) ----------------------------
+
+  function renderFilmDetail(categories, films, reviews) {
+    var profile = $('[data-film-profile]');
+    if (!profile) return;
+
+    var params = new URLSearchParams(window.location.search);
+    var slug = params.get('slug') || '';
+    var film = films.find(function (f) { return f.slug === slug; });
+    if (!film) {
+      profile.innerHTML = '<p style="text-align:center;padding:3rem 0;">Film not found.</p>';
+      return;
+    }
+
+    document.title = film.title + ' — Fantasy Filmball';
+
+    // Update breadcrumb
+    var crumb = $('[data-film-title]');
+    if (crumb) crumb.textContent = film.title;
+
+    // Profile header
+    var posterPath = 'posters/' + film.posterSlug + '.jpg';
+    profile.innerHTML =
+      '<div class="film-profile__grid">' +
+        '<div class="film-profile__poster">' +
+          '<img src="' + esc(posterPath) + '" alt="' + esc(film.title) + ' poster" onerror="this.style.display=\'none\'">' +
+        '</div>' +
+        '<div class="film-profile__info">' +
+          '<div class="kicker kicker--gold">★ Tracked Film ★</div>' +
+          '<h1 class="film-profile__title"><em>' + esc(film.title) + '</em></h1>' +
+          (film.director ? '<div class="film-profile__meta"><strong>Directed by</strong> ' + esc(film.director) + '</div>' : '') +
+          (film.studio   ? '<div class="film-profile__meta"><strong>Distributed by</strong> ' + esc(film.studio) + '</div>' : '') +
+          (film.releaseDate ? '<div class="film-profile__meta"><strong>Release</strong> ' + esc(film.releaseDate) + '</div>' : '') +
+          (film.runtime ? '<div class="film-profile__meta"><strong>Runtime</strong> ' + esc(film.runtime) + '</div>' : '') +
+        '</div>' +
+      '</div>';
+
+    // Find every category appearance
+    var appearances = [];
+    categories.forEach(function (cat) {
+      var withMove = computeCategoryMovement(cat.current, cat.previous);
+      withMove.forEach(function (row) {
+        if (row.filmSlug === film.slug) {
+          appearances.push({
+            category: cat.current,
+            slug: cat.slug,
+            row: row
+          });
+        }
+      });
+    });
+
+    var categoriesEl = $('[data-film-categories]');
+    if (categoriesEl) {
+      if (appearances.length === 0) {
+        categoriesEl.innerHTML = '<p style="color: var(--ink-faded); text-align: center; padding: 1rem 0;">Not currently ranked in any category.</p>';
+      } else {
+        appearances.sort(function (a, b) { return a.row.rank - b.row.rank; });
+        categoriesEl.innerHTML = appearances.map(function (a) {
+          var href = 'category.html?cat=' + encodeURIComponent(a.slug);
+          return '<a href="' + href + '" class="film-category-row">' +
+            '<span class="film-category-row__label">' + esc(a.category.label) + '</span>' +
+            '<span class="film-category-row__rank">#' + a.row.rank + '</span>' +
+            (a.row.subtitle ? '<span class="film-category-row__sub">' + esc(a.row.subtitle) + '</span>' : '<span></span>') +
+            '<span class="film-category-row__stat">' + esc(a.row.nomPct || '—') + ' Nom</span>' +
+            '<span class="film-category-row__stat">' + esc(a.row.winPct || '—') + ' Win</span>' +
+            movementSpan(a.row.movement, 'category-table__move') +
+          '</a>';
+        }).join('');
+      }
+    }
+
+    // Tagged reviews
+    var articlesEl = $('[data-film-articles]');
+    if (articlesEl) {
+      var tagged = (reviews || []).filter(function (r) {
+        return Array.isArray(r.tags) && r.tags.indexOf(film.slug) !== -1;
+      });
+      if (tagged.length === 0) {
+        articlesEl.innerHTML = '<p style="color: var(--ink-faded); text-align: center; padding: 1rem 0; grid-column: 1 / -1;">No articles tagged with this film yet.</p>';
+      } else {
+        articlesEl.innerHTML = tagged.map(function (r) {
+          return reviewCardHTML(r, { showKicker: true });
+        }).join('\n');
+      }
+    }
+  }
+
+  // ============================================================
+  //  bootstrap
+  // ============================================================
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
@@ -525,20 +903,52 @@
       renderVideoEmbed(site.youtubeVideoId);
     }
 
+    // ---- Reviews system -----
     var needsReviews =
       document.querySelector('[data-hero-review]') ||
       document.querySelector('[data-reviews-grid]') ||
       document.querySelector('[data-reviews-list]') ||
       document.querySelector('[data-review-body]');
 
-    if (needsReviews) {
-      fetchAllReviews().then(function (reviews) {
-        renderHero(reviews, site);
-        renderReviewGrids(reviews);
-        renderReviewsArchive(reviews);
-        renderSingleReview(reviews, site);
+    var reviewsPromise = needsReviews
+      ? fetchAllReviews().then(function (reviews) {
+          renderHero(reviews, site);
+          renderReviewGrids(reviews);
+          renderReviewsArchive(reviews);
+          renderSingleReview(reviews, site);
+          return reviews;
+        }).catch(function (err) {
+          if (window.console) console.warn('[content] reviews load failed:', err);
+          return [];
+        })
+      : Promise.resolve([]);
+
+    // ---- Oscar Race + categories + films -----
+    var needsRace =
+      document.querySelector('[data-categories-grid]') ||
+      document.querySelector('[data-films-grid]') ||
+      document.querySelector('[data-films-list]') ||
+      document.querySelector('[data-category-detail]') ||
+      document.querySelector('[data-film-profile]');
+
+    if (needsRace) {
+      Promise.all([
+        fetchAllCategories(),
+        fetchAllFilms(),
+        reviewsPromise
+      ]).then(function (data) {
+        var categories = data[0];
+        var films = data[1];
+        var reviews = data[2];
+
+        renderCategoriesGrid(categories, films);
+        if (current && previous) {
+          renderFilmsSection(current, previous, categories, films);
+        }
+        renderCategoryDetail(categories, films, reviews);
+        renderFilmDetail(categories, films, reviews);
       }).catch(function (err) {
-        if (window.console) console.warn('[content] reviews load failed:', err);
+        if (window.console) console.warn('[content] race load failed:', err);
       });
     }
   }).catch(function (err) {

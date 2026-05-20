@@ -1731,3 +1731,320 @@ body::before {
   z-index: 2;
 }
 .review__hero { position: relative; }
+
+/* =========================================================================
+   RANKINGS WIDGET → clickable wrapper on home page
+   ========================================================================= */
+.rankings-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+.rankings-link:hover .rankings {
+  box-shadow: 10px 10px 0 var(--paper-aged);
+  transform: translate(-2px, -2px);
+}
+.rankings-link .rankings {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* =========================================================================
+   OSCAR RACE — "The Films" section (TIER 1: poster grid)
+   ========================================================================= */
+.films-grid--posters {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5rem;
+}
+@media (max-width: 900px) { .films-grid--posters { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 560px) { .films-grid--posters { grid-template-columns: repeat(2, 1fr); } }
+
+.film-tile {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease;
+}
+.film-tile:hover { transform: translateY(-4px); }
+
+.film-tile__image {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  background:
+    radial-gradient(circle at 32% 22%, rgba(232, 184, 90, 0.22), transparent 28%),
+    linear-gradient(145deg, #2D5167 0%, #201A13 58%, #B7352E 100%);
+  border: 2px solid var(--ink);
+  box-shadow: 6px 6px 0 var(--paper-aged);
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+}
+.film-tile__image img {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.film-tile__rank {
+  position: absolute; top: 0.4rem; left: 0.4rem;
+  width: 1.85rem; height: 1.85rem;
+  background: var(--gold-bright);
+  color: var(--ink);
+  font-family: var(--font-sport);
+  font-weight: 800;
+  font-size: 1rem;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  z-index: 2;
+}
+.film-tile__title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  margin-bottom: 0.2rem;
+}
+.film-tile__meta {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* =========================================================================
+   OSCAR RACE — Films list (TIERS 2 & 3: text rows)
+   ========================================================================= */
+.films-list {
+  border-top: 1px solid var(--rule);
+}
+.films-list__row {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr auto;
+  gap: 0.85rem;
+  align-items: baseline;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--rule);
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.15s ease, padding-left 0.15s ease;
+}
+.films-list__row:hover {
+  background-color: rgba(212, 162, 60, 0.08);
+  padding-left: 0.4rem;
+}
+.films-list__rank {
+  font-family: var(--font-sport);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+.films-list__name {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.05rem;
+}
+.films-list__meta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.04em;
+  text-align: right;
+}
+
+/* =========================================================================
+   OSCAR RACE — Categories grid (existing styles + add clickable variant)
+   ========================================================================= */
+.category-table--link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.category-table--link:hover {
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 0 var(--paper-aged);
+}
+
+/* =========================================================================
+   CATEGORY DETAIL PAGE
+   ========================================================================= */
+.category-detail {
+  max-width: 880px;
+  margin: 0 auto;
+}
+.category-detail__table {
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+}
+.category-detail__head {
+  display: grid;
+  grid-template-columns: 3rem 1fr 5rem 5rem 4rem;
+  gap: 1rem;
+  padding: 0.85rem 0.5rem;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.category-detail__row {
+  display: grid;
+  grid-template-columns: 3rem 1fr 5rem 5rem 4rem;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.85rem 0.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+.category-detail__row:last-of-type { border-bottom: none; }
+.category-detail__rank {
+  font-family: var(--font-sport);
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.category-detail__rank--top { color: var(--gold); }
+.category-detail__film {
+  display: flex; align-items: center; gap: 0.85rem;
+}
+.category-detail__film img {
+  width: 36px; height: 54px;
+  object-fit: cover;
+  border: 1px solid var(--ink);
+  flex-shrink: 0;
+}
+.category-detail__name {
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.25;
+}
+.category-detail__name:hover { color: var(--gold-bright); }
+.category-detail__sub {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  margin-top: 0.15rem;
+}
+.category-detail__stat {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  text-align: right;
+}
+.category-detail__cutoff {
+  background: rgba(212, 162, 60, 0.1);
+  border-top: 1px dashed var(--gold-bright);
+  border-bottom: 1px dashed var(--gold-bright);
+  padding: 0.5rem 0;
+  font-family: var(--font-sport);
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  text-align: center;
+}
+
+/* =========================================================================
+   FILM DETAIL PAGE
+   ========================================================================= */
+.film-profile {
+  padding: 2rem 0 1rem;
+}
+.film-profile__grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+@media (max-width: 700px) {
+  .film-profile__grid { grid-template-columns: 1fr; }
+}
+.film-profile__poster {
+  aspect-ratio: 2 / 3;
+  border: 2px solid var(--ink);
+  box-shadow: 10px 10px 0 var(--paper-aged);
+  overflow: hidden;
+  background: linear-gradient(135deg, #273745, #59302C);
+}
+.film-profile__poster img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.film-profile__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1.05;
+  margin: 0.5rem 0 1.5rem;
+}
+.film-profile__meta {
+  font-size: 1rem;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  margin-bottom: 0.35rem;
+}
+.film-profile__meta strong {
+  font-weight: 500;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  display: inline-block;
+  min-width: 7.5rem;
+}
+
+/* Category appearances list on film page */
+.film-categories {
+  border-top: 2px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+}
+.film-category-row {
+  display: grid;
+  grid-template-columns: 1.6fr 4rem 2fr 5rem 5rem 4rem;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.85rem 0.5rem;
+  border-bottom: 1px solid var(--rule);
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.15s ease;
+}
+.film-category-row:last-of-type { border-bottom: none; }
+.film-category-row:hover { background-color: rgba(212, 162, 60, 0.08); }
+.film-category-row__label {
+  font-family: var(--font-sport);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.film-category-row__rank {
+  font-family: var(--font-sport);
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--gold);
+  text-align: center;
+}
+.film-category-row__sub {
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+.film-category-row__stat {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  text-align: right;
+  letter-spacing: 0.03em;
+}
+@media (max-width: 700px) {
+  .film-category-row {
+    grid-template-columns: 1fr 3rem 4rem;
+    grid-template-rows: auto auto;
+    grid-column-gap: 0.5rem;
+  }
+  .film-category-row__sub,
+  .film-category-row__stat:nth-of-type(2) { display: none; }
+}

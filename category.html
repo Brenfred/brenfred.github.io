@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Category — Fantasy Filmball</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;0,6..72,800;1,6..72,400;1,6..72,500;1,6..72,600;1,6..72,700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Ticker (populated by content.js) -->
+<div class="ticker" aria-label="Filmball Discord Top 20">
+  <div class="ticker__inner">
+    <span class="ticker__label">FILMBALL INDEX</span>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="container">
+    <div class="masthead__meta">
+
+      <span class="masthead__meta-right">
+
+        <a href="https://www.youtube.com/@fantasyfilmball">YouTube</a>
+
+      </span>
+    </div>
+    <a href="index.html" class="logo">Fantasy Filmball</a>
+    <div class="logo__sub">We Make Movies Into Sports</div>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="container">
+    <div class="nav__inner">
+      <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <div class="nav__links" id="primary-nav">
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="oscar-race.html" class="is-active">Oscar Race</a>
+        <a href="filmball-awards.html">Filmball Awards</a>
+        <a href="writers.html">Writers</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- BREADCRUMB + HERO -->
+<section class="container" style="padding-top: 2rem;">
+  <nav class="review__breadcrumb">
+    <a href="index.html">Home</a><span>/</span><a href="oscar-race.html">Oscar Race</a><span>/</span><span data-cat-label>Category</span>
+  </nav>
+</section>
+
+<section class="race-hero">
+  <div class="container race-hero__inner">
+    <div class="race-hero__kicker" data-cat-kicker>★ Category · April 3, 2026 ★</div>
+    <h1 class="race-hero__title">The <em data-cat-label-title>Best Picture</em> race.</h1>
+    <p class="race-hero__deck">The full top 10 from this week's Filmball community consensus. Movement shown against last week's snapshot.</p>
+  </div>
+</section>
+
+<!-- TOP 10 LIST -->
+<section class="section">
+  <div class="container">
+    <div class="category-detail" data-category-detail>
+      <!-- Populated by content.js. Fallback below for no-JS. -->
+      <p style="text-align: center; color: var(--ink-faded); padding: 3rem 0;">Loading category data…</p>
+    </div>
+  </div>
+</section>
+
+<!-- BACK LINK -->
+<section class="section">
+  <div class="container" style="text-align: center;">
+    <a href="oscar-race.html" class="podcast__cta">← Back to Oscar Race</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__col footer__col--brand">
+        <div class="footer__brand">Fantasy<br/>Filmball</div>
+        <p class="footer__tagline">A weekly Oscar-race podcast and review desk, run by two enthusiasts and a small bench of contributors who can't stop drafting Best Picture predictions.</p>
+        <div class="footer__col-title">Follow Along</div>
+        <div class="footer__social">
+          <a href="https://www.youtube.com/@fantasyfilmball">YouTube</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__col-title">Read</div>
+        <ul>
+          <li><a href="reviews.html">All Reviews</a></li>
+          <li><a href="oscar-race.html">Oscar Race</a></li>
+          <li><a href="filmball-awards.html">Filmball Awards</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__col-title">The Show</div>
+        <ul>
+          <li><a href="https://www.youtube.com/@fantasyfilmball">YouTube</a></li>
+          <li><a href="writers.html">Writers</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© 2026 Fantasy Filmball</span>
+      <span>We Make Movies Into Sports</span>
+    </div>
+  </div>
+</footer>
+
+<script src="content.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
