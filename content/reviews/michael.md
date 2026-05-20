@@ -6,8 +6,8 @@ studio: Lionsgate
 runtime: 128 min
 genre: Music Biopic
 rating: 4
-stance: buy
-stanceLabel: Buy
+stance: hold
+stanceLabel: Audiences will keep MJ's Oscar glory afloat
 posterSlug: michael
 writer: Dylan McKercher
 publishedDate: April 22, 2026
