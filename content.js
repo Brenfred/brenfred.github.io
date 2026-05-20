@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v2-writers)
+   FANTASY FILMBALL — content.js (v3-yaml-lists)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -29,6 +29,45 @@
     var div = document.createElement('div');
     div.textContent = s == null ? '' : String(s);
     return div.innerHTML;
+  }
+
+  /**
+   * Render a review's title with the film name italicized.
+   * Strategy:
+   *   • If headline starts with the film name → italicize just the prefix.
+   *     "Michael Jackson is off the wall" + film "Michael" →
+   *       "<em>Michael</em> Jackson is off the wall"
+   *   • If headline contains the film name elsewhere → italicize inline.
+   *   • If headline is just the film name → italicize the whole thing.
+   *   • If no headline → return italicized film name.
+   *   • If no film → return raw headline (no italics).
+   */
+  function headlineHTML(film, headline) {
+    var f = (film || '').trim();
+    var h = (headline || '').trim();
+    if (!h) return f ? '<em>' + esc(f) + '</em>' : '';
+    if (!f) return esc(h);
+    var fLower = f.toLowerCase();
+    var hLower = h.toLowerCase();
+
+    // Exact match
+    if (hLower === fLower) return '<em>' + esc(h) + '</em>';
+
+    // Headline starts with film (followed by a non-letter)
+    if (hLower.indexOf(fLower) === 0 && !/^[a-z0-9]/i.test(h.charAt(f.length))) {
+      return '<em>' + esc(h.slice(0, f.length)) + '</em>' + esc(h.slice(f.length));
+    }
+
+    // Headline contains film as a whole word
+    var wordPat = new RegExp('\\b' + f.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i');
+    var m = h.match(wordPat);
+    if (m) {
+      var i = h.toLowerCase().indexOf(m[0].toLowerCase());
+      return esc(h.slice(0, i)) + '<em>' + esc(h.slice(i, i + m[0].length)) + '</em>' + esc(h.slice(i + m[0].length));
+    }
+
+    // Film name not in headline at all — show "<em>Film</em> — Headline"
+    return '<em>' + esc(f) + '</em> — ' + esc(h);
   }
 
   function repoConfig() {
@@ -68,17 +107,71 @@
     var meta = {};
     var bodyText = match[2];
     var lines = match[1].split('\n');
+
+    // Parse a single scalar value: "quoted", numbers, booleans, plain strings.
+    function parseScalar(val) {
+      val = val.trim();
+      if (val === '') return '';
+      if (/^".*"$/.test(val) || /^'.*'$/.test(val)) return val.slice(1, -1);
+      if (val === 'true')  return true;
+      if (val === 'false') return false;
+      if (/^-?\d+(\.\d+)?$/.test(val)) return parseFloat(val);
+      return val;
+    }
+
+    // Parse inline list: [a, "b", c]  →  [a, b, c]
+    function parseInlineList(val) {
+      var inner = val.trim().slice(1, -1).trim();
+      if (inner === '') return [];
+      // Naive comma-split; quoted strings with commas would be a corner case we don't need.
+      return inner.split(',').map(function (item) { return parseScalar(item); });
+    }
+
     for (var i = 0; i < lines.length; i++) {
       var line = lines[i];
+      // Skip blank/comment lines
+      if (!line.trim() || /^\s*#/.test(line)) continue;
+      // A list-item line ("  - value") with no preceding key gets ignored
       var idx = line.indexOf(':');
       if (idx === -1) continue;
       var key = line.slice(0, idx).trim();
-      var val = line.slice(idx + 1).trim();
-      if (/^".*"$/.test(val) || /^'.*'$/.test(val)) val = val.slice(1, -1);
-      if (val === 'true') val = true;
-      else if (val === 'false') val = false;
-      else if (/^-?\d+(\.\d+)?$/.test(val)) val = parseFloat(val);
-      meta[key] = val;
+      // Skip indented lines — they're list items we'll handle from the key line above
+      if (/^\s/.test(line)) continue;
+      var rest = line.slice(idx + 1);
+
+      // Empty value: could be the start of a multi-line list. Peek at next lines.
+      if (rest.trim() === '') {
+        var items = [];
+        var j = i + 1;
+        while (j < lines.length) {
+          var next = lines[j];
+          // Stop when we hit a blank line or a new top-level key
+          if (next.trim() === '') { j++; continue; }
+          var listMatch = next.match(/^\s+-\s+(.*)$/);
+          if (listMatch) {
+            items.push(parseScalar(listMatch[1]));
+            j++;
+          } else if (/^\s/.test(next)) {
+            // Some other indented content — skip
+            j++;
+          } else {
+            // New top-level key
+            break;
+          }
+        }
+        meta[key] = items;
+        i = j - 1;  // resume after the list block
+        continue;
+      }
+
+      // Inline list: [a, b, c]
+      var trimmedRest = rest.trim();
+      if (/^\[.*\]$/.test(trimmedRest)) {
+        meta[key] = parseInlineList(trimmedRest);
+        continue;
+      }
+
+      meta[key] = parseScalar(rest);
     }
     return { meta: meta, body: bodyText };
   }
@@ -299,15 +392,8 @@
       foot = '<div class="review-card__foot"><span class="rating">' + stars + ' <span class="rating__num">' + rating + '</span></span><span>' + bylineStr + '</span></div>';
     }
 
-    // Title: italicize the film, append the rest of the headline if different
-    var titleHTML;
-    if (headline.toLowerCase().indexOf(film.toLowerCase()) === 0) {
-      titleHTML = '<em>' + esc(film) + '</em>' + esc(headline.slice(film.length));
-    } else if (headline) {
-      titleHTML = '<em>' + esc(film) + '</em> — ' + esc(headline);
-    } else {
-      titleHTML = '<em>' + esc(film) + '</em>';
-    }
+    // Title: italicize the film name where it appears in the headline
+    var titleHTML = headlineHTML(film, headline);
 
     var inner =
       '<div class="review-card__image">' +
@@ -387,12 +473,7 @@
 
     var titleEl = $('.hero__title', heroBlock);
     if (titleEl) {
-      var headline = hero.title || '';
-      if (headline.toLowerCase().indexOf(film.toLowerCase()) === 0) {
-        titleEl.innerHTML = '<em>' + esc(film) + '</em>' + esc(headline.slice(film.length));
-      } else {
-        titleEl.innerHTML = '<em>' + esc(film) + '</em> — ' + esc(headline);
-      }
+      titleEl.innerHTML = headlineHTML(film, hero.title);
     }
     var deckEl = $('.hero__deck', heroBlock);
     if (deckEl) deckEl.textContent = hero.deck || hero.excerpt || '';
@@ -457,12 +538,7 @@
 
     var title = $('[data-review-title]');
     if (title) {
-      var headline = review.title || '';
-      if (headline.toLowerCase().indexOf(film.toLowerCase()) === 0) {
-        title.innerHTML = '<em>' + esc(film) + '</em>' + esc(headline.slice(film.length));
-      } else {
-        title.innerHTML = '<em>' + esc(film) + '</em> — ' + esc(headline);
-      }
+      title.innerHTML = headlineHTML(film, review.title);
     }
 
     var deck = $('[data-review-deck]');
@@ -1152,7 +1228,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v2-writers loaded');
+  if (window.console) console.log('[content.js] v3-yaml-lists loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
