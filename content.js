@@ -743,9 +743,10 @@
     var label = $('[data-cat-label]');       if (label) label.textContent = cat.current.label;
     var labelT = $('[data-cat-label-title]'); if (labelT) labelT.textContent = cat.current.label;
     var kicker = $('[data-cat-kicker]');
-    if (kicker) kicker.textContent = '★ ' + cat.current.label + ' · Top 10 ★';
+    var listLength = (cat.current.films || []).length;
+    if (kicker) kicker.textContent = '★ ' + cat.current.label + ' · Top ' + listLength + ' ★';
 
-    // Render top 10 with full detail
+    // Render full list (10 for most categories, 20 for Best Picture)
     var html = '<div class="category-detail__table">' +
       '<div class="category-detail__head">' +
         '<span>Rank</span>' +
@@ -754,7 +755,7 @@
         '<span>Win %</span>' +
         '<span>Move</span>' +
       '</div>' +
-      withMove.slice(0, 10).map(function (f) {
+      withMove.map(function (f) {
         var film = filmMap[f.filmSlug];
         var filmTitle = film ? film.title : '';
         var posterPath = film ? ('posters/' + film.posterSlug + '.jpg') : '';

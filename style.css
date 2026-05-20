@@ -159,7 +159,24 @@ body::before {
   border-bottom: 1px solid var(--rule);
 }
 .masthead__meta a:hover { color: var(--gold); }
-.masthead__meta-right { display: flex; gap: 1.25rem; }
+.masthead__meta-right { display: flex; gap: 0.9rem; align-items: center; }
+.masthead__sep { color: var(--ink-faded); opacity: 0.6; }
+
+/* Discord link — slightly elevated, gold accent, gentle pop */
+.masthead__discord {
+  color: var(--gold) !important;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  position: relative;
+}
+.masthead__discord:hover {
+  color: var(--gold-bright) !important;
+}
+@media (max-width: 560px) {
+  /* On very small screens, hide the "·" separator if both links don't fit */
+  .masthead__sep { display: none; }
+  .masthead__meta-right { gap: 0.7rem; flex-wrap: wrap; justify-content: flex-end; }
+}
 
 .logo {
   text-align: center;
