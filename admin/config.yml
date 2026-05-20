@@ -140,5 +140,81 @@ collections:
       - { name: "isHero", label: "Mark as Homepage Hero", widget: "boolean",
           default: false,
           hint: "Only one review should be marked as hero at a time" }
+      - name: "tags"
+        label: "Film Tags"
+        widget: "list"
+        required: false
+        default: []
+        hint: "Slugs of films this article mentions (e.g. the-odyssey, digger). Tagged films show this article on their detail page."
+        field: { name: "slug", label: "Film Slug", widget: "string" }
       - { name: "body", label: "Review Body", widget: "markdown",
           hint: "Paste your review prose here. Paragraphs are separated by blank lines." }
+
+  # ─── Films ─────────────────────────────────────────────────────────────────
+  # Master record per tracked film. Used by Oscar Race page and category pages
+  # to look up titles, posters, directors, etc.
+  - name: "films"
+    label: "🎬 Films"
+    description: "Master record per tracked film. Add a new file here whenever a new film enters the conversation."
+    folder: "content/films"
+    create: true
+    delete: true
+    extension: "json"
+    format: "json"
+    slug: "{{fields.posterSlug}}"
+    summary: "{{fields.title}}"
+    fields:
+      - { name: "title",       label: "Film Title", widget: "string" }
+      - { name: "director",    label: "Director", widget: "string", required: false }
+      - { name: "studio",      label: "Studio / Distributor", widget: "string", required: false }
+      - { name: "posterSlug",  label: "Poster filename (no extension)", widget: "string",
+          hint: "e.g. 'the-odyssey' — must match a file in /posters/" }
+      - { name: "releaseDate", label: "Release Date", widget: "string", required: false }
+      - { name: "runtime",     label: "Runtime", widget: "string", required: false }
+
+  # ─── Category Rankings ─────────────────────────────────────────────────────
+  # 8 separate "Current + Previous" pairs for each Oscar category. The Oscar
+  # Race page reads these. Movement arrows are computed by diffing current vs
+  # previous, same as the Best Picture rankings.
+  - name: "categories"
+    label: "🏅 Category Rankings"
+    description: "Top 10 per category. Movement arrows compare Current vs Previous Snapshot. Before editing Current, copy values to Previous (or use /admin/snapshot-categories.html for one-click)."
+    files:
+      - { name: "picture-current",          label: "🏆 Best Picture · CURRENT",         file: "content/categories/picture.json",                  fields: &cat_fields [
+            { name: "label",      label: "Full Label",  widget: "string" },
+            { name: "shortLabel", label: "Short Label", widget: "string" },
+            { name: "cutoffRank", label: "Cutoff Rank (where the line is)", widget: "number", default: 5 },
+            { name: "films", label: "Top 10", widget: "list", summary: "{{fields.rank}}. {{fields.subtitle}}",
+              fields: [
+                { name: "rank",     label: "Rank",     widget: "number", value_type: "int", min: 1, max: 10 },
+                { name: "filmSlug", label: "Film Slug", widget: "string", required: false,
+                  hint: "Match a film file in /content/films/ — e.g. 'the-odyssey'" },
+                { name: "subtitle", label: "Display Text", widget: "string",
+                  hint: "For acting categories, the performer's name. For others, can be the director or left blank." },
+                { name: "nomPct", label: "Nom %", widget: "string", required: false, hint: "e.g. '95%'" },
+                { name: "winPct", label: "Win %", widget: "string", required: false, hint: "e.g. '38%'" }
+              ]
+            }
+          ] }
+      - { name: "picture-previous",         label: "🏆 Best Picture · Previous Snapshot", file: "content/categories-previous/picture.json", fields: *cat_fields }
+
+      - { name: "director-current",         label: "🎬 Best Director · CURRENT",         file: "content/categories/director.json",                 fields: *cat_fields }
+      - { name: "director-previous",        label: "🎬 Best Director · Previous Snapshot", file: "content/categories-previous/director.json", fields: *cat_fields }
+
+      - { name: "actress-current",          label: "👩 Best Actress · CURRENT",          file: "content/categories/actress.json",                  fields: *cat_fields }
+      - { name: "actress-previous",         label: "👩 Best Actress · Previous Snapshot", file: "content/categories-previous/actress.json",   fields: *cat_fields }
+
+      - { name: "actor-current",            label: "👨 Best Actor · CURRENT",            file: "content/categories/actor.json",                    fields: *cat_fields }
+      - { name: "actor-previous",           label: "👨 Best Actor · Previous Snapshot",  file: "content/categories-previous/actor.json",     fields: *cat_fields }
+
+      - { name: "supp-actress-current",     label: "🥈 Supp. Actress · CURRENT",         file: "content/categories/supp-actress.json",             fields: *cat_fields }
+      - { name: "supp-actress-previous",    label: "🥈 Supp. Actress · Previous Snapshot", file: "content/categories-previous/supp-actress.json", fields: *cat_fields }
+
+      - { name: "supp-actor-current",       label: "🥈 Supp. Actor · CURRENT",           file: "content/categories/supp-actor.json",               fields: *cat_fields }
+      - { name: "supp-actor-previous",      label: "🥈 Supp. Actor · Previous Snapshot", file: "content/categories-previous/supp-actor.json", fields: *cat_fields }
+
+      - { name: "orig-screenplay-current",  label: "✍️ Original Screenplay · CURRENT",   file: "content/categories/orig-screenplay.json",          fields: *cat_fields }
+      - { name: "orig-screenplay-previous", label: "✍️ Original Screenplay · Previous Snapshot", file: "content/categories-previous/orig-screenplay.json", fields: *cat_fields }
+
+      - { name: "adapt-screenplay-current", label: "📜 Adapted Screenplay · CURRENT",    file: "content/categories/adapt-screenplay.json",         fields: *cat_fields }
+      - { name: "adapt-screenplay-previous",label: "📜 Adapted Screenplay · Previous Snapshot", file: "content/categories-previous/adapt-screenplay.json", fields: *cat_fields }
