@@ -15,18 +15,11 @@ writers:
 publishedDate: Feb 12, 2026
 deck: Emerald Fennell has a stunning vision behind the lens showcasing dreamy
   dollhouse sets, fairytale-esque cinematography, & luscious gowns which come
-  undone to make Wuthering Heightsa visual feast. Your eyes crave the spectacle,
-  even if your mind wanders for a stronger plot.
-excerpt: >
-  If you know me, you know that Emerald Fennell’s “Wuthering Heights” has been
-  one of my most anticipated movies of 2026, that “fall in love” trailer is just
-  so intoxicating. 
-
-
-  With that being said, I do want to start by talking about Fennell as a writer and director, because she has truly drives me mad. Promising Young Woman was such a promising start for a brand-new filmmaker, headlined by an outstanding lead performance from Carey Mulligan, a screenplay that always felt one step ahead of its audience, & a bold, distinctive directorial voice unlike anything we’d seen before. However, her next film, Saltburn, was basically the opposite experience for me. I found Barry Keoghan to be a massive miscast as our lead… very unlikable, very repelling, & not really hitting the narrative beats you’d want from a character like that. But you could also place a lot of the blame on the screenplay, which felt messy + pretty unoriginal… pulling from things we’ve seen before and not in a unique or interesting way. That blandness also extended to the direction. 
-
-
-  But now we’re here with “Wuthering Heights” we have a film that feels like the full embodiment of Fennell as a filmmaker. A primal epic that takes the highest of highs of her previous work & combines them with the lowest lows. 
+  undone to make Wuthering Heights a visual feast. Your eyes crave the
+  spectacle, even if your mind wanders for a stronger plot.
+excerpt: Emerald Fennell has a stunning vision behind the lens showcasing dreamy
+  dollhouse sets, fairytale-esque cinematography, & luscious gowns which come
+  undone to make Wuthering Heights a visual feast.
 isHero: false
 tags: []
 ---
