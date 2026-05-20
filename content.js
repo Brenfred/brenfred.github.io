@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v5-writer-polish)
+   FANTASY FILMBALL — content.js (v6-review-asides)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -514,7 +514,7 @@
 
   // ---- single review page -----------------------------------------------
 
-  function renderSingleReview(reviews, siteSettings, writersBySlug) {
+  function renderSingleReview(reviews, siteSettings, writersBySlug, categories, films) {
     var body = $('[data-review-body]');
     if (!body) return;
 
@@ -621,6 +621,145 @@
     if (director) director.textContent = review.director || '';
     var studio = $('[data-review-studio]');
     if (studio) studio.textContent = review.studio || '';
+
+    // ---- Oscar Outlook (auto-computed from category rankings) ----------
+    var outlookEl = $('[data-review-outlook]');
+    if (outlookEl) {
+      var filmSlug = review.posterSlug || review.slug;
+      var outlookRows = [];
+
+      // Map a rank → outlook label. For Best Picture, top-10 nominees, so:
+      //   #1     → "Frontrunner"
+      //   #2-5   → "Strong Contender"
+      //   #6-10  → "Top 10"
+      //   #11-20 → "In the Conversation"
+      // For other categories (top 10 list, 5 nominees):
+      //   #1     → "Frontrunner"
+      //   #2     → "Lock"
+      //   #3-5   → "Top 5"
+      //   #6-10  → "Outside Looking In"
+      function outlookLabel(catSlug, rank) {
+        if (catSlug === 'picture') {
+          if (rank === 1)  return 'Frontrunner';
+          if (rank <= 5)   return 'Strong Contender';
+          if (rank <= 10)  return 'Top 10';
+          return 'In the Conversation';
+        }
+        if (rank === 1)  return 'Frontrunner';
+        if (rank === 2)  return 'Lock';
+        if (rank <= 5)   return 'Top 5';
+        return 'Outside Top 5';
+      }
+
+      (categories || []).forEach(function (cat) {
+        (cat.current.films || []).forEach(function (row) {
+          if (row.filmSlug === filmSlug) {
+            outlookRows.push({
+              label: cat.current.shortLabel || cat.current.label,
+              fullLabel: cat.current.label,
+              value: outlookLabel(cat.slug, row.rank),
+              rank: row.rank,
+              subtitle: row.subtitle || ''
+            });
+          }
+        });
+      });
+
+      // Sort: Best Picture first, then by rank (best ranks first)
+      outlookRows.sort(function (a, b) {
+        if (a.fullLabel === 'Best Picture') return -1;
+        if (b.fullLabel === 'Best Picture') return 1;
+        return a.rank - b.rank;
+      });
+
+      if (outlookRows.length === 0) {
+        outlookEl.innerHTML =
+          '<h3 class="aside-block__title">Oscar Outlook</h3>' +
+          '<p class="aside-block__empty">Not currently ranked in any category.</p>';
+      } else {
+        outlookEl.innerHTML =
+          '<h3 class="aside-block__title">Oscar Outlook</h3>' +
+          outlookRows.map(function (r) {
+            // Acting categories include the performer name as part of the value
+            var isActing = /^(Actor|Actress|Supp|Performance)/i.test(r.label);
+            var displayValue = isActing && r.subtitle
+              ? r.value + ' (' + esc(r.subtitle.split(',')[0]) + ')'
+              : esc(r.value);
+            return '<div class="aside-block__row">' +
+              '<span class="aside-block__label">' + esc(r.label) + '</span>' +
+              '<span class="aside-block__value">' + displayValue + '</span>' +
+            '</div>';
+          }).join('');
+      }
+    }
+
+    // ---- By the Numbers (auto-computed from film record + BP rankings) -
+    var numbersEl = $('[data-review-numbers]');
+    if (numbersEl) {
+      var filmRecord = (films || []).find(function (f) {
+        return f.slug === (review.posterSlug || review.slug);
+      });
+
+      // Find the film in BP categories for Nom/Win %
+      var bpCat = (categories || []).find(function (c) { return c.slug === 'picture'; });
+      var bpRow = bpCat && (bpCat.current.films || []).find(function (r) {
+        return r.filmSlug === (review.posterSlug || review.slug);
+      });
+
+      var numRows = [];
+      var runtime = (filmRecord && filmRecord.runtime) || review.runtime || '';
+      if (runtime) numRows.push({ label: 'Runtime', value: runtime, stat: true });
+
+      var released = (filmRecord && filmRecord.releaseDate) || '';
+      if (released) numRows.push({ label: 'Released', value: released, stat: true });
+
+      if (bpRow) {
+        if (bpRow.winPct) numRows.push({ label: 'B.P. Win %', value: bpRow.winPct, stat: true });
+        if (bpRow.nomPct) numRows.push({ label: 'B.P. Nom %', value: bpRow.nomPct, stat: true });
+        numRows.push({ label: 'FFB Rank', value: '#' + bpRow.rank + ' / ' + (bpCat.current.films || []).length, stat: true });
+      }
+
+      if (numRows.length === 0) {
+        numbersEl.innerHTML =
+          '<h3 class="aside-block__title">By the Numbers</h3>' +
+          '<p class="aside-block__empty">Not currently in the Best Picture top 20. ' +
+          'Add this film to a category in the CMS to populate stats here.</p>';
+      } else {
+        numbersEl.innerHTML =
+          '<h3 class="aside-block__title">By the Numbers</h3>' +
+          numRows.map(function (r) {
+            var statClass = r.stat ? ' aside-block__value--stat' : '';
+            return '<div class="aside-block__row">' +
+              '<span class="aside-block__label">' + esc(r.label) + '</span>' +
+              '<span class="aside-block__value' + statClass + '">' + esc(r.value) + '</span>' +
+            '</div>';
+          }).join('');
+      }
+    }
+
+    // ---- Related Reviews (same stance, excluding the current one) -------
+    var relatedEl = $('[data-review-related]');
+    var relatedTitleEl = $('[data-review-related-title]');
+    if (relatedEl) {
+      var sameStance = (reviews || []).filter(function (r) {
+        return r.slug !== review.slug && (r.stance || '').toLowerCase() === stance;
+      });
+
+      // Friendly section heading
+      var stanceWord = stance === 'sell' ? 'Sell' : stance === 'hold' ? 'Hold' : 'Buy';
+      if (relatedTitleEl) {
+        relatedTitleEl.innerHTML = 'More <em>' + esc(stanceWord) + ' ratings</em>';
+      }
+
+      if (sameStance.length === 0) {
+        relatedEl.innerHTML = '<p style="grid-column: 1 / -1; color: var(--ink-faded); text-align: center; padding: 1rem 0;">' +
+          'No other ' + esc(stanceWord) + ' reviews yet.</p>';
+      } else {
+        relatedEl.innerHTML = sameStance.slice(0, 3).map(function (r) {
+          return reviewCardHTML(r, { showKicker: false, compact: true });
+        }).join('\n');
+      }
+    }
   }
 
   // ============================================================
@@ -1269,7 +1408,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v5-writer-polish loaded');
+  if (window.console) console.log('[content.js] v6-review-asides loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
@@ -1317,7 +1456,12 @@
       document.querySelector('[data-films-grid]') ||
       document.querySelector('[data-films-list]') ||
       document.querySelector('[data-category-detail]') ||
-      document.querySelector('[data-film-profile]');
+      document.querySelector('[data-film-profile]') ||
+      // Single-review pages now use category + film data for Oscar Outlook,
+      // By the Numbers, and Related Reviews sections.
+      document.querySelector('[data-review-outlook]') ||
+      document.querySelector('[data-review-numbers]') ||
+      document.querySelector('[data-review-related]');
 
     // ---- Fetch reviews and writers in parallel -----
     var reviewsPromise = needsReviews
@@ -1334,10 +1478,19 @@
         })
       : Promise.resolve([]);
 
-    // ---- Once we have both, render every dependent page region -----
-    Promise.all([reviewsPromise, writersPromise]).then(function (data) {
+    var racePromise = needsRace
+      ? Promise.all([
+          fetchAllCategories().catch(function () { return []; }),
+          fetchAllFilms().catch(function () { return []; })
+        ])
+      : Promise.resolve([[], []]);
+
+    // ---- Once we have everything, render every dependent page region -----
+    Promise.all([reviewsPromise, writersPromise, racePromise]).then(function (data) {
       var reviews = data[0];
       var writers = data[1];
+      var categories = data[2][0];
+      var films = data[2][1];
 
       var writersBySlug = {};
       writers.forEach(function (w) { writersBySlug[w.slug] = w; });
@@ -1355,27 +1508,21 @@
         safeRender('renderHero',          function () { renderHero(reviews, site, writersBySlug); });
         safeRender('renderReviewGrids',   function () { renderReviewGrids(reviews, writersBySlug); });
         safeRender('renderReviewsArchive',function () { renderReviewsArchive(reviews, writersBySlug); });
-        safeRender('renderSingleReview',  function () { renderSingleReview(reviews, site, writersBySlug); });
+        safeRender('renderSingleReview',  function () { renderSingleReview(reviews, site, writersBySlug, categories, films); });
       }
 
       // Writers-driven regions
       safeRender('renderWritersDirectory', function () { renderWritersDirectory(writers, reviews); });
       safeRender('renderWriterDetail',     function () { renderWriterDetail(writers, reviews); });
 
-      // Race-driven regions (need films + categories too)
+      // Race-driven regions
       if (needsRace) {
-        Promise.all([fetchAllCategories(), fetchAllFilms()]).then(function (raceData) {
-          var categories = raceData[0];
-          var films = raceData[1];
-          safeRender('renderCategoriesGrid', function () { renderCategoriesGrid(categories, films); });
-          if (current && previous) {
-            safeRender('renderFilmsSection', function () { renderFilmsSection(current, previous, categories, films); });
-          }
-          safeRender('renderCategoryDetail', function () { renderCategoryDetail(categories, films, reviews); });
-          safeRender('renderFilmDetail',     function () { renderFilmDetail(categories, films, reviews, writersBySlug); });
-        }).catch(function (err) {
-          if (window.console) console.warn('[content] race load failed:', err);
-        });
+        safeRender('renderCategoriesGrid', function () { renderCategoriesGrid(categories, films); });
+        if (current && previous) {
+          safeRender('renderFilmsSection', function () { renderFilmsSection(current, previous, categories, films); });
+        }
+        safeRender('renderCategoryDetail', function () { renderCategoryDetail(categories, films, reviews); });
+        safeRender('renderFilmDetail',     function () { renderFilmDetail(categories, films, reviews, writersBySlug); });
       }
     });
   }).catch(function (err) {

@@ -2297,3 +2297,14 @@ a.host:hover .host__name { color: var(--gold); }
   color: var(--gold);
   border-color: var(--gold);
 }
+
+/* Empty-state hint inside aside blocks (shown when a review has no race
+   data yet, e.g. a film not in any category) */
+.aside-block__empty {
+  font-size: 0.85rem;
+  color: var(--ink-faded);
+  font-style: italic;
+  padding: 0.5rem 0 0.2rem;
+  margin: 0;
+  line-height: 1.4;
+}
