@@ -1,0 +1,77 @@
+{
+  "label": "Best Actor",
+  "shortLabel": "Actor",
+  "cutoffRank": 5,
+  "films": [
+    {
+      "rank": 1,
+      "filmSlug": "digger",
+      "subtitle": "Tom Cruise",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 2,
+      "filmSlug": "fjord",
+      "subtitle": "Sebastian Stan",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 3,
+      "filmSlug": "wild-horse-nine",
+      "subtitle": "John Malkovich",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 4,
+      "filmSlug": "project-hail-mary",
+      "subtitle": "Ryan Gosling",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 5,
+      "filmSlug": "michael",
+      "subtitle": "Jaafar Jackson",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 6,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 7,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 8,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 9,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 10,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    }
+  ]
+}
