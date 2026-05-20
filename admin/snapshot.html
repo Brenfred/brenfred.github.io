@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fantasy Filmball — Snapshot Rankings</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #FBFAF5;
+      color: #1f1a14;
+      max-width: 540px;
+      margin: 4rem auto;
+      padding: 2rem;
+      line-height: 1.5;
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+    .lede { color: #555; margin-bottom: 2rem; }
+    button {
+      background: #1f1a14;
+      color: #FBFAF5;
+      border: none;
+      padding: 0.9rem 1.6rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+    button:disabled { opacity: 0.6; cursor: not-allowed; }
+    .status {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background: #f4ecd8;
+      border-left: 4px solid #D4A23C;
+      font-size: 0.95rem;
+    }
+    .status--err { background: #fce4e0; border-color: #CC3B30; }
+    .status--ok  { background: #e2f0e3; border-color: #4F8F5C; }
+    pre {
+      background: #1f1a14;
+      color: #FBFAF5;
+      padding: 1rem;
+      font-size: 0.8rem;
+      overflow: auto;
+      border-radius: 4px;
+      max-height: 280px;
+    }
+    a { color: #1f1a14; }
+  </style>
+</head>
+<body>
+
+  <h1>Snapshot Current Rankings</h1>
+  <p class="lede">
+    One click: copies <code>content/rankings.json</code> →
+    <code>content/rankings-previous.json</code> so the site can compute movement
+    arrows against last week's data. Do this BEFORE editing the current rankings.
+  </p>
+
+  <button id="snap-btn">Snapshot Now</button>
+  <div id="status"></div>
+
+  <p style="margin-top: 3rem; font-size: 0.85rem; color: #888;">
+    <a href="index.html">← Back to admin</a>
+  </p>
+
+<script>
+(function () {
+  'use strict';
+
+  // Configure these to match your repo and OAuth proxy.
+  var REPO         = 'Brenfred/brenfred.github.io';
+  var BRANCH       = 'main';
+  var OAUTH_PROXY  = 'https://filmball-oauth.brad-derfner.workers.dev';
+
+  var statusEl = document.getElementById('status');
+  var btn      = document.getElementById('snap-btn');
+
+  function status(msg, kind) {
+    statusEl.className = 'status' + (kind ? ' status--' + kind : '');
+    statusEl.innerHTML = msg;
+  }
+
+  // ---- OAuth: same popup flow Decap CMS uses --------------------------
+  function loginWithGitHub() {
+    return new Promise(function (resolve, reject) {
+      var w = 600, h = 700;
+      var x = window.screenX + (window.outerWidth - w) / 2;
+      var y = window.screenY + (window.outerHeight - h) / 2;
+      var popup = window.open(
+        OAUTH_PROXY + '/auth',
+        'github-oauth',
+        'width=' + w + ',height=' + h + ',left=' + x + ',top=' + y
+      );
+      if (!popup) {
+        reject(new Error('Popup blocked — allow popups for this page.'));
+        return;
+      }
+
+      function onMessage(e) {
+        var d = e.data;
+        if (typeof d !== 'string') return;
+        if (d.indexOf('authorization:github:success:') === 0) {
+          try {
+            var payload = JSON.parse(d.slice('authorization:github:success:'.length));
+            window.removeEventListener('message', onMessage);
+            try { popup.close(); } catch (e) {}
+            resolve(payload.token);
+          } catch (err) { reject(err); }
+        } else if (d.indexOf('authorization:github:error:') === 0) {
+          window.removeEventListener('message', onMessage);
+          try { popup.close(); } catch (e) {}
+          reject(new Error('GitHub login failed.'));
+        } else if (d === 'authorizing:github') {
+          // popup ready — send our origin so it can postMessage back
+          popup.postMessage('authorizing:github', '*');
+        }
+      }
+      window.addEventListener('message', onMessage, false);
+    });
+  }
+
+  function gh(token, path, options) {
+    options = options || {};
+    options.headers = Object.assign({
+      'Authorization': 'token ' + token,
+      'Accept': 'application/vnd.github+json'
+    }, options.headers || {});
+    return fetch('https://api.github.com/repos/' + REPO + path, options)
+      .then(function (r) {
+        return r.json().then(function (j) {
+          if (!r.ok) {
+            var err = new Error(j.message || ('HTTP ' + r.status));
+            err.body = j; throw err;
+          }
+          return j;
+        });
+      });
+  }
+
+  function b64encode(str) {
+    return btoa(unescape(encodeURIComponent(str)));
+  }
+  function b64decode(b) {
+    return decodeURIComponent(escape(atob(b.replace(/\s/g, ''))));
+  }
+
+  function doSnapshot() {
+    btn.disabled = true;
+    status('🔐 Logging in to GitHub…');
+
+    loginWithGitHub().then(function (token) {
+      status('📥 Reading current rankings…');
+      // Fetch current rankings.json (need its content + sha)
+      return gh(token, '/contents/content/rankings.json?ref=' + BRANCH).then(function (cur) {
+        var contentStr = b64decode(cur.content);
+        // Validate it's parseable JSON
+        try { JSON.parse(contentStr); } catch (e) { throw new Error('Current rankings.json is not valid JSON'); }
+
+        status('📥 Reading previous snapshot…');
+        // Fetch previous (for its sha — we need it to update)
+        return gh(token, '/contents/content/rankings-previous.json?ref=' + BRANCH)
+          .catch(function (err) {
+            // If file doesn't exist, we'll create it (no sha needed)
+            if (err.body && err.body.message === 'Not Found') return null;
+            throw err;
+          })
+          .then(function (prev) {
+            status('💾 Writing snapshot…');
+            var body = {
+              message: 'Snapshot rankings.json → rankings-previous.json',
+              content: b64encode(contentStr),
+              branch:  BRANCH
+            };
+            if (prev && prev.sha) body.sha = prev.sha;
+
+            return gh(token, '/contents/content/rankings-previous.json', {
+              method: 'PUT',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(body)
+            });
+          });
+      });
+    }).then(function (result) {
+      status(
+        '✅ <strong>Snapshot saved.</strong> You can now open the CMS, ' +
+        'edit Current Rankings, and publish. Movement arrows will compute ' +
+        'automatically once GitHub Pages redeploys (~1–2 min).<br><br>' +
+        '<a href="index.html">→ Open CMS to edit rankings</a>',
+        'ok'
+      );
+      btn.disabled = false;
+      btn.textContent = 'Snapshot Again';
+    }).catch(function (err) {
+      console.error(err);
+      status(
+        '❌ <strong>Failed.</strong> ' + (err.message || 'Unknown error') +
+        '<br><br>Details (open browser console for more):<br>' +
+        '<pre>' + (err.body ? JSON.stringify(err.body, null, 2) : err.stack || err) + '</pre>',
+        'err'
+      );
+      btn.disabled = false;
+    });
+  }
+
+  btn.addEventListener('click', doSnapshot);
+})();
+</script>
+
+</body>
+</html>

@@ -58,12 +58,14 @@ collections:
               hint: "Appears in the widget header. e.g. 'Updated April 3'" }
 
   # ─── Best Picture Rankings ─────────────────────────────────────────────────
-  # Two files: current + previous. The site auto-computes movement arrows by
-  # diffing them. To update, save a new ranking; the previous one is auto-
-  # archived via the workflow below.
+  # WORKFLOW: To update rankings with movement arrows:
+  #   1. Open "Previous Snapshot" → click "Copy Current to Previous" button at top
+  #      (or manually paste in last week's values)
+  #   2. Then open "Current Rankings" → edit, publish
+  # Movement arrows compute automatically from the diff.
   - name: "rankings"
     label: "📊 Best Picture Rankings"
-    description: "The Top 20. Movement arrows (▲▼—NEW) are computed automatically by comparing this list to the previous snapshot."
+    description: "The Top 20 list shown in the ticker and homepage widget. Movement arrows (▲▼—NEW) compute automatically by comparing Current vs Previous Snapshot. Workflow: BEFORE editing Current, copy the existing Current values into Previous Snapshot first."
     files:
       - name: "current"
         label: "Current Rankings (Top 20)"
