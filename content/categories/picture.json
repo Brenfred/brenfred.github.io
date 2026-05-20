@@ -1,7 +1,7 @@
 {
   "label": "Best Picture",
   "shortLabel": "Picture",
-  "cutoffRank": 5,
+  "cutoffRank": 10,
   "films": [
     {
       "rank": 1,
@@ -40,37 +40,107 @@
     },
     {
       "rank": 6,
-      "filmSlug": "",
-      "subtitle": "[ TBD ]",
-      "nomPct": "",
+      "filmSlug": "narnia",
+      "subtitle": "",
+      "nomPct": "71%",
       "winPct": ""
     },
     {
       "rank": 7,
-      "filmSlug": "",
-      "subtitle": "[ TBD ]",
-      "nomPct": "",
+      "filmSlug": "fatherland",
+      "subtitle": "",
+      "nomPct": "56%",
       "winPct": ""
     },
     {
       "rank": 8,
-      "filmSlug": "",
-      "subtitle": "[ TBD ]",
-      "nomPct": "",
+      "filmSlug": "eisenberg-musical-comedy",
+      "subtitle": "",
+      "nomPct": "42%",
       "winPct": ""
     },
     {
       "rank": 9,
-      "filmSlug": "",
-      "subtitle": "[ TBD ]",
-      "nomPct": "",
+      "filmSlug": "dune-part-three",
+      "subtitle": "",
+      "nomPct": "40%",
       "winPct": ""
     },
     {
       "rank": 10,
-      "filmSlug": "",
-      "subtitle": "[ TBD ]",
-      "nomPct": "",
+      "filmSlug": "cry-to-heaven",
+      "subtitle": "",
+      "nomPct": "44%",
+      "winPct": ""
+    },
+    {
+      "rank": 11,
+      "filmSlug": "michael",
+      "subtitle": "",
+      "nomPct": "42%",
+      "winPct": ""
+    },
+    {
+      "rank": 12,
+      "filmSlug": "all-of-a-sudden",
+      "subtitle": "",
+      "nomPct": "42%",
+      "winPct": ""
+    },
+    {
+      "rank": 13,
+      "filmSlug": "the-social-reckoning",
+      "subtitle": "",
+      "nomPct": "33%",
+      "winPct": ""
+    },
+    {
+      "rank": 14,
+      "filmSlug": "sense-and-sensibility",
+      "subtitle": "",
+      "nomPct": "29%",
+      "winPct": ""
+    },
+    {
+      "rank": 15,
+      "filmSlug": "jack-of-spades",
+      "subtitle": "",
+      "nomPct": "24%",
+      "winPct": ""
+    },
+    {
+      "rank": 16,
+      "filmSlug": "disclosure-day",
+      "subtitle": "",
+      "nomPct": "18%",
+      "winPct": ""
+    },
+    {
+      "rank": 17,
+      "filmSlug": "josephine",
+      "subtitle": "",
+      "nomPct": "13%",
+      "winPct": ""
+    },
+    {
+      "rank": 18,
+      "filmSlug": "behemoth",
+      "subtitle": "",
+      "nomPct": "11%",
+      "winPct": ""
+    },
+    {
+      "rank": 19,
+      "filmSlug": "entertainment-system-is-down",
+      "subtitle": "",
+      "nomPct": "9%",
+      "winPct": ""
+    },
+    {
+      "rank": 20,
+      "filmSlug": "saturn-return",
+      "subtitle": "",
+      "nomPct": "7%",
       "winPct": ""
     }
   ]
