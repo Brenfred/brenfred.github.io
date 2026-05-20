@@ -2065,3 +2065,196 @@ body::before {
   .film-category-row__sub,
   .film-category-row__stat:nth-of-type(2) { display: none; }
 }
+
+/* =========================================================================
+   WRITERS — make existing host/writer-card work as clickable links
+   ========================================================================= */
+a.host,
+a.writer-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+a.host { display: flex; }
+a.host:hover,
+a.writer-card:hover {
+  transform: translateY(-2px);
+}
+a.writer-card:hover .writer-card__name { color: var(--gold); }
+a.host:hover .host__name { color: var(--gold); }
+
+.writer-card__count {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--gold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 0.85rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--rule);
+}
+
+/* Avatars with image + monogram fallback */
+.host__avatar,
+.writer-card__avatar,
+.writer-profile__avatar {
+  position: relative;
+  overflow: hidden;
+}
+.host__avatar-img,
+.writer-card__avatar-img,
+.writer-profile__avatar-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+/* When image fails, the parent gets --no-img class — the monogram shows through */
+.host__avatar-monogram,
+.writer-card__avatar-monogram,
+.writer-profile__avatar-monogram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Byline links — subtle but recognizable */
+.byline-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: color 0.15s ease;
+}
+.byline-link:hover { color: var(--gold); }
+
+/* =========================================================================
+   WRITER DETAIL PAGE — writer.html
+   ========================================================================= */
+.writer-profile {
+  padding: 2rem 0 1rem;
+}
+.writer-profile__grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+@media (max-width: 700px) {
+  .writer-profile__grid { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+.writer-profile__head {
+  text-align: center;
+}
+@media (max-width: 700px) {
+  .writer-profile__head { text-align: left; }
+}
+
+.writer-profile__avatar {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1.25rem;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 32% 22%, rgba(232, 184, 90, 0.22), transparent 48%),
+    linear-gradient(145deg, #2D5167 0%, #201A13 58%, #B7352E 100%);
+  border: 2px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--paper-aged);
+  overflow: hidden;
+}
+@media (max-width: 700px) {
+  .writer-profile__avatar { width: 140px; height: 140px; margin: 0 0 1.25rem; }
+}
+.writer-profile__avatar-monogram {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 4rem;
+  color: var(--paper-warm);
+  letter-spacing: -0.02em;
+}
+
+.writer-profile__title {
+  font-size: clamp(2rem, 4vw, 2.85rem);
+  font-weight: 600;
+  line-height: 1.05;
+  margin: 0.75rem 0 0.35rem;
+  letter-spacing: -0.015em;
+}
+.writer-profile__role {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.writer-profile__quote {
+  border-left: 3px solid var(--gold);
+  padding: 0.4rem 0 0.4rem 1.2rem;
+  margin: 0 0 2rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.writer-profile__body .prose {
+  font-size: 1.1rem;
+  line-height: 1.65;
+  color: var(--ink);
+}
+.writer-profile__body .prose p { margin-bottom: 1rem; }
+
+.writer-profile__meta {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.3rem 1.5rem;
+}
+.writer-profile__meta dt {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.writer-profile__meta dd {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.writer-profile__favorites {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+}
+.writer-profile__fav-title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.65rem;
+}
+.writer-profile__favorites ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+.writer-profile__favorites li {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}

@@ -98,84 +98,25 @@
         <div class="kicker kicker--gold">★ The Roster ★</div>
         <h1 class="section-head__title" style="font-size: 2.75rem;">The <em>writers.</em></h1>
       </div>
-      <span class="section-head__link">2 hosts · 6 contributors</span>
+      <span class="section-head__link" data-writers-count>· · ·</span>
     </div>
 
     <p style="font-size: 1.2rem; line-height: 1.6; color: var(--ink-soft); max-width: 720px; margin-bottom: 3rem; font-style: italic;">Two of us are on the show every week. The rest of the bench writes the reviews that go up in between. Everyone here believes the Academy gets it right more often than the discourse admits — and that arguing about when they don't is one of the great pleasures in life.</p>
 
-    <!-- HOSTS -->
+    <!-- HOSTS (writers with role containing "Host") -->
     <div class="kicker" style="margin-bottom: 1rem;">★ On the Show</div>
-    <div class="hosts" style="margin-bottom: 4rem;">
-
-      <div class="host">
-        <div class="host__avatar">H1</div>
-        <div>
-          <div class="host__role">Co-Host · Co-General Manager</div>
-          <h3 class="host__name">[ Host One Name ]</h3>
-          <p class="host__bio">[ Replace with bio. Two or three sentences on background, favorite Best Picture winner, the hill they will die on for this year's race. Keep it conversational — the warmth of the show is the brand. Add social handles if you'd like (e.g. Letterboxd, X, Bluesky). ]</p>
-        </div>
-      </div>
-
-      <div class="host">
-        <div class="host__avatar">H2</div>
-        <div>
-          <div class="host__role">Co-Host · Co-General Manager</div>
-          <h3 class="host__name">[ Host Two Name ]</h3>
-          <p class="host__bio">[ Replace with bio. Two or three sentences on background, the Oscar snub that still keeps them up at night, what they look for in a scorecard sleeper. Social handles welcome here too. ]</p>
-        </div>
-      </div>
-
+    <div class="hosts" data-writers-hosts style="margin-bottom: 4rem;">
+      <!-- Populated by content.js — writers whose role includes "Host" -->
+      <p style="color: var(--ink-faded); padding: 1.5rem 0;">Loading hosts…</p>
     </div>
 
-    <!-- CONTRIBUTING WRITERS -->
+    <!-- CONTRIBUTING WRITERS (everyone else) -->
     <div class="section-head">
       <h2 class="section-head__title">The <em>Contributing Bench</em></h2>
     </div>
 
-    <div class="writer-grid">
-
-      <div class="writer-card">
-        <div class="writer-card__avatar">ER</div>
-        <div class="writer-card__name">Eleanor Reyes</div>
-        <div class="writer-card__role">Lead Reviewer</div>
-        <p class="writer-card__bio">Writes the lead reviews and the early-season frontrunner pieces. Believes the Academy is at its best when it rewards patience.</p>
-      </div>
-
-      <div class="writer-card">
-        <div class="writer-card__avatar">JO</div>
-        <div class="writer-card__name">James Okafor</div>
-        <div class="writer-card__role">Critic at Large</div>
-        <p class="writer-card__bio">Covers genre, sci-fi, and the technical categories. Convinced sound design is going to win Best Picture one of these years.</p>
-      </div>
-
-      <div class="writer-card">
-        <div class="writer-card__avatar">DP</div>
-        <div class="writer-card__name">Dani Park</div>
-        <div class="writer-card__role">Musicals &amp; Festivals</div>
-        <p class="writer-card__bio">On the ground at every fall festival. Files the buzz pieces, the breakout reviews, and the obligatory musical defenses.</p>
-      </div>
-
-      <div class="writer-card">
-        <div class="writer-card__avatar">MC</div>
-        <div class="writer-card__name">Marcus Chen</div>
-        <div class="writer-card__role">Indie &amp; International</div>
-        <p class="writer-card__bio">The indie-cinema and international-feature voice on the desk. Has correctly called the International Feature winner four years running.</p>
-      </div>
-
-      <div class="writer-card">
-        <div class="writer-card__avatar">SV</div>
-        <div class="writer-card__name">Sasha Vinter</div>
-        <div class="writer-card__role">Contrarian-in-Residence</div>
-        <p class="writer-card__bio">Writes the takedowns and the lonely-hill-defenses nobody else wants. The closest thing the desk has to a value-investing strategy.</p>
-      </div>
-
-      <div class="writer-card">
-        <div class="writer-card__avatar">YN</div>
-        <div class="writer-card__name">[ Your Name ]</div>
-        <div class="writer-card__role">Contributor</div>
-        <p class="writer-card__bio">[ Replace with your bio. A sentence or two on your beat, your perspective, and your most defensible Oscar opinion. Pin a Letterboxd link if you've got one. ]</p>
-      </div>
-
+    <div class="writer-grid" data-writers-grid>
+      <!-- Populated by content.js — non-host writers -->
     </div>
 
     <!-- PITCH BLOCK -->

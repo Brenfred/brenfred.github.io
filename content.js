@@ -289,9 +289,15 @@
       kicker = parts.join(' · ');
     }
 
-    var foot = options.compact
-      ? '<div class="review-card__foot"><span class="rating">' + stars + ' <span class="rating__num">' + rating + '</span></span><span>' + esc(r.publishedDate || '') + '</span></div>'
-      : '<div class="review-card__foot"><span class="rating">' + stars + ' <span class="rating__num">' + rating + '</span></span><span>By <strong>' + esc(r.writer || '[ Writer ]') + '</strong></span></div>';
+    var foot;
+    if (options.compact) {
+      foot = '<div class="review-card__foot"><span class="rating">' + stars + ' <span class="rating__num">' + rating + '</span></span><span>' + esc(r.publishedDate || '') + '</span></div>';
+    } else {
+      var bylineStr = options.writersBySlug
+        ? bylineHTML(r, options.writersBySlug)
+        : 'By <strong>' + esc(r.writer || '[ Writer ]') + '</strong>';
+      foot = '<div class="review-card__foot"><span class="rating">' + stars + ' <span class="rating__num">' + rating + '</span></span><span>' + bylineStr + '</span></div>';
+    }
 
     // Title: italicize the film, append the rest of the headline if different
     var titleHTML;
@@ -322,7 +328,7 @@
 
   // ---- homepage review grids --------------------------------------------
 
-  function renderReviewGrids(reviews) {
+  function renderReviewGrids(reviews, writersBySlug) {
     $$('[data-reviews-grid]').forEach(function (grid) {
       var limit  = parseInt(grid.getAttribute('data-limit'), 10) || 6;
       var offset = parseInt(grid.getAttribute('data-offset'), 10) || 0;
@@ -332,24 +338,24 @@
       if (slice.length === 0) return;
       var compact = grid.classList.contains('review-grid--4');
       grid.innerHTML = slice.map(function (r) {
-        return reviewCardHTML(r, { showKicker: !compact, compact: compact });
+        return reviewCardHTML(r, { showKicker: !compact, compact: compact, writersBySlug: writersBySlug });
       }).join('\n');
     });
   }
 
   // ---- reviews archive page ---------------------------------------------
 
-  function renderReviewsArchive(reviews) {
+  function renderReviewsArchive(reviews, writersBySlug) {
     var list = $('[data-reviews-list]');
     if (!list) return;
     list.innerHTML = reviews.map(function (r) {
-      return reviewCardHTML(r, { showKicker: true, wrapText: true });
+      return reviewCardHTML(r, { showKicker: true, wrapText: true, writersBySlug: writersBySlug });
     }).join('\n');
   }
 
   // ---- homepage hero block ----------------------------------------------
 
-  function renderHero(reviews, siteSettings) {
+  function renderHero(reviews, siteSettings, writersBySlug) {
     var heroBlock = $('[data-hero-review]');
     if (!heroBlock) return;
 
@@ -402,8 +408,10 @@
     }
     var byline = $('.hero__byline', heroBlock);
     if (byline) {
-      byline.innerHTML = 'By <strong>' + esc(hero.writer || '[ Writer ]') + '</strong>'
-        + (hero.publishedDate ? ' · ' + esc(hero.publishedDate) : '');
+      var bylineStr = writersBySlug
+        ? bylineHTML(hero, writersBySlug)
+        : 'By <strong>' + esc(hero.writer || '[ Writer ]') + '</strong>';
+      byline.innerHTML = bylineStr + (hero.publishedDate ? ' · ' + esc(hero.publishedDate) : '');
     }
     var link = $('.hero__image', heroBlock);
     if (link) link.href = 'review.html?slug=' + encodeURIComponent(hero.slug);
@@ -411,7 +419,7 @@
 
   // ---- single review page -----------------------------------------------
 
-  function renderSingleReview(reviews, siteSettings) {
+  function renderSingleReview(reviews, siteSettings, writersBySlug) {
     var body = $('[data-review-body]');
     if (!body) return;
 
@@ -461,7 +469,27 @@
     if (deck) deck.textContent = review.deck || '';
 
     var writer = $('[data-review-writer]');
-    if (writer) writer.textContent = review.writer || '[ Writer ]';
+    if (writer) {
+      if (writersBySlug) {
+        var people = resolveReviewWriters(review, writersBySlug);
+        if (people.length > 0) {
+          // Build inline writers list (without "By " prefix — the page already has it)
+          var parts = people.map(function (p) {
+            if (p._freetext || !p.slug) return '<strong>' + esc(p.name) + '</strong>';
+            return '<a href="writer.html?slug=' + encodeURIComponent(p.slug) + '" class="byline-link"><strong>' + esc(p.name) + '</strong></a>';
+          });
+          var bylineStr;
+          if (parts.length === 1) bylineStr = parts[0];
+          else if (parts.length === 2) bylineStr = parts[0] + ' & ' + parts[1];
+          else bylineStr = parts.slice(0, -1).join(', ') + ', & ' + parts[parts.length - 1];
+          writer.innerHTML = bylineStr;
+        } else {
+          writer.textContent = review.writer || '[ Writer ]';
+        }
+      } else {
+        writer.textContent = review.writer || '[ Writer ]';
+      }
+    }
 
     var date = $('[data-review-date]');
     if (date) date.textContent = review.publishedDate || '';
@@ -796,7 +824,7 @@
 
   // ---- Film detail page (film.html?slug=...) ----------------------------
 
-  function renderFilmDetail(categories, films, reviews) {
+  function renderFilmDetail(categories, films, reviews, writersBySlug) {
     var profile = $('[data-film-profile]');
     if (!profile) return;
 
@@ -876,7 +904,243 @@
         articlesEl.innerHTML = '<p style="color: var(--ink-faded); text-align: center; padding: 1rem 0; grid-column: 1 / -1;">No articles tagged with this film yet.</p>';
       } else {
         articlesEl.innerHTML = tagged.map(function (r) {
-          return reviewCardHTML(r, { showKicker: true });
+          return reviewCardHTML(r, { showKicker: true, writersBySlug: writersBySlug });
+        }).join('\n');
+      }
+    }
+  }
+
+  // ============================================================
+  //  WRITERS — writer records + writer detail page + directory
+  // ============================================================
+
+  function fetchAllWriters() {
+    var cfg = repoConfig();
+    var apiUrl = 'https://api.github.com/repos/' + cfg.repo
+               + '/contents/content/writers?ref=' + cfg.branch;
+    return fetch(apiUrl, { cache: 'no-cache' }).then(function (r) {
+      if (!r.ok) throw new Error('GitHub API writers/ failed: ' + r.status);
+      return r.json();
+    }).then(function (files) {
+      var jsonFiles = files.filter(function (f) { return f.name && f.name.endsWith('.json'); });
+      return Promise.all(jsonFiles.map(function (f) {
+        return fetchText(f.download_url).then(function (txt) {
+          var data = JSON.parse(txt);
+          data.slug = data.slug || f.name.replace(/\.json$/, '');
+          return data;
+        });
+      }));
+    }).catch(function (err) {
+      // If no writers/ folder yet, return empty so pages still work
+      if (window.console) console.warn('[content] no writers:', err.message);
+      return [];
+    });
+  }
+
+  // Build initials for monogram-style avatar fallbacks
+  function writerInitials(name) {
+    if (!name) return '?';
+    var parts = name.replace(/[\[\]]/g, '').trim().split(/\s+/);
+    if (parts.length === 1) return (parts[0][0] || '?').toUpperCase();
+    return ((parts[0][0] || '') + (parts[parts.length - 1][0] || '')).toUpperCase();
+  }
+
+  // Render an avatar — headshot if available, monogram fallback
+  function writerAvatarHTML(writer, klass) {
+    klass = klass || 'writer-card__avatar';
+    var slug = writer.headshotSlug || writer.slug;
+    var src = 'headshots/' + slug + '.jpg';
+    // <img> with monogram-fallback via onerror
+    return '<div class="' + klass + '">' +
+      '<img src="' + esc(src) + '" alt="' + esc(writer.name || '') + '" class="' + klass + '-img" onerror="this.style.display=\'none\'; this.parentNode.classList.add(\'' + klass + '--no-img\')">' +
+      '<span class="' + klass + '-monogram">' + esc(writerInitials(writer.name)) + '</span>' +
+    '</div>';
+  }
+
+  // Resolve a review's writers (slugs) to writer records.
+  // Falls back to a synthetic "freetext" writer if only the old `writer` field is set.
+  function resolveReviewWriters(review, writersBySlug) {
+    var slugs = Array.isArray(review.writers) ? review.writers : [];
+    var resolved = slugs.map(function (s) { return writersBySlug[s]; }).filter(Boolean);
+    if (resolved.length > 0) return resolved;
+    // Fallback: use the old `writer` free-text field
+    if (review.writer) {
+      return [{ name: review.writer, slug: null, _freetext: true }];
+    }
+    return [];
+  }
+
+  // Compose a clickable byline string (HTML) for cards/articles
+  function bylineHTML(review, writersBySlug) {
+    var people = resolveReviewWriters(review, writersBySlug);
+    if (people.length === 0) return 'By <strong>[ Writer ]</strong>';
+    var parts = people.map(function (p) {
+      if (p._freetext || !p.slug) return '<strong>' + esc(p.name) + '</strong>';
+      return '<a href="writer.html?slug=' + encodeURIComponent(p.slug) +
+             '" class="byline-link"><strong>' + esc(p.name) + '</strong></a>';
+    });
+    if (parts.length === 1) return 'By ' + parts[0];
+    if (parts.length === 2) return 'By ' + parts[0] + ' & ' + parts[1];
+    return 'By ' + parts.slice(0, -1).join(', ') + ', & ' + parts[parts.length - 1];
+  }
+
+  // ---- writers.html — directory page ----------------------------------
+
+  function renderWritersDirectory(writers, reviews) {
+    var hostsContainer = $('[data-writers-hosts]');
+    var gridContainer  = $('[data-writers-grid]');
+    var countEl        = $('[data-writers-count]');
+
+    if (!hostsContainer && !gridContainer) return;
+
+    // Split: anyone whose role contains "Host" is a host, others are contributors
+    var hosts = writers.filter(function (w) {
+      return (w.role || '').toLowerCase().indexOf('host') !== -1;
+    });
+    var contributors = writers.filter(function (w) {
+      return (w.role || '').toLowerCase().indexOf('host') === -1;
+    });
+
+    // Sort each group alphabetically by name
+    function nameCmp(a, b) { return (a.name || '').localeCompare(b.name || ''); }
+    hosts.sort(nameCmp);
+    contributors.sort(nameCmp);
+
+    if (countEl) {
+      countEl.textContent = hosts.length + ' host' + (hosts.length !== 1 ? 's' : '') +
+                            ' · ' + contributors.length + ' contributor' + (contributors.length !== 1 ? 's' : '');
+    }
+
+    // Article counts per writer (used in tiles)
+    var counts = {};
+    reviews.forEach(function (r) {
+      (r.writers || []).forEach(function (s) {
+        counts[s] = (counts[s] || 0) + 1;
+      });
+    });
+
+    // ---- Hosts: bigger horizontal cards with bio ----
+    if (hostsContainer) {
+      if (hosts.length === 0) {
+        hostsContainer.innerHTML = '<p style="color: var(--ink-faded); padding: 1rem 0;">No hosts added yet. Create a writer in the CMS with "Host" in their role.</p>';
+      } else {
+        hostsContainer.innerHTML = hosts.map(function (w) {
+          var avatar = writerAvatarHTML(w, 'host__avatar');
+          var href = 'writer.html?slug=' + encodeURIComponent(w.slug);
+          return '<a href="' + href + '" class="host">' +
+            avatar +
+            '<div>' +
+              '<div class="host__role">' + esc(w.role || '') + '</div>' +
+              '<h3 class="host__name">' + esc(w.name || '') + '</h3>' +
+              '<p class="host__bio">' + esc(w.bio || '') + '</p>' +
+            '</div>' +
+          '</a>';
+        }).join('');
+      }
+    }
+
+    // ---- Contributors: smaller card grid ----
+    if (gridContainer) {
+      if (contributors.length === 0) {
+        gridContainer.innerHTML = '<p style="color: var(--ink-faded); padding: 1rem 0; grid-column: 1 / -1;">No contributing writers yet.</p>';
+      } else {
+        gridContainer.innerHTML = contributors.map(function (w) {
+          var avatar = writerAvatarHTML(w, 'writer-card__avatar');
+          var n = counts[w.slug] || 0;
+          var href = 'writer.html?slug=' + encodeURIComponent(w.slug);
+          return '<a href="' + href + '" class="writer-card">' +
+            avatar +
+            '<div class="writer-card__name">' + esc(w.name || '') + '</div>' +
+            '<div class="writer-card__role">' + esc(w.role || '') + '</div>' +
+            '<p class="writer-card__bio">' + esc(w.bio || '') + '</p>' +
+            (n > 0 ? '<div class="writer-card__count">' + n + ' article' + (n !== 1 ? 's' : '') + '</div>' : '') +
+          '</a>';
+        }).join('');
+      }
+    }
+  }
+
+  // ---- writer.html — detail page ---------------------------------------
+
+  function renderWriterDetail(writers, reviews) {
+    var profile = $('[data-writer-profile]');
+    if (!profile) return;
+
+    var params = new URLSearchParams(window.location.search);
+    var slug = params.get('slug') || '';
+    var writer = writers.find(function (w) { return w.slug === slug; });
+    if (!writer) {
+      profile.innerHTML = '<p style="text-align:center;padding:3rem 0;">Writer not found.</p>';
+      return;
+    }
+
+    document.title = (writer.name || 'Writer') + ' — Fantasy Filmball';
+    var nameEl = $('[data-writer-name]');
+    if (nameEl) nameEl.textContent = writer.name || '';
+
+    var avatar = writerAvatarHTML(writer, 'writer-profile__avatar');
+
+    // Longer bio: if longBio missing, fall back to bio
+    var longBio = writer.longBio || writer.bio || '';
+    var bioHTML = longBio.split(/\n\s*\n/).filter(function (p) {
+      return p.trim().length > 0;
+    }).map(function (p) {
+      return '<p>' + esc(p.replace(/\n/g, ' ')) + '</p>';
+    }).join('');
+
+    var pullQuote = writer.pullQuote
+      ? '<blockquote class="writer-profile__quote">' + esc(writer.pullQuote) + '</blockquote>'
+      : '';
+
+    var meta = [];
+    if (writer.joinedDate)  meta.push('<dt>Joined</dt><dd>' + esc(writer.joinedDate) + '</dd>');
+    if (writer.twitter)     meta.push('<dt>Twitter / X</dt><dd>' + esc(writer.twitter) + '</dd>');
+    if (writer.letterboxd)  meta.push('<dt>Letterboxd</dt><dd>' + esc(writer.letterboxd) + '</dd>');
+
+    var favorites = Array.isArray(writer.favorites) && writer.favorites.length
+      ? '<div class="writer-profile__favorites">' +
+          '<div class="writer-profile__fav-title">Films on the desk</div>' +
+          '<ul>' + writer.favorites.map(function (f) {
+            return '<li><em>' + esc(f) + '</em></li>';
+          }).join('') + '</ul>' +
+        '</div>'
+      : '';
+
+    profile.innerHTML =
+      '<div class="writer-profile__grid">' +
+        '<div class="writer-profile__head">' +
+          avatar +
+          '<div class="kicker kicker--gold">★ ' + esc(writer.shortRole || writer.role || 'Writer') + ' ★</div>' +
+          '<h1 class="writer-profile__title">' + esc(writer.name || '') + '</h1>' +
+          '<div class="writer-profile__role">' + esc(writer.role || '') + '</div>' +
+        '</div>' +
+        '<div class="writer-profile__body">' +
+          pullQuote +
+          '<div class="prose">' + bioHTML + '</div>' +
+          (meta.length ? '<dl class="writer-profile__meta">' + meta.join('') + '</dl>' : '') +
+          favorites +
+        '</div>' +
+      '</div>';
+
+    // Filter reviews to those authored by this writer
+    var writersBySlug = {};
+    writers.forEach(function (w) { writersBySlug[w.slug] = w; });
+    var byThisWriter = reviews.filter(function (r) {
+      return Array.isArray(r.writers) && r.writers.indexOf(writer.slug) !== -1;
+    });
+
+    var countEl = $('[data-writer-count]');
+    if (countEl) {
+      countEl.textContent = byThisWriter.length + ' article' + (byThisWriter.length !== 1 ? 's' : '');
+    }
+
+    var articlesEl = $('[data-writer-articles]');
+    if (articlesEl) {
+      if (byThisWriter.length === 0) {
+        articlesEl.innerHTML = '<p style="color: var(--ink-faded); text-align: center; padding: 1rem 0; grid-column: 1 / -1;">No articles by this writer yet.</p>';
+      } else {
+        articlesEl.innerHTML = byThisWriter.map(function (r) {
+          return reviewCardHTML(r, { showKicker: true, writersBySlug: writersBySlug });
         }).join('\n');
       }
     }
@@ -904,27 +1168,29 @@
       renderVideoEmbed(site.youtubeVideoId);
     }
 
-    // ---- Reviews system -----
+    // ---- Detect what this page needs (so we don't over-fetch) -----
     var needsReviews =
       document.querySelector('[data-hero-review]') ||
       document.querySelector('[data-reviews-grid]') ||
       document.querySelector('[data-reviews-list]') ||
-      document.querySelector('[data-review-body]');
+      document.querySelector('[data-review-body]') ||
+      document.querySelector('[data-film-articles]') ||
+      document.querySelector('[data-writer-articles]') ||
+      document.querySelector('[data-writers-hosts]') ||
+      document.querySelector('[data-writers-grid]') ||
+      document.querySelector('[data-writer-profile]');
 
-    var reviewsPromise = needsReviews
-      ? fetchAllReviews().then(function (reviews) {
-          renderHero(reviews, site);
-          renderReviewGrids(reviews);
-          renderReviewsArchive(reviews);
-          renderSingleReview(reviews, site);
-          return reviews;
-        }).catch(function (err) {
-          if (window.console) console.warn('[content] reviews load failed:', err);
-          return [];
-        })
-      : Promise.resolve([]);
+    var needsWriters =
+      document.querySelector('[data-writers-hosts]') ||
+      document.querySelector('[data-writers-grid]') ||
+      document.querySelector('[data-writer-profile]') ||
+      // Also load writers wherever review bylines need to be clickable:
+      document.querySelector('[data-hero-review]') ||
+      document.querySelector('[data-reviews-grid]') ||
+      document.querySelector('[data-reviews-list]') ||
+      document.querySelector('[data-review-body]') ||
+      document.querySelector('[data-film-articles]');
 
-    // ---- Oscar Race + categories + films -----
     var needsRace =
       document.querySelector('[data-categories-grid]') ||
       document.querySelector('[data-films-grid]') ||
@@ -932,26 +1198,57 @@
       document.querySelector('[data-category-detail]') ||
       document.querySelector('[data-film-profile]');
 
-    if (needsRace) {
-      Promise.all([
-        fetchAllCategories(),
-        fetchAllFilms(),
-        reviewsPromise
-      ]).then(function (data) {
-        var categories = data[0];
-        var films = data[1];
-        var reviews = data[2];
+    // ---- Fetch reviews and writers in parallel -----
+    var reviewsPromise = needsReviews
+      ? fetchAllReviews().catch(function (err) {
+          if (window.console) console.warn('[content] reviews load failed:', err);
+          return [];
+        })
+      : Promise.resolve([]);
 
-        renderCategoriesGrid(categories, films);
-        if (current && previous) {
-          renderFilmsSection(current, previous, categories, films);
-        }
-        renderCategoryDetail(categories, films, reviews);
-        renderFilmDetail(categories, films, reviews);
-      }).catch(function (err) {
-        if (window.console) console.warn('[content] race load failed:', err);
-      });
-    }
+    var writersPromise = needsWriters
+      ? fetchAllWriters().catch(function (err) {
+          if (window.console) console.warn('[content] writers load failed:', err);
+          return [];
+        })
+      : Promise.resolve([]);
+
+    // ---- Once we have both, render every dependent page region -----
+    Promise.all([reviewsPromise, writersPromise]).then(function (data) {
+      var reviews = data[0];
+      var writers = data[1];
+
+      var writersBySlug = {};
+      writers.forEach(function (w) { writersBySlug[w.slug] = w; });
+
+      // Reviews-driven regions
+      if (needsReviews) {
+        renderHero(reviews, site, writersBySlug);
+        renderReviewGrids(reviews, writersBySlug);
+        renderReviewsArchive(reviews, writersBySlug);
+        renderSingleReview(reviews, site, writersBySlug);
+      }
+
+      // Writers-driven regions
+      renderWritersDirectory(writers, reviews);
+      renderWriterDetail(writers, reviews);
+
+      // Race-driven regions (need films + categories too)
+      if (needsRace) {
+        Promise.all([fetchAllCategories(), fetchAllFilms()]).then(function (raceData) {
+          var categories = raceData[0];
+          var films = raceData[1];
+          renderCategoriesGrid(categories, films);
+          if (current && previous) {
+            renderFilmsSection(current, previous, categories, films);
+          }
+          renderCategoryDetail(categories, films, reviews);
+          renderFilmDetail(categories, films, reviews, writersBySlug);
+        }).catch(function (err) {
+          if (window.console) console.warn('[content] race load failed:', err);
+        });
+      }
+    });
   }).catch(function (err) {
     if (window.console) console.warn('[content] init failed:', err);
   });
