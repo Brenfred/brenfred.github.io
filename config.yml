@@ -1,0 +1,276 @@
+# ============================================================================
+# FANTASY FILMBALL — Decap CMS Configuration
+# This file defines what you see in the admin panel at /admin
+# Each "collection" becomes a section in the admin sidebar.
+# ============================================================================
+
+backend:
+  name: github
+  repo: Brenfred/brenfred.github.io   # Your GitHub repo
+  branch: main
+  # Our own OAuth proxy (Cloudflare Worker)
+  base_url: https://filmball-oauth.brad-derfner.workers.dev
+  # Commit messages that show up in GitHub
+  commit_messages:
+    create: "Add {{collection}} '{{slug}}'"
+    update: "Update {{collection}} '{{slug}}'"
+    delete: "Remove {{collection}} '{{slug}}'"
+    uploadMedia: "Upload poster '{{path}}'"
+    deleteMedia: "Remove poster '{{path}}'"
+
+# Where uploaded poster images go
+media_folder: "posters"
+public_folder: "/posters"
+
+# Open the editor in a side-by-side view (form on left, preview on right)
+editor:
+  preview: false
+
+# Use simple slug rules for filenames (lowercase, hyphens)
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+# ----------------------------------------------------------------------------
+# COLLECTIONS — each one becomes a sidebar entry in the admin UI
+# ----------------------------------------------------------------------------
+collections:
+
+  # ─── Site Settings ─────────────────────────────────────────────────────────
+  # Single record (a "file collection"). Edits global stuff like the hero film
+  # and the current YouTube video.
+  - name: "site"
+    label: "📺 Site Settings"
+    description: "The latest YouTube episode and which review is the current homepage hero."
+    files:
+      - name: "settings"
+        label: "Site Settings"
+        file: "content/site.json"
+        fields:
+          - { name: "youtubeVideoId", label: "Latest YouTube Video ID", widget: "string",
+              hint: "Just the ID — the part after 'v=' in a YouTube URL. Example: Yxvdm3Y4HfI" }
+          - { name: "heroReviewSlug", label: "Homepage Hero — review slug", widget: "string",
+              hint: "Match the filename of a review without .md. Example: the-odyssey" }
+          - { name: "rankingsDate", label: "Rankings — display date", widget: "string",
+              hint: "e.g. 'April 3, 2026'" }
+          - { name: "rankingsLabel", label: "Rankings — short label", widget: "string",
+              hint: "Appears in the widget header. e.g. 'Updated April 3'" }
+
+  # ─── Best Picture Rankings ─────────────────────────────────────────────────
+  # WORKFLOW: To update rankings with movement arrows:
+  #   1. Open "Previous Snapshot" → click "Copy Current to Previous" button at top
+  #      (or manually paste in last week's values)
+  #   2. Then open "Current Rankings" → edit, publish
+  # Movement arrows compute automatically from the diff.
+  - name: "rankings"
+    label: "📊 Best Picture Rankings"
+    description: "The Top 20 list shown in the ticker and homepage widget. Movement arrows (▲▼—NEW) compute automatically by comparing Current vs Previous Snapshot. Workflow: BEFORE editing Current, copy the existing Current values into Previous Snapshot first."
+    files:
+      - name: "current"
+        label: "Current Rankings (Top 20)"
+        file: "content/rankings.json"
+        fields:
+          - { name: "updatedDate", label: "Date Label", widget: "string",
+              hint: "e.g. 'April 3, 2026' — appears in the widget" }
+          - { name: "cutoffRank", label: "Nominee Cutoff Rank", widget: "number",
+              default: 10, hint: "Where the dashed line lands (usually 10)" }
+          - name: "films"
+            label: "Top 20 Films"
+            label_singular: "Film"
+            widget: "list"
+            summary: "{{fields.rank}}. {{fields.title}} — {{fields.nomPct}}"
+            fields:
+              - { name: "rank",   label: "Rank",   widget: "number", value_type: "int", min: 1, max: 20 }
+              - { name: "title",  label: "Title",  widget: "string" }
+              - { name: "nomPct", label: "Nom %", widget: "string", hint: "e.g. '95%'" }
+      - name: "previous"
+        label: "Previous Snapshot (read-only reference)"
+        file: "content/rankings-previous.json"
+        fields:
+          - { name: "updatedDate", label: "Date Label", widget: "string" }
+          - { name: "cutoffRank", label: "Cutoff", widget: "number" }
+          - name: "films"
+            label: "Films"
+            widget: "list"
+            summary: "{{fields.rank}}. {{fields.title}}"
+            fields:
+              - { name: "rank",   label: "Rank",   widget: "number", value_type: "int" }
+              - { name: "title",  label: "Title",  widget: "string" }
+              - { name: "nomPct", label: "Nom %", widget: "string" }
+
+  # ─── Writers ───────────────────────────────────────────────────────────────
+  # One JSON file per writer. Reviews then "tag" writers via a multi-select
+  # relation field, so every byline points at a real profile page.
+  - name: "writers"
+    label: "✍️ Writers"
+    description: "One record per writer. Hosts have 'Host' in their role and appear in the Hosts section of writers.html; everyone else is a Contributor."
+    folder: "content/writers"
+    create: true
+    delete: true
+    extension: "json"
+    format: "json"
+    slug: "{{fields.slug}}"
+    identifier_field: "slug"
+    summary: "{{fields.name}} — {{fields.role}}"
+    media_folder: "/headshots"
+    public_folder: "/headshots"
+    fields:
+      - { name: "name", label: "Full Name", widget: "string", hint: "e.g. 'Brad Derfner'" }
+      - { name: "slug", label: "Slug (URL identifier)", widget: "string",
+          hint: "Lowercase, hyphens, no spaces. e.g. 'brad-derfner'. This is the filename and the URL: writer.html?slug=brad-derfner. Don't change after creation — review references will break." }
+      - { name: "role", label: "Full Role", widget: "string", default: "Contributor",
+          hint: "e.g. 'Editor & Co-host', 'Critic at Large'. If it contains the word 'Host', the writer appears in the Hosts section of writers.html." }
+      - { name: "shortRole", label: "Short Role (used as kicker)", widget: "string", required: false, default: "Writer",
+          hint: "Short version for the writer page kicker. e.g. 'Editor', 'Critic'." }
+      - { name: "bio", label: "Short Bio", widget: "text",
+          hint: "2-3 sentences shown on writers.html and as the meta description." }
+      - { name: "longBio", label: "Long Bio (writer page)", widget: "text", required: false,
+          hint: "Multi-paragraph bio shown on the writer's detail page. Separate paragraphs with blank lines. Falls back to Short Bio if empty." }
+      - { name: "pullQuote", label: "Pull Quote (optional)", widget: "string", required: false,
+          hint: "An optional signature quote that appears at the top of the writer's detail page." }
+      - { name: "headshot", label: "Headshot", widget: "image", required: false,
+          hint: "Upload a square JPG or PNG. Recommended size: 400×400px or larger. If you don't upload one, a typographic monogram (initials) shows instead." }
+      - name: "favorites"
+        label: "Films on the desk (favorites)"
+        widget: "list"
+        required: false
+        default: []
+        hint: "A short list of films that capture this writer's taste. Shown on their detail page."
+        field: { name: "title", label: "Film", widget: "string" }
+      - { name: "twitter", label: "Twitter / X", widget: "string", required: false,
+          hint: "Either a handle ('@brad' or 'brad') or a full URL ('https://x.com/brad'). Will auto-link." }
+      - { name: "letterboxd", label: "Letterboxd", widget: "string", required: false,
+          hint: "Either a handle ('Dyl_' or '@Dyl_') or a full URL ('https://letterboxd.com/Dyl_'). Will auto-link." }
+      - { name: "joinedDate", label: "Joined", widget: "string", required: false, default: "2024", hint: "Year or month/year." }
+
+  # ─── Reviews ───────────────────────────────────────────────────────────────
+  # A folder collection — one Markdown file per review. The CMS gives you a
+  # "+ New Review" button that creates a new file in this folder.
+  - name: "reviews"
+    label: "📝 Reviews"
+    description: "One file per review. Click '+ New Review' to add one."
+    folder: "content/reviews"
+    create: true
+    delete: true
+    slug: "{{fields.posterSlug}}"
+    summary: "{{fields.film}} — {{fields.stanceLabel}} ({{fields.rating}}/5)"
+    fields:
+      - { name: "title",    label: "Review Headline", widget: "string",
+          hint: "The big headline. e.g. 'The Odyssey takes the early lead'" }
+      - { name: "film",     label: "Film Title", widget: "string" }
+      - { name: "director", label: "Director", widget: "string", required: false }
+      - { name: "studio",   label: "Studio / Distributor", widget: "string", required: false }
+      - { name: "runtime",  label: "Runtime", widget: "string", required: false, hint: "e.g. '168 min'" }
+      - { name: "genre",    label: "Genre", widget: "string", required: false }
+      - { name: "rating",   label: "Rating (out of 5)", widget: "number", value_type: "float",
+          min: 0, max: 5, step: 0.5, default: 4.0 }
+      - name: "stance"
+        label: "Stock Stance"
+        widget: "select"
+        options: ["buy", "hold", "sell"]
+        default: "buy"
+        hint: "Drives the green/yellow/red badge color"
+      - { name: "stanceLabel", label: "Stance Label", widget: "string", default: "Buy",
+          hint: "e.g. 'Strong Buy', 'Buy', 'Hold', 'Sell', 'Strong Sell'" }
+      - { name: "posterSlug", label: "Poster filename (no extension)", widget: "string",
+          hint: "e.g. 'the-odyssey' — must match a file in /posters/" }
+      - { name: "writer", label: "Legacy Writer Byline (fallback only)", widget: "string", default: "[ Writer ]", required: false,
+          hint: "Old free-text field. Used only if 'Writers' below is empty. Prefer the multi-select Writers field." }
+      - name: "writers"
+        label: "Writers"
+        widget: "relation"
+        collection: "writers"
+        value_field: "slug"
+        search_fields: ["name", "role"]
+        display_fields: ["name", "role"]
+        multiple: true
+        required: false
+        hint: "Pick one or more writers from the Writers collection. Their bylines will link to their detail pages."
+      - { name: "publishedDate", label: "Published Date", widget: "string",
+          hint: "e.g. 'April 3, 2026'" }
+      - { name: "deck", label: "Subheadline (Hero/Single Review)", widget: "text",
+          hint: "2-3 sentences. Shown under the headline on the single review page and the homepage hero block. Can be longer." }
+      - { name: "excerpt", label: "Tagline (Card Blurb)", widget: "string", required: false,
+          hint: "ONE short sentence — under ~120 characters. Shown on review cards in the home grid, archive list, and tagged-film pages. KEEP THIS BRIEF — don't paste the body here." }
+      - { name: "isHero", label: "Mark as Homepage Hero", widget: "boolean",
+          default: false,
+          hint: "Only one review should be marked as hero at a time" }
+      - name: "tags"
+        label: "Film Tags"
+        widget: "list"
+        required: false
+        default: []
+        hint: "Slugs of films this article mentions (e.g. the-odyssey, digger). Tagged films show this article on their detail page."
+        field: { name: "slug", label: "Film Slug", widget: "string" }
+      - { name: "body", label: "Review Body", widget: "markdown",
+          hint: "Paste your review prose here. Paragraphs are separated by blank lines." }
+
+  # ─── Films ─────────────────────────────────────────────────────────────────
+  # Master record per tracked film. Used by Oscar Race page and category pages
+  # to look up titles, posters, directors, etc.
+  - name: "films"
+    label: "🎬 Films"
+    description: "Master record per tracked film. Add a new file here whenever a new film enters the conversation."
+    folder: "content/films"
+    create: true
+    delete: true
+    extension: "json"
+    format: "json"
+    slug: "{{fields.posterSlug}}"
+    summary: "{{fields.title}}"
+    fields:
+      - { name: "title",       label: "Film Title", widget: "string" }
+      - { name: "director",    label: "Director", widget: "string", required: false }
+      - { name: "studio",      label: "Studio / Distributor", widget: "string", required: false }
+      - { name: "posterSlug",  label: "Poster filename (no extension)", widget: "string",
+          hint: "e.g. 'the-odyssey' — must match a file in /posters/" }
+      - { name: "releaseDate", label: "Release Date", widget: "string", required: false }
+      - { name: "runtime",     label: "Runtime", widget: "string", required: false }
+
+  # ─── Category Rankings ─────────────────────────────────────────────────────
+  # 8 separate "Current + Previous" pairs for each Oscar category. The Oscar
+  # Race page reads these. Movement arrows are computed by diffing current vs
+  # previous, same as the Best Picture rankings.
+  - name: "categories"
+    label: "🏅 Category Rankings"
+    description: "Top 10 per category. Movement arrows compare Current vs Previous Snapshot. Before editing Current, copy values to Previous (or use /admin/snapshot-categories.html for one-click)."
+    files:
+      - { name: "picture-current",          label: "🏆 Best Picture · CURRENT",         file: "content/categories/picture.json",                  fields: &cat_fields [
+            { name: "label",      label: "Full Label",  widget: "string" },
+            { name: "shortLabel", label: "Short Label", widget: "string" },
+            { name: "cutoffRank", label: "Cutoff Rank (where the line is)", widget: "number", default: 5, hint: "Where the predicted-cutoff line is drawn. 5 for most categories, 10 for Best Picture (10 nominees)." },
+            { name: "films", label: "Films (top 10 — top 20 for Best Picture)", widget: "list", summary: "{{fields.rank}}. {{fields.subtitle}}",
+              fields: [
+                { name: "rank",     label: "Rank",     widget: "number", value_type: "int", min: 1, max: 20 },
+                { name: "filmSlug", label: "Film Slug", widget: "string", required: false,
+                  hint: "Match a film file in /content/films/ — e.g. 'the-odyssey'" },
+                { name: "subtitle", label: "Display Text", widget: "string",
+                  hint: "For acting categories, the performer's name. For others, can be the director or left blank." },
+                { name: "nomPct", label: "Nom %", widget: "string", required: false, hint: "e.g. '95%'" },
+                { name: "winPct", label: "Win %", widget: "string", required: false, hint: "e.g. '38%'" }
+              ]
+            }
+          ] }
+      - { name: "picture-previous",         label: "🏆 Best Picture · Previous Snapshot", file: "content/categories-previous/picture.json", fields: *cat_fields }
+
+      - { name: "director-current",         label: "🎬 Best Director · CURRENT",         file: "content/categories/director.json",                 fields: *cat_fields }
+      - { name: "director-previous",        label: "🎬 Best Director · Previous Snapshot", file: "content/categories-previous/director.json", fields: *cat_fields }
+
+      - { name: "actress-current",          label: "👩 Best Actress · CURRENT",          file: "content/categories/actress.json",                  fields: *cat_fields }
+      - { name: "actress-previous",         label: "👩 Best Actress · Previous Snapshot", file: "content/categories-previous/actress.json",   fields: *cat_fields }
+
+      - { name: "actor-current",            label: "👨 Best Actor · CURRENT",            file: "content/categories/actor.json",                    fields: *cat_fields }
+      - { name: "actor-previous",           label: "👨 Best Actor · Previous Snapshot",  file: "content/categories-previous/actor.json",     fields: *cat_fields }
+
+      - { name: "supp-actress-current",     label: "🥈 Supp. Actress · CURRENT",         file: "content/categories/supp-actress.json",             fields: *cat_fields }
+      - { name: "supp-actress-previous",    label: "🥈 Supp. Actress · Previous Snapshot", file: "content/categories-previous/supp-actress.json", fields: *cat_fields }
+
+      - { name: "supp-actor-current",       label: "🥈 Supp. Actor · CURRENT",           file: "content/categories/supp-actor.json",               fields: *cat_fields }
+      - { name: "supp-actor-previous",      label: "🥈 Supp. Actor · Previous Snapshot", file: "content/categories-previous/supp-actor.json", fields: *cat_fields }
+
+      - { name: "orig-screenplay-current",  label: "✍️ Original Screenplay · CURRENT",   file: "content/categories/orig-screenplay.json",          fields: *cat_fields }
+      - { name: "orig-screenplay-previous", label: "✍️ Original Screenplay · Previous Snapshot", file: "content/categories-previous/orig-screenplay.json", fields: *cat_fields }
+
+      - { name: "adapt-screenplay-current", label: "📜 Adapted Screenplay · CURRENT",    file: "content/categories/adapt-screenplay.json",         fields: *cat_fields }
+      - { name: "adapt-screenplay-previous",label: "📜 Adapted Screenplay · Previous Snapshot", file: "content/categories-previous/adapt-screenplay.json", fields: *cat_fields }
