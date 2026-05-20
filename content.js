@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v3-yaml-lists)
+   FANTASY FILMBALL — content.js (v4-writer-debug)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -319,16 +319,28 @@
 
   function fetchAllReviews() {
     return fetchReviewList().then(function (list) {
+      // Each fetch+parse is independently wrapped — a single failure won't
+      // sink the entire batch. We collect successes and warn on failures.
       return Promise.all(list.map(function (item) {
         return fetchText(item.downloadUrl).then(function (md) {
-          var parsed = parseFrontMatter(md);
-          return Object.assign(
-            { slug: item.slug, _sha: item.sha },
-            parsed.meta,
-            { body: parsed.body }
-          );
+          try {
+            var parsed = parseFrontMatter(md);
+            return Object.assign(
+              { slug: item.slug, _sha: item.sha },
+              parsed.meta,
+              { body: parsed.body }
+            );
+          } catch (err) {
+            if (window.console) console.error('[content] failed to parse ' + item.slug + ':', err);
+            return null;
+          }
+        }).catch(function (err) {
+          if (window.console) console.error('[content] failed to fetch ' + item.slug + ':', err);
+          return null;
         });
-      }));
+      })).then(function (results) {
+        return results.filter(function (r) { return r !== null; });
+      });
     }).then(function (reviews) {
       // Sort newest-first. Order of preference:
       //   1. Reviews with a publishable hero flag float to the top
@@ -551,7 +563,7 @@
         if (people.length > 0) {
           // Build inline writers list (without "By " prefix — the page already has it)
           var parts = people.map(function (p) {
-            if (p._freetext || !p.slug) return '<strong>' + esc(p.name) + '</strong>';
+            if (p._freetext || p._missing || !p.slug) return '<strong>' + esc(p.name) + '</strong>';
             return '<a href="writer.html?slug=' + encodeURIComponent(p.slug) + '" class="byline-link"><strong>' + esc(p.name) + '</strong></a>';
           });
           var bylineStr;
@@ -1037,7 +1049,18 @@
   // Falls back to a synthetic "freetext" writer if only the old `writer` field is set.
   function resolveReviewWriters(review, writersBySlug) {
     var slugs = Array.isArray(review.writers) ? review.writers : [];
-    var resolved = slugs.map(function (s) { return writersBySlug[s]; }).filter(Boolean);
+    var resolved = [];
+    slugs.forEach(function (s) {
+      if (writersBySlug[s]) {
+        resolved.push(writersBySlug[s]);
+      } else if (window.console) {
+        console.warn('[content] writer slug not found: "' + s + '" (referenced by review "' +
+          review.slug + '"). Available writers: ' +
+          Object.keys(writersBySlug).join(', '));
+        // Show the slug itself so the bug is visible in the UI, not hidden as [ Writer ]
+        resolved.push({ name: '[' + s + ']', slug: null, _missing: true });
+      }
+    });
     if (resolved.length > 0) return resolved;
     // Fallback: use the old `writer` free-text field
     if (review.writer) {
@@ -1051,7 +1074,7 @@
     var people = resolveReviewWriters(review, writersBySlug);
     if (people.length === 0) return 'By <strong>[ Writer ]</strong>';
     var parts = people.map(function (p) {
-      if (p._freetext || !p.slug) return '<strong>' + esc(p.name) + '</strong>';
+      if (p._freetext || p._missing || !p.slug) return '<strong>' + esc(p.name) + '</strong>';
       return '<a href="writer.html?slug=' + encodeURIComponent(p.slug) +
              '" class="byline-link"><strong>' + esc(p.name) + '</strong></a>';
     });
@@ -1228,7 +1251,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v3-yaml-lists loaded');
+  if (window.console) console.log('[content.js] v4-writer-debug loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
