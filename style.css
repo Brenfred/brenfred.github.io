@@ -2308,3 +2308,21 @@ a.host:hover .host__name { color: var(--gold); }
   margin: 0;
   line-height: 1.4;
 }
+
+/* =========================================================================
+   DEFENSIVE: ensure review-list cards always render side-by-side, even if
+   other CSS or page wrapping changes affect the grid.
+   ========================================================================= */
+.review-list .review-card {
+  display: grid !important;
+  grid-template-columns: 180px 1fr !important;
+  align-items: start;
+}
+.review-list .review-card > div:not(.review-card__image) {
+  min-width: 0;  /* prevent flex/grid overflow from text content */
+}
+@media (max-width: 600px) {
+  .review-list .review-card {
+    grid-template-columns: 110px 1fr !important;
+  }
+}

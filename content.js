@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v7-headshot-upload)
+   FANTASY FILMBALL — content.js (v8-yaml-blocks)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -123,55 +123,97 @@
     function parseInlineList(val) {
       var inner = val.trim().slice(1, -1).trim();
       if (inner === '') return [];
-      // Naive comma-split; quoted strings with commas would be a corner case we don't need.
       return inner.split(',').map(function (item) { return parseScalar(item); });
+    }
+
+    // Collect indented continuation lines (after a key with a value on same
+    // line OR a block scalar indicator) — they all start with whitespace.
+    function collectIndented(startIdx) {
+      var collected = [];
+      var k = startIdx;
+      while (k < lines.length) {
+        var nextLine = lines[k];
+        if (nextLine === '') { collected.push(''); k++; continue; }
+        if (!/^\s/.test(nextLine)) break;     // new top-level key
+        collected.push(nextLine.replace(/^\s+/, '')); // strip leading whitespace
+        k++;
+      }
+      // Trim trailing empty entries
+      while (collected.length && collected[collected.length - 1] === '') {
+        collected.pop();
+      }
+      return { lines: collected, nextIdx: k };
     }
 
     for (var i = 0; i < lines.length; i++) {
       var line = lines[i];
-      // Skip blank/comment lines
       if (!line.trim() || /^\s*#/.test(line)) continue;
-      // A list-item line ("  - value") with no preceding key gets ignored
       var idx = line.indexOf(':');
       if (idx === -1) continue;
       var key = line.slice(0, idx).trim();
-      // Skip indented lines — they're list items we'll handle from the key line above
-      if (/^\s/.test(line)) continue;
+      if (/^\s/.test(line)) continue;  // indented line — handled by parent key
       var rest = line.slice(idx + 1);
+      var trimmedRest = rest.trim();
 
-      // Empty value: could be the start of a multi-line list. Peek at next lines.
-      if (rest.trim() === '') {
+      // ---- Block scalar indicators: |, |-, |+, >, >-, >+ ----
+      // > = folded (newlines → spaces), | = literal (newlines preserved)
+      // The "-" or "+" controls trailing-newline behavior; we ignore both.
+      var blockMatch = trimmedRest.match(/^([|>])([-+]?)$/);
+      if (blockMatch) {
+        var collected = collectIndented(i + 1);
+        var joined = blockMatch[1] === '>'
+          ? collected.lines.filter(function (l) { return l !== ''; }).join(' ')
+          : collected.lines.join('\n');
+        meta[key] = joined;
+        i = collected.nextIdx - 1;
+        continue;
+      }
+
+      // ---- Empty value: might be a multi-line list ----
+      if (trimmedRest === '') {
         var items = [];
         var j = i + 1;
         while (j < lines.length) {
           var next = lines[j];
-          // Stop when we hit a blank line or a new top-level key
           if (next.trim() === '') { j++; continue; }
           var listMatch = next.match(/^\s+-\s+(.*)$/);
           if (listMatch) {
             items.push(parseScalar(listMatch[1]));
             j++;
           } else if (/^\s/.test(next)) {
-            // Some other indented content — skip
             j++;
           } else {
-            // New top-level key
             break;
           }
         }
         meta[key] = items;
-        i = j - 1;  // resume after the list block
+        i = j - 1;
         continue;
       }
 
-      // Inline list: [a, b, c]
-      var trimmedRest = rest.trim();
+      // ---- Inline list: [a, b, c] ----
       if (/^\[.*\]$/.test(trimmedRest)) {
         meta[key] = parseInlineList(trimmedRest);
         continue;
       }
 
-      meta[key] = parseScalar(rest);
+      // ---- Plain multi-line continuation ----
+      // If the next line is indented (and not a list item), it continues this
+      // value. E.g.   deck: First line of the deck
+      //                 continued on the next indented line.
+      var continuation = '';
+      var jj = i + 1;
+      while (jj < lines.length) {
+        var nextLine = lines[jj];
+        if (nextLine.trim() === '') break;
+        if (!/^\s/.test(nextLine)) break;
+        // Skip list-item lines — they belong to a list, not a continuation
+        if (/^\s+-\s/.test(nextLine)) break;
+        continuation += ' ' + nextLine.trim();
+        jj++;
+      }
+      meta[key] = parseScalar(rest + continuation);
+      i = jj - 1;
     }
     return { meta: meta, body: bodyText };
   }
@@ -1422,7 +1464,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v7-headshot-upload loaded');
+  if (window.console) console.log('[content.js] v8-yaml-blocks loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
