@@ -1,14 +1,14 @@
 {
-  "name": "[ Your Name ]",
-  "slug": "brad-derfner",
-  "role": "Editor & Co-host",
-  "shortRole": "Editor",
-  "bio": "Co-host of Fantasy Filmball. Lives somewhere in Pennsylvania, watches more movies than any reasonable person should.",
-  "longBio": "[ Edit this in the CMS. Write a longer multi-paragraph bio that gives readers a sense of your taste, your background, and what you bring to the show. ]\n\n[ Add a second paragraph about your favorite films, your obsessions, or how you got into Oscar prognosticating. ]",
   "headshotSlug": "brad-derfner",
-  "pullQuote": "",
-  "favorites": [],
+  "bio": "tktktkt",
+  "name": "Brad Derfner",
+  "slug": "brad-derfner",
+  "longBio": "[ Edit this in the CMS. Write a longer multi-paragraph bio that gives readers a sense of your taste, your background, and what you bring to the show. ]\n\n[ Add a second paragraph about your favorite films, your obsessions, or how you got into Oscar prognosticating. ]",
+  "shortRole": "Editor",
   "twitter": "",
-  "letterboxd": "",
-  "joinedDate": "2024"
+  "role": "Editor",
+  "favorites": [],
+  "joinedDate": "2026",
+  "pullQuote": "",
+  "letterboxd": ""
 }
