@@ -9,7 +9,7 @@ rating: 4
 stance: hold
 stanceLabel: Audiences will keep MJ's Oscar glory afloat
 posterSlug: michael
-writer: Dylan McKercher
+writer: ""
 writers:
   - dylan-mckercher
 publishedDate: April 22, 2026
