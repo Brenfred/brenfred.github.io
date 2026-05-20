@@ -129,8 +129,8 @@ collections:
           hint: "Multi-paragraph bio shown on the writer's detail page. Separate paragraphs with blank lines. Falls back to Short Bio if empty." }
       - { name: "pullQuote", label: "Pull Quote (optional)", widget: "string", required: false,
           hint: "An optional signature quote that appears at the top of the writer's detail page." }
-      - { name: "headshotSlug", label: "Headshot filename slug", widget: "string", required: false,
-          hint: "Defaults to the writer's slug. Looks for /headshots/SLUG.jpg. If missing, shows a typographic monogram (initials) instead." }
+      - { name: "headshot", label: "Headshot", widget: "image", required: false,
+          hint: "Upload a square JPG or PNG. Recommended size: 400×400px or larger. If you don't upload one, a typographic monogram (initials) shows instead." }
       - name: "favorites"
         label: "Films on the desk (favorites)"
         widget: "list"
