@@ -9,7 +9,9 @@ rating: 4.5
 stance: hold
 stanceLabel: Strong Golden Globes Comedy Player
 posterSlug: the-drama
-writer: Dylan McKercher
+writer: ""
+writers:
+  - dylan-mckercher
 publishedDate: March 30, 2026
 deck: "“What’s the worst thing you’ve ever done?” The Drama delivers a reveal
   you won't be let down by. Zendaya and Robert Pattinson are a match made in
