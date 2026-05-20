@@ -17,15 +17,8 @@ deck: The King of Pop gets the royal treatment in his biopic. Michael shines
   through a one-of-a-kind performance by Jaafar Jackson, chart-topping technical
   craftwork, and a pace that moonwalks by. Michael is a greattime at the cinemas
   for audiences at large.
-excerpt: >-
-  Jaafar Jackson is OFF THE WALL as Michael Jackson. What you’re seeing feels
-  like a hologram of the King of Pop. Jaafar embodies his uncle like no other,
-  from the iconic voice, to the generation-defining dance moves, to the demeanor
-  of the biggest pop star ever. At times, you forget you’re watching a MJ biopic
-  and just believe you’re just watching clips of Jackson. 
-
-
-  That’s a major reason why I personally enjoyed Michael so much, and why I do think there’s such a disconnect between general audiences and highbrow critics. The critics wanted one film, but Michael delivered what it knows the audience desires. It gives them what they want, and it does it well. Whether it’s Jaafar basically reviving his uncle, the technical elements transporting you back, or the film moving at a smooth, digestible pace… while yes, I can agree with some of the criticism and say I would’ve liked it to go deeper, I’m not going to ding Michael for what it’s not trying to do. I’m going to praise it for what it does accomplish.
+excerpt: Michael shines through a one-of-a-kind performance by Jaafar Jackson,
+  chart-topping technical craftwork, and a pace that moonwalks by.
 isHero: false
 tags:
   - Michael
