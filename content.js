@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v4-writer-debug)
+   FANTASY FILMBALL — content.js (v5-writer-polish)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -395,7 +395,9 @@
     }
 
     var foot;
-    if (options.compact) {
+    if (options.minimal) {
+      foot = '';
+    } else if (options.compact) {
       foot = '<div class="review-card__foot"><span class="rating">' + stars + ' <span class="rating__num">' + rating + '</span></span><span>' + esc(r.publishedDate || '') + '</span></div>';
     } else {
       var bylineStr = options.writersBySlug
@@ -1191,10 +1193,26 @@
       ? '<blockquote class="writer-profile__quote">' + esc(writer.pullQuote) + '</blockquote>'
       : '';
 
+    // Build social links — accepts a bare handle, '@handle', or a full URL.
+    function socialLink(raw, baseUrl) {
+      if (!raw) return '';
+      var s = String(raw).trim();
+      // If it's already a URL, use it as-is
+      if (/^https?:\/\//i.test(s)) {
+        var displayLabel = s.replace(/^https?:\/\/(www\.)?/i, '').replace(/\/$/, '');
+        return '<a href="' + esc(s) + '" target="_blank" rel="noopener">' + esc(displayLabel) + '</a>';
+      }
+      // Otherwise treat as a handle. Strip leading @ for the URL but keep it for display.
+      var handle = s.replace(/^@/, '');
+      var display = '@' + handle;
+      var url = baseUrl + encodeURIComponent(handle);
+      return '<a href="' + esc(url) + '" target="_blank" rel="noopener">' + esc(display) + '</a>';
+    }
+
     var meta = [];
     if (writer.joinedDate)  meta.push('<dt>Joined</dt><dd>' + esc(writer.joinedDate) + '</dd>');
-    if (writer.twitter)     meta.push('<dt>Twitter / X</dt><dd>' + esc(writer.twitter) + '</dd>');
-    if (writer.letterboxd)  meta.push('<dt>Letterboxd</dt><dd>' + esc(writer.letterboxd) + '</dd>');
+    if (writer.twitter)     meta.push('<dt>Twitter / X</dt><dd>' + socialLink(writer.twitter, 'https://x.com/') + '</dd>');
+    if (writer.letterboxd)  meta.push('<dt>Letterboxd</dt><dd>' + socialLink(writer.letterboxd, 'https://letterboxd.com/') + '</dd>');
 
     var favorites = Array.isArray(writer.favorites) && writer.favorites.length
       ? '<div class="writer-profile__favorites">' +
@@ -1239,7 +1257,7 @@
         articlesEl.innerHTML = '<p style="color: var(--ink-faded); text-align: center; padding: 1rem 0; grid-column: 1 / -1;">No articles by this writer yet.</p>';
       } else {
         articlesEl.innerHTML = byThisWriter.map(function (r) {
-          return reviewCardHTML(r, { showKicker: true, writersBySlug: writersBySlug });
+          return reviewCardHTML(r, { showKicker: true, minimal: true });
         }).join('\n');
       }
     }
@@ -1251,7 +1269,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v4-writer-debug loaded');
+  if (window.console) console.log('[content.js] v5-writer-polish loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),

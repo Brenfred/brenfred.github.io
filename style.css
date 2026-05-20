@@ -2258,3 +2258,42 @@ a.host:hover .host__name { color: var(--gold); }
   font-size: 0.95rem;
   color: var(--ink-soft);
 }
+
+/* =========================================================================
+   WRITER & FILM PAGES — fixed-width cards instead of full-width stretching
+   When the grid has 1 or 2 cards, repeat(3, 1fr) makes each one absurdly
+   wide (especially on the writer page where the empty cells don't exist
+   visually). Cap card width so single cards stay card-sized.
+   ========================================================================= */
+[data-writer-articles].review-grid,
+[data-film-articles].review-grid {
+  grid-template-columns: repeat(auto-fill, minmax(240px, 320px));
+  justify-content: flex-start;
+}
+@media (max-width: 700px) {
+  [data-writer-articles].review-grid,
+  [data-film-articles].review-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+/* Make the foot row read clean when the card is narrow:
+   on cards that aren't part of the long .review-list layout, stack rating
+   and byline on separate lines if they'd otherwise crowd each other. */
+.review-grid .review-card__foot {
+  flex-wrap: wrap;
+  gap: 0.25rem 0.65rem;
+}
+.review-grid .review-card__foot .rating { white-space: nowrap; }
+
+/* Social links in writer meta */
+.writer-profile__meta dd a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.writer-profile__meta dd a:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+}
