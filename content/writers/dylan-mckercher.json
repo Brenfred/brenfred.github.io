@@ -6,7 +6,9 @@
   "shortRole": "Co-Creator",
   "twitter": "@The_LifeofDylan",
   "role": "Co-host & Editor",
-  "favorites": [],
+  "favorites": [
+    "Michael"
+  ],
   "joinedDate": "2022",
   "letterboxd": "@Dyl_"
 }
