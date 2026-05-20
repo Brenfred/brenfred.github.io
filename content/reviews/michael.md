@@ -25,7 +25,8 @@ excerpt: >-
 
   That’s a major reason why I personally enjoyed Michael so much, and why I do think there’s such a disconnect between general audiences and highbrow critics. The critics wanted one film, but Michael delivered what it knows the audience desires. It gives them what they want, and it does it well. Whether it’s Jaafar basically reviving his uncle, the technical elements transporting you back, or the film moving at a smooth, digestible pace… while yes, I can agree with some of the criticism and say I would’ve liked it to go deeper, I’m not going to ding Michael for what it’s not trying to do. I’m going to praise it for what it does accomplish.
 isHero: false
-tags: []
+tags:
+  - Michael
 ---
 Jaafar Jackson *is* Michael.
 
