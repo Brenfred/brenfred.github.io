@@ -158,18 +158,18 @@ body::before {
   margin-bottom: 0.85rem;
   border-bottom: 1px solid var(--rule);
 }
-.masthead__meta a:hover { color: var(--gold); }
+.masthead__meta a:hover { color: var(--gold-bright); }
 .masthead__meta-right { display: flex; gap: 0.9rem; align-items: center; }
+.masthead__meta-right a { color: var(--gold); font-weight: 600; letter-spacing: 0.13em; }
 .masthead__sep { color: var(--ink-faded); opacity: 0.6; }
 
-/* Discord link — slightly elevated, gold accent, gentle pop */
+/* Discord link — slightly heavier weight so the CTA reads as primary */
 .masthead__discord {
   color: var(--gold) !important;
-  font-weight: 600;
-  letter-spacing: 0.13em;
-  position: relative;
+  font-weight: 700;
 }
-.masthead__discord:hover {
+.masthead__discord:hover,
+.masthead__meta-right a:hover {
   color: var(--gold-bright) !important;
 }
 @media (max-width: 560px) {
