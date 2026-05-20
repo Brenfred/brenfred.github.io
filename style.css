@@ -597,28 +597,64 @@ body::before {
 }
 .review-card__foot strong { color: var(--ink); font-weight: 500; }
 
-/* Review card — list variant (horizontal) */
+/* =========================================================================
+   REVIEW ARCHIVE CARDS — horizontal layout (poster left, text right)
+   Uses flexbox + !important to keep it locked in regardless of cascade order.
+   ========================================================================= */
 .review-list { display: flex; flex-direction: column; gap: 1.5rem; }
+
 .review-list .review-card {
-  display: grid;
-  grid-template-columns: 180px 1fr;
+  display: flex !important;
+  flex-direction: row !important;
   gap: 1.5rem;
+  align-items: stretch;
   padding: 1rem 1rem 1.4rem;
   border: 1px solid transparent;
   border-bottom-color: var(--rule);
   background: rgba(252, 250, 241, 0.38);
+  text-decoration: none;
+  color: inherit;
 }
 .review-list .review-card:hover {
   border-color: var(--rule);
   background: rgba(252, 250, 241, 0.76);
   box-shadow: 0 18px 36px rgba(32, 26, 19, 0.08);
 }
-.review-list .review-card__image { aspect-ratio: 3 / 4; margin-bottom: 0; }
+
+/* Fixed poster width: 180px desktop, 110px mobile. No grow/no shrink. */
+.review-list .review-card > .review-card__image {
+  flex: 0 0 180px !important;
+  width: 180px !important;
+  max-width: 180px !important;
+  aspect-ratio: 3 / 4;
+  margin-bottom: 0;
+}
+
+/* Text column fills remaining space and stacks vertically inside. */
+.review-list .review-card > .review-card__text {
+  flex: 1 1 0 !important;
+  min-width: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
 .review-list .review-card__image-placeholder { font-size: 0.9rem; }
-.review-list .review-card__title { font-size: 1.6rem; margin-bottom: 0.6rem; }
-.review-list .review-card__excerpt { font-size: 1rem; margin-bottom: 1rem; }
+.review-list .review-card__title { font-size: 1.6rem; margin-bottom: 0.4rem; }
+.review-list .review-card__excerpt { font-size: 1rem; margin-bottom: 0; }
+.review-list .review-card .review-card__foot {
+  margin-top: auto;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--rule);
+}
+
 @media (max-width: 600px) {
-  .review-list .review-card { grid-template-columns: 110px 1fr; gap: 1rem; }
+  .review-list .review-card > .review-card__image {
+    flex: 0 0 110px !important;
+    width: 110px !important;
+    max-width: 110px !important;
+  }
+  .review-list .review-card { gap: 1rem; }
   .review-list .review-card__title { font-size: 1.2rem; }
 }
 
@@ -2310,23 +2346,15 @@ a.host:hover .host__name { color: var(--gold); }
 }
 
 /* =========================================================================
-   .review-card__text — wrapper around kicker/title/excerpt/foot. Always
-   present, so we can target it consistently for grid and flex behavior.
+   .review-card__text — wrapper around kicker/title/excerpt/foot
    ========================================================================= */
 .review-card__text {
-  min-width: 0;  /* prevent overflow from long words */
-  display: flex;
-  flex-direction: column;
+  min-width: 0;
 }
-
-/* Reviews archive: side-by-side cards (poster left, text right) */
-.review-list .review-card {
-  align-items: start;
-}
-.review-list .review-card__text { gap: 0.35rem; }
-.review-list .review-card .review-card__foot { margin-top: auto; }
 
 /* Grid variants (homepage cards, writer page, film page): vertical cards */
 .review-grid .review-card__text {
+  display: flex;
+  flex-direction: column;
   gap: 0.35rem;
 }

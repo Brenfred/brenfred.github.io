@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v9-card-text-wrap)
+   FANTASY FILMBALL — content.js (v10-flex-archive)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -1464,7 +1464,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v9-card-text-wrap loaded');
+  if (window.console) console.log('[content.js] v10-flex-archive loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
