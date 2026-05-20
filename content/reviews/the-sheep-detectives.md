@@ -6,8 +6,8 @@ studio: Amazon MGM
 runtime: 109 min
 genre: Family
 rating: 5
-stance: buy
-stanceLabel: Buy
+stance: hold
+stanceLabel: No Awards Prospects
 posterSlug: the-sheep-detectives
 writer: Dylan McKercher
 publishedDate: May 7, 2026
