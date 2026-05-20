@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js
+   FANTASY FILMBALL — content.js (v2-writers)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -1013,7 +1013,7 @@
 
     // Article counts per writer (used in tiles)
     var counts = {};
-    reviews.forEach(function (r) {
+    (reviews || []).forEach(function (r) {
       (r.writers || []).forEach(function (s) {
         counts[s] = (counts[s] || 0) + 1;
       });
@@ -1125,7 +1125,7 @@
     // Filter reviews to those authored by this writer
     var writersBySlug = {};
     writers.forEach(function (w) { writersBySlug[w.slug] = w; });
-    var byThisWriter = reviews.filter(function (r) {
+    var byThisWriter = (reviews || []).filter(function (r) {
       return Array.isArray(r.writers) && r.writers.indexOf(writer.slug) !== -1;
     });
 
@@ -1149,6 +1149,10 @@
   // ============================================================
   //  bootstrap
   // ============================================================
+
+  // Version marker — change when you ship a new content.js so you can spot
+  // stale-cache issues in the browser console.
+  if (window.console) console.log('[content.js] v2-writers loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
@@ -1221,29 +1225,37 @@
       var writersBySlug = {};
       writers.forEach(function (w) { writersBySlug[w.slug] = w; });
 
+      // Render helper that catches errors so one breakage doesn't cascade
+      function safeRender(name, fn) {
+        try { fn(); }
+        catch (err) {
+          if (window.console) console.error('[content] ' + name + ' failed:', err);
+        }
+      }
+
       // Reviews-driven regions
       if (needsReviews) {
-        renderHero(reviews, site, writersBySlug);
-        renderReviewGrids(reviews, writersBySlug);
-        renderReviewsArchive(reviews, writersBySlug);
-        renderSingleReview(reviews, site, writersBySlug);
+        safeRender('renderHero',          function () { renderHero(reviews, site, writersBySlug); });
+        safeRender('renderReviewGrids',   function () { renderReviewGrids(reviews, writersBySlug); });
+        safeRender('renderReviewsArchive',function () { renderReviewsArchive(reviews, writersBySlug); });
+        safeRender('renderSingleReview',  function () { renderSingleReview(reviews, site, writersBySlug); });
       }
 
       // Writers-driven regions
-      renderWritersDirectory(writers, reviews);
-      renderWriterDetail(writers, reviews);
+      safeRender('renderWritersDirectory', function () { renderWritersDirectory(writers, reviews); });
+      safeRender('renderWriterDetail',     function () { renderWriterDetail(writers, reviews); });
 
       // Race-driven regions (need films + categories too)
       if (needsRace) {
         Promise.all([fetchAllCategories(), fetchAllFilms()]).then(function (raceData) {
           var categories = raceData[0];
           var films = raceData[1];
-          renderCategoriesGrid(categories, films);
+          safeRender('renderCategoriesGrid', function () { renderCategoriesGrid(categories, films); });
           if (current && previous) {
-            renderFilmsSection(current, previous, categories, films);
+            safeRender('renderFilmsSection', function () { renderFilmsSection(current, previous, categories, films); });
           }
-          renderCategoryDetail(categories, films, reviews);
-          renderFilmDetail(categories, films, reviews, writersBySlug);
+          safeRender('renderCategoryDetail', function () { renderCategoryDetail(categories, films, reviews); });
+          safeRender('renderFilmDetail',     function () { renderFilmDetail(categories, films, reviews, writersBySlug); });
         }).catch(function (err) {
           if (window.console) console.warn('[content] race load failed:', err);
         });
