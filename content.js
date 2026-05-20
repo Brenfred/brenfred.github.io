@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v8-yaml-blocks)
+   FANTASY FILMBALL — content.js (v9-card-text-wrap)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -457,12 +457,12 @@
         '<img src="' + esc(posterPath) + '" alt="' + esc(film) + ' poster" class="review-card__poster" loading="lazy" onerror="this.style.display=\'none\'">' +
         '<div class="review-card__image-placeholder">' + esc(film) + '</div>' +
       '</div>' +
-      (options.wrapText ? '<div>' : '') +
-      (kicker ? '<div class="review-card__kicker">' + esc(kicker) + '</div>' : '') +
-      '<h3 class="review-card__title">' + titleHTML + '</h3>' +
-      '<p class="review-card__excerpt">' + esc(excerpt) + '</p>' +
-      foot +
-      (options.wrapText ? '</div>' : '');
+      '<div class="review-card__text">' +
+        (kicker ? '<div class="review-card__kicker">' + esc(kicker) + '</div>' : '') +
+        '<h3 class="review-card__title">' + titleHTML + '</h3>' +
+        '<p class="review-card__excerpt">' + esc(excerpt) + '</p>' +
+        foot +
+      '</div>';
 
     var href = 'review.html?slug=' + encodeURIComponent(r.slug);
     return '<a href="' + href + '" class="review-card">' + inner + '</a>';
@@ -491,7 +491,7 @@
     var list = $('[data-reviews-list]');
     if (!list) return;
     list.innerHTML = reviews.map(function (r) {
-      return reviewCardHTML(r, { showKicker: true, wrapText: true, writersBySlug: writersBySlug });
+      return reviewCardHTML(r, { showKicker: true, writersBySlug: writersBySlug });
     }).join('\n');
   }
 
@@ -1464,7 +1464,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v8-yaml-blocks loaded');
+  if (window.console) console.log('[content.js] v9-card-text-wrap loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),

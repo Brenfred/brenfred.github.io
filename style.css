@@ -2310,19 +2310,23 @@ a.host:hover .host__name { color: var(--gold); }
 }
 
 /* =========================================================================
-   DEFENSIVE: ensure review-list cards always render side-by-side, even if
-   other CSS or page wrapping changes affect the grid.
+   .review-card__text — wrapper around kicker/title/excerpt/foot. Always
+   present, so we can target it consistently for grid and flex behavior.
    ========================================================================= */
+.review-card__text {
+  min-width: 0;  /* prevent overflow from long words */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Reviews archive: side-by-side cards (poster left, text right) */
 .review-list .review-card {
-  display: grid !important;
-  grid-template-columns: 180px 1fr !important;
   align-items: start;
 }
-.review-list .review-card > div:not(.review-card__image) {
-  min-width: 0;  /* prevent flex/grid overflow from text content */
-}
-@media (max-width: 600px) {
-  .review-list .review-card {
-    grid-template-columns: 110px 1fr !important;
-  }
+.review-list .review-card__text { gap: 0.35rem; }
+.review-list .review-card .review-card__foot { margin-top: auto; }
+
+/* Grid variants (homepage cards, writer page, film page): vertical cards */
+.review-grid .review-card__text {
+  gap: 0.35rem;
 }
