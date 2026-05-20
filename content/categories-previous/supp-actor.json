@@ -1,0 +1,77 @@
+{
+  "label": "Best Supporting Actor",
+  "shortLabel": "Supp. Actor",
+  "cutoffRank": 5,
+  "films": [
+    {
+      "rank": 1,
+      "filmSlug": "digger",
+      "subtitle": "John Goodman",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 2,
+      "filmSlug": "michael",
+      "subtitle": "Colman Domingo",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 3,
+      "filmSlug": "wild-horse-nine",
+      "subtitle": "Steve Buscemi",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 4,
+      "filmSlug": "eisenberg-musical-comedy",
+      "subtitle": "Paul Giamatti",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 5,
+      "filmSlug": "wild-horse-nine",
+      "subtitle": "Sam Rockwell",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 6,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 7,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 8,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 9,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 10,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    }
+  ]
+}

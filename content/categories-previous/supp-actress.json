@@ -1,0 +1,77 @@
+{
+  "label": "Best Supporting Actress",
+  "shortLabel": "Supp. Actress",
+  "cutoffRank": 5,
+  "films": [
+    {
+      "rank": 1,
+      "filmSlug": "digger",
+      "subtitle": "Sandra Hüller",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 2,
+      "filmSlug": "the-odyssey",
+      "subtitle": "Anne Hathaway",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 3,
+      "filmSlug": "wild-horse-nine",
+      "subtitle": "Mariana Di Girolamo",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 4,
+      "filmSlug": "wild-horse-nine",
+      "subtitle": "Parker Posey",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 5,
+      "filmSlug": "jack-of-spades",
+      "subtitle": "Frances McDormand",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 6,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 7,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 8,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 9,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 10,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    }
+  ]
+}

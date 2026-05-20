@@ -1,0 +1,77 @@
+{
+  "label": "Best Director",
+  "shortLabel": "Director",
+  "cutoffRank": 5,
+  "films": [
+    {
+      "rank": 1,
+      "filmSlug": "the-odyssey",
+      "subtitle": "Christopher Nolan",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 2,
+      "filmSlug": "digger",
+      "subtitle": "Alejandro G. Iñárritu",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 3,
+      "filmSlug": "wild-horse-nine",
+      "subtitle": "Martin McDonagh",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 4,
+      "filmSlug": "fjord",
+      "subtitle": "Cristian Mungiu",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 5,
+      "filmSlug": "fatherland",
+      "subtitle": "Paweł Pawlikowski",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 6,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 7,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 8,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 9,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    },
+    {
+      "rank": 10,
+      "filmSlug": "",
+      "subtitle": "[ TBD ]",
+      "nomPct": "",
+      "winPct": ""
+    }
+  ]
+}
