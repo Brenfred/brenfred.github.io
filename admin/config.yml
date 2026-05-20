@@ -99,6 +99,49 @@ collections:
               - { name: "title",  label: "Title",  widget: "string" }
               - { name: "nomPct", label: "Nom %", widget: "string" }
 
+  # ─── Writers ───────────────────────────────────────────────────────────────
+  # One JSON file per writer. Reviews then "tag" writers via a multi-select
+  # relation field, so every byline points at a real profile page.
+  - name: "writers"
+    label: "✍️ Writers"
+    description: "One record per writer. Hosts have 'Host' in their role and appear in the Hosts section of writers.html; everyone else is a Contributor."
+    folder: "content/writers"
+    create: true
+    delete: true
+    extension: "json"
+    format: "json"
+    slug: "{{fields.slug}}"
+    identifier_field: "slug"
+    summary: "{{fields.name}} — {{fields.role}}"
+    media_folder: "/headshots"
+    public_folder: "/headshots"
+    fields:
+      - { name: "name", label: "Full Name", widget: "string", hint: "e.g. 'Brad Derfner'" }
+      - { name: "slug", label: "Slug (URL identifier)", widget: "string",
+          hint: "Lowercase, hyphens, no spaces. e.g. 'brad-derfner'. This is the filename and the URL: writer.html?slug=brad-derfner. Don't change after creation — review references will break." }
+      - { name: "role", label: "Full Role", widget: "string", default: "Contributor",
+          hint: "e.g. 'Editor & Co-host', 'Critic at Large'. If it contains the word 'Host', the writer appears in the Hosts section of writers.html." }
+      - { name: "shortRole", label: "Short Role (used as kicker)", widget: "string", required: false, default: "Writer",
+          hint: "Short version for the writer page kicker. e.g. 'Editor', 'Critic'." }
+      - { name: "bio", label: "Short Bio", widget: "text",
+          hint: "2-3 sentences shown on writers.html and as the meta description." }
+      - { name: "longBio", label: "Long Bio (writer page)", widget: "text", required: false,
+          hint: "Multi-paragraph bio shown on the writer's detail page. Separate paragraphs with blank lines. Falls back to Short Bio if empty." }
+      - { name: "pullQuote", label: "Pull Quote (optional)", widget: "string", required: false,
+          hint: "An optional signature quote that appears at the top of the writer's detail page." }
+      - { name: "headshotSlug", label: "Headshot filename slug", widget: "string", required: false,
+          hint: "Defaults to the writer's slug. Looks for /headshots/SLUG.jpg. If missing, shows a typographic monogram (initials) instead." }
+      - name: "favorites"
+        label: "Films on the desk (favorites)"
+        widget: "list"
+        required: false
+        default: []
+        hint: "A short list of films that capture this writer's taste. Shown on their detail page."
+        field: { name: "title", label: "Film", widget: "string" }
+      - { name: "twitter", label: "Twitter / X handle", widget: "string", required: false, hint: "e.g. '@brad' — display only, not a link yet." }
+      - { name: "letterboxd", label: "Letterboxd handle", widget: "string", required: false }
+      - { name: "joinedDate", label: "Joined", widget: "string", required: false, default: "2024", hint: "Year or month/year." }
+
   # ─── Reviews ───────────────────────────────────────────────────────────────
   # A folder collection — one Markdown file per review. The CMS gives you a
   # "+ New Review" button that creates a new file in this folder.
@@ -130,7 +173,18 @@ collections:
           hint: "e.g. 'Strong Buy', 'Buy', 'Hold', 'Sell', 'Strong Sell'" }
       - { name: "posterSlug", label: "Poster filename (no extension)", widget: "string",
           hint: "e.g. 'the-odyssey' — must match a file in /posters/" }
-      - { name: "writer", label: "Writer Byline", widget: "string", default: "[ Writer ]" }
+      - { name: "writer", label: "Legacy Writer Byline (fallback only)", widget: "string", default: "[ Writer ]", required: false,
+          hint: "Old free-text field. Used only if 'Writers' below is empty. Prefer the multi-select Writers field." }
+      - name: "writers"
+        label: "Writers"
+        widget: "relation"
+        collection: "writers"
+        value_field: "slug"
+        search_fields: ["name", "role"]
+        display_fields: ["name", "role"]
+        multiple: true
+        required: false
+        hint: "Pick one or more writers from the Writers collection. Their bylines will link to their detail pages."
       - { name: "publishedDate", label: "Published Date", widget: "string",
           hint: "e.g. 'April 3, 2026'" }
       - { name: "deck", label: "Hero Deck (subheadline)", widget: "text",
