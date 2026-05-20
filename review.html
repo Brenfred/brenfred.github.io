@@ -97,47 +97,45 @@
   <div class="container">
 
     <nav class="review__breadcrumb">
-      <a href="index.html">Home</a><span>/</span><a href="reviews.html">Reviews</a><span>/</span>The Odyssey
+      <a href="index.html">Home</a><span>/</span><a href="reviews.html">Reviews</a><span>/</span><span data-review-film>The Odyssey</span>
     </nav>
 
     <!-- HEAD -->
     <header class="review__head">
-      <div class="review__kicker">The Lead Review · Epic · Universal</div>
-      <h1 class="review__title"><em>The Odyssey</em> takes the early lead</h1>
-      <p class="review__deck">Nolan's Homeric epic arrives with massive expectations — and somehow exceeds them. The first true Best Picture frontrunner of the season is here, and the consensus has already moved.</p>
+      <div class="review__kicker" data-review-kicker>The Lead Review · Epic · Universal</div>
+      <h1 class="review__title" data-review-title><em>The Odyssey</em> takes the early lead</h1>
+      <p class="review__deck" data-review-deck>Nolan's Homeric epic arrives with massive expectations — and somehow exceeds them. The first true Best Picture frontrunner of the season is here, and the consensus has already moved.</p>
       <div class="review__byline">
-        By <strong>[ Writer Name ]</strong>
+        By <strong data-review-writer>[ Writer Name ]</strong>
         <span class="review__byline-sep">·</span>
-        April 3, 2026
-        <span class="review__byline-sep">·</span>
-        [ X ] min read
+        <span data-review-date>April 3, 2026</span>
       </div>
     </header>
 
     <!-- VERDICT -->
-    <div class="verdict">
+    <div class="verdict" data-review-verdict>
       <div class="verdict__rating">
-        ★ ★ ★ ★ ★
-        <span class="verdict__rating-num">4.5 / 5 STARS</span>
+        <span data-review-stars>★ ★ ★ ★ ★</span>
+        <span class="verdict__rating-num" data-review-rating-num>4.5 / 5 STARS</span>
       </div>
-      <p class="verdict__note">"The scoreboard answer: lock the top spot in now. By Telluride, you'll wish you had bought earlier."</p>
+      <p class="verdict__note" data-review-verdict-note>"The scoreboard answer: lock the top spot in now. By Telluride, you'll wish you had bought earlier."</p>
       <div class="verdict__stock">
-        <span class="stock-badge stock-badge--buy"><span class="stock-badge__arrow">▲</span> Strong Buy</span>
+        <span class="stock-badge stock-badge--buy" data-review-badge><span class="stock-badge__arrow">▲</span> Strong Buy</span>
         <span class="verdict__stock-label">Oscar Stock Rating</span>
       </div>
     </div>
 
     <!-- HERO IMAGE -->
-    <div class="review__hero">
-      <img src="posters/the-odyssey-hero.jpg" alt="The Odyssey" class="review__hero-img" onerror="this.style.display='none'">
-      <div class="review__hero-placeholder">[ Hero image: <em>The Odyssey</em> ]</div>
+    <div class="review__hero" data-review-hero>
+      <img src="posters/the-odyssey-hero.jpg" alt="The Odyssey" class="review__hero-img" onerror="this.style.display='none'" data-review-hero-img>
+      <div class="review__hero-placeholder">[ Hero image: <em data-review-hero-title>The Odyssey</em> ]</div>
       <div class="review__hero-caption">Replace with film still · Photo credit goes here</div>
     </div>
 
     <!-- BODY + ASIDE -->
     <div class="review__body">
 
-      <div class="prose">
+      <div class="prose" data-review-body>
         <p>[ Lede paragraph. Set the scene of the film — the opening image, the first impression, the moment that tells you what kind of movie you're watching. Make it specific. The Odyssey is, by virtue of being directed by Christopher Nolan, a film with massive structural ambition; lead with the place where that ambition lands. ]</p>
 
         <p>[ Critical assessment. What this film is doing well — the choices that work, the craft elements that elevate it, the performances or sequences that justify the runtime. ]</p>
@@ -190,10 +188,8 @@
         <div class="aside-block">
           <h3 class="aside-block__title">Credits</h3>
           <dl class="aside-credits">
-            <dt>Directed by</dt><dd>Christopher Nolan</dd>
-            <dt>Written by</dt><dd>Christopher Nolan</dd>
-            <dt>Starring</dt><dd>[ Cast ]</dd>
-            <dt>Distributed by</dt><dd>Universal Pictures</dd>
+            <dt>Directed by</dt><dd data-review-director>Christopher Nolan</dd>
+            <dt>Distributed by</dt><dd data-review-studio>Universal Pictures</dd>
           </dl>
         </div>
 

@@ -98,7 +98,7 @@
   <div class="container">
     <div class="layout-main-aside">
 
-      <article class="hero">
+      <article class="hero" data-hero-review>
         <a href="review.html" class="hero__image" aria-label="Read the review">
           <img src="posters/the-odyssey.jpg" alt="The Odyssey poster" class="hero__poster" onerror="this.style.display='none'">
           <div class="hero__image-placeholder">The Odyssey</div>
@@ -156,8 +156,9 @@
       <a href="reviews.html" class="section-head__link">All Reviews →</a>
     </div>
 
-    <div class="review-grid review-grid--3">
-
+    <div class="review-grid review-grid--3" data-reviews-grid="latest" data-limit="3">
+      <!-- This grid is populated by content.js from /content/reviews/*.md.
+           The fallback below shows if JS is disabled. -->
       <a href="review.html" class="review-card">
         <div class="review-card__image">
           <div class="review-card__badge-row"><span class="stock-badge stock-badge--buy">▲ Buy</span></div>
@@ -166,43 +167,12 @@
         </div>
         <div class="review-card__kicker">Warner Bros. · Iñárritu</div>
         <h3 class="review-card__title"><em>Digger</em> is Iñárritu's maximalist return</h3>
-        <p class="review-card__excerpt">His first English-language film in years is a bruising, ambitious swing. Tom Cruise in his most committed dramatic mode in a decade — and the Academy is paying attention.</p>
+        <p class="review-card__excerpt">His first English-language film in years is a bruising, ambitious swing.</p>
         <div class="review-card__foot">
           <span class="rating">★ ★ ★ ★ <span class="rating__num">4.0</span></span>
           <span>By <strong>[ Writer ]</strong></span>
         </div>
       </a>
-
-      <a href="review.html" class="review-card">
-        <div class="review-card__image">
-          <div class="review-card__badge-row"><span class="stock-badge stock-badge--buy">▲ Buy</span></div>
-          <img src="posters/wild-horse-nine.jpg" alt="Wild Horse Nine poster" class="review-card__poster" loading="lazy" onerror="this.style.display='none'">
-          <div class="review-card__image-placeholder">Wild Horse Nine</div>
-        </div>
-        <div class="review-card__kicker">Searchlight · McDonagh</div>
-        <h3 class="review-card__title"><em>Wild Horse Nine</em> is McDonagh in his sweet spot</h3>
-        <p class="review-card__excerpt">An ensemble of the year is forming around this one. Malkovich, Posey, Buscemi, Rockwell — the supporting categories are about to get crowded.</p>
-        <div class="review-card__foot">
-          <span class="rating">★ ★ ★ ★ <span class="rating__num">4.0</span></span>
-          <span>By <strong>[ Writer ]</strong></span>
-        </div>
-      </a>
-
-      <a href="review.html" class="review-card">
-        <div class="review-card__image">
-          <div class="review-card__badge-row"><span class="stock-badge stock-badge--buy">▲ Buy</span></div>
-          <img src="posters/fjord.jpg" alt="Fjord poster" class="review-card__poster" loading="lazy" onerror="this.style.display='none'">
-          <div class="review-card__image-placeholder">Fjord</div>
-        </div>
-        <div class="review-card__kicker">Neon · Mungiu</div>
-        <h3 class="review-card__title"><em>Fjord</em> is the quiet festival darling breaking through</h3>
-        <p class="review-card__excerpt">Mungiu's character study has the rare combination of festival pedigree and American distribution muscle. Reinsve is the Best Actress to beat right now.</p>
-        <div class="review-card__foot">
-          <span class="rating">★ ★ ★ ★ <span class="rating__num">4.5</span></span>
-          <span>By <strong>[ Writer ]</strong></span>
-        </div>
-      </a>
-
     </div>
   </div>
 </section>
@@ -231,8 +201,8 @@
       <a href="reviews.html" class="section-head__link">Browse Archive →</a>
     </div>
 
-    <div class="review-grid review-grid--4">
-
+    <div class="review-grid review-grid--4" data-reviews-grid="more" data-limit="8" data-offset="3">
+      <!-- Populated by content.js (skips the first 3 to avoid duplicating "This Week"). -->
       <a href="review.html" class="review-card">
         <div class="review-card__image">
           <div class="review-card__badge-row"><span class="stock-badge stock-badge--buy">▲ Buy</span></div>
@@ -240,87 +210,9 @@
           <div class="review-card__image-placeholder">Project Hail Mary</div>
         </div>
         <h3 class="review-card__title"><em>Project Hail Mary</em></h3>
-        <p class="review-card__excerpt">Lord and Miller's space-rescue adaptation is the year's biggest swing at both blockbuster status and craft-categories love.</p>
+        <p class="review-card__excerpt">Loading reviews...</p>
         <div class="review-card__foot"><span class="rating">★ ★ ★ ★ <span class="rating__num">4.0</span></span><span>Apr 3</span></div>
       </a>
-
-      <a href="review.html" class="review-card">
-        <div class="review-card__image">
-          <div class="review-card__badge-row"><span class="stock-badge stock-badge--hold">— Hold</span></div>
-          <img src="posters/narnia.jpg" alt="Narnia poster" class="review-card__poster" loading="lazy" onerror="this.style.display='none'">
-          <div class="review-card__image-placeholder">Narnia</div>
-        </div>
-        <h3 class="review-card__title"><em>Narnia: The Magician's Nephew</em></h3>
-        <p class="review-card__excerpt">Gerwig's first post-Barbie production is more reverent than expected — and the adaptation conversation is the one to watch.</p>
-        <div class="review-card__foot"><span class="rating">★ ★ ★ <span class="rating__num">3.5</span></span><span>Apr 3</span></div>
-      </a>
-
-      <a href="review.html" class="review-card">
-        <div class="review-card__image">
-          <div class="review-card__badge-row"><span class="stock-badge stock-badge--hold">— Hold</span></div>
-          <img src="posters/fatherland.jpg" alt="Fatherland poster" class="review-card__poster" loading="lazy" onerror="this.style.display='none'">
-          <div class="review-card__image-placeholder">Fatherland</div>
-        </div>
-        <h3 class="review-card__title"><em>Fatherland</em></h3>
-        <p class="review-card__excerpt">Pawlikowski returns to black-and-white form. A patient, durable craft-categories play with Hüller anchoring.</p>
-        <div class="review-card__foot"><span class="rating">★ ★ ★ ★ <span class="rating__num">4.0</span></span><span>Apr 3</span></div>
-      </a>
-
-      <a href="review.html" class="review-card">
-        <div class="review-card__image">
-          <div class="review-card__badge-row"><span class="stock-badge stock-badge--hold">— Hold</span></div>
-          <img src="posters/eisenberg-musical-comedy.jpg" alt="Eisenberg Musical poster" class="review-card__poster" loading="lazy" onerror="this.style.display='none'">
-          <div class="review-card__image-placeholder">Eisenberg Musical</div>
-        </div>
-        <h3 class="review-card__title"><em>Jesse Eisenberg Musical Comedy</em></h3>
-        <p class="review-card__excerpt">His sophomore feature pairs melancholy and musicality. Julianne Moore is the actress conversation here.</p>
-        <div class="review-card__foot"><span class="rating">★ ★ ★ <span class="rating__num">3.5</span></span><span>Apr 3</span></div>
-      </a>
-
-      <a href="review.html" class="review-card">
-        <div class="review-card__image">
-          <div class="review-card__badge-row"><span class="stock-badge stock-badge--hold">— Hold</span></div>
-          <img src="posters/dune-part-three.jpg" alt="Dune: Part Three poster" class="review-card__poster" loading="lazy" onerror="this.style.display='none'">
-          <div class="review-card__image-placeholder">Dune: Part Three</div>
-        </div>
-        <h3 class="review-card__title"><em>Dune: Part Three</em></h3>
-        <p class="review-card__excerpt">Villeneuve closes the trilogy on a technical high — but the above-the-line momentum has cooled since Part Two.</p>
-        <div class="review-card__foot"><span class="rating">★ ★ ★ ★ <span class="rating__num">4.0</span></span><span>Apr 3</span></div>
-      </a>
-
-      <a href="review.html" class="review-card">
-        <div class="review-card__image">
-          <div class="review-card__badge-row"><span class="stock-badge stock-badge--sell">▼ Sell</span></div>
-          <img src="posters/cry-to-heaven.jpg" alt="Cry to Heaven poster" class="review-card__poster" loading="lazy" onerror="this.style.display='none'">
-          <div class="review-card__image-placeholder">Cry to Heaven</div>
-        </div>
-        <h3 class="review-card__title"><em>Cry to Heaven</em></h3>
-        <p class="review-card__excerpt">Tom Ford's third feature is gorgeous, deliberate, and operating on its own register. Costume and design plays only.</p>
-        <div class="review-card__foot"><span class="rating">★ ★ ★ <span class="rating__num">3.0</span></span><span>Apr 3</span></div>
-      </a>
-
-      <a href="review.html" class="review-card">
-        <div class="review-card__image">
-          <div class="review-card__badge-row"><span class="stock-badge stock-badge--sell">▼ Sell</span></div>
-          <img src="posters/michael.jpg" alt="Michael poster" class="review-card__poster" loading="lazy" onerror="this.style.display='none'">
-          <div class="review-card__image-placeholder">Michael</div>
-        </div>
-        <h3 class="review-card__title"><em>Michael</em></h3>
-        <p class="review-card__excerpt">Fuqua's Michael Jackson biopic is a polarizing campaign waiting to happen. Jaafar Jackson is the real conversation.</p>
-        <div class="review-card__foot"><span class="rating">★ ★ ★ <span class="rating__num">3.0</span></span><span>Apr 3</span></div>
-      </a>
-
-      <a href="review.html" class="review-card">
-        <div class="review-card__image">
-          <div class="review-card__badge-row"><span class="stock-badge stock-badge--sell">▼ Sell</span></div>
-          <img src="posters/the-social-reckoning.jpg" alt="The Social Reckoning poster" class="review-card__poster" loading="lazy" onerror="this.style.display='none'">
-          <div class="review-card__image-placeholder">The Social Reckoning</div>
-        </div>
-        <h3 class="review-card__title"><em>The Social Reckoning</em></h3>
-        <p class="review-card__excerpt">Sorkin's social-media takedown is talky in his usual mode. Mikey Madison emerges as a sure-thing supporting nomination.</p>
-        <div class="review-card__foot"><span class="rating">★ ★ ★ <span class="rating__num">3.5</span></span><span>Apr 3</span></div>
-      </a>
-
     </div>
   </div>
 </section>
