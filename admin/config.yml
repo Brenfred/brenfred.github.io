@@ -138,8 +138,10 @@ collections:
         default: []
         hint: "A short list of films that capture this writer's taste. Shown on their detail page."
         field: { name: "title", label: "Film", widget: "string" }
-      - { name: "twitter", label: "Twitter / X handle", widget: "string", required: false, hint: "e.g. '@brad' — display only, not a link yet." }
-      - { name: "letterboxd", label: "Letterboxd handle", widget: "string", required: false }
+      - { name: "twitter", label: "Twitter / X", widget: "string", required: false,
+          hint: "Either a handle ('@brad' or 'brad') or a full URL ('https://x.com/brad'). Will auto-link." }
+      - { name: "letterboxd", label: "Letterboxd", widget: "string", required: false,
+          hint: "Either a handle ('Dyl_' or '@Dyl_') or a full URL ('https://letterboxd.com/Dyl_'). Will auto-link." }
       - { name: "joinedDate", label: "Joined", widget: "string", required: false, default: "2024", hint: "Year or month/year." }
 
   # ─── Reviews ───────────────────────────────────────────────────────────────
