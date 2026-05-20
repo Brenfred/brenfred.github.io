@@ -183,10 +183,10 @@ collections:
       - { name: "picture-current",          label: "🏆 Best Picture · CURRENT",         file: "content/categories/picture.json",                  fields: &cat_fields [
             { name: "label",      label: "Full Label",  widget: "string" },
             { name: "shortLabel", label: "Short Label", widget: "string" },
-            { name: "cutoffRank", label: "Cutoff Rank (where the line is)", widget: "number", default: 5 },
-            { name: "films", label: "Top 10", widget: "list", summary: "{{fields.rank}}. {{fields.subtitle}}",
+            { name: "cutoffRank", label: "Cutoff Rank (where the line is)", widget: "number", default: 5, hint: "Where the predicted-cutoff line is drawn. 5 for most categories, 10 for Best Picture (10 nominees)." },
+            { name: "films", label: "Films (top 10 — top 20 for Best Picture)", widget: "list", summary: "{{fields.rank}}. {{fields.subtitle}}",
               fields: [
-                { name: "rank",     label: "Rank",     widget: "number", value_type: "int", min: 1, max: 10 },
+                { name: "rank",     label: "Rank",     widget: "number", value_type: "int", min: 1, max: 20 },
                 { name: "filmSlug", label: "Film Slug", widget: "string", required: false,
                   hint: "Match a film file in /content/films/ — e.g. 'the-odyssey'" },
                 { name: "subtitle", label: "Display Text", widget: "string",
