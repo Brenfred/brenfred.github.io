@@ -11,6 +11,7 @@ stanceLabel: "Strong Buy"
 posterSlug: "the-odyssey"
 writer: "[ Writer ]"
 publishedDate: "April 3, 2026"
+tags: ["the-odyssey"]
 deck: "Nolan's Homeric epic arrives with massive expectations — and somehow exceeds them. The first true Best Picture frontrunner of the season is here, and the consensus has already moved."
 excerpt: "Nolan's Homeric epic arrives with massive expectations — and somehow exceeds them."
 isHero: true
