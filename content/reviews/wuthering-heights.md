@@ -9,7 +9,9 @@ rating: 3
 stance: sell
 stanceLabel: Just Tech/Craft Appeal
 posterSlug: wuthering-heights
-writer: Dylan McKercher
+writer: ""
+writers:
+  - dylan-mckercher
 publishedDate: Feb 12, 2026
 deck: Emerald Fennell has a stunning vision behind the lens showcasing dreamy
   dollhouse sets, fairytale-esque cinematography, & luscious gowns which come
