@@ -1,4 +1,5 @@
 ---
+type: review
 title: The Sheep Detectives is BAAAHMAZING
 film: "The Sheep Detectives "
 director: Kyle Balda
