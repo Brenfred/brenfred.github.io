@@ -17,6 +17,8 @@ publishedDate: May 7, 2026
 deck: 2026's most un-expected masterpiece dazzles the heart and mind of this
   reviewer.
 excerpt: "The Sheep Detectives may just be the best movie of the year so far. "
+heroImage: /posters/sheep-detectives-hero.jpg
+verdictNote: "It's a fun time but, in terms of awards, don't give it a second thought. "
 isHero: false
 tags:
   - the-sheep-detectives
