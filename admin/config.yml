@@ -148,33 +148,49 @@ collections:
   # A folder collection — one Markdown file per review. The CMS gives you a
   # "+ New Review" button that creates a new file in this folder.
   - name: "reviews"
-    label: "📝 Reviews"
-    description: "One file per review. Click '+ New Review' to add one."
+    label: "📝 Articles"
+    description: "Film reviews AND awards-discussion pieces. Set the Article Type field first — that controls which other fields are required."
     folder: "content/reviews"
     create: true
     delete: true
     slug: "{{fields.posterSlug}}"
-    summary: "{{fields.film}} — {{fields.stanceLabel}} ({{fields.rating}}/5)"
+    summary: "{{fields.type}}: {{fields.title}}"
     fields:
-      - { name: "title",    label: "Review Headline", widget: "string",
-          hint: "The big headline. e.g. 'The Odyssey takes the early lead'" }
-      - { name: "film",     label: "Film Title", widget: "string" }
-      - { name: "director", label: "Director", widget: "string", required: false }
+      - name: "type"
+        label: "Article Type"
+        widget: "select"
+        options:
+          - { label: "Review (film-specific, with rating/stance)", value: "review" }
+          - { label: "Discussion (analysis, predictions, category breakdowns)", value: "discussion" }
+        default: "review"
+        hint: "REVIEW = traditional film writeup with Buy/Hold/Sell + star rating. DISCUSSION = analysis pieces about a category, the race, or multiple films. Both types live on the same Articles page."
+      - { name: "title",    label: "Headline", widget: "string",
+          hint: "The big headline. e.g. 'The Odyssey takes the early lead' (review) or 'Why Best Director is a two-horse race' (discussion)" }
+      - { name: "film",     label: "Film Title", widget: "string", required: false,
+          hint: "REVIEWS: the film being reviewed. DISCUSSIONS: leave blank, or set if the piece is anchored to one film." }
+      - { name: "director", label: "Director", widget: "string", required: false,
+          hint: "REVIEWS: required. DISCUSSIONS: optional." }
       - { name: "studio",   label: "Studio / Distributor", widget: "string", required: false }
-      - { name: "runtime",  label: "Runtime", widget: "string", required: false, hint: "e.g. '168 min'" }
+      - { name: "runtime",  label: "Runtime", widget: "string", required: false, hint: "e.g. '168 min'. Reviews only." }
       - { name: "genre",    label: "Genre", widget: "string", required: false }
       - { name: "rating",   label: "Rating (out of 5)", widget: "number", value_type: "float",
-          min: 0, max: 5, step: 0.5, default: 4.0 }
+          min: 0, max: 5, step: 0.5, required: false,
+          hint: "REVIEWS: required (0-5 in half steps). DISCUSSIONS: leave blank — no star rating will show." }
       - name: "stance"
         label: "Stock Stance"
         widget: "select"
-        options: ["buy", "hold", "sell"]
+        options:
+          - { label: "(none — discussion piece)", value: "" }
+          - { label: "Buy", value: "buy" }
+          - { label: "Hold", value: "hold" }
+          - { label: "Sell", value: "sell" }
+        required: false
         default: "buy"
-        hint: "Drives the green/yellow/red badge color"
-      - { name: "stanceLabel", label: "Stance Label", widget: "string", default: "Buy",
-          hint: "e.g. 'Strong Buy', 'Buy', 'Hold', 'Sell', 'Strong Sell'" }
-      - { name: "posterSlug", label: "Poster filename (no extension)", widget: "string",
-          hint: "e.g. 'the-odyssey' — must match a file in /posters/" }
+        hint: "REVIEWS: drives the green/yellow/red badge. DISCUSSIONS: choose '(none)' to skip the badge entirely, or pick a stance to express the piece's overall lean."
+      - { name: "stanceLabel", label: "Stance Label", widget: "string", required: false,
+          hint: "e.g. 'Strong Buy', 'Buy', 'Hold', 'Sell', 'Strong Sell'. Only used if a Stance is set above." }
+      - { name: "posterSlug", label: "Poster filename (no extension)", widget: "string", required: false,
+          hint: "REVIEWS: matches a file in /posters/. DISCUSSIONS: optional — leave blank for a typographic card, or set if you want a film poster as the visual." }
       - { name: "writer", label: "Legacy Writer Byline (fallback only)", widget: "string", default: "[ Writer ]", required: false,
           hint: "Old free-text field. Used only if 'Writers' below is empty. Prefer the multi-select Writers field." }
       - name: "writers"
@@ -189,13 +205,13 @@ collections:
         hint: "Pick one or more writers from the Writers collection. Their bylines will link to their detail pages."
       - { name: "publishedDate", label: "Published Date", widget: "string",
           hint: "e.g. 'April 3, 2026'" }
-      - { name: "deck", label: "Hero Deck (subheadline)", widget: "text",
-          hint: "2-3 sentence intro under the headline" }
-      - { name: "excerpt", label: "Card Excerpt", widget: "text",
-          hint: "Shorter version shown on review listing cards" }
+      - { name: "deck", label: "Subheadline", widget: "text",
+          hint: "2-3 sentences. Shown under the headline on the single article page and the homepage hero block." }
+      - { name: "excerpt", label: "Tagline (Card Blurb)", widget: "string", required: false,
+          hint: "ONE short sentence — under ~120 characters. Shown on article cards in the home grid, archive list, and tagged-film pages. KEEP THIS BRIEF — don't paste the body here." }
       - { name: "isHero", label: "Mark as Homepage Hero", widget: "boolean",
           default: false,
-          hint: "Only one review should be marked as hero at a time" }
+          hint: "Only one article should be marked as hero at a time" }
       - name: "tags"
         label: "Film Tags"
         widget: "list"
@@ -203,8 +219,15 @@ collections:
         default: []
         hint: "Slugs of films this article mentions (e.g. the-odyssey, digger). Tagged films show this article on their detail page."
         field: { name: "slug", label: "Film Slug", widget: "string" }
-      - { name: "body", label: "Review Body", widget: "markdown",
-          hint: "Paste your review prose here. Paragraphs are separated by blank lines." }
+      - name: "categoryTags"
+        label: "Category Tags"
+        widget: "list"
+        required: false
+        default: []
+        hint: "Slugs of Oscar categories this article discusses. Valid values: picture, director, actor, actress, supp-actor, supp-actress, orig-screenplay, adapt-screenplay. Used by discussion pieces to link back to category pages."
+        field: { name: "slug", label: "Category Slug", widget: "string" }
+      - { name: "body", label: "Article Body", widget: "markdown",
+          hint: "Paste your prose here. Paragraphs are separated by blank lines." }
 
   # ─── Films ─────────────────────────────────────────────────────────────────
   # Master record per tracked film. Used by Oscar Race page and category pages
