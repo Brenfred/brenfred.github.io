@@ -898,7 +898,9 @@ body::before {
 @media (max-width: 480px) { .host { grid-template-columns: 90px 1fr; gap: 1rem; } }
 
 .host__avatar {
-  aspect-ratio: 1;
+  width: 130px;
+  height: 130px;
+  flex-shrink: 0;
   background: linear-gradient(135deg, var(--paper-dark), var(--paper-warm));
   border: 1.5px solid var(--ink);
   position: relative;
@@ -911,6 +913,10 @@ body::before {
   color: var(--gold);
   opacity: 0.9;
   box-shadow: 6px 6px 0 var(--paper-aged);
+  overflow: hidden;
+}
+@media (max-width: 480px) {
+  .host__avatar { width: 90px; height: 90px; }
 }
 .host__role {
   font-family: var(--font-sport);
@@ -2162,8 +2168,11 @@ a.host:hover .host__name { color: var(--gold); }
 .writer-profile__avatar-img {
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none;
+  max-height: none;
   object-fit: cover;
   z-index: 2;
 }
