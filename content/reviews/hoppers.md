@@ -1,6 +1,6 @@
 ---
 type: review
-title: A Wildly Fun Adventure With Heart and Humor
+title: Hoppers is a Wildly Fun Adventure With Heart and Humor
 film: Hoppers
 director: " Daniel Chong"
 studio: Pixar
