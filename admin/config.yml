@@ -211,6 +211,8 @@ collections:
           hint: "ONE short sentence — under ~120 characters. Shown on article cards in the home grid, archive list, and tagged-film pages. KEEP THIS BRIEF — don't paste the body here." }
       - { name: "heroImage", label: "Article Hero Image", widget: "image", required: false,
           hint: "Wide landscape image shown at the top of the article page (under the headline). Recommended size: 1600×900 or wider, JPG or PNG. If left blank, the hero block is hidden." }
+      - { name: "heroCaption", label: "Hero Image Caption / Credit", widget: "string", required: false,
+          hint: "Optional photo credit or caption overlay on the hero image. e.g. 'Lionsgate · Photo by Anne Marie Fox'. Leave blank for no caption." }
       - { name: "verdictNote", label: "Verdict Note (Stock Take)", widget: "string", required: false,
           hint: "REVIEWS only. One punchy stock-betting sentence shown next to the rating/badge at the top of the article. e.g. 'Lock it in now — by Telluride you'll wish you had bought earlier.' Leave blank to hide. Skipped automatically for Discussion-type articles." }
       - { name: "isHero", label: "Mark as Homepage Hero", widget: "boolean",
