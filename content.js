@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v13-archive-redesign)
+   FANTASY FILMBALL — content.js (v14-archive-nested-fix)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -554,15 +554,15 @@
       if (r.director)      kickerParts.push(r.director);
       var kicker = kickerParts.join(' · ');
 
-      return '<a href="' + href + '" class="archive-card" data-stance="' + esc(stance) + '">' +
-        '<div class="archive-card__poster">' +
+      return '<article class="archive-card" data-stance="' + esc(stance) + '">' +
+        '<a href="' + href + '" class="archive-card__poster">' +
           '<span class="archive-card__badge archive-card__badge--' + esc(stance) + '">' + stanceArrow + ' ' + esc(stanceLabel) + '</span>' +
           '<img src="' + esc(posterPath) + '" alt="' + esc(film) + ' poster" loading="lazy" onerror="this.style.display=\'none\'">' +
           '<div class="archive-card__poster-fallback">' + esc(film) + '</div>' +
-        '</div>' +
+        '</a>' +
         '<div class="archive-card__body">' +
           (kicker ? '<div class="archive-card__kicker">' + esc(kicker) + '</div>' : '') +
-          '<h3 class="archive-card__title">' + titleHTML + '</h3>' +
+          '<h3 class="archive-card__title"><a href="' + href + '">' + titleHTML + '</a></h3>' +
           (tagline ? '<p class="archive-card__tagline">' + esc(tagline) + '</p>' : '') +
           '<div class="archive-card__foot">' +
             '<span class="archive-card__rating">' + stars + ' <span>' + rating + '</span></span>' +
@@ -570,7 +570,7 @@
           '</div>' +
           (r.publishedDate ? '<div class="archive-card__date">' + esc(r.publishedDate) + '</div>' : '') +
         '</div>' +
-      '</a>';
+      '</article>';
     }
 
     if (reviews.length === 0) {
@@ -1562,7 +1562,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v13-archive-redesign loaded');
+  if (window.console) console.log('[content.js] v14-archive-nested-fix loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
