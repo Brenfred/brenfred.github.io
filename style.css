@@ -1152,7 +1152,7 @@ body::before {
   font-variation-settings: "opsz" 18;
 }
 .prose > p { margin-bottom: 1.5rem; }
-.prose > p:first-child::first-letter {
+.prose > p:first-child:not(.about-lede)::first-letter {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 3.2rem;
