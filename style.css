@@ -2358,3 +2358,222 @@ a.host:hover .host__name { color: var(--gold); }
   flex-direction: column;
   gap: 0.35rem;
 }
+
+/* =========================================================================
+   REVIEWS ARCHIVE — magazine-style grid (3-up desktop, 2-up tablet, 1-up mobile)
+   Self-contained namespace (.archive-*) — no collisions with .review-card.
+   ========================================================================= */
+.archive-section { padding-top: 2.5rem; padding-bottom: 4rem; }
+
+.archive-head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "kicker  meta"
+    "title   meta"
+    "filters filters";
+  gap: 0.5rem 2rem;
+  padding-bottom: 1.25rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 3px solid var(--ink);
+}
+.archive-head__kicker {
+  grid-area: kicker;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--gold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.archive-head__title {
+  grid-area: title;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.5rem, 6vw, 4.25rem);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+.archive-head__title em { color: var(--gold); font-style: italic; font-weight: 600; }
+.archive-head__meta {
+  grid-area: meta;
+  align-self: end;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.archive-filters {
+  grid-area: filters;
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.85rem;
+  flex-wrap: wrap;
+}
+.archive-filter {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.archive-filter:hover { background: var(--paper-warm); color: var(--ink); }
+.archive-filter.is-active {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+
+@media (max-width: 700px) {
+  .archive-head {
+    grid-template-columns: 1fr;
+    grid-template-areas: "kicker" "title" "meta" "filters";
+  }
+  .archive-head__meta { text-align: left; }
+}
+
+/* The grid: auto-fitting columns at ~300px each */
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.5rem 2rem;
+}
+.archive-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--ink-faded);
+  padding: 4rem 0;
+  font-style: italic;
+}
+
+/* Individual card */
+.archive-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease;
+}
+.archive-card:hover { transform: translateY(-4px); }
+
+.archive-card__poster {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  border: 1.5px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--paper-aged);
+  background:
+    radial-gradient(circle at 32% 22%, rgba(232, 184, 90, 0.22), transparent 28%),
+    linear-gradient(145deg, #2D5167 0%, #201A13 58%, #B7352E 100%);
+  margin-bottom: 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.archive-card:hover .archive-card__poster {
+  transform: translate(-2px, -2px) rotate(-0.5deg);
+  box-shadow: 11px 11px 0 var(--paper-aged);
+}
+.archive-card__poster img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+.archive-card__poster-fallback {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: var(--paper);
+  font-family: var(--font-sport);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.05em;
+  z-index: 1;
+}
+
+/* Stock badge — corner ribbon */
+.archive-card__badge {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  z-index: 3;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.4rem 0.7rem;
+  background: var(--paper-warm);
+  border: 1.5px solid var(--ink);
+  text-transform: uppercase;
+}
+.archive-card__badge--buy  { color: var(--green);   border-color: var(--green); }
+.archive-card__badge--hold { color: var(--ink-soft); border-color: var(--ink-soft); }
+.archive-card__badge--sell { color: var(--red);     border-color: var(--red); }
+
+.archive-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+}
+.archive-card__kicker {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--red);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.archive-card__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1.35rem;
+  line-height: 1.18;
+  letter-spacing: -0.005em;
+  margin: 0;
+  color: var(--ink);
+  transition: color 0.15s ease;
+}
+.archive-card:hover .archive-card__title { color: var(--gold); }
+.archive-card__title em { font-style: italic; }
+.archive-card__tagline {
+  font-size: 0.92rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.archive-card__foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.7rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+  margin-top: auto;
+}
+.archive-card__rating { color: var(--gold); letter-spacing: 0.05em; }
+.archive-card__rating span { color: var(--ink-muted); margin-left: 0.3rem; }
+.archive-card__byline { color: var(--ink-muted); }
+.archive-card__byline strong { color: var(--ink); font-weight: 500; }
+.archive-card__date {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink-faded);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-top: 0.3rem;
+}

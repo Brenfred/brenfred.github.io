@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v12-archive-standalone)
+   FANTASY FILMBALL — content.js (v13-archive-redesign)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -504,69 +504,93 @@
 
   // ---- reviews archive page ---------------------------------------------
 
-  function renderReviewsArchive(reviews, writersBySlug) {
-    var list = $('[data-reviews-list]');
-    if (!list) return;
+  // ---- reviews archive page ---------------------------------------------
+  // A fresh, self-contained implementation. Uses archive-* class names that
+  // don't share any styles with the review cards used on home/film/writer
+  // pages. Everything visual is inline-styled or scoped to .archive-grid.
 
-    // The archive uses its OWN bespoke card markup — separate from
-    // reviewCardHTML — to guarantee the horizontal layout works regardless
-    // of any other CSS in play. Everything that matters is inline-styled.
-    list.innerHTML = reviews.map(function (r) {
+  function renderReviewsArchive(reviews, writersBySlug) {
+    var grid = $('[data-reviews-list]');
+    if (!grid) return;
+
+    // Update the meta row (X reviews · X buys · X holds · X sells)
+    var metaEl = $('[data-archive-meta]');
+    if (metaEl) {
+      var counts = { buy: 0, hold: 0, sell: 0 };
+      reviews.forEach(function (r) {
+        var s = (r.stance || 'buy').toLowerCase();
+        if (counts[s] != null) counts[s]++;
+      });
+      var parts = [reviews.length + ' review' + (reviews.length !== 1 ? 's' : '')];
+      if (counts.buy)  parts.push(counts.buy + ' buy' + (counts.buy !== 1 ? 's' : ''));
+      if (counts.hold) parts.push(counts.hold + ' hold' + (counts.hold !== 1 ? 's' : ''));
+      if (counts.sell) parts.push(counts.sell + ' sell' + (counts.sell !== 1 ? 's' : ''));
+      metaEl.textContent = parts.join(' · ');
+    }
+
+    function archiveCardHTML(r) {
       var stance = (r.stance || 'buy').toLowerCase();
-      var badgeArrow = stance === 'sell' ? '▼' : stance === 'hold' ? '—' : '▲';
       var stanceLabel = r.stanceLabel || (stance === 'sell' ? 'Sell' : stance === 'hold' ? 'Hold' : 'Buy');
-      var posterSlug = r.posterSlug || r.slug;
-      var posterPath = 'posters/' + posterSlug + '.jpg';
+      var stanceArrow = stance === 'sell' ? '▼' : stance === 'hold' ? '—' : '▲';
+      var posterPath = 'posters/' + (r.posterSlug || r.slug) + '.jpg';
       var film = r.film || r.slug;
       var rating = r.rating != null ? r.rating : 4.0;
       var stars = renderStars(rating);
-      var headline = r.title || '';
 
-      var rawExcerpt = r.excerpt || r.deck || '';
-      var excerpt = rawExcerpt.length > 200
-        ? rawExcerpt.slice(0, 195).replace(/\s+\S*$/, '') + '…'
-        : rawExcerpt;
+      // Tagline — cap at ~140 chars to keep cards uniform height
+      var rawTagline = r.excerpt || r.deck || '';
+      var tagline = rawTagline.length > 140
+        ? rawTagline.slice(0, 135).replace(/\s+\S*$/, '') + '…'
+        : rawTagline;
 
-      var kickerParts = [];
-      if (r.studio)        kickerParts.push(r.studio);
-      if (r.director)      kickerParts.push(r.director);
-      if (r.publishedDate) kickerParts.push(r.publishedDate);
-      var kicker = kickerParts.join(' · ');
-
-      var titleHTML = headlineHTML(film, headline);
+      var titleHTML = headlineHTML(film, r.title);
       var bylineStr = writersBySlug
         ? bylineHTML(r, writersBySlug)
         : 'By <strong>' + esc(r.writer || '[ Writer ]') + '</strong>';
 
       var href = 'review.html?slug=' + encodeURIComponent(r.slug);
+      var kickerParts = [];
+      if (r.studio)        kickerParts.push(r.studio);
+      if (r.director)      kickerParts.push(r.director);
+      var kicker = kickerParts.join(' · ');
 
-      // Inline styles guarantee layout regardless of cached CSS.
-      var cardStyle = 'display: flex; flex-direction: row; align-items: stretch; gap: 1.5rem; padding: 1rem; border-bottom: 1px solid var(--rule); text-decoration: none; color: inherit; background: rgba(252, 250, 241, 0.4);';
-      var posterColStyle = 'flex: 0 0 180px; width: 180px; max-width: 180px; aspect-ratio: 3 / 4; position: relative; overflow: hidden; border: 1.5px solid var(--ink); background: linear-gradient(145deg, #2D5167 0%, #201A13 58%, #B7352E 100%);';
-      var textColStyle = 'flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 0.45rem;';
-      var footStyle = 'margin-top: auto; padding-top: 0.85rem; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; color: var(--ink-muted);';
+      return '<a href="' + href + '" class="archive-card" data-stance="' + esc(stance) + '">' +
+        '<div class="archive-card__poster">' +
+          '<span class="archive-card__badge archive-card__badge--' + esc(stance) + '">' + stanceArrow + ' ' + esc(stanceLabel) + '</span>' +
+          '<img src="' + esc(posterPath) + '" alt="' + esc(film) + ' poster" loading="lazy" onerror="this.style.display=\'none\'">' +
+          '<div class="archive-card__poster-fallback">' + esc(film) + '</div>' +
+        '</div>' +
+        '<div class="archive-card__body">' +
+          (kicker ? '<div class="archive-card__kicker">' + esc(kicker) + '</div>' : '') +
+          '<h3 class="archive-card__title">' + titleHTML + '</h3>' +
+          (tagline ? '<p class="archive-card__tagline">' + esc(tagline) + '</p>' : '') +
+          '<div class="archive-card__foot">' +
+            '<span class="archive-card__rating">' + stars + ' <span>' + rating + '</span></span>' +
+            '<span class="archive-card__byline">' + bylineStr + '</span>' +
+          '</div>' +
+          (r.publishedDate ? '<div class="archive-card__date">' + esc(r.publishedDate) + '</div>' : '') +
+        '</div>' +
+      '</a>';
+    }
 
-      return (
-        '<a href="' + href + '" class="review-card archive-card" style="' + cardStyle + '">' +
-          '<div class="review-card__image" style="' + posterColStyle + '">' +
-            '<div class="review-card__badge-row" style="position: absolute; top: 0.5rem; left: 0.5rem; z-index: 3;">' +
-              '<span class="stock-badge stock-badge--' + esc(stance) + '">' + badgeArrow + ' ' + esc(stanceLabel) + '</span>' +
-            '</div>' +
-            '<img src="' + esc(posterPath) + '" alt="' + esc(film) + ' poster" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display=\'none\'">' +
-            '<div class="review-card__image-placeholder" style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: var(--paper); font-family: var(--font-sport); font-weight: 700; letter-spacing: 0.05em; text-align: center; padding: 0.5rem;">' + esc(film) + '</div>' +
-          '</div>' +
-          '<div style="' + textColStyle + '">' +
-            (kicker ? '<div class="review-card__kicker" style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--red); letter-spacing: 0.08em; text-transform: uppercase;">' + esc(kicker) + '</div>' : '') +
-            '<h3 class="review-card__title" style="font-family: var(--font-display); font-weight: 600; font-size: 1.5rem; line-height: 1.15; margin: 0;">' + titleHTML + '</h3>' +
-            '<p class="review-card__excerpt" style="font-size: 0.98rem; line-height: 1.5; color: var(--ink-soft); margin: 0;">' + esc(excerpt) + '</p>' +
-            '<div style="' + footStyle + '">' +
-              '<span class="rating">' + stars + ' <span class="rating__num">' + rating + '</span></span>' +
-              '<span>' + bylineStr + '</span>' +
-            '</div>' +
-          '</div>' +
-        '</a>'
-      );
-    }).join('\n');
+    if (reviews.length === 0) {
+      grid.innerHTML = '<p class="archive-empty">No reviews yet. Publish one in the CMS.</p>';
+    } else {
+      grid.innerHTML = reviews.map(archiveCardHTML).join('\n');
+    }
+
+    // Hook up the stance filters
+    var filterButtons = $$('[data-archive-filters] .archive-filter');
+    filterButtons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var filter = btn.getAttribute('data-filter');
+        filterButtons.forEach(function (b) { b.classList.toggle('is-active', b === btn); });
+        $$('.archive-card', grid).forEach(function (card) {
+          var stance = card.getAttribute('data-stance');
+          card.style.display = (filter === 'all' || filter === stance) ? '' : 'none';
+        });
+      });
+    });
   }
 
   // ---- homepage hero block ----------------------------------------------
@@ -1538,7 +1562,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v12-archive-standalone loaded');
+  if (window.console) console.log('[content.js] v13-archive-redesign loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
