@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v14-archive-nested-fix)
+   FANTASY FILMBALL — content.js (v15-card-nested-fix)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -463,15 +463,17 @@
       ? ' style="flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 0.4rem;"'
       : '';
 
+    var href = 'review.html?slug=' + encodeURIComponent(r.slug);
+
     var inner =
-      '<div class="review-card__image"' + imgInlineStyle + '>' +
+      '<a href="' + href + '" class="review-card__image"' + imgInlineStyle + '>' +
         '<div class="review-card__badge-row"><span class="stock-badge stock-badge--' + esc(stance) + '">' + badgeArrow + ' ' + esc(stanceLabel) + '</span></div>' +
         '<img src="' + esc(posterPath) + '" alt="' + esc(film) + ' poster" class="review-card__poster" loading="lazy" onerror="this.style.display=\'none\'">' +
         '<div class="review-card__image-placeholder">' + esc(film) + '</div>' +
-      '</div>' +
+      '</a>' +
       '<div class="review-card__text"' + textInlineStyle + '>' +
         (kicker ? '<div class="review-card__kicker">' + esc(kicker) + '</div>' : '') +
-        '<h3 class="review-card__title">' + titleHTML + '</h3>' +
+        '<h3 class="review-card__title"><a href="' + href + '">' + titleHTML + '</a></h3>' +
         '<p class="review-card__excerpt">' + esc(excerpt) + '</p>' +
         foot +
       '</div>';
@@ -481,8 +483,7 @@
     var inlineStyle = options.archive
       ? ' style="display: flex; flex-direction: row; align-items: stretch; gap: 1.5rem;"'
       : '';
-    var href = 'review.html?slug=' + encodeURIComponent(r.slug);
-    return '<a href="' + href + '" class="review-card"' + inlineStyle + '>' + inner + '</a>';
+    return '<article class="review-card"' + inlineStyle + '>' + inner + '</article>';
   }
 
   // ---- homepage review grids --------------------------------------------
@@ -1562,7 +1563,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v14-archive-nested-fix loaded');
+  if (window.console) console.log('[content.js] v15-card-nested-fix loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),

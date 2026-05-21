@@ -2588,3 +2588,14 @@ a.host:hover .host__name { color: var(--gold); }
 .archive-card__poster {
   display: block;  /* anchor was inline by default */
 }
+
+/* Review card link styling — outer is <article>, links sit on poster + title */
+.review-card__image {
+  text-decoration: none;
+  color: inherit;
+}
+.review-card__title a {
+  color: inherit;
+  text-decoration: none;
+}
+.review-card__title a:hover { color: var(--gold); }
