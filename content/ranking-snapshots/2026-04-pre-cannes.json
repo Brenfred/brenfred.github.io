@@ -1,0 +1,695 @@
+{
+  "snapshotSlug": "2026-04-pre-cannes",
+  "label": "Pre-Cannes",
+  "sortKey": "2026-04",
+  "publishedDate": "April 3, 2026",
+  "description": "First read of the 2026 race — the baseline before any festival movement.",
+  "categories": {
+    "actor": {
+      "label": "Best Actor",
+      "shortLabel": "Actor",
+      "cutoffRank": 5,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "digger",
+          "subtitle": "Tom Cruise",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 2,
+          "filmSlug": "fjord",
+          "subtitle": "Sebastian Stan",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 3,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "John Malkovich",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 4,
+          "filmSlug": "project-hail-mary",
+          "subtitle": "Ryan Gosling",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 5,
+          "filmSlug": "michael",
+          "subtitle": "Jaafar Jackson",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 6,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 7,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 8,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 9,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 10,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        }
+      ]
+    },
+    "actress": {
+      "label": "Best Actress",
+      "shortLabel": "Actress",
+      "cutoffRank": 5,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "fjord",
+          "subtitle": "Renate Reinsve",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 2,
+          "filmSlug": "fatherland",
+          "subtitle": "Sandra Hüller",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 3,
+          "filmSlug": "the-social-reckoning",
+          "subtitle": "Mikey Madison",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 4,
+          "filmSlug": "eisenberg-musical-comedy",
+          "subtitle": "Julianne Moore",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 5,
+          "filmSlug": "",
+          "subtitle": "Cynthia Erivo (Prima Facie)",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 6,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 7,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 8,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 9,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 10,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        }
+      ]
+    },
+    "adapt-screenplay": {
+      "label": "Best Adapted Screenplay",
+      "shortLabel": "Adapt. Screenplay",
+      "cutoffRank": 5,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "the-odyssey",
+          "subtitle": "Christopher Nolan",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 2,
+          "filmSlug": "project-hail-mary",
+          "subtitle": "Lord & Miller",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 3,
+          "filmSlug": "the-social-reckoning",
+          "subtitle": "Aaron Sorkin",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 4,
+          "filmSlug": "all-of-a-sudden",
+          "subtitle": "Ryusuke Hamaguchi",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 5,
+          "filmSlug": "cry-to-heaven",
+          "subtitle": "Tom Ford",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 6,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 7,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 8,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 9,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 10,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        }
+      ]
+    },
+    "director": {
+      "label": "Best Director",
+      "shortLabel": "Director",
+      "cutoffRank": 5,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "the-odyssey",
+          "subtitle": "Christopher Nolan",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 2,
+          "filmSlug": "digger",
+          "subtitle": "Alejandro G. Iñárritu",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 3,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Martin McDonagh",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 4,
+          "filmSlug": "fjord",
+          "subtitle": "Cristian Mungiu",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 5,
+          "filmSlug": "fatherland",
+          "subtitle": "Paweł Pawlikowski",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 6,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 7,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 8,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 9,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 10,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        }
+      ]
+    },
+    "orig-screenplay": {
+      "label": "Best Original Screenplay",
+      "shortLabel": "Orig. Screenplay",
+      "cutoffRank": 5,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Martin McDonagh",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 2,
+          "filmSlug": "digger",
+          "subtitle": "Alejandro G. Iñárritu",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 3,
+          "filmSlug": "fjord",
+          "subtitle": "Cristian Mungiu",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 4,
+          "filmSlug": "eisenberg-musical-comedy",
+          "subtitle": "Jesse Eisenberg",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 5,
+          "filmSlug": "jack-of-spades",
+          "subtitle": "Joel Coen",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 6,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 7,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 8,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 9,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 10,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        }
+      ]
+    },
+    "picture": {
+      "label": "Best Picture",
+      "shortLabel": "Picture",
+      "cutoffRank": 10,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "the-odyssey",
+          "subtitle": "Christopher Nolan",
+          "nomPct": "95%",
+          "winPct": "38%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "digger",
+          "subtitle": "Alejandro G. Iñárritu",
+          "nomPct": "93%",
+          "winPct": "13%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Martin McDonagh",
+          "nomPct": "91%",
+          "winPct": "27%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "project-hail-mary",
+          "subtitle": "Lord & Miller",
+          "nomPct": "89%",
+          "winPct": "7%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "fjord",
+          "subtitle": "Cristian Mungiu",
+          "nomPct": "87%",
+          "winPct": "4%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "narnia",
+          "subtitle": "",
+          "nomPct": "71%",
+          "winPct": ""
+        },
+        {
+          "rank": 7,
+          "filmSlug": "fatherland",
+          "subtitle": "",
+          "nomPct": "56%",
+          "winPct": ""
+        },
+        {
+          "rank": 8,
+          "filmSlug": "eisenberg-musical-comedy",
+          "subtitle": "",
+          "nomPct": "42%",
+          "winPct": ""
+        },
+        {
+          "rank": 9,
+          "filmSlug": "dune-part-three",
+          "subtitle": "",
+          "nomPct": "40%",
+          "winPct": ""
+        },
+        {
+          "rank": 10,
+          "filmSlug": "cry-to-heaven",
+          "subtitle": "",
+          "nomPct": "44%",
+          "winPct": ""
+        },
+        {
+          "rank": 11,
+          "filmSlug": "michael",
+          "subtitle": "",
+          "nomPct": "42%",
+          "winPct": ""
+        },
+        {
+          "rank": 12,
+          "filmSlug": "all-of-a-sudden",
+          "subtitle": "",
+          "nomPct": "42%",
+          "winPct": ""
+        },
+        {
+          "rank": 13,
+          "filmSlug": "the-social-reckoning",
+          "subtitle": "",
+          "nomPct": "33%",
+          "winPct": ""
+        },
+        {
+          "rank": 14,
+          "filmSlug": "sense-and-sensibility",
+          "subtitle": "",
+          "nomPct": "29%",
+          "winPct": ""
+        },
+        {
+          "rank": 15,
+          "filmSlug": "jack-of-spades",
+          "subtitle": "",
+          "nomPct": "24%",
+          "winPct": ""
+        },
+        {
+          "rank": 16,
+          "filmSlug": "disclosure-day",
+          "subtitle": "",
+          "nomPct": "18%",
+          "winPct": ""
+        },
+        {
+          "rank": 17,
+          "filmSlug": "josephine",
+          "subtitle": "",
+          "nomPct": "13%",
+          "winPct": ""
+        },
+        {
+          "rank": 18,
+          "filmSlug": "behemoth",
+          "subtitle": "",
+          "nomPct": "11%",
+          "winPct": ""
+        },
+        {
+          "rank": 19,
+          "filmSlug": "entertainment-system-is-down",
+          "subtitle": "",
+          "nomPct": "9%",
+          "winPct": ""
+        },
+        {
+          "rank": 20,
+          "filmSlug": "saturn-return",
+          "subtitle": "",
+          "nomPct": "7%",
+          "winPct": ""
+        }
+      ]
+    },
+    "supp-actor": {
+      "label": "Best Supporting Actor",
+      "shortLabel": "Supp. Actor",
+      "cutoffRank": 5,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "digger",
+          "subtitle": "John Goodman",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 2,
+          "filmSlug": "michael",
+          "subtitle": "Colman Domingo",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 3,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Steve Buscemi",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 4,
+          "filmSlug": "eisenberg-musical-comedy",
+          "subtitle": "Paul Giamatti",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 5,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Sam Rockwell",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 6,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 7,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 8,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 9,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 10,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        }
+      ]
+    },
+    "supp-actress": {
+      "label": "Best Supporting Actress",
+      "shortLabel": "Supp. Actress",
+      "cutoffRank": 5,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "digger",
+          "subtitle": "Sandra Hüller",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 2,
+          "filmSlug": "the-odyssey",
+          "subtitle": "Anne Hathaway",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 3,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Mariana Di Girolamo",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 4,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Parker Posey",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 5,
+          "filmSlug": "jack-of-spades",
+          "subtitle": "Frances McDormand",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 6,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 7,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 8,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 9,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 10,
+          "filmSlug": "",
+          "subtitle": "[ TBD ]",
+          "nomPct": "",
+          "winPct": ""
+        }
+      ]
+    }
+  }
+}
