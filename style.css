@@ -2601,3 +2601,91 @@ a.host:hover .host__name { color: var(--gold); }
   text-decoration: none;
 }
 .review-card__title a:hover { color: var(--gold); }
+
+/* =========================================================================
+   ARCHIVE FILTERS — dual filter groups (type + stance), each with own label
+   ========================================================================= */
+.archive-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 0.85rem;
+}
+.archive-filter-group {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.archive-filter-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faded);
+  margin-right: 0.2rem;
+  min-width: 4em;
+}
+
+/* =========================================================================
+   DISCUSSION CARDS — typographic poster (no film image) + discussion badge
+   ========================================================================= */
+.archive-card__badge--discussion {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.archive-card__poster--typo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 1.5rem 1.25rem 1.25rem;
+  text-align: center;
+  background:
+    repeating-linear-gradient(
+      135deg,
+      rgba(232, 184, 90, 0.08),
+      rgba(232, 184, 90, 0.08) 2px,
+      transparent 2px,
+      transparent 14px
+    ),
+    linear-gradient(180deg, #2D5167 0%, #1A2D3A 70%, #0E1820 100%);
+  color: var(--paper);
+  text-decoration: none;
+}
+.archive-card__poster--typo .archive-card__badge {
+  position: absolute;
+  background: var(--paper-warm);
+}
+.archive-card__typo-stamp {
+  margin-top: 2.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(232, 184, 90, 0.4);
+}
+.archive-card__typo-headline {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: -0.005em;
+  color: var(--paper);
+  padding: 1rem 0;
+  hyphens: auto;
+}
+
+/* Empty/no-rating dash on discussions without a star rating */
+.archive-card__rating--empty {
+  color: var(--ink-faded);
+  letter-spacing: 0;
+}

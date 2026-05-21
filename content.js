@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v17-home-hosts)
+   FANTASY FILMBALL — content.js (v18-articles-with-discussions)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -514,84 +514,168 @@
     var grid = $('[data-reviews-list]');
     if (!grid) return;
 
-    // Update the meta row (X reviews · X buys · X holds · X sells)
+    // Update the meta row: total count + breakdown by type
     var metaEl = $('[data-archive-meta]');
     if (metaEl) {
-      var counts = { buy: 0, hold: 0, sell: 0 };
+      var reviewCount = 0, discussionCount = 0;
       reviews.forEach(function (r) {
-        var s = (r.stance || 'buy').toLowerCase();
-        if (counts[s] != null) counts[s]++;
+        if ((r.type || 'review') === 'discussion') discussionCount++;
+        else reviewCount++;
       });
-      var parts = [reviews.length + ' review' + (reviews.length !== 1 ? 's' : '')];
-      if (counts.buy)  parts.push(counts.buy + ' buy' + (counts.buy !== 1 ? 's' : ''));
-      if (counts.hold) parts.push(counts.hold + ' hold' + (counts.hold !== 1 ? 's' : ''));
-      if (counts.sell) parts.push(counts.sell + ' sell' + (counts.sell !== 1 ? 's' : ''));
+      var parts = [reviews.length + ' article' + (reviews.length !== 1 ? 's' : '')];
+      if (reviewCount)     parts.push(reviewCount + ' review' + (reviewCount !== 1 ? 's' : ''));
+      if (discussionCount) parts.push(discussionCount + ' discussion' + (discussionCount !== 1 ? 's' : ''));
       metaEl.textContent = parts.join(' · ');
     }
 
     function archiveCardHTML(r) {
-      var stance = (r.stance || 'buy').toLowerCase();
+      var type = (r.type || 'review').toLowerCase();
+      var isDiscussion = type === 'discussion';
+
+      // Stance: optional. Only render badge/styling if explicitly set.
+      var stance = (r.stance || '').toLowerCase();
+      var hasStance = stance === 'buy' || stance === 'hold' || stance === 'sell';
       var stanceLabel = r.stanceLabel || (stance === 'sell' ? 'Sell' : stance === 'hold' ? 'Hold' : 'Buy');
       var stanceArrow = stance === 'sell' ? '▼' : stance === 'hold' ? '—' : '▲';
-      var posterPath = 'posters/' + (r.posterSlug || r.slug) + '.jpg';
-      var film = r.film || r.slug;
-      var rating = r.rating != null ? r.rating : 4.0;
-      var stars = renderStars(rating);
 
-      // Tagline — cap at ~140 chars to keep cards uniform height
+      var film = r.film || '';
+      var hasPoster = !!r.posterSlug;
+      var posterPath = hasPoster ? 'posters/' + r.posterSlug + '.jpg' : '';
+
+      // Rating: optional. Only show stars if explicitly set.
+      var hasRating = r.rating != null && r.rating !== '';
+      var rating = hasRating ? r.rating : null;
+      var stars = hasRating ? renderStars(rating) : '';
+
       var rawTagline = r.excerpt || r.deck || '';
       var tagline = rawTagline.length > 140
         ? rawTagline.slice(0, 135).replace(/\s+\S*$/, '') + '…'
         : rawTagline;
 
-      var titleHTML = headlineHTML(film, r.title);
+      var headline = r.title || '';
+      var titleHTML = isDiscussion ? esc(headline) : headlineHTML(film || headline, headline);
       var bylineStr = writersBySlug
         ? bylineHTML(r, writersBySlug)
         : 'By <strong>' + esc(r.writer || '[ Writer ]') + '</strong>';
-
       var href = 'review.html?slug=' + encodeURIComponent(r.slug);
+
+      // Kicker varies by type. Reviews show studio/director. Discussions show
+      // category tags ("BEST DIRECTOR · BEST PICTURE") if any.
       var kickerParts = [];
-      if (r.studio)        kickerParts.push(r.studio);
-      if (r.director)      kickerParts.push(r.director);
+      if (isDiscussion) {
+        if (Array.isArray(r.categoryTags) && r.categoryTags.length) {
+          kickerParts = r.categoryTags.map(function (slug) {
+            return prettifyCategorySlug(slug);
+          });
+        } else {
+          kickerParts.push('Discussion');
+        }
+      } else {
+        if (r.studio)   kickerParts.push(r.studio);
+        if (r.director) kickerParts.push(r.director);
+      }
       var kicker = kickerParts.join(' · ');
 
-      return '<article class="archive-card" data-stance="' + esc(stance) + '">' +
-        '<a href="' + href + '" class="archive-card__poster">' +
-          '<span class="archive-card__badge archive-card__badge--' + esc(stance) + '">' + stanceArrow + ' ' + esc(stanceLabel) + '</span>' +
-          '<img src="' + esc(posterPath) + '" alt="' + esc(film) + ' poster" loading="lazy" onerror="this.style.display=\'none\'">' +
-          '<div class="archive-card__poster-fallback">' + esc(film) + '</div>' +
-        '</a>' +
+      // Badge: stance badge for either type if stance is set.
+      // For discussions without a stance, show a subtle "Discussion" tag.
+      var badgeHTML = '';
+      if (hasStance) {
+        badgeHTML = '<span class="archive-card__badge archive-card__badge--' + esc(stance) + '">' +
+          stanceArrow + ' ' + esc(stanceLabel) + '</span>';
+      } else if (isDiscussion) {
+        badgeHTML = '<span class="archive-card__badge archive-card__badge--discussion">' +
+          '◆ Discussion</span>';
+      }
+
+      // Poster column: either real poster image OR typographic card with headline.
+      var posterHTML;
+      if (hasPoster) {
+        posterHTML =
+          '<a href="' + href + '" class="archive-card__poster">' +
+            badgeHTML +
+            '<img src="' + esc(posterPath) + '" alt="' + esc(film || headline) + ' poster" loading="lazy" onerror="this.style.display=\'none\'">' +
+            '<div class="archive-card__poster-fallback">' + esc(film || headline) + '</div>' +
+          '</a>';
+      } else {
+        // Typographic poster for discussions with no film image
+        posterHTML =
+          '<a href="' + href + '" class="archive-card__poster archive-card__poster--typo">' +
+            badgeHTML +
+            '<div class="archive-card__typo-stamp">' + esc((r.categoryTags && r.categoryTags[0]) ? prettifyCategorySlug(r.categoryTags[0]).toUpperCase() : 'OSCAR DESK') + '</div>' +
+            '<div class="archive-card__typo-headline">' + esc(headline) + '</div>' +
+          '</a>';
+      }
+
+      // Foot row: rating + byline. For discussions without rating, just byline.
+      var footHTML = '<div class="archive-card__foot">';
+      if (hasRating) {
+        footHTML += '<span class="archive-card__rating">' + stars + ' <span>' + rating + '</span></span>';
+      } else {
+        footHTML += '<span class="archive-card__rating archive-card__rating--empty">—</span>';
+      }
+      footHTML += '<span class="archive-card__byline">' + bylineStr + '</span></div>';
+
+      return '<article class="archive-card" data-type="' + esc(type) + '" data-stance="' + esc(stance || 'none') + '">' +
+        posterHTML +
         '<div class="archive-card__body">' +
           (kicker ? '<div class="archive-card__kicker">' + esc(kicker) + '</div>' : '') +
           '<h3 class="archive-card__title"><a href="' + href + '">' + titleHTML + '</a></h3>' +
           (tagline ? '<p class="archive-card__tagline">' + esc(tagline) + '</p>' : '') +
-          '<div class="archive-card__foot">' +
-            '<span class="archive-card__rating">' + stars + ' <span>' + rating + '</span></span>' +
-            '<span class="archive-card__byline">' + bylineStr + '</span>' +
-          '</div>' +
+          footHTML +
           (r.publishedDate ? '<div class="archive-card__date">' + esc(r.publishedDate) + '</div>' : '') +
         '</div>' +
       '</article>';
     }
 
     if (reviews.length === 0) {
-      grid.innerHTML = '<p class="archive-empty">No reviews yet. Publish one in the CMS.</p>';
+      grid.innerHTML = '<p class="archive-empty">No articles yet. Publish one in the CMS.</p>';
     } else {
       grid.innerHTML = reviews.map(archiveCardHTML).join('\n');
     }
 
-    // Hook up the stance filters
-    var filterButtons = $$('[data-archive-filters] .archive-filter');
-    filterButtons.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var filter = btn.getAttribute('data-filter');
-        filterButtons.forEach(function (b) { b.classList.toggle('is-active', b === btn); });
-        $$('.archive-card', grid).forEach(function (card) {
-          var stance = card.getAttribute('data-stance');
-          card.style.display = (filter === 'all' || filter === stance) ? '' : 'none';
+    // ---- Filter logic: two independent groups (type, stance) ----
+    // Tracks current filter selection for each group, recomputes visibility.
+    var currentFilters = { type: 'all', stance: 'all' };
+
+    function applyFilters() {
+      $$('.archive-card', grid).forEach(function (card) {
+        var cardType = card.getAttribute('data-type');
+        var cardStance = card.getAttribute('data-stance');
+        var typeMatch = currentFilters.type === 'all' || currentFilters.type === cardType;
+        var stanceMatch = currentFilters.stance === 'all' || currentFilters.stance === cardStance;
+        card.style.display = (typeMatch && stanceMatch) ? '' : 'none';
+      });
+    }
+
+    function wireGroup(attr, group) {
+      $$('[data-filter-' + attr + ']', $('[data-archive-filters]')).forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          currentFilters[attr] = btn.getAttribute('data-filter-' + attr);
+          // Toggle is-active within this group only
+          $$('[data-filter-' + attr + ']', $('[data-archive-filters]')).forEach(function (b) {
+            b.classList.toggle('is-active', b === btn);
+          });
+          applyFilters();
         });
       });
-    });
+    }
+    wireGroup('type');
+    wireGroup('stance');
+  }
+
+  // Turn a category slug into a display label.
+  function prettifyCategorySlug(slug) {
+    var map = {
+      'picture':           'Best Picture',
+      'director':          'Best Director',
+      'actor':             'Best Actor',
+      'actress':           'Best Actress',
+      'supp-actor':        'Supp. Actor',
+      'supp-actress':      'Supp. Actress',
+      'orig-screenplay':   'Original Screenplay',
+      'adapt-screenplay':  'Adapted Screenplay'
+    };
+    return map[slug] || slug;
   }
 
   // ---- homepage hero block ----------------------------------------------
@@ -1595,7 +1679,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v17-home-hosts loaded');
+  if (window.console) console.log('[content.js] v18-articles-with-discussions loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
