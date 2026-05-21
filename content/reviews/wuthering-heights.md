@@ -1,4 +1,5 @@
 ---
+type: review
 title: '"Wuthering Heights" is the Embodiment of Emerald Fennell'
 film: '"Wuthering Heights"'
 director: Emerald Fennell
