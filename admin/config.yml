@@ -257,49 +257,58 @@ collections:
       - { name: "releaseDate", label: "Release Date", widget: "string", required: false }
       - { name: "runtime",     label: "Runtime", widget: "string", required: false }
 
-  # ─── Category Rankings ─────────────────────────────────────────────────────
-  # 8 separate "Current + Previous" pairs for each Oscar category. The Oscar
-  # Race page reads these. Movement arrows are computed by diffing current vs
-  # previous, same as the Best Picture rankings.
-  - name: "categories"
-    label: "🏅 Category Rankings"
-    description: "Top 10 per category. Movement arrows compare Current vs Previous Snapshot. Before editing Current, copy values to Previous (or use /admin/snapshot-categories.html for one-click)."
-    files:
-      - { name: "picture-current",          label: "🏆 Best Picture · CURRENT",         file: "content/categories/picture.json",                  fields: &cat_fields [
-            { name: "label",      label: "Full Label",  widget: "string" },
-            { name: "shortLabel", label: "Short Label", widget: "string" },
-            { name: "cutoffRank", label: "Cutoff Rank (where the line is)", widget: "number", default: 5, hint: "Where the predicted-cutoff line is drawn. 5 for most categories, 10 for Best Picture (10 nominees)." },
-            { name: "films", label: "Films (top 10 — top 20 for Best Picture)", widget: "list", summary: "{{fields.rank}}. {{fields.subtitle}}",
-              fields: [
-                { name: "rank",     label: "Rank",     widget: "number", value_type: "int", min: 1, max: 20 },
-                { name: "filmSlug", label: "Film Slug", widget: "string", required: false,
-                  hint: "Match a film file in /content/films/ — e.g. 'the-odyssey'" },
-                { name: "subtitle", label: "Display Text", widget: "string",
-                  hint: "For acting categories, the performer's name. For others, can be the director or left blank." },
-                { name: "nomPct", label: "Nom %", widget: "string", required: false, hint: "e.g. '95%'" },
-                { name: "winPct", label: "Win %", widget: "string", required: false, hint: "e.g. '38%'" }
-              ]
-            }
-          ] }
-      - { name: "picture-previous",         label: "🏆 Best Picture · Previous Snapshot", file: "content/categories-previous/picture.json", fields: *cat_fields }
-
-      - { name: "director-current",         label: "🎬 Best Director · CURRENT",         file: "content/categories/director.json",                 fields: *cat_fields }
-      - { name: "director-previous",        label: "🎬 Best Director · Previous Snapshot", file: "content/categories-previous/director.json", fields: *cat_fields }
-
-      - { name: "actress-current",          label: "👩 Best Actress · CURRENT",          file: "content/categories/actress.json",                  fields: *cat_fields }
-      - { name: "actress-previous",         label: "👩 Best Actress · Previous Snapshot", file: "content/categories-previous/actress.json",   fields: *cat_fields }
-
-      - { name: "actor-current",            label: "👨 Best Actor · CURRENT",            file: "content/categories/actor.json",                    fields: *cat_fields }
-      - { name: "actor-previous",           label: "👨 Best Actor · Previous Snapshot",  file: "content/categories-previous/actor.json",     fields: *cat_fields }
-
-      - { name: "supp-actress-current",     label: "🥈 Supp. Actress · CURRENT",         file: "content/categories/supp-actress.json",             fields: *cat_fields }
-      - { name: "supp-actress-previous",    label: "🥈 Supp. Actress · Previous Snapshot", file: "content/categories-previous/supp-actress.json", fields: *cat_fields }
-
-      - { name: "supp-actor-current",       label: "🥈 Supp. Actor · CURRENT",           file: "content/categories/supp-actor.json",               fields: *cat_fields }
-      - { name: "supp-actor-previous",      label: "🥈 Supp. Actor · Previous Snapshot", file: "content/categories-previous/supp-actor.json", fields: *cat_fields }
-
-      - { name: "orig-screenplay-current",  label: "✍️ Original Screenplay · CURRENT",   file: "content/categories/orig-screenplay.json",          fields: *cat_fields }
-      - { name: "orig-screenplay-previous", label: "✍️ Original Screenplay · Previous Snapshot", file: "content/categories-previous/orig-screenplay.json", fields: *cat_fields }
-
-      - { name: "adapt-screenplay-current", label: "📜 Adapted Screenplay · CURRENT",    file: "content/categories/adapt-screenplay.json",         fields: *cat_fields }
-      - { name: "adapt-screenplay-previous",label: "📜 Adapted Screenplay · Previous Snapshot", file: "content/categories-previous/adapt-screenplay.json", fields: *cat_fields }
+  # ─── Ranking Snapshots ──────────────────────────────────────────────────────
+  # One file per snapshot in time (Pre-Cannes, Post-Cannes, Pre-Fall, etc).
+  # Each contains ALL 8 categories for that moment. The site shows the latest
+  # snapshot as "current" and uses the previous one for movement arrows.
+  # Users can also toggle to view any historical snapshot.
+  - name: "ranking-snapshots"
+    label: "📅 Ranking Snapshots"
+    description: "Each entry is one moment in time (Pre-Cannes, Post-Cannes, monthly updates, etc). Sorted chronologically by 'sortKey'. Newest snapshot becomes the site default. Movement arrows compare it to the previous snapshot."
+    folder: "content/ranking-snapshots"
+    create: true
+    delete: false
+    extension: "json"
+    format: "json"
+    slug: "{{fields.snapshotSlug}}"
+    summary: "{{fields.label}} — {{fields.publishedDate}}"
+    fields:
+      - { name: "snapshotSlug", label: "Snapshot Slug (file name)", widget: "string",
+          hint: "e.g. '2026-05-post-cannes'. Used as the filename. Don't include the .json extension." }
+      - { name: "label", label: "Display Label", widget: "string",
+          hint: "What users see in the toggle. e.g. 'Pre-Cannes', 'Post-Cannes', 'Pre-Fall Festivals', 'September 2026'." }
+      - { name: "sortKey", label: "Sort Key", widget: "string",
+          hint: "Used to order snapshots chronologically. Format: YYYY-MM (e.g. '2026-04', '2026-05', '2026-08'). Newer key = newer snapshot. Same-month snapshots can use YYYY-MM-a / YYYY-MM-b." }
+      - { name: "publishedDate", label: "Published Date", widget: "string",
+          hint: "e.g. 'April 3, 2026'. Shown under the toggle." }
+      - { name: "description", label: "Short Description", widget: "text", required: false,
+          hint: "1-2 sentence summary of what changed in this snapshot. Shown on the Oscar Race page when this snapshot is selected." }
+      - name: "categories"
+        label: "Categories (all 8)"
+        widget: "object"
+        hint: "All 8 categories in one place. Each has its own rankings list."
+        fields:
+          - { name: "picture", label: "🏆 Best Picture", widget: "object", fields: &cat_fields [
+              { name: "label", label: "Full Label", widget: "string", default: "Best Picture" },
+              { name: "shortLabel", label: "Short Label", widget: "string", default: "Picture" },
+              { name: "cutoffRank", label: "Cutoff Rank", widget: "number", value_type: "int", default: 10,
+                hint: "Where the dashed predicted-cutoff line is drawn. 10 for Best Picture, 5 for others." },
+              { name: "films", label: "Films", widget: "list", summary: "{{fields.rank}}. {{fields.subtitle}} ({{fields.filmSlug}})",
+                fields: [
+                  { name: "rank", label: "Rank", widget: "number", value_type: "int", min: 1, max: 20 },
+                  { name: "filmSlug", label: "Film Slug", widget: "string", required: false,
+                    hint: "Match a film file in /content/films/." },
+                  { name: "subtitle", label: "Display Text", widget: "string", required: false,
+                    hint: "For acting categories, the performer's name. For others, the director or blank." },
+                  { name: "nomPct", label: "Nom %", widget: "string", required: false },
+                  { name: "winPct", label: "Win %", widget: "string", required: false }
+                ]
+              }
+            ] }
+          - { name: "director", label: "🎬 Best Director", widget: "object", fields: *cat_fields }
+          - { name: "actress", label: "👩 Best Actress", widget: "object", fields: *cat_fields }
+          - { name: "actor", label: "👨 Best Actor", widget: "object", fields: *cat_fields }
+          - { name: "supp-actress", label: "🥈 Supp. Actress", widget: "object", fields: *cat_fields }
+          - { name: "supp-actor", label: "🥈 Supp. Actor", widget: "object", fields: *cat_fields }
+          - { name: "orig-screenplay", label: "✍️ Original Screenplay", widget: "object", fields: *cat_fields }
+          - { name: "adapt-screenplay", label: "📜 Adapted Screenplay", widget: "object", fields: *cat_fields }
