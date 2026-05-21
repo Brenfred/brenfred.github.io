@@ -24,7 +24,7 @@ isHero: false
 tags:
   - michael
 ---
-Jaafar Jackson *is Michael*.
+Jaafar Jackson is Michael.
 
 Jaafar’s very first scene … he turns away from the window, faces the camera, delivers his first line… and the entire theater at the Las Vegas IMAX audibly gasps at how perfectly he captures his uncle’s essence. What you’re seeing feels like a hologram of the King of Pop. Jaafar embodies his uncle like no other, from the iconic voice, to the generation-defining dance moves, to the demeanor of the biggest pop star ever. Considering this is Jaafar’s first-ever acting credit, he blew my expectations off the wall. He pulls off one of the best lead performances in a music biopic of all time.
 
