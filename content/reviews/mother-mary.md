@@ -17,8 +17,9 @@ publishedDate: April 23, 2026
 deck: "David Lowery’s Mother Mary is less a traditional drama than an emotional
   exorcism, using the framework of pop stardom to explore shame, desire,
   identity, and the terrifying weight of human connection. "
-excerpt: Too weird for awards but deserves them
+excerpt: ""
 heroImage: https://deadline.com/wp-content/uploads/2025/12/MM_16x9_Trailer_Thubmnail_2.webp
+verdictNote: Too weird for awards but deserves them
 isHero: false
 tags: []
 categoryTags: []
