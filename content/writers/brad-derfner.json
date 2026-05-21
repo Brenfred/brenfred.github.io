@@ -4,11 +4,13 @@
   "name": "Brad Derfner",
   "slug": "brad-derfner",
   "longBio": "[ Edit this in the CMS. Write a longer multi-paragraph bio that gives readers a sense of your taste, your background, and what you bring to the show. ]\n\n[ Add a second paragraph about your favorite films, your obsessions, or how you got into Oscar prognosticating. ]",
-  "shortRole": "Editor",
-  "twitter": "",
-  "role": "Editor",
-  "favorites": [],
-  "joinedDate": "2026",
+  "shortRole": "Lead Editor",
+  "twitter": "@brad_derfner",
+  "role": "Lead Editor & Website Manager",
+  "favorites": [
+    "Ocean's Eleven"
+  ],
+  "joinedDate": "2025",
   "pullQuote": "",
-  "letterboxd": ""
+  "letterboxd": "brad_derfner"
 }
