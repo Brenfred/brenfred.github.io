@@ -10,26 +10,146 @@
       "shortLabel": "Picture",
       "cutoffRank": 10,
       "films": [
-        { "rank": 1,  "filmSlug": "the-odyssey",                    "subtitle": "Christopher Nolan",         "nomPct": "95%", "winPct": "38%" },
-        { "rank": 2,  "filmSlug": "digger",                         "subtitle": "Alejandro G. Iñárritu",     "nomPct": "93%", "winPct": "13%" },
-        { "rank": 3,  "filmSlug": "wild-horse-nine",                "subtitle": "Martin McDonagh",           "nomPct": "91%", "winPct": "27%" },
-        { "rank": 4,  "filmSlug": "project-hail-mary",              "subtitle": "Lord & Miller",             "nomPct": "89%", "winPct": "7%"  },
-        { "rank": 5,  "filmSlug": "fjord",                          "subtitle": "Cristian Mungiu",           "nomPct": "87%", "winPct": "4%"  },
-        { "rank": 6,  "filmSlug": "narnia",                         "subtitle": "Greta Gerwig",              "nomPct": "71%", "winPct": ""    },
-        { "rank": 7,  "filmSlug": "fatherland",                     "subtitle": "Paweł Pawlikowski",         "nomPct": "56%", "winPct": ""    },
-        { "rank": 8,  "filmSlug": "eisenberg-musical-comedy",       "subtitle": "Jesse Eisenberg",           "nomPct": "42%", "winPct": ""    },
-        { "rank": 9,  "filmSlug": "dune-part-three",                "subtitle": "Denis Villeneuve",          "nomPct": "40%", "winPct": ""    },
-        { "rank": 10, "filmSlug": "cry-to-heaven",                  "subtitle": "Tom Ford",                  "nomPct": "44%", "winPct": ""    },
-        { "rank": 11, "filmSlug": "michael",                        "subtitle": "Antoine Fuqua",             "nomPct": "42%", "winPct": ""    },
-        { "rank": 12, "filmSlug": "all-of-a-sudden",                "subtitle": "Ryusuke Hamaguchi",         "nomPct": "42%", "winPct": ""    },
-        { "rank": 13, "filmSlug": "the-social-reckoning",           "subtitle": "Aaron Sorkin",              "nomPct": "33%", "winPct": ""    },
-        { "rank": 14, "filmSlug": "sense-and-sensibility",          "subtitle": "Georgia Oakley",            "nomPct": "29%", "winPct": ""    },
-        { "rank": 15, "filmSlug": "jack-of-spades",                 "subtitle": "Joel Coen",                 "nomPct": "24%", "winPct": ""    },
-        { "rank": 16, "filmSlug": "disclosure-day",                 "subtitle": "Steven Spielberg",          "nomPct": "18%", "winPct": ""    },
-        { "rank": 17, "filmSlug": "josephine",                      "subtitle": "Beth de Araújo",            "nomPct": "13%", "winPct": ""    },
-        { "rank": 18, "filmSlug": "behemoth",                       "subtitle": "Tony Gilroy",               "nomPct": "11%", "winPct": ""    },
-        { "rank": 19, "filmSlug": "entertainment-system-is-down",   "subtitle": "Ruben Östlund",             "nomPct": "9%",  "winPct": ""    },
-        { "rank": 20, "filmSlug": "saturn-return",                  "subtitle": "Greg Kwedar",               "nomPct": "7%",  "winPct": ""    }
+        {
+          "rank": 1,
+          "filmSlug": "the-odyssey",
+          "subtitle": "",
+          "nomPct": "95%",
+          "winPct": "38%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "digger",
+          "subtitle": "",
+          "nomPct": "93%",
+          "winPct": "13%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "",
+          "nomPct": "91%",
+          "winPct": "27%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "project-hail-mary",
+          "subtitle": "",
+          "nomPct": "89%",
+          "winPct": "7%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "fjord",
+          "subtitle": "",
+          "nomPct": "87%",
+          "winPct": "4%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "narnia",
+          "subtitle": "",
+          "nomPct": "71%",
+          "winPct": ""
+        },
+        {
+          "rank": 7,
+          "filmSlug": "fatherland",
+          "subtitle": "",
+          "nomPct": "56%",
+          "winPct": ""
+        },
+        {
+          "rank": 8,
+          "filmSlug": "eisenberg-musical-comedy",
+          "subtitle": "",
+          "nomPct": "42%",
+          "winPct": ""
+        },
+        {
+          "rank": 9,
+          "filmSlug": "dune-part-three",
+          "subtitle": "",
+          "nomPct": "40%",
+          "winPct": ""
+        },
+        {
+          "rank": 10,
+          "filmSlug": "cry-to-heaven",
+          "subtitle": "",
+          "nomPct": "44%",
+          "winPct": ""
+        },
+        {
+          "rank": 11,
+          "filmSlug": "michael",
+          "subtitle": "",
+          "nomPct": "42%",
+          "winPct": ""
+        },
+        {
+          "rank": 12,
+          "filmSlug": "all-of-a-sudden",
+          "subtitle": "",
+          "nomPct": "42%",
+          "winPct": ""
+        },
+        {
+          "rank": 13,
+          "filmSlug": "the-social-reckoning",
+          "subtitle": "",
+          "nomPct": "33%",
+          "winPct": ""
+        },
+        {
+          "rank": 14,
+          "filmSlug": "sense-and-sensibility",
+          "subtitle": "",
+          "nomPct": "29%",
+          "winPct": ""
+        },
+        {
+          "rank": 15,
+          "filmSlug": "jack-of-spades",
+          "subtitle": "",
+          "nomPct": "24%",
+          "winPct": ""
+        },
+        {
+          "rank": 16,
+          "filmSlug": "disclosure-day",
+          "subtitle": "",
+          "nomPct": "18%",
+          "winPct": ""
+        },
+        {
+          "rank": 17,
+          "filmSlug": "josephine",
+          "subtitle": "",
+          "nomPct": "13%",
+          "winPct": ""
+        },
+        {
+          "rank": 18,
+          "filmSlug": "behemoth",
+          "subtitle": "",
+          "nomPct": "11%",
+          "winPct": ""
+        },
+        {
+          "rank": 19,
+          "filmSlug": "entertainment-system-is-down",
+          "subtitle": "",
+          "nomPct": "9%",
+          "winPct": ""
+        },
+        {
+          "rank": 20,
+          "filmSlug": "saturn-return",
+          "subtitle": "",
+          "nomPct": "7%",
+          "winPct": ""
+        }
       ]
     },
     "director": {
@@ -37,16 +157,76 @@
       "shortLabel": "Director",
       "cutoffRank": 5,
       "films": [
-        { "rank": 1,  "filmSlug": "the-odyssey",        "subtitle": "Christopher Nolan",         "nomPct": "89%", "winPct": "47%" },
-        { "rank": 2,  "filmSlug": "digger",             "subtitle": "Alejandro G. Iñárritu",     "nomPct": "94%", "winPct": "11%" },
-        { "rank": 3,  "filmSlug": "wild-horse-nine",    "subtitle": "Martin McDonagh",           "nomPct": "79%", "winPct": "28%" },
-        { "rank": 4,  "filmSlug": "fjord",              "subtitle": "Cristian Mungiu",           "nomPct": "79%", "winPct": "2%"  },
-        { "rank": 5,  "filmSlug": "fatherland",         "subtitle": "Paweł Pawlikowski",         "nomPct": "38%", "winPct": "2%"  },
-        { "rank": 6,  "filmSlug": "all-of-a-sudden",    "subtitle": "Ryusuke Hamaguchi",         "nomPct": "23%", "winPct": "0%"  },
-        { "rank": 7,  "filmSlug": "project-hail-mary",  "subtitle": "Phil Lord, Christopher Miller", "nomPct": "17%", "winPct": "4%" },
-        { "rank": 8,  "filmSlug": "dune-part-three",    "subtitle": "Denis Villeneuve",          "nomPct": "17%", "winPct": "2%"  },
-        { "rank": 9,  "filmSlug": "cry-to-heaven",      "subtitle": "Tom Ford",                  "nomPct": "13%", "winPct": "0%"  },
-        { "rank": 10, "filmSlug": "disclosure-day",     "subtitle": "Steven Spielberg",          "nomPct": "11%", "winPct": "2%"  }
+        {
+          "rank": 1,
+          "filmSlug": "the-odyssey",
+          "subtitle": "Christopher Nolan",
+          "nomPct": "89%",
+          "winPct": "47%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "digger",
+          "subtitle": "Alejandro G. Iñárritu",
+          "nomPct": "94%",
+          "winPct": "11%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Martin McDonagh",
+          "nomPct": "79%",
+          "winPct": "28%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "fjord",
+          "subtitle": "Cristian Mungiu",
+          "nomPct": "79%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "fatherland",
+          "subtitle": "Paweł Pawlikowski",
+          "nomPct": "38%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "all-of-a-sudden",
+          "subtitle": "Ryusuke Hamaguchi",
+          "nomPct": "23%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 7,
+          "filmSlug": "project-hail-mary",
+          "subtitle": "Phil Lord, Christopher Miller",
+          "nomPct": "17%",
+          "winPct": "4%"
+        },
+        {
+          "rank": 8,
+          "filmSlug": "dune-part-three",
+          "subtitle": "Denis Villeneuve",
+          "nomPct": "17%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 9,
+          "filmSlug": "cry-to-heaven",
+          "subtitle": "Tom Ford",
+          "nomPct": "13%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 10,
+          "filmSlug": "disclosure-day",
+          "subtitle": "Steven Spielberg",
+          "nomPct": "11%",
+          "winPct": "2%"
+        }
       ]
     },
     "actor": {
@@ -54,12 +234,76 @@
       "shortLabel": "Actor",
       "cutoffRank": 5,
       "films": [
-        { "rank": 1,  "filmSlug": "digger",                   "subtitle": "Tom Cruise",        "nomPct": "100%", "winPct": "71%" },
-        { "rank": 2,  "filmSlug": "fjord",                    "subtitle": "Sebastian Stan",    "nomPct": "88%",  "winPct": "4%"  },
-        { "rank": 3,  "filmSlug": "wild-horse-nine",          "subtitle": "John Malkovich",    "nomPct": "58%",  "winPct": "19%" },
-        { "rank": 4,  "filmSlug": "project-hail-mary",        "subtitle": "Ryan Gosling",      "nomPct": "54%",  "winPct": "2%"  },
-        { "rank": 5,  "filmSlug": "michael",                  "subtitle": "Jaafar Jackson",    "nomPct": "46%",  "winPct": "0%"  },
-        { "rank": 6,  "filmSlug": "the-odyssey",              "subtitle": "Matt Damon",        "nomPct": "",     "winPct": ""    }
+        {
+          "rank": 1,
+          "filmSlug": "digger",
+          "subtitle": "Tom Cruise",
+          "nomPct": "100%",
+          "winPct": "71%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "fjord",
+          "subtitle": "Sebastian Stan",
+          "nomPct": "88%",
+          "winPct": "4%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "John Malkovich",
+          "nomPct": "58%",
+          "winPct": "19%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "project-hail-mary",
+          "subtitle": "Ryan Gosling",
+          "nomPct": "54%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "michael",
+          "subtitle": "Jaafar Jackson",
+          "nomPct": "46%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "the-odyssey",
+          "subtitle": "Matt Damon",
+          "nomPct": "",
+          "winPct": ""
+        },
+        {
+          "rank": 7,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Sam Rockwell",
+          "nomPct": "27%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 8,
+          "filmSlug": "cry-to-heaven",
+          "subtitle": "Nicholas Hoult",
+          "nomPct": "17%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 9,
+          "filmSlug": "jack-of-spades",
+          "subtitle": "Josh O'Connor",
+          "nomPct": "10%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 10,
+          "filmSlug": "fatherland",
+          "subtitle": "Hanns Zischler",
+          "nomPct": "6%",
+          "winPct": "0%"
+        }
       ]
     },
     "actress": {
@@ -67,16 +311,76 @@
       "shortLabel": "Actress",
       "cutoffRank": 5,
       "films": [
-        { "rank": 1,  "filmSlug": "fjord",                    "subtitle": "Renate Reinsve",    "nomPct": "91%", "winPct": "62%" },
-        { "rank": 2,  "filmSlug": "fatherland",               "subtitle": "Sandra Hüller",     "nomPct": "73%", "winPct": "11%" },
-        { "rank": 3,  "filmSlug": "the-social-reckoning",     "subtitle": "Mikey Madison",     "nomPct": "64%", "winPct": "0%"  },
-        { "rank": 4,  "filmSlug": "eisenberg-musical-comedy", "subtitle": "Julianne Moore",    "nomPct": "53%", "winPct": "11%" },
-        { "rank": 5,  "filmSlug": "prima-facie",              "subtitle": "Cynthia Erivo",     "nomPct": "42%", "winPct": "9%"  },
-        { "rank": 6,  "filmSlug": "sense-and-sensibility",    "subtitle": "Daisy Edgar-Jones", "nomPct": "33%", "winPct": "2%"  },
-        { "rank": 7,  "filmSlug": "all-of-a-sudden",          "subtitle": "Virginie Efira",    "nomPct": "27%", "winPct": "0%"  },
-        { "rank": 8,  "filmSlug": "joni-mitchell-biopic",     "subtitle": "Amanda Seyfried",   "nomPct": "13%", "winPct": "2%"  },
-        { "rank": 9,  "filmSlug": "disclosure-day",           "subtitle": "Emily Blunt",       "nomPct": "7%",  "winPct": "2%"  },
-        { "rank": 10, "filmSlug": "being-heumann",            "subtitle": "Ruth Madeley",      "nomPct": "7%",  "winPct": "0%"  }
+        {
+          "rank": 1,
+          "filmSlug": "fjord",
+          "subtitle": "Renate Reinsve",
+          "nomPct": "91%",
+          "winPct": "62%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "fatherland",
+          "subtitle": "Sandra Hüller",
+          "nomPct": "73%",
+          "winPct": "11%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "the-social-reckoning",
+          "subtitle": "Mikey Madison",
+          "nomPct": "64%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "eisenberg-musical-comedy",
+          "subtitle": "Julianne Moore",
+          "nomPct": "53%",
+          "winPct": "11%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "prima-facie",
+          "subtitle": "Cynthia Erivo",
+          "nomPct": "42%",
+          "winPct": "9%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "sense-and-sensibility",
+          "subtitle": "Daisy Edgar-Jones",
+          "nomPct": "33%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 7,
+          "filmSlug": "all-of-a-sudden",
+          "subtitle": "Virginie Efira",
+          "nomPct": "27%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 8,
+          "filmSlug": "joni-mitchell-biopic",
+          "subtitle": "Amanda Seyfried",
+          "nomPct": "13%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 9,
+          "filmSlug": "disclosure-day",
+          "subtitle": "Emily Blunt",
+          "nomPct": "7%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 10,
+          "filmSlug": "being-heumann",
+          "subtitle": "Ruth Madeley",
+          "nomPct": "7%",
+          "winPct": "0%"
+        }
       ]
     },
     "supp-actor": {
@@ -84,16 +388,76 @@
       "shortLabel": "Supp. Actor",
       "cutoffRank": 5,
       "films": [
-        { "rank": 1,  "filmSlug": "digger",                   "subtitle": "John Goodman",      "nomPct": "89%", "winPct": "18%" },
-        { "rank": 2,  "filmSlug": "michael",                  "subtitle": "Colman Domingo",    "nomPct": "75%", "winPct": "25%" },
-        { "rank": 3,  "filmSlug": "wild-horse-nine",          "subtitle": "Steve Buscemi",     "nomPct": "59%", "winPct": "18%" },
-        { "rank": 4,  "filmSlug": "eisenberg-musical-comedy", "subtitle": "Paul Giamatti",     "nomPct": "39%", "winPct": "9%"  },
-        { "rank": 5,  "filmSlug": "wild-horse-nine",          "subtitle": "Sam Rockwell",      "nomPct": "39%", "winPct": "7%"  },
-        { "rank": 6,  "filmSlug": "the-social-reckoning",     "subtitle": "Jeremy Strong",     "nomPct": "45%", "winPct": "0%"  },
-        { "rank": 7,  "filmSlug": "wild-horse-nine",          "subtitle": "John Malkovich",    "nomPct": "23%", "winPct": "16%" },
-        { "rank": 8,  "filmSlug": "the-odyssey",              "subtitle": "Tom Holland",       "nomPct": "20%", "winPct": "2%"  },
-        { "rank": 9,  "filmSlug": "digger",                   "subtitle": "Jesse Plemons",     "nomPct": "20%", "winPct": "0%"  },
-        { "rank": 10, "filmSlug": "josephine",                "subtitle": "Channing Tatum",    "nomPct": "14%", "winPct": "5%"  }
+        {
+          "rank": 1,
+          "filmSlug": "digger",
+          "subtitle": "John Goodman",
+          "nomPct": "89%",
+          "winPct": "18%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "michael",
+          "subtitle": "Colman Domingo",
+          "nomPct": "75%",
+          "winPct": "25%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Steve Buscemi",
+          "nomPct": "59%",
+          "winPct": "18%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "eisenberg-musical-comedy",
+          "subtitle": "Paul Giamatti",
+          "nomPct": "39%",
+          "winPct": "9%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Sam Rockwell",
+          "nomPct": "39%",
+          "winPct": "7%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "the-social-reckoning",
+          "subtitle": "Jeremy Strong",
+          "nomPct": "45%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 7,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "John Malkovich",
+          "nomPct": "23%",
+          "winPct": "16%"
+        },
+        {
+          "rank": 8,
+          "filmSlug": "the-odyssey",
+          "subtitle": "Tom Holland",
+          "nomPct": "20%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 9,
+          "filmSlug": "digger",
+          "subtitle": "Jesse Plemons",
+          "nomPct": "20%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 10,
+          "filmSlug": "josephine",
+          "subtitle": "Channing Tatum",
+          "nomPct": "14%",
+          "winPct": "5%"
+        }
       ]
     },
     "supp-actress": {
@@ -101,16 +465,76 @@
       "shortLabel": "Supp. Actress",
       "cutoffRank": 5,
       "films": [
-        { "rank": 1,  "filmSlug": "digger",                   "subtitle": "Sandra Hüller",        "nomPct": "57%", "winPct": "33%" },
-        { "rank": 2,  "filmSlug": "the-odyssey",              "subtitle": "Anne Hathaway",        "nomPct": "60%", "winPct": "17%" },
-        { "rank": 3,  "filmSlug": "wild-horse-nine",          "subtitle": "Mariana Di Girolamo",  "nomPct": "45%", "winPct": "7%"  },
-        { "rank": 4,  "filmSlug": "wild-horse-nine",          "subtitle": "Parker Posey",         "nomPct": "40%", "winPct": "12%" },
-        { "rank": 5,  "filmSlug": "jack-of-spades",           "subtitle": "Frances McDormand",    "nomPct": "45%", "winPct": "0%"  },
-        { "rank": 6,  "filmSlug": "all-of-a-sudden",          "subtitle": "Tao Okamoto",          "nomPct": "38%", "winPct": "10%" },
-        { "rank": 7,  "filmSlug": "sense-and-sensibility",    "subtitle": "Esmé Creed-Miles",     "nomPct": "26%", "winPct": "0%"  },
-        { "rank": 8,  "filmSlug": "michael",                  "subtitle": "Nia Long",             "nomPct": "24%", "winPct": "2%"  },
-        { "rank": 9,  "filmSlug": "narnia",                   "subtitle": "Emma Mackey",          "nomPct": "29%", "winPct": "0%"  },
-        { "rank": 10, "filmSlug": "death-of-a-salesman",      "subtitle": "Octavia Spencer",      "nomPct": "24%", "winPct": "0%"  }
+        {
+          "rank": 1,
+          "filmSlug": "digger",
+          "subtitle": "Sandra Hüller",
+          "nomPct": "57%",
+          "winPct": "33%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "the-odyssey",
+          "subtitle": "Anne Hathaway",
+          "nomPct": "60%",
+          "winPct": "17%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Mariana Di Girolamo",
+          "nomPct": "45%",
+          "winPct": "7%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Parker Posey",
+          "nomPct": "40%",
+          "winPct": "12%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "jack-of-spades",
+          "subtitle": "Frances McDormand",
+          "nomPct": "45%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "all-of-a-sudden",
+          "subtitle": "Tao Okamoto",
+          "nomPct": "38%",
+          "winPct": "10%"
+        },
+        {
+          "rank": 7,
+          "filmSlug": "sense-and-sensibility",
+          "subtitle": "Esmé Creed-Miles",
+          "nomPct": "26%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 8,
+          "filmSlug": "michael",
+          "subtitle": "Nia Long",
+          "nomPct": "24%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 9,
+          "filmSlug": "narnia",
+          "subtitle": "Emma Mackey",
+          "nomPct": "29%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 10,
+          "filmSlug": "death-of-a-salesman",
+          "subtitle": "Octavia Spencer",
+          "nomPct": "24%",
+          "winPct": "0%"
+        }
       ]
     },
     "orig-screenplay": {
@@ -118,16 +542,76 @@
       "shortLabel": "Original Screenplay",
       "cutoffRank": 5,
       "films": [
-        { "rank": 1,  "filmSlug": "wild-horse-nine",          "subtitle": "Martin McDonagh",                                              "nomPct": "98%", "winPct": "48%" },
-        { "rank": 2,  "filmSlug": "digger",                   "subtitle": "Alejandro G. Iñárritu, Alexander Dinelaris, Nicolás...",       "nomPct": "95%", "winPct": "43%" },
-        { "rank": 3,  "filmSlug": "fjord",                    "subtitle": "Cristian Mungiu",                                              "nomPct": "90%", "winPct": "5%"  },
-        { "rank": 4,  "filmSlug": "eisenberg-musical-comedy", "subtitle": "Jesse Eisenberg",                                              "nomPct": "35%", "winPct": "3%"  },
-        { "rank": 5,  "filmSlug": "jack-of-spades",           "subtitle": "Joel Coen",                                                    "nomPct": "33%", "winPct": "0%"  },
-        { "rank": 6,  "filmSlug": "josephine",                "subtitle": "Beth de Araújo",                                               "nomPct": "23%", "winPct": "0%"  },
-        { "rank": 7,  "filmSlug": "behemoth",                 "subtitle": "Tony Gilroy",                                                  "nomPct": "18%", "winPct": "0%"  },
-        { "rank": 8,  "filmSlug": "disclosure-day",           "subtitle": "David Koepp",                                                  "nomPct": "13%", "winPct": "0%"  },
-        { "rank": 9,  "filmSlug": "saturn-return",            "subtitle": "Gaelyn Golde, Greg Kwedar, Clint Bentley",                     "nomPct": "15%", "winPct": "0%"  },
-        { "rank": 10, "filmSlug": "misty-green",              "subtitle": "Chris Rock",                                                   "nomPct": "13%", "winPct": "0%"  }
+        {
+          "rank": 1,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Martin McDonagh",
+          "nomPct": "98%",
+          "winPct": "48%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "digger",
+          "subtitle": "Alejandro G. Iñárritu, Alexander Dinelaris, Nicolás...",
+          "nomPct": "95%",
+          "winPct": "43%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "fjord",
+          "subtitle": "Cristian Mungiu",
+          "nomPct": "90%",
+          "winPct": "5%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "eisenberg-musical-comedy",
+          "subtitle": "Jesse Eisenberg",
+          "nomPct": "35%",
+          "winPct": "3%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "jack-of-spades",
+          "subtitle": "Joel Coen",
+          "nomPct": "33%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "josephine",
+          "subtitle": "Beth de Araújo",
+          "nomPct": "23%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 7,
+          "filmSlug": "behemoth",
+          "subtitle": "Tony Gilroy",
+          "nomPct": "18%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 8,
+          "filmSlug": "disclosure-day",
+          "subtitle": "David Koepp",
+          "nomPct": "13%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 9,
+          "filmSlug": "saturn-return",
+          "subtitle": "Gaelyn Golde, Greg Kwedar, Clint Bentley",
+          "nomPct": "15%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 10,
+          "filmSlug": "misty-green",
+          "subtitle": "Chris Rock",
+          "nomPct": "13%",
+          "winPct": "0%"
+        }
       ]
     },
     "adapt-screenplay": {
@@ -135,12 +619,76 @@
       "shortLabel": "Adapted Screenplay",
       "cutoffRank": 5,
       "films": [
-        { "rank": 1,  "filmSlug": "the-odyssey",              "subtitle": "Christopher Nolan",                  "nomPct": "92%", "winPct": "44%" },
-        { "rank": 2,  "filmSlug": "project-hail-mary",        "subtitle": "Drew Goddard",                       "nomPct": "92%", "winPct": "15%" },
-        { "rank": 3,  "filmSlug": "the-social-reckoning",     "subtitle": "Aaron Sorkin",                       "nomPct": "51%", "winPct": "3%"  },
-        { "rank": 4,  "filmSlug": "all-of-a-sudden",          "subtitle": "Ryusuke Hamaguchi, Léa Le Dimna",    "nomPct": "46%", "winPct": "10%" },
-        { "rank": 5,  "filmSlug": "cry-to-heaven",            "subtitle": "Tom Ford",                           "nomPct": "46%", "winPct": "5%"  },
-        { "rank": 6,  "filmSlug": "narnia",                   "subtitle": "Greta Gerwig",                       "nomPct": "41%", "winPct": "3%"  }
+        {
+          "rank": 1,
+          "filmSlug": "the-odyssey",
+          "subtitle": "Christopher Nolan",
+          "nomPct": "92%",
+          "winPct": "44%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "project-hail-mary",
+          "subtitle": "Drew Goddard",
+          "nomPct": "92%",
+          "winPct": "15%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "the-social-reckoning",
+          "subtitle": "Aaron Sorkin",
+          "nomPct": "51%",
+          "winPct": "3%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "all-of-a-sudden",
+          "subtitle": "Ryusuke Hamaguchi, Léa Le Dimna",
+          "nomPct": "46%",
+          "winPct": "10%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "cry-to-heaven",
+          "subtitle": "Tom Ford",
+          "nomPct": "46%",
+          "winPct": "5%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "narnia",
+          "subtitle": "Greta Gerwig",
+          "nomPct": "41%",
+          "winPct": "3%"
+        },
+        {
+          "rank": 7,
+          "filmSlug": "fatherland",
+          "subtitle": "Paweł Pawlikowski, Hendrik Handloegten",
+          "nomPct": "33%",
+          "winPct": "8%"
+        },
+        {
+          "rank": 8,
+          "filmSlug": "sense-and-sensibility",
+          "subtitle": "Diana Reid",
+          "nomPct": "23%",
+          "winPct": "5%"
+        },
+        {
+          "rank": 9,
+          "filmSlug": "dune-part-three",
+          "subtitle": "Denis Villeneuve, Brian K. Vaughan",
+          "nomPct": "18%",
+          "winPct": "5%"
+        },
+        {
+          "rank": 10,
+          "filmSlug": "being-heumann",
+          "subtitle": "Sian Heder, Rebekah Taussig",
+          "nomPct": "5%",
+          "winPct": "0%"
+        }
       ]
     }
   }
