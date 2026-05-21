@@ -16,7 +16,7 @@ writers:
 publishedDate: Feb 12, 2026
 deck: A stunning vision behind the lens showcasing dreamy dollhouse sets,
   fairytale-esque cinematography, & luscious gowns where your eyes crave the
-  spectacle, even if your mind wanders for a stronger plot.
+  spectacle, even if your mind yearns for a stronger plot.
 excerpt: Emerald Fennell has a stunning vision behind the lens showcasing dreamy
   dollhouse sets, fairytale-esque cinematography, & luscious gowns which come
   undone to make Wuthering Heights a visual feast.
