@@ -8,7 +8,7 @@ runtime: "105"
 genre: Dramedy
 rating: 4.5
 stance: hold
-stanceLabel: Strong Golden Globes Comedy Player
+stanceLabel: Strong Golden Globes Player
 posterSlug: the-drama
 writer: ""
 writers:
