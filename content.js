@@ -1259,36 +1259,11 @@
       '</a>';
     }).join('');
 
-    // Context line below the pills, only shown when the active snapshot is
-    // historical (i.e. not the newest). Tells the user what they're looking at.
-    var contextHTML = '';
-    if (active && snapshotData.activeIndex > 0) {
-      contextHTML = '<div class="snapshot-toggle__notice">' +
-        'Viewing historical snapshot: <strong>' + esc(active.label) + '</strong>' +
-        (active.publishedDate ? ' (' + esc(active.publishedDate) + ')' : '') +
-        '. Movement arrows compare against <strong>' + (prev ? esc(prev.label) : 'the prior snapshot') + '</strong>. ' +
-        '<a href="' + esc(window.location.pathname) + '" class="snapshot-toggle__current-link">Return to current →</a>' +
-      '</div>';
-    } else if (active && prev) {
-      contextHTML = '<div class="snapshot-toggle__notice snapshot-toggle__notice--current">' +
-        'Current snapshot: <strong>' + esc(active.label) + '</strong>' +
-        (active.publishedDate ? ' · ' + esc(active.publishedDate) : '') +
-        '. Movement arrows compare against <strong>' + esc(prev.label) + '</strong>.' +
-      '</div>';
-    } else if (active) {
-      contextHTML = '<div class="snapshot-toggle__notice snapshot-toggle__notice--current">' +
-        'Current snapshot: <strong>' + esc(active.label) + '</strong>' +
-        (active.publishedDate ? ' · ' + esc(active.publishedDate) : '') +
-        '. No prior snapshot yet — movement arrows will activate when the next one is published.' +
-      '</div>';
-    }
-
     var html =
       '<div class="snapshot-toggle__inner">' +
         '<div class="snapshot-toggle__label">Snapshot</div>' +
         '<div class="snapshot-toggle__pills">' + pillsHTML + '</div>' +
-      '</div>' +
-      contextHTML;
+      '</div>';
 
     targets.forEach(function (t) { t.innerHTML = html; });
   }
