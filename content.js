@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v18-articles-with-discussions)
+   FANTASY FILMBALL — content.js (v19-filter-debug)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -634,33 +634,61 @@
     }
 
     // ---- Filter logic: two independent groups (type, stance) ----
-    // Tracks current filter selection for each group, recomputes visibility.
-    var currentFilters = { type: 'all', stance: 'all' };
+    var filterState = { type: 'all', stance: 'all' };
 
     function applyFilters() {
-      $$('.archive-card', grid).forEach(function (card) {
-        var cardType = card.getAttribute('data-type');
-        var cardStance = card.getAttribute('data-stance');
-        var typeMatch = currentFilters.type === 'all' || currentFilters.type === cardType;
-        var stanceMatch = currentFilters.stance === 'all' || currentFilters.stance === cardStance;
-        card.style.display = (typeMatch && stanceMatch) ? '' : 'none';
-      });
+      var cards = grid.querySelectorAll('.archive-card');
+      var shown = 0;
+      for (var i = 0; i < cards.length; i++) {
+        var card = cards[i];
+        var cardType = card.getAttribute('data-type') || 'review';
+        var cardStance = card.getAttribute('data-stance') || 'none';
+        var typeMatch = filterState.type === 'all' || filterState.type === cardType;
+        var stanceMatch = filterState.stance === 'all' || filterState.stance === cardStance;
+        if (typeMatch && stanceMatch) {
+          card.style.display = '';
+          shown++;
+        } else {
+          card.style.display = 'none';
+        }
+      }
+      if (window.console) {
+        console.log('[archive] filter applied:', filterState, '→', shown + '/' + cards.length, 'visible');
+      }
     }
 
-    function wireGroup(attr, group) {
-      $$('[data-filter-' + attr + ']', $('[data-archive-filters]')).forEach(function (btn) {
+    // Type buttons
+    var typeButtons = document.querySelectorAll('[data-filter-type]');
+    for (var t = 0; t < typeButtons.length; t++) {
+      (function (btn) {
         btn.addEventListener('click', function () {
-          currentFilters[attr] = btn.getAttribute('data-filter-' + attr);
-          // Toggle is-active within this group only
-          $$('[data-filter-' + attr + ']', $('[data-archive-filters]')).forEach(function (b) {
-            b.classList.toggle('is-active', b === btn);
-          });
+          filterState.type = btn.getAttribute('data-filter-type');
+          // Update is-active among type buttons only
+          for (var k = 0; k < typeButtons.length; k++) {
+            typeButtons[k].classList.toggle('is-active', typeButtons[k] === btn);
+          }
           applyFilters();
         });
-      });
+      })(typeButtons[t]);
     }
-    wireGroup('type');
-    wireGroup('stance');
+
+    // Stance buttons
+    var stanceButtons = document.querySelectorAll('[data-filter-stance]');
+    for (var s = 0; s < stanceButtons.length; s++) {
+      (function (btn) {
+        btn.addEventListener('click', function () {
+          filterState.stance = btn.getAttribute('data-filter-stance');
+          for (var k = 0; k < stanceButtons.length; k++) {
+            stanceButtons[k].classList.toggle('is-active', stanceButtons[k] === btn);
+          }
+          applyFilters();
+        });
+      })(stanceButtons[s]);
+    }
+
+    if (window.console) {
+      console.log('[archive] wired', typeButtons.length, 'type buttons +', stanceButtons.length, 'stance buttons');
+    }
   }
 
   // Turn a category slug into a display label.
@@ -1679,7 +1707,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v18-articles-with-discussions loaded');
+  if (window.console) console.log('[content.js] v19-filter-debug loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
