@@ -10,17 +10,20 @@ rating: 4
 stance: buy
 stanceLabel: Animation Contender
 posterSlug: hoppers
-writer: "[ Writer ]"
+writer: ""
 writers:
   - andy-funke
 publishedDate: March 7, 2026
 deck: Pixar’s latest animated film blends environmental themes, thrilling
   twists, and lovable characters into an endlessly entertaining story about
   community, connection, and finding your place in the world.
+excerpt: ""
 heroImage: https://deadline.com/wp-content/uploads/2025/11/Hoppers.jpg
+verdictNote: Another Pixar Animation Nomination
 isHero: false
 tags: []
-categoryTags: []
+categoryTags:
+  - Animated
 ---
 Mabel is a young woman that cares about protecting animals and the environment. When she discovers one of her teachers, Dr. Sam is experimenting with technology that lets humans put their mind into a robot version of an animal, Mabel disguises herself as a beaver to help save a dam that Mayor Jerry is trying to destroy. 
 
