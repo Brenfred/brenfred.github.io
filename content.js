@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v19-filter-debug)
+   FANTASY FILMBALL — content.js (v20-hero-verdict)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -849,22 +849,51 @@
       badge.innerHTML = '<span class="stock-badge__arrow">' + badgeArrow + '</span> ' + esc(stanceLabel);
     }
 
-    var heroImg = $('[data-review-hero-img]');
-    if (heroImg) {
-      var posterSlug = review.posterSlug || review.slug;
-      heroImg.src = 'posters/' + posterSlug + '-hero.jpg';
-      heroImg.alt = film;
-      heroImg.onerror = function () {
-        if (!this.dataset.fallback) {
-          this.dataset.fallback = '1';
-          this.src = 'posters/' + posterSlug + '.jpg';
-        } else {
-          this.style.display = 'none';
+    // ---- Verdict block: review-only ----
+    // Discussions don't have ratings/stances/stock takes, so hide the whole
+    // block. Reviews show rating + badge + optional verdict note.
+    var verdictBlock = $('[data-review-verdict]');
+    var isDiscussion = (review.type || 'review').toLowerCase() === 'discussion';
+    if (verdictBlock) {
+      if (isDiscussion) {
+        verdictBlock.style.display = 'none';
+      } else {
+        var verdictNoteEl = $('[data-review-verdict-note]');
+        if (verdictNoteEl) {
+          if (review.verdictNote) {
+            verdictNoteEl.textContent = '"' + review.verdictNote + '"';
+            verdictNoteEl.style.display = '';
+          } else {
+            verdictNoteEl.style.display = 'none';
+          }
         }
-      };
+      }
+    }
+
+    // ---- Hero image: from CMS heroImage field, else hide block ----
+    var heroBlock = $('[data-review-hero]');
+    var heroImg = $('[data-review-hero-img]');
+    if (heroBlock) {
+      if (review.heroImage) {
+        if (heroImg) {
+          heroImg.src = review.heroImage;
+          heroImg.alt = film || review.title || '';
+          heroImg.style.display = '';
+          heroImg.onerror = function () {
+            // If the uploaded image fails to load, hide the whole block
+            // rather than showing a broken poster fallback.
+            heroBlock.style.display = 'none';
+          };
+        }
+        heroBlock.style.display = '';
+      } else {
+        // No hero image set — hide the entire hero block. Better to skip
+        // it than to show an awkwardly cropped poster.
+        heroBlock.style.display = 'none';
+      }
     }
     var heroTitle = $('[data-review-hero-title]');
-    if (heroTitle) heroTitle.textContent = film;
+    if (heroTitle) heroTitle.textContent = film || '';
 
     if (body && review.body) {
       body.innerHTML = mdToHtml(review.body);
@@ -1707,7 +1736,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v19-filter-debug loaded');
+  if (window.console) console.log('[content.js] v20-hero-verdict loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
