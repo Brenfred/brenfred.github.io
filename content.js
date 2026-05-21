@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v16-anchor-block)
+   FANTASY FILMBALL — content.js (v17-home-hosts)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -1381,6 +1381,38 @@
 
   // ---- writers.html — directory page ----------------------------------
 
+  // ---- home page Co-GMs block (pulls hosts from writers) ---------------
+
+  function renderHomeHosts(writers) {
+    var container = $('[data-home-hosts]');
+    if (!container) return;
+
+    // "Host" in role → counts as a Co-GM. Sort alphabetically for stability.
+    var hosts = (writers || []).filter(function (w) {
+      return (w.role || '').toLowerCase().indexOf('host') !== -1;
+    });
+    hosts.sort(function (a, b) { return (a.name || '').localeCompare(b.name || ''); });
+
+    if (hosts.length === 0) {
+      container.innerHTML = '<p style="color: var(--ink-faded); padding: 1rem 0; grid-column: 1 / -1;">' +
+        'No hosts added yet. Create a writer in the CMS with "Host" in their role.</p>';
+      return;
+    }
+
+    container.innerHTML = hosts.map(function (w) {
+      var avatar = writerAvatarHTML(w, 'host__avatar');
+      var href = 'writer.html?slug=' + encodeURIComponent(w.slug);
+      return '<a href="' + href + '" class="host">' +
+        avatar +
+        '<div>' +
+          '<div class="host__role">' + esc(w.role || 'Co-Host') + '</div>' +
+          '<h3 class="host__name">' + esc(w.name || '') + '</h3>' +
+          '<p class="host__bio">' + esc(w.bio || '') + '</p>' +
+        '</div>' +
+      '</a>';
+    }).join('');
+  }
+
   function renderWritersDirectory(writers, reviews) {
     var hostsContainer = $('[data-writers-hosts]');
     var gridContainer  = $('[data-writers-grid]');
@@ -1563,7 +1595,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v16-anchor-block loaded');
+  if (window.console) console.log('[content.js] v17-home-hosts loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
@@ -1599,6 +1631,7 @@
       document.querySelector('[data-writers-hosts]') ||
       document.querySelector('[data-writers-grid]') ||
       document.querySelector('[data-writer-profile]') ||
+      document.querySelector('[data-home-hosts]') ||
       // Also load writers wherever review bylines need to be clickable:
       document.querySelector('[data-hero-review]') ||
       document.querySelector('[data-reviews-grid]') ||
@@ -1667,6 +1700,7 @@
       }
 
       // Writers-driven regions
+      safeRender('renderHomeHosts',        function () { renderHomeHosts(writers); });
       safeRender('renderWritersDirectory', function () { renderWritersDirectory(writers, reviews); });
       safeRender('renderWriterDetail',     function () { renderWriterDetail(writers, reviews); });
 
