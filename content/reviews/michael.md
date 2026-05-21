@@ -21,7 +21,7 @@ excerpt: Michael shines through a one-of-a-kind performance by Jaafar Jackson,
   chart-topping technical craftwork, and a pace that moonwalks by.
 isHero: false
 tags:
-  - Michael
+  - michael
 ---
 Jaafar Jackson *is* *Michael*.
 
