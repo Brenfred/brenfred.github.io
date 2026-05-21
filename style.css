@@ -2835,3 +2835,68 @@ a.host:hover .host__name { color: var(--gold); }
   }
   .snapshot-toggle__label { font-size: 0.65rem; }
 }
+
+/* =========================================================================
+   RACE VIEW TOGGLE — switches between Films and Categories on /oscar-race
+   Sits below the snapshot toggle. Larger, more prominent than the snapshot
+   pills since it represents a bigger conceptual divide (what you're looking
+   at, vs which moment in time).
+   ========================================================================= */
+.race-view {
+  background: var(--paper);
+  padding: 1.75rem 0 0.5rem;
+}
+.race-view__toggle {
+  display: inline-flex;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  box-shadow: 4px 4px 0 var(--paper-aged);
+}
+.race-view__btn {
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-right: 2px solid var(--ink);
+  cursor: pointer;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  text-align: left;
+  font-family: inherit;
+  color: var(--ink-soft);
+  transition: background 0.15s ease, color 0.15s ease;
+  min-width: 9rem;
+}
+.race-view__btn:last-child { border-right: none; }
+.race-view__btn:hover { background: var(--paper-warm); color: var(--ink); }
+.race-view__btn.is-active {
+  background: var(--ink);
+  color: var(--paper);
+}
+.race-view__btn-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+.race-view__btn-sub {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+.race-view__btn.is-active .race-view__btn-sub { opacity: 0.7; }
+
+@media (max-width: 520px) {
+  .race-view__btn { min-width: 0; flex: 1; padding: 0.7rem 1rem; }
+  .race-view__btn-label { font-size: 1.1rem; }
+  .race-view__btn-sub { font-size: 0.6rem; }
+  .race-view__toggle { display: flex; width: 100%; }
+}
+
+/* Pane visibility — hidden attr is the source of truth; this just kills
+   any margin reservations so panes don't push the page down when hidden. */
+.race-pane[hidden] { display: none !important; }

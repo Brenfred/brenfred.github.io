@@ -96,14 +96,25 @@
   <!-- Pills populated dynamically. Hidden until JS loads. -->
 </section>
 
-<!-- CATEGORY RANKINGS (first read · no movement yet) -->
-<!-- THE FILMS -->
-<section class="section section--alt">
+<!-- VIEW TOGGLE — Films vs Categories -->
+<section class="race-view">
   <div class="container">
-    <div class="section-head">
-      <h2 class="section-head__title">The <em>Films</em></h2>
-      <span class="section-head__link">Every contender · April 3</span>
+    <div class="race-view__toggle" data-view-toggle>
+      <button type="button" class="race-view__btn is-active" data-view="films" aria-pressed="true">
+        <span class="race-view__btn-label">Films</span>
+        <span class="race-view__btn-sub">Every contender</span>
+      </button>
+      <button type="button" class="race-view__btn" data-view="categories" aria-pressed="false">
+        <span class="race-view__btn-label">Categories</span>
+        <span class="race-view__btn-sub">All 8 races</span>
+      </button>
     </div>
+  </div>
+</section>
+
+<!-- THE FILMS -->
+<section class="section section--alt race-pane" data-race-pane="films">
+  <div class="container">
 
     <!-- TIER 1: Top 10 Best Picture as poster grid -->
     <div class="kicker kicker--gold" style="margin-bottom: 1rem;">★ Top 10 · The Frontrunners ★</div>
@@ -126,14 +137,11 @@
 </section>
 
 <!-- THE CATEGORIES (top 5 each, with link to category detail page) -->
-<section class="section">
+<section class="section race-pane" data-race-pane="categories" hidden>
   <div class="container">
-    <div class="section-head">
-      <h2 class="section-head__title">The <em>Categories</em></h2>
-      <span class="section-head__link">Top 5 per race · April 3 · Click any category for the full top 10</span>
-    </div>
+    <div class="kicker kicker--gold" style="margin-bottom: 1rem;">★ Top 5 per race · Click any category for the full top 10 ★</div>
     <div class="category-grid" data-categories-grid>
-      <!-- Populated by content.js from /content/categories/*.json -->
+      <!-- Populated by content.js -->
     </div>
   </div>
 </section>
