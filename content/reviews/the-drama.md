@@ -1,4 +1,5 @@
 ---
+type: review
 title: The Drama challenges audiences to grapple with their morals
 film: The Drama
 director: Kristoffer Borgli
