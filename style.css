@@ -1948,6 +1948,12 @@ body::before {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
+/* Center the column-header labels for the stat columns (Nom %, Win %, Move)
+   so they line up with the centered numbers below. The first two columns
+   (Rank, Contender) stay left-aligned. */
+.category-detail__head > span:nth-child(n+3) {
+  text-align: center;
+}
 .category-detail__row {
   display: grid;
   grid-template-columns: 3rem 1fr 5rem 5rem 4rem;
@@ -1992,7 +1998,13 @@ body::before {
   font-family: var(--font-mono);
   font-size: 0.85rem;
   color: var(--ink-soft);
-  text-align: right;
+  text-align: center;
+}
+
+/* Center the Move column too (its content uses .category-table__move class
+   inserted by the JS movementSpan helper) */
+.category-detail__row > .category-table__move {
+  text-align: center;
 }
 .category-detail__cutoff {
   background: rgba(212, 162, 60, 0.1);
