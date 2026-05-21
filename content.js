@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v21-hero-clean)
+   FANTASY FILMBALL — content.js (v22-snapshots)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -24,6 +24,19 @@
 
   function $(sel, root) { return (root || document).querySelector(sel); }
   function $$(sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
+
+  // Build a link that preserves the current ?snapshot= query param. Used so
+  // that clicking from Oscar Race to a Category page (or vice versa) keeps
+  // the user looking at the same historical snapshot.
+  function withCurrentSnapshot(href) {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var snap = params.get('snapshot');
+      if (!snap) return href;
+      var sep = href.indexOf('?') >= 0 ? '&' : '?';
+      return href + sep + 'snapshot=' + encodeURIComponent(snap);
+    } catch (e) { return href; }
+  }
 
   function esc(s) {
     var div = document.createElement('div');
@@ -1051,7 +1064,7 @@
   //  CATEGORIES + FILMS — the Oscar Race system
   // ============================================================
 
-  // List of category slugs (matches /content/categories/*.json)
+  // List of category slugs (each snapshot file is expected to contain all 8)
   var CATEGORY_SLUGS = [
     'picture', 'director',
     'actress', 'actor',
@@ -1059,24 +1072,119 @@
     'orig-screenplay', 'adapt-screenplay'
   ];
 
-  function fetchAllCategories() {
-    // Fetch current + previous for all 8 categories in parallel.
-    var jobs = CATEGORY_SLUGS.map(function (slug) {
-      return Promise.all([
-        fetchJSON('categories/' + slug + '.json').catch(function () { return null; }),
-        fetchJSON('categories-previous/' + slug + '.json').catch(function () { return null; })
-      ]).then(function (pair) {
-        if (!pair[0]) return null;
-        return {
-          slug: slug,
-          current: pair[0],
-          previous: pair[1] || pair[0]  // fall back to identical so movement = flat
-        };
+  // ---- snapshot fetching ------------------------------------------------
+  // Snapshots live in /content/ranking-snapshots/*.json. Each one contains
+  // all 8 categories for one moment in time. We fetch the directory listing
+  // via the GitHub API, then load every snapshot in parallel.
+
+  function fetchSnapshotList() {
+    var cfg = repoConfig();
+    var apiUrl = 'https://api.github.com/repos/' + cfg.repo
+               + '/contents/content/ranking-snapshots?ref=' + cfg.branch;
+    return fetch(apiUrl, { cache: 'no-cache' }).then(function (r) {
+      if (!r.ok) throw new Error('GitHub API failed: ' + r.status);
+      return r.json();
+    }).then(function (files) {
+      return files
+        .filter(function (f) { return f.name && f.name.endsWith('.json'); })
+        .map(function (f) {
+          return {
+            slug: f.name.replace(/\.json$/, ''),
+            downloadUrl: f.download_url
+          };
+        });
+    });
+  }
+
+  function fetchAllSnapshots() {
+    return fetchSnapshotList().then(function (list) {
+      return Promise.all(list.map(function (item) {
+        return fetchText(item.downloadUrl).then(function (txt) {
+          try {
+            var parsed = JSON.parse(txt);
+            // Use snapshotSlug from the JSON if present, else filename.
+            if (!parsed.snapshotSlug) parsed.snapshotSlug = item.slug;
+            return parsed;
+          } catch (err) {
+            if (window.console) console.error('[content] bad snapshot json:', item.slug, err);
+            return null;
+          }
+        }).catch(function () { return null; });
+      }));
+    }).then(function (results) {
+      var snapshots = results.filter(function (s) { return s !== null; });
+      // Sort newest-first by sortKey (ascending lexicographic order works
+      // because we mandate YYYY-MM format).
+      snapshots.sort(function (a, b) {
+        var ak = String(a.sortKey || '');
+        var bk = String(b.sortKey || '');
+        if (ak < bk) return 1;
+        if (ak > bk) return -1;
+        return 0;
+      });
+      return snapshots;
+    });
+  }
+
+  // Convert one snapshot into the {slug, current, previous} shape that the
+  // rest of the rendering code expects — for ALL 8 categories.
+  function snapshotToCategoryArray(snapshot, previousSnapshot) {
+    var out = [];
+    CATEGORY_SLUGS.forEach(function (slug) {
+      var current = snapshot.categories && snapshot.categories[slug];
+      if (!current) return;
+      var previous = previousSnapshot && previousSnapshot.categories && previousSnapshot.categories[slug];
+      out.push({
+        slug: slug,
+        current: current,
+        previous: previous || current  // fall back to identical so movement = flat
       });
     });
-    return Promise.all(jobs).then(function (cats) {
-      return cats.filter(function (c) { return c !== null; });
+    return out;
+  }
+
+  // Pick which snapshot is "active" based on URL query param ?snapshot=slug.
+  // Falls back to the newest snapshot. Returns { active, previous } where
+  // `previous` is the snapshot immediately older than active (for movement).
+  function pickActiveSnapshot(snapshots) {
+    var params = new URLSearchParams(window.location.search);
+    var requested = params.get('snapshot');
+    var activeIdx = 0;  // default to newest (snapshots are sorted newest-first)
+    if (requested) {
+      for (var i = 0; i < snapshots.length; i++) {
+        if (snapshots[i].snapshotSlug === requested) { activeIdx = i; break; }
+      }
+    }
+    return {
+      active: snapshots[activeIdx] || null,
+      previous: snapshots[activeIdx + 1] || null,
+      allSnapshots: snapshots,
+      activeIndex: activeIdx
+    };
+  }
+
+  // Master fetch — replaces the old fetchAllCategories. Returns an object:
+  //   { categoryArray, allSnapshots, activeSnapshot, isHistorical }
+  // categoryArray is the same shape the rest of the renders consume.
+  function fetchSnapshotData() {
+    return fetchAllSnapshots().then(function (snapshots) {
+      if (snapshots.length === 0) {
+        return { categoryArray: [], allSnapshots: [], activeSnapshot: null, previousSnapshot: null, activeIndex: -1 };
+      }
+      var pick = pickActiveSnapshot(snapshots);
+      return {
+        categoryArray: snapshotToCategoryArray(pick.active, pick.previous),
+        allSnapshots: snapshots,
+        activeSnapshot: pick.active,
+        previousSnapshot: pick.previous,
+        activeIndex: pick.activeIndex
+      };
     });
+  }
+
+  // Backwards-compatible wrapper — code that just wants the category array.
+  function fetchAllCategories() {
+    return fetchSnapshotData().then(function (d) { return d.categoryArray; });
   }
 
   function computeCategoryMovement(current, previous) {
@@ -1120,6 +1228,71 @@
 
   // ---- Oscar Race page: categories grid ---------------------------------
 
+  // ---- Snapshot toggle (Oscar Race + category pages) --------------------
+  // Renders a dropdown/pill control of all available snapshots. Changing it
+  // navigates to ?snapshot=<slug> which triggers a re-fetch.
+
+  function renderSnapshotToggle(snapshotData) {
+    var targets = document.querySelectorAll('[data-snapshot-toggle]');
+    if (!targets.length) return;
+    var snapshots = snapshotData.allSnapshots || [];
+    if (snapshots.length === 0) return;
+
+    var active = snapshotData.activeSnapshot;
+    var prev = snapshotData.previousSnapshot;
+
+    // Build the pill row: each snapshot is a pill. Active gets is-active.
+    // The newest one is labeled "Current" for clarity.
+    var pillsHTML = snapshots.map(function (s, idx) {
+      var isActive = active && s.snapshotSlug === active.snapshotSlug;
+      var isLatest = idx === 0;
+      var hereUrl = window.location.pathname + window.location.search.replace(/[?&]snapshot=[^&]*/, '');
+      // Build query: if this is the latest, omit the param to keep URLs clean.
+      var query = isLatest
+        ? hereUrl.replace(/\?$/, '')
+        : (hereUrl.indexOf('?') >= 0 ? hereUrl + '&' : hereUrl + '?') + 'snapshot=' + encodeURIComponent(s.snapshotSlug);
+      var classes = 'snapshot-pill' + (isActive ? ' is-active' : '') + (isLatest ? ' snapshot-pill--latest' : '');
+      return '<a href="' + esc(query) + '" class="' + classes + '">' +
+        (isLatest ? '<span class="snapshot-pill__tag">CURRENT</span>' : '') +
+        '<span class="snapshot-pill__label">' + esc(s.label || s.snapshotSlug) + '</span>' +
+        '<span class="snapshot-pill__date">' + esc(s.publishedDate || '') + '</span>' +
+      '</a>';
+    }).join('');
+
+    // Context line below the pills, only shown when the active snapshot is
+    // historical (i.e. not the newest). Tells the user what they're looking at.
+    var contextHTML = '';
+    if (active && snapshotData.activeIndex > 0) {
+      contextHTML = '<div class="snapshot-toggle__notice">' +
+        'Viewing historical snapshot: <strong>' + esc(active.label) + '</strong>' +
+        (active.publishedDate ? ' (' + esc(active.publishedDate) + ')' : '') +
+        '. Movement arrows compare against <strong>' + (prev ? esc(prev.label) : 'the prior snapshot') + '</strong>. ' +
+        '<a href="' + esc(window.location.pathname) + '" class="snapshot-toggle__current-link">Return to current →</a>' +
+      '</div>';
+    } else if (active && prev) {
+      contextHTML = '<div class="snapshot-toggle__notice snapshot-toggle__notice--current">' +
+        'Current snapshot: <strong>' + esc(active.label) + '</strong>' +
+        (active.publishedDate ? ' · ' + esc(active.publishedDate) : '') +
+        '. Movement arrows compare against <strong>' + esc(prev.label) + '</strong>.' +
+      '</div>';
+    } else if (active) {
+      contextHTML = '<div class="snapshot-toggle__notice snapshot-toggle__notice--current">' +
+        'Current snapshot: <strong>' + esc(active.label) + '</strong>' +
+        (active.publishedDate ? ' · ' + esc(active.publishedDate) : '') +
+        '. No prior snapshot yet — movement arrows will activate when the next one is published.' +
+      '</div>';
+    }
+
+    var html =
+      '<div class="snapshot-toggle__inner">' +
+        '<div class="snapshot-toggle__label">Snapshot</div>' +
+        '<div class="snapshot-toggle__pills">' + pillsHTML + '</div>' +
+      '</div>' +
+      contextHTML;
+
+    targets.forEach(function (t) { t.innerHTML = html; });
+  }
+
   function renderCategoriesGrid(categories, films) {
     var grid = $('[data-categories-grid]');
     if (!grid) return;
@@ -1153,7 +1326,7 @@
         '</div>';
       }).join('');
 
-      var detailHref = 'category.html?cat=' + encodeURIComponent(cat.slug);
+      var detailHref = withCurrentSnapshot('category.html?cat=' + encodeURIComponent(cat.slug));
       return '<a href="' + detailHref + '" class="category-table category-table--link">' +
         '<div class="category-table__head">' +
           '<span class="category-table__title">' + esc(label) + '</span>' +
@@ -1739,7 +1912,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v21-hero-clean loaded');
+  if (window.console) console.log('[content.js] v22-snapshots loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
@@ -1789,6 +1962,7 @@
       document.querySelector('[data-films-list]') ||
       document.querySelector('[data-category-detail]') ||
       document.querySelector('[data-film-profile]') ||
+      document.querySelector('[data-snapshot-toggle]') ||
       // Single-review pages now use category + film data for Oscar Outlook,
       // By the Numbers, and Related Reviews sections.
       document.querySelector('[data-review-outlook]') ||
@@ -1812,16 +1986,17 @@
 
     var racePromise = needsRace
       ? Promise.all([
-          fetchAllCategories().catch(function () { return []; }),
+          fetchSnapshotData().catch(function () { return { categoryArray: [], allSnapshots: [], activeSnapshot: null, previousSnapshot: null, activeIndex: -1 }; }),
           fetchAllFilms().catch(function () { return []; })
         ])
-      : Promise.resolve([[], []]);
+      : Promise.resolve([{ categoryArray: [], allSnapshots: [], activeSnapshot: null, previousSnapshot: null, activeIndex: -1 }, []]);
 
     // ---- Once we have everything, render every dependent page region -----
     Promise.all([reviewsPromise, writersPromise, racePromise]).then(function (data) {
       var reviews = data[0];
       var writers = data[1];
-      var categories = data[2][0];
+      var snapshotData = data[2][0];
+      var categories = snapshotData.categoryArray;
       var films = data[2][1];
 
       var writersBySlug = {};
@@ -1850,6 +2025,7 @@
 
       // Race-driven regions
       if (needsRace) {
+        safeRender('renderSnapshotToggle', function () { renderSnapshotToggle(snapshotData); });
         safeRender('renderCategoriesGrid', function () { renderCategoriesGrid(categories, films); });
         if (current && previous) {
           safeRender('renderFilmsSection', function () { renderFilmsSection(current, previous, categories, films); });
