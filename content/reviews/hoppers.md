@@ -11,6 +11,8 @@ stance: buy
 stanceLabel: Animation Contender
 posterSlug: hoppers
 writer: "[ Writer ]"
+writers:
+  - andy-funke
 publishedDate: March 7, 2026
 deck: Pixar’s latest animated film blends environmental themes, thrilling
   twists, and lovable characters into an endlessly entertaining story about
