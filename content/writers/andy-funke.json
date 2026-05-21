@@ -1,9 +1,12 @@
 {
-  "role": "Contributor",
-  "shortRole": "Writer",
-  "favorites": [],
-  "joinedDate": "2026",
+  "bio": "Andy Funke is an actor, writer, and lover of many art forms originally from Iowa. Andy has a Bachelor’s degree in Theatre Arts and a certificate in Acting, and that passion for theatre has also translated to a love for movies and awards season since the late 2010s. More of their writing and reviews can be found on The Awards Garage as well as their own personal website.",
   "name": "Andy Funke",
   "slug": "andy-funke",
-  "bio": "Andy Funke is an actor, writer, and lover of many art forms originally from Iowa. Andy has a Bachelor’s degree in Theatre Arts and a certificate in Acting, and that passion for theatre has also translated to a love for movies and awards season since the late 2010s. More of their writing and reviews can be found on The Awards Garage as well as their own personal website."
+  "shortRole": "Writer",
+  "twitter": "@andyfunke",
+  "role": "Contributor",
+  "favorites": [],
+  "joinedDate": "2026",
+  "headshot": "/headshots/andy.jpg",
+  "letterboxd": "@andyfunke"
 }
