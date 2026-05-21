@@ -2528,8 +2528,8 @@ a.host:hover .host__name { color: var(--gold); }
   text-transform: uppercase;
 }
 .archive-card__badge--buy  { color: var(--green);   border-color: var(--green); }
-.archive-card__badge--hold { color: var(--ink-soft); border-color: var(--ink-soft); }
-.archive-card__badge--sell { color: var(--red);     border-color: var(--red); }
+.archive-card__badge--hold { color: var(--amber);   border-color: var(--amber); }
+.archive-card__badge--sell { color: var(--crimson); border-color: var(--crimson); }
 
 .archive-card__body {
   display: flex;
