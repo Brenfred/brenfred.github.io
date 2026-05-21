@@ -1,4 +1,5 @@
 ---
+type: review
 title: Jaafar Jackson is OFF THE WALL
 film: Michael
 director: Antoine Fuqua
@@ -7,7 +8,7 @@ runtime: 128 min
 genre: Music Biopic
 rating: 4
 stance: hold
-stanceLabel: Audiences will keep MJ's Oscar glory afloat
+stanceLabel: Audiences will keep MJ afloat
 posterSlug: michael
 writer: ""
 writers:
