@@ -1,10 +1,11 @@
 {
-  "role": "Contributor",
-  "shortRole": "Writer",
-  "favorites": [],
-  "joinedDate": "2025",
+  "bio": "Ray is a long-time cinephile and aspiring screenwriter. When he's not working his day job doing psychological research, he's likely running statistics on box office and/or awards prognostication, making minor headway on scripts he's never quite satisfied with, or actually watching movies. He's been a passionate member of the Filmball community since 2025, and is always excited to help nurture the community in any way he can (or simply just spread his oft-controversial film opinions). Follow him on Awards Expert: @ banjosudswater ",
   "name": "Ray Siddiqi",
   "slug": "ray-siddiqi",
-  "bio": "TBA",
+  "shortRole": "Writer",
+  "role": "Contributor",
+  "favorites": [],
+  "joinedDate": "2025",
+  "headshot": "/headshots/rs.jpg",
   "letterboxd": "@Banjosudswater"
 }
