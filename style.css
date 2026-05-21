@@ -1780,12 +1780,17 @@ body::before {
 /* Single-review page hero — landscape image, not a poster */
 .review__hero-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
-  position: relative;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
   z-index: 2;
 }
 .review__hero { position: relative; }
+
+/* Hide the caption block entirely when it has no content */
+.review__hero-caption:empty { display: none; }
 
 /* =========================================================================
    RANKINGS WIDGET → clickable wrapper on home page

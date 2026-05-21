@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v20-hero-verdict)
+   FANTASY FILMBALL — content.js (v21-hero-clean)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -873,6 +873,7 @@
     // ---- Hero image: from CMS heroImage field, else hide block ----
     var heroBlock = $('[data-review-hero]');
     var heroImg = $('[data-review-hero-img]');
+    var heroCaption = $('[data-review-hero-caption]');
     if (heroBlock) {
       if (review.heroImage) {
         if (heroImg) {
@@ -885,6 +886,9 @@
             heroBlock.style.display = 'none';
           };
         }
+        if (heroCaption) {
+          heroCaption.textContent = review.heroCaption || '';
+        }
         heroBlock.style.display = '';
       } else {
         // No hero image set — hide the entire hero block. Better to skip
@@ -892,8 +896,7 @@
         heroBlock.style.display = 'none';
       }
     }
-    var heroTitle = $('[data-review-hero-title]');
-    if (heroTitle) heroTitle.textContent = film || '';
+    // (Placeholder hero-title was removed — image now fills the frame.)
 
     if (body && review.body) {
       body.innerHTML = mdToHtml(review.body);
@@ -1736,7 +1739,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v20-hero-verdict loaded');
+  if (window.console) console.log('[content.js] v21-hero-clean loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
