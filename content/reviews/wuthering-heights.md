@@ -21,6 +21,8 @@ excerpt: Emerald Fennell has a stunning vision behind the lens showcasing dreamy
   dollhouse sets, fairytale-esque cinematography, & luscious gowns which come
   undone to make Wuthering Heights a visual feast.
 heroImage: https://hollywoodlife.com/wp-content/uploads/2025/11/rev-1-WHE-T2-0017_High_Res_JPEG-1.jpeg?quality=100&w=1024&resize=1024%2C576
+heroCaption: XYZ
+verdictNote: ABC
 isHero: false
 tags: []
 categoryTags:
