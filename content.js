@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v15-card-nested-fix)
+   FANTASY FILMBALL — content.js (v16-anchor-block)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -1563,7 +1563,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v15-card-nested-fix loaded');
+  if (window.console) console.log('[content.js] v16-anchor-block loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),

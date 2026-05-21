@@ -500,6 +500,8 @@ body::before {
 }
 .review-card:hover { transform: translateY(-4px); }
 .review-card__image {
+  display: block;
+  width: 100%;
   aspect-ratio: 2 / 3;
   background:
     radial-gradient(circle at 32% 22%, rgba(232, 184, 90, 0.22), transparent 28%),
