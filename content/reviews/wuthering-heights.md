@@ -23,6 +23,18 @@ excerpt: Emerald Fennell has a stunning vision behind the lens showcasing dreamy
 heroImage: https://hollywoodlife.com/wp-content/uploads/2025/11/rev-1-WHE-T2-0017_High_Res_JPEG-1.jpeg?quality=100&w=1024&resize=1024%2C576
 heroCaption: ""
 verdictNote: Shortlist and Guild bait, but likely 0 nominations
+prospects: |-
+  Contender:
+
+  Best Production Design
+
+  Best Costume Design
+
+  Long Shot:
+
+  Best Original Song
+
+  Best Cinematography
 isHero: false
 tags: []
 categoryTags:
