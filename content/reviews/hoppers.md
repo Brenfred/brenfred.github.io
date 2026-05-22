@@ -20,20 +20,21 @@ deck: Pixar’s latest animated film blends environmental themes, thrilling
 excerpt: ""
 heroImage: https://deadline.com/wp-content/uploads/2025/11/Hoppers.jpg
 verdictNote: Another Pixar Animation Nomination
-prospects: |-
-  Predicted:
-
-  Best Animated Feature
-
-  Long Shot:
-
-  Best Original Song
+prospects:
+  - category: animated
+    tier: predicted
+    performer: ""
+    note: ""
+  - category: song
+    tier: long-shot
+    performer: ""
+    note: ""
 isHero: false
 tags: []
 categoryTags:
   - Animated
 ---
-Mabel is a young woman that cares about protecting animals and the environment. When she discovers one of her teachers, Dr. Sam is experimenting with technology that lets humans put their mind into a robot version of an animal, Mabel disguises herself as a beaver to help save a dam that Mayor Jerry is trying to destroy. 
+Mabel is a young woman that cares about protecting animals and the environment. When she discovers one of her teachers, Dr. Sam is experimenting with technology that lets humans put their mind into a robot version of an animal, Mabel disguises herself as a beaver to help save a dam that Mayor Jerry is trying to destroy. 
 
 We all know the concept of putting your brain into something else and living through that other thing isn’t new. The movie itself even directly references that this is just like *Avatar.* However, that self acknowledgement didn’t feel entirely necessary, as the movie still finds ways to have its own identity.
 
