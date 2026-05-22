@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v22-snapshots)
+   FANTASY FILMBALL — content.js (v23-polish)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -58,17 +58,17 @@
   function headlineHTML(film, headline) {
     var f = (film || '').trim();
     var h = (headline || '').trim();
-    if (!h) return f ? '<em>' + esc(f) + '</em>' : '';
+    if (!h) return f ? '<strong>' + esc(f) + '</strong>' : '';
     if (!f) return esc(h);
     var fLower = f.toLowerCase();
     var hLower = h.toLowerCase();
 
     // Exact match
-    if (hLower === fLower) return '<em>' + esc(h) + '</em>';
+    if (hLower === fLower) return '<strong>' + esc(h) + '</strong>';
 
     // Headline starts with film (followed by a non-letter)
     if (hLower.indexOf(fLower) === 0 && !/^[a-z0-9]/i.test(h.charAt(f.length))) {
-      return '<em>' + esc(h.slice(0, f.length)) + '</em>' + esc(h.slice(f.length));
+      return '<strong>' + esc(h.slice(0, f.length)) + '</strong>' + esc(h.slice(f.length));
     }
 
     // Headline contains film as a whole word
@@ -76,11 +76,11 @@
     var m = h.match(wordPat);
     if (m) {
       var i = h.toLowerCase().indexOf(m[0].toLowerCase());
-      return esc(h.slice(0, i)) + '<em>' + esc(h.slice(i, i + m[0].length)) + '</em>' + esc(h.slice(i + m[0].length));
+      return esc(h.slice(0, i)) + '<strong>' + esc(h.slice(i, i + m[0].length)) + '</strong>' + esc(h.slice(i + m[0].length));
     }
 
-    // Film name not in headline at all — show "<em>Film</em> — Headline"
-    return '<em>' + esc(f) + '</em> — ' + esc(h);
+    // Film name not in headline at all — show "Film — Headline"
+    return '<strong>' + esc(f) + '</strong> — ' + esc(h);
   }
 
   function repoConfig() {
@@ -920,74 +920,87 @@
     var studio = $('[data-review-studio]');
     if (studio) studio.textContent = review.studio || '';
 
-    // ---- Oscar Outlook (auto-computed from category rankings) ----------
+    // ---- Writer's Prospects ---------------------------------------------
+    // If review has a `prospects` field (rich markdown from the CMS), show
+    // that as the writer's personal take. Otherwise, fall back to the
+    // auto-computed Oscar outlook from the snapshot rankings.
+    // Title always uses the writer's first name, e.g. "Brad's Prospects".
     var outlookEl = $('[data-review-outlook]');
     if (outlookEl) {
-      var filmSlug = review.posterSlug || review.slug;
-      var outlookRows = [];
-
-      // Map a rank → outlook label. For Best Picture, top-10 nominees, so:
-      //   #1     → "Frontrunner"
-      //   #2-5   → "Strong Contender"
-      //   #6-10  → "Top 10"
-      //   #11-20 → "In the Conversation"
-      // For other categories (top 10 list, 5 nominees):
-      //   #1     → "Frontrunner"
-      //   #2     → "Lock"
-      //   #3-5   → "Top 5"
-      //   #6-10  → "Outside Looking In"
-      function outlookLabel(catSlug, rank) {
-        if (catSlug === 'picture') {
-          if (rank === 1)  return 'Frontrunner';
-          if (rank <= 5)   return 'Strong Contender';
-          if (rank <= 10)  return 'Top 10';
-          return 'In the Conversation';
+      // Resolve first writer's first name (same logic as the byline above)
+      var firstName = 'Writer';
+      try {
+        var prospPeople = (writersBySlug)
+          ? resolveReviewWriters(review, writersBySlug)
+          : [];
+        if (prospPeople.length > 0 && prospPeople[0].name) {
+          firstName = String(prospPeople[0].name).trim().split(/\s+/)[0] || 'Writer';
+        } else if (review.writer) {
+          firstName = String(review.writer).trim().split(/\s+/)[0] || 'Writer';
         }
-        if (rank === 1)  return 'Frontrunner';
-        if (rank === 2)  return 'Lock';
-        if (rank <= 5)   return 'Top 5';
-        return 'Outside Top 5';
-      }
+      } catch (e) { /* leave default */ }
 
-      (categories || []).forEach(function (cat) {
-        (cat.current.films || []).forEach(function (row) {
-          if (row.filmSlug === filmSlug) {
-            outlookRows.push({
-              label: cat.current.shortLabel || cat.current.label,
-              fullLabel: cat.current.label,
-              value: outlookLabel(cat.slug, row.rank),
-              rank: row.rank,
-              subtitle: row.subtitle || ''
-            });
-          }
-        });
-      });
+      var titleHTML = '<h3 class="aside-block__title">' + esc(firstName) + '&rsquo;s Prospects</h3>';
 
-      // Sort: Best Picture first, then by rank (best ranks first)
-      outlookRows.sort(function (a, b) {
-        if (a.fullLabel === 'Best Picture') return -1;
-        if (b.fullLabel === 'Best Picture') return 1;
-        return a.rank - b.rank;
-      });
-
-      if (outlookRows.length === 0) {
-        outlookEl.innerHTML =
-          '<h3 class="aside-block__title">Oscar Outlook</h3>' +
-          '<p class="aside-block__empty">Not currently ranked in any category.</p>';
+      // PATH 1: writer-authored prospects (markdown body, from CMS)
+      var prospectsBody = (review.prospects || '').trim();
+      if (prospectsBody) {
+        outlookEl.innerHTML = titleHTML +
+          '<div class="aside-block__prospects">' + mdToHtml(prospectsBody) + '</div>';
       } else {
-        outlookEl.innerHTML =
-          '<h3 class="aside-block__title">Oscar Outlook</h3>' +
-          outlookRows.map(function (r) {
-            // Acting categories include the performer name as part of the value
-            var isActing = /^(Actor|Actress|Supp|Performance)/i.test(r.label);
-            var displayValue = isActing && r.subtitle
-              ? r.value + ' (' + esc(r.subtitle.split(',')[0]) + ')'
-              : esc(r.value);
-            return '<div class="aside-block__row">' +
-              '<span class="aside-block__label">' + esc(r.label) + '</span>' +
-              '<span class="aside-block__value">' + displayValue + '</span>' +
-            '</div>';
-          }).join('');
+        // PATH 2: auto-computed fallback from category rankings
+        var filmSlug = review.posterSlug || review.slug;
+        var outlookRows = [];
+
+        function outlookLabel(catSlug, rank) {
+          if (catSlug === 'picture') {
+            if (rank === 1)  return 'Frontrunner';
+            if (rank <= 5)   return 'Strong Contender';
+            if (rank <= 10)  return 'Top 10';
+            return 'In the Conversation';
+          }
+          if (rank === 1)  return 'Frontrunner';
+          if (rank === 2)  return 'Lock';
+          if (rank <= 5)   return 'Top 5';
+          return 'Outside Top 5';
+        }
+
+        (categories || []).forEach(function (cat) {
+          (cat.current.films || []).forEach(function (row) {
+            if (row.filmSlug === filmSlug) {
+              outlookRows.push({
+                label: cat.current.shortLabel || cat.current.label,
+                fullLabel: cat.current.label,
+                value: outlookLabel(cat.slug, row.rank),
+                rank: row.rank,
+                subtitle: row.subtitle || ''
+              });
+            }
+          });
+        });
+
+        outlookRows.sort(function (a, b) {
+          if (a.fullLabel === 'Best Picture') return -1;
+          if (b.fullLabel === 'Best Picture') return 1;
+          return a.rank - b.rank;
+        });
+
+        if (outlookRows.length === 0) {
+          outlookEl.innerHTML = titleHTML +
+            '<p class="aside-block__empty">Not currently ranked in any category.</p>';
+        } else {
+          outlookEl.innerHTML = titleHTML +
+            outlookRows.map(function (r) {
+              var isActing = /^(Actor|Actress|Supp|Performance)/i.test(r.label);
+              var displayValue = isActing && r.subtitle
+                ? r.value + ' (' + esc(r.subtitle.split(',')[0]) + ')'
+                : esc(r.value);
+              return '<div class="aside-block__row">' +
+                '<span class="aside-block__label">' + esc(r.label) + '</span>' +
+                '<span class="aside-block__value">' + displayValue + '</span>' +
+              '</div>';
+            }).join('');
+        }
       }
     }
 
@@ -1723,7 +1736,18 @@
     // Sort each group alphabetically by name
     function nameCmp(a, b) { return (a.name || '').localeCompare(b.name || ''); }
     hosts.sort(nameCmp);
-    contributors.sort(nameCmp);
+
+    // Contributors: editors (Lead Editor, Editor, etc.) come first as a group,
+    // then everyone else. Within each group, alphabetical by name.
+    function isEditor(w) {
+      return /editor/i.test(w.role || '');
+    }
+    contributors.sort(function (a, b) {
+      var ea = isEditor(a), eb = isEditor(b);
+      if (ea && !eb) return -1;
+      if (!ea && eb) return 1;
+      return nameCmp(a, b);
+    });
 
     if (countEl) {
       countEl.textContent = hosts.length + ' host' + (hosts.length !== 1 ? 's' : '') +
@@ -1887,7 +1911,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v22-snapshots loaded');
+  if (window.console) console.log('[content.js] v23-polish loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),

@@ -1008,13 +1008,14 @@ body::before {
 }
 .review__title {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 400;
   font-size: clamp(2.5rem, 6vw, 4.75rem);
   line-height: 1.0;
   letter-spacing: -0.025em;
   margin-bottom: 1.25rem;
   font-variation-settings: "opsz" 144;
 }
+.review__title strong { font-weight: 700; font-style: normal; }
 .review__title em { font-style: italic; font-weight: 400; }
 .review__deck {
   font-family: var(--font-body);
@@ -2075,7 +2076,6 @@ body::before {
 
 /* Category appearances list on film page */
 .film-categories {
-  border-top: 2px solid var(--ink);
   border-bottom: 2px solid var(--ink);
 }
 .film-category-row {
@@ -2372,6 +2372,26 @@ a.host:hover .host__name { color: var(--gold); }
   margin: 0;
   line-height: 1.4;
 }
+
+/* Writer-authored prospects body — rendered from markdown into the aside */
+.aside-block__prospects {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.aside-block__prospects p {
+  margin: 0 0 0.85rem;
+}
+.aside-block__prospects p:last-child { margin-bottom: 0; }
+.aside-block__prospects em { font-style: italic; }
+.aside-block__prospects strong { font-weight: 700; color: var(--ink); }
+.aside-block__prospects a {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold);
+}
+.aside-block__prospects a:hover { color: var(--gold-bright); }
 
 /* =========================================================================
    .review-card__text — wrapper around kicker/title/excerpt/foot
