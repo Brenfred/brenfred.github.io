@@ -22,6 +22,22 @@ excerpt: Michael shines through a one-of-a-kind performance by Jaafar Jackson,
   chart-topping technical craftwork, and a pace that moonwalks by.
 heroImage: https://deadline.com/wp-content/uploads/2026/04/Michael.jpg
 verdictNote: "Don't write off Michael entirely "
+prospects: |-
+  Dylan's Oscar Prospects:
+
+  Picture
+
+  Actor (Jaafar Jackson)
+
+  Actor (Colman Domingo)
+
+  Sound
+
+  Editing
+
+  Costume Design
+
+  Make-Up & Hair-Styling
 isHero: false
 tags:
   - michael
