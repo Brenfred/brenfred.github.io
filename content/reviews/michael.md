@@ -23,21 +23,31 @@ excerpt: Michael shines through a one-of-a-kind performance by Jaafar Jackson,
 heroImage: https://deadline.com/wp-content/uploads/2026/04/Michael.jpg
 verdictNote: "Don't write off Michael entirely "
 prospects: |-
-  Dylan's Oscar Prospects:
+  Predicted:
 
-  Picture
+  Best Picture
 
-  Actor (Jaafar Jackson)
+  Best Lead Actor (Jaafar Jackson)
 
-  Actor (Colman Domingo)
+  Best Supporting Actor (Colman Domingo)
 
-  Sound
+  Best Casting
 
-  Editing
+  Best Make-Up & Hair Styling
 
-  Costume Design
+  Best Costume Design
 
-  Make-Up & Hair-Styling
+  Contender:
+
+  Best Sound
+
+  Best Editing
+
+  Long Shot:
+
+  Best Production Design
+
+  Best Cinematography
 isHero: false
 tags:
   - michael
