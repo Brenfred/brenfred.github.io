@@ -20,6 +20,14 @@ deck: Pixar’s latest animated film blends environmental themes, thrilling
 excerpt: ""
 heroImage: https://deadline.com/wp-content/uploads/2025/11/Hoppers.jpg
 verdictNote: Another Pixar Animation Nomination
+prospects: |-
+  Predicted:
+
+  Best Animated Feature
+
+  Long Shot:
+
+  Best Original Song
 isHero: false
 tags: []
 categoryTags:
