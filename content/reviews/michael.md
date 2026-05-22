@@ -22,32 +22,47 @@ excerpt: Michael shines through a one-of-a-kind performance by Jaafar Jackson,
   chart-topping technical craftwork, and a pace that moonwalks by.
 heroImage: https://deadline.com/wp-content/uploads/2026/04/Michael.jpg
 verdictNote: "Don't write off Michael entirely "
-prospects: |-
-  Predicted:
-
-  Best Picture
-
-  Best Lead Actor (Jaafar Jackson)
-
-  Best Supporting Actor (Colman Domingo)
-
-  Best Casting
-
-  Best Make-Up & Hair Styling
-
-  Best Costume Design
-
-  Contender:
-
-  Best Sound
-
-  Best Editing
-
-  Long Shot:
-
-  Best Production Design
-
-  Best Cinematography
+prospects:
+  - category: picture
+    tier: predicted
+    performer: ""
+    note: ""
+  - category: actor
+    tier: predicted
+    performer: Jaafar Jackson
+    note: ""
+  - category: supp-actor
+    tier: predicted
+    performer: Colman Domingo
+    note: ""
+  - category: casting
+    tier: predicted
+    performer: ""
+    note: ""
+  - category: makeup-hair
+    tier: predicted
+    performer: ""
+    note: ""
+  - category: costume-design
+    tier: predicted
+    performer: ""
+    note: ""
+  - category: sound
+    tier: in-the-mix
+    performer: ""
+    note: ""
+  - category: editing
+    tier: in-the-mix
+    performer: ""
+    note: ""
+  - category: production-design
+    tier: long-shot
+    performer: ""
+    note: ""
+  - category: cinematography
+    tier: long-shot
+    performer: ""
+    note: ""
 isHero: false
 tags:
   - michael
@@ -66,7 +81,7 @@ If I had to dish out some criticism, because let’s be honest, some critics are
 
 While I raved about how James Mangold captured the essence of live performance in *A Complete Unknown*, or how Baz Luhrmann brought that bombastic flair that perfectly matched *Elvis*, Fuqua doesn’t quite bring a unique perspective to the biopic genre. The concert scenes are fun because the music is timeless and Jaafar is killing it, but the camera itself doesn’t feel like a character. It just kind of… does random stuff. If we’re watching “Billie Jean,” let me watch Jaafar perform “Billie Jean.” I don’t need constant cutaways to the crowd or extra glitz behind the lens.
 
-I missed a few press screenings and the opportunity to see *Michael* early, which was pretty upsetting because I try to avoid reviews before indulging in the medium. I don’t want my opinion shaped before I walk into a showing, I want my reaction to be raw and honest. But that’s not how the cards were dealt. The embargo lifts and… come on, we cannot be serious with some of these scores. A 39 on Metacritic? Some of you just need to “Beat It*”*. *Michael* is a blast. I found it to be so fun, because of an incredible lead performance by Jaafar, head-bopping bangers from MJ’s catalog, and genuinely impressive craftsmanship on all fronts. The recreation of iconic Michael Jackson costumes, the makeup and prosthetics done to create Michael’s various nose jobs, the period hairstyles from the entire ensemble, and especially the recreated stages, it’s all really strong work. At times, you forget you’re watching a Michael Jackson biopic and just believe you’re just watching clips of Michael Jackson. 
+I missed a few press screenings and the opportunity to see *Michael* early, which was pretty upsetting because I try to avoid reviews before indulging in the medium. I don’t want my opinion shaped before I walk into a showing, I want my reaction to be raw and honest. But that’s not how the cards were dealt. The embargo lifts and… come on, we cannot be serious with some of these scores. A 39 on Metacritic? Some of you just need to “Beat It*”*. *Michael* is a blast. I found it to be so fun, because of an incredible lead performance by Jaafar, head-bopping bangers from MJ’s catalog, and genuinely impressive craftsmanship on all fronts. The recreation of iconic Michael Jackson costumes, the makeup and prosthetics done to create Michael’s various nose jobs, the period hairstyles from the entire ensemble, and especially the recreated stages, it’s all really strong work. At times, you forget you’re watching a Michael Jackson biopic and just believe you’re just watching clips of Michael Jackson. 
 
 That’s a major reason why I personally enjoyed *Michael* so much, and why I do think there’s such a disconnect between general audiences and highbrow critics. The critics *wanted* one film, but *Michael* delivered what it knows the audience desires. It gives them what they want, and it does it well. Whether it’s Jaafar basically reviving his uncle, the technical elements transporting you back, or the film moving at a smooth, digestible pace. Yes, I can agree with some of the criticism and say I would’ve liked it to go deeper, I’m not going to ding *Michael* for what it’s not trying to do. I’m going to praise it for what it *does* accomplish.
 
