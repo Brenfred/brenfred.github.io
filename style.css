@@ -366,6 +366,21 @@ body::before {
   letter-spacing: 0.02em;
 }
 
+/* Half-star glyph — used when ratings end in .5. Sits inline with the
+   full ★ characters; styled to match their color/size, with a tiny
+   visual nudge so it doesn't look orphaned next to the stars. */
+.star-half {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.05em;
+  color: var(--gold);
+  line-height: 1;
+  margin-left: -0.1em;
+  vertical-align: baseline;
+}
+
 /* =========================================================================
    HERO REVIEW (homepage lead)
    ========================================================================= */

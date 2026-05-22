@@ -328,7 +328,7 @@
       if (f.rank === cutoffRank) {
         var cutoff = document.createElement('div');
         cutoff.className = 'rankings__cutoff';
-        cutoff.innerHTML = '<span>Below the Line</span>';
+        cutoff.innerHTML = '<span>Projected Cutoff</span>';
         widget.insertBefore(cutoff, insertBefore);
       }
     });
@@ -422,8 +422,10 @@
 
   function renderStars(rating) {
     var full = Math.floor(rating);
+    var hasHalf = (rating - full) >= 0.5;
     var stars = '';
     for (var i = 0; i < full; i++) stars += '★ ';
+    if (hasHalf) stars += '<span class="star-half">½</span>';
     return stars.trim();
   }
 
@@ -851,7 +853,7 @@
     if (date) date.textContent = review.publishedDate || '';
 
     var stars = $('[data-review-stars]');
-    if (stars) stars.textContent = renderStars(rating);
+    if (stars) stars.innerHTML = renderStars(rating);
 
     var ratingNum = $('[data-review-rating-num]');
     if (ratingNum) ratingNum.textContent = rating + ' / 5 STARS';
