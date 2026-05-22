@@ -2388,25 +2388,56 @@ a.host:hover .host__name { color: var(--gold); }
   line-height: 1.4;
 }
 
-/* Writer-authored prospects body — rendered from markdown into the aside */
-.aside-block__prospects {
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  line-height: 1.55;
+/* Writer-authored prospects — grouped by tier (Predicted / In the Mix / Long Shot) */
+.prospects__tier {
+  margin-top: 1.1rem;
+}
+.prospects__tier:first-of-type { margin-top: 0.5rem; }
+.prospects__tier-label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--ink-faded);
+  padding-bottom: 0.4rem;
+  border-bottom: 1px dashed var(--rule);
+  margin-bottom: 0.5rem;
+}
+.prospects__tier--predicted  .prospects__tier-label { color: var(--gold); }
+.prospects__tier--in-the-mix .prospects__tier-label { color: var(--amber); }
+.prospects__tier--long-shot  .prospects__tier-label { color: var(--ink-muted); }
+
+.prospects__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.prospects__item {
+  padding: 0.4rem 0;
+  font-family: var(--font-display);
+  font-size: 0.97rem;
+  line-height: 1.35;
   color: var(--ink);
+  border-bottom: 1px solid var(--rule);
 }
-.aside-block__prospects p {
-  margin: 0 0 0.85rem;
+.prospects__item:last-child { border-bottom: none; }
+.prospects__cat {
+  font-weight: 600;
 }
-.aside-block__prospects p:last-child { margin-bottom: 0; }
-.aside-block__prospects em { font-style: italic; }
-.aside-block__prospects strong { font-weight: 700; color: var(--ink); }
-.aside-block__prospects a {
-  color: var(--gold);
-  text-decoration: none;
-  border-bottom: 1px solid var(--gold);
+.prospects__perf {
+  color: var(--ink-soft);
+  font-style: italic;
+  font-weight: 400;
 }
-.aside-block__prospects a:hover { color: var(--gold-bright); }
+.prospects__note {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--ink-faded);
+  font-style: italic;
+  margin-top: 0.15rem;
+  line-height: 1.4;
+}
 
 /* =========================================================================
    .review-card__text — wrapper around kicker/title/excerpt/foot

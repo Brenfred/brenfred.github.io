@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v23-polish)
+   FANTASY FILMBALL — content.js (v24-prospects-tiers)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -183,20 +183,71 @@
       }
 
       // ---- Empty value: might be a multi-line list ----
+      // Two flavors:
+      //   (a) list of scalars     - item1
+      //                           - item2
+      //   (b) list of objects     - key1: val1
+      //                             key2: val2
+      //                           - key1: val1
+      //                             key2: val2
       if (trimmedRest === '') {
         var items = [];
         var j = i + 1;
+
+        // Detect indent of the FIRST dash so we know what "this list's" lines look like
+        var firstDashLine = null;
+        var jk = j;
+        while (jk < lines.length) {
+          if (lines[jk].trim() === '') { jk++; continue; }
+          if (/^\s+-\s/.test(lines[jk])) { firstDashLine = lines[jk]; break; }
+          if (!/^\s/.test(lines[jk])) break;   // hit a top-level key
+          jk++;
+        }
+        var dashIndent = firstDashLine
+          ? firstDashLine.match(/^(\s*)/)[1].length
+          : -1;
+
         while (j < lines.length) {
           var next = lines[j];
           if (next.trim() === '') { j++; continue; }
-          var listMatch = next.match(/^\s+-\s+(.*)$/);
-          if (listMatch) {
-            items.push(parseScalar(listMatch[1]));
-            j++;
-          } else if (/^\s/.test(next)) {
-            j++;
+          if (!/^\s/.test(next)) break;        // top-level key — end of list
+
+          var dashMatch = next.match(/^(\s*)-\s+(.*)$/);
+          if (dashMatch && dashMatch[1].length === dashIndent) {
+            var afterDash = dashMatch[2];
+            var colonAt = afterDash.indexOf(':');
+            // OBJECT ITEM if there's a `key: value` after the dash
+            if (colonAt !== -1 && /^[A-Za-z_][\w\-]*$/.test(afterDash.slice(0, colonAt).trim())) {
+              var obj = {};
+              var kkey = afterDash.slice(0, colonAt).trim();
+              var kval = afterDash.slice(colonAt + 1).trim();
+              obj[kkey] = parseScalar(kval);
+              // collect subsequent indented (deeper than dashIndent) lines that
+              // aren't themselves dashes — those are more fields of this object
+              j++;
+              while (j < lines.length) {
+                var follow = lines[j];
+                if (follow.trim() === '') { j++; continue; }
+                var followIndent = follow.match(/^(\s*)/)[1].length;
+                if (followIndent <= dashIndent) break;
+                var followDash = follow.match(/^\s*-\s+/);
+                if (followDash) break;       // another item in the list
+                var fIdx = follow.indexOf(':');
+                if (fIdx !== -1) {
+                  var fk = follow.slice(0, fIdx).trim();
+                  var fv = follow.slice(fIdx + 1).trim();
+                  obj[fk] = parseScalar(fv);
+                }
+                j++;
+              }
+              items.push(obj);
+            } else {
+              // SCALAR ITEM
+              items.push(parseScalar(afterDash));
+              j++;
+            }
           } else {
-            break;
+            j++;   // indented but not a top-level dash item — skip
           }
         }
         meta[key] = items;
@@ -923,86 +974,82 @@
     if (studio) studio.textContent = review.studio || '';
 
     // ---- Writer's Prospects ---------------------------------------------
-    // If review has a `prospects` field (rich markdown from the CMS), show
-    // that as the writer's personal take. Otherwise, fall back to the
-    // auto-computed Oscar outlook from the snapshot rankings.
-    // Title always uses the writer's first name, e.g. "Brad's Prospects".
+    // The writer sets prospects as a list in the CMS — each entry has a
+    // category, a tier (predicted / in-the-mix / long-shot), and optional
+    // performer name + note. We group entries by tier and render them under
+    // the writer's first name. If the list is empty, the whole block hides.
     var outlookEl = $('[data-review-outlook]');
     if (outlookEl) {
-      // Resolve first writer's first name (same logic as the byline above)
-      var firstName = 'Writer';
-      try {
-        var prospPeople = (writersBySlug)
-          ? resolveReviewWriters(review, writersBySlug)
-          : [];
-        if (prospPeople.length > 0 && prospPeople[0].name) {
-          firstName = String(prospPeople[0].name).trim().split(/\s+/)[0] || 'Writer';
-        } else if (review.writer) {
-          firstName = String(review.writer).trim().split(/\s+/)[0] || 'Writer';
-        }
-      } catch (e) { /* leave default */ }
+      var prospects = Array.isArray(review.prospects) ? review.prospects : [];
 
-      var titleHTML = '<h3 class="aside-block__title">' + esc(firstName) + '&rsquo;s Prospects</h3>';
-
-      // PATH 1: writer-authored prospects (markdown body, from CMS)
-      var prospectsBody = (review.prospects || '').trim();
-      if (prospectsBody) {
-        outlookEl.innerHTML = titleHTML +
-          '<div class="aside-block__prospects">' + mdToHtml(prospectsBody) + '</div>';
+      if (prospects.length === 0) {
+        // No prospects supplied — hide the block entirely.
+        outlookEl.style.display = 'none';
       } else {
-        // PATH 2: auto-computed fallback from category rankings
-        var filmSlug = review.posterSlug || review.slug;
-        var outlookRows = [];
+        outlookEl.style.display = '';
 
-        function outlookLabel(catSlug, rank) {
-          if (catSlug === 'picture') {
-            if (rank === 1)  return 'Frontrunner';
-            if (rank <= 5)   return 'Strong Contender';
-            if (rank <= 10)  return 'Top 10';
-            return 'In the Conversation';
+        // Resolve the writer's first name for the title
+        var firstName = 'Writer';
+        try {
+          var prospPeople = (writersBySlug)
+            ? resolveReviewWriters(review, writersBySlug)
+            : [];
+          if (prospPeople.length > 0 && prospPeople[0].name) {
+            firstName = String(prospPeople[0].name).trim().split(/\s+/)[0] || 'Writer';
+          } else if (review.writer) {
+            firstName = String(review.writer).trim().split(/\s+/)[0] || 'Writer';
           }
-          if (rank === 1)  return 'Frontrunner';
-          if (rank === 2)  return 'Lock';
-          if (rank <= 5)   return 'Top 5';
-          return 'Outside Top 5';
-        }
+        } catch (e) { /* leave default */ }
 
-        (categories || []).forEach(function (cat) {
-          (cat.current.films || []).forEach(function (row) {
-            if (row.filmSlug === filmSlug) {
-              outlookRows.push({
-                label: cat.current.shortLabel || cat.current.label,
-                fullLabel: cat.current.label,
-                value: outlookLabel(cat.slug, row.rank),
-                rank: row.rank,
-                subtitle: row.subtitle || ''
-              });
-            }
+        // Category slug → display label
+        var CATEGORY_LABELS = {
+          'picture':           'Best Picture',
+          'director':          'Best Director',
+          'actress':           'Best Actress',
+          'actor':             'Best Actor',
+          'supp-actress':      'Supp. Actress',
+          'supp-actor':        'Supp. Actor',
+          'orig-screenplay':   'Original Screenplay',
+          'adapt-screenplay':  'Adapted Screenplay'
+        };
+        // Tier slug → display + sort order
+        var TIERS = [
+          { key: 'predicted',  label: 'Predicted'  },
+          { key: 'in-the-mix', label: 'In the Mix' },
+          { key: 'long-shot',  label: 'Long Shot'  }
+        ];
+
+        // Bucket entries by tier
+        var buckets = { 'predicted': [], 'in-the-mix': [], 'long-shot': [] };
+        prospects.forEach(function (p) {
+          if (!p || !p.category) return;
+          var tier = p.tier || 'predicted';
+          if (!buckets[tier]) buckets[tier] = [];
+          buckets[tier].push(p);
+        });
+
+        // Render
+        var html = '<h3 class="aside-block__title">' + esc(firstName) + '&rsquo;s Prospects</h3>';
+        TIERS.forEach(function (tier) {
+          var entries = buckets[tier.key];
+          if (!entries || entries.length === 0) return;
+          html += '<div class="prospects__tier prospects__tier--' + tier.key + '">';
+          html += '<div class="prospects__tier-label">' + esc(tier.label) + '</div>';
+          html += '<ul class="prospects__list">';
+          entries.forEach(function (p) {
+            var catLabel = CATEGORY_LABELS[p.category] || p.category;
+            var perf = (p.performer || '').trim();
+            var note = (p.note || '').trim();
+            html += '<li class="prospects__item">';
+            html += '<span class="prospects__cat">' + esc(catLabel) + '</span>';
+            if (perf) html += ' <span class="prospects__perf">— ' + esc(perf) + '</span>';
+            if (note) html += '<div class="prospects__note">' + esc(note) + '</div>';
+            html += '</li>';
           });
+          html += '</ul></div>';
         });
 
-        outlookRows.sort(function (a, b) {
-          if (a.fullLabel === 'Best Picture') return -1;
-          if (b.fullLabel === 'Best Picture') return 1;
-          return a.rank - b.rank;
-        });
-
-        if (outlookRows.length === 0) {
-          outlookEl.innerHTML = titleHTML +
-            '<p class="aside-block__empty">Not currently ranked in any category.</p>';
-        } else {
-          outlookEl.innerHTML = titleHTML +
-            outlookRows.map(function (r) {
-              var isActing = /^(Actor|Actress|Supp|Performance)/i.test(r.label);
-              var displayValue = isActing && r.subtitle
-                ? r.value + ' (' + esc(r.subtitle.split(',')[0]) + ')'
-                : esc(r.value);
-              return '<div class="aside-block__row">' +
-                '<span class="aside-block__label">' + esc(r.label) + '</span>' +
-                '<span class="aside-block__value">' + displayValue + '</span>' +
-              '</div>';
-            }).join('');
-        }
+        outlookEl.innerHTML = html;
       }
     }
 
@@ -1913,7 +1960,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v23-polish loaded');
+  if (window.console) console.log('[content.js] v24-prospects-tiers loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
