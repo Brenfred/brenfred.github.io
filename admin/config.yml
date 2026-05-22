@@ -219,6 +219,7 @@ collections:
         label: "Writer's Prospects"
         widget: "list"
         required: false
+        default: []
         summary: "{{fields.category}} — {{fields.tier}}"
         hint: "Optional. The writer's personal call on this film's awards prospects, category by category. Each entry: pick a category, set a tier (Predicted / In the Mix / Long Shot), and optionally add the performer name (for acting categories) or a short note. Shown in the sidebar grouped by tier. Leave the entire list empty to hide the whole Prospects block on this article."
         fields:
@@ -226,6 +227,7 @@ collections:
             label: "Category"
             widget: "select"
             options:
+              # Top 8 — these match the Oscar Race rankings
               - { label: "Best Picture",              value: "picture" }
               - { label: "Best Director",             value: "director" }
               - { label: "Best Actress",              value: "actress" }
@@ -234,6 +236,24 @@ collections:
               - { label: "Best Supporting Actor",     value: "supp-actor" }
               - { label: "Best Original Screenplay",  value: "orig-screenplay" }
               - { label: "Best Adapted Screenplay",   value: "adapt-screenplay" }
+              # Craft and other categories — not tracked in the Oscar Race
+              # tables but writers can still flag them in their prospects.
+              - { label: "Best Cinematography",       value: "cinematography" }
+              - { label: "Best Film Editing",         value: "editing" }
+              - { label: "Best Production Design",    value: "production-design" }
+              - { label: "Best Costume Design",       value: "costume-design" }
+              - { label: "Best Makeup and Hairstyling", value: "makeup-hair" }
+              - { label: "Best Sound",                value: "sound" }
+              - { label: "Best Visual Effects",       value: "vfx" }
+              - { label: "Best Original Score",       value: "score" }
+              - { label: "Best Original Song",        value: "song" }
+              - { label: "Best Casting",              value: "casting" }
+              - { label: "Best International Feature",value: "international" }
+              - { label: "Best Animated Feature",     value: "animated" }
+              - { label: "Best Documentary Feature",  value: "documentary" }
+              - { label: "Best Documentary Short",    value: "doc-short" }
+              - { label: "Best Animated Short",       value: "animated-short" }
+              - { label: "Best Live Action Short",    value: "live-short" }
           - name: "tier"
             label: "Tier"
             widget: "select"
