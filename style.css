@@ -2388,6 +2388,18 @@ a.host:hover .host__name { color: var(--gold); }
   line-height: 1.4;
 }
 
+/* Footnote shown under the By the Numbers stats — clarifies the source
+   of community-derived data (Nom %, Win %, FFB Rank). */
+.aside-block__footnote {
+  font-size: 0.72rem;
+  color: var(--ink-faded);
+  font-style: italic;
+  line-height: 1.45;
+  margin: 0.85rem 0 0;
+  padding-top: 0.65rem;
+  border-top: 1px dashed var(--rule);
+}
+
 /* Writer-authored prospects — grouped by tier (Predicted / In the Mix / Long Shot) */
 .prospects__tier {
   margin-top: 1.1rem;

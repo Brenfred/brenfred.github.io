@@ -1113,6 +1113,8 @@
           '<p class="aside-block__empty">Not currently in the Best Picture top 20. ' +
           'Add this film to a category in the CMS to populate stats here.</p>';
       } else {
+        // Mark community-derived rows so the footnote is contextually accurate
+        var hasCommunityStats = !!bpRow;
         numbersEl.innerHTML =
           '<h3 class="aside-block__title">By the Numbers</h3>' +
           numRows.map(function (r) {
@@ -1121,7 +1123,10 @@
               '<span class="aside-block__label">' + esc(r.label) + '</span>' +
               '<span class="aside-block__value' + statClass + '">' + esc(r.value) + '</span>' +
             '</div>';
-          }).join('');
+          }).join('') +
+          (hasCommunityStats
+            ? '<p class="aside-block__footnote">Nom %, Win % &amp; FFB Rank are aggregated from the Filmball Discord community consensus.</p>'
+            : '');
       }
     }
 
