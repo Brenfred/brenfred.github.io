@@ -2406,7 +2406,7 @@ a.host:hover .host__name { color: var(--gold); }
 }
 .prospects__tier--predicted  .prospects__tier-label { color: var(--gold); }
 .prospects__tier--in-the-mix .prospects__tier-label { color: var(--amber); }
-.prospects__tier--long-shot  .prospects__tier-label { color: var(--ink-muted); }
+.prospects__tier--long-shot  .prospects__tier-label { color: var(--gold); }
 
 .prospects__list {
   list-style: none;

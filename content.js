@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v24-prospects-tiers)
+   FANTASY FILMBALL — content.js (v25-prospects-polish)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -982,24 +982,28 @@
     if (outlookEl) {
       var prospects = Array.isArray(review.prospects) ? review.prospects : [];
 
-      if (prospects.length === 0) {
-        // No prospects supplied — hide the block entirely.
-        outlookEl.style.display = 'none';
-      } else {
-        outlookEl.style.display = '';
+      // Always show the block. Resolve the writer's first name (used in the
+      // title and in the empty-state message).
+      outlookEl.style.display = '';
+      var firstName = 'Writer';
+      try {
+        var prospPeople = (writersBySlug)
+          ? resolveReviewWriters(review, writersBySlug)
+          : [];
+        if (prospPeople.length > 0 && prospPeople[0].name) {
+          firstName = String(prospPeople[0].name).trim().split(/\s+/)[0] || 'Writer';
+        } else if (review.writer) {
+          firstName = String(review.writer).trim().split(/\s+/)[0] || 'Writer';
+        }
+      } catch (e) { /* leave default */ }
 
-        // Resolve the writer's first name for the title
-        var firstName = 'Writer';
-        try {
-          var prospPeople = (writersBySlug)
-            ? resolveReviewWriters(review, writersBySlug)
-            : [];
-          if (prospPeople.length > 0 && prospPeople[0].name) {
-            firstName = String(prospPeople[0].name).trim().split(/\s+/)[0] || 'Writer';
-          } else if (review.writer) {
-            firstName = String(review.writer).trim().split(/\s+/)[0] || 'Writer';
-          }
-        } catch (e) { /* leave default */ }
+      var titleHTML = '<h3 class="aside-block__title">' + esc(firstName) + '&rsquo;s Prospects</h3>';
+
+      if (prospects.length === 0) {
+        // No prospects supplied — show block with an empty-state message.
+        outlookEl.innerHTML = titleHTML +
+          '<p class="aside-block__empty">' + esc(firstName) + ' hasn&rsquo;t filed prospects on this one.</p>';
+      } else {
 
         // Category slug → display label
         var CATEGORY_LABELS = {
@@ -1028,6 +1032,14 @@
           'animated-short':    'Animated Short',
           'live-short':        'Live Action Short'
         };
+        // Convert kebab-case slug → Title Case fallback for unknown categories.
+        // This way if labels get out of sync (or a typo creeps in), the
+        // sidebar still reads cleanly instead of showing raw slugs.
+        function prettifyCategorySlug(slug) {
+          return String(slug || '')
+            .replace(/-/g, ' ')
+            .replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+        }
         // Tier slug → display + sort order
         var TIERS = [
           { key: 'predicted',  label: 'Predicted'  },
@@ -1045,7 +1057,7 @@
         });
 
         // Render
-        var html = '<h3 class="aside-block__title">' + esc(firstName) + '&rsquo;s Prospects</h3>';
+        var html = titleHTML;
         TIERS.forEach(function (tier) {
           var entries = buckets[tier.key];
           if (!entries || entries.length === 0) return;
@@ -1053,7 +1065,7 @@
           html += '<div class="prospects__tier-label">' + esc(tier.label) + '</div>';
           html += '<ul class="prospects__list">';
           entries.forEach(function (p) {
-            var catLabel = CATEGORY_LABELS[p.category] || p.category;
+            var catLabel = CATEGORY_LABELS[p.category] || prettifyCategorySlug(p.category);
             var perf = (p.performer || '').trim();
             var note = (p.note || '').trim();
             html += '<li class="prospects__item">';
@@ -1976,7 +1988,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v24-prospects-tiers loaded');
+  if (window.console) console.log('[content.js] v25-prospects-polish loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; }),
