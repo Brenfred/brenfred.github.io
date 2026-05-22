@@ -1,9 +1,9 @@
 {
   "headshotSlug": "brad-derfner",
-  "bio": "tktktkt",
+  "bio": "Brad is a lead editor and the website manager for Fantasy Filmball. Since joining the community in 2025, he has focused on his stats-oriented approach to the awards conversation, with a perspective that sits somewhere between film lover and data scientist. Whether editing the site, tracking contenders, or debating the year’s most chaotic races, Brad is always looking for new ways to make awards season more fun. Follow him on Awards Expert @brenfred",
   "name": "Brad Derfner",
   "slug": "brad-derfner",
-  "longBio": "[ Edit this in the CMS. Write a longer multi-paragraph bio that gives readers a sense of your taste, your background, and what you bring to the show. ]\n\n[ Add a second paragraph about your favorite films, your obsessions, or how you got into Oscar prognosticating. ]",
+  "longBio": "Brad is a lead editor and the website manager for Fantasy Filmball. Since joining the community in 2025, he has focused on his stats-oriented approach to the awards conversation, with a perspective that sits somewhere between film lover and data scientist. Whether editing the site, tracking contenders, or debating the year’s most chaotic races, Brad is always looking for new ways to make awards season more fun. Follow him on Awards Expert @brenfred",
   "shortRole": "Lead Editor",
   "twitter": "@brad_derfner",
   "role": "Lead Editor & Website Manager",
@@ -12,5 +12,6 @@
   ],
   "joinedDate": "2025",
   "pullQuote": "",
+  "headshot": "/headshots/img_0657.jpeg",
   "letterboxd": "brad_derfner"
 }
