@@ -1002,7 +1002,7 @@
       if (prospects.length === 0) {
         // No prospects supplied — show block with an empty-state message.
         outlookEl.innerHTML = titleHTML +
-          '<p class="aside-block__empty">' + esc(firstName) + ' hasn&rsquo;t filed prospects on this one.</p>';
+          '<p class="aside-block__empty">No Predicted Oscar Prospects.</p>';
       } else {
 
         // Category slug → display label
