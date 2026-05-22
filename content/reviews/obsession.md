@@ -1,6 +1,6 @@
 ---
 type: review
-title: Obsession Is a Dangerous Wish
+title: Obsession is a Dangerous Wish
 film: Obsession
 director: Curry Barker
 studio: Focus Features
