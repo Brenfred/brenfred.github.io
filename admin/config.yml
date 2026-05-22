@@ -215,6 +215,8 @@ collections:
           hint: "Optional photo credit or caption overlay on the hero image. e.g. 'Lionsgate · Photo by Anne Marie Fox'. Leave blank for no caption." }
       - { name: "verdictNote", label: "Verdict Note (Stock Take)", widget: "string", required: false,
           hint: "REVIEWS only. One punchy stock-betting sentence shown next to the rating/badge at the top of the article. e.g. 'Lock it in now — by Telluride you'll wish you had bought earlier.' Leave blank to hide. Skipped automatically for Discussion-type articles." }
+      - { name: "prospects", label: "Writer's Prospects", widget: "markdown", required: false,
+          hint: "Optional. The writer's personal take on this film's awards prospects — shown in the sidebar under '[Your First Name]'s Prospects'. Keep it short (2-4 short paragraphs at most). If left blank, an auto-generated rankings summary is shown instead." }
       - { name: "isHero", label: "Mark as Homepage Hero", widget: "boolean",
           default: false,
           hint: "Only one article should be marked as hero at a time" }
