@@ -215,8 +215,37 @@ collections:
           hint: "Optional photo credit or caption overlay on the hero image. e.g. 'Lionsgate · Photo by Anne Marie Fox'. Leave blank for no caption." }
       - { name: "verdictNote", label: "Verdict Note (Stock Take)", widget: "string", required: false,
           hint: "REVIEWS only. One punchy stock-betting sentence shown next to the rating/badge at the top of the article. e.g. 'Lock it in now — by Telluride you'll wish you had bought earlier.' Leave blank to hide. Skipped automatically for Discussion-type articles." }
-      - { name: "prospects", label: "Writer's Prospects", widget: "markdown", required: false,
-          hint: "Optional. The writer's personal take on this film's awards prospects — shown in the sidebar under '[Your First Name]'s Prospects'. Keep it short (2-4 short paragraphs at most). If left blank, an auto-generated rankings summary is shown instead." }
+      - name: "prospects"
+        label: "Writer's Prospects"
+        widget: "list"
+        required: false
+        summary: "{{fields.category}} — {{fields.tier}}"
+        hint: "Optional. The writer's personal call on this film's awards prospects, category by category. Each entry: pick a category, set a tier (Predicted / In the Mix / Long Shot), and optionally add the performer name (for acting categories) or a short note. Shown in the sidebar grouped by tier. Leave the entire list empty to hide the whole Prospects block on this article."
+        fields:
+          - name: "category"
+            label: "Category"
+            widget: "select"
+            options:
+              - { label: "Best Picture",              value: "picture" }
+              - { label: "Best Director",             value: "director" }
+              - { label: "Best Actress",              value: "actress" }
+              - { label: "Best Actor",                value: "actor" }
+              - { label: "Best Supporting Actress",   value: "supp-actress" }
+              - { label: "Best Supporting Actor",     value: "supp-actor" }
+              - { label: "Best Original Screenplay",  value: "orig-screenplay" }
+              - { label: "Best Adapted Screenplay",   value: "adapt-screenplay" }
+          - name: "tier"
+            label: "Tier"
+            widget: "select"
+            options:
+              - { label: "Predicted",  value: "predicted" }
+              - { label: "In the Mix", value: "in-the-mix" }
+              - { label: "Long Shot",  value: "long-shot" }
+            default: "predicted"
+          - { name: "performer", label: "Performer / Credit (optional)", widget: "string", required: false,
+              hint: "For acting categories, the performer's name (e.g. 'Matt Damon'). For screenplay categories, the writer's name. For Best Picture/Director, leave blank." }
+          - { name: "note", label: "Short Note (optional)", widget: "string", required: false,
+              hint: "Optional one-line nuance, e.g. 'if the campaign holds' or 'category fraud territory'. Shown in italics under the entry." }
       - { name: "isHero", label: "Mark as Homepage Hero", widget: "boolean",
           default: false,
           hint: "Only one article should be marked as hero at a time" }
