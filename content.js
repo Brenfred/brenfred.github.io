@@ -1010,7 +1010,23 @@
           'supp-actress':      'Supp. Actress',
           'supp-actor':        'Supp. Actor',
           'orig-screenplay':   'Original Screenplay',
-          'adapt-screenplay':  'Adapted Screenplay'
+          'adapt-screenplay':  'Adapted Screenplay',
+          'cinematography':    'Cinematography',
+          'editing':           'Film Editing',
+          'production-design': 'Production Design',
+          'costume-design':    'Costume Design',
+          'makeup-hair':       'Makeup & Hair',
+          'sound':             'Sound',
+          'vfx':               'Visual Effects',
+          'score':             'Original Score',
+          'song':              'Original Song',
+          'casting':           'Casting',
+          'international':     'International Feature',
+          'animated':          'Animated Feature',
+          'documentary':       'Documentary Feature',
+          'doc-short':         'Documentary Short',
+          'animated-short':    'Animated Short',
+          'live-short':        'Live Action Short'
         };
         // Tier slug → display + sort order
         var TIERS = [
