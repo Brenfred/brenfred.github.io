@@ -707,7 +707,7 @@
     }
 
     if (reviews.length === 0) {
-      grid.innerHTML = '<p class="archive-empty">No articles yet. Publish one in the CMS.</p>';
+      grid.innerHTML = '<p class="archive-empty">No articles published yet. Check back soon.</p>';
     } else {
       grid.innerHTML = reviews.map(archiveCardHTML).join('\n');
     }
@@ -1125,8 +1125,7 @@
       if (numRows.length === 0) {
         numbersEl.innerHTML =
           '<h3 class="aside-block__title">By the Numbers</h3>' +
-          '<p class="aside-block__empty">Not currently in the Best Picture top 20. ' +
-          'Add this film to a category in the CMS to populate stats here.</p>';
+          '<p class="aside-block__empty">Not currently in the Best Picture top 20.</p>';
       } else {
         // Mark community-derived rows so the footnote is contextually accurate
         var hasCommunityStats = !!bpRow;
@@ -1838,7 +1837,7 @@
 
     if (hosts.length === 0) {
       container.innerHTML = '<p style="color: var(--ink-faded); padding: 1rem 0; grid-column: 1 / -1;">' +
-        'No hosts added yet. Create a writer in the CMS with "Host" in their role.</p>';
+        'Hosts coming soon.</p>';
       return;
     }
 
@@ -1903,7 +1902,7 @@
     // ---- Hosts: bigger horizontal cards with bio ----
     if (hostsContainer) {
       if (hosts.length === 0) {
-        hostsContainer.innerHTML = '<p style="color: var(--ink-faded); padding: 1rem 0;">No hosts added yet. Create a writer in the CMS with "Host" in their role.</p>';
+        hostsContainer.innerHTML = '<p style="color: var(--ink-faded); padding: 1rem 0;">Hosts coming soon.</p>';
       } else {
         hostsContainer.innerHTML = hosts.map(function (w) {
           var avatar = writerAvatarHTML(w, 'host__avatar');
