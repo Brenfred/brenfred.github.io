@@ -6,7 +6,7 @@ director: " Jon Favreau"
 studio: Walt Disney Studios
 runtime: 133 min
 genre: Sc-Fi Action
-rating: 3
+rating: ""
 stance: hold
 stanceLabel: Star Wars shall return to the Oscars
 posterSlug: the-mandalorian-and-grogu
