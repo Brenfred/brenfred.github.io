@@ -5,7 +5,7 @@ film: Obsession
 director: Curry Barker
 studio: Focus Features
 runtime: 108 min
-genre: Horro
+genre: Horror
 rating: 4
 stance: buy
 stanceLabel: Can Inde do the impossible?
