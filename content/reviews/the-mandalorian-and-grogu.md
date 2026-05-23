@@ -24,7 +24,7 @@ verdictNote: VFX & Sound Combo... Buy now!
 prospects:
   - tier: predicted
     category: vfx
-  - tier: predicted
+  - tier: in-the-mix
     category: sound
 isHero: false
 tags: []
