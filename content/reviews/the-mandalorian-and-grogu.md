@@ -15,7 +15,7 @@ writers:
   - dylan-mckercher
 publishedDate: May 22, 2026
 deck: Breaking down Star Wars' amazing Academy Awards track record in the Best
-  VFX, Sound, and Score categories and why The Mandalorian and Grogu's Oscar can
+  VFX, Sound, and Score categories and why The Mandalorian and Grogu can
   continue the legacy
 excerpt: The reactions may be mixed, but history shows that the Star Wars saga
   always has a presence at the Academy Awards
