@@ -3,7 +3,7 @@ type: discussion
 title: The Mandalorian and Grogu May Be a Bigger Oscar Contender Than You Think
 film: The Mandalorian and Grogu
 director: " Jon Favreau"
-studio: Walt Disney Studios Motion Pictures
+studio: Walt Disney Studios
 runtime: 133 min
 genre: Sc-Fi Action
 rating: 3
