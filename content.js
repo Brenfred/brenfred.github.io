@@ -938,6 +938,7 @@
       if (isDiscussion) {
         verdictBlock.style.display = 'none';
       } else {
+        verdictBlock.style.visibility = '';   // un-hide the initial placeholder state
         var verdictNoteEl = $('[data-review-verdict-note]');
         if (verdictNoteEl) {
           if (review.verdictNote) {
