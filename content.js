@@ -488,8 +488,12 @@
     var posterSlug = r.posterSlug || r.slug;
     var posterPath = 'posters/' + posterSlug + '.jpg';
     var film = r.film || r.slug;
+    var isDiscussion = (r.type || 'review').toLowerCase() === 'discussion';
     var rating = r.rating != null ? r.rating : 4.0;
-    var stars = renderStars(rating);
+    var stars = isDiscussion ? '' : renderStars(rating);
+    var ratingChunk = isDiscussion
+      ? ''
+      : '<span class="rating">' + stars + ' <span class="rating__num">' + rating + '</span></span>';
     var headline = r.title || '';
     // Card excerpt: prefer the explicit excerpt/tagline; truncate if it's
     // way too long (CMS users sometimes paste body content here by mistake).
@@ -511,12 +515,20 @@
     if (options.minimal) {
       foot = '';
     } else if (options.compact) {
-      foot = '<div class="review-card__foot"><span class="rating">' + stars + ' <span class="rating__num">' + rating + '</span></span><span>' + esc(r.publishedDate || '') + '</span></div>';
+      // Compact: rating on left, date on right. For discussions, show a
+      // "Discussion" kicker on the left in place of stars.
+      var leftChunk = isDiscussion
+        ? '<span class="rating rating--discussion">◆ Discussion</span>'
+        : ratingChunk;
+      foot = '<div class="review-card__foot">' + leftChunk + '<span>' + esc(r.publishedDate || '') + '</span></div>';
     } else {
       var bylineStr = options.writersBySlug
         ? bylineHTML(r, options.writersBySlug)
         : 'By <strong>' + esc(r.writer || '[ Writer ]') + '</strong>';
-      foot = '<div class="review-card__foot"><span class="rating">' + stars + ' <span class="rating__num">' + rating + '</span></span><span>' + bylineStr + '</span></div>';
+      var leftChunkFull = isDiscussion
+        ? '<span class="rating rating--discussion">◆ Discussion</span>'
+        : ratingChunk;
+      foot = '<div class="review-card__foot">' + leftChunkFull + '<span>' + bylineStr + '</span></div>';
     }
 
     // Title: italicize the film name where it appears in the headline
@@ -608,8 +620,9 @@
       var hasPoster = !!r.posterSlug;
       var posterPath = hasPoster ? 'posters/' + r.posterSlug + '.jpg' : '';
 
-      // Rating: optional. Only show stars if explicitly set.
-      var hasRating = r.rating != null && r.rating !== '';
+      // Rating: optional. Only show stars if explicitly set. Discussions
+      // never show stars even if a rating value is present in the file.
+      var hasRating = !isDiscussion && r.rating != null && r.rating !== '';
       var rating = hasRating ? r.rating : null;
       var stars = hasRating ? renderStars(rating) : '';
 
@@ -903,11 +916,13 @@
     var date = $('[data-review-date]');
     if (date) date.textContent = review.publishedDate || '';
 
+    var isDiscussion = (review.type || 'review').toLowerCase() === 'discussion';
+
     var stars = $('[data-review-stars]');
-    if (stars) stars.innerHTML = renderStars(rating);
+    if (stars) stars.innerHTML = isDiscussion ? '' : renderStars(rating);
 
     var ratingNum = $('[data-review-rating-num]');
-    if (ratingNum) ratingNum.textContent = rating + ' / 5 STARS';
+    if (ratingNum) ratingNum.textContent = isDiscussion ? '' : (rating + ' / 5 STARS');
 
     var badge = $('[data-review-badge]');
     if (badge) {
@@ -919,7 +934,6 @@
     // Discussions don't have ratings/stances/stock takes, so hide the whole
     // block. Reviews show rating + badge + optional verdict note.
     var verdictBlock = $('[data-review-verdict]');
-    var isDiscussion = (review.type || 'review').toLowerCase() === 'discussion';
     if (verdictBlock) {
       if (isDiscussion) {
         verdictBlock.style.display = 'none';

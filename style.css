@@ -366,6 +366,17 @@ body::before {
   letter-spacing: 0.02em;
 }
 
+/* Discussion marker — replaces stars on discussion-type cards. Reads as
+   a quiet kicker, not as a rating. */
+.rating--discussion {
+  font-family: var(--font-sport);
+  font-weight: 600;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-faded);
+}
+
 /* Half-star glyph — used when ratings end in .5. Sits inline with the
    full ★ characters; styled to match their color/size, with a tiny
    visual nudge so it doesn't look orphaned next to the stars. */
