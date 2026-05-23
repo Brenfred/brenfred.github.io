@@ -1030,7 +1030,7 @@ body::before {
   margin-bottom: 1.25rem;
   font-variation-settings: "opsz" 144;
 }
-.review__title strong { font-weight: 700; font-style: normal; }
+.review__title strong { font-weight: 700; font-style: italic; }
 .review__title em { font-style: italic; font-weight: 400; }
 .review__deck {
   font-family: var(--font-body);

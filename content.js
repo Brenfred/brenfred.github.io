@@ -1130,25 +1130,66 @@
       }
     }
 
-    // ---- Related Reviews (same stance, excluding the current one) -------
+    // ---- More from this writer (other articles by the same byline) -----
     var relatedEl = $('[data-review-related]');
     var relatedTitleEl = $('[data-review-related-title]');
     if (relatedEl) {
-      var sameStance = (reviews || []).filter(function (r) {
-        return r.slug !== review.slug && (r.stance || '').toLowerCase() === stance;
-      });
+      // Resolve writer slugs for the current review
+      var currentWriters = [];
+      try {
+        var resolved = writersBySlug ? resolveReviewWriters(review, writersBySlug) : [];
+        currentWriters = resolved.map(function (w) { return w.slug; }).filter(Boolean);
+      } catch (e) { /* leave empty */ }
 
-      // Friendly section heading
-      var stanceWord = stance === 'sell' ? 'Sell' : stance === 'hold' ? 'Hold' : 'Buy';
-      if (relatedTitleEl) {
-        relatedTitleEl.innerHTML = 'More <em>' + esc(stanceWord) + ' ratings</em>';
+      // Resolve writer slug list for an arbitrary review (for matching)
+      function writerSlugsFor(r) {
+        if (Array.isArray(r.writers) && r.writers.length) {
+          return r.writers.filter(Boolean);
+        }
+        // Older schema: single `writer` string. Try to match against the
+        // writer name across the directory.
+        if (r.writer && writersBySlug) {
+          for (var slug in writersBySlug) {
+            if (writersBySlug[slug] && writersBySlug[slug].name === r.writer) return [slug];
+          }
+        }
+        return [];
       }
 
-      if (sameStance.length === 0) {
+      // Filter: same writer, not this one
+      var byWriter = (reviews || []).filter(function (r) {
+        if (r.slug === review.slug) return false;
+        var rs = writerSlugsFor(r);
+        return rs.some(function (s) { return currentWriters.indexOf(s) !== -1; });
+      });
+
+      // Title — use the first writer's first name
+      var firstWriterName = '';
+      try {
+        if (currentWriters.length && writersBySlug[currentWriters[0]]) {
+          var fullName = writersBySlug[currentWriters[0]].name || '';
+          firstWriterName = fullName.trim().split(/\s+/)[0] || '';
+        }
+      } catch (e) { /* ignore */ }
+
+      if (relatedTitleEl) {
+        relatedTitleEl.innerHTML = firstWriterName
+          ? 'More from <em>' + esc(firstWriterName) + '</em>'
+          : 'More <em>articles</em>';
+      }
+
+      if (byWriter.length === 0) {
         relatedEl.innerHTML = '<p style="grid-column: 1 / -1; color: var(--ink-faded); text-align: center; padding: 1rem 0;">' +
-          'No other ' + esc(stanceWord) + ' reviews yet.</p>';
+          (firstWriterName ? esc(firstWriterName) + ' hasn&rsquo;t published anything else yet.' : 'No other articles yet.') +
+          '</p>';
       } else {
-        relatedEl.innerHTML = sameStance.slice(0, 3).map(function (r) {
+        // Sort newest-first by publishedDate (falls back to slug order if no date)
+        byWriter.sort(function (a, b) {
+          var ad = Date.parse(a.publishedDate || '') || 0;
+          var bd = Date.parse(b.publishedDate || '') || 0;
+          return bd - ad;
+        });
+        relatedEl.innerHTML = byWriter.slice(0, 3).map(function (r) {
           return reviewCardHTML(r, { showKicker: false, compact: true });
         }).join('\n');
       }
