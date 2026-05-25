@@ -7,7 +7,7 @@ studio: Walt Disney Studios
 runtime: 133 min
 genre: Sc-Fi Action
 rating: ""
-stance: hold
+stance: buy
 stanceLabel: Star Wars shall return to the Oscars
 posterSlug: the-mandalorian-and-grogu
 writer: "[ Writer ]"
