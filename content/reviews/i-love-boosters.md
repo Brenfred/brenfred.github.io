@@ -1,6 +1,6 @@
 ---
 type: review
-title: I Love Boosters is a Weird, Wild Ride
+title: I Love Boosters is a Wild, Weird Ride
 film: I Love Boosters
 director: Boots Riley
 studio: Neon
