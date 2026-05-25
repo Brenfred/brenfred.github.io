@@ -19,7 +19,7 @@ deck: "Boots Riley’s I Love Boosters is an electric comedy that delivers on
   magnetic Keke Palmer and some standout supporting characters, the film is
   inventive, but can't stick the landing. "
 heroImage: /posters/boosters-hero.jpg
-verdictNote: Boots' romp will be isn't for the Academy
+verdictNote: Boots' romp isn't for the Academy
 prospects: []
 isHero: false
 tags:
