@@ -1,10 +1,11 @@
 {
-  "role": "Contributor",
-  "shortRole": "Writer",
-  "favorites": [],
-  "joinedDate": "2023",
+  "bio": "Terence is a business and communications student who finds the nuances of the awards race compelling from both practical and theoretical perspectives. Striving to understand the ripples of awards season, the intersection of art and business, and to articulate that story with foresight, is what drives him to deliver comprehensive predictions that may buck consensus-driven logic. A cinephile at heart but a student of business and history, this approach has allowed him to place in the top 5 of users on Awards Exper twice (and top 50, 10, and 31, respectively, on Gold Derby) between the 2024-2026 seasons for Academy Award nominations. A member of the filmball community since 2023, Terence strives to use his hobby of following award season to facilitate his desire to learn about various perspectives of the art of filmmaking, anchor his predictions in the importance of said values, and account for predictive measures and historical factors that have shaped the present awards space, rather than distilling the films into a science or personal allegiances. To keep up with his predictions, you can follow him @jxmmedout on Awards Expert. ",
   "name": "Terence Peterson",
   "slug": "terence-peterson",
-  "bio": "TP",
+  "shortRole": "Writer",
+  "role": "Contributor",
+  "favorites": [],
+  "joinedDate": "2023",
+  "headshot": "/headshots/tp.jpg",
   "letterboxd": "jxmmedOut"
 }
