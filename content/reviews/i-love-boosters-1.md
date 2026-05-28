@@ -6,7 +6,7 @@ director: Boots Riley
 studio: Neon
 runtime: 113 mins
 genre: Comedy/Adventure
-rating: 3
+rating: 3.5
 stance: sell
 stanceLabel: No Awards Prospects
 posterSlug: i-love-boosters
