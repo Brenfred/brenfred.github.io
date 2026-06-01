@@ -355,6 +355,14 @@
     var weekEl = $('.rankings__week', widget);
     if (weekEl && label) weekEl.textContent = label;
 
+    // Foot: "JUNE 1 · COMMUNITY CONSENSUS" — derive a short upper-case date
+    // from the snapshot's publishedDate ("June 1, 2026" → "JUNE 1").
+    var footEl = $('[data-rankings-foot]', widget);
+    if (footEl && label) {
+      var shortDate = (label || '').replace(/,\s*\d{4}\s*$/, '').toUpperCase();
+      footEl.textContent = shortDate + ' · COMMUNITY CONSENSUS';
+    }
+
     $$('.rankings__row, .rankings__cutoff', widget).forEach(function (el) { el.remove(); });
 
     function rowHTML(f) {
@@ -383,6 +391,36 @@
         widget.insertBefore(cutoff, insertBefore);
       }
     });
+  }
+
+  // ---- Snapshot → legacy rankings adapter --------------------------------
+  // The home page Best Picture widget AND the Oscar Race "Films" view both
+  // predate the snapshot system; they were originally written against
+  // rankings.json / rankings-previous.json (with `title` strings inline).
+  // Rather than rewrite both renderers, we synthesize a rankings-shaped
+  // object from the active snapshot's Best Picture category. That keeps a
+  // single source of truth — every snapshot push updates all three views.
+  function snapshotToRankings(snapshot, films) {
+    if (!snapshot || !snapshot.categories || !snapshot.categories.picture) return null;
+    var bp = snapshot.categories.picture;
+    var filmMap = {};
+    (films || []).forEach(function (f) { filmMap[f.slug] = f; });
+
+    var entries = (bp.films || []).map(function (e) {
+      var film = filmMap[e.filmSlug];
+      return {
+        rank: e.rank,
+        title: film ? film.title : (e.filmSlug || ''),
+        nomPct: e.nomPct || '',
+        winPct: e.winPct || ''
+      };
+    });
+
+    return {
+      films: entries,
+      cutoffRank: bp.cutoffRank || 10,
+      updatedDate: snapshot.publishedDate || ''
+    };
   }
 
   // ---- YouTube embed ------------------------------------------------------
@@ -2048,22 +2086,13 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v25-prospects-polish loaded');
+  if (window.console) console.log('[content.js] v26-snapshot-unified loaded');
 
   Promise.all([
-    fetchJSON('site.json').catch(function () { return null; }),
-    fetchJSON('rankings.json').catch(function () { return null; }),
-    fetchJSON('rankings-previous.json').catch(function () { return null; })
+    fetchJSON('site.json').catch(function () { return null; })
   ]).then(function (results) {
     var site = results[0];
-    var current = results[1];
-    var previous = results[2];
 
-    if (current && previous) {
-      var withMovement = computeMovement(current.films, previous.films);
-      renderTicker(withMovement);
-      renderRankings(withMovement, current.cutoffRank, current.updatedDate);
-    }
     if (site && site.youtubeVideoId) {
       renderVideoEmbed(site.youtubeVideoId);
     }
@@ -2093,6 +2122,8 @@
       document.querySelector('[data-film-articles]');
 
     var needsRace =
+      document.querySelector('.rankings') ||
+      document.querySelector('.ticker') ||
       document.querySelector('[data-categories-grid]') ||
       document.querySelector('[data-films-grid]') ||
       document.querySelector('[data-films-list]') ||
@@ -2161,10 +2192,28 @@
 
       // Race-driven regions
       if (needsRace) {
+        // Synthesize rankings-shaped data from the active + previous snapshots
+        // for the home widgets and Films view.
+        var rankingsCurrent  = snapshotToRankings(snapshotData.activeSnapshot,   films);
+        var rankingsPrevious = snapshotToRankings(snapshotData.previousSnapshot, films);
+
+        if (rankingsCurrent) {
+          safeRender('renderTicker+Rankings', function () {
+            var prevFilms = rankingsPrevious ? rankingsPrevious.films : rankingsCurrent.films;
+            var withMovement = computeMovement(rankingsCurrent.films, prevFilms);
+            renderTicker(withMovement);
+            renderRankings(withMovement, rankingsCurrent.cutoffRank, rankingsCurrent.updatedDate);
+          });
+        }
+
         safeRender('renderSnapshotToggle', function () { renderSnapshotToggle(snapshotData); });
         safeRender('renderCategoriesGrid', function () { renderCategoriesGrid(categories, films); });
-        if (current && previous) {
-          safeRender('renderFilmsSection', function () { renderFilmsSection(current, previous, categories, films); });
+        if (rankingsCurrent && rankingsPrevious) {
+          safeRender('renderFilmsSection', function () { renderFilmsSection(rankingsCurrent, rankingsPrevious, categories, films); });
+        } else if (rankingsCurrent) {
+          // First snapshot ever (no previous) — render with current data twice
+          // so movement reads flat.
+          safeRender('renderFilmsSection', function () { renderFilmsSection(rankingsCurrent, rankingsCurrent, categories, films); });
         }
         safeRender('renderCategoryDetail', function () { renderCategoryDetail(categories, films, reviews); });
         safeRender('renderFilmDetail',     function () { renderFilmDetail(categories, films, reviews, writersBySlug); });
