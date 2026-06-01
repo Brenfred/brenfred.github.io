@@ -1375,11 +1375,35 @@
     return fetchSnapshotData().then(function (d) { return d.categoryArray; });
   }
 
-  function computeCategoryMovement(current, previous) {
+  function computeCategoryMovement(current, previous, categorySlug) {
     // current.films and previous.films are arrays of {rank, filmSlug, subtitle, ...}
-    // Match by filmSlug if present, else by subtitle (for personnel categories
-    // like Best Actress where the "key" is the performer not the film).
-    function keyOf(f) { return (f.filmSlug || '').toLowerCase() + '|' + (f.subtitle || '').toLowerCase(); }
+    //
+    // Match by filmSlug only for non-acting categories — a film can't be
+    // listed twice in Best Picture / Screenplay / Director, so the slug is
+    // the unique key. Including the subtitle in the key would cause false
+    // "NEW" flags when minor text changes (different ellipsis characters,
+    // an added co-writer, capitalization) between snapshots.
+    //
+    // Acting categories CAN have the same film twice (different performers)
+    // so we include a normalized version of the subtitle in the key.
+    var slug = (categorySlug || '').toLowerCase();
+    var isPersonCat = /^actor$|^actress$|^supp-actor$|^supp-actress$/.test(slug);
+
+    function normSub(s) {
+      return (s || '')
+        .replace(/[\u2026]/g, '...')   // unicode ellipsis → ascii
+        .replace(/\s+/g, ' ')
+        .trim()
+        .toLowerCase();
+    }
+
+    function keyOf(f) {
+      if (isPersonCat) {
+        return (f.filmSlug || '').toLowerCase() + '|' + normSub(f.subtitle);
+      }
+      return (f.filmSlug || '').toLowerCase();
+    }
+
     var prevMap = {};
     (previous.films || []).forEach(function (f) { prevMap[keyOf(f)] = f.rank; });
     return (current.films || []).map(function (f) {
@@ -1465,7 +1489,7 @@
 
     var html = categories.map(function (cat) {
       var label = cat.current.shortLabel || cat.current.label;
-      var withMove = computeCategoryMovement(cat.current, cat.previous);
+      var withMove = computeCategoryMovement(cat.current, cat.previous, cat.slug);
       var top5 = withMove.slice(0, 5);
 
       var rows = top5.map(function (f) {
@@ -1614,7 +1638,7 @@
     var filmMap = {};
     films.forEach(function (f) { filmMap[f.slug] = f; });
 
-    var withMove = computeCategoryMovement(cat.current, cat.previous);
+    var withMove = computeCategoryMovement(cat.current, cat.previous, cat.slug);
 
     // Header bits
     document.title = (cat.current.label || 'Category') + ' — Fantasy Filmball';
@@ -1712,7 +1736,7 @@
     // Find every category appearance
     var appearances = [];
     categories.forEach(function (cat) {
-      var withMove = computeCategoryMovement(cat.current, cat.previous);
+      var withMove = computeCategoryMovement(cat.current, cat.previous, cat.slug);
       withMove.forEach(function (row) {
         if (row.filmSlug === film.slug) {
           appearances.push({
