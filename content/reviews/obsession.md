@@ -28,7 +28,8 @@ prospects:
   - tier: long-shot
     category: orig-screenplay
 isHero: false
-tags: []
+tags:
+  - obsession
 categoryTags: []
 ---
 What do you do when you want something so badly but it seems to forever be just out of your grasp? For Barron “Bear” Bailey (Michael Johnston), the answer is simple: you wish for it. *Obsession* is a darkly funny, twisty horror flick from Youtuber Curry Barker takes a young incel and gives him the relationship that he thinks he wants. It doesn’t take long for things to go horribly wrong, and Barker takes the audience on a wild ride as we discover the consequences of Bear’s actions.
