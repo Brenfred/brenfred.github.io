@@ -283,12 +283,33 @@
   }
 
   function mdToHtml(body) {
-    var html = esc(body);
-    html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-    html = html.replace(/(^|[^*])\*([^*]+)\*([^*]|$)/g, '$1<em>$2</em>$3');
-    html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
-    var paragraphs = html.split(/\n\s*\n/).filter(function (p) { return p.trim().length > 0; });
-    return paragraphs.map(function (p) { return '<p>' + p.replace(/\n/g, ' ') + '</p>'; }).join('');
+    // Split into blocks (separated by blank lines). For each block, decide
+    // whether it's raw HTML (passed through) or markdown text (escaped +
+    // paragraph-wrapped + inline-formatted).
+    //
+    // Raw HTML passthrough: any block whose first non-whitespace line begins
+    // with a block-level tag — figure, svg, div, section, table, iframe,
+    // blockquote, picture, video, audio, ul, ol, h1-h6 — is emitted verbatim.
+    // This is the escape hatch for embedded graphics/data viz inside articles.
+    var blocks = body.split(/\n\s*\n/);
+    var BLOCK_TAG_RE = /^\s*<(figure|svg|div|section|table|iframe|blockquote|picture|video|audio|ul|ol|h[1-6])(\s|>)/i;
+
+    return blocks
+      .filter(function (b) { return b.trim().length > 0; })
+      .map(function (block) {
+        if (BLOCK_TAG_RE.test(block)) {
+          // Raw HTML — emit unchanged. Trust the author since this is a
+          // single-editor CMS, not user-generated content.
+          return block;
+        }
+        // Markdown text → escaped, formatted, wrapped in <p>
+        var html = esc(block);
+        html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+        html = html.replace(/(^|[^*])\*([^*]+)\*([^*]|$)/g, '$1<em>$2</em>$3');
+        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+        return '<p>' + html.replace(/\n/g, ' ') + '</p>';
+      })
+      .join('');
   }
 
   // ---- movement arrows ----------------------------------------------------

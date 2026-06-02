@@ -1262,6 +1262,43 @@ body::before {
 .prose em { font-style: italic; }
 .prose strong { font-weight: 600; }
 
+/* In-article embedded graphics (data viz, custom SVG). Sits flush with
+   the column gutters, breaks out subtly with a slim ink border and a
+   touch of the diagonal stadium-texture background. */
+.prose figure.article-graphic {
+  margin: 2.5rem 0;
+  padding: 1.75rem 1.5rem 1.5rem;
+  border: 2px solid var(--ink);
+  background: var(--paper);
+  background-image:
+    linear-gradient(135deg, rgba(189, 132, 40, 0.04) 0 1px, transparent 1px 22px),
+    linear-gradient(45deg,  rgba(189, 132, 40, 0.04) 0 1px, transparent 1px 22px);
+  position: relative;
+}
+.prose figure.article-graphic svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.prose figure.article-graphic figcaption {
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--paper-aged);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-faded);
+  text-align: right;
+}
+.prose figure.article-graphic figcaption::before {
+  content: "◆ ";
+  color: var(--gold);
+}
+@media (max-width: 700px) {
+  .prose figure.article-graphic { padding: 1.25rem 1rem 1rem; margin: 2rem -0.5rem; }
+}
+
 /* Sidebar */
 .review-aside { font-family: var(--font-body); }
 .aside-block {
