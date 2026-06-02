@@ -1304,8 +1304,9 @@ body::before {
 .prose figure.article-graphic--scroll .article-graphic__scroll svg {
   display: block;
   height: auto;
-  min-width: 900px;   /* never compress below this — preserves legibility */
-  width: 900px;       /* lock the width so flexbox/grid can't expand it */
+  min-width: 900px;   /* never compress below this — preserves legibility on mobile */
+  width: 1100px;      /* natural width — fits desktop article column at 100% */
+  max-width: 100%;    /* shrink to fit on desktop, scroll only on mobile */
 }
 .prose figure.article-graphic figcaption {
   margin-top: 1rem;
