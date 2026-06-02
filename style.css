@@ -1218,17 +1218,17 @@ body::before {
 /* Review body layout */
 .review__body {
   display: grid;
-  grid-template-columns: 1fr 280px;
+  grid-template-columns: minmax(0, 1fr) 280px;
   gap: 3rem;
   max-width: 1100px;
   margin: 0 auto;
 }
-@media (max-width: 900px) { .review__body { grid-template-columns: 1fr; gap: 2.5rem; } }
+@media (max-width: 900px) { .review__body { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; } }
 
 /* For non-film articles (industry analysis, lists, opinion pieces) the
    film-focused sidebar has nothing to populate. Hide it and let the prose
    use the full column width. */
-.review__body--no-aside { grid-template-columns: 1fr; max-width: 880px; }
+.review__body--no-aside { grid-template-columns: minmax(0, 1fr); max-width: 880px; }
 .review__body--no-aside .review-aside { display: none; }
 
 .prose {
@@ -1281,7 +1281,7 @@ body::before {
     linear-gradient(45deg,  rgba(189, 132, 40, 0.04) 0 1px, transparent 1px 22px);
   position: relative;
 }
-.prose figure.article-graphic svg {
+.prose figure.article-graphic:not(.article-graphic--scroll) svg {
   width: 100%;
   height: auto;
   display: block;
@@ -1293,6 +1293,8 @@ body::before {
 .prose figure.article-graphic--scroll { padding: 0; border-width: 2px; }
 .prose figure.article-graphic--scroll .article-graphic__scroll {
   overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
   padding: 1.75rem 1.5rem 1.5rem;
   -webkit-overflow-scrolling: touch;
   background-image:
@@ -1300,7 +1302,10 @@ body::before {
     linear-gradient(45deg,  rgba(189, 132, 40, 0.04) 0 1px, transparent 1px 22px);
 }
 .prose figure.article-graphic--scroll .article-graphic__scroll svg {
+  display: block;
+  height: auto;
   min-width: 900px;   /* never compress below this — preserves legibility */
+  width: 900px;       /* lock the width so flexbox/grid can't expand it */
 }
 .prose figure.article-graphic figcaption {
   margin-top: 1rem;
@@ -1318,8 +1323,18 @@ body::before {
   color: var(--gold);
 }
 @media (max-width: 700px) {
-  .prose figure.article-graphic { padding: 1.25rem 1rem 1rem; margin: 2rem -0.5rem; }
+  .prose figure.article-graphic { padding: 1.25rem 1rem 1rem; margin: 2rem 0; }
+  /* On mobile, scroll-variant graphics fit the visible column; the inner
+     SVG (900px wide) horizontally scrolls within the figure. */
+  .prose figure.article-graphic--scroll { padding: 0; max-width: 100%; }
+  .prose figure.article-graphic--scroll .article-graphic__scroll {
+    padding: 1rem 0.85rem 0.85rem;
+  }
 }
+
+/* Top-level safety net — articles should never push the body wider than
+   the viewport. If any embedded content tries, it scrolls within itself. */
+.prose { max-width: 100%; overflow-wrap: break-word; word-wrap: break-word; }
 
 /* Sidebar */
 .review-aside { font-family: var(--font-body); }
