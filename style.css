@@ -482,6 +482,20 @@ body::before {
   font-variation-settings: "opsz" 80;
 }
 .hero__title em { font-style: italic; font-weight: 400; color: var(--ink-soft); }
+/* The title is wrapped in an anchor so the headline itself is clickable.
+   Inherit color/decoration so it looks like a heading, not a generic link.
+   A subtle gold underline appears on hover. */
+.hero__title-link {
+  color: inherit;
+  text-decoration: none;
+  background-image: linear-gradient(var(--gold), var(--gold));
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  background-position: 0 100%;
+  transition: background-size 0.25s ease;
+}
+.hero__title-link:hover,
+.hero__title-link:focus { background-size: 100% 2px; }
 .hero__deck {
   font-family: var(--font-body);
   font-size: 1.2rem;

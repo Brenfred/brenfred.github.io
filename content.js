@@ -965,9 +965,11 @@
     var placeholder = $('.hero__image-placeholder', heroBlock);
     if (placeholder) placeholder.textContent = film || '';
 
+    var heroHref = 'review.html?slug=' + encodeURIComponent(hero.slug);
+
     var titleEl = $('.hero__title', heroBlock);
     if (titleEl) {
-      titleEl.innerHTML = headlineHTML(film, hero.title);
+      titleEl.innerHTML = '<a href="' + heroHref + '" class="hero__title-link">' + headlineHTML(film, hero.title) + '</a>';
     }
     var deckEl = $('.hero__deck', heroBlock);
     if (deckEl) deckEl.textContent = hero.deck || hero.excerpt || '';
@@ -999,7 +1001,7 @@
       byline.innerHTML = bylineStr + (hero.publishedDate ? ' · ' + esc(hero.publishedDate) : '');
     }
     var link = $('.hero__image', heroBlock);
-    if (link) link.href = 'review.html?slug=' + encodeURIComponent(hero.slug);
+    if (link) link.href = heroHref;
   }
 
   // ---- single review page -----------------------------------------------
