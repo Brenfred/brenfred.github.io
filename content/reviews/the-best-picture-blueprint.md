@@ -1,6 +1,7 @@
 ---
 type: discussion
-title: "The Best Picture Blueprint: Where Oscar Nominees Premiere and What It Means for 2026"
+title: "The Best Picture Blueprint: Where Oscar Nominees Premiere and What It
+  Means for 2026"
 film: ""
 director: ""
 studio: ""
@@ -9,19 +10,23 @@ genre: ""
 rating: ""
 stance: ""
 stanceLabel: ""
-posterSlug: ""
+posterSlug: best-picture-blueprint
 writer: ""
 writers:
   - dylan-mckercher
 publishedDate: June 1, 2026
-deck: By tracking where every Best Picture nominee premiered since 2021, we can identify the festival pathways most likely to produce the next Oscar contenders.
-excerpt: By tracking where every Best Picture nominee premiered since 2021, we can identify the festival pathways most likely to produce the next Oscar contenders.
+deck: By tracking where every Best Picture nominee premiered since 2021, we can
+  identify the festival pathways most likely to produce the next Oscar
+  contenders.
+excerpt: By tracking where every Best Picture nominee premiered since 2021, we
+  can identify the festival pathways most likely to produce the next Oscar
+  contenders.
 heroImage: /posters/festival-header.jpg
 verdictNote: ""
+prospects: []
 isHero: false
 tags: []
 categoryTags: []
-prospects: []
 ---
 
 As Oscar enthusiasts, we all strive to get that perfect "10 for 10" Best Picture lineup as early in the season as possible. Some say predicting awards before we hit the fall season is pointless because you don't know anything about these movies. "No one has seen these films, so what are you even predicting based on?" Now, we might have no intel to use, but that's exactly where awards season enthusiasts and addicts like us thrive. Anyone can make predictions when you have seen precursors and know which films have a 90 on Metacritic and which made a bajillion dollars at the box office, but where the real fun of predicting comes from is when you're flying blind. All you have is word-of-mouth rumors, all you have is looking at filmmakers' past track records and experiences…
