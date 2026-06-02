@@ -1320,9 +1320,8 @@ body::before {
 .prose figure.article-graphic--scroll .article-graphic__scroll svg {
   display: block;
   height: auto;
-  min-width: 900px;   /* never compress below this — preserves legibility on mobile */
-  width: 1300px;      /* natural width — fits desktop article column at 100% */
-  max-width: 100%;    /* shrinks to fit on narrower viewports, scrolls only on mobile */
+  width: 100%;            /* fill the container at full width on desktop */
+  min-width: 900px;       /* never compress below this — triggers horizontal scroll on mobile */
 }
 .prose figure.article-graphic figcaption {
   margin-top: 1rem;
