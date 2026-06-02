@@ -988,16 +988,20 @@
     if (!review) review = reviews[0];
     if (!review) return;
 
-    var film = review.film || review.slug;
+    // For articles without an associated film (e.g. discussion pieces,
+    // industry analysis), `review.film` is intentionally blank. Don't fall
+    // back to slug — it would surface as "the-best-picture-blueprint" in
+    // headlines and breadcrumbs.
+    var film = (review.film || '').trim();
     var stance = (review.stance || 'buy').toLowerCase();
     var stanceLabel = review.stanceLabel || 'Strong Buy';
     var badgeArrow = stance === 'sell' ? '▼' : stance === 'hold' ? '—' : '▲';
     var rating = review.rating != null ? review.rating : 4.5;
 
-    document.title = (review.title || (film + ' Review')) + ' — Fantasy Filmball';
+    document.title = (review.title || (film ? film + ' Review' : 'Article')) + ' — Fantasy Filmball';
 
     var crumb = $('[data-review-film]');
-    if (crumb) crumb.textContent = film;
+    if (crumb) crumb.textContent = film || (review.title || 'Article');
 
     var kicker = $('[data-review-kicker]');
     if (kicker) {
