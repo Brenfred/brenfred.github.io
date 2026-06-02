@@ -20,8 +20,7 @@ deck: Aleshea Harris’s directorial debut virtuosically adapts her play to the
 excerpt: ""
 heroImage: https://www.darkhorizons.com/wp-content/uploads/2026/02/trailer-revenge-tale-is-god-is.jpg
 verdictNote: It could have been a major contender if Amazon hadn't seemingly
-  buried it theatrically, but unless it finds a significant second life on
-  streaming, its chances now seem unlikely.
+  buried it theatrically.
 prospects: []
 isHero: false
 tags: []
