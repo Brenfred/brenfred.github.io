@@ -1,7 +1,6 @@
 ---
 type: discussion
-title: "The Best Picture Blueprint: Where Oscar Nominees Premiere and What It
-  Means for 2026"
+title: "The Best Picture Blueprint: Where Oscar Nominees Premiere and What It Means for 2026"
 film: ""
 director: ""
 studio: ""
@@ -15,18 +14,14 @@ writer: ""
 writers:
   - dylan-mckercher
 publishedDate: June 1, 2026
-deck: By tracking where every Best Picture nominee premiered since 2021, we can
-  identify the festival pathways most likely to produce the next Oscar
-  contenders.
-excerpt: By tracking where every Best Picture nominee premiered since 2021, we
-  can identify the festival pathways most likely to produce the next Oscar
-  contenders.
+deck: By tracking where every Best Picture nominee premiered since 2021, we can identify the festival pathways most likely to produce the next Oscar contenders.
+excerpt: By tracking where every Best Picture nominee premiered since 2021, we can identify the festival pathways most likely to produce the next Oscar contenders.
 heroImage: /posters/festival-header.jpg
 verdictNote: ""
-prospects: []
 isHero: false
 tags: []
 categoryTags: []
+prospects: []
 ---
 
 As Oscar enthusiasts, we all strive to get that perfect "10 for 10" Best Picture lineup as early in the season as possible. Some say predicting awards before we hit the fall season is pointless because you don't know anything about these movies. "No one has seen these films, so what are you even predicting based on?" Now, we might have no intel to use, but that's exactly where awards season enthusiasts and addicts like us thrive. Anyone can make predictions when you have seen precursors and know which films have a 90 on Metacritic and which made a bajillion dollars at the box office, but where the real fun of predicting comes from is when you're flying blind. All you have is word-of-mouth rumors, all you have is looking at filmmakers' past track records and experiences…
@@ -171,7 +166,8 @@ Speaking of TIFF, it has been on a downward trajectory recently, only racking up
 
 The New York Film Festival has historically just not been a path for potential Best Picture nominees, with only **Marty Supreme** making the cut. We have seen the festival be a failed launching pad for films such as **Is This Thing On?**, **She Said**, **Till**, and **The Tragedy of Macbeth** over the last few years. That leads us into all the theatrical releases after August. The stats say that, on average, 1–2 films make it into Best Picture, but those numbers are heavily skewed by 2021, when four post-August releases made it into Best Picture. Recently, we've been seeing only one or two post-August films make the cut, and, given reports that Warner Bros. is no longer interested in the festival game, I think Alejandro González Iñárritu's **Digger** and Denis Villeneuve's **Dune: Part Three** emerge as strong contenders to fill this slot, but another possible contender includes Robert Eggers' **Werwulf**.
 
-<figure class="article-graphic" role="img" aria-label="Five-year averages of Best Picture nominees by premiere platform">
+<figure class="article-graphic article-graphic--scroll" role="img" aria-label="Five-year averages of Best Picture nominees by premiere platform">
+<div class="article-graphic__scroll">
 <svg viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
   <text x="0" y="42" font-size="44" font-weight="700" fill="#201A13">The five-year <tspan font-style="italic" fill="#BD8428">averages</tspan></text>
   <text x="0" y="76" font-size="19" font-style="italic" fill="#695D4E">Total nominees produced by each platform, 2021–2025</text>
@@ -279,6 +275,7 @@ The New York Film Festival has historically just not been a path for potential B
     <text class="total-txt" x="1020" y="48">avg · 1 total</text>
   </g>
 </svg>
+</div>
 </figure>
 
 So what were all the stats for? For you, the reader, to formulate your own opinion and to craft your Best Picture lineup with the knowledge of where films typically premiere, of course. But also, it's to help me make sure I'm formulating the best possible Best Picture lineup I could here in the early summer months after the Cannes Film Festival.
@@ -299,7 +296,8 @@ New York? Do we even have to talk about it?
 
 And that leaves me with two Best Picture slots remaining for all films released theatrically after August, which is where Warner Bros. comes into play. Following in the footsteps of their Best Picture winner last year, **One Battle After Another**, I believe that Alejandro González Iñárritu's **Digger** will skip the fall festivals. And, of course, we have our major December release of **Dune: Part Three**. IMAX tickets have already gone on sale and sold out instantly. The hype is there, and I believe that Dune can pull off what Avatar could not and have all three installments become Best Picture nominees.
 
-<figure class="article-graphic" role="img" aria-label="2026 Best Picture predictions distributed by premiere platform">
+<figure class="article-graphic article-graphic--scroll" role="img" aria-label="2026 Best Picture predictions distributed by premiere platform">
+<div class="article-graphic__scroll">
 <svg viewBox="0 0 1200 940" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
   <text x="0" y="42" font-size="44" font-weight="700" fill="#201A13">My 2026 Best Picture <tspan font-style="italic" fill="#BD8428">lineup</tspan></text>
 
@@ -423,4 +421,5 @@ And that leaves me with two Best Picture slots remaining for all films released 
 
   <text x="1200" y="918" text-anchor="end" font-family="ui-monospace, monospace" font-size="13" letter-spacing="1.3" fill="#9B8E79" font-weight="600">DYLAN MCKERCHER · POST-CANNES 2026</text>
 </svg>
+</div>
 </figure>
