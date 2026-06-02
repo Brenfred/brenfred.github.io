@@ -1286,6 +1286,22 @@ body::before {
   height: auto;
   display: block;
 }
+
+/* Wide-matrix variant: graphic 1 (year-by-year) can't fit 8 columns on a
+   phone. Keep it at its natural width and let it scroll horizontally on
+   narrow viewports — readers can swipe across instead of squinting. */
+.prose figure.article-graphic--scroll { padding: 0; border-width: 2px; }
+.prose figure.article-graphic--scroll .article-graphic__scroll {
+  overflow-x: auto;
+  padding: 1.75rem 1.5rem 1.5rem;
+  -webkit-overflow-scrolling: touch;
+  background-image:
+    linear-gradient(135deg, rgba(189, 132, 40, 0.04) 0 1px, transparent 1px 22px),
+    linear-gradient(45deg,  rgba(189, 132, 40, 0.04) 0 1px, transparent 1px 22px);
+}
+.prose figure.article-graphic--scroll .article-graphic__scroll svg {
+  min-width: 900px;   /* never compress below this — preserves legibility */
+}
 .prose figure.article-graphic figcaption {
   margin-top: 1rem;
   padding-top: 0.85rem;
