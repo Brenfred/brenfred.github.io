@@ -8,6 +8,7 @@ runtime: 99 min
 genre: Thriller
 rating: 5
 stance: hold
+stanceLabel: If only Amazon gave this a push
 posterSlug: is-god-is
 writer: "[ Writer ]"
 writers:
@@ -16,7 +17,7 @@ publishedDate: May 31, 2026
 deck: Aleshea Harris’s directorial debut virtuosically adapts her play to the
   screen, featuring a star-making performance from Kara Young and career-best
   work from Sterling K. Brown.
-excerpt: If only Amazon gave this a push
+excerpt: ""
 heroImage: https://www.darkhorizons.com/wp-content/uploads/2026/02/trailer-revenge-tale-is-god-is.jpg
 verdictNote: It could have been a major contender if Amazon hadn't seemingly
   buried it theatrically, but unless it finds a significant second life on
