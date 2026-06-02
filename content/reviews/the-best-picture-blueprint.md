@@ -10,7 +10,7 @@ genre: ""
 rating: ""
 stance: ""
 stanceLabel: ""
-posterSlug: ""
+posterSlug: festival-main
 writer: ""
 writers:
   - dylan-mckercher
@@ -21,7 +21,7 @@ deck: By tracking where every Best Picture nominee premiered since 2021, we can
 excerpt: By tracking where every Best Picture nominee premiered since 2021, we
   can identify the festival pathways most likely to produce the next Oscar
   contenders.
-heroImage: ""
+heroImage: /posters/festival-header.jpg
 verdictNote: ""
 prospects: []
 isHero: false
