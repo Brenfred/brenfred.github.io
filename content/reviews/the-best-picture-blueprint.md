@@ -36,112 +36,112 @@ As we dive into the fall, we have the **Venice Film Festival**. Pre-pandemic, on
 
 <figure class="article-graphic article-graphic--scroll" role="img" aria-label="Best Picture nominees by premiere platform, 2021 to 2025">
 <div class="article-graphic__scroll">
-<svg viewBox="0 0 1100 880" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
-  <text x="0" y="38" font-size="38" font-weight="700" fill="#201A13" font-family="Georgia, serif">Where Best Picture nominees <tspan font-style="italic" fill="#BD8428">premiered</tspan></text>
-  <text x="0" y="66" font-size="17" font-style="italic" fill="#695D4E">2021–2025</text>
+<svg viewBox="0 0 1400 880" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
+  <text x="0" y="40" font-size="42" font-weight="700" fill="#201A13" font-family="Georgia, serif">Where Best Picture nominees <tspan font-style="italic" fill="#BD8428">premiered</tspan></text>
+  <text x="0" y="70" font-size="18" font-style="italic" fill="#695D4E">2021–2025</text>
 
-  <line x1="0" y1="90" x2="1100" y2="90" stroke="#201A13" stroke-width="2"/>
-  <rect x="0" y="87" width="110" height="6" fill="#B7352E"/>
+  <line x1="0" y1="96" x2="1400" y2="96" stroke="#201A13" stroke-width="2"/>
+  <rect x="0" y="93" width="140" height="6" fill="#B7352E"/>
 
-  <g font-family="ui-monospace, monospace" font-size="11" letter-spacing="1.4" fill="#695D4E" font-weight="700" text-anchor="middle">
-    <text x="65" y="125" fill="#201A13">YEAR</text>
-    <text x="195" y="125">SUNDANCE</text>
-    <text x="310" y="125">CANNES</text>
-    <text x="425" y="118">PRE-SEPT.</text>
-    <text x="425" y="132">THEATRICAL</text>
-    <text x="540" y="125">VENICE</text>
-    <text x="655" y="125">TELLURIDE</text>
-    <text x="770" y="125">TIFF</text>
-    <text x="880" y="125">NYFF</text>
-    <text x="1005" y="118">POST-SEPT.</text>
-    <text x="1005" y="132">THEATRICAL</text>
+  <g font-family="ui-monospace, monospace" font-size="12" letter-spacing="1.5" fill="#695D4E" font-weight="700" text-anchor="middle">
+    <text x="85" y="132" fill="#201A13">YEAR</text>
+    <text x="245" y="132">SUNDANCE</text>
+    <text x="395" y="132">CANNES</text>
+    <text x="545" y="125">PRE-SEPT.</text>
+    <text x="545" y="140">THEATRICAL</text>
+    <text x="695" y="132">VENICE</text>
+    <text x="845" y="132">TELLURIDE</text>
+    <text x="995" y="132">TIFF</text>
+    <text x="1140" y="132">NYFF</text>
+    <text x="1300" y="125">POST-SEPT.</text>
+    <text x="1300" y="140">THEATRICAL</text>
   </g>
-  <line x1="0" y1="148" x2="1100" y2="148" stroke="#201A13" stroke-width="2"/>
+  <line x1="0" y1="158" x2="1400" y2="158" stroke="#201A13" stroke-width="2"/>
 
   <defs>
     <style>
-      .yr { font-family: Georgia, serif; font-size: 28px; font-weight: 700; fill: #201A13; text-anchor: middle; }
+      .yr { font-family: Georgia, serif; font-size: 30px; font-weight: 700; fill: #201A13; text-anchor: middle; }
       .ct { font-family: Georgia, serif; font-weight: 700; text-anchor: middle; }
-      .ct-1 { font-size: 30px; fill: #342B22; }
-      .ct-2 { font-size: 30px; fill: #BD8428; }
-      .ct-3 { font-size: 30px; fill: #E8B85A; }
-      .ct-4 { font-size: 34px; fill: #B7352E; font-weight: 800; }
-      .ct-0 { font-size: 28px; fill: #9B8E79; }
-      .films { font-family: Georgia, serif; font-size: 13px; font-style: italic; fill: #695D4E; text-anchor: middle; font-weight: 500; }
-      .films-sm { font-family: Georgia, serif; font-size: 11px; font-style: italic; fill: #695D4E; text-anchor: middle; font-weight: 500; }
+      .ct-1 { font-size: 34px; fill: #342B22; }
+      .ct-2 { font-size: 34px; fill: #BD8428; }
+      .ct-3 { font-size: 34px; fill: #E8B85A; }
+      .ct-4 { font-size: 38px; fill: #B7352E; font-weight: 800; }
+      .ct-0 { font-size: 30px; fill: #9B8E79; }
+      .films { font-family: Georgia, serif; font-size: 15px; font-style: italic; fill: #695D4E; text-anchor: middle; font-weight: 500; }
+      .films-sm { font-family: Georgia, serif; font-size: 13px; font-style: italic; fill: #695D4E; text-anchor: middle; font-weight: 500; }
       .rowsep { stroke: #ECE1C8; stroke-width: 1; }
     </style>
   </defs>
 
-  <!-- 2021 — count at y=200, films start y=232 (32px buffer) -->
-  <text class="yr" x="65" y="210">2021</text>
-  <text class="ct ct-1" x="195" y="200">1</text><text class="films" x="195" y="232">CODA</text>
-  <text class="ct ct-1" x="310" y="200">1</text><text class="films" x="310" y="232">Drive My Car</text>
-  <text class="ct ct-0" x="425" y="210">0</text>
-  <text class="ct ct-2" x="540" y="200">2</text><text class="films" x="540" y="225">Dune</text><text class="films" x="540" y="241">Power of the Dog</text>
-  <text class="ct ct-2" x="655" y="200">2</text><text class="films" x="655" y="225">Belfast</text><text class="films" x="655" y="241">King Richard</text>
-  <text class="ct ct-0" x="770" y="210">0</text>
-  <text class="ct ct-0" x="880" y="210">0</text>
-  <text class="ct ct-4" x="1005" y="198">4</text><text class="films-sm" x="1005" y="225">Don't Look Up</text><text class="films-sm" x="1005" y="239">Licorice Pizza</text><text class="films-sm" x="1005" y="253">Nightmare Alley</text><text class="films-sm" x="1005" y="267">West Side Story</text>
-  <line class="rowsep" x1="0" y1="290" x2="1100" y2="290"/>
+  <!-- 2021 — count y=215, films start y=250 (35px buffer) -->
+  <text class="yr" x="85" y="228">2021</text>
+  <text class="ct ct-1" x="245" y="215">1</text><text class="films" x="245" y="250">CODA</text>
+  <text class="ct ct-1" x="395" y="215">1</text><text class="films" x="395" y="250">Drive My Car</text>
+  <text class="ct ct-0" x="545" y="228">0</text>
+  <text class="ct ct-2" x="695" y="215">2</text><text class="films" x="695" y="243">Dune</text><text class="films" x="695" y="261">Power of the Dog</text>
+  <text class="ct ct-2" x="845" y="215">2</text><text class="films" x="845" y="243">Belfast</text><text class="films" x="845" y="261">King Richard</text>
+  <text class="ct ct-0" x="995" y="228">0</text>
+  <text class="ct ct-0" x="1140" y="228">0</text>
+  <text class="ct ct-4" x="1300" y="213">4</text><text class="films-sm" x="1300" y="245">Don't Look Up</text><text class="films-sm" x="1300" y="261">Licorice Pizza</text><text class="films-sm" x="1300" y="277">Nightmare Alley</text><text class="films-sm" x="1300" y="293">West Side Story</text>
+  <line class="rowsep" x1="0" y1="312" x2="1400" y2="312"/>
 
   <!-- 2022 -->
-  <text class="yr" x="65" y="335">2022</text>
-  <text class="ct ct-0" x="195" y="335">0</text>
-  <text class="ct ct-3" x="310" y="325">3</text><text class="films-sm" x="310" y="350">Elvis</text><text class="films-sm" x="310" y="364">Top Gun: Maverick</text><text class="films-sm" x="310" y="378">Triangle of Sadness</text>
-  <text class="ct ct-1" x="425" y="325">1</text><text class="films" x="425" y="357">EEAAO</text>
-  <text class="ct ct-2" x="540" y="325">2</text><text class="films" x="540" y="350">Banshees</text><text class="films" x="540" y="366">Tár</text>
-  <text class="ct ct-1" x="655" y="325">1</text><text class="films" x="655" y="357">Women Talking</text>
-  <text class="ct ct-2" x="770" y="325">2</text><text class="films" x="770" y="350">All Quiet</text><text class="films" x="770" y="366">Fabelmans</text>
-  <text class="ct ct-0" x="880" y="335">0</text>
-  <text class="ct ct-1" x="1005" y="325">1</text><text class="films-sm" x="1005" y="357">Avatar: Way of Water</text>
-  <line class="rowsep" x1="0" y1="402" x2="1100" y2="402"/>
+  <text class="yr" x="85" y="360">2022</text>
+  <text class="ct ct-0" x="245" y="360">0</text>
+  <text class="ct ct-3" x="395" y="350">3</text><text class="films-sm" x="395" y="375">Elvis</text><text class="films-sm" x="395" y="391">Top Gun: Maverick</text><text class="films-sm" x="395" y="407">Triangle of Sadness</text>
+  <text class="ct ct-1" x="545" y="350">1</text><text class="films" x="545" y="385">EEAAO</text>
+  <text class="ct ct-2" x="695" y="350">2</text><text class="films" x="695" y="378">Banshees</text><text class="films" x="695" y="396">Tár</text>
+  <text class="ct ct-1" x="845" y="350">1</text><text class="films" x="845" y="385">Women Talking</text>
+  <text class="ct ct-2" x="995" y="350">2</text><text class="films" x="995" y="378">All Quiet</text><text class="films" x="995" y="396">Fabelmans</text>
+  <text class="ct ct-0" x="1140" y="360">0</text>
+  <text class="ct ct-1" x="1300" y="350">1</text><text class="films-sm" x="1300" y="385">Avatar: Way of Water</text>
+  <line class="rowsep" x1="0" y1="430" x2="1400" y2="430"/>
 
   <!-- 2023 -->
-  <text class="yr" x="65" y="450">2023</text>
-  <text class="ct ct-1" x="195" y="440">1</text><text class="films" x="195" y="472">Past Lives</text>
-  <text class="ct ct-3" x="310" y="440">3</text><text class="films-sm" x="310" y="465">Anatomy of a Fall</text><text class="films-sm" x="310" y="479">Killers of the Flower Moon</text><text class="films-sm" x="310" y="493">Zone of Interest</text>
-  <text class="ct ct-2" x="425" y="440">2</text><text class="films" x="425" y="465">Barbie</text><text class="films" x="425" y="481">Oppenheimer</text>
-  <text class="ct ct-2" x="540" y="440">2</text><text class="films" x="540" y="465">Maestro</text><text class="films" x="540" y="481">Poor Things</text>
-  <text class="ct ct-1" x="655" y="440">1</text><text class="films" x="655" y="472">The Holdovers</text>
-  <text class="ct ct-1" x="770" y="440">1</text><text class="films" x="770" y="472">American Fiction</text>
-  <text class="ct ct-0" x="880" y="450">0</text>
-  <text class="ct ct-0" x="1005" y="450">0</text>
-  <line class="rowsep" x1="0" y1="520" x2="1100" y2="520"/>
+  <text class="yr" x="85" y="478">2023</text>
+  <text class="ct ct-1" x="245" y="468">1</text><text class="films" x="245" y="503">Past Lives</text>
+  <text class="ct ct-3" x="395" y="468">3</text><text class="films-sm" x="395" y="493">Anatomy of a Fall</text><text class="films-sm" x="395" y="509">Killers of the Flower Moon</text><text class="films-sm" x="395" y="525">Zone of Interest</text>
+  <text class="ct ct-2" x="545" y="468">2</text><text class="films" x="545" y="496">Barbie</text><text class="films" x="545" y="514">Oppenheimer</text>
+  <text class="ct ct-2" x="695" y="468">2</text><text class="films" x="695" y="496">Maestro</text><text class="films" x="695" y="514">Poor Things</text>
+  <text class="ct ct-1" x="845" y="468">1</text><text class="films" x="845" y="503">The Holdovers</text>
+  <text class="ct ct-1" x="995" y="468">1</text><text class="films" x="995" y="503">American Fiction</text>
+  <text class="ct ct-0" x="1140" y="478">0</text>
+  <text class="ct ct-0" x="1300" y="478">0</text>
+  <line class="rowsep" x1="0" y1="548" x2="1400" y2="548"/>
 
   <!-- 2024 -->
-  <text class="yr" x="65" y="565">2024</text>
-  <text class="ct ct-0" x="195" y="565">0</text>
-  <text class="ct ct-3" x="310" y="555">3</text><text class="films-sm" x="310" y="580">Anora</text><text class="films-sm" x="310" y="594">Emilia Pérez</text><text class="films-sm" x="310" y="608">The Substance</text>
-  <text class="ct ct-1" x="425" y="555">1</text><text class="films" x="425" y="587">Dune: Part Two</text>
-  <text class="ct ct-2" x="540" y="555">2</text><text class="films" x="540" y="580">The Brutalist</text><text class="films" x="540" y="596">I'm Still Here</text>
-  <text class="ct ct-2" x="655" y="555">2</text><text class="films" x="655" y="580">Conclave</text><text class="films" x="655" y="596">Nickel Boys</text>
-  <text class="ct ct-0" x="770" y="565">0</text>
-  <text class="ct ct-0" x="880" y="565">0</text>
-  <text class="ct ct-2" x="1005" y="555">2</text><text class="films-sm" x="1005" y="580">A Complete Unknown</text><text class="films-sm" x="1005" y="594">Wicked</text>
-  <line class="rowsep" x1="0" y1="635" x2="1100" y2="635"/>
+  <text class="yr" x="85" y="596">2024</text>
+  <text class="ct ct-0" x="245" y="596">0</text>
+  <text class="ct ct-3" x="395" y="586">3</text><text class="films-sm" x="395" y="611">Anora</text><text class="films-sm" x="395" y="627">Emilia Pérez</text><text class="films-sm" x="395" y="643">The Substance</text>
+  <text class="ct ct-1" x="545" y="586">1</text><text class="films" x="545" y="621">Dune: Part Two</text>
+  <text class="ct ct-2" x="695" y="586">2</text><text class="films" x="695" y="614">The Brutalist</text><text class="films" x="695" y="632">I'm Still Here</text>
+  <text class="ct ct-2" x="845" y="586">2</text><text class="films" x="845" y="614">Conclave</text><text class="films" x="845" y="632">Nickel Boys</text>
+  <text class="ct ct-0" x="995" y="596">0</text>
+  <text class="ct ct-0" x="1140" y="596">0</text>
+  <text class="ct ct-2" x="1300" y="586">2</text><text class="films-sm" x="1300" y="614">A Complete Unknown</text><text class="films-sm" x="1300" y="630">Wicked</text>
+  <line class="rowsep" x1="0" y1="666" x2="1400" y2="666"/>
 
   <!-- 2025 -->
-  <text class="yr" x="65" y="680">2025</text>
-  <text class="ct ct-1" x="195" y="670">1</text><text class="films" x="195" y="702">Train Dreams</text>
-  <text class="ct ct-2" x="310" y="670">2</text><text class="films-sm" x="310" y="695">Secret Agent</text><text class="films-sm" x="310" y="709">Sentimental Value</text>
-  <text class="ct ct-2" x="425" y="670">2</text><text class="films" x="425" y="695">F1</text><text class="films" x="425" y="711">Sinners</text>
-  <text class="ct ct-2" x="540" y="670">2</text><text class="films" x="540" y="695">Bugonia</text><text class="films" x="540" y="711">Frankenstein</text>
-  <text class="ct ct-1" x="655" y="670">1</text><text class="films" x="655" y="702">Hamnet</text>
-  <text class="ct ct-0" x="770" y="680">0</text>
-  <text class="ct ct-1" x="880" y="670">1</text><text class="films" x="880" y="702">Marty Supreme</text>
-  <text class="ct ct-1" x="1005" y="670">1</text><text class="films-sm" x="1005" y="702">One Battle After Another</text>
+  <text class="yr" x="85" y="714">2025</text>
+  <text class="ct ct-1" x="245" y="704">1</text><text class="films" x="245" y="739">Train Dreams</text>
+  <text class="ct ct-2" x="395" y="704">2</text><text class="films-sm" x="395" y="732">Secret Agent</text><text class="films-sm" x="395" y="748">Sentimental Value</text>
+  <text class="ct ct-2" x="545" y="704">2</text><text class="films" x="545" y="732">F1</text><text class="films" x="545" y="750">Sinners</text>
+  <text class="ct ct-2" x="695" y="704">2</text><text class="films" x="695" y="732">Bugonia</text><text class="films" x="695" y="750">Frankenstein</text>
+  <text class="ct ct-1" x="845" y="704">1</text><text class="films" x="845" y="739">Hamnet</text>
+  <text class="ct ct-0" x="995" y="714">0</text>
+  <text class="ct ct-1" x="1140" y="704">1</text><text class="films" x="1140" y="739">Marty Supreme</text>
+  <text class="ct ct-1" x="1300" y="704">1</text><text class="films-sm" x="1300" y="739">One Battle After Another</text>
 
-  <line x1="0" y1="755" x2="1100" y2="755" stroke="#201A13" stroke-width="2"/>
+  <line x1="0" y1="788" x2="1400" y2="788" stroke="#201A13" stroke-width="2"/>
 
-  <g font-family="ui-monospace, monospace" font-size="12" letter-spacing="1.3" fill="#695D4E" font-weight="600">
-    <text x="0" y="798">LEGEND</text>
-    <g transform="translate(105,793)">
-      <circle cx="0" cy="0" r="8" fill="#9B8E79"/><text x="16" y="5">0</text>
-      <circle cx="75" cy="0" r="8" fill="#342B22"/><text x="91" y="5">1</text>
-      <circle cx="150" cy="0" r="8" fill="#BD8428"/><text x="166" y="5">2</text>
-      <circle cx="225" cy="0" r="8" fill="#E8B85A"/><text x="241" y="5">3</text>
-      <circle cx="300" cy="0" r="8" fill="#B7352E"/><text x="316" y="5">4</text>
+  <g font-family="ui-monospace, monospace" font-size="13" letter-spacing="1.4" fill="#695D4E" font-weight="600">
+    <text x="0" y="832">LEGEND</text>
+    <g transform="translate(115,827)">
+      <circle cx="0" cy="0" r="9" fill="#9B8E79"/><text x="18" y="6">0</text>
+      <circle cx="80" cy="0" r="9" fill="#342B22"/><text x="98" y="6">1</text>
+      <circle cx="160" cy="0" r="9" fill="#BD8428"/><text x="178" y="6">2</text>
+      <circle cx="240" cy="0" r="9" fill="#E8B85A"/><text x="258" y="6">3</text>
+      <circle cx="320" cy="0" r="9" fill="#B7352E"/><text x="338" y="6">4</text>
     </g>
   </g>
 </svg>
