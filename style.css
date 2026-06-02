@@ -1225,6 +1225,12 @@ body::before {
 }
 @media (max-width: 900px) { .review__body { grid-template-columns: 1fr; gap: 2.5rem; } }
 
+/* For non-film articles (industry analysis, lists, opinion pieces) the
+   film-focused sidebar has nothing to populate. Hide it and let the prose
+   use the full column width. */
+.review__body--no-aside { grid-template-columns: 1fr; max-width: 880px; }
+.review__body--no-aside .review-aside { display: none; }
+
 .prose {
   font-size: 1.18rem;
   line-height: 1.7;

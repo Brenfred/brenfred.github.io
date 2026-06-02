@@ -1000,6 +1000,15 @@
 
     document.title = (review.title || (film ? film + ' Review' : 'Article')) + ' — Fantasy Filmball';
 
+    // Articles without a film have nothing for the film-focused sidebar
+    // (director, studio, by-the-numbers, prospects). Collapse the layout to
+    // a single full-width column.
+    var bodyGrid = $('.review__body');
+    if (bodyGrid) {
+      if (film) bodyGrid.classList.remove('review__body--no-aside');
+      else      bodyGrid.classList.add('review__body--no-aside');
+    }
+
     var crumb = $('[data-review-film]');
     if (crumb) crumb.textContent = film || (review.title || 'Article');
 
