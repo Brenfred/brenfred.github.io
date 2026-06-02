@@ -607,7 +607,10 @@
 
   function reviewCardHTML(r, options) {
     options = options || {};
-    var stance = (r.stance || 'buy').toLowerCase();
+    // Stance: optional. Empty string (no stance) is preserved as empty —
+    // don't default to "buy". The badge only renders for buy/hold/sell.
+    var stance = (r.stance || '').toLowerCase();
+    var hasStance = stance === 'buy' || stance === 'hold' || stance === 'sell';
     var badgeArrow = stance === 'sell' ? '▼' : stance === 'hold' ? '—' : '▲';
     var stanceLabel = r.stanceLabel || (stance === 'sell' ? 'Sell' : stance === 'hold' ? 'Hold' : 'Buy');
     var posterSlug = r.posterSlug || r.slug;
@@ -668,9 +671,16 @@
 
     var href = 'review.html?slug=' + encodeURIComponent(r.slug);
 
+    // Stance badge on the poster: only when stance is explicitly set.
+    // Discussions with `stance: ""` show no badge; discussions with a real
+    // stance (rare but allowed) show one normally.
+    var imageBadgeHTML = hasStance
+      ? '<div class="review-card__badge-row"><span class="stock-badge stock-badge--' + esc(stance) + '">' + badgeArrow + ' ' + esc(stanceLabel) + '</span></div>'
+      : '';
+
     var inner =
       '<a href="' + href + '" class="review-card__image"' + imgInlineStyle + '>' +
-        '<div class="review-card__badge-row"><span class="stock-badge stock-badge--' + esc(stance) + '">' + badgeArrow + ' ' + esc(stanceLabel) + '</span></div>' +
+        imageBadgeHTML +
         '<img src="' + esc(posterPath) + '" alt="' + esc(film) + ' poster" class="review-card__poster" loading="lazy" onerror="this.style.display=\'none\'">' +
         '<div class="review-card__image-placeholder">' + esc(film) + '</div>' +
       '</a>' +
@@ -927,8 +937,9 @@
     window.__filmball_hero_slug = hero.slug;
 
     var film = hero.film || hero.slug;
-    var stance = (hero.stance || 'buy').toLowerCase();
-    var stanceLabel = hero.stanceLabel || 'Strong Buy';
+    var stance = (hero.stance || '').toLowerCase();
+    var hasStance = stance === 'buy' || stance === 'hold' || stance === 'sell';
+    var stanceLabel = hero.stanceLabel || (stance === 'sell' ? 'Strong Sell' : stance === 'hold' ? 'Hold' : 'Strong Buy');
     var badgeArrow = stance === 'sell' ? '▼' : stance === 'hold' ? '—' : '▲';
     var rating = hero.rating != null ? hero.rating : 4.5;
     var posterPath = 'posters/' + (hero.posterSlug || hero.slug) + '.jpg';
@@ -951,8 +962,13 @@
 
     var badge = $('.stock-badge', heroBlock);
     if (badge) {
-      badge.className = 'stock-badge stock-badge--' + stance;
-      badge.innerHTML = '<span class="stock-badge__arrow">' + badgeArrow + '</span> ' + esc(stanceLabel);
+      if (hasStance) {
+        badge.className = 'stock-badge stock-badge--' + stance;
+        badge.innerHTML = '<span class="stock-badge__arrow">' + badgeArrow + '</span> ' + esc(stanceLabel);
+        badge.style.display = '';
+      } else {
+        badge.style.display = 'none';
+      }
     }
     var ratingEl = $('.rating', heroBlock);
     if (ratingEl) {
@@ -993,10 +1009,12 @@
     // back to slug — it would surface as "the-best-picture-blueprint" in
     // headlines and breadcrumbs.
     var film = (review.film || '').trim();
-    var stance = (review.stance || 'buy').toLowerCase();
-    var stanceLabel = review.stanceLabel || 'Strong Buy';
+    var stance = (review.stance || '').toLowerCase();
+    var hasStance = stance === 'buy' || stance === 'hold' || stance === 'sell';
+    var stanceLabel = review.stanceLabel || (stance === 'sell' ? 'Strong Sell' : stance === 'hold' ? 'Hold' : 'Strong Buy');
     var badgeArrow = stance === 'sell' ? '▼' : stance === 'hold' ? '—' : '▲';
-    var rating = review.rating != null ? review.rating : 4.5;
+    var rating = review.rating != null ? review.rating : null;
+    var hasRating = rating != null && rating !== '';
 
     document.title = (review.title || (film ? film + ' Review' : 'Article')) + ' — Fantasy Filmball';
 
@@ -1057,26 +1075,33 @@
     var isDiscussion = (review.type || 'review').toLowerCase() === 'discussion';
 
     var stars = $('[data-review-stars]');
-    if (stars) stars.innerHTML = isDiscussion ? '' : renderStars(rating);
+    if (stars) stars.innerHTML = hasRating ? renderStars(rating) : '';
 
     var ratingNum = $('[data-review-rating-num]');
-    if (ratingNum) ratingNum.textContent = isDiscussion ? '' : (rating + ' / 5 STARS');
+    if (ratingNum) ratingNum.textContent = hasRating ? (rating + ' / 5 STARS') : '';
 
     var badge = $('[data-review-badge]');
     if (badge) {
-      badge.className = 'stock-badge stock-badge--' + stance;
-      badge.innerHTML = '<span class="stock-badge__arrow">' + badgeArrow + '</span> ' + esc(stanceLabel);
+      if (hasStance) {
+        badge.className = 'stock-badge stock-badge--' + stance;
+        badge.innerHTML = '<span class="stock-badge__arrow">' + badgeArrow + '</span> ' + esc(stanceLabel);
+        badge.style.display = '';
+      } else {
+        badge.style.display = 'none';
+      }
     }
 
-    // ---- Verdict block: review-only ----
-    // Discussions don't have ratings/stances/stock takes, so hide the whole
-    // block. Reviews show rating + badge + optional verdict note.
+    // ---- Verdict block: optional ----
+    // Shows whenever the article has either a stance OR a rating set.
+    // Discussion pieces without either (e.g. festival analysis, lists) hide
+    // the block entirely. Discussions WITH a stance show it normally.
     var verdictBlock = $('[data-review-verdict]');
     if (verdictBlock) {
-      if (isDiscussion) {
+      if (!hasStance && !hasRating) {
         verdictBlock.style.display = 'none';
       } else {
         verdictBlock.style.visibility = '';   // un-hide the initial placeholder state
+        verdictBlock.style.display = '';
         var verdictNoteEl = $('[data-review-verdict-note]');
         if (verdictNoteEl) {
           if (review.verdictNote) {
