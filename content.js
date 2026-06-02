@@ -613,9 +613,9 @@
     var hasStance = stance === 'buy' || stance === 'hold' || stance === 'sell';
     var badgeArrow = stance === 'sell' ? '▼' : stance === 'hold' ? '—' : '▲';
     var stanceLabel = r.stanceLabel || (stance === 'sell' ? 'Sell' : stance === 'hold' ? 'Hold' : 'Buy');
-    var posterSlug = r.posterSlug || r.slug;
-    var posterPath = 'posters/' + posterSlug + '.jpg';
-    var film = r.film || r.slug;
+    var posterSlug = r.posterSlug || (r.film ? r.slug : '');
+    var posterPath = posterSlug ? 'posters/' + posterSlug + '.jpg' : '';
+    var film = (r.film || '').trim();
     var isDiscussion = (r.type || 'review').toLowerCase() === 'discussion';
     var rating = r.rating != null ? r.rating : 4.0;
     var stars = isDiscussion ? '' : renderStars(rating);
@@ -936,22 +936,34 @@
 
     window.__filmball_hero_slug = hero.slug;
 
-    var film = hero.film || hero.slug;
+    // For articles without an associated film (industry analysis, lists,
+    // discussion pieces), `hero.film` is intentionally blank. Don't fall
+    // back to slug — it would surface as "the-best-picture-blueprint" in
+    // the headline.
+    var film = (hero.film || '').trim();
     var stance = (hero.stance || '').toLowerCase();
     var hasStance = stance === 'buy' || stance === 'hold' || stance === 'sell';
     var stanceLabel = hero.stanceLabel || (stance === 'sell' ? 'Strong Sell' : stance === 'hold' ? 'Hold' : 'Strong Buy');
     var badgeArrow = stance === 'sell' ? '▼' : stance === 'hold' ? '—' : '▲';
-    var rating = hero.rating != null ? hero.rating : 4.5;
-    var posterPath = 'posters/' + (hero.posterSlug || hero.slug) + '.jpg';
+    var hasRating = hero.rating != null && hero.rating !== '';
+    var rating = hasRating ? hero.rating : null;
+    // Poster: only when posterSlug or film is explicitly set. Otherwise
+    // skip the image so the typographic placeholder shows nothing.
+    var posterSlug = hero.posterSlug || (film ? hero.slug : '');
+    var posterPath = posterSlug ? 'posters/' + posterSlug + '.jpg' : '';
 
     var img = $('.hero__poster', heroBlock);
     if (img) {
-      img.src = posterPath;
-      img.alt = film + ' poster';
-      img.style.display = '';
+      if (posterPath) {
+        img.src = posterPath;
+        img.alt = (film || hero.title || '') + ' poster';
+        img.style.display = '';
+      } else {
+        img.style.display = 'none';
+      }
     }
     var placeholder = $('.hero__image-placeholder', heroBlock);
-    if (placeholder) placeholder.textContent = film;
+    if (placeholder) placeholder.textContent = film || '';
 
     var titleEl = $('.hero__title', heroBlock);
     if (titleEl) {
@@ -972,7 +984,12 @@
     }
     var ratingEl = $('.rating', heroBlock);
     if (ratingEl) {
-      ratingEl.innerHTML = renderStars(rating) + ' <span class="rating__num">' + rating + ' / 5</span>';
+      if (hasRating) {
+        ratingEl.innerHTML = renderStars(rating) + ' <span class="rating__num">' + rating + ' / 5</span>';
+        ratingEl.style.display = '';
+      } else {
+        ratingEl.style.display = 'none';
+      }
     }
     var byline = $('.hero__byline', heroBlock);
     if (byline) {
