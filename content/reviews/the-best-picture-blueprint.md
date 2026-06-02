@@ -28,14 +28,13 @@ isHero: false
 tags: []
 categoryTags: []
 ---
-
 As Oscar enthusiasts, we all strive to get that perfect "10 for 10" Best Picture lineup as early in the season as possible. Some say predicting awards before we hit the fall season is pointless because you don't know anything about these movies. "No one has seen these films, so what are you even predicting based on?" Now, we might have no intel to use, but that's exactly where awards season enthusiasts and addicts like us thrive. Anyone can make predictions when you have seen precursors and know which films have a 90 on Metacritic and which made a bajillion dollars at the box office, but where the real fun of predicting comes from is when you're flying blind. All you have is word-of-mouth rumors, all you have is looking at filmmakers' past track records and experiences…
 
 But what if I told you there's another avenue to help perfect your Best Picture predictions early in the season? Because while, yes, you can look at filmmakers, studios, or even the actors involved in a project, one aspect I think is severely underrated in awards-season prognostication is *where* Best Picture nominees premiere throughout the year. With the Cannes Film Festival just recently wrapping up, we've heard about so many great titles that we are all looking forward to, but how many of these films truly contend for a Best Picture nomination? We saw last year that Neon had three, potentially even four contenders out of Cannes, but they only managed two in the end. If we look further back, since 2021, the Cannes Film Festival has routinely gotten at least one, if not two or three, Best Picture nominees each year. So I wanted to craft this article examining the major platforms where films can premiere throughout the year and how often each one leads to a Best Picture nomination.
 
-Before we dive into the stats, just to give some background, this analysis will be focused on the period from the 2021 Oscar season, when **CODA** stormed the race at the last minute, upsetting **The Power of the Dog** at SAG, PGA, and, of course, the Oscars. I've decided to start my research from 2021 because that was the first year of the fixed 10-film Best Picture lineup, and because the pre-pandemic awards landscape was completely different than today's. Specifically, many people point to **Parasite**'s historic win in 2019 as broadening the Academy's taste for international features and for allowing more types of cinema and genre films to be represented at the Academy Awards.
+Before we dive into the stats, just to give some background, this analysis will be focused on the period from the 2021 Oscar season, when **Coda** stormed the race at the last minute, upsetting **The Power of the Dog** at SAG, PGA, and, of course, the Oscars. I've decided to start my research from 2021 because that was the first year of the fixed 10-film Best Picture lineup, and because the pre-pandemic awards landscape was completely different than today's. Specifically, many people point to **Parasite**'s historic win in 2019 as broadening the Academy's taste for international features and for allowing more types of cinema and genre films to be represented at the Academy Awards.
 
-The first type of premiere that we'll be covering is the **Sundance Film Festival**. Although small in size, this festival can often pack an emotional punch with its major contenders. Over the last few years, we've seen films like **CODA** make the run from the beginning of the season to win Best Picture, but also films like **Train Dreams**, where most predictors don't take them seriously until critics groups. Next, we will be looking at the **Cannes Film Festival**. Cannes is arguably the most important festival in the modern era, in large part because of **Parasite**'s historic victory. Every season since has produced at least one Best Picture nominee, and oftentimes more. Then we'll look at films released theatrically before September. These are films that do not premiere at film festivals and are often major blockbusters that hit the cultural zeitgeist and remain in the conversation throughout the year.
+The first type of premiere that we'll be covering is the **Sundance Film Festival**. Although small in size, this festival can often pack an emotional punch with its major contenders. Over the last few years, we've seen films like **Coda** make the run from the beginning of the season to win Best Picture, but also films like **Train Dreams**, where most predictors don't take them seriously until critics groups. Next, we will be looking at the **Cannes Film Festival**. Cannes is arguably the most important festival in the modern era, in large part because of **Parasite**'s historic victory. Every season since has produced at least one Best Picture nominee, and oftentimes more. Then we'll look at films released theatrically before September. These are films that do not premiere at film festivals and are often major blockbusters that hit the cultural zeitgeist and remain in the conversation throughout the year.
 
 As we dive into the fall, we have the **Venice Film Festival**. Pre-pandemic, one could say this was the most integral film festival for Academy Awards prospects, but with Cannes' emergence, Venice has taken a backseat. However, Venice has remained quite consistent in producing Best Picture nominees. Next, we have various North American film festivals. These include **Telluride**, **Toronto International Film Festival (TIFF)**, and the **New York Film Festival (NYFF)**. This may be surprising to some of you, but Telluride has recently statistically surpassed TIFF as a platform for premieres, even though TIFF remains more culturally relevant. NYFF is a fest that many Oscar prognosticators liken to a death sentence for world premieres. And finally, we have films released theatrically between September and December. These films are generally major holiday spectacles and films that attempt to make a major splash right before the nomination period opens.
 
@@ -161,7 +160,7 @@ The Telluride Film Festival has been a sleeper hit with the Academy lately. Over
 
 Speaking of TIFF, it has been on a downward trajectory recently, only racking up 0–1 nominees per year in this span. I currently see **Being Heumann**, **Misty Green**, **No One Cares**, **Prima Facie**, **Primetime**, **The Social Reckoning**, and **Wildwood** as our shiny TIFF premieres competing for the illustrious PCA slots.
 
-The New York Film Festival has historically just not been a path for potential Best Picture nominees, with only **Marty Supreme** making the cut. We have seen the festival be a failed launching pad for films such as **Is This Thing On?**, **She Said**, **Till**, and **The Tragedy of Macbeth** over the last few years. That leads us into all the theatrical releases after August. The stats say that, on average, 1–2 films make it into Best Picture, but those numbers are heavily skewed by 2021, when four post-August releases made it into Best Picture. Recently, we've been seeing only one or two post-August films make the cut, and, given reports that Warner Bros. is no longer interested in the festival game, I think Alejandro González Iñárritu's **Digger** and Denis Villeneuve's **Dune: Part Three** emerge as strong contenders to fill this slot, but another possible contender includes Robert Eggers' **Werwulf**.
+The New York Film Festival has historically just not been a path for potential Best Picture nominees, with only **Marty Supreme** making the cut. We have seen the festival be a failed launching pad for films such as **Is This Thing On?**, **She Said**, **Till**, and **The Tragedy of Macbeth** over the last few years. That leads us into all the theatrical releases after September. The stats say that, on average, 1–2 films make it into Best Picture, but those numbers are heavily skewed by 2021, when four post-August releases made it into Best Picture. Recently, we've been seeing only one or two post-August films make the cut, and, given reports that Warner Bros. is no longer interested in the festival game, I think Alejandro González Iñárritu's **Digger** and Denis Villeneuve's **Dune: Part Three** emerge as strong contenders to fill this slot, but another possible contender includes Robert Eggers' **Werwulf**.
 
 <figure class="article-graphic" role="img" aria-label="Five-year averages of Best Picture nominees by premiere platform">
 <svg viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
@@ -200,6 +199,7 @@ The New York Film Festival has historically just not been a path for potential B
   <!-- Geometry: bar starts at x=270. 1 unit = 205px. Cannes 2.4 → 492px → ends at 762. Number col at 970. -->
 
   <!-- Cannes 2.4 -->
+
   <g transform="translate(0,162)">
     <text class="row-label" x="260" y="38">CANNES</text>
     <rect class="bar" x="270" y="10" width="492" height="52" fill="#B7352E"/>
@@ -209,6 +209,7 @@ The New York Film Festival has historically just not been a path for potential B
   </g>
 
   <!-- Venice 2.0 -->
+
   <g transform="translate(0,228)">
     <text class="row-label" x="260" y="38">VENICE</text>
     <rect class="bar" x="270" y="10" width="410" height="52" fill="#E8B85A"/>
@@ -218,6 +219,7 @@ The New York Film Festival has historically just not been a path for potential B
   </g>
 
   <!-- Post-Aug 1.6 -->
+
   <g transform="translate(0,294)">
     <text class="row-label" x="260" y="38">POST-AUG. THEATRICAL</text>
     <rect class="bar" x="270" y="10" width="328" height="52" fill="#BD8428"/>
@@ -227,6 +229,7 @@ The New York Film Festival has historically just not been a path for potential B
   </g>
 
   <!-- Telluride 1.4 -->
+
   <g transform="translate(0,360)">
     <text class="row-label" x="260" y="38">TELLURIDE</text>
     <rect class="bar" x="270" y="10" width="287" height="52" fill="#BD8428"/>
@@ -236,6 +239,7 @@ The New York Film Festival has historically just not been a path for potential B
   </g>
 
   <!-- Pre-Aug 1.2 -->
+
   <g transform="translate(0,426)">
     <text class="row-label" x="260" y="38">PRE-AUG. THEATRICAL</text>
     <rect class="bar" x="270" y="10" width="246" height="52" fill="#BD8428"/>
@@ -245,6 +249,7 @@ The New York Film Festival has historically just not been a path for potential B
   </g>
 
   <!-- Sundance 0.6 -->
+
   <g transform="translate(0,492)">
     <text class="row-label" x="260" y="38">SUNDANCE</text>
     <rect class="bar" x="270" y="10" width="123" height="52" fill="#9B8E79"/>
@@ -254,6 +259,7 @@ The New York Film Festival has historically just not been a path for potential B
   </g>
 
   <!-- TIFF 0.6 -->
+
   <g transform="translate(0,558)">
     <text class="row-label" x="260" y="38">TIFF</text>
     <rect class="bar" x="270" y="10" width="123" height="52" fill="#9B8E79"/>
@@ -263,6 +269,7 @@ The New York Film Festival has historically just not been a path for potential B
   </g>
 
   <!-- NYFF 0.2 -->
+
   <g transform="translate(0,624)">
     <text class="row-label" x="260" y="38">NYFF</text>
     <rect class="bar" x="270" y="10" width="41" height="52" fill="#E0D4BB"/>
@@ -289,7 +296,7 @@ So if I have Cannes, pre-September theatrical, Venice, and Telluride each gettin
 
 New York? Do we even have to talk about it?
 
-And that leaves me with two Best Picture slots remaining for all films released theatrically after August, which is where Warner Bros. comes into play. Following in the footsteps of their Best Picture winner last year, **One Battle After Another**, I believe that Alejandro González Iñárritu's **Digger** will skip the fall festivals. And, of course, we have our major December release of **Dune: Part Three**. IMAX tickets have already gone on sale and sold out instantly. The hype is there, and I believe that Dune can pull off what Avatar could not and have all three installments become Best Picture nominees.
+And that leaves me with two Best Picture slots remaining for all films released theatrically after September, which is where Warner Bros. comes into play. Following in the footsteps of their Best Picture winner last year, **One Battle After Another**, I believe that Alejandro González Iñárritu's **Digger** will skip the fall festivals. And, of course, we have our major December release of **Dune: Part Three**. IMAX tickets have already gone on sale and sold out instantly. The hype is there, and I believe that Dune can pull off what Avatar could not and have all three installments become Best Picture nominees.
 
 <figure class="article-graphic" role="img" aria-label="2026 Best Picture predictions distributed by premiere platform">
 <svg viewBox="0 0 1200 940" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
@@ -315,6 +322,7 @@ And that leaves me with two Best Picture slots remaining for all films released 
   </defs>
 
   <!-- 1. Sundance — skip -->
+
   <g transform="translate(0,92)">
     <rect class="row-border-skip" x="0" y="0" width="1200" height="82"/>
     <rect class="platform-bg-skip" x="0" y="0" width="260" height="82"/>
@@ -324,6 +332,7 @@ And that leaves me with two Best Picture slots remaining for all films released 
   </g>
 
   <!-- 2. Cannes — 2 -->
+
   <g transform="translate(0,186)">
     <rect class="row-fill-active" x="0" y="0" width="1200" height="82"/>
     <rect class="row-border" x="0" y="0" width="1200" height="82"/>
@@ -338,6 +347,7 @@ And that leaves me with two Best Picture slots remaining for all films released 
   </g>
 
   <!-- 3. Pre-Aug — 2 -->
+
   <g transform="translate(0,280)">
     <rect class="row-fill-active" x="0" y="0" width="1200" height="82"/>
     <rect class="row-border" x="0" y="0" width="1200" height="82"/>
@@ -353,6 +363,7 @@ And that leaves me with two Best Picture slots remaining for all films released 
   </g>
 
   <!-- 4. Venice — 2 -->
+
   <g transform="translate(0,374)">
     <rect class="row-fill-active" x="0" y="0" width="1200" height="82"/>
     <rect class="row-border" x="0" y="0" width="1200" height="82"/>
@@ -367,6 +378,7 @@ And that leaves me with two Best Picture slots remaining for all films released 
   </g>
 
   <!-- 5. Telluride — 2 -->
+
   <g transform="translate(0,468)">
     <rect class="row-fill-active" x="0" y="0" width="1200" height="82"/>
     <rect class="row-border" x="0" y="0" width="1200" height="82"/>
@@ -381,6 +393,7 @@ And that leaves me with two Best Picture slots remaining for all films released 
   </g>
 
   <!-- 6. TIFF — skip -->
+
   <g transform="translate(0,562)">
     <rect class="row-border-skip" x="0" y="0" width="1200" height="82"/>
     <rect class="platform-bg-skip" x="0" y="0" width="260" height="82"/>
@@ -390,6 +403,7 @@ And that leaves me with two Best Picture slots remaining for all films released 
   </g>
 
   <!-- 7. NYFF — skip -->
+
   <g transform="translate(0,656)">
     <rect class="row-border-skip" x="0" y="0" width="1200" height="82"/>
     <rect class="platform-bg-skip" x="0" y="0" width="260" height="82"/>
@@ -399,6 +413,7 @@ And that leaves me with two Best Picture slots remaining for all films released 
   </g>
 
   <!-- 8. Post-Aug — 2 -->
+
   <g transform="translate(0,750)">
     <rect class="row-fill-active" x="0" y="0" width="1200" height="82"/>
     <rect class="row-border" x="0" y="0" width="1200" height="82"/>
@@ -415,4 +430,5 @@ And that leaves me with two Best Picture slots remaining for all films released 
 
   <text x="1200" y="918" text-anchor="end" font-family="ui-monospace, monospace" font-size="13" letter-spacing="1.3" fill="#9B8E79" font-weight="600">DYLAN MCKERCHER · POST-CANNES 2026</text>
 </svg>
+
 </figure>
