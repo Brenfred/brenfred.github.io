@@ -34,110 +34,112 @@ The first type of premiere that we'll be covering is the **Sundance Film Festiva
 
 As we dive into the fall, we have the **Venice Film Festival**. Pre-pandemic, one could say this was the most integral film festival for Academy Awards prospects, but with Cannes' emergence, Venice has taken a backseat. However, Venice has remained quite consistent in producing Best Picture nominees. Next, we have various North American film festivals. These include **Telluride**, **Toronto International Film Festival (TIFF)**, and the **New York Film Festival (NYFF)**. This may be surprising to some of you, but Telluride has recently statistically surpassed TIFF as a platform for premieres, even though TIFF remains more culturally relevant. NYFF is a fest that many Oscar prognosticators liken to a death sentence for world premieres. And finally, we have films released theatrically between September and December. These films are generally major holiday spectacles and films that attempt to make a major splash right before the nomination period opens.
 
-<figure class="article-graphic" role="img" aria-label="Best Picture nominees by premiere platform, 2021 to 2025">
-<svg viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
-  <text x="0" y="38" font-size="38" font-weight="700" fill="#201A13" font-family="Georgia, serif">Where Best Picture nominees <tspan font-style="italic" fill="#BD8428">premiered</tspan></text>
-  <text x="0" y="68" font-size="17" font-style="italic" fill="#695D4E">2021–2025</text>
+<figure class="article-graphic article-graphic--scroll" role="img" aria-label="Best Picture nominees by premiere platform, 2021 to 2025">
+<div class="article-graphic__scroll">
+<svg viewBox="0 0 1400 820" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
+  <text x="0" y="42" font-size="44" font-weight="700" fill="#201A13" font-family="Georgia, serif">Where Best Picture nominees <tspan font-style="italic" fill="#BD8428">premiered</tspan></text>
+  <text x="0" y="74" font-size="19" font-style="italic" fill="#695D4E">2021–2025</text>
 
-  <line x1="0" y1="92" x2="1200" y2="92" stroke="#201A13" stroke-width="2"/>
-  <rect x="0" y="89" width="120" height="6" fill="#B7352E"/>
+  <line x1="0" y1="100" x2="1400" y2="100" stroke="#201A13" stroke-width="2"/>
+  <rect x="0" y="97" width="140" height="6" fill="#B7352E"/>
 
-  <g font-family="ui-monospace, monospace" font-size="11" letter-spacing="1.6" fill="#695D4E" font-weight="700" text-anchor="middle">
-    <text x="80" y="128" fill="#201A13">YEAR</text>
-    <text x="220" y="128">SUNDANCE</text>
-    <text x="345" y="128">CANNES</text>
-    <text x="465" y="122">PRE-AUG</text>
-    <text x="465" y="136">THEATRICAL</text>
-    <text x="590" y="128">VENICE</text>
-    <text x="715" y="128">TELLURIDE</text>
-    <text x="840" y="128">TIFF</text>
-    <text x="960" y="128">NYFF</text>
-    <text x="1095" y="122">POST-AUG</text>
-    <text x="1095" y="136">THEATRICAL</text>
+  <g font-family="ui-monospace, monospace" font-size="13" letter-spacing="1.6" fill="#695D4E" font-weight="700" text-anchor="middle">
+    <text x="90" y="140" fill="#201A13">YEAR</text>
+    <text x="255" y="140">SUNDANCE</text>
+    <text x="400" y="140">CANNES</text>
+    <text x="540" y="132">PRE-AUG</text>
+    <text x="540" y="148">THEATRICAL</text>
+    <text x="685" y="140">VENICE</text>
+    <text x="830" y="140">TELLURIDE</text>
+    <text x="975" y="140">TIFF</text>
+    <text x="1120" y="140">NYFF</text>
+    <text x="1275" y="132">POST-AUG</text>
+    <text x="1275" y="148">THEATRICAL</text>
   </g>
-  <line x1="0" y1="150" x2="1200" y2="150" stroke="#201A13" stroke-width="2"/>
+  <line x1="0" y1="164" x2="1400" y2="164" stroke="#201A13" stroke-width="2"/>
 
   <defs>
     <style>
-      .yr { font-family: Georgia, serif; font-size: 28px; font-weight: 700; fill: #201A13; text-anchor: middle; }
+      .yr { font-family: Georgia, serif; font-size: 32px; font-weight: 700; fill: #201A13; text-anchor: middle; }
       .ct { font-family: Georgia, serif; font-weight: 700; text-anchor: middle; }
-      .ct-1 { font-size: 30px; fill: #342B22; }
-      .ct-2 { font-size: 30px; fill: #BD8428; }
-      .ct-3 { font-size: 30px; fill: #E8B85A; }
-      .ct-4 { font-size: 34px; fill: #B7352E; font-weight: 800; }
-      .ct-0 { font-size: 28px; fill: #9B8E79; }
-      .films { font-family: Georgia, serif; font-size: 11px; font-style: italic; fill: #9B8E79; text-anchor: middle; }
+      .ct-1 { font-size: 36px; fill: #342B22; }
+      .ct-2 { font-size: 36px; fill: #BD8428; }
+      .ct-3 { font-size: 36px; fill: #E8B85A; }
+      .ct-4 { font-size: 40px; fill: #B7352E; font-weight: 800; }
+      .ct-0 { font-size: 32px; fill: #9B8E79; }
+      .films { font-family: Georgia, serif; font-size: 15px; font-style: italic; fill: #695D4E; text-anchor: middle; font-weight: 500; }
       .rowsep { stroke: #ECE1C8; stroke-width: 1; }
     </style>
   </defs>
 
-  <text class="yr" x="80" y="200">2021</text>
-  <text class="ct ct-1" x="220" y="192">1</text><text class="films" x="220" y="216">CODA</text>
-  <text class="ct ct-1" x="345" y="192">1</text><text class="films" x="345" y="216">Drive My Car</text>
-  <text class="ct ct-0" x="465" y="200">0</text>
-  <text class="ct ct-2" x="590" y="192">2</text><text class="films" x="590" y="212">Dune</text><text class="films" x="590" y="225">Power of the Dog</text>
-  <text class="ct ct-2" x="715" y="192">2</text><text class="films" x="715" y="212">Belfast</text><text class="films" x="715" y="225">King Richard</text>
-  <text class="ct ct-0" x="840" y="200">0</text>
-  <text class="ct ct-0" x="960" y="200">0</text>
-  <text class="ct ct-4" x="1095" y="190">4</text><text class="films" x="1095" y="208">Don't Look Up</text><text class="films" x="1095" y="220">Licorice Pizza</text><text class="films" x="1095" y="232">Nightmare Alley · WSS</text>
-  <line class="rowsep" x1="0" y1="252" x2="1200" y2="252"/>
+  <text class="yr" x="90" y="225">2021</text>
+  <text class="ct ct-1" x="255" y="215">1</text><text class="films" x="255" y="244">CODA</text>
+  <text class="ct ct-1" x="400" y="215">1</text><text class="films" x="400" y="244">Drive My Car</text>
+  <text class="ct ct-0" x="540" y="225">0</text>
+  <text class="ct ct-2" x="685" y="215">2</text><text class="films" x="685" y="237">Dune</text><text class="films" x="685" y="254">Power of the Dog</text>
+  <text class="ct ct-2" x="830" y="215">2</text><text class="films" x="830" y="237">Belfast</text><text class="films" x="830" y="254">King Richard</text>
+  <text class="ct ct-0" x="975" y="225">0</text>
+  <text class="ct ct-0" x="1120" y="225">0</text>
+  <text class="ct ct-4" x="1275" y="213">4</text><text class="films" x="1275" y="233">Don't Look Up</text><text class="films" x="1275" y="248">Licorice Pizza</text><text class="films" x="1275" y="263">Nightmare Alley · WSS</text>
+  <line class="rowsep" x1="0" y1="285" x2="1400" y2="285"/>
 
-  <text class="yr" x="80" y="295">2022</text>
-  <text class="ct ct-0" x="220" y="295">0</text>
-  <text class="ct ct-3" x="345" y="285">3</text><text class="films" x="345" y="305">Elvis</text><text class="films" x="345" y="318">TG: Maverick</text><text class="films" x="345" y="331">Triangle of Sadness</text>
-  <text class="ct ct-1" x="465" y="285">1</text><text class="films" x="465" y="309">EEAAO (SXSW)</text>
-  <text class="ct ct-2" x="590" y="285">2</text><text class="films" x="590" y="305">Banshees</text><text class="films" x="590" y="318">Tár</text>
-  <text class="ct ct-1" x="715" y="285">1</text><text class="films" x="715" y="309">Women Talking</text>
-  <text class="ct ct-2" x="840" y="285">2</text><text class="films" x="840" y="305">All Quiet</text><text class="films" x="840" y="318">Fabelmans</text>
-  <text class="ct ct-0" x="960" y="295">0</text>
-  <text class="ct ct-1" x="1095" y="285">1</text><text class="films" x="1095" y="305">Avatar:</text><text class="films" x="1095" y="318">Way of Water</text>
-  <line class="rowsep" x1="0" y1="350" x2="1200" y2="350"/>
+  <text class="yr" x="90" y="335">2022</text>
+  <text class="ct ct-0" x="255" y="335">0</text>
+  <text class="ct ct-3" x="400" y="325">3</text><text class="films" x="400" y="347">Elvis</text><text class="films" x="400" y="364">TG: Maverick</text><text class="films" x="400" y="381">Triangle of Sadness</text>
+  <text class="ct ct-1" x="540" y="325">1</text><text class="films" x="540" y="354">EEAAO (SXSW)</text>
+  <text class="ct ct-2" x="685" y="325">2</text><text class="films" x="685" y="347">Banshees</text><text class="films" x="685" y="364">Tár</text>
+  <text class="ct ct-1" x="830" y="325">1</text><text class="films" x="830" y="354">Women Talking</text>
+  <text class="ct ct-2" x="975" y="325">2</text><text class="films" x="975" y="347">All Quiet</text><text class="films" x="975" y="364">Fabelmans</text>
+  <text class="ct ct-0" x="1120" y="335">0</text>
+  <text class="ct ct-1" x="1275" y="325">1</text><text class="films" x="1275" y="347">Avatar:</text><text class="films" x="1275" y="364">Way of Water</text>
+  <line class="rowsep" x1="0" y1="400" x2="1400" y2="400"/>
 
-  <text class="yr" x="80" y="395">2023</text>
-  <text class="ct ct-1" x="220" y="385">1</text><text class="films" x="220" y="409">Past Lives</text>
-  <text class="ct ct-3" x="345" y="385">3</text><text class="films" x="345" y="405">Anatomy of a Fall</text><text class="films" x="345" y="418">KOTFM</text><text class="films" x="345" y="431">Zone of Interest</text>
-  <text class="ct ct-2" x="465" y="385">2</text><text class="films" x="465" y="405">Barbie</text><text class="films" x="465" y="418">Oppenheimer</text>
-  <text class="ct ct-2" x="590" y="385">2</text><text class="films" x="590" y="405">Maestro</text><text class="films" x="590" y="418">Poor Things</text>
-  <text class="ct ct-1" x="715" y="385">1</text><text class="films" x="715" y="409">The Holdovers</text>
-  <text class="ct ct-1" x="840" y="385">1</text><text class="films" x="840" y="409">American Fiction</text>
-  <text class="ct ct-0" x="960" y="395">0</text>
-  <text class="ct ct-0" x="1095" y="395">0</text>
-  <line class="rowsep" x1="0" y1="450" x2="1200" y2="450"/>
+  <text class="yr" x="90" y="450">2023</text>
+  <text class="ct ct-1" x="255" y="440">1</text><text class="films" x="255" y="469">Past Lives</text>
+  <text class="ct ct-3" x="400" y="440">3</text><text class="films" x="400" y="462">Anatomy of a Fall</text><text class="films" x="400" y="479">KOTFM</text><text class="films" x="400" y="496">Zone of Interest</text>
+  <text class="ct ct-2" x="540" y="440">2</text><text class="films" x="540" y="462">Barbie</text><text class="films" x="540" y="479">Oppenheimer</text>
+  <text class="ct ct-2" x="685" y="440">2</text><text class="films" x="685" y="462">Maestro</text><text class="films" x="685" y="479">Poor Things</text>
+  <text class="ct ct-1" x="830" y="440">1</text><text class="films" x="830" y="469">The Holdovers</text>
+  <text class="ct ct-1" x="975" y="440">1</text><text class="films" x="975" y="469">American Fiction</text>
+  <text class="ct ct-0" x="1120" y="450">0</text>
+  <text class="ct ct-0" x="1275" y="450">0</text>
+  <line class="rowsep" x1="0" y1="515" x2="1400" y2="515"/>
 
-  <text class="yr" x="80" y="495">2024</text>
-  <text class="ct ct-0" x="220" y="495">0</text>
-  <text class="ct ct-3" x="345" y="485">3</text><text class="films" x="345" y="505">Anora</text><text class="films" x="345" y="518">Emilia Pérez</text><text class="films" x="345" y="531">The Substance</text>
-  <text class="ct ct-1" x="465" y="485">1</text><text class="films" x="465" y="509">Dune: Part Two</text>
-  <text class="ct ct-2" x="590" y="485">2</text><text class="films" x="590" y="505">The Brutalist</text><text class="films" x="590" y="518">I'm Still Here</text>
-  <text class="ct ct-2" x="715" y="485">2</text><text class="films" x="715" y="505">Conclave</text><text class="films" x="715" y="518">Nickel Boys</text>
-  <text class="ct ct-0" x="840" y="495">0</text>
-  <text class="ct ct-0" x="960" y="495">0</text>
-  <text class="ct ct-2" x="1095" y="485">2</text><text class="films" x="1095" y="505">A Complete Unknown</text><text class="films" x="1095" y="518">Wicked</text>
-  <line class="rowsep" x1="0" y1="550" x2="1200" y2="550"/>
+  <text class="yr" x="90" y="565">2024</text>
+  <text class="ct ct-0" x="255" y="565">0</text>
+  <text class="ct ct-3" x="400" y="555">3</text><text class="films" x="400" y="577">Anora</text><text class="films" x="400" y="594">Emilia Pérez</text><text class="films" x="400" y="611">The Substance</text>
+  <text class="ct ct-1" x="540" y="555">1</text><text class="films" x="540" y="584">Dune: Part Two</text>
+  <text class="ct ct-2" x="685" y="555">2</text><text class="films" x="685" y="577">The Brutalist</text><text class="films" x="685" y="594">I'm Still Here</text>
+  <text class="ct ct-2" x="830" y="555">2</text><text class="films" x="830" y="577">Conclave</text><text class="films" x="830" y="594">Nickel Boys</text>
+  <text class="ct ct-0" x="975" y="565">0</text>
+  <text class="ct ct-0" x="1120" y="565">0</text>
+  <text class="ct ct-2" x="1275" y="555">2</text><text class="films" x="1275" y="577">A Complete Unknown</text><text class="films" x="1275" y="594">Wicked</text>
+  <line class="rowsep" x1="0" y1="630" x2="1400" y2="630"/>
 
-  <text class="yr" x="80" y="595">2025</text>
-  <text class="ct ct-1" x="220" y="585">1</text><text class="films" x="220" y="609">Train Dreams</text>
-  <text class="ct ct-2" x="345" y="585">2</text><text class="films" x="345" y="605">Sentimental Value</text><text class="films" x="345" y="618">Secret Agent</text>
-  <text class="ct ct-2" x="465" y="585">2</text><text class="films" x="465" y="605">Sinners</text><text class="films" x="465" y="618">F1</text>
-  <text class="ct ct-2" x="590" y="585">2</text><text class="films" x="590" y="605">Bugonia</text><text class="films" x="590" y="618">Frankenstein</text>
-  <text class="ct ct-1" x="715" y="585">1</text><text class="films" x="715" y="609">Hamnet</text>
-  <text class="ct ct-0" x="840" y="595">0</text>
-  <text class="ct ct-1" x="960" y="585">1</text><text class="films" x="960" y="609">Marty Supreme</text>
-  <text class="ct ct-1" x="1095" y="585">1</text><text class="films" x="1095" y="605">One Battle</text><text class="films" x="1095" y="618">After Another</text>
+  <text class="yr" x="90" y="680">2025</text>
+  <text class="ct ct-1" x="255" y="670">1</text><text class="films" x="255" y="699">Train Dreams</text>
+  <text class="ct ct-2" x="400" y="670">2</text><text class="films" x="400" y="692">Sentimental Value</text><text class="films" x="400" y="709">Secret Agent</text>
+  <text class="ct ct-2" x="540" y="670">2</text><text class="films" x="540" y="692">Sinners</text><text class="films" x="540" y="709">F1</text>
+  <text class="ct ct-2" x="685" y="670">2</text><text class="films" x="685" y="692">Bugonia</text><text class="films" x="685" y="709">Frankenstein</text>
+  <text class="ct ct-1" x="830" y="670">1</text><text class="films" x="830" y="699">Hamnet</text>
+  <text class="ct ct-0" x="975" y="680">0</text>
+  <text class="ct ct-1" x="1120" y="670">1</text><text class="films" x="1120" y="699">Marty Supreme</text>
+  <text class="ct ct-1" x="1275" y="670">1</text><text class="films" x="1275" y="692">One Battle</text><text class="films" x="1275" y="709">After Another</text>
 
-  <line x1="0" y1="650" x2="1200" y2="650" stroke="#201A13" stroke-width="2"/>
+  <line x1="0" y1="745" x2="1400" y2="745" stroke="#201A13" stroke-width="2"/>
 
-  <g font-family="ui-monospace, monospace" font-size="12" letter-spacing="1.2" fill="#695D4E" font-weight="600">
-    <text x="0" y="688">LEGEND</text>
-    <g transform="translate(110,683)">
-      <circle cx="0" cy="0" r="7" fill="#9B8E79"/><text x="14" y="5">0</text>
-      <circle cx="70" cy="0" r="7" fill="#342B22"/><text x="84" y="5">1</text>
-      <circle cx="140" cy="0" r="7" fill="#BD8428"/><text x="154" y="5">2</text>
-      <circle cx="210" cy="0" r="7" fill="#E8B85A"/><text x="224" y="5">3</text>
-      <circle cx="280" cy="0" r="7" fill="#B7352E"/><text x="294" y="5">4</text>
+  <g font-family="ui-monospace, monospace" font-size="14" letter-spacing="1.4" fill="#695D4E" font-weight="600">
+    <text x="0" y="788">LEGEND</text>
+    <g transform="translate(125,783)">
+      <circle cx="0" cy="0" r="9" fill="#9B8E79"/><text x="18" y="6">0</text>
+      <circle cx="85" cy="0" r="9" fill="#342B22"/><text x="103" y="6">1</text>
+      <circle cx="170" cy="0" r="9" fill="#BD8428"/><text x="188" y="6">2</text>
+      <circle cx="255" cy="0" r="9" fill="#E8B85A"/><text x="273" y="6">3</text>
+      <circle cx="340" cy="0" r="9" fill="#B7352E"/><text x="358" y="6">4</text>
     </g>
   </g>
 </svg>
+</div>
 </figure>
 
 Looking at this year's crop of Best Picture contenders, we could take the statistical breakdown of where our past five years of Best Picture nominees have premiered and try to build our Best Picture lineup based on this. Based on our established averages, Sundance is getting between 0–1 Best Picture nominees per year, leaving films like **The Invite** or **Josephine** at risk of missing Best Picture.
@@ -157,25 +159,25 @@ Speaking of TIFF, it has been on a downward trajectory recently, only racking up
 The New York Film Festival has historically just not been a path for potential Best Picture nominees, with only **Marty Supreme** making the cut. We have seen the festival be a failed launching pad for films such as **Is This Thing On?**, **She Said**, **Till**, and **The Tragedy of Macbeth** over the last few years. That leads us into all the theatrical releases after August. The stats say that, on average, 1–2 films make it into Best Picture, but those numbers are heavily skewed by 2021, when four post-August releases made it into Best Picture. Recently, we've been seeing only one or two post-August films make the cut, and, given reports that Warner Bros. is no longer interested in the festival game, I think Alejandro González Iñárritu's **Digger** and Denis Villeneuve's **Dune: Part Three** emerge as strong contenders to fill this slot, but another possible contender includes Robert Eggers' **Werwulf**.
 
 <figure class="article-graphic" role="img" aria-label="Five-year averages of Best Picture nominees by premiere platform">
-<svg viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
-  <text x="0" y="38" font-size="38" font-weight="700" fill="#201A13">The five-year <tspan font-style="italic" fill="#BD8428">averages</tspan></text>
-  <text x="0" y="68" font-size="17" font-style="italic" fill="#695D4E">Total nominees produced by each platform, 2021–2025</text>
+<svg viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
+  <text x="0" y="42" font-size="44" font-weight="700" fill="#201A13">The five-year <tspan font-style="italic" fill="#BD8428">averages</tspan></text>
+  <text x="0" y="76" font-size="19" font-style="italic" fill="#695D4E">Total nominees produced by each platform, 2021–2025</text>
 
-  <line x1="0" y1="92" x2="1200" y2="92" stroke="#201A13" stroke-width="2"/>
-  <rect x="0" y="89" width="120" height="6" fill="#B7352E"/>
+  <line x1="0" y1="102" x2="1200" y2="102" stroke="#201A13" stroke-width="2"/>
+  <rect x="0" y="99" width="140" height="6" fill="#B7352E"/>
 
-  <g font-family="ui-monospace, monospace" font-size="11" fill="#9B8E79" letter-spacing="1.2">
-    <text x="240" y="124">0</text>
-    <text x="450" y="124" text-anchor="middle">1</text>
-    <text x="660" y="124" text-anchor="middle">2</text>
-    <text x="870" y="124" text-anchor="middle">3</text>
-    <text x="1180" y="124" text-anchor="end">NOMINEES / YR</text>
+  <g font-family="ui-monospace, monospace" font-size="13" fill="#9B8E79" letter-spacing="1.3" font-weight="600">
+    <text x="270" y="142">0</text>
+    <text x="475" y="142" text-anchor="middle">1</text>
+    <text x="680" y="142" text-anchor="middle">2</text>
+    <text x="885" y="142" text-anchor="middle">3</text>
+    <text x="1180" y="142" text-anchor="end">NOMINEES / YR</text>
   </g>
   <g stroke="#ECE1C8" stroke-width="1">
-    <line x1="240" y1="130" x2="240" y2="585"/>
-    <line x1="450" y1="130" x2="450" y2="585"/>
-    <line x1="660" y1="130" x2="660" y2="585"/>
-    <line x1="870" y1="130" x2="870" y2="585"/>
+    <line x1="270" y1="148" x2="270" y2="685"/>
+    <line x1="475" y1="148" x2="475" y2="685"/>
+    <line x1="680" y1="148" x2="680" y2="685"/>
+    <line x1="885" y1="148" x2="885" y2="685"/>
   </g>
 
   <defs>
@@ -183,88 +185,85 @@ The New York Film Festival has historically just not been a path for potential B
       <line x1="0" y1="0" x2="0" y2="14" stroke="#FCFAF1" stroke-width="1" opacity="0.18"/>
     </pattern>
     <style>
-      .row-label { font-family: ui-monospace, monospace; font-size: 13px; letter-spacing: 1.2px; fill: #201A13; font-weight: 700; text-anchor: end; }
-      .avg-num { font-family: Georgia, serif; font-size: 30px; font-weight: 700; }
-      .total-txt { font-family: ui-monospace, monospace; font-size: 11px; letter-spacing: 1px; fill: #9B8E79; }
+      .row-label { font-family: ui-monospace, monospace; font-size: 15px; letter-spacing: 1.3px; fill: #201A13; font-weight: 700; text-anchor: end; }
+      .avg-num { font-family: Georgia, serif; font-size: 36px; font-weight: 700; }
+      .total-txt { font-family: ui-monospace, monospace; font-size: 13px; letter-spacing: 1px; fill: #695D4E; font-weight: 500; }
       .bar { stroke: #201A13; stroke-width: 1; }
     </style>
   </defs>
 
-  <!-- Geometry:
-       bar starts at x=240 (zero mark). 1 unit = 210px.
-       Numeric column moved RIGHT of x=900 so it doesn't overlap longest bars.
-       Cannes bar = 2.4 → 504px wide → ends at 744. Number lives at 970+. -->
+  <!-- Geometry: bar starts at x=270. 1 unit = 205px. Cannes 2.4 → 492px → ends at 762. Number col at 970. -->
 
   <!-- Cannes 2.4 -->
-  <g transform="translate(0,144)">
-    <text class="row-label" x="230" y="32">CANNES</text>
-    <rect class="bar" x="240" y="10" width="504" height="42" fill="#B7352E"/>
-    <rect x="240" y="10" width="504" height="42" fill="url(#hatch)"/>
-    <text class="avg-num" x="970" y="38" fill="#B7352E" text-anchor="middle">2.4</text>
-    <text class="total-txt" x="1015" y="38">avg · 12 total</text>
+  <g transform="translate(0,162)">
+    <text class="row-label" x="260" y="38">CANNES</text>
+    <rect class="bar" x="270" y="10" width="492" height="52" fill="#B7352E"/>
+    <rect x="270" y="10" width="492" height="52" fill="url(#hatch)"/>
+    <text class="avg-num" x="970" y="48" fill="#B7352E" text-anchor="middle">2.4</text>
+    <text class="total-txt" x="1020" y="48">avg · 12 total</text>
   </g>
 
   <!-- Venice 2.0 -->
-  <g transform="translate(0,200)">
-    <text class="row-label" x="230" y="32">VENICE</text>
-    <rect class="bar" x="240" y="10" width="420" height="42" fill="#E8B85A"/>
-    <rect x="240" y="10" width="420" height="42" fill="url(#hatch)"/>
-    <text class="avg-num" x="970" y="38" fill="#BD8428" text-anchor="middle">2.0</text>
-    <text class="total-txt" x="1015" y="38">avg · 10 total</text>
+  <g transform="translate(0,228)">
+    <text class="row-label" x="260" y="38">VENICE</text>
+    <rect class="bar" x="270" y="10" width="410" height="52" fill="#E8B85A"/>
+    <rect x="270" y="10" width="410" height="52" fill="url(#hatch)"/>
+    <text class="avg-num" x="970" y="48" fill="#BD8428" text-anchor="middle">2.0</text>
+    <text class="total-txt" x="1020" y="48">avg · 10 total</text>
   </g>
 
   <!-- Post-Aug 1.6 -->
-  <g transform="translate(0,256)">
-    <text class="row-label" x="230" y="32">POST-AUG. THEATRICAL</text>
-    <rect class="bar" x="240" y="10" width="336" height="42" fill="#BD8428"/>
-    <rect x="240" y="10" width="336" height="42" fill="url(#hatch)"/>
-    <text class="avg-num" x="970" y="38" fill="#201A13" text-anchor="middle">1.6</text>
-    <text class="total-txt" x="1015" y="38">avg · 8 total</text>
+  <g transform="translate(0,294)">
+    <text class="row-label" x="260" y="38">POST-AUG. THEATRICAL</text>
+    <rect class="bar" x="270" y="10" width="328" height="52" fill="#BD8428"/>
+    <rect x="270" y="10" width="328" height="52" fill="url(#hatch)"/>
+    <text class="avg-num" x="970" y="48" fill="#201A13" text-anchor="middle">1.6</text>
+    <text class="total-txt" x="1020" y="48">avg · 8 total</text>
   </g>
 
   <!-- Telluride 1.4 -->
-  <g transform="translate(0,312)">
-    <text class="row-label" x="230" y="32">TELLURIDE</text>
-    <rect class="bar" x="240" y="10" width="294" height="42" fill="#BD8428"/>
-    <rect x="240" y="10" width="294" height="42" fill="url(#hatch)"/>
-    <text class="avg-num" x="970" y="38" fill="#201A13" text-anchor="middle">1.4</text>
-    <text class="total-txt" x="1015" y="38">avg · 7 total</text>
+  <g transform="translate(0,360)">
+    <text class="row-label" x="260" y="38">TELLURIDE</text>
+    <rect class="bar" x="270" y="10" width="287" height="52" fill="#BD8428"/>
+    <rect x="270" y="10" width="287" height="52" fill="url(#hatch)"/>
+    <text class="avg-num" x="970" y="48" fill="#201A13" text-anchor="middle">1.4</text>
+    <text class="total-txt" x="1020" y="48">avg · 7 total</text>
   </g>
 
   <!-- Pre-Aug 1.2 -->
-  <g transform="translate(0,368)">
-    <text class="row-label" x="230" y="32">PRE-AUG. THEATRICAL</text>
-    <rect class="bar" x="240" y="10" width="252" height="42" fill="#BD8428"/>
-    <rect x="240" y="10" width="252" height="42" fill="url(#hatch)"/>
-    <text class="avg-num" x="970" y="38" fill="#201A13" text-anchor="middle">1.2</text>
-    <text class="total-txt" x="1015" y="38">avg · 6 total</text>
+  <g transform="translate(0,426)">
+    <text class="row-label" x="260" y="38">PRE-AUG. THEATRICAL</text>
+    <rect class="bar" x="270" y="10" width="246" height="52" fill="#BD8428"/>
+    <rect x="270" y="10" width="246" height="52" fill="url(#hatch)"/>
+    <text class="avg-num" x="970" y="48" fill="#201A13" text-anchor="middle">1.2</text>
+    <text class="total-txt" x="1020" y="48">avg · 6 total</text>
   </g>
 
   <!-- Sundance 0.6 -->
-  <g transform="translate(0,424)">
-    <text class="row-label" x="230" y="32">SUNDANCE</text>
-    <rect class="bar" x="240" y="10" width="126" height="42" fill="#9B8E79"/>
-    <rect x="240" y="10" width="126" height="42" fill="url(#hatch)"/>
-    <text class="avg-num" x="970" y="38" fill="#695D4E" text-anchor="middle">0.6</text>
-    <text class="total-txt" x="1015" y="38">avg · 3 total</text>
+  <g transform="translate(0,492)">
+    <text class="row-label" x="260" y="38">SUNDANCE</text>
+    <rect class="bar" x="270" y="10" width="123" height="52" fill="#9B8E79"/>
+    <rect x="270" y="10" width="123" height="52" fill="url(#hatch)"/>
+    <text class="avg-num" x="970" y="48" fill="#695D4E" text-anchor="middle">0.6</text>
+    <text class="total-txt" x="1020" y="48">avg · 3 total</text>
   </g>
 
   <!-- TIFF 0.6 -->
-  <g transform="translate(0,480)">
-    <text class="row-label" x="230" y="32">TIFF</text>
-    <rect class="bar" x="240" y="10" width="126" height="42" fill="#9B8E79"/>
-    <rect x="240" y="10" width="126" height="42" fill="url(#hatch)"/>
-    <text class="avg-num" x="970" y="38" fill="#695D4E" text-anchor="middle">0.6</text>
-    <text class="total-txt" x="1015" y="38">avg · 3 total</text>
+  <g transform="translate(0,558)">
+    <text class="row-label" x="260" y="38">TIFF</text>
+    <rect class="bar" x="270" y="10" width="123" height="52" fill="#9B8E79"/>
+    <rect x="270" y="10" width="123" height="52" fill="url(#hatch)"/>
+    <text class="avg-num" x="970" y="48" fill="#695D4E" text-anchor="middle">0.6</text>
+    <text class="total-txt" x="1020" y="48">avg · 3 total</text>
   </g>
 
   <!-- NYFF 0.2 -->
-  <g transform="translate(0,536)">
-    <text class="row-label" x="230" y="32">NYFF</text>
-    <rect class="bar" x="240" y="10" width="42" height="42" fill="#E0D4BB"/>
-    <rect x="240" y="10" width="42" height="42" fill="url(#hatch)"/>
-    <text class="avg-num" x="970" y="38" fill="#9B8E79" text-anchor="middle">0.2</text>
-    <text class="total-txt" x="1015" y="38">avg · 1 total</text>
+  <g transform="translate(0,624)">
+    <text class="row-label" x="260" y="38">NYFF</text>
+    <rect class="bar" x="270" y="10" width="41" height="52" fill="#E0D4BB"/>
+    <rect x="270" y="10" width="41" height="52" fill="url(#hatch)"/>
+    <text class="avg-num" x="970" y="48" fill="#9B8E79" text-anchor="middle">0.2</text>
+    <text class="total-txt" x="1020" y="48">avg · 1 total</text>
   </g>
 </svg>
 </figure>
@@ -288,131 +287,127 @@ New York? Do we even have to talk about it?
 And that leaves me with two Best Picture slots remaining for all films released theatrically after August, which is where Warner Bros. comes into play. Following in the footsteps of their Best Picture winner last year, **One Battle After Another**, I believe that Alejandro González Iñárritu's **Digger** will skip the fall festivals. And, of course, we have our major December release of **Dune: Part Three**. IMAX tickets have already gone on sale and sold out instantly. The hype is there, and I believe that Dune can pull off what Avatar could not and have all three installments become Best Picture nominees.
 
 <figure class="article-graphic" role="img" aria-label="2026 Best Picture predictions distributed by premiere platform">
-<svg viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
-  <text x="0" y="38" font-size="38" font-weight="700" fill="#201A13">My 2026 Best Picture <tspan font-style="italic" fill="#BD8428">lineup</tspan></text>
+<svg viewBox="0 0 1200 940" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
+  <text x="0" y="42" font-size="44" font-weight="700" fill="#201A13">My 2026 Best Picture <tspan font-style="italic" fill="#BD8428">lineup</tspan></text>
 
-  <line x1="0" y1="62" x2="1200" y2="62" stroke="#201A13" stroke-width="2"/>
-  <rect x="0" y="59" width="120" height="6" fill="#B7352E"/>
+  <line x1="0" y1="68" x2="1200" y2="68" stroke="#201A13" stroke-width="2"/>
+  <rect x="0" y="65" width="140" height="6" fill="#B7352E"/>
 
   <defs>
     <style>
       .platform-bg { fill: #201A13; }
       .platform-bg-skip { fill: #ECE1C8; }
-      .platform-txt { font-family: ui-monospace, monospace; font-size: 14px; letter-spacing: 1.6px; fill: #FCFAF1; font-weight: 700; text-anchor: middle; }
-      .platform-txt-skip { font-family: ui-monospace, monospace; font-size: 14px; letter-spacing: 1.6px; fill: #695D4E; font-weight: 700; text-anchor: middle; }
-      .count-num { font-family: Georgia, serif; font-size: 38px; font-weight: 800; fill: #201A13; text-anchor: middle; }
-      .count-num-zero { font-family: Georgia, serif; font-size: 32px; fill: #9B8E79; text-anchor: middle; }
-      .film { font-family: Georgia, serif; font-size: 20px; font-weight: 600; font-style: italic; fill: #201A13; }
-      .empty { font-family: ui-monospace, monospace; font-size: 14px; letter-spacing: 1px; fill: #9B8E79; font-style: italic; }
+      .platform-txt { font-family: ui-monospace, monospace; font-size: 17px; letter-spacing: 1.8px; fill: #FCFAF1; font-weight: 700; text-anchor: middle; }
+      .platform-txt-skip { font-family: ui-monospace, monospace; font-size: 17px; letter-spacing: 1.8px; fill: #695D4E; font-weight: 700; text-anchor: middle; }
+      .count-num { font-family: Georgia, serif; font-size: 46px; font-weight: 800; fill: #201A13; text-anchor: middle; }
+      .count-num-zero { font-family: Georgia, serif; font-size: 38px; fill: #9B8E79; text-anchor: middle; }
+      .film { font-family: Georgia, serif; font-size: 24px; font-weight: 600; font-style: italic; fill: #201A13; }
+      .empty { font-family: ui-monospace, monospace; font-size: 16px; letter-spacing: 1px; fill: #9B8E79; font-style: italic; }
       .row-border { stroke: #201A13; stroke-width: 1.5; fill: none; }
       .row-border-skip { stroke: #9B8E79; stroke-width: 1.5; stroke-dasharray: 5,4; fill: none; }
       .row-fill-active { fill: #F2EBDC; }
     </style>
   </defs>
 
-  <!-- Each row: 72px tall, platform col 0-240, count col 240-320, films col 320-1200 -->
-  <!-- All platform text uses single line via text-anchor=middle. The PRE-AUG/POST-AUG
-       rows now use two tspans on a single <text> with a slight dy to center vertically. -->
-
   <!-- 1. Sundance — skip -->
-  <g transform="translate(0,86)">
-    <rect class="row-border-skip" x="0" y="0" width="1200" height="68"/>
-    <rect class="platform-bg-skip" x="0" y="0" width="240" height="68"/>
-    <text class="platform-txt-skip" x="120" y="40">SUNDANCE</text>
-    <text class="count-num-zero" x="280" y="46">0</text>
-    <text class="empty" x="340" y="42">— No selection —</text>
+  <g transform="translate(0,92)">
+    <rect class="row-border-skip" x="0" y="0" width="1200" height="82"/>
+    <rect class="platform-bg-skip" x="0" y="0" width="260" height="82"/>
+    <text class="platform-txt-skip" x="130" y="48">SUNDANCE</text>
+    <text class="count-num-zero" x="310" y="56">0</text>
+    <text class="empty" x="380" y="50">— No selection —</text>
   </g>
 
   <!-- 2. Cannes — 2 -->
-  <g transform="translate(0,166)">
-    <rect class="row-fill-active" x="0" y="0" width="1200" height="68"/>
-    <rect class="row-border" x="0" y="0" width="1200" height="68"/>
-    <rect class="platform-bg" x="0" y="0" width="240" height="68"/>
-    <text class="platform-txt" x="120" y="40">CANNES</text>
-    <line x1="240" y1="0" x2="240" y2="68" stroke="#201A13" stroke-width="1.5"/>
-    <line x1="320" y1="0" x2="320" y2="68" stroke="#201A13" stroke-width="1.5"/>
-    <rect x="240" y="0" width="80" height="68" fill="#E8B85A"/>
-    <text class="count-num" x="280" y="48">2</text>
-    <text class="film" x="340" y="30">Fjord</text>
-    <text class="film" x="340" y="58">The Black Ball</text>
+  <g transform="translate(0,186)">
+    <rect class="row-fill-active" x="0" y="0" width="1200" height="82"/>
+    <rect class="row-border" x="0" y="0" width="1200" height="82"/>
+    <rect class="platform-bg" x="0" y="0" width="260" height="82"/>
+    <text class="platform-txt" x="130" y="48">CANNES</text>
+    <line x1="260" y1="0" x2="260" y2="82" stroke="#201A13" stroke-width="1.5"/>
+    <line x1="360" y1="0" x2="360" y2="82" stroke="#201A13" stroke-width="1.5"/>
+    <rect x="260" y="0" width="100" height="82" fill="#E8B85A"/>
+    <text class="count-num" x="310" y="58">2</text>
+    <text class="film" x="380" y="36">Fjord</text>
+    <text class="film" x="380" y="68">The Black Ball</text>
   </g>
 
-  <!-- 3. Pre-Aug — 2 (centered platform label) -->
-  <g transform="translate(0,246)">
-    <rect class="row-fill-active" x="0" y="0" width="1200" height="68"/>
-    <rect class="row-border" x="0" y="0" width="1200" height="68"/>
-    <rect class="platform-bg" x="0" y="0" width="240" height="68"/>
-    <text class="platform-txt" x="120" y="32">PRE-AUG.</text>
-    <text class="platform-txt" x="120" y="52">THEATRICAL</text>
-    <line x1="240" y1="0" x2="240" y2="68" stroke="#201A13" stroke-width="1.5"/>
-    <line x1="320" y1="0" x2="320" y2="68" stroke="#201A13" stroke-width="1.5"/>
-    <rect x="240" y="0" width="80" height="68" fill="#E8B85A"/>
-    <text class="count-num" x="280" y="48">2</text>
-    <text class="film" x="340" y="30">Project Hail Mary</text>
-    <text class="film" x="340" y="58">The Odyssey</text>
+  <!-- 3. Pre-Aug — 2 -->
+  <g transform="translate(0,280)">
+    <rect class="row-fill-active" x="0" y="0" width="1200" height="82"/>
+    <rect class="row-border" x="0" y="0" width="1200" height="82"/>
+    <rect class="platform-bg" x="0" y="0" width="260" height="82"/>
+    <text class="platform-txt" x="130" y="38">PRE-AUG.</text>
+    <text class="platform-txt" x="130" y="62">THEATRICAL</text>
+    <line x1="260" y1="0" x2="260" y2="82" stroke="#201A13" stroke-width="1.5"/>
+    <line x1="360" y1="0" x2="360" y2="82" stroke="#201A13" stroke-width="1.5"/>
+    <rect x="260" y="0" width="100" height="82" fill="#E8B85A"/>
+    <text class="count-num" x="310" y="58">2</text>
+    <text class="film" x="380" y="36">Project Hail Mary</text>
+    <text class="film" x="380" y="68">The Odyssey</text>
   </g>
 
   <!-- 4. Venice — 2 -->
-  <g transform="translate(0,326)">
-    <rect class="row-fill-active" x="0" y="0" width="1200" height="68"/>
-    <rect class="row-border" x="0" y="0" width="1200" height="68"/>
-    <rect class="platform-bg" x="0" y="0" width="240" height="68"/>
-    <text class="platform-txt" x="120" y="40">VENICE</text>
-    <line x1="240" y1="0" x2="240" y2="68" stroke="#201A13" stroke-width="1.5"/>
-    <line x1="320" y1="0" x2="320" y2="68" stroke="#201A13" stroke-width="1.5"/>
-    <rect x="240" y="0" width="80" height="68" fill="#E8B85A"/>
-    <text class="count-num" x="280" y="48">2</text>
-    <text class="film" x="340" y="30">Wild Horse Nine</text>
-    <text class="film" x="340" y="58">The Adventures of Cliff Booth</text>
+  <g transform="translate(0,374)">
+    <rect class="row-fill-active" x="0" y="0" width="1200" height="82"/>
+    <rect class="row-border" x="0" y="0" width="1200" height="82"/>
+    <rect class="platform-bg" x="0" y="0" width="260" height="82"/>
+    <text class="platform-txt" x="130" y="48">VENICE</text>
+    <line x1="260" y1="0" x2="260" y2="82" stroke="#201A13" stroke-width="1.5"/>
+    <line x1="360" y1="0" x2="360" y2="82" stroke="#201A13" stroke-width="1.5"/>
+    <rect x="260" y="0" width="100" height="82" fill="#E8B85A"/>
+    <text class="count-num" x="310" y="58">2</text>
+    <text class="film" x="380" y="36">Wild Horse Nine</text>
+    <text class="film" x="380" y="68">The Adventures of Cliff Booth</text>
   </g>
 
   <!-- 5. Telluride — 2 -->
-  <g transform="translate(0,406)">
-    <rect class="row-fill-active" x="0" y="0" width="1200" height="68"/>
-    <rect class="row-border" x="0" y="0" width="1200" height="68"/>
-    <rect class="platform-bg" x="0" y="0" width="240" height="68"/>
-    <text class="platform-txt" x="120" y="40">TELLURIDE</text>
-    <line x1="240" y1="0" x2="240" y2="68" stroke="#201A13" stroke-width="1.5"/>
-    <line x1="320" y1="0" x2="320" y2="68" stroke="#201A13" stroke-width="1.5"/>
-    <rect x="240" y="0" width="80" height="68" fill="#E8B85A"/>
-    <text class="count-num" x="280" y="48">2</text>
-    <text class="film" x="340" y="30">Sense and Sensibility</text>
-    <text class="film" x="340" y="58">Behemoth!</text>
+  <g transform="translate(0,468)">
+    <rect class="row-fill-active" x="0" y="0" width="1200" height="82"/>
+    <rect class="row-border" x="0" y="0" width="1200" height="82"/>
+    <rect class="platform-bg" x="0" y="0" width="260" height="82"/>
+    <text class="platform-txt" x="130" y="48">TELLURIDE</text>
+    <line x1="260" y1="0" x2="260" y2="82" stroke="#201A13" stroke-width="1.5"/>
+    <line x1="360" y1="0" x2="360" y2="82" stroke="#201A13" stroke-width="1.5"/>
+    <rect x="260" y="0" width="100" height="82" fill="#E8B85A"/>
+    <text class="count-num" x="310" y="58">2</text>
+    <text class="film" x="380" y="36">Sense and Sensibility</text>
+    <text class="film" x="380" y="68">Behemoth!</text>
   </g>
 
   <!-- 6. TIFF — skip -->
-  <g transform="translate(0,486)">
-    <rect class="row-border-skip" x="0" y="0" width="1200" height="68"/>
-    <rect class="platform-bg-skip" x="0" y="0" width="240" height="68"/>
-    <text class="platform-txt-skip" x="120" y="40">TIFF</text>
-    <text class="count-num-zero" x="280" y="46">0</text>
-    <text class="empty" x="340" y="42">— No selection —</text>
+  <g transform="translate(0,562)">
+    <rect class="row-border-skip" x="0" y="0" width="1200" height="82"/>
+    <rect class="platform-bg-skip" x="0" y="0" width="260" height="82"/>
+    <text class="platform-txt-skip" x="130" y="48">TIFF</text>
+    <text class="count-num-zero" x="310" y="56">0</text>
+    <text class="empty" x="380" y="50">— No selection —</text>
   </g>
 
   <!-- 7. NYFF — skip -->
-  <g transform="translate(0,566)">
-    <rect class="row-border-skip" x="0" y="0" width="1200" height="68"/>
-    <rect class="platform-bg-skip" x="0" y="0" width="240" height="68"/>
-    <text class="platform-txt-skip" x="120" y="40">NYFF</text>
-    <text class="count-num-zero" x="280" y="46">0</text>
-    <text class="empty" x="340" y="42">— No selection —</text>
+  <g transform="translate(0,656)">
+    <rect class="row-border-skip" x="0" y="0" width="1200" height="82"/>
+    <rect class="platform-bg-skip" x="0" y="0" width="260" height="82"/>
+    <text class="platform-txt-skip" x="130" y="48">NYFF</text>
+    <text class="count-num-zero" x="310" y="56">0</text>
+    <text class="empty" x="380" y="50">— No selection —</text>
   </g>
 
   <!-- 8. Post-Aug — 2 -->
-  <g transform="translate(0,646)">
-    <rect class="row-fill-active" x="0" y="0" width="1200" height="68"/>
-    <rect class="row-border" x="0" y="0" width="1200" height="68"/>
-    <rect class="platform-bg" x="0" y="0" width="240" height="68"/>
-    <text class="platform-txt" x="120" y="32">POST-AUG.</text>
-    <text class="platform-txt" x="120" y="52">THEATRICAL</text>
-    <line x1="240" y1="0" x2="240" y2="68" stroke="#201A13" stroke-width="1.5"/>
-    <line x1="320" y1="0" x2="320" y2="68" stroke="#201A13" stroke-width="1.5"/>
-    <rect x="240" y="0" width="80" height="68" fill="#E8B85A"/>
-    <text class="count-num" x="280" y="48">2</text>
-    <text class="film" x="340" y="30">Digger</text>
-    <text class="film" x="340" y="58">Dune: Part Three</text>
+  <g transform="translate(0,750)">
+    <rect class="row-fill-active" x="0" y="0" width="1200" height="82"/>
+    <rect class="row-border" x="0" y="0" width="1200" height="82"/>
+    <rect class="platform-bg" x="0" y="0" width="260" height="82"/>
+    <text class="platform-txt" x="130" y="38">POST-AUG.</text>
+    <text class="platform-txt" x="130" y="62">THEATRICAL</text>
+    <line x1="260" y1="0" x2="260" y2="82" stroke="#201A13" stroke-width="1.5"/>
+    <line x1="360" y1="0" x2="360" y2="82" stroke="#201A13" stroke-width="1.5"/>
+    <rect x="260" y="0" width="100" height="82" fill="#E8B85A"/>
+    <text class="count-num" x="310" y="58">2</text>
+    <text class="film" x="380" y="36">Digger</text>
+    <text class="film" x="380" y="68">Dune: Part Three</text>
   </g>
 
-  <text x="1200" y="800" text-anchor="end" font-family="ui-monospace, monospace" font-size="12" letter-spacing="1.2" fill="#9B8E79">DYLAN MCKERCHER · POST-CANNES 2026</text>
+  <text x="1200" y="918" text-anchor="end" font-family="ui-monospace, monospace" font-size="13" letter-spacing="1.3" fill="#9B8E79" font-weight="600">DYLAN MCKERCHER · POST-CANNES 2026</text>
 </svg>
 </figure>
