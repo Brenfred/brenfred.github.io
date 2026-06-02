@@ -70,7 +70,7 @@ As we dive into the fall, we have the **Venice Film Festival**. Pre-pandemic, on
       .films { font-family: Georgia, serif; font-size: 14px; font-style: italic; text-anchor: middle; font-weight: 500; }
       .films-sm { font-family: Georgia, serif; font-size: 12px; font-style: italic; text-anchor: middle; font-weight: 500; }
       .f-odd  { fill: #201A13; }
-      .f-even { fill: #7A6E5B; }
+      .f-even { fill: #74695B; }
       .rowsep { stroke: #ECE1C8; stroke-width: 1; }
     </style>
   </defs>
@@ -92,7 +92,7 @@ As we dive into the fall, we have the **Venice Film Festival**. Pre-pandemic, on
   <text class="ct ct-0" x="230" y="345">0</text>
   <text class="ct ct-3" x="370" y="330">3</text><text class="films-sm f-odd" x="370" y="358">Elvis</text><text class="films-sm f-even" x="370" y="373">Top Gun: Maverick</text><text class="films-sm f-odd" x="370" y="388">Triangle of Sadness</text>
   <text class="ct ct-1" x="510" y="330">1</text><text class="films-sm f-odd" x="510" y="360">Everything Everywhere</text><text class="films-sm f-odd" x="510" y="375">All at Once</text>
-  <text class="ct ct-2" x="650" y="330">2</text><text class="films-sm f-odd" x="650" y="358">The Banshees of Inisherin</text><text class="films-sm f-even" x="650" y="375">Tár</text>
+  <text class="ct ct-2" x="650" y="330">2</text><text class="films-sm f-odd" x="650" y="356">The Banshees</text><text class="films-sm f-odd" x="650" y="371">of Inisherin</text><text class="films-sm f-even" x="650" y="389">Tár</text>
   <text class="ct ct-1" x="790" y="330">1</text><text class="films-sm f-odd" x="790" y="365">Women Talking</text>
   <text class="ct ct-2" x="930" y="330">2</text><text class="films-sm f-odd" x="930" y="356">All Quiet on</text><text class="films-sm f-odd" x="930" y="371">the Western Front</text><text class="films-sm f-even" x="930" y="389">The Fabelmans</text>
   <text class="ct ct-0" x="1065" y="345">0</text>
