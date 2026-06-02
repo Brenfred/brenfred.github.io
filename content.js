@@ -283,33 +283,99 @@
   }
 
   function mdToHtml(body) {
-    // Split into blocks (separated by blank lines). For each block, decide
-    // whether it's raw HTML (passed through) or markdown text (escaped +
-    // paragraph-wrapped + inline-formatted).
+    // Parser with two states: text (markdown) and raw (passthrough HTML/SVG).
+    // We split the body into "blocks" separated by blank lines, BUT if we're
+    // currently inside an open raw-HTML element (figure, svg, div, table,
+    // etc.), blank lines don't terminate the block — we keep accumulating
+    // until we find the matching close tag.
     //
-    // Raw HTML passthrough: any block whose first non-whitespace line begins
-    // with a block-level tag — figure, svg, div, section, table, iframe,
-    // blockquote, picture, video, audio, ul, ol, h1-h6 — is emitted verbatim.
-    // This is the escape hatch for embedded graphics/data viz inside articles.
-    var blocks = body.split(/\n\s*\n/);
-    var BLOCK_TAG_RE = /^\s*<(figure|svg|div|section|table|iframe|blockquote|picture|video|audio|ul|ol|h[1-6])(\s|>)/i;
+    // This lets writers leave blank lines inside SVG for readability without
+    // breaking the passthrough.
+    var OPEN_RAW_RE  = /^\s*<(figure|svg|div|section|table|iframe|blockquote|picture|video|audio|ul|ol|h[1-6])(\s|>)/i;
+    var lines = body.split('\n');
+    var blocks = [];
+    var current = [];
+    var rawTag = null;  // name of the open passthrough tag, if any
+    var depthOfRaw = 0; // open-count of that tag (to handle nested)
 
-    return blocks
-      .filter(function (b) { return b.trim().length > 0; })
-      .map(function (block) {
-        if (BLOCK_TAG_RE.test(block)) {
-          // Raw HTML — emit unchanged. Trust the author since this is a
-          // single-editor CMS, not user-generated content.
-          return block;
+    function flush() {
+      if (current.length === 0) return;
+      var text = current.join('\n');
+      if (text.trim().length > 0) blocks.push({ raw: rawTag !== null, text: text });
+      current = [];
+    }
+
+    for (var i = 0; i < lines.length; i++) {
+      var line = lines[i];
+
+      if (rawTag === null) {
+        // Not in a raw block. A blank line terminates the current text block.
+        if (line.trim() === '') {
+          flush();
+          continue;
         }
-        // Markdown text → escaped, formatted, wrapped in <p>
-        var html = esc(block);
-        html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
-        html = html.replace(/(^|[^*])\*([^*]+)\*([^*]|$)/g, '$1<em>$2</em>$3');
-        html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
-        return '<p>' + html.replace(/\n/g, ' ') + '</p>';
-      })
-      .join('');
+        // Does this line start a new raw block?
+        var openMatch = line.match(OPEN_RAW_RE);
+        if (openMatch && current.length === 0) {
+          // Start of a raw passthrough block
+          rawTag = openMatch[1].toLowerCase();
+          // Count open vs close occurrences of THIS tag on this line
+          var openCount = countTagOccurrences(line, rawTag, true);
+          var closeCount = countTagOccurrences(line, rawTag, false);
+          depthOfRaw = openCount - closeCount;
+          current.push(line);
+          // If the raw block opens and closes on this same line, flush it now
+          if (depthOfRaw <= 0) {
+            flush();
+            rawTag = null;
+            depthOfRaw = 0;
+          }
+          continue;
+        }
+        // Regular markdown text line
+        current.push(line);
+      } else {
+        // Inside an open raw block. Accumulate the line regardless of blanks.
+        current.push(line);
+        depthOfRaw += countTagOccurrences(line, rawTag, true);
+        depthOfRaw -= countTagOccurrences(line, rawTag, false);
+        if (depthOfRaw <= 0) {
+          // Found the matching close — flush
+          flush();
+          rawTag = null;
+          depthOfRaw = 0;
+        }
+      }
+    }
+    flush(); // catch trailing content
+
+    return blocks.map(function (b) {
+      if (b.raw) return b.text;
+      // Markdown text → escape, format, wrap in <p>
+      var html = esc(b.text);
+      html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+      html = html.replace(/(^|[^*])\*([^*]+)\*([^*]|$)/g, '$1<em>$2</em>$3');
+      html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2">$1</a>');
+      return '<p>' + html.replace(/\n/g, ' ') + '</p>';
+    }).join('');
+  }
+
+  // Count opening or closing occurrences of a tag in a line.
+  // Treats self-closing tags (<tag .../>) as both open and close (no-op for depth).
+  function countTagOccurrences(line, tag, opening) {
+    // Opening: <tag ...> or <tag>, but NOT <tag .../>
+    // Closing: </tag>
+    if (opening) {
+      // Match <tag with word boundary; exclude self-closing
+      var openRe = new RegExp('<' + tag + '(?:\\s[^>]*?)?>', 'gi');
+      var selfRe = new RegExp('<' + tag + '(?:\\s[^>]*?)?/>', 'gi');
+      var opens = (line.match(openRe) || []).length;
+      var selfs = (line.match(selfRe) || []).length;
+      return opens - selfs;
+    } else {
+      var closeRe = new RegExp('</' + tag + '\\s*>', 'gi');
+      return (line.match(closeRe) || []).length;
+    }
   }
 
   // ---- movement arrows ----------------------------------------------------
