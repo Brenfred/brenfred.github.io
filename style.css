@@ -1287,7 +1287,8 @@ body::before {
    the column gutters, breaks out subtly with a slim ink border and a
    touch of the diagonal stadium-texture background. */
 .prose figure.article-graphic {
-  margin: 2.5rem 0;
+  margin: 2.5rem auto;
+  max-width: 88%;
   padding: 1.75rem 1.5rem 1.5rem;
   border: 2px solid var(--ink);
   background: var(--paper);
@@ -1320,7 +1321,7 @@ body::before {
   display: block;
   height: auto;
   min-width: 900px;   /* never compress below this — preserves legibility on mobile */
-  width: 1400px;      /* natural width — full breathing room within wider canvas */
+  width: 1300px;      /* natural width — fits desktop article column at 100% */
   max-width: 100%;    /* shrinks to fit on narrower viewports, scrolls only on mobile */
 }
 .prose figure.article-graphic figcaption {
@@ -1339,9 +1340,9 @@ body::before {
   color: var(--gold);
 }
 @media (max-width: 700px) {
-  .prose figure.article-graphic { padding: 1.25rem 1rem 1rem; margin: 2rem 0; }
+  .prose figure.article-graphic { padding: 1.25rem 1rem 1rem; margin: 2rem auto; max-width: 100%; }
   /* On mobile, scroll-variant graphics fit the visible column; the inner
-     SVG (900px wide) horizontally scrolls within the figure. */
+     SVG (1400px wide) horizontally scrolls within the figure. */
   .prose figure.article-graphic--scroll { padding: 0; max-width: 100%; }
   .prose figure.article-graphic--scroll .article-graphic__scroll {
     padding: 1rem 0.85rem 0.85rem;
