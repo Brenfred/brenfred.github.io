@@ -1,7 +1,6 @@
 ---
 type: discussion
-title: "The Best Picture Blueprint: Where Oscar Nominees Premiere and What It
-  Means for 2026"
+title: "The Best Picture Blueprint: Where Oscar Nominees Premiere and What It Means for 2026"
 film: ""
 director: ""
 studio: ""
@@ -10,31 +9,28 @@ genre: ""
 rating: ""
 stance: ""
 stanceLabel: ""
-posterSlug: festival-main
+posterSlug: ""
 writer: ""
 writers:
   - dylan-mckercher
 publishedDate: June 1, 2026
-deck: By tracking where every Best Picture nominee premiered since 2021, we can
-  identify the festival pathways most likely to produce the next Oscar
-  contenders.
-excerpt: By tracking where every Best Picture nominee premiered since 2021, we
-  can identify the festival pathways most likely to produce the next Oscar
-  contenders.
-heroImage: /posters/festival-header.jpg
+deck: By tracking where every Best Picture nominee premiered since 2021, we can identify the festival pathways most likely to produce the next Oscar contenders.
+excerpt: By tracking where every Best Picture nominee premiered since 2021, we can identify the festival pathways most likely to produce the next Oscar contenders.
+heroImage: ""
 verdictNote: ""
-prospects: []
 isHero: false
 tags: []
 categoryTags: []
+prospects: []
 ---
+
 As Oscar enthusiasts, we all strive to get that perfect "10 for 10" Best Picture lineup as early in the season as possible. Some say predicting awards before we hit the fall season is pointless because you don't know anything about these movies. "No one has seen these films, so what are you even predicting based on?" Now, we might have no intel to use, but that's exactly where awards season enthusiasts and addicts like us thrive. Anyone can make predictions when you have seen precursors and know which films have a 90 on Metacritic and which made a bajillion dollars at the box office, but where the real fun of predicting comes from is when you're flying blind. All you have is word-of-mouth rumors, all you have is looking at filmmakers' past track records and experiences…
 
 But what if I told you there's another avenue to help perfect your Best Picture predictions early in the season? Because while, yes, you can look at filmmakers, studios, or even the actors involved in a project, one aspect I think is severely underrated in awards-season prognostication is *where* Best Picture nominees premiere throughout the year. With the Cannes Film Festival just recently wrapping up, we've heard about so many great titles that we are all looking forward to, but how many of these films truly contend for a Best Picture nomination? We saw last year that Neon had three, potentially even four contenders out of Cannes, but they only managed two in the end. If we look further back, since 2021, the Cannes Film Festival has routinely gotten at least one, if not two or three, Best Picture nominees each year. So I wanted to craft this article examining the major platforms where films can premiere throughout the year and how often each one leads to a Best Picture nomination.
 
-Before we dive into the stats, just to give some background, this analysis will be focused on the period from the 2021 Oscar season, when **Coda** stormed the race at the last minute, upsetting **The Power of the Dog** at SAG, PGA, and, of course, the Oscars. I've decided to start my research from 2021 because that was the first year of the fixed 10-film Best Picture lineup, and because the pre-pandemic awards landscape was completely different than today's. Specifically, many people point to **Parasite**'s historic win in 2019 as broadening the Academy's taste for international features and for allowing more types of cinema and genre films to be represented at the Academy Awards.
+Before we dive into the stats, just to give some background, this analysis will be focused on the period from the 2021 Oscar season, when **CODA** stormed the race at the last minute, upsetting **The Power of the Dog** at SAG, PGA, and, of course, the Oscars. I've decided to start my research from 2021 because that was the first year of the fixed 10-film Best Picture lineup, and because the pre-pandemic awards landscape was completely different than today's. Specifically, many people point to **Parasite**'s historic win in 2019 as broadening the Academy's taste for international features and for allowing more types of cinema and genre films to be represented at the Academy Awards.
 
-The first type of premiere that we'll be covering is the **Sundance Film Festival**. Although small in size, this festival can often pack an emotional punch with its major contenders. Over the last few years, we've seen films like **Coda** make the run from the beginning of the season to win Best Picture, but also films like **Train Dreams**, where most predictors don't take them seriously until critics groups. Next, we will be looking at the **Cannes Film Festival**. Cannes is arguably the most important festival in the modern era, in large part because of **Parasite**'s historic victory. Every season since has produced at least one Best Picture nominee, and oftentimes more. Then we'll look at films released theatrically before September. These are films that do not premiere at film festivals and are often major blockbusters that hit the cultural zeitgeist and remain in the conversation throughout the year.
+The first type of premiere that we'll be covering is the **Sundance Film Festival**. Although small in size, this festival can often pack an emotional punch with its major contenders. Over the last few years, we've seen films like **CODA** make the run from the beginning of the season to win Best Picture, but also films like **Train Dreams**, where most predictors don't take them seriously until critics groups. Next, we will be looking at the **Cannes Film Festival**. Cannes is arguably the most important festival in the modern era, in large part because of **Parasite**'s historic victory. Every season since has produced at least one Best Picture nominee, and oftentimes more. Then we'll look at films released theatrically before September. These are films that do not premiere at film festivals and are often major blockbusters that hit the cultural zeitgeist and remain in the conversation throughout the year.
 
 As we dive into the fall, we have the **Venice Film Festival**. Pre-pandemic, one could say this was the most integral film festival for Academy Awards prospects, but with Cannes' emergence, Venice has taken a backseat. However, Venice has remained quite consistent in producing Best Picture nominees. Next, we have various North American film festivals. These include **Telluride**, **Toronto International Film Festival (TIFF)**, and the **New York Film Festival (NYFF)**. This may be surprising to some of you, but Telluride has recently statistically surpassed TIFF as a platform for premieres, even though TIFF remains more culturally relevant. NYFF is a fest that many Oscar prognosticators liken to a death sentence for world premieres. And finally, we have films released theatrically between September and December. These films are generally major holiday spectacles and films that attempt to make a major splash right before the nomination period opens.
 
@@ -51,13 +47,13 @@ As we dive into the fall, we have the **Venice Film Festival**. Pre-pandemic, on
     <text x="90" y="140" fill="#201A13">YEAR</text>
     <text x="255" y="140">SUNDANCE</text>
     <text x="400" y="140">CANNES</text>
-    <text x="540" y="132">PRE-AUG</text>
+    <text x="540" y="132">PRE-SEPT.</text>
     <text x="540" y="148">THEATRICAL</text>
     <text x="685" y="140">VENICE</text>
     <text x="830" y="140">TELLURIDE</text>
     <text x="975" y="140">TIFF</text>
     <text x="1120" y="140">NYFF</text>
-    <text x="1275" y="132">POST-AUG</text>
+    <text x="1275" y="132">POST-SEPT.</text>
     <text x="1275" y="148">THEATRICAL</text>
   </g>
   <line x1="0" y1="164" x2="1400" y2="164" stroke="#201A13" stroke-width="2"/>
@@ -72,10 +68,12 @@ As we dive into the fall, we have the **Venice Film Festival**. Pre-pandemic, on
       .ct-4 { font-size: 40px; fill: #B7352E; font-weight: 800; }
       .ct-0 { font-size: 32px; fill: #9B8E79; }
       .films { font-family: Georgia, serif; font-size: 15px; font-style: italic; fill: #695D4E; text-anchor: middle; font-weight: 500; }
+      .films-sm { font-family: Georgia, serif; font-size: 13px; font-style: italic; fill: #695D4E; text-anchor: middle; font-weight: 500; }
       .rowsep { stroke: #ECE1C8; stroke-width: 1; }
     </style>
   </defs>
 
+  <!-- 2021 -->
   <text class="yr" x="90" y="225">2021</text>
   <text class="ct ct-1" x="255" y="215">1</text><text class="films" x="255" y="244">CODA</text>
   <text class="ct ct-1" x="400" y="215">1</text><text class="films" x="400" y="244">Drive My Car</text>
@@ -84,23 +82,25 @@ As we dive into the fall, we have the **Venice Film Festival**. Pre-pandemic, on
   <text class="ct ct-2" x="830" y="215">2</text><text class="films" x="830" y="237">Belfast</text><text class="films" x="830" y="254">King Richard</text>
   <text class="ct ct-0" x="975" y="225">0</text>
   <text class="ct ct-0" x="1120" y="225">0</text>
-  <text class="ct ct-4" x="1275" y="213">4</text><text class="films" x="1275" y="233">Don't Look Up</text><text class="films" x="1275" y="248">Licorice Pizza</text><text class="films" x="1275" y="263">Nightmare Alley · WSS</text>
+  <text class="ct ct-4" x="1275" y="213">4</text><text class="films-sm" x="1275" y="230">Don't Look Up</text><text class="films-sm" x="1275" y="244">Licorice Pizza</text><text class="films-sm" x="1275" y="258">Nightmare Alley</text><text class="films-sm" x="1275" y="272">West Side Story</text>
   <line class="rowsep" x1="0" y1="285" x2="1400" y2="285"/>
 
+  <!-- 2022 -->
   <text class="yr" x="90" y="335">2022</text>
   <text class="ct ct-0" x="255" y="335">0</text>
-  <text class="ct ct-3" x="400" y="325">3</text><text class="films" x="400" y="347">Elvis</text><text class="films" x="400" y="364">TG: Maverick</text><text class="films" x="400" y="381">Triangle of Sadness</text>
-  <text class="ct ct-1" x="540" y="325">1</text><text class="films" x="540" y="354">EEAAO (SXSW)</text>
+  <text class="ct ct-3" x="400" y="325">3</text><text class="films-sm" x="400" y="345">Elvis</text><text class="films-sm" x="400" y="361">Top Gun: Maverick</text><text class="films-sm" x="400" y="377">Triangle of Sadness</text>
+  <text class="ct ct-1" x="540" y="325">1</text><text class="films" x="540" y="354">EEAAO</text>
   <text class="ct ct-2" x="685" y="325">2</text><text class="films" x="685" y="347">Banshees</text><text class="films" x="685" y="364">Tár</text>
   <text class="ct ct-1" x="830" y="325">1</text><text class="films" x="830" y="354">Women Talking</text>
   <text class="ct ct-2" x="975" y="325">2</text><text class="films" x="975" y="347">All Quiet</text><text class="films" x="975" y="364">Fabelmans</text>
   <text class="ct ct-0" x="1120" y="335">0</text>
-  <text class="ct ct-1" x="1275" y="325">1</text><text class="films" x="1275" y="347">Avatar:</text><text class="films" x="1275" y="364">Way of Water</text>
+  <text class="ct ct-1" x="1275" y="325">1</text><text class="films-sm" x="1275" y="354">Avatar: Way of Water</text>
   <line class="rowsep" x1="0" y1="400" x2="1400" y2="400"/>
 
+  <!-- 2023 -->
   <text class="yr" x="90" y="450">2023</text>
   <text class="ct ct-1" x="255" y="440">1</text><text class="films" x="255" y="469">Past Lives</text>
-  <text class="ct ct-3" x="400" y="440">3</text><text class="films" x="400" y="462">Anatomy of a Fall</text><text class="films" x="400" y="479">KOTFM</text><text class="films" x="400" y="496">Zone of Interest</text>
+  <text class="ct ct-3" x="400" y="440">3</text><text class="films-sm" x="400" y="460">Anatomy of a Fall</text><text class="films-sm" x="400" y="476">Killers of the Flower Moon</text><text class="films-sm" x="400" y="492">Zone of Interest</text>
   <text class="ct ct-2" x="540" y="440">2</text><text class="films" x="540" y="462">Barbie</text><text class="films" x="540" y="479">Oppenheimer</text>
   <text class="ct ct-2" x="685" y="440">2</text><text class="films" x="685" y="462">Maestro</text><text class="films" x="685" y="479">Poor Things</text>
   <text class="ct ct-1" x="830" y="440">1</text><text class="films" x="830" y="469">The Holdovers</text>
@@ -109,26 +109,28 @@ As we dive into the fall, we have the **Venice Film Festival**. Pre-pandemic, on
   <text class="ct ct-0" x="1275" y="450">0</text>
   <line class="rowsep" x1="0" y1="515" x2="1400" y2="515"/>
 
+  <!-- 2024 -->
   <text class="yr" x="90" y="565">2024</text>
   <text class="ct ct-0" x="255" y="565">0</text>
-  <text class="ct ct-3" x="400" y="555">3</text><text class="films" x="400" y="577">Anora</text><text class="films" x="400" y="594">Emilia Pérez</text><text class="films" x="400" y="611">The Substance</text>
+  <text class="ct ct-3" x="400" y="555">3</text><text class="films-sm" x="400" y="575">Anora</text><text class="films-sm" x="400" y="591">Emilia Pérez</text><text class="films-sm" x="400" y="607">The Substance</text>
   <text class="ct ct-1" x="540" y="555">1</text><text class="films" x="540" y="584">Dune: Part Two</text>
   <text class="ct ct-2" x="685" y="555">2</text><text class="films" x="685" y="577">The Brutalist</text><text class="films" x="685" y="594">I'm Still Here</text>
   <text class="ct ct-2" x="830" y="555">2</text><text class="films" x="830" y="577">Conclave</text><text class="films" x="830" y="594">Nickel Boys</text>
   <text class="ct ct-0" x="975" y="565">0</text>
   <text class="ct ct-0" x="1120" y="565">0</text>
-  <text class="ct ct-2" x="1275" y="555">2</text><text class="films" x="1275" y="577">A Complete Unknown</text><text class="films" x="1275" y="594">Wicked</text>
+  <text class="ct ct-2" x="1275" y="555">2</text><text class="films-sm" x="1275" y="577">A Complete Unknown</text><text class="films-sm" x="1275" y="593">Wicked</text>
   <line class="rowsep" x1="0" y1="630" x2="1400" y2="630"/>
 
+  <!-- 2025 -->
   <text class="yr" x="90" y="680">2025</text>
   <text class="ct ct-1" x="255" y="670">1</text><text class="films" x="255" y="699">Train Dreams</text>
-  <text class="ct ct-2" x="400" y="670">2</text><text class="films" x="400" y="692">Sentimental Value</text><text class="films" x="400" y="709">Secret Agent</text>
-  <text class="ct ct-2" x="540" y="670">2</text><text class="films" x="540" y="692">Sinners</text><text class="films" x="540" y="709">F1</text>
+  <text class="ct ct-2" x="400" y="670">2</text><text class="films-sm" x="400" y="692">Secret Agent</text><text class="films-sm" x="400" y="708">Sentimental Value</text>
+  <text class="ct ct-2" x="540" y="670">2</text><text class="films" x="540" y="692">F1</text><text class="films" x="540" y="709">Sinners</text>
   <text class="ct ct-2" x="685" y="670">2</text><text class="films" x="685" y="692">Bugonia</text><text class="films" x="685" y="709">Frankenstein</text>
   <text class="ct ct-1" x="830" y="670">1</text><text class="films" x="830" y="699">Hamnet</text>
   <text class="ct ct-0" x="975" y="680">0</text>
   <text class="ct ct-1" x="1120" y="670">1</text><text class="films" x="1120" y="699">Marty Supreme</text>
-  <text class="ct ct-1" x="1275" y="670">1</text><text class="films" x="1275" y="692">One Battle</text><text class="films" x="1275" y="709">After Another</text>
+  <text class="ct ct-1" x="1275" y="670">1</text><text class="films-sm" x="1275" y="699">One Battle After Another</text>
 
   <line x1="0" y1="745" x2="1400" y2="745" stroke="#201A13" stroke-width="2"/>
 
@@ -160,7 +162,7 @@ The Telluride Film Festival has been a sleeper hit with the Academy lately. Over
 
 Speaking of TIFF, it has been on a downward trajectory recently, only racking up 0–1 nominees per year in this span. I currently see **Being Heumann**, **Misty Green**, **No One Cares**, **Prima Facie**, **Primetime**, **The Social Reckoning**, and **Wildwood** as our shiny TIFF premieres competing for the illustrious PCA slots.
 
-The New York Film Festival has historically just not been a path for potential Best Picture nominees, with only **Marty Supreme** making the cut. We have seen the festival be a failed launching pad for films such as **Is This Thing On?**, **She Said**, **Till**, and **The Tragedy of Macbeth** over the last few years. That leads us into all the theatrical releases after September. The stats say that, on average, 1–2 films make it into Best Picture, but those numbers are heavily skewed by 2021, when four post-August releases made it into Best Picture. Recently, we've been seeing only one or two post-August films make the cut, and, given reports that Warner Bros. is no longer interested in the festival game, I think Alejandro González Iñárritu's **Digger** and Denis Villeneuve's **Dune: Part Three** emerge as strong contenders to fill this slot, but another possible contender includes Robert Eggers' **Werwulf**.
+The New York Film Festival has historically just not been a path for potential Best Picture nominees, with only **Marty Supreme** making the cut. We have seen the festival be a failed launching pad for films such as **Is This Thing On?**, **She Said**, **Till**, and **The Tragedy of Macbeth** over the last few years. That leads us into all the theatrical releases after August. The stats say that, on average, 1–2 films make it into Best Picture, but those numbers are heavily skewed by 2021, when four post-August releases made it into Best Picture. Recently, we've been seeing only one or two post-August films make the cut, and, given reports that Warner Bros. is no longer interested in the festival game, I think Alejandro González Iñárritu's **Digger** and Denis Villeneuve's **Dune: Part Three** emerge as strong contenders to fill this slot, but another possible contender includes Robert Eggers' **Werwulf**.
 
 <figure class="article-graphic" role="img" aria-label="Five-year averages of Best Picture nominees by premiere platform">
 <svg viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
@@ -199,7 +201,6 @@ The New York Film Festival has historically just not been a path for potential B
   <!-- Geometry: bar starts at x=270. 1 unit = 205px. Cannes 2.4 → 492px → ends at 762. Number col at 970. -->
 
   <!-- Cannes 2.4 -->
-
   <g transform="translate(0,162)">
     <text class="row-label" x="260" y="38">CANNES</text>
     <rect class="bar" x="270" y="10" width="492" height="52" fill="#B7352E"/>
@@ -209,7 +210,6 @@ The New York Film Festival has historically just not been a path for potential B
   </g>
 
   <!-- Venice 2.0 -->
-
   <g transform="translate(0,228)">
     <text class="row-label" x="260" y="38">VENICE</text>
     <rect class="bar" x="270" y="10" width="410" height="52" fill="#E8B85A"/>
@@ -219,9 +219,8 @@ The New York Film Festival has historically just not been a path for potential B
   </g>
 
   <!-- Post-Aug 1.6 -->
-
   <g transform="translate(0,294)">
-    <text class="row-label" x="260" y="38">POST-AUG. THEATRICAL</text>
+    <text class="row-label" x="260" y="38">POST-SEPT. THEATRICAL</text>
     <rect class="bar" x="270" y="10" width="328" height="52" fill="#BD8428"/>
     <rect x="270" y="10" width="328" height="52" fill="url(#hatch)"/>
     <text class="avg-num" x="970" y="48" fill="#201A13" text-anchor="middle">1.6</text>
@@ -229,7 +228,6 @@ The New York Film Festival has historically just not been a path for potential B
   </g>
 
   <!-- Telluride 1.4 -->
-
   <g transform="translate(0,360)">
     <text class="row-label" x="260" y="38">TELLURIDE</text>
     <rect class="bar" x="270" y="10" width="287" height="52" fill="#BD8428"/>
@@ -239,9 +237,8 @@ The New York Film Festival has historically just not been a path for potential B
   </g>
 
   <!-- Pre-Aug 1.2 -->
-
   <g transform="translate(0,426)">
-    <text class="row-label" x="260" y="38">PRE-AUG. THEATRICAL</text>
+    <text class="row-label" x="260" y="38">PRE-SEPT. THEATRICAL</text>
     <rect class="bar" x="270" y="10" width="246" height="52" fill="#BD8428"/>
     <rect x="270" y="10" width="246" height="52" fill="url(#hatch)"/>
     <text class="avg-num" x="970" y="48" fill="#201A13" text-anchor="middle">1.2</text>
@@ -249,7 +246,6 @@ The New York Film Festival has historically just not been a path for potential B
   </g>
 
   <!-- Sundance 0.6 -->
-
   <g transform="translate(0,492)">
     <text class="row-label" x="260" y="38">SUNDANCE</text>
     <rect class="bar" x="270" y="10" width="123" height="52" fill="#9B8E79"/>
@@ -259,7 +255,6 @@ The New York Film Festival has historically just not been a path for potential B
   </g>
 
   <!-- TIFF 0.6 -->
-
   <g transform="translate(0,558)">
     <text class="row-label" x="260" y="38">TIFF</text>
     <rect class="bar" x="270" y="10" width="123" height="52" fill="#9B8E79"/>
@@ -269,7 +264,6 @@ The New York Film Festival has historically just not been a path for potential B
   </g>
 
   <!-- NYFF 0.2 -->
-
   <g transform="translate(0,624)">
     <text class="row-label" x="260" y="38">NYFF</text>
     <rect class="bar" x="270" y="10" width="41" height="52" fill="#E0D4BB"/>
@@ -296,7 +290,7 @@ So if I have Cannes, pre-September theatrical, Venice, and Telluride each gettin
 
 New York? Do we even have to talk about it?
 
-And that leaves me with two Best Picture slots remaining for all films released theatrically after September, which is where Warner Bros. comes into play. Following in the footsteps of their Best Picture winner last year, **One Battle After Another**, I believe that Alejandro González Iñárritu's **Digger** will skip the fall festivals. And, of course, we have our major December release of **Dune: Part Three**. IMAX tickets have already gone on sale and sold out instantly. The hype is there, and I believe that Dune can pull off what Avatar could not and have all three installments become Best Picture nominees.
+And that leaves me with two Best Picture slots remaining for all films released theatrically after August, which is where Warner Bros. comes into play. Following in the footsteps of their Best Picture winner last year, **One Battle After Another**, I believe that Alejandro González Iñárritu's **Digger** will skip the fall festivals. And, of course, we have our major December release of **Dune: Part Three**. IMAX tickets have already gone on sale and sold out instantly. The hype is there, and I believe that Dune can pull off what Avatar could not and have all three installments become Best Picture nominees.
 
 <figure class="article-graphic" role="img" aria-label="2026 Best Picture predictions distributed by premiere platform">
 <svg viewBox="0 0 1200 940" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
@@ -322,7 +316,6 @@ And that leaves me with two Best Picture slots remaining for all films released 
   </defs>
 
   <!-- 1. Sundance — skip -->
-
   <g transform="translate(0,92)">
     <rect class="row-border-skip" x="0" y="0" width="1200" height="82"/>
     <rect class="platform-bg-skip" x="0" y="0" width="260" height="82"/>
@@ -331,8 +324,7 @@ And that leaves me with two Best Picture slots remaining for all films released 
     <text class="empty" x="380" y="50">— No selection —</text>
   </g>
 
-  <!-- 2. Cannes — 2 -->
-
+  <!-- 2. Cannes — 2 (alpha: The Black Ball, Fjord) -->
   <g transform="translate(0,186)">
     <rect class="row-fill-active" x="0" y="0" width="1200" height="82"/>
     <rect class="row-border" x="0" y="0" width="1200" height="82"/>
@@ -342,28 +334,26 @@ And that leaves me with two Best Picture slots remaining for all films released 
     <line x1="360" y1="0" x2="360" y2="82" stroke="#201A13" stroke-width="1.5"/>
     <rect x="260" y="0" width="100" height="82" fill="#E8B85A"/>
     <text class="count-num" x="310" y="58">2</text>
-    <text class="film" x="380" y="36">Fjord</text>
-    <text class="film" x="380" y="68">The Black Ball</text>
+    <text class="film" x="380" y="36">The Black Ball</text>
+    <text class="film" x="380" y="68">Fjord</text>
   </g>
 
-  <!-- 3. Pre-Aug — 2 -->
-
+  <!-- 3. Pre-Sept — 2 (alpha: The Odyssey, Project Hail Mary) -->
   <g transform="translate(0,280)">
     <rect class="row-fill-active" x="0" y="0" width="1200" height="82"/>
     <rect class="row-border" x="0" y="0" width="1200" height="82"/>
     <rect class="platform-bg" x="0" y="0" width="260" height="82"/>
-    <text class="platform-txt" x="130" y="38">PRE-AUG.</text>
+    <text class="platform-txt" x="130" y="38">PRE-SEPT.</text>
     <text class="platform-txt" x="130" y="62">THEATRICAL</text>
     <line x1="260" y1="0" x2="260" y2="82" stroke="#201A13" stroke-width="1.5"/>
     <line x1="360" y1="0" x2="360" y2="82" stroke="#201A13" stroke-width="1.5"/>
     <rect x="260" y="0" width="100" height="82" fill="#E8B85A"/>
     <text class="count-num" x="310" y="58">2</text>
-    <text class="film" x="380" y="36">Project Hail Mary</text>
-    <text class="film" x="380" y="68">The Odyssey</text>
+    <text class="film" x="380" y="36">The Odyssey</text>
+    <text class="film" x="380" y="68">Project Hail Mary</text>
   </g>
 
-  <!-- 4. Venice — 2 -->
-
+  <!-- 4. Venice — 2 (alpha: The Adventures of Cliff Booth, Wild Horse Nine) -->
   <g transform="translate(0,374)">
     <rect class="row-fill-active" x="0" y="0" width="1200" height="82"/>
     <rect class="row-border" x="0" y="0" width="1200" height="82"/>
@@ -373,12 +363,11 @@ And that leaves me with two Best Picture slots remaining for all films released 
     <line x1="360" y1="0" x2="360" y2="82" stroke="#201A13" stroke-width="1.5"/>
     <rect x="260" y="0" width="100" height="82" fill="#E8B85A"/>
     <text class="count-num" x="310" y="58">2</text>
-    <text class="film" x="380" y="36">Wild Horse Nine</text>
-    <text class="film" x="380" y="68">The Adventures of Cliff Booth</text>
+    <text class="film" x="380" y="36">The Adventures of Cliff Booth</text>
+    <text class="film" x="380" y="68">Wild Horse Nine</text>
   </g>
 
-  <!-- 5. Telluride — 2 -->
-
+  <!-- 5. Telluride — 2 (alpha: Behemoth!, Sense and Sensibility) -->
   <g transform="translate(0,468)">
     <rect class="row-fill-active" x="0" y="0" width="1200" height="82"/>
     <rect class="row-border" x="0" y="0" width="1200" height="82"/>
@@ -388,12 +377,11 @@ And that leaves me with two Best Picture slots remaining for all films released 
     <line x1="360" y1="0" x2="360" y2="82" stroke="#201A13" stroke-width="1.5"/>
     <rect x="260" y="0" width="100" height="82" fill="#E8B85A"/>
     <text class="count-num" x="310" y="58">2</text>
-    <text class="film" x="380" y="36">Sense and Sensibility</text>
-    <text class="film" x="380" y="68">Behemoth!</text>
+    <text class="film" x="380" y="36">Behemoth!</text>
+    <text class="film" x="380" y="68">Sense and Sensibility</text>
   </g>
 
   <!-- 6. TIFF — skip -->
-
   <g transform="translate(0,562)">
     <rect class="row-border-skip" x="0" y="0" width="1200" height="82"/>
     <rect class="platform-bg-skip" x="0" y="0" width="260" height="82"/>
@@ -403,7 +391,6 @@ And that leaves me with two Best Picture slots remaining for all films released 
   </g>
 
   <!-- 7. NYFF — skip -->
-
   <g transform="translate(0,656)">
     <rect class="row-border-skip" x="0" y="0" width="1200" height="82"/>
     <rect class="platform-bg-skip" x="0" y="0" width="260" height="82"/>
@@ -412,13 +399,12 @@ And that leaves me with two Best Picture slots remaining for all films released 
     <text class="empty" x="380" y="50">— No selection —</text>
   </g>
 
-  <!-- 8. Post-Aug — 2 -->
-
+  <!-- 8. Post-Sept — 2 (alpha: Digger, Dune: Part Three) -->
   <g transform="translate(0,750)">
     <rect class="row-fill-active" x="0" y="0" width="1200" height="82"/>
     <rect class="row-border" x="0" y="0" width="1200" height="82"/>
     <rect class="platform-bg" x="0" y="0" width="260" height="82"/>
-    <text class="platform-txt" x="130" y="38">POST-AUG.</text>
+    <text class="platform-txt" x="130" y="38">POST-SEPT.</text>
     <text class="platform-txt" x="130" y="62">THEATRICAL</text>
     <line x1="260" y1="0" x2="260" y2="82" stroke="#201A13" stroke-width="1.5"/>
     <line x1="360" y1="0" x2="360" y2="82" stroke="#201A13" stroke-width="1.5"/>
@@ -430,5 +416,4 @@ And that leaves me with two Best Picture slots remaining for all films released 
 
   <text x="1200" y="918" text-anchor="end" font-family="ui-monospace, monospace" font-size="13" letter-spacing="1.3" fill="#9B8E79" font-weight="600">DYLAN MCKERCHER · POST-CANNES 2026</text>
 </svg>
-
 </figure>
