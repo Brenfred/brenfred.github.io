@@ -70,7 +70,7 @@ As we dive into the fall, we have the **Venice Film Festival**. Pre-pandemic, on
       .films { font-family: Georgia, serif; font-size: 14px; font-style: italic; text-anchor: middle; font-weight: 500; }
       .films-sm { font-family: Georgia, serif; font-size: 12px; font-style: italic; text-anchor: middle; font-weight: 500; }
       .f-odd  { fill: #201A13; }
-      .f-even { fill: #9B8E79; }
+      .f-even { fill: #7A6E5B; }
       .rowsep { stroke: #ECE1C8; stroke-width: 1; }
     </style>
   </defs>
