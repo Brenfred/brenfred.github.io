@@ -105,7 +105,7 @@ body::before {
   display: flex;
   white-space: nowrap;
   padding: 0.55rem 0;
-  animation: tick 65s linear infinite;
+  animation: tick 44s linear infinite;
   will-change: transform;
 }
 .ticker__inner:hover { animation-play-state: paused; }
@@ -121,6 +121,22 @@ body::before {
   font-size: 0.8rem;
 }
 .ticker__item { padding: 0 1.5rem; flex-shrink: 0; border-right: 1px solid rgba(244, 239, 228, 0.18); }
+/* Anchor variant of ticker__item — inherits all the styling of the span
+   version and adds a hover affordance. text-decoration: none so the gold
+   "price" and movement arrows don't get blue browser underlines. */
+.ticker__item-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.18s ease;
+}
+.ticker__item-link:hover,
+.ticker__item-link:focus {
+  background: rgba(232, 184, 90, 0.08);
+  outline: none;
+}
+.ticker__item-link:hover .ticker__name { color: var(--gold-bright); }
 .ticker__name { color: var(--paper); }
 .ticker__price { color: var(--gold-bright); margin: 0 0.5rem; }
 .ticker__up { color: #6FBB7E; }

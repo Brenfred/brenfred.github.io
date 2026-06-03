@@ -420,13 +420,21 @@
       else if (m.kind === 'up')    moveHTML = '<span class="ticker__up">▲ ' + m.delta + '</span>';
       else if (m.kind === 'down')  moveHTML = '<span class="ticker__down">▼ ' + m.delta + '</span>';
       else                         moveHTML = '<span class="ticker__flat">—</span>';
-      return (
-        '<span class="ticker__item">' +
-          '<span class="ticker__name">' + esc(f.title.toUpperCase()) + '</span>' +
-          '<span class="ticker__price">' + esc(f.nomPct) + '</span>' +
-          moveHTML +
-        '</span>'
-      );
+      // Wrap in an anchor when the film has a slug, plain span otherwise.
+      // The anchor inherits all styling (no underline, same colors) — see
+      // .ticker__item-link in style.css.
+      var inner =
+        '<span class="ticker__name">' + esc(f.title.toUpperCase()) + '</span>' +
+        '<span class="ticker__price">' + esc(f.nomPct) + '</span>' +
+        moveHTML;
+      if (f.slug) {
+        return (
+          '<a href="film.html?slug=' + encodeURIComponent(f.slug) + '" class="ticker__item ticker__item-link">' +
+            inner +
+          '</a>'
+        );
+      }
+      return '<span class="ticker__item">' + inner + '</span>';
     }
     var html = films.map(tickerHTML).join('') + films.map(tickerHTML).join('');
     inner.insertAdjacentHTML('beforeend', html);
@@ -497,6 +505,7 @@
       var film = filmMap[e.filmSlug];
       return {
         rank: e.rank,
+        slug: e.filmSlug,
         title: film ? film.title : (e.filmSlug || ''),
         nomPct: e.nomPct || '',
         winPct: e.winPct || ''
