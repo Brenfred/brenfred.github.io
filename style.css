@@ -105,7 +105,7 @@ body::before {
   display: flex;
   white-space: nowrap;
   padding: 0.55rem 0;
-  animation: tick 44s linear infinite;
+  animation: tick 32s linear infinite;
   will-change: transform;
 }
 .ticker__inner:hover { animation-play-state: paused; }
