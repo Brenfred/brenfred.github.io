@@ -7,8 +7,8 @@ director: Curry Barker
 studio: Focus Features
 runtime: 109 min
 genre: Horror
-rating: 5
-stance: buy
+rating: ""
+stance: ""
 stanceLabel: ""
 posterSlug: obsession
 writer: Vitor C.
