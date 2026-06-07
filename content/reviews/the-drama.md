@@ -22,8 +22,10 @@ excerpt: “What’s the worst thing you’ve ever done?” The Drama delivers a
   heaven.
 heroImage: https://media.newyorker.com/photos/69d54f92fc508b7c172f7ac4/master/w_2560%2Cc_limit/BRODY---The-Drama-follow-up---avpc_r3_rec709_g24_3996x2160_0263419.jpg
 verdictNote: Zendaya, Pattinson, & Comedy Motion Picture?
+prospects: []
 isHero: false
-tags: []
+tags:
+  - the-drama
 ---
 “What’s the worst thing you’ve ever done?” is the central question that Kristoffer Borgli’s brand-new film *The Drama* wants to explore. Ever since it was announced, we’ve all been wondering: what could Zendaya’s Emma have possibly done to get that kind of reaction out of her best friends? And trust me… you will never guess what the actual reveal is.
 
