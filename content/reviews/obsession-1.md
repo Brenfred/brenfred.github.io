@@ -18,10 +18,24 @@ deck: From record-breaking box office holds to early Oscar buzz for Inde
   surprising success stories of the decade.
 excerpt: Can Inde Navarrette become this year's Amy Madigan?
 heroImage: https://imageio.forbes.com/specials-images/imageserve/6a18519f72bb5d5a3e95c87c/obsession/0x0.png?format=png&width=480
-prospects: []
+verdictNote: Go all in for Inde Navarrette
+prospects:
+  - tier: predicted
+    category: supp-actress
+    performer: Inde Navarrette
+  - tier: long-shot
+    category: orig-screenplay
+    performer: ""
+  - tier: long-shot
+    category: casting
+  - tier: long-shot
+    category: picture
 isHero: false
-tags: []
-categoryTags: []
+tags:
+  - Obsession
+categoryTags:
+  - supp-actress
+  - lead-actress
 ---
 The horror genre hasn’t always been the most beloved to the general public, but the 2020s have brought about a revolution in horror movies, catapulting them to the mainstream like never before. Between the intrigue of unique premises of *Smile* and *A Quiet Place*, the incredible acclaim of *Sinners* and *The Substance*, and the social commentary of *The Menu* and *Heretic*, the genre is undeniably experiencing a golden age. Spearheading this movement is a group seemingly unrelated to horror movies: YouTubers. 
 
