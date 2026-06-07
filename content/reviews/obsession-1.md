@@ -32,8 +32,9 @@ prospects:
     category: picture
 isHero: false
 tags:
-  - Obsession
-categoryTags: []
+  - obsession
+categoryTags:
+  - supp-actress
 ---
 The horror genre hasn’t always been the most beloved to the general public, but the 2020s have brought about a revolution in horror movies, catapulting them to the mainstream like never before. Between the intrigue of unique premises of *Smile* and *A Quiet Place*, the incredible acclaim of *Sinners* and *The Substance*, and the social commentary of *The Menu* and *Heretic*, the genre is undeniably experiencing a golden age. Spearheading this movement is a group seemingly unrelated to horror movies: YouTubers. 
 
