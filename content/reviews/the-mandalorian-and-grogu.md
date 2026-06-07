@@ -28,7 +28,9 @@ prospects:
     category: sound
 isHero: false
 tags: []
-categoryTags: []
+categoryTags:
+  - sound
+  - visual-effects
 ---
 In a galaxy far, far away comes a film saga spanning 12 feature films, with the latest edition being *The Mandalorian and Grogu*, which hit cinemas worldwide this weekend, and I have to say, the *Star Wars* franchise has been a massive hit with the Academy Awards. Obviously, the original entry, *Star Wars: A New Hope*, racked up not just 10 nominations, not just a Best Picture slot in a year of five, but also a total of seven wins on the night. And with the release of *The Mandalorian and Grogu*, I want to dive a little deeper into the *Star Wars* saga’s constant presence at the Academy Awards. All previous 11 *Star Wars* films have made a dent at the Academy. Some may be as small as a single nomination, some are as large as *A New Hope* getting seven wins, 10 nominations, and branching a new path for sci-fi spectacles to succeed on movies’ biggest night.
 
