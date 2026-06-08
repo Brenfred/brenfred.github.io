@@ -9,7 +9,7 @@ genre: ""
 rating: ""
 stance: ""
 stanceLabel: ""
-posterSlug: ""
+posterSlug: breaking-down-our-june-1st-community-predictions
 writer: ""
 writers:
   - andy-funke
