@@ -34,7 +34,7 @@ Almost two months later, Cannes has come and gone, and we have updated our predi
 <div class="article-graphic__scroll">
 <svg viewBox="0 0 1100 720" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
   <text x="0" y="38" font-size="36" font-weight="700" fill="#201A13">The biggest <tspan font-style="italic" fill="#BD8428">movers</tspan></text>
-  <text x="0" y="66" font-size="16" font-style="italic" fill="#695D4E">Best Picture prediction rate · April 3 → June 1</text>
+  <text x="0" y="66" font-size="16" font-style="italic" fill="#695D4E">Best Picture prediction rate</text>
 
   <line x1="0" y1="90" x2="1100" y2="90" stroke="#201A13" stroke-width="2"/>
   <rect x="0" y="87" width="110" height="6" fill="#B7352E"/>
@@ -53,11 +53,13 @@ Almost two months later, Cannes has come and gone, and we have updated our predi
       .delta { font-family: Georgia, serif; font-size: 22px; font-weight: 700; }
       .delta-up { fill: #4A7C44; }
       .delta-dn { fill: #B7352E; }
+      .delta-new { fill: #BD8428; font-family: Georgia, serif; font-size: 20px; font-weight: 700; font-style: italic; }
       .nums { font-family: ui-monospace, monospace; font-size: 12px; fill: #695D4E; letter-spacing: 0.06em; }
       .axis { stroke: #ECE1C8; stroke-width: 1; }
     </style>
   </defs>
 
+  <!-- vertical axis lines: range from x=260 (0%) to x=1060 (100%). 8px = 1% -->
   <line class="axis" x1="260" y1="150" x2="260" y2="620"/>
   <line class="axis" x1="460" y1="150" x2="460" y2="620"/>
   <line class="axis" x1="660" y1="150" x2="660" y2="620"/>
@@ -72,57 +74,62 @@ Almost two months later, Cannes has come and gone, and we have updated our predi
     <text x="1060" y="640">100%</text>
   </g>
 
-  <text class="film-label" x="250" y="180" text-anchor="end">Behemoth!</text>
+  <!-- BEHEMOTH! — bars span y=162 to y=212 (50px total). Film label centered at y=193. -->
+  <text class="film-label" x="250" y="200" text-anchor="end">Behemoth!</text>
   <rect x="260" y="162" width="88" height="22" fill="#C9BFA8" stroke="#201A13"/>
   <rect x="260" y="162" width="88" height="22" fill="url(#hatchUp)"/>
   <rect x="260" y="190" width="448" height="22" fill="#E8B85A" stroke="#201A13"/>
   <rect x="260" y="190" width="448" height="22" fill="url(#hatchUp)"/>
   <text class="nums" x="354" y="178">APR · 11%</text>
   <text class="nums" x="714" y="206">JUN · 56%</text>
-  <text class="delta delta-up" x="970" y="200" font-family="Georgia, serif">+45%</text>
+  <text class="delta delta-up" x="1080" y="200" text-anchor="end" font-family="Georgia, serif">+45%</text>
 
-  <text class="film-label" x="250" y="252" text-anchor="end">The Black Ball</text>
-  <text class="nums" x="265" y="238" fill="#9B8E79" font-style="italic">not predicted in April</text>
-  <rect x="260" y="244" width="648" height="22" fill="#E8B85A" stroke="#201A13"/>
-  <rect x="260" y="244" width="648" height="22" fill="url(#hatchUp)"/>
-  <text class="nums" x="914" y="260">JUN · 81%</text>
-  <text class="delta delta-up" x="970" y="278" font-family="Georgia, serif">NEW</text>
+  <!-- THE BLACK BALL — single bar at y=244, height=22. Film label at y=255. -->
+  <!-- For NEW films: only one bar (no April baseline). NEW tag goes ABOVE the bar to avoid overlap. -->
+  <text class="film-label" x="250" y="262" text-anchor="end">The Black Ball</text>
+  <text class="delta-new" x="1080" y="240" text-anchor="end">NEW</text>
+  <text class="nums" x="265" y="240" fill="#9B8E79" font-style="italic">not predicted in April</text>
+  <rect x="260" y="252" width="648" height="22" fill="#E8B85A" stroke="#201A13"/>
+  <rect x="260" y="252" width="648" height="22" fill="url(#hatchUp)"/>
+  <text class="nums" x="914" y="268">JUN · 81%</text>
 
+  <!-- divider -->
   <line x1="0" y1="320" x2="1100" y2="320" stroke="#201A13" stroke-width="1" stroke-dasharray="3,4" opacity="0.5"/>
 
   <text x="0" y="355" font-family="ui-monospace, monospace" font-size="13" letter-spacing="2.5" fill="#695D4E" font-weight="700">▼ MOVING DOWN</text>
 
-  <text class="film-label" x="250" y="402" text-anchor="end">Michael</text>
+  <!-- MICHAEL — bars y=384 to y=434, label centered y=415 -->
+  <text class="film-label" x="250" y="422" text-anchor="end">Michael</text>
   <rect x="260" y="384" width="336" height="22" fill="#C9BFA8" stroke="#201A13"/>
   <rect x="260" y="384" width="336" height="22" fill="url(#hatchDn)"/>
   <rect x="260" y="412" width="56" height="22" fill="#B7352E" stroke="#201A13"/>
   <rect x="260" y="412" width="56" height="22" fill="url(#hatchDn)"/>
   <text class="nums" x="602" y="400">APR · 42%</text>
   <text class="nums" x="322" y="428">JUN · 7%</text>
-  <text class="delta delta-dn" x="970" y="420" font-family="Georgia, serif">−35%</text>
+  <text class="delta delta-dn" x="1080" y="420" text-anchor="end" font-family="Georgia, serif">−35%</text>
 
-  <text class="film-label" x="250" y="475" text-anchor="end">Fatherland</text>
-  <text class="nums" x="265" y="461" fill="#9B8E79" font-style="italic">slipped from #7 to #13</text>
+  <!-- FATHERLAND — bars y=466 to y=516, label centered y=497 -->
+  <text class="film-label" x="250" y="504" text-anchor="end">Fatherland</text>
   <rect x="260" y="466" width="320" height="22" fill="#C9BFA8" stroke="#201A13"/>
   <rect x="260" y="466" width="320" height="22" fill="url(#hatchDn)"/>
   <rect x="260" y="494" width="180" height="22" fill="#B7352E" stroke="#201A13"/>
   <rect x="260" y="494" width="180" height="22" fill="url(#hatchDn)"/>
   <text class="nums" x="586" y="482">APR · 40%</text>
   <text class="nums" x="446" y="510">JUN · 23%</text>
-  <text class="delta delta-dn" x="970" y="500" font-family="Georgia, serif">−17%</text>
+  <text class="delta delta-dn" x="1080" y="500" text-anchor="end" font-family="Georgia, serif">−17%</text>
 
-  <text class="film-label" x="250" y="558" text-anchor="end">No One Cares</text>
-  <text class="nums" x="265" y="544" fill="#9B8E79" font-style="italic">slipped from #8 to #15</text>
+  <!-- NO ONE CARES — bars y=548 to y=598, label centered y=579 -->
+  <text class="film-label" x="250" y="586" text-anchor="end">No One Cares</text>
   <rect x="260" y="548" width="296" height="22" fill="#C9BFA8" stroke="#201A13"/>
   <rect x="260" y="548" width="296" height="22" fill="url(#hatchDn)"/>
   <rect x="260" y="576" width="136" height="22" fill="#B7352E" stroke="#201A13"/>
   <rect x="260" y="576" width="136" height="22" fill="url(#hatchDn)"/>
   <text class="nums" x="562" y="564">APR · 37%</text>
   <text class="nums" x="402" y="592">JUN · 17%</text>
-  <text class="delta delta-dn" x="970" y="582" font-family="Georgia, serif">−20%</text>
+  <text class="delta delta-dn" x="1080" y="582" text-anchor="end" font-family="Georgia, serif">−20%</text>
 
   <line x1="0" y1="675" x2="1100" y2="675" stroke="#201A13" stroke-width="2"/>
-  <text x="0" y="700" font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.1em" fill="#9B8E79">SOURCE: FILMBALL DISCORD · 50+ MEMBER PREDICTIONS</text>
+  <text x="0" y="700" font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.1em" fill="#9B8E79">SOURCE: FILMBALL DISCORD CONSENSUS · 57 PREDICTIONS</text>
 </svg>
 </div>
 </figure>
@@ -139,85 +146,133 @@ As for the movies that premiered at Cannes, *Fatherland* had one of the larger m
 
 *Fjord* is a more complicated case. On the surface, winning the Palme should've been a net positive for the film, and it is still very solidly in our predictions, but it had a slight drop across the board. It went from 87% to 82% in Best Picture, and Cristian Mungiu dropped from 79% to 71% in Director, but the bigger knocks were in its acting prospects, where Sebastian Stan shifted from 88% to 68%, and Renate Reinsve was notably down 78%, from 91% in April. Whether this movement is simply a result of our community being true *Fjord* believers in April or more people feeling skeptical after hearing the rumors about controversial themes is anyone's guess, but *Fjord* is yet another film to keep tabs on.
 
-<figure class="article-graphic article-graphic--scroll" role="img" aria-label="April vs June prediction rates for key films">
+<figure class="article-graphic article-graphic--scroll" role="img" aria-label="June 1st top 10 Best Picture predictions">
 <div class="article-graphic__scroll">
-<svg viewBox="0 0 1100 700" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
-  <text x="0" y="38" font-size="36" font-weight="700" fill="#201A13">Two months in <tspan font-style="italic" fill="#BD8428">review</tspan></text>
-  <text x="0" y="66" font-size="16" font-style="italic" fill="#695D4E">Best Picture prediction rate for our most-watched films</text>
+<svg viewBox="0 0 1100 760" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
+  <text x="0" y="38" font-size="36" font-weight="700" fill="#201A13">The new <tspan font-style="italic" fill="#BD8428">top ten</tspan></text>
+  <text x="0" y="66" font-size="16" font-style="italic" fill="#695D4E">Best Picture · Filmball Discord consensus, June 1</text>
 
   <line x1="0" y1="90" x2="1100" y2="90" stroke="#201A13" stroke-width="2"/>
   <rect x="0" y="87" width="110" height="6" fill="#B7352E"/>
 
+  <!-- Column headers -->
   <g font-family="ui-monospace, monospace" font-size="11" letter-spacing="2" fill="#695D4E" font-weight="700">
-    <text x="20" y="135">FILM</text>
-    <text x="540" y="135" text-anchor="middle">APR 3</text>
-    <text x="730" y="135" text-anchor="middle">JUN 1</text>
-    <text x="950" y="135" text-anchor="middle">MOVE</text>
+    <text x="20" y="125">RANK · FILM</text>
+    <text x="780" y="125" text-anchor="middle">WIN %</text>
+    <text x="950" y="125" text-anchor="middle">NOM %</text>
+    <text x="1080" y="125" text-anchor="end">VOTES</text>
   </g>
-  <line x1="0" y1="148" x2="1100" y2="148" stroke="#201A13" stroke-width="2"/>
+  <line x1="0" y1="138" x2="1100" y2="138" stroke="#201A13" stroke-width="2"/>
 
   <defs>
     <style>
-      .tname { font-family: Georgia, serif; font-style: italic; font-size: 18px; font-weight: 600; fill: #201A13; }
-      .tnum { font-family: Georgia, serif; font-size: 22px; font-weight: 700; text-anchor: middle; }
-      .tnum-faded { fill: #9B8E79; }
-      .tnum-strong { fill: #201A13; }
-      .tmove-up { font-family: Georgia, serif; font-size: 18px; font-weight: 700; fill: #4A7C44; text-anchor: middle; }
-      .tmove-dn { font-family: Georgia, serif; font-size: 18px; font-weight: 700; fill: #B7352E; text-anchor: middle; }
-      .tmove-new { font-family: Georgia, serif; font-size: 16px; font-weight: 700; fill: #E8B85A; text-anchor: middle; font-style: italic; }
-      .trow { stroke: #ECE1C8; stroke-width: 1; }
+      .rank      { font-family: Georgia, serif; font-size: 30px; font-weight: 800; fill: #201A13; text-anchor: middle; }
+      .rank-top  { fill: #BD8428; }
+      .move      { font-family: ui-monospace, monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; }
+      .move-up   { fill: #4A7C44; }
+      .move-dn   { fill: #B7352E; }
+      .film      { font-family: Georgia, serif; font-style: italic; font-size: 22px; font-weight: 600; fill: #201A13; }
+      .win       { font-family: Georgia, serif; font-size: 18px; font-weight: 700; fill: #201A13; text-anchor: middle; }
+      .win-zero  { fill: #9B8E79; }
+      .nom       { font-family: Georgia, serif; font-size: 18px; font-weight: 700; fill: #201A13; text-anchor: middle; }
+      .nom-100   { fill: #B7352E; font-weight: 800; }
+      .votes     { font-family: ui-monospace, monospace; font-size: 12px; fill: #9B8E79; text-anchor: end; letter-spacing: 0.04em; }
+      .rowsep    { stroke: #ECE1C8; stroke-width: 1; }
     </style>
   </defs>
 
-  <text class="tname" x="20" y="200">Behemoth!</text>
-  <text class="tnum tnum-faded" x="540" y="205">11%</text>
-  <text class="tnum tnum-strong" x="730" y="205">56%</text>
-  <text class="tmove-up" x="950" y="203">▲ +45%</text>
-  <line class="trow" x1="0" y1="230" x2="1100" y2="230"/>
+  <!-- Row template: each row 58px tall, starting at y=160. -->
+  <!-- Geometry: rank x=40, move x=85, film starts x=140. wins x=780, noms x=950, votes x=1080 right-aligned. -->
 
-  <text class="tname" x="20" y="260">The Black Ball</text>
-  <text class="tnum tnum-faded" x="540" y="265" font-style="italic">—</text>
-  <text class="tnum tnum-strong" x="730" y="265">81%</text>
-  <text class="tmove-new" x="950" y="263">NEW</text>
-  <line class="trow" x1="0" y1="290" x2="1100" y2="290"/>
+  <!-- 1. The Odyssey — no move -->
+  <text class="rank rank-top" x="40" y="195">1</text>
+  <text class="film" x="140" y="195">The Odyssey</text>
+  <text class="win" x="780" y="195">33%</text>
+  <text class="nom" x="950" y="195">98%</text>
+  <text class="votes" x="1080" y="195">56/57</text>
+  <line class="rowsep" x1="0" y1="218" x2="1100" y2="218"/>
 
-  <text class="tname" x="20" y="320">Project Hail Mary</text>
-  <text class="tnum tnum-faded" x="540" y="325">89%</text>
-  <text class="tnum tnum-strong" x="730" y="325">100%</text>
-  <text class="tmove-up" x="950" y="323">▲ +11%</text>
-  <line class="trow" x1="0" y1="350" x2="1100" y2="350"/>
+  <!-- 2. Wild Horse Nine — ↑1 -->
+  <text class="rank" x="40" y="253">2</text>
+  <text class="move move-up" x="85" y="250" text-anchor="middle">▲ 1</text>
+  <text class="film" x="140" y="253">Wild Horse Nine</text>
+  <text class="win" x="780" y="253">25%</text>
+  <text class="nom" x="950" y="253">96%</text>
+  <text class="votes" x="1080" y="253">55/57</text>
+  <line class="rowsep" x1="0" y1="276" x2="1100" y2="276"/>
 
-  <text class="tname" x="20" y="380">Fjord</text>
-  <text class="tnum tnum-faded" x="540" y="385">87%</text>
-  <text class="tnum tnum-strong" x="730" y="385">82%</text>
-  <text class="tmove-dn" x="950" y="383">▼ −5%</text>
-  <line class="trow" x1="0" y1="410" x2="1100" y2="410"/>
+  <!-- 3. Project Hail Mary — ↑1, 100% nom -->
+  <text class="rank" x="40" y="311">3</text>
+  <text class="move move-up" x="85" y="308" text-anchor="middle">▲ 1</text>
+  <text class="film" x="140" y="311">Project Hail Mary</text>
+  <text class="win" x="780" y="311">11%</text>
+  <text class="nom nom-100" x="950" y="311">100%</text>
+  <text class="votes" x="1080" y="311">57/57</text>
+  <line class="rowsep" x1="0" y1="334" x2="1100" y2="334"/>
 
-  <text class="tname" x="20" y="440">No One Cares</text>
-  <text class="tnum tnum-faded" x="540" y="445">37%</text>
-  <text class="tnum tnum-strong" x="730" y="445">17%</text>
-  <text class="tmove-dn" x="950" y="443">▼ −20%</text>
-  <line class="trow" x1="0" y1="470" x2="1100" y2="470"/>
+  <!-- 4. Digger — ↓2 -->
+  <text class="rank" x="40" y="369">4</text>
+  <text class="move move-dn" x="85" y="366" text-anchor="middle">▼ 2</text>
+  <text class="film" x="140" y="369">Digger</text>
+  <text class="win" x="780" y="369">16%</text>
+  <text class="nom" x="950" y="369">96%</text>
+  <text class="votes" x="1080" y="369">55/57</text>
+  <line class="rowsep" x1="0" y1="392" x2="1100" y2="392"/>
 
-  <text class="tname" x="20" y="500">Fatherland</text>
-  <text class="tnum tnum-faded" x="540" y="505">40%</text>
-  <text class="tnum tnum-strong" x="730" y="505">23%</text>
-  <text class="tmove-dn" x="950" y="503">▼ −17%</text>
-  <line class="trow" x1="0" y1="530" x2="1100" y2="530"/>
+  <!-- 5. The Black Ball — NEW -->
+  <text class="rank" x="40" y="427">5</text>
+  <text class="move move-up" x="85" y="423" text-anchor="middle">NEW</text>
+  <text class="film" x="140" y="427">The Black Ball</text>
+  <text class="win" x="780" y="427">9%</text>
+  <text class="nom" x="950" y="427">81%</text>
+  <text class="votes" x="1080" y="427">46/57</text>
+  <line class="rowsep" x1="0" y1="450" x2="1100" y2="450"/>
 
-  <text class="tname" x="20" y="560">Michael</text>
-  <text class="tnum tnum-faded" x="540" y="565">42%</text>
-  <text class="tnum tnum-strong" x="730" y="565">7%</text>
-  <text class="tmove-dn" x="950" y="563">▼ −35%</text>
-  <line class="trow" x1="0" y1="590" x2="1100" y2="590"/>
+  <!-- 6. Fjord — ↓1 -->
+  <text class="rank" x="40" y="485">6</text>
+  <text class="move move-dn" x="85" y="482" text-anchor="middle">▼ 1</text>
+  <text class="film" x="140" y="485">Fjord</text>
+  <text class="win win-zero" x="780" y="485">0%</text>
+  <text class="nom" x="950" y="485">82%</text>
+  <text class="votes" x="1080" y="485">47/57</text>
+  <line class="rowsep" x1="0" y1="508" x2="1100" y2="508"/>
 
-  <text class="tname" x="20" y="620">Narnia</text>
-  <text class="tnum tnum-faded" x="540" y="625">70%</text>
-  <text class="tnum tnum-strong" x="730" y="625" font-style="italic" fill="#9B8E79">delayed</text>
-  <text class="tmove-dn" x="950" y="623">OUT</text>
-  <line class="trow" x1="0" y1="650" x2="1100" y2="650"/>
+  <!-- 7. Dune: Part Three — ↑2 -->
+  <text class="rank" x="40" y="543">7</text>
+  <text class="move move-up" x="85" y="540" text-anchor="middle">▲ 2</text>
+  <text class="film" x="140" y="543">Dune: Part Three</text>
+  <text class="win" x="780" y="543">2%</text>
+  <text class="nom" x="950" y="543">65%</text>
+  <text class="votes" x="1080" y="543">37/57</text>
+  <line class="rowsep" x1="0" y1="566" x2="1100" y2="566"/>
 
-  <line x1="0" y1="675" x2="1100" y2="675" stroke="#201A13" stroke-width="2"/>
+  <!-- 8. Behemoth! — ↑10 (highlight in red since it's the standout) -->
+  <text class="rank" x="40" y="601">8</text>
+  <text class="move move-up" x="85" y="598" text-anchor="middle" fill="#B7352E" font-weight="800">▲ 10</text>
+  <text class="film" x="140" y="601">Behemoth!</text>
+  <text class="win" x="780" y="601">2%</text>
+  <text class="nom" x="950" y="601">56%</text>
+  <text class="votes" x="1080" y="601">32/57</text>
+  <line class="rowsep" x1="0" y1="624" x2="1100" y2="624"/>
+
+  <!-- 9. Cry to Heaven — ↑1 -->
+  <text class="rank" x="40" y="659">9</text>
+  <text class="move move-up" x="85" y="656" text-anchor="middle">▲ 1</text>
+  <text class="film" x="140" y="659">Cry to Heaven</text>
+  <text class="win win-zero" x="780" y="659">0%</text>
+  <text class="nom" x="950" y="659">46%</text>
+  <text class="votes" x="1080" y="659">26/57</text>
+  <line class="rowsep" x1="0" y1="682" x2="1100" y2="682"/>
+
+  <!-- 10. The Social Reckoning — ↑3 -->
+  <text class="rank" x="40" y="717">10</text>
+  <text class="move move-up" x="85" y="714" text-anchor="middle">▲ 3</text>
+  <text class="film" x="140" y="717">The Social Reckoning</text>
+  <text class="win win-zero" x="780" y="717">0%</text>
+  <text class="nom" x="950" y="717">33%</text>
+  <text class="votes" x="1080" y="717">19/57</text>
+
+  <line x1="0" y1="740" x2="1100" y2="740" stroke="#201A13" stroke-width="2"/>
 </svg>
 </div>
 </figure>
@@ -246,12 +301,11 @@ These are three of the four movies that our predictors are seeing strong years f
 
 <figure class="article-graphic article-graphic--scroll" role="img" aria-label="Best Director consensus — top 5 vs the rest">
 <div class="article-graphic__scroll">
-<svg viewBox="0 0 1100 580" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
+<svg viewBox="0 0 1100 560" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
   <text x="0" y="38" font-size="36" font-weight="700" fill="#201A13">The Director <tspan font-style="italic" fill="#BD8428">cliff</tspan></text>
-  <text x="0" y="66" font-size="16" font-style="italic" fill="#695D4E">A strong top 5 — and a steep drop to everyone else</text>
 
-  <line x1="0" y1="90" x2="1100" y2="90" stroke="#201A13" stroke-width="2"/>
-  <rect x="0" y="87" width="110" height="6" fill="#B7352E"/>
+  <line x1="0" y1="60" x2="1100" y2="60" stroke="#201A13" stroke-width="2"/>
+  <rect x="0" y="57" width="110" height="6" fill="#B7352E"/>
 
   <defs>
     <pattern id="hatchD" patternUnits="userSpaceOnUse" width="12" height="12" patternTransform="rotate(135)">
@@ -259,66 +313,72 @@ These are three of the four movies that our predictors are seeing strong years f
     </pattern>
   </defs>
 
+  <!-- Y axis scale: 100% at y=120, 0% at y=460. 1% = 3.4px. -->
   <g stroke="#ECE1C8" stroke-width="1">
-    <line x1="80" y1="140" x2="1020" y2="140"/>
-    <line x1="80" y1="220" x2="1020" y2="220"/>
-    <line x1="80" y1="300" x2="1020" y2="300"/>
-    <line x1="80" y1="380" x2="1020" y2="380"/>
+    <line x1="80" y1="120" x2="1020" y2="120"/>
+    <line x1="80" y1="205" x2="1020" y2="205"/>
+    <line x1="80" y1="290" x2="1020" y2="290"/>
+    <line x1="80" y1="375" x2="1020" y2="375"/>
     <line x1="80" y1="460" x2="1020" y2="460" stroke="#201A13" stroke-width="2"/>
   </g>
   <g font-family="ui-monospace, monospace" font-size="11" fill="#9B8E79" text-anchor="end" letter-spacing="0.06em">
-    <text x="72" y="144">100%</text>
-    <text x="72" y="224">75%</text>
-    <text x="72" y="304">50%</text>
-    <text x="72" y="384">25%</text>
+    <text x="72" y="124">100%</text>
+    <text x="72" y="209">75%</text>
+    <text x="72" y="294">50%</text>
+    <text x="72" y="379">25%</text>
     <text x="72" y="464">0%</text>
   </g>
 
-  <rect x="110" y="162" width="130" height="298" fill="#BD8428" stroke="#201A13"/>
-  <rect x="110" y="162" width="130" height="298" fill="url(#hatchD)"/>
-  <text x="175" y="155" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="800" fill="#201A13">93%</text>
+  <!-- 70% threshold line — the "consensus floor" -->
+  <!-- 70% at y = 460 - (70 * 3.4) = 460 - 238 = 222 -->
+  <line x1="80" y1="222" x2="1020" y2="222" stroke="#B7352E" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.9"/>
+  <rect x="1025" y="212" width="65" height="20" fill="#B7352E"/>
+  <text x="1057" y="226" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="0.12em" fill="#FCFAF1">70%</text>
+
+  <!-- Bar 1: Nolan 93% — height = 93*3.4 = 316px → y_top = 460-316 = 144 -->
+  <rect x="110" y="144" width="130" height="316" fill="#BD8428" stroke="#201A13"/>
+  <rect x="110" y="144" width="130" height="316" fill="url(#hatchD)"/>
+  <text x="175" y="137" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="800" fill="#201A13">93%</text>
   <text x="175" y="305" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-style="italic" fill="#FCFAF1" font-weight="600">Nolan</text>
   <text x="175" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#695D4E">The Odyssey</text>
 
-  <rect x="260" y="188" width="130" height="272" fill="#BD8428" stroke="#201A13"/>
-  <rect x="260" y="188" width="130" height="272" fill="url(#hatchD)"/>
-  <text x="325" y="181" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="800" fill="#201A13">85%</text>
+  <!-- Bar 2: Iñárritu 85% — height = 289 → y_top = 171 -->
+  <rect x="260" y="171" width="130" height="289" fill="#BD8428" stroke="#201A13"/>
+  <rect x="260" y="171" width="130" height="289" fill="url(#hatchD)"/>
+  <text x="325" y="164" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="800" fill="#201A13">85%</text>
   <text x="325" y="320" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-style="italic" fill="#FCFAF1" font-weight="600">Iñárritu</text>
   <text x="325" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#695D4E">Digger</text>
 
-  <rect x="410" y="204" width="130" height="256" fill="#BD8428" stroke="#201A13"/>
-  <rect x="410" y="204" width="130" height="256" fill="url(#hatchD)"/>
-  <text x="475" y="197" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="800" fill="#201A13">80%</text>
+  <!-- Bar 3: McDonagh 80% — height = 272 → y_top = 188 -->
+  <rect x="410" y="188" width="130" height="272" fill="#BD8428" stroke="#201A13"/>
+  <rect x="410" y="188" width="130" height="272" fill="url(#hatchD)"/>
+  <text x="475" y="181" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="800" fill="#201A13">80%</text>
   <text x="475" y="328" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-style="italic" fill="#FCFAF1" font-weight="600">McDonagh</text>
   <text x="475" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#695D4E">Wild Horse Nine</text>
 
-  <rect x="560" y="233" width="130" height="227" fill="#BD8428" stroke="#201A13"/>
-  <rect x="560" y="233" width="130" height="227" fill="url(#hatchD)"/>
-  <text x="625" y="226" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="800" fill="#201A13">71%</text>
-  <text x="625" y="346" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#FCFAF1" font-weight="600">Ambrossi &amp;</text>
-  <text x="625" y="362" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#FCFAF1" font-weight="600">Calvo</text>
+  <!-- Bar 4: Ambrossi/Calvo 71% — height = 241 → y_top = 219 -->
+  <rect x="560" y="219" width="130" height="241" fill="#BD8428" stroke="#201A13"/>
+  <rect x="560" y="219" width="130" height="241" fill="url(#hatchD)"/>
+  <text x="625" y="212" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="800" fill="#201A13">71%</text>
+  <text x="625" y="338" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#FCFAF1" font-weight="600">Ambrossi &amp;</text>
+  <text x="625" y="354" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#FCFAF1" font-weight="600">Calvo</text>
   <text x="625" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#695D4E">The Black Ball</text>
 
-  <rect x="710" y="233" width="130" height="227" fill="#BD8428" stroke="#201A13"/>
-  <rect x="710" y="233" width="130" height="227" fill="url(#hatchD)"/>
-  <text x="775" y="226" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="800" fill="#201A13">71%</text>
+  <!-- Bar 5: Mungiu 71% — same -->
+  <rect x="710" y="219" width="130" height="241" fill="#BD8428" stroke="#201A13"/>
+  <rect x="710" y="219" width="130" height="241" fill="url(#hatchD)"/>
+  <text x="775" y="212" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="800" fill="#201A13">71%</text>
   <text x="775" y="346" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-style="italic" fill="#FCFAF1" font-weight="600">Mungiu</text>
   <text x="775" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#695D4E">Fjord</text>
 
-  <g>
-    <line x1="855" y1="232" x2="890" y2="404" stroke="#B7352E" stroke-width="2" stroke-dasharray="3,3"/>
-    <text x="875" y="218" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" font-weight="800" fill="#B7352E" letter-spacing="0.15em">THE CLIFF</text>
-    <text x="875" y="234" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="800" fill="#B7352E">−53%</text>
-  </g>
-
-  <rect x="860" y="404" width="130" height="56" fill="#9B8E79" stroke="#201A13"/>
-  <rect x="860" y="404" width="130" height="56" fill="url(#hatchD)"/>
-  <text x="925" y="397" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="800" fill="#695D4E">18%</text>
+  <!-- Bar 6: Lord/Miller 18% — height = 61 → y_top = 399. Falls well below threshold. -->
+  <rect x="860" y="399" width="130" height="61" fill="#9B8E79" stroke="#201A13"/>
+  <rect x="860" y="399" width="130" height="61" fill="url(#hatchD)"/>
+  <text x="925" y="392" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="800" fill="#695D4E">18%</text>
   <text x="925" y="438" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-style="italic" fill="#FCFAF1" font-weight="600">Lord &amp; Miller</text>
   <text x="925" y="490" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#695D4E">Project Hail Mary</text>
 
-  <line x1="0" y1="530" x2="1100" y2="530" stroke="#201A13" stroke-width="2"/>
-  <text x="0" y="556" font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.1em" fill="#9B8E79">RANKS 1–5 ALL ABOVE 70%, RANK 6 AT 18%</text>
+  <line x1="0" y1="525" x2="1100" y2="525" stroke="#201A13" stroke-width="2"/>
 </svg>
 </div>
 </figure>
