@@ -30,6 +30,10 @@ Almost two months later, Cannes has come and gone, and we have updated our predi
 
 <h2>Biggest Movers</h2>
 
+There were some obvious changes since the last update, like the fall of *Narnia: The Magician's Nephew* after its delay to a 2027 release date. In our April 3rd update, Gerwig's upcoming project ranked 6th in Best Picture, with just over 70% predicting a nomination, and was also as high as second in both Production Design and Costume Design. It will be interesting to see if we rally behind this movie the same way next year. Although it wasn't in the top ten in any categories in April, *Ink* was also revealed to be a 2027 release, and has subsequently been removed from all predictions.
+
+Rumors of strong test screenings for *Behemoth!* have led many people to feel encouraged to predict it. The movie rose 10 whole spots in Best Picture, from 18th to 8th, with 56% of people now predicting it, up from 11% previously. This is by far the most notable rise in this category among the movies already on our radar in April. Pedro Pascal also rose from 11th to 6th in Lead Actor, just missing out on our top 5. Pascal feels like a perfect candidate to finally break into the awards race this season. Tony Gilroy's Original Screenplay also made its way into our official predictions with a rise from 18% to 53%. Only two people are currently predicting Gilroy in Director, leaving him down at 13th place. It feels a little strange that more people aren't considering him, given he's a previous Director nominee for *Michael Clayton*, but if *Behemoth!* continues this show of force, we might see Gilroy rise here.
+
 <figure class="article-graphic article-graphic--scroll" role="img" aria-label="Biggest movers in Best Picture predictions, April to June 2026">
 <div class="article-graphic__scroll">
 <svg viewBox="0 0 1100 720" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
@@ -82,13 +86,12 @@ Almost two months later, Cannes has come and gone, and we have updated our predi
   <rect x="260" y="190" width="448" height="22" fill="url(#hatchUp)"/>
   <text class="nums" x="354" y="178">APR · 11%</text>
   <text class="nums" x="714" y="206">JUN · 56%</text>
-  <text class="delta delta-up" x="1080" y="200" text-anchor="end" font-family="Georgia, serif">+45%</text>
+  <text class="delta delta-up" x="720" y="207" font-family="Georgia, serif">+45%</text>
 
   <!-- THE BLACK BALL — single bar at y=244, height=22. Film label at y=255. -->
   <!-- For NEW films: only one bar (no April baseline). NEW tag goes ABOVE the bar to avoid overlap. -->
   <text class="film-label" x="250" y="262" text-anchor="end">The Black Ball</text>
-  <text class="delta-new" x="1080" y="240" text-anchor="end">NEW</text>
-  <text class="nums" x="265" y="240" fill="#9B8E79" font-style="italic">not predicted in April</text>
+  <text class="delta-new" x="920" y="269">NEW</text>
   <rect x="260" y="252" width="648" height="22" fill="#E8B85A" stroke="#201A13"/>
   <rect x="260" y="252" width="648" height="22" fill="url(#hatchUp)"/>
   <text class="nums" x="914" y="268">JUN · 81%</text>
@@ -106,7 +109,7 @@ Almost two months later, Cannes has come and gone, and we have updated our predi
   <rect x="260" y="412" width="56" height="22" fill="url(#hatchDn)"/>
   <text class="nums" x="602" y="400">APR · 42%</text>
   <text class="nums" x="322" y="428">JUN · 7%</text>
-  <text class="delta delta-dn" x="1080" y="420" text-anchor="end" font-family="Georgia, serif">−35%</text>
+  <text class="delta delta-dn" x="608" y="402" font-family="Georgia, serif">−35%</text>
 
   <!-- FATHERLAND — bars y=466 to y=516, label centered y=497 -->
   <text class="film-label" x="250" y="504" text-anchor="end">Fatherland</text>
@@ -116,7 +119,7 @@ Almost two months later, Cannes has come and gone, and we have updated our predi
   <rect x="260" y="494" width="180" height="22" fill="url(#hatchDn)"/>
   <text class="nums" x="586" y="482">APR · 40%</text>
   <text class="nums" x="446" y="510">JUN · 23%</text>
-  <text class="delta delta-dn" x="1080" y="500" text-anchor="end" font-family="Georgia, serif">−17%</text>
+  <text class="delta delta-dn" x="592" y="484" font-family="Georgia, serif">−17%</text>
 
   <!-- NO ONE CARES — bars y=548 to y=598, label centered y=579 -->
   <text class="film-label" x="250" y="586" text-anchor="end">No One Cares</text>
@@ -126,17 +129,13 @@ Almost two months later, Cannes has come and gone, and we have updated our predi
   <rect x="260" y="576" width="136" height="22" fill="url(#hatchDn)"/>
   <text class="nums" x="562" y="564">APR · 37%</text>
   <text class="nums" x="402" y="592">JUN · 17%</text>
-  <text class="delta delta-dn" x="1080" y="582" text-anchor="end" font-family="Georgia, serif">−20%</text>
+  <text class="delta delta-dn" x="568" y="566" font-family="Georgia, serif">−20%</text>
 
   <line x1="0" y1="675" x2="1100" y2="675" stroke="#201A13" stroke-width="2"/>
   <text x="0" y="700" font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.1em" fill="#9B8E79">SOURCE: FILMBALL DISCORD CONSENSUS · 57 PREDICTIONS</text>
 </svg>
 </div>
 </figure>
-
-There were some obvious changes since the last update, like the fall of *Narnia: The Magician's Nephew* after its delay to a 2027 release date. In our April 3rd update, Gerwig's upcoming project ranked 6th in Best Picture, with just over 70% predicting a nomination, and was also as high as second in both Production Design and Costume Design. It will be interesting to see if we rally behind this movie the same way next year. Although it wasn't in the top ten in any categories in April, *Ink* was also revealed to be a 2027 release, and has subsequently been removed from all predictions.
-
-Rumors of strong test screenings for *Behemoth!* have led many people to feel encouraged to predict it. The movie rose 10 whole spots in Best Picture, from 18th to 8th, with 56% of people now predicting it, up from 11% previously. This is by far the most notable rise in this category among the movies already on our radar in April. Pedro Pascal also rose from 11th to 6th in Lead Actor, just missing out on our top 5. Pascal feels like a perfect candidate to finally break into the awards race this season. Tony Gilroy's Original Screenplay also made its way into our official predictions with a rise from 18% to 53%. Only two people are currently predicting Gilroy in Director, leaving him down at 13th place. It feels a little strange that more people aren't considering him, given he's a previous Director nominee for *Michael Clayton*, but if *Behemoth!* continues this show of force, we might see Gilroy rise here.
 
 Among movies already released this year, the most notable drop from April to June was for *Michael*, with the film's Best Picture prediction rate dropping from 42% to 7%. The movie also fell off in several other above-the-line categories, including Jaafar Jackson dropping from 46% to 9% in Actor, Colman Domingo dropping steeply from 75% to 17% in Supporting Actor, and Nia Long even losing all 10 of the predictors she had for Supporting Actress in April. The reason for this is obvious: as of writing, the movie has a 38% on Rotten Tomatoes and a 39 on Metacritic. The potential counterpoint? *Michael* is moonwalkin' its way to nearly $1 billion worldwide, showing proof of true audience passion. This is a movie I'll be looking out for to see if these stats ever go back up.
 
@@ -299,6 +298,8 @@ The other is *Project Hail Mary*, which has a unanimous nomination rate in Best 
 
 These are three of the four movies that our predictors are seeing strong years for, with *The Odyssey* being the fourth. While *The Odyssey* doesn't have 100% in any category, it's still our top predicted movie overall. Only one predictor has it missing Best Picture, and 33% of our total body has it winning, the highest total of any movie. Similarly, a staggering 55% predict Christopher Nolan will win Best Director.
 
+Of course, some categories have stronger consensus than others. Our top five in Best Director consists of Christopher Nolan for *The Odyssey*, Alejandro G. Iñárritu for *Digger*, Martin McDonagh for *Wild Horse Nine*, Javier Ambrossi and Javier Calvo for *The Black Ball*, and Cristian Mungiu for *Fjord*. All five of these directors have over 70% predicting them for nominations, with a steep drop-off to 6th place, where only 18% predict Phil Lord and Christopher Miller for *Project Hail Mary*, which is still enough to place them in sixth. This is our strongest consensus top five in any category.
+
 <figure class="article-graphic article-graphic--scroll" role="img" aria-label="Best Director consensus — top 5 vs the rest">
 <div class="article-graphic__scroll">
 <svg viewBox="0 0 1100 560" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
@@ -328,12 +329,6 @@ These are three of the four movies that our predictors are seeing strong years f
     <text x="72" y="379">25%</text>
     <text x="72" y="464">0%</text>
   </g>
-
-  <!-- 70% threshold line — the "consensus floor" -->
-  <!-- 70% at y = 460 - (70 * 3.4) = 460 - 238 = 222 -->
-  <line x1="80" y1="222" x2="1020" y2="222" stroke="#B7352E" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.9"/>
-  <rect x="1025" y="212" width="65" height="20" fill="#B7352E"/>
-  <text x="1057" y="226" text-anchor="middle" font-family="ui-monospace, monospace" font-size="11" font-weight="700" letter-spacing="0.12em" fill="#FCFAF1">70%</text>
 
   <!-- Bar 1: Nolan 93% — height = 93*3.4 = 316px → y_top = 460-316 = 144 -->
   <rect x="110" y="144" width="130" height="316" fill="#BD8428" stroke="#201A13"/>
@@ -382,8 +377,6 @@ These are three of the four movies that our predictors are seeing strong years f
 </svg>
 </div>
 </figure>
-
-Of course, some categories have stronger consensus than others. Our top five in Best Director consists of Christopher Nolan for *The Odyssey*, Alejandro G. Iñárritu for *Digger*, Martin McDonagh for *Wild Horse Nine*, Javier Ambrossi and Javier Calvo for *The Black Ball*, and Cristian Mungiu for *Fjord*. All five of these directors have over 70% predicting them for nominations, with a steep drop-off to 6th place, where only 18% predict Phil Lord and Christopher Miller for *Project Hail Mary*, which is still enough to place them in sixth. This is our strongest consensus top five in any category.
 
 Actress and Supporting Actress are above-the-line categories where there's no strong front-runner. That's not to say there's complete chaos, as our top five in Actress all have nomination rates above 50%. The highest, however, is Renate Reinsve for *Fjord*, with only 78% (43 out of 55 predictors). The highest nomination rate among Supporting Actress contenders is for Anne Hathaway in *The Odyssey*, at 74% (41 out of 54 predictors).
 
