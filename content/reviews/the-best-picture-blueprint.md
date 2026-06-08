@@ -26,7 +26,7 @@ verdictNote: ""
 prospects: []
 isHero: false
 tags: []
-categoryTags: []
+categoryTags: [best-picture]
 ---
 
 As Oscar enthusiasts, we all strive to get that perfect "10 for 10" Best Picture lineup as early in the season as possible. Some say predicting awards before we hit the fall season is pointless because you don't know anything about these movies. "No one has seen these films, so what are you even predicting based on?" Now, we might have no intel to use, but that's exactly where awards season enthusiasts and addicts like us thrive. Anyone can make predictions when you have seen precursors and know which films have a 90 on Metacritic and which made a bajillion dollars at the box office, but where the real fun of predicting comes from is when you're flying blind. All you have is word-of-mouth rumors, all you have is looking at filmmakers' past track records and experiences…
