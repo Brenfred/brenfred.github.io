@@ -43,7 +43,16 @@ Rumors of strong test screenings for *Behemoth!* have led many people to feel en
   <line x1="0" y1="90" x2="1100" y2="90" stroke="#201A13" stroke-width="2"/>
   <rect x="0" y="87" width="110" height="6" fill="#B7352E"/>
 
-  <text x="0" y="130" font-family="ui-monospace, monospace" font-size="13" letter-spacing="2.5" fill="#695D4E" font-weight="700">▲ MOVING UP</text>
+
+  <!-- APR / JUN swatch legend -->
+  <g font-family="ui-monospace, monospace" font-size="11" letter-spacing="0.12em" fill="#695D4E" font-weight="700">
+    <rect x="0" y="108" width="22" height="12" fill="#C9BFA8" stroke="#201A13"/>
+    <text x="30" y="119">APR 3</text>
+    <rect x="100" y="108" width="22" height="12" fill="#E8B85A" stroke="#201A13"/>
+    <text x="130" y="119">JUN 1</text>
+  </g>
+
+  <text x="0" y="148" font-family="ui-monospace, monospace" font-size="13" letter-spacing="2.5" fill="#695D4E" font-weight="700">▲ MOVING UP</text>
 
   <defs>
     <pattern id="hatchUp" patternUnits="userSpaceOnUse" width="14" height="14" patternTransform="rotate(135)">
@@ -84,8 +93,6 @@ Rumors of strong test screenings for *Behemoth!* have led many people to feel en
   <rect x="260" y="162" width="88" height="22" fill="url(#hatchUp)"/>
   <rect x="260" y="190" width="448" height="22" fill="#E8B85A" stroke="#201A13"/>
   <rect x="260" y="190" width="448" height="22" fill="url(#hatchUp)"/>
-  <text class="nums" x="354" y="178">APR · 11%</text>
-  <text class="nums" x="714" y="206">JUN · 56%</text>
   <text class="delta delta-up" x="720" y="207" font-family="Georgia, serif">+45%</text>
 
   <!-- THE BLACK BALL — single bar at y=244, height=22. Film label at y=255. -->
@@ -94,7 +101,6 @@ Rumors of strong test screenings for *Behemoth!* have led many people to feel en
   <text class="delta-new" x="920" y="269">NEW</text>
   <rect x="260" y="252" width="648" height="22" fill="#E8B85A" stroke="#201A13"/>
   <rect x="260" y="252" width="648" height="22" fill="url(#hatchUp)"/>
-  <text class="nums" x="914" y="268">JUN · 81%</text>
 
   <!-- divider -->
   <line x1="0" y1="320" x2="1100" y2="320" stroke="#201A13" stroke-width="1" stroke-dasharray="3,4" opacity="0.5"/>
@@ -107,8 +113,6 @@ Rumors of strong test screenings for *Behemoth!* have led many people to feel en
   <rect x="260" y="384" width="336" height="22" fill="url(#hatchDn)"/>
   <rect x="260" y="412" width="56" height="22" fill="#B7352E" stroke="#201A13"/>
   <rect x="260" y="412" width="56" height="22" fill="url(#hatchDn)"/>
-  <text class="nums" x="602" y="400">APR · 42%</text>
-  <text class="nums" x="322" y="428">JUN · 7%</text>
   <text class="delta delta-dn" x="608" y="402" font-family="Georgia, serif">−35%</text>
 
   <!-- FATHERLAND — bars y=466 to y=516, label centered y=497 -->
@@ -117,8 +121,6 @@ Rumors of strong test screenings for *Behemoth!* have led many people to feel en
   <rect x="260" y="466" width="320" height="22" fill="url(#hatchDn)"/>
   <rect x="260" y="494" width="180" height="22" fill="#B7352E" stroke="#201A13"/>
   <rect x="260" y="494" width="180" height="22" fill="url(#hatchDn)"/>
-  <text class="nums" x="586" y="482">APR · 40%</text>
-  <text class="nums" x="446" y="510">JUN · 23%</text>
   <text class="delta delta-dn" x="592" y="484" font-family="Georgia, serif">−17%</text>
 
   <!-- NO ONE CARES — bars y=548 to y=598, label centered y=579 -->
@@ -127,8 +129,6 @@ Rumors of strong test screenings for *Behemoth!* have led many people to feel en
   <rect x="260" y="548" width="296" height="22" fill="url(#hatchDn)"/>
   <rect x="260" y="576" width="136" height="22" fill="#B7352E" stroke="#201A13"/>
   <rect x="260" y="576" width="136" height="22" fill="url(#hatchDn)"/>
-  <text class="nums" x="562" y="564">APR · 37%</text>
-  <text class="nums" x="402" y="592">JUN · 17%</text>
   <text class="delta delta-dn" x="568" y="566" font-family="Georgia, serif">−20%</text>
 
   <line x1="0" y1="675" x2="1100" y2="675" stroke="#201A13" stroke-width="2"/>
