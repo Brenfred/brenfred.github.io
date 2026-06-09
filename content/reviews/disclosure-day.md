@@ -22,11 +22,21 @@ isHero: false
 tags: []
 categoryTags: []
 prospects:
-  - { category: score,        tier: predicted,   performer: "John Williams" }
-  - { category: actress,      tier: in-the-mix,  performer: "Emily Blunt" }
-  - { category: sound,        tier: long-shot,   performer: "" }
-  - { category: vfx,          tier: long-shot,   performer: "" }
-  - { category: picture,      tier: long-shot,   performer: "" }
+  - category: score
+    tier: predicted
+    performer: "John Williams"
+  - category: actress
+    tier: in-the-mix
+    performer: "Emily Blunt"
+  - category: sound
+    tier: long-shot
+    performer: ""
+  - category: vfx
+    tier: long-shot
+    performer: ""
+  - category: picture
+    tier: long-shot
+    performer: ""
 ---
 
 The GOAT debate transcends medium. You could be talking hoops and arguing, "Is Michael Jordan or LeBron James a better player?" You could be talking about music and asking, "Is Michael Jackson or The Beatles the best of all time?" And when it comes to movies, a name that is often brought up is Steven Spielberg.
