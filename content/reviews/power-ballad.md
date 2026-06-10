@@ -24,7 +24,7 @@ categoryTags: []
 prospects:
   - category: song
     tier: in-the-mix
-    performer: "\"How to Write a Song (Without You)\""
+    performer: ""How to Write a Song (Without You)""
 ---
 
 When I first heard about this movie, I very much felt like it was made with me in mind: starring one of my favorite actors working today, co-starring a member of a band I was obsessed with as a kid, accompanied by fun music. I was in.
