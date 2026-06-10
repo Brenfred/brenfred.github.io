@@ -4,11 +4,11 @@ title: "Power Ballad Jams Its Way to a Decent Time"
 film: Power Ballad
 director: John Carney
 studio: Lionsgate
-runtime: 1 hour 39 minutes
+runtime: 99 mins
 genre: Comedy-Drama
 rating: 3
 stance: hold
-stanceLabel: "Long Song Play"
+stanceLabel: "Lone Song Play"
 posterSlug: power-ballad
 writer: ""
 writers:
