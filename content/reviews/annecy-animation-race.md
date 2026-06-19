@@ -10,8 +10,9 @@ rating: ""
 stance: ""
 stanceLabel: ""
 posterSlug: annecy
-writer: Arnaud W.
-writers: []
+writer: ""
+writers:
+  - arnaud-weissenburger
 publishedDate: June 18, 2026
 deck: As indie animation gains momentum in awards season, Annecy has quietly
   become one of the Oscars' most important early proving grounds.
