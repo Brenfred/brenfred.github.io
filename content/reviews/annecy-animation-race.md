@@ -1,6 +1,6 @@
 ---
 type: discussion
-title: "When Does the Animated Film Race Start? The Annecy Film Festival"
+title: When Does the Animated Film Race Start? The Annecy Film Festival
 film: ""
 director: ""
 studio: ""
@@ -9,14 +9,15 @@ genre: ""
 rating: ""
 stance: ""
 stanceLabel: ""
-posterSlug: annecy-animation-race
-writer: ""
-writers:
-  - dylan-mckercher
-publishedDate: June 17, 2026
-deck: As indie animation gains momentum in awards season, Annecy has quietly become one of the Oscars' most important early proving grounds.
-excerpt: From competition winners to audience prizes, here's how Annecy helps identify the animated films most likely to matter during awards season.
-heroImage: ""
+posterSlug: annecy
+writer: Arnaud W.
+writers: []
+publishedDate: June 18, 2026
+deck: As indie animation gains momentum in awards season, Annecy has quietly
+  become one of the Oscars' most important early proving grounds.
+excerpt: From competition winners to audience prizes, here's how Annecy helps
+  identify the animated films most likely to matter during awards season.
+heroImage: /posters/annecy-header.jpg
 verdictNote: ""
 prospects: []
 isHero: false
