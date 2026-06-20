@@ -39,131 +39,133 @@ Despite this, Annecy's "Competition" program is always one to behold given that 
 
 For our purposes, there are 3 significant prizes awarded to "Competition" films: the Audience Award (voted on by the public), the Jury Award (effectively a 2nd-place prize), and the Crystal (the top prize).
 
-Looking back at the last 11 years of the festival, we see that recent winners of these categories have gone on to be nominated for the Academy Awards. The aforementioned Oscar-nominated *Little Amelie* won the Audience Prize, *Flow* won the Jury Award, and *Memoir of a Snail* won the Crystal. In this selection, we see that the Audience Prize (which did not run from 2020 to 2022 due to COVID) holds a fantastic 6/8 track record, while the Crystal is still solid but a bit more inconsistent at 6/11.
+Looking back at the last 11 years of the festival, we see that recent winners of these categories have gone on to be nominated for the Academy Awards. The aforementioned Oscar-nominated *Little Amelie* won the Audience Prize, *Flow* won the Jury Award, and *Memoir of a Snail* won the Crystal. In this selection, we see that the Audience Prize (which did not run from 2020 to 2022 due to COVID) holds a fantastic 7/9 track record, while the Crystal is still solid but a bit more inconsistent at 6/12.
 
 <figure class="article-graphic article-graphic--scroll" role="img" aria-label="Annecy competition winners 2014 to 2025 and which became Oscar nominees">
 <div class="article-graphic__scroll">
-<svg viewBox="0 0 1240 1106" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
+<svg viewBox="0 0 1240 1128" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
   <defs>
     <pattern id="hatch" patternUnits="userSpaceOnUse" width="16" height="16" patternTransform="rotate(135)">
       <line x1="0" y1="0" x2="0" y2="16" stroke="#BD8428" stroke-width="1" opacity="0.06"/>
     </pattern>
   </defs>
-  <rect x="0" y="0" width="1240" height="1106" fill="url(#hatch)"/>
+  <rect x="0" y="0" width="1240" height="1128" fill="url(#hatch)"/>
   <text x="0" y="40" font-size="40" font-weight="700" fill="#201A13">Annecy winners that became <tspan font-style="italic" fill="#BD8428">Oscar nominees</tspan></text>
   <text x="0" y="68" font-size="17" font-style="italic" fill="#695D4E">Competition &amp; Contrechamp prizes, 2014&#8211;2025</text>
   <line x1="0" y1="92" x2="1240" y2="92" stroke="#201A13" stroke-width="2"/>
   <rect x="0" y="89" width="130" height="6" fill="#B7352E"/>
+  <text x="422" y="132" font-family="ui-monospace, JetBrains Mono, monospace" font-size="11" letter-spacing="3" font-weight="700" fill="#BD8428" text-anchor="middle">COMPETITION</text>
+  <path d="M125 135 L125 140 L720 140 L720 135" fill="none" stroke="#BD8428" stroke-width="1.2" opacity="0.65"/>
   <g font-family="ui-monospace, JetBrains Mono, monospace" font-size="12" letter-spacing="1.4" font-weight="700" text-anchor="middle">
-    <text x="62" y="142" fill="#201A13">YEAR</text>
-    <text x="272" y="142" fill="#9B8E79">CRYSTAL</text>
-    <text x="575" y="142" fill="#9B8E79">JURY AWARD</text>
-    <text x="842" y="142" fill="#9B8E79">CONTRECHAMP</text>
-    <text x="1100" y="142" fill="#9B8E79">AUDIENCE</text>
+    <text x="62" y="164" fill="#201A13">YEAR</text>
+    <text x="272" y="164" fill="#9B8E79">CRYSTAL</text>
+    <text x="575" y="164" fill="#9B8E79">JURY AWARD</text>
+    <text x="842" y="164" fill="#9B8E79">CONTRECHAMP</text>
+    <text x="1100" y="164" fill="#9B8E79">AUDIENCE</text>
   </g>
-  <line x1="0" y1="158" x2="1240" y2="158" stroke="#201A13" stroke-width="2"/>
-  <text x="62" y="218" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2025</text>
-  <rect x="125" y="182" width="295" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
-  <text x="272" y="214" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Arco</text>
-  <text x="575" y="214" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">ChaO</text>
-  <text x="842" y="214" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Endless Cookie</text>
-  <rect x="965" y="182" width="270" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
-  <text x="1100" y="214" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Little Amelie</text>
-  <line x1="0" y1="240" x2="1240" y2="240" stroke="#ECE1C8" stroke-width="1"/>
-  <text x="62" y="282" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2024</text>
-  <rect x="125" y="246" width="295" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
-  <text x="272" y="278" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Memoir of a Snail</text>
-  <rect x="430" y="246" width="290" height="52" rx="3" fill="#E8B85A"/>
-  <text x="575" y="278" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Flow</text>
-  <text x="842" y="278" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Sultana&#x27;s Dream</text>
-  <rect x="965" y="246" width="270" height="52" rx="3" fill="#E8B85A"/>
-  <text x="1100" y="278" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Flow</text>
-  <line x1="0" y1="304" x2="1240" y2="304" stroke="#ECE1C8" stroke-width="1"/>
-  <text x="62" y="346" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2023</text>
-  <text x="272" y="342" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Chicken for Linda</text>
-  <text x="575" y="342" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Four Souls of Coyote</text>
-  <rect x="730" y="310" width="225" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
-  <text x="842" y="342" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Robot Dreams</text>
-  <text x="1100" y="342" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Sirocco</text>
-  <line x1="0" y1="368" x2="1240" y2="368" stroke="#ECE1C8" stroke-width="1"/>
-  <text x="62" y="413" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2022</text>
-  <text x="272" y="400" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Little Nicholas: Happy</text>
-  <text x="272" y="418" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">as Can Be</text>
-  <text x="575" y="400" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">No Dogs or Italians</text>
-  <text x="575" y="418" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Allowed</text>
-  <text x="842" y="409" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Dozens of Norths</text>
-  <text x="1100" y="409" font-size="16" font-style="italic" fill="#9B8E79" text-anchor="middle">N/A</text>
-  <line x1="0" y1="438" x2="1240" y2="438" stroke="#ECE1C8" stroke-width="1"/>
-  <text x="62" y="483" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2021</text>
-  <rect x="125" y="444" width="295" height="58" rx="3" fill="rgba(189,132,40,0.16)"/>
-  <text x="272" y="479" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Flee</text>
-  <text x="575" y="479" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">My Sunny Maad</text>
-  <text x="842" y="470" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Bob Cuspe &#8211; We Don&#x27;t</text>
-  <text x="842" y="488" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Like People</text>
-  <text x="1100" y="479" font-size="16" font-style="italic" fill="#9B8E79" text-anchor="middle">N/A</text>
-  <line x1="0" y1="508" x2="1240" y2="508" stroke="#ECE1C8" stroke-width="1"/>
-  <text x="62" y="562" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2020</text>
-  <text x="272" y="558" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Calamity</text>
-  <text x="575" y="540" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">The Nose or the</text>
-  <text x="575" y="558" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Conspiracy of</text>
-  <text x="575" y="576" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Mavericks</text>
-  <text x="842" y="558" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">My Favourite War</text>
-  <text x="1100" y="558" font-size="16" font-style="italic" fill="#9B8E79" text-anchor="middle">N/A</text>
-  <line x1="0" y1="596" x2="1240" y2="596" stroke="#ECE1C8" stroke-width="1"/>
-  <text x="62" y="650" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2019</text>
-  <rect x="125" y="602" width="295" height="76" rx="3" fill="rgba(189,132,40,0.16)"/>
-  <text x="272" y="646" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">I Lost My Body</text>
-  <text x="575" y="628" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Bu&#241;uel in the</text>
-  <text x="575" y="646" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Labyrinth of the</text>
-  <text x="575" y="664" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Turtles</text>
-  <text x="842" y="646" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Away</text>
-  <rect x="965" y="602" width="270" height="76" rx="3" fill="rgba(189,132,40,0.16)"/>
-  <text x="1100" y="646" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">I Lost My Body</text>
-  <line x1="0" y1="684" x2="1240" y2="684" stroke="#ECE1C8" stroke-width="1"/>
-  <text x="62" y="726" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2018</text>
-  <text x="272" y="722" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Funan</text>
-  <rect x="430" y="690" width="290" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
-  <text x="575" y="722" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">The Breadwinner</text>
-  <rect x="965" y="690" width="270" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
-  <text x="1100" y="722" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">The Breadwinner</text>
-  <line x1="0" y1="748" x2="1240" y2="748" stroke="#ECE1C8" stroke-width="1"/>
-  <text x="62" y="793" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2017</text>
-  <text x="272" y="789" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Lu Over the Wall</text>
-  <text x="575" y="780" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">In This Corner of the</text>
-  <text x="575" y="798" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">World</text>
-  <rect x="965" y="754" width="270" height="58" rx="3" fill="rgba(189,132,40,0.16)"/>
-  <text x="1100" y="789" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Loving Vincent</text>
-  <line x1="0" y1="818" x2="1240" y2="818" stroke="#ECE1C8" stroke-width="1"/>
-  <text x="62" y="860" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2016</text>
-  <rect x="125" y="824" width="295" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
-  <text x="272" y="856" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">My Life as a Zucchini</text>
-  <text x="575" y="856" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">The Girl Without Hands</text>
-  <rect x="965" y="824" width="270" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
-  <text x="1100" y="856" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">My Life as a Zucchini</text>
-  <line x1="0" y1="882" x2="1240" y2="882" stroke="#ECE1C8" stroke-width="1"/>
-  <text x="62" y="927" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2015</text>
-  <text x="272" y="914" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">April and the</text>
-  <text x="272" y="932" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Extraordinary World</text>
-  <text x="575" y="914" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Sarusuberi: Miss</text>
-  <text x="575" y="932" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Hokusai</text>
-  <text x="1100" y="923" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Long Way North</text>
-  <line x1="0" y1="952" x2="1240" y2="952" stroke="#ECE1C8" stroke-width="1"/>
-  <text x="62" y="994" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2014</text>
-  <rect x="125" y="958" width="295" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
-  <text x="272" y="990" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Boy and the World</text>
-  <text x="575" y="990" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Cheatin&#x27;</text>
-  <rect x="965" y="958" width="270" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
-  <text x="1100" y="990" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Boy and the World</text>
-  <line x1="0" y1="1016" x2="1240" y2="1016" stroke="#ECE1C8" stroke-width="1"/>
-  <line x1="0" y1="1018" x2="1240" y2="1018" stroke="#201A13" stroke-width="2"/>
+  <line x1="0" y1="180" x2="1240" y2="180" stroke="#201A13" stroke-width="2"/>
+  <text x="62" y="240" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2025</text>
+  <rect x="125" y="204" width="295" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
+  <text x="272" y="236" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Arco</text>
+  <text x="575" y="236" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">ChaO</text>
+  <text x="842" y="236" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Endless Cookie</text>
+  <rect x="965" y="204" width="270" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
+  <text x="1100" y="236" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Little Amelie</text>
+  <line x1="0" y1="262" x2="1240" y2="262" stroke="#ECE1C8" stroke-width="1"/>
+  <text x="62" y="304" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2024</text>
+  <rect x="125" y="268" width="295" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
+  <text x="272" y="300" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Memoir of a Snail</text>
+  <rect x="430" y="268" width="290" height="52" rx="3" fill="#E8B85A"/>
+  <text x="575" y="300" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Flow</text>
+  <text x="842" y="300" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Sultana&#x27;s Dream</text>
+  <rect x="965" y="268" width="270" height="52" rx="3" fill="#E8B85A"/>
+  <text x="1100" y="300" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Flow</text>
+  <line x1="0" y1="326" x2="1240" y2="326" stroke="#ECE1C8" stroke-width="1"/>
+  <text x="62" y="368" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2023</text>
+  <text x="272" y="364" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Chicken for Linda</text>
+  <text x="575" y="364" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Four Souls of Coyote</text>
+  <rect x="730" y="332" width="225" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
+  <text x="842" y="364" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Robot Dreams</text>
+  <text x="1100" y="364" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Sirocco</text>
+  <line x1="0" y1="390" x2="1240" y2="390" stroke="#ECE1C8" stroke-width="1"/>
+  <text x="62" y="435" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2022</text>
+  <text x="272" y="422" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Little Nicholas: Happy</text>
+  <text x="272" y="440" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">as Can Be</text>
+  <text x="575" y="422" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">No Dogs or Italians</text>
+  <text x="575" y="440" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Allowed</text>
+  <text x="842" y="431" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Dozens of Norths</text>
+  <text x="1100" y="431" font-size="16" font-style="italic" fill="#9B8E79" text-anchor="middle">N/A</text>
+  <line x1="0" y1="460" x2="1240" y2="460" stroke="#ECE1C8" stroke-width="1"/>
+  <text x="62" y="505" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2021</text>
+  <rect x="125" y="466" width="295" height="58" rx="3" fill="rgba(189,132,40,0.16)"/>
+  <text x="272" y="501" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Flee</text>
+  <text x="575" y="501" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">My Sunny Maad</text>
+  <text x="842" y="492" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Bob Cuspe &#8211; We Don&#x27;t</text>
+  <text x="842" y="510" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Like People</text>
+  <text x="1100" y="501" font-size="16" font-style="italic" fill="#9B8E79" text-anchor="middle">N/A</text>
+  <line x1="0" y1="530" x2="1240" y2="530" stroke="#ECE1C8" stroke-width="1"/>
+  <text x="62" y="584" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2020</text>
+  <text x="272" y="580" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Calamity</text>
+  <text x="575" y="562" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">The Nose or the</text>
+  <text x="575" y="580" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Conspiracy of</text>
+  <text x="575" y="598" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Mavericks</text>
+  <text x="842" y="580" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">My Favourite War</text>
+  <text x="1100" y="580" font-size="16" font-style="italic" fill="#9B8E79" text-anchor="middle">N/A</text>
+  <line x1="0" y1="618" x2="1240" y2="618" stroke="#ECE1C8" stroke-width="1"/>
+  <text x="62" y="672" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2019</text>
+  <rect x="125" y="624" width="295" height="76" rx="3" fill="rgba(189,132,40,0.16)"/>
+  <text x="272" y="668" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">I Lost My Body</text>
+  <text x="575" y="650" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Bu&#241;uel in the</text>
+  <text x="575" y="668" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Labyrinth of the</text>
+  <text x="575" y="686" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Turtles</text>
+  <text x="842" y="668" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Away</text>
+  <rect x="965" y="624" width="270" height="76" rx="3" fill="rgba(189,132,40,0.16)"/>
+  <text x="1100" y="668" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">I Lost My Body</text>
+  <line x1="0" y1="706" x2="1240" y2="706" stroke="#ECE1C8" stroke-width="1"/>
+  <text x="62" y="748" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2018</text>
+  <text x="272" y="744" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Funan</text>
+  <rect x="430" y="712" width="290" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
+  <text x="575" y="744" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">The Breadwinner</text>
+  <rect x="965" y="712" width="270" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
+  <text x="1100" y="744" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">The Breadwinner</text>
+  <line x1="0" y1="770" x2="1240" y2="770" stroke="#ECE1C8" stroke-width="1"/>
+  <text x="62" y="815" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2017</text>
+  <text x="272" y="811" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Lu Over the Wall</text>
+  <text x="575" y="802" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">In This Corner of the</text>
+  <text x="575" y="820" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">World</text>
+  <rect x="965" y="776" width="270" height="58" rx="3" fill="rgba(189,132,40,0.16)"/>
+  <text x="1100" y="811" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Loving Vincent</text>
+  <line x1="0" y1="840" x2="1240" y2="840" stroke="#ECE1C8" stroke-width="1"/>
+  <text x="62" y="882" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2016</text>
+  <rect x="125" y="846" width="295" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
+  <text x="272" y="878" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">My Life as a Zucchini</text>
+  <text x="575" y="878" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">The Girl Without Hands</text>
+  <rect x="965" y="846" width="270" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
+  <text x="1100" y="878" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">My Life as a Zucchini</text>
+  <line x1="0" y1="904" x2="1240" y2="904" stroke="#ECE1C8" stroke-width="1"/>
+  <text x="62" y="949" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2015</text>
+  <text x="272" y="936" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">April and the</text>
+  <text x="272" y="954" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Extraordinary World</text>
+  <text x="575" y="936" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Sarusuberi: Miss</text>
+  <text x="575" y="954" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Hokusai</text>
+  <text x="1100" y="945" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Long Way North</text>
+  <line x1="0" y1="974" x2="1240" y2="974" stroke="#ECE1C8" stroke-width="1"/>
+  <text x="62" y="1016" font-size="26" font-weight="700" fill="#201A13" text-anchor="middle">2014</text>
+  <rect x="125" y="980" width="295" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
+  <text x="272" y="1012" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Boy and the World</text>
+  <text x="575" y="1012" font-size="16" font-weight="400" fill="#695D4E" text-anchor="middle">Cheatin&#x27;</text>
+  <rect x="965" y="980" width="270" height="52" rx="3" fill="rgba(189,132,40,0.16)"/>
+  <text x="1100" y="1012" font-size="16" font-weight="700" fill="#201A13" text-anchor="middle">Boy and the World</text>
+  <line x1="0" y1="1038" x2="1240" y2="1038" stroke="#ECE1C8" stroke-width="1"/>
+  <line x1="0" y1="1040" x2="1240" y2="1040" stroke="#201A13" stroke-width="2"/>
   <g font-family="ui-monospace, JetBrains Mono, monospace" font-size="13" letter-spacing="1" font-weight="700" text-anchor="middle">
-    <text x="272" y="1050" fill="#BD8428">6 / 11 NOMINATED</text>
-    <text x="575" y="1050" fill="#BD8428">2 / 11 NOMINATED</text>
-    <text x="1100" y="1050" fill="#BD8428">6 / 8 NOMINATED</text>
+    <text x="272" y="1072" fill="#BD8428">6 / 12 NOMINATED</text>
+    <text x="575" y="1072" fill="#BD8428">2 / 12 NOMINATED</text>
+    <text x="1100" y="1072" fill="#BD8428">7 / 9 NOMINATED</text>
   </g>
   <g font-family="ui-monospace, JetBrains Mono, monospace" font-size="12" letter-spacing="1" fill="#695D4E">
-    <rect x="0" y="1072" width="22" height="14" rx="2" fill="rgba(189,132,40,0.16)"/><text x="30" y="1084">OSCAR NOMINEE</text>
-    <rect x="220" y="1072" width="22" height="14" rx="2" fill="#E8B85A"/><text x="250" y="1084">OSCAR WINNER</text>
+    <rect x="0" y="1094" width="22" height="14" rx="2" fill="rgba(189,132,40,0.16)"/><text x="30" y="1106">OSCAR NOMINEE</text>
+    <rect x="220" y="1094" width="22" height="14" rx="2" fill="#E8B85A"/><text x="250" y="1106">OSCAR WINNER</text>
   </g>
 </svg>
 </div>
@@ -178,8 +180,6 @@ It helps to have a complete picture of the festival. When *Flow* failed to win t
 The last 2 years have exceptionally yielded TWO nominees. For all we know, this could be the luck of the draw, but perhaps we can expect this to continue. Maybe not every year, but certainly in some future years.
 
 Something I also want to draw attention to is that every film that has won both the Crystal and the Audience Prize has been nominated for the Animated Film Oscar. The Jury Award and Audience Award combo is strong too (*Flow* and *The Breadwinner* proving themselves worthy), but that track record isn't flawless.
-
-Films that have won the Crystal and the Audience Prize:
 
 <figure class="article-graphic" role="img" aria-label="Films that won both the Annecy Crystal and Audience Award, all four Oscar-nominated">
 <svg viewBox="0 0 720 410" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
