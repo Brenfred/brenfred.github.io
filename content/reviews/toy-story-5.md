@@ -15,7 +15,7 @@ writers:
   - sean-malloy
 publishedDate: June 21, 2026
 deck: ""
-excerpt: ""
+excerpt: "With new films released over the course of thirty years, several generations have grown up enthralled by the Toy Story franchise. What kid wouldn't love to imagine what their toys get up to when they're not being played with? It's an evergreen idea that keeps on giving, and this latest installment keeps that spirit alive."
 heroImage: /posters/toy-story-5-hero.jpg
 verdictNote: "Not the franchise's best, but a heartfelt look at growing up in the digital age."
 isHero: false
