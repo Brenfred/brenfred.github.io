@@ -17,7 +17,7 @@ publishedDate: Jun 23, 2026
 deck: Wilde rebounds with a sharp, hilarious relationship comedy powered by
   stellar performances from Seth Rogen, Penélope Cruz, Edward Norton, and Wilde
   herself.
-heroImage: https://deadline.com/2026/02/the-invite-release-date-seth-rogen-olivia-wilde-1236729388/
+heroImage: https://deadline.com/2026/02/the-invite-release-date-seth-rogen-olivia-wilde-1236729388/](https://deadline.com/wp-content/uploads/2026/01/The-Invite-Sundance-2026-Key-Still.png?w=681&h=383&crop=1
 verdictNote: With the right campaign, A24 may have an Oscar contender on their hands
 prospects:
   - tier: predicted
