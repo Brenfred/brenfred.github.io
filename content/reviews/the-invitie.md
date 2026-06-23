@@ -6,7 +6,7 @@ director: Olivia Wilde
 studio: A24
 runtime: 107 min
 genre: Comedy
-rating: 3
+rating: 4
 stance: buy
 stanceLabel: Best Picture Contender
 posterSlug: the-invite
