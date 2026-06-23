@@ -9,7 +9,7 @@ genre: Comedy
 rating: 3
 stance: buy
 stanceLabel: Best Picture Contender
-posterSlug: the-invitie
+posterSlug: the-invite
 writer: "[ Writer ]"
 writers:
   - sean-malloy
