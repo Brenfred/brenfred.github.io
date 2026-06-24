@@ -18,7 +18,7 @@ deck: Milly Alcock shines, but can’t overcome a messy script with bland action
   and no humor.
 excerpt: Milly Alcock shines, but can’t overcome a messy script with bland
   action and no humor.
-heroImage: https://parade.com/movies/supergirl-movie-2026
+heroImage: /posters/supergirl-wide.jpg
 verdictNote: Don't even consider for shortlist
 prospects: []
 isHero: false
