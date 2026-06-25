@@ -18,7 +18,7 @@ deck: While Neon’s newest horror brings some excellent filmmaking, Leviticus
 excerpt: A chilling and deeply personal horror debut whose powerful first half
   ultimately outshines its familiar scares.
 heroImage: /posters/vitor-leviticus.jpg
-verdictNote: NEON will always have far better things to push
+verdictNote: NEON will always have better things to push
 prospects: []
 isHero: false
 tags: []
