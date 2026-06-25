@@ -17,7 +17,7 @@ deck: While Neon’s newest horror brings some excellent filmmaking, Leviticus
   holds itself back from being great.
 excerpt: A chilling and deeply personal horror debut whose powerful first half
   ultimately outshines its familiar scares.
-heroImage: https://www.indiewire.com/criticism/movies/leviticus-review-queer-horror-1235174984/
+heroImage: /posters/vitor-leviticus.jpg
 verdictNote: NEON will always have far better things to push
 prospects: []
 isHero: false
