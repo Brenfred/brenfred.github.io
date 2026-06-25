@@ -13,7 +13,7 @@ posterSlug: the-invite
 writer: "[ Writer ]"
 writers:
   - sean-malloy
-publishedDate: Jun 23, 2026
+publishedDate: June 23, 2026
 deck: Wilde rebounds with a sharp, hilarious relationship comedy powered by
   stellar performances from Seth Rogen, Penélope Cruz, Edward Norton, and Wilde
   herself.
