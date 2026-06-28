@@ -1,6 +1,6 @@
 ---
 type: review
-title: The Drama challenges audiences to grapple with their morals
+title: The Drama Challenges Audiences to Grapple with Their Morals
 film: The Drama
 director: Kristoffer Borgli
 studio: A24
