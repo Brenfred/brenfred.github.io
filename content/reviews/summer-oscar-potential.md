@@ -1,6 +1,6 @@
 ---
 type: discussion
-title: "What summer releases have Oscar potential?"
+title: What Summer Releases Have Oscar Potential?
 film: ""
 director: ""
 studio: ""
@@ -10,17 +10,19 @@ rating: ""
 stance: ""
 stanceLabel: ""
 posterSlug: seb-summer
-writer: "Sebastian Ochoa"
+writer: Sebastian Ochoa
 writers: []
 publishedDate: June 28, 2026
-deck: "From Nolan’s frontrunner to Ridley Scott’s latest, these are all the films releasing between July and August that could be vying for an Oscar nomination come January."
-excerpt: "*The Odyssey* may not be the only summer release worth looking out for…"
+deck: From Nolan’s frontrunner to Ridley Scott’s latest, these are all the films
+  releasing between July and August that could be vying for an Oscar nomination
+  come January.
+excerpt: The Odyssey may not be the only summer release worth looking out for…
 heroImage: /posters/summer.jpg
 verdictNote: ""
+prospects: []
 isHero: false
 tags: []
 categoryTags: []
-prospects: []
 ---
 
 The summer months can often be slim pickings when it comes to Oscar hopefuls. Over the last three years, just two eventual Best Picture nominees were theatrically released in North America during the months of July and August, those being (if you haven’t guessed already) *Barbie* and *Oppenheimer*. And aside from *F1*, which roared into multiplexes in late June last year, no other summer blockbuster has received a Best Picture nomination in that time. That said, it’s still worth speculating which films on the horizon could find their way to a nomination or two come Oscar season.
