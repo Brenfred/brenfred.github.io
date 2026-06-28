@@ -1,7 +1,7 @@
 ---
 type: review
-title: Leviticus is a perfect small town religious thriller muddled within a
-  clumsy horror film
+title: Leviticus Is a Perfect Small-Town Religious Thriller Muddled Within a
+  Clumsy Horror Film
 film: Leviticus
 director: Adrian Chiarella
 studio: NEON
