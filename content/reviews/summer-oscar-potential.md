@@ -1,6 +1,6 @@
 ---
 type: discussion
-title: What Summer Releases Have Oscar Potential?
+title: Which Summer Releases Have Oscar Potential?
 film: ""
 director: ""
 studio: ""
