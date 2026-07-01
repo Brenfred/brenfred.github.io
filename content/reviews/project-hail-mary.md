@@ -17,6 +17,7 @@ publishedDate: March 22, 2026
 deck: Top tier tech elements meet great performances from Ryan Gosling, James
   Ortiz, and Sandra Hüller in this heartfelt tale of friendship.
 excerpt: Every element is strong and works effortlessly together.
+heroImage: /posters/rocky-grace.jpg
 prospects:
   - tier: predicted
     category: picture
