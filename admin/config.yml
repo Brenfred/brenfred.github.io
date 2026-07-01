@@ -203,6 +203,16 @@ collections:
         multiple: true
         required: false
         hint: "Pick one or more writers from the Writers collection. Their bylines will link to their detail pages."
+      - name: "contributors"
+        label: "Contributors (non-byline)"
+        widget: "relation"
+        collection: "writers"
+        value_field: "slug"
+        search_fields: ["name", "role"]
+        display_fields: ["name", "role"]
+        multiple: true
+        required: false
+        hint: "Optional. Writers credited on their own writer page WITHOUT appearing in the byline — e.g. staff who voted in an awards roundup. The byline uses only the Writers field above."
       - { name: "publishedDate", label: "Published Date", widget: "string",
           hint: "e.g. 'April 3, 2026'" }
       - { name: "deck", label: "Subheadline", widget: "text",
