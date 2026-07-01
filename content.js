@@ -1348,8 +1348,9 @@
 
       // Resolve writer slug list for an arbitrary review (for matching)
       function writerSlugsFor(r) {
-        if (Array.isArray(r.writers) && r.writers.length) {
-          return r.writers.filter(Boolean);
+        var credits = creditSlugs(r);
+        if (credits.length) {
+          return credits;
         }
         // Older schema: single `writer` string. Try to match against the
         // writer name across the directory.
@@ -2070,6 +2071,17 @@
     }).join('');
   }
 
+  // Slugs a review is credited to for WRITER-PAGE association: bylined authors
+  // (writers[]) plus non-byline contributors[] (e.g. awards-ballot voters). The
+  // byline itself still uses writers[] only, so contributors surface on writer
+  // pages without changing the displayed byline.
+  function creditSlugs(r) {
+    var out = [];
+    if (Array.isArray(r.writers)) out = out.concat(r.writers.filter(Boolean));
+    if (Array.isArray(r.contributors)) out = out.concat(r.contributors.filter(Boolean));
+    return out;
+  }
+
   function renderWritersDirectory(writers, reviews) {
     var hostsContainer = $('[data-writers-hosts]');
     var gridContainer  = $('[data-writers-grid]');
@@ -2109,7 +2121,7 @@
     // Article counts per writer (used in tiles)
     var counts = {};
     (reviews || []).forEach(function (r) {
-      (r.writers || []).forEach(function (s) {
+      creditSlugs(r).forEach(function (s) {
         counts[s] = (counts[s] || 0) + 1;
       });
     });
@@ -2237,7 +2249,7 @@
     var writersBySlug = {};
     writers.forEach(function (w) { writersBySlug[w.slug] = w; });
     var byThisWriter = (reviews || []).filter(function (r) {
-      return Array.isArray(r.writers) && r.writers.indexOf(writer.slug) !== -1;
+      return creditSlugs(r).indexOf(writer.slug) !== -1;
     });
 
     var countEl = $('[data-writer-count]');
