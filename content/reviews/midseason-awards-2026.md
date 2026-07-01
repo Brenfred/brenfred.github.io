@@ -1,6 +1,7 @@
 ---
 type: discussion
-title: "Fantasy Filmball Midseason Awards 2026: Celebrating the Year's Best Films So Far"
+title: "Fantasy Filmball Midseason Awards 2026: Celebrating the Year's Best
+  Films So Far"
 film: ""
 director: ""
 studio: ""
@@ -13,18 +14,14 @@ posterSlug: mid-season-poster
 writer: ""
 writers:
   - dylan-mckercher
-contributors:
-  - terence-peterson
-  - matt-downs
-  - brad-derfner
-  - andy-funke
-  - sean-malloy
-  - ray-siddiqi
 publishedDate: July 1, 2026
-deck: "With the first half of the year behind us, our staff voted across 11 categories to celebrate the year's standout achievements. See which movies, performances, and artists earned Fantasy Filmball's highest honors."
-excerpt: "Our staff honors the best films, performances, and crafts of 2026 so far."
-heroImage: /posters/mid-season-2026.jpg
+deck: With the first half of the year behind us, our staff voted across 11
+  categories to celebrate the year's standout achievements. See which movies,
+  performances, and artists earned Fantasy Filmball's highest honors.
+excerpt: Our staff honors the best films, performances, and crafts of 2026 so far.
+heroImage: /posters/mid-season-2026-final.jpg
 verdictNote: ""
+prospects: []
 isHero: false
 tags:
   - project-hail-mary
@@ -39,7 +36,13 @@ tags:
   - wild-horse-nine
 categoryTags:
   - best picture
-prospects: []
+contributors:
+  - terence-peterson
+  - matt-downs
+  - brad-derfner
+  - andy-funke
+  - sean-malloy
+  - ray-siddiqi
 ---
 
 With the launch of the Fantasy Filmball website, a platform dedicated to reviewing, discussing, and forecasting films in the Oscar conversation, it felt only right for our staff to come together and celebrate some of our favorite works of the year so far. Eight Fantasy Filmball writers submitted ballots across 11 categories, voting for the films, performances, and craftspeople that have impressed them most through the first half of 2026.
