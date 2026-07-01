@@ -10,7 +10,7 @@ genre: ""
 rating: ""
 stance: ""
 stanceLabel: ""
-posterSlug: mid-season-poster
+posterSlug: mid-season-poster-1
 writer: ""
 writers:
   - dylan-mckercher
