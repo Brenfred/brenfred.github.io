@@ -18,7 +18,7 @@ deck: Minions and Monsters begins as an inspired homage to the magic of
   filmmaking before transforming into the chaotic family adventure audiences
   expect, making for one of the series’ strongest entries.
 excerpt: The funniest Minions adventure yet is also the best in the franchise
-heroImage: https://pk.ign.com/minions-3/257340/minions-monsters-review
+heroImage: /posters/toot-toot.jpg
 prospects:
   - tier: in-the-mix
     category: animated
