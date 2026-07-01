@@ -19,6 +19,7 @@ deck: Minions and Monsters begins as an inspired homage to the magic of
   expect, making for one of the series’ strongest entries.
 excerpt: The funniest Minions adventure yet is also the best in the franchise
 heroImage: /posters/toot-toot.jpg
+verdictNote: Could this be the Minions Return to Oscar Glory?
 prospects:
   - tier: in-the-mix
     category: animated
