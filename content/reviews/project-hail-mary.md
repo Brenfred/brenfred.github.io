@@ -18,6 +18,7 @@ deck: Top tier tech elements meet great performances from Ryan Gosling, James
   Ortiz, and Sandra Hüller in this heartfelt tale of friendship.
 excerpt: Every element is strong and works effortlessly together.
 heroImage: /posters/rocky-grace.jpg
+verdictNote: An Across the Board Awards Contender
 prospects:
   - tier: predicted
     category: picture
