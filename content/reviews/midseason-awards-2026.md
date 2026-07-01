@@ -1,7 +1,6 @@
 ---
 type: discussion
-title: "Fantasy Filmball Midseason Awards 2026: Celebrating the Year's Best
-  Films So Far"
+title: "Fantasy Filmball Midseason Awards 2026: Celebrating the Year's Best Films So Far"
 film: ""
 director: ""
 studio: ""
@@ -14,18 +13,33 @@ posterSlug: mid-season-poster
 writer: ""
 writers:
   - dylan-mckercher
+contributors:
+  - terence-peterson
+  - matt-downs
+  - brad-derfner
+  - andy-funke
+  - sean-malloy
+  - ray-siddiqi
 publishedDate: July 1, 2026
-deck: With the first half of the year behind us, our staff voted across 11
-  categories to celebrate the year's standout achievements. See which movies,
-  performances, and artists earned Fantasy Filmball's highest honors.
-excerpt: Our staff honors the best films, performances, and crafts of 2026 so far.
-heroImage: ""
+deck: "With the first half of the year behind us, our staff voted across 11 categories to celebrate the year's standout achievements. See which movies, performances, and artists earned Fantasy Filmball's highest honors."
+excerpt: "Our staff honors the best films, performances, and crafts of 2026 so far."
+heroImage: /posters/mid-season-2026.jpg
 verdictNote: ""
-prospects: []
 isHero: false
-tags: []
+tags:
+  - project-hail-mary
+  - disclosure-day
+  - michael
+  - obsession
+  - the-odyssey
+  - power-ballad
+  - all-of-a-sudden
+  - primetime
+  - werwulf
+  - wild-horse-nine
 categoryTags:
   - best picture
+prospects: []
 ---
 
 With the launch of the Fantasy Filmball website, a platform dedicated to reviewing, discussing, and forecasting films in the Oscar conversation, it felt only right for our staff to come together and celebrate some of our favorite works of the year so far. Eight Fantasy Filmball writers submitted ballots across 11 categories, voting for the films, performances, and craftspeople that have impressed them most through the first half of 2026.
@@ -41,7 +55,7 @@ Eight of our writers ranked their top six for Best Picture. A first-place vote w
 <figure class="article-graphic" role="img" aria-label="Best Picture points by ballot, Fantasy Filmball midseason 2026">
 <svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif" preserveAspectRatio="xMinYMin meet">
 <text x="0" y="38" font-size="34" font-weight="700" fill="#201A13">Best Picture, <tspan font-style="italic" fill="#BD8428">block by block</tspan></text>
-<text x="0" y="64" font-size="16" font-style="italic" fill="#695D4E">Every bar is built from its ballots — one block per writer, sized by points (6 for a first, 1 for a sixth).</text>
+<text x="0" y="64" font-size="16" font-style="italic" fill="#695D4E">One block per writer, sized by points.</text>
 <line x1="0" y1="86" x2="900" y2="86" stroke="#201A13" stroke-width="2"/>
 <rect x="0" y="83" width="120" height="6" fill="#B7352E"/>
 <text x="215" y="134" font-family="Georgia,serif" font-size="17" font-weight="700" fill="#201A13" text-anchor="end">Project Hail Mary</text>
@@ -179,19 +193,19 @@ Eight of our writers ranked their top six for Best Picture. A first-place vote w
 </blockquote>
 
 <blockquote>
-<p>“Lord &amp; Miller have always been great at crafting fun cinematic experiences, and they elevate their game here with added emotional heft. Gosling turns in a dynamite movie star performance, and Rocky is one of the most iconic new characters in years!”</p>
-<p style="font-style:normal;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:0.82rem;letter-spacing:0.06em;color:var(--ink-faded);text-align:right;margin-top:0.65rem;">— Sean Malloy</p>
-</blockquote>
-
-<blockquote>
 <p>“Project Hail Mary has been the most enjoyable time in the theater so far this year. It has great humor, a wide array of impressive technical elements, and characters it’s hard not to fall in love with.”</p>
 <p style="font-style:normal;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:0.82rem;letter-spacing:0.06em;color:var(--ink-faded);text-align:right;margin-top:0.65rem;">— Andy Funke</p>
 </blockquote>
 
-<h2>Best Director — Lord &amp; Miller, Project Hail Mary</h2>
+<blockquote>
+<p>“Lord &amp; Miller have always been great at crafting fun cinematic experiences, and they elevate their game here with added emotional heft. Gosling turns in a dynamite movie star performance, and Rocky is one of the most iconic new characters in years!”</p>
+<p style="font-style:normal;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:0.82rem;letter-spacing:0.06em;color:var(--ink-faded);text-align:right;margin-top:0.65rem;">— Sean Malloy</p>
+</blockquote>
+
+<h2>Best Director — Phil Lord &amp; Christopher Miller, Project Hail Mary</h2>
 
 <figure class="award-winner-card" style="margin:2.5rem auto;max-width:820px">
-<img src="/posters/midseason-2026/best-director.png" alt="Fantasy Filmball Midseason Awards — Best Director: Lord &amp; Miller, Project Hail Mary" loading="lazy">
+<img src="/posters/midseason-2026/best-director.png" alt="Fantasy Filmball Midseason Awards — Best Director: Phil Lord &amp; Christopher Miller, Project Hail Mary" loading="lazy">
 </figure>
 
 <blockquote>
