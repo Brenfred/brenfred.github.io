@@ -38,7 +38,7 @@ Like everybody in the awards space, I love movies, but my first love has always 
   <rect x="0" y="0" width="1020" height="642" fill="#FCFAF1"/>
   <rect x="0" y="0" width="1020" height="642" fill="url(#hatch)"/>
   <text x="0" y="46" font-size="40" font-weight="700" fill="#201A13">Brad's Best Picture <tspan font-style="italic" fill="#BD8428">lineup</tspan></text>
-  <text x="2" y="74" font-size="16" font-style="italic" fill="#695D4E">Post-Cannes 2026 &#183; four tiers, fourteen contenders</text>
+  <text x="2" y="74" font-size="16" font-style="italic" fill="#695D4E">Post-Cannes 2026</text>
   <line x1="0" y1="96" x2="1020" y2="96" stroke="#201A13" stroke-width="2"/>
   <rect x="0" y="93" width="130" height="6" fill="#B7352E"/>
   <text x="125" y="130" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" letter-spacing="2" fill="#9B8E79" font-weight="700">TIER</text>
@@ -91,7 +91,6 @@ Like everybody in the awards space, I love movies, but my first love has always 
   <text x="363.5" y="553" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-weight="400" fill="#201A13">All of a Sudden</text>
   <rect x="459.0" y="526" width="126.1" height="42" rx="8" fill="#FBF6EA" stroke="#D8C7A0" stroke-width="1.5"/>
   <text x="522.1" y="553" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-weight="400" fill="#201A13">Fatherland</text>
-  <text x="0" y="622" font-family="Georgia, serif" font-size="13" font-style="italic" fill="#B7352E">&#9632; Obsession &#8212; today's subject</text>
   <text x="1020" y="622" text-anchor="end" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" letter-spacing="1.3" fill="#9B8E79" font-weight="600">BRAD DERFNER &#183; FANTASY FILMBALL</text>
 </svg>
 </div>
