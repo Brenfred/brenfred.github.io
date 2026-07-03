@@ -44,10 +44,8 @@ Like everybody in the awards space, I love movies, but my first love has always 
   <text x="125" y="130" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" letter-spacing="2" fill="#9B8E79" font-weight="700">TIER</text>
   <text x="280" y="130" font-family="JetBrains Mono, ui-monospace, monospace" font-size="12" letter-spacing="2" fill="#9B8E79" font-weight="700">CONTENDERS</text>
   <rect x="0" y="148" width="250" height="90" fill="#BD8428"/>
-  <text x="235" y="224" text-anchor="end" font-family="Georgia, serif" font-size="120" font-weight="700" fill="#FCFAF1" opacity="0.16">1</text>
   <text x="24" y="185.0" font-family="JetBrains Mono, ui-monospace, monospace" font-size="14" letter-spacing="2.5" font-weight="700" fill="#FCFAF1">TIER 1</text>
   <text x="24" y="211.0" font-family="Georgia, serif" font-size="21" font-weight="700" fill="#FCFAF1">Win Contenders</text>
-  <text x="24" y="224" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" letter-spacing="1.5" fill="#FCFAF1" opacity="0.75">4 FILMS</text>
   <rect x="280.0" y="172" width="161.9" height="42" rx="8" fill="#FBF6EA" stroke="#D8C7A0" stroke-width="1.5"/>
   <text x="361.0" y="199" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-weight="400" fill="#201A13">The Black Ball</text>
   <rect x="453.9" y="172" width="95.9" height="42" rx="8" fill="#FBF6EA" stroke="#D8C7A0" stroke-width="1.5"/>
@@ -57,19 +55,15 @@ Like everybody in the awards space, I love movies, but my first love has always 
   <rect x="750.7" y="172" width="145.7" height="42" rx="8" fill="#FBF6EA" stroke="#D8C7A0" stroke-width="1.5"/>
   <text x="823.5" y="199" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-weight="400" fill="#201A13">The Odyssey</text>
   <rect x="0" y="248" width="250" height="90" fill="#E8B85A"/>
-  <text x="235" y="324" text-anchor="end" font-family="Georgia, serif" font-size="120" font-weight="700" fill="#201A13" opacity="0.10">2</text>
   <text x="24" y="285.0" font-family="JetBrains Mono, ui-monospace, monospace" font-size="14" letter-spacing="2.5" font-weight="700" fill="#201A13">TIER 2</text>
   <text x="24" y="311.0" font-family="Georgia, serif" font-size="21" font-weight="700" fill="#201A13">Likely Noms</text>
-  <text x="24" y="324" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" letter-spacing="1.5" fill="#201A13" opacity="0.75">2 FILMS</text>
   <rect x="280.0" y="272" width="185.4" height="42" rx="8" fill="#FBF6EA" stroke="#D8C7A0" stroke-width="1.5"/>
   <text x="372.7" y="299" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-weight="400" fill="#201A13">Project Hail Mary</text>
   <rect x="477.4" y="272" width="83.6" height="42" rx="8" fill="#FBF6EA" stroke="#D8C7A0" stroke-width="1.5"/>
   <text x="519.3" y="299" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-weight="400" fill="#201A13">Fjord</text>
   <rect x="0" y="348" width="250" height="90" fill="#ECE1C8"/>
-  <text x="235" y="424" text-anchor="end" font-family="Georgia, serif" font-size="120" font-weight="700" fill="#201A13" opacity="0.10">3</text>
   <text x="24" y="385.0" font-family="JetBrains Mono, ui-monospace, monospace" font-size="14" letter-spacing="2.5" font-weight="700" fill="#201A13">TIER 3</text>
   <text x="24" y="411.0" font-family="Georgia, serif" font-size="21" font-weight="700" fill="#201A13">Predicted Noms</text>
-  <text x="24" y="424" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" letter-spacing="1.5" fill="#201A13" opacity="0.75">3 FILMS</text>
   <rect x="280.0" y="372" width="122.8" height="42" rx="8" fill="#FBEBE9" stroke="#B7352E" stroke-width="1.5"/>
   <text x="341.4" y="399" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-weight="700" fill="#B7352E">Obsession</text>
   <rect x="414.8" y="372" width="129.5" height="42" rx="8" fill="#FBF6EA" stroke="#D8C7A0" stroke-width="1.5"/>
@@ -77,10 +71,8 @@ Like everybody in the awards space, I love movies, but my first love has always 
   <rect x="556.3" y="372" width="178.3" height="42" rx="8" fill="#FBF6EA" stroke="#D8C7A0" stroke-width="1.5"/>
   <text x="645.5" y="399" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-weight="400" fill="#201A13">Dune: Part Three</text>
   <rect x="0" y="448" width="250" height="144" fill="#9B8E79"/>
-  <text x="235" y="578" text-anchor="end" font-family="Georgia, serif" font-size="120" font-weight="700" fill="#FCFAF1" opacity="0.16">4</text>
   <text x="24" y="512.0" font-family="JetBrains Mono, ui-monospace, monospace" font-size="14" letter-spacing="2.5" font-weight="700" fill="#FCFAF1">TIER 4</text>
   <text x="24" y="538.0" font-family="Georgia, serif" font-size="21" font-weight="700" fill="#FCFAF1">Possible Noms</text>
-  <text x="24" y="578" font-family="JetBrains Mono, ui-monospace, monospace" font-size="11" letter-spacing="1.5" fill="#FCFAF1" opacity="0.75">5 FILMS</text>
   <rect x="280.0" y="472" width="212.3" height="42" rx="8" fill="#FBF6EA" stroke="#D8C7A0" stroke-width="1.5"/>
   <text x="386.2" y="499" text-anchor="middle" font-family="Georgia, serif" font-size="19" font-weight="400" fill="#201A13">Sense and Sensibility</text>
   <rect x="504.3" y="472" width="114.4" height="42" rx="8" fill="#FBF6EA" stroke="#D8C7A0" stroke-width="1.5"/>
@@ -100,7 +92,7 @@ Like everybody in the awards space, I love movies, but my first love has always 
 
 To put you all in my headspace, I've currently got *Obsession* at #7 in my lineup, in my 3rd tier of films. It's not locked for a nom, but I'd say its odds are close to 50%, which is quite strong for this time of year. I like to do my Best Picture predictions by looking at possibilities for precursor results, or what I refer to as "top down" predicting. This is in contrast to "bottom up," which uses lower categories to build "packages" for films, which inform best picture chances.
 
-The most likely precursor package that I see for *Obsession* includes nominations at the Producers Guild of America (PGA) and Critics' Choice Awards (CCA), with a chance for an appearance at the Golden Globes (GG) but not much more. The case for PGA is clear: *Obsession* currently ranks 2nd in domestic box office totals among all post-COVID original films and feels like a cultural moment in general. *Sinners* and *F1* rank 1st and 3rd on the same list, respectively, and both films were included in the PGA 10 last season. CCA is a bit more of a projection, but more often than not, CCA tends to favor large American films that are currently placed in the awards race, as shown by the inclusion of *Wicked: For Good* and *Jay Kelly* last season. Also, CCA shows less aversion to horror films than more traditional awards bodies, as shown by them giving *Weapons* four nominations and its first major win.
+The most likely precursor package that I see for *Obsession* includes nominations at the Producers Guild of America (PGA) and Critics' Choice Awards (CCA), with a chance for an appearance at the Golden Globes (GG) but not much more. The case for PGA is clear: *Obsession* currently ranks 1st in domestic box office totals among all post-COVID original films and feels like a cultural moment in general. *Sinners* and *F1* rank 2nd and 3rd on the same list, respectively, and both films were included in the PGA 10 last season. CCA is a bit more of a projection, but more often than not, CCA tends to favor large American films that are currently placed in the awards race, as shown by the inclusion of *Wicked: For Good* and *Jay Kelly* last season. Also, CCA shows less aversion to horror films than more traditional awards bodies, as shown by them giving *Weapons* four nominations and its first major win.
 
 As of now, considering a world in which *Obsession* finds its way into the Screen Actors Guild (SAG) lineup feels unproductive, and I'd say there's no chance for any appearance at the Directors Guild Awards (DGA) or the British Academy Film Awards (BAFTA), with even the BAFTA longlist seeming unlikely. With all of that being said, let's jump right in.
 
