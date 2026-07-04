@@ -1,6 +1,6 @@
 ---
 type: discussion
-title: "Which Cannes Films Will Survive the Fall Festival Draft?"
+title: Which Cannes Films Will Survive the Fall Festival Draft?
 film: ""
 director: ""
 studio: ""
@@ -9,14 +9,16 @@ genre: ""
 rating: ""
 stance: ""
 stanceLabel: ""
-posterSlug: ""
+posterSlug: arnuad-cannes-fall
 writer: ""
 writers:
   - arnaud-weissenburger
 publishedDate: July 4, 2026
-deck: "A strong Cannes bow is only the first round. Here, we project which 2026 Croisette titles survive the fall-festival draft and which get left on the beach."
-excerpt: "A section-by-section read on which Croisette films make the fall-festival cut."
-heroImage: ""
+deck: A strong Cannes bow is only the first round. Here, we project which 2026
+  Croisette titles survive the fall-festival draft and which get left on the
+  beach.
+excerpt: A section-by-section read on which Croisette films make the fall-festival cut.
+heroImage: /posters/arnaud-cannes.jpg
 verdictNote: ""
 prospects: []
 isHero: false
