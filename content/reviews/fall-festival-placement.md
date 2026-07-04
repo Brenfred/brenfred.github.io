@@ -9,7 +9,7 @@ genre: ""
 rating: ""
 stance: ""
 stanceLabel: ""
-posterSlug: arnaud-cannes-fall
+posterSlug: arnuad-cannes-fall
 writer: ""
 writers:
   - arnaud-weissenburger
