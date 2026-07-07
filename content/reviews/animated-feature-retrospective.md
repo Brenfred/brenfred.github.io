@@ -1,6 +1,6 @@
 ---
 type: discussion
-title: "What Can We Learn From the History of the Animated Feature Category?"
+title: What Can We Learn From the History of the Animated Feature Category?
 film: ""
 director: ""
 studio: ""
@@ -9,7 +9,7 @@ genre: ""
 rating: ""
 stance: ""
 stanceLabel: ""
-posterSlug: ""
+posterSlug: animated-retrospective
 writer: ""
 writers:
   - ray-siddiqi
@@ -17,12 +17,13 @@ publishedDate: July 5, 2026
 deck: Diving into the recent history of the Oscar for Animated Feature reveals
   fascinating truths about what the Academy will recognize…and what they won't.
 excerpt: A deep dive into the history of animations at the Oscars.
-heroImage: ""
+heroImage: /posters/animated-feature.jpg
 verdictNote: ""
 prospects: []
 isHero: false
 tags: []
-categoryTags: [animated]
+categoryTags:
+  - animated
 ---
 
 I have a passionate, unadulterated love for animation. I think it's truly magical how worlds are brought to life through drawing, computer-generated imagery, clay, or other ingenious techniques, making us see a world that feels vibrant and distinct from our own yet still carries the same universal truths we can discover in live action. The Academy has grown to appreciate animation more over the course of the 21st century as well. While the Animated Feature category started out with a paltry three nominations for the year and unadulterated dominance from Disney and Pixar, recent years have seen a rise in exciting, distinct voices in the animation industry being recognized at a level never seen before.
