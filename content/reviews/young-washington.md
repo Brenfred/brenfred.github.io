@@ -1,6 +1,6 @@
 ---
 type: review
-title: Young Washington surpasses all expectations to be even worse than expected
+title: Young Washington Surpasses All Expectations to Be Even Worse Than Expected
 film: Young Washington
 director: Jon Erwin
 studio: Angel Studios
@@ -12,13 +12,11 @@ stanceLabel: No Award Chances
 posterSlug: young-washington
 writer: Vitor C.
 publishedDate: July 7, 2026
-deck: >
-  The 250th Birthday of America, the World Cup, and the worst possible
-  celebration of it all. Read Vitor’s review about Angel Studios’s newest film
-  Young Washington.
+deck: "The 250th Birthday of America, the World Cup, and the worst possible
+  celebration of it all. "
 excerpt: You know it’s bad when Angel Studios doesn’t even bother to cast Zachary Levi.
 heroImage: /posters/yw.jpg
-verdictNote: Maybe if Turning Point USA makes an award show
+verdictNote: If Turning Point USA makes an award show
 prospects: []
 isHero: false
 tags: []
