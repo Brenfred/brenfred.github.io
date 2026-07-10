@@ -17,8 +17,8 @@ publishedDate: July 10, 2026
 deck: Despite the story being fun to re-experience, this remake is a direct
   examples of why the shot for shot remakes needs to end.
 excerpt: Despite the same story and songs being fun to re-experience, this
-  remake is among the most direct examples of why the 1 to 1 animated to live
-  action formula just doesn’t land.
+  remake is among the most direct examples of why the shot for shot animated to
+  live action formula just doesn’t land.
 heroImage: /posters/moana-live-action.jpg
 prospects: []
 isHero: false
@@ -27,7 +27,7 @@ categoryTags: []
 ---
 In 2016, we got the original animated version of *Moana*, a lovely kids' musical adventure movie about a teenage Polynesian girl named Moana tracking down Maui, a demigod who stole the heart of the goddess Te Fiti, in hopes that he will help restore it. The story was great, the animation was vibrant and colorful, and the songs were catchy and memorable. If that were the movie being reviewed here, there would be a five-star rating at the top, followed by a glowing review.
 
-A decade later, we get one of the clearest examples of why the one-to-one animated-to-live-action remake formula just doesn’t work.
+A decade later, we get one of the clearest examples of why the shot for shot animated-to-live-action remake formula just doesn’t work.
 
 It’s hard to fully hate a remake of a movie you love. The songs are still catchy, the story is still engaging, and it has a fun journey baked into it. The opening scenes set us in a more natural landscape, getting to see a live-action version of the island and humans playing these roles in front of the camera. At first, it can be kind of fun. Yet, that setup almost causes a problem in itself. Once we get to parts of the movie that are, by nature of the original story, more necessary to have animation or fantasy-esque qualities, they feel like they exist on a different plane than some of the more naturalistic scenes.
 
