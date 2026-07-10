@@ -14,9 +14,8 @@ writer: "[ Writer ]"
 writers:
   - andy-funke
 publishedDate: July 10, 2026
-deck: Despite the same story and songs being fun to re-experience, this remake
-  is among the most direct examples of why the 1 to 1 animated to live action
-  formula just doesn’t land.
+deck: Despite the story being fun to re-experience, this remake is a direct
+  examples of why the shot for shot remakes needs to end.
 excerpt: Despite the same story and songs being fun to re-experience, this
   remake is among the most direct examples of why the 1 to 1 animated to live
   action formula just doesn’t land.
