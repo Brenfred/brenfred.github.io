@@ -62,7 +62,7 @@ prospects:
     performer: Samantha Morton
   - tier: long-shot
     category: supp-actor
-    performer: Tom Holland
+    performer: John Leguizamo
 isHero: false
 tags:
   - the-odyssey
