@@ -8,7 +8,7 @@ runtime: 173 min
 genre: Fantasy
 rating: 5
 stance: buy
-stanceLabel: An Epic story worthy of an Epic haul at the Oscars
+stanceLabel: An Epic worthy of an Epic haul
 posterSlug: the-odyssey
 writer: "[ Writer ]"
 writers:
