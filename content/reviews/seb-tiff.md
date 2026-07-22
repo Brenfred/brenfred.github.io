@@ -1,6 +1,6 @@
 ---
 type: discussion
-title: What to look out for at TIFF '26
+title: What to Look Out for at TIFF '26
 stance: ""
 posterSlug: seb-tiff
 writer: Sebastian Ochoa
