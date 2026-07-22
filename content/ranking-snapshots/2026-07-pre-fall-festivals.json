@@ -1,0 +1,695 @@
+{
+  "snapshotSlug": "2026-07-pre-fall-festivals",
+  "label": "Pre-Fall Festivals",
+  "sortKey": "2026-07",
+  "publishedDate": "July 21, 2026",
+  "description": "Pre-Fall Festivals 2026 — the last read before Venice, Telluride, and TIFF reshape the race.",
+  "categories": {
+    "picture": {
+      "label": "Best Picture",
+      "shortLabel": "Picture",
+      "cutoffRank": 10,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "the-odyssey",
+          "subtitle": "",
+          "nomPct": "100%",
+          "winPct": "51%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "the-black-ball",
+          "subtitle": "",
+          "nomPct": "98%",
+          "winPct": "32%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "",
+          "nomPct": "98%",
+          "winPct": "10%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "project-hail-mary",
+          "subtitle": "",
+          "nomPct": "100%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "digger",
+          "subtitle": "",
+          "nomPct": "83%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "behemoth",
+          "subtitle": "",
+          "nomPct": "83%",
+          "winPct": "3%"
+        },
+        {
+          "rank": 7,
+          "filmSlug": "fjord",
+          "subtitle": "",
+          "nomPct": "81%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 8,
+          "filmSlug": "dune-part-three",
+          "subtitle": "",
+          "nomPct": "75%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 9,
+          "filmSlug": "obsession",
+          "subtitle": "",
+          "nomPct": "69%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 10,
+          "filmSlug": "eisenberg-musical-comedy",
+          "subtitle": "",
+          "nomPct": "42%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 11,
+          "filmSlug": "the-invite",
+          "subtitle": "",
+          "nomPct": "44%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 12,
+          "filmSlug": "all-of-a-sudden",
+          "subtitle": "",
+          "nomPct": "25%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 13,
+          "filmSlug": "club-kid",
+          "subtitle": "",
+          "nomPct": "17%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 14,
+          "filmSlug": "elsinore",
+          "subtitle": "",
+          "nomPct": "17%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 15,
+          "filmSlug": "cry-to-heaven",
+          "subtitle": "",
+          "nomPct": "12%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 16,
+          "filmSlug": "the-social-reckoning",
+          "subtitle": "",
+          "nomPct": "12%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 17,
+          "filmSlug": "ink",
+          "subtitle": "",
+          "nomPct": "12%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 18,
+          "filmSlug": "fatherland",
+          "subtitle": "",
+          "nomPct": "5%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 19,
+          "filmSlug": "sense-and-sensibility",
+          "subtitle": "",
+          "nomPct": "7%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 20,
+          "filmSlug": "michael",
+          "subtitle": "",
+          "nomPct": "3%",
+          "winPct": "0%"
+        }
+      ]
+    },
+    "director": {
+      "label": "Best Director",
+      "shortLabel": "Director",
+      "cutoffRank": 5,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "the-odyssey",
+          "subtitle": "Christopher Nolan",
+          "nomPct": "100%",
+          "winPct": "66%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "the-black-ball",
+          "subtitle": "Javier Ambrossi, Javier Calvo",
+          "nomPct": "93%",
+          "winPct": "21%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Martin McDonagh",
+          "nomPct": "80%",
+          "winPct": "7%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "digger",
+          "subtitle": "Alejandro G. Iñárritu",
+          "nomPct": "61%",
+          "winPct": "4%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "fjord",
+          "subtitle": "Cristian Mungiu",
+          "nomPct": "68%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "behemoth",
+          "subtitle": "Tony Gilroy",
+          "nomPct": "36%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 7,
+          "filmSlug": "project-hail-mary",
+          "subtitle": "Phil Lord, Christopher Miller",
+          "nomPct": "18%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 8,
+          "filmSlug": "dune-part-three",
+          "subtitle": "Denis Villeneuve",
+          "nomPct": "9%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 9,
+          "filmSlug": "all-of-a-sudden",
+          "subtitle": "Ryusuke Hamaguchi",
+          "nomPct": "11%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 10,
+          "filmSlug": "the-invite",
+          "subtitle": "Olivia Wilde",
+          "nomPct": "11%",
+          "winPct": "0%"
+        }
+      ]
+    },
+    "actress": {
+      "label": "Best Actress",
+      "shortLabel": "Actress",
+      "cutoffRank": 5,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "eisenberg-musical-comedy",
+          "subtitle": "Julianne Moore",
+          "nomPct": "91%",
+          "winPct": "23%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "obsession",
+          "subtitle": "Inde Navarrette",
+          "nomPct": "82%",
+          "winPct": "32%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "a-place-in-hell",
+          "subtitle": "Michelle Williams",
+          "nomPct": "65%",
+          "winPct": "23%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "fjord",
+          "subtitle": "Renate Reinsve",
+          "nomPct": "72%",
+          "winPct": "14%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "the-social-reckoning",
+          "subtitle": "Mikey Madison",
+          "nomPct": "51%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "all-of-a-sudden",
+          "subtitle": "Virginie Efira",
+          "nomPct": "30%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 7,
+          "filmSlug": "the-invite",
+          "subtitle": "Olivia Wilde",
+          "nomPct": "25%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 8,
+          "filmSlug": "sense-and-sensibility",
+          "subtitle": "Daisy Edgar-Jones",
+          "nomPct": "14%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 9,
+          "filmSlug": "disclosure-day",
+          "subtitle": "Emily Blunt",
+          "nomPct": "14%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 10,
+          "filmSlug": "fatherland",
+          "subtitle": "Sandra Hüller",
+          "nomPct": "12%",
+          "winPct": "0%"
+        }
+      ]
+    },
+    "actor": {
+      "label": "Best Actor",
+      "shortLabel": "Actor",
+      "cutoffRank": 5,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "digger",
+          "subtitle": "Tom Cruise",
+          "nomPct": "95%",
+          "winPct": "61%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "John Malkovich",
+          "nomPct": "91%",
+          "winPct": "20%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "the-odyssey",
+          "subtitle": "Matt Damon",
+          "nomPct": "86%",
+          "winPct": "9%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "project-hail-mary",
+          "subtitle": "Ryan Gosling",
+          "nomPct": "77%",
+          "winPct": "4%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "behemoth",
+          "subtitle": "Pedro Pascal",
+          "nomPct": "77%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "elsinore",
+          "subtitle": "Andrew Scott",
+          "nomPct": "36%",
+          "winPct": "7%"
+        },
+        {
+          "rank": 7,
+          "filmSlug": "fjord",
+          "subtitle": "Sebastian Stan",
+          "nomPct": "16%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 8,
+          "filmSlug": "clayface",
+          "subtitle": "Tom Rhys Harries",
+          "nomPct": "2%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 9,
+          "filmSlug": "the-only-living-pickpocket-in-new-york",
+          "subtitle": "John Turturro",
+          "nomPct": "5%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 10,
+          "filmSlug": "michael",
+          "subtitle": "Jaafar Jackson",
+          "nomPct": "2%",
+          "winPct": "0%"
+        }
+      ]
+    },
+    "supp-actress": {
+      "label": "Best Supporting Actress",
+      "shortLabel": "Supp. Actress",
+      "cutoffRank": 5,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "the-odyssey",
+          "subtitle": "Anne Hathaway",
+          "nomPct": "95%",
+          "winPct": "50%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Mariana di Girolamo",
+          "nomPct": "91%",
+          "winPct": "14%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "the-black-ball",
+          "subtitle": "Penélope Cruz",
+          "nomPct": "59%",
+          "winPct": "14%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "the-invite",
+          "subtitle": "Penélope Cruz",
+          "nomPct": "46%",
+          "winPct": "5%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "project-hail-mary",
+          "subtitle": "Sandra Hüller",
+          "nomPct": "46%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "all-of-a-sudden",
+          "subtitle": "Tao Okamoto",
+          "nomPct": "36%",
+          "winPct": "4%"
+        },
+        {
+          "rank": 7,
+          "filmSlug": "obsession",
+          "subtitle": "Inde Navarrette",
+          "nomPct": "16%",
+          "winPct": "4%"
+        },
+        {
+          "rank": 8,
+          "filmSlug": "the-odyssey",
+          "subtitle": "Samantha Morton",
+          "nomPct": "18%",
+          "winPct": "4%"
+        },
+        {
+          "rank": 9,
+          "filmSlug": "digger",
+          "subtitle": "Sandra Hüller",
+          "nomPct": "13%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 10,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Parker Posey",
+          "nomPct": "16%",
+          "winPct": "0%"
+        }
+      ]
+    },
+    "supp-actor": {
+      "label": "Best Supporting Actor",
+      "shortLabel": "Supp. Actor",
+      "cutoffRank": 5,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "digger",
+          "subtitle": "John Goodman",
+          "nomPct": "81%",
+          "winPct": "26%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "eisenberg-musical-comedy",
+          "subtitle": "Paul Giamatti",
+          "nomPct": "74%",
+          "winPct": "34%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Sam Rockwell",
+          "nomPct": "81%",
+          "winPct": "17%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "the-social-reckoning",
+          "subtitle": "Jeremy Strong",
+          "nomPct": "52%",
+          "winPct": "3%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "the-invite",
+          "subtitle": "Edward Norton",
+          "nomPct": "50%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Steve Buscemi",
+          "nomPct": "43%",
+          "winPct": "5%"
+        },
+        {
+          "rank": 7,
+          "filmSlug": "the-black-ball",
+          "subtitle": "Guitarricadelafuente",
+          "nomPct": "29%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 8,
+          "filmSlug": "the-odyssey",
+          "subtitle": "John Leguizamo",
+          "nomPct": "26%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 9,
+          "filmSlug": "digger",
+          "subtitle": "Riz Ahmed",
+          "nomPct": "21%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 10,
+          "filmSlug": "ink",
+          "subtitle": "Guy Pearce",
+          "nomPct": "14%",
+          "winPct": "3%"
+        }
+      ]
+    },
+    "orig-screenplay": {
+      "label": "Best Original Screenplay",
+      "shortLabel": "Original Screenplay",
+      "cutoffRank": 5,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "wild-horse-nine",
+          "subtitle": "Martin McDonagh",
+          "nomPct": "96%",
+          "winPct": "70%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "digger",
+          "subtitle": "Alejandro G. Iñárritu, Alexander Dinelaris, Nicolás…",
+          "nomPct": "74%",
+          "winPct": "9%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "behemoth",
+          "subtitle": "Tony Gilroy",
+          "nomPct": "85%",
+          "winPct": "9%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "fjord",
+          "subtitle": "Cristian Mungiu",
+          "nomPct": "85%",
+          "winPct": "4%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "obsession",
+          "subtitle": "Curry Barker",
+          "nomPct": "64%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "eisenberg-musical-comedy",
+          "subtitle": "Jesse Eisenberg",
+          "nomPct": "40%",
+          "winPct": "4%"
+        },
+        {
+          "rank": 7,
+          "filmSlug": "club-kid",
+          "subtitle": "Jordan Firstman",
+          "nomPct": "30%",
+          "winPct": "4%"
+        },
+        {
+          "rank": 8,
+          "filmSlug": "elsinore",
+          "subtitle": "Stephen Beresford",
+          "nomPct": "13%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 9,
+          "filmSlug": "teenage-sex-and-death-at-camp-miasma",
+          "subtitle": "Jane Schoenbrun",
+          "nomPct": "4%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 10,
+          "filmSlug": "josephine",
+          "subtitle": "Beth de Araújo",
+          "nomPct": "4%",
+          "winPct": "0%"
+        }
+      ]
+    },
+    "adapt-screenplay": {
+      "label": "Best Adapted Screenplay",
+      "shortLabel": "Adapted Screenplay",
+      "cutoffRank": 5,
+      "films": [
+        {
+          "rank": 1,
+          "filmSlug": "the-black-ball",
+          "subtitle": "Javier Ambrossi, Javier Calvo",
+          "nomPct": "100%",
+          "winPct": "63%"
+        },
+        {
+          "rank": 2,
+          "filmSlug": "the-odyssey",
+          "subtitle": "Christopher Nolan",
+          "nomPct": "94%",
+          "winPct": "20%"
+        },
+        {
+          "rank": 3,
+          "filmSlug": "project-hail-mary",
+          "subtitle": "Drew Goddard",
+          "nomPct": "87%",
+          "winPct": "7%"
+        },
+        {
+          "rank": 4,
+          "filmSlug": "the-invite",
+          "subtitle": "Rashida Jones, Will McCormack",
+          "nomPct": "48%",
+          "winPct": "4%"
+        },
+        {
+          "rank": 5,
+          "filmSlug": "all-of-a-sudden",
+          "subtitle": "Ryusuke Hamaguchi, Léa Le Dimna",
+          "nomPct": "44%",
+          "winPct": "4%"
+        },
+        {
+          "rank": 6,
+          "filmSlug": "the-social-reckoning",
+          "subtitle": "Aaron Sorkin",
+          "nomPct": "33%",
+          "winPct": "2%"
+        },
+        {
+          "rank": 7,
+          "filmSlug": "cry-to-heaven",
+          "subtitle": "Tom Ford",
+          "nomPct": "9%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 8,
+          "filmSlug": "the-adventures-of-cliff-booth",
+          "subtitle": "Quentin Tarantino",
+          "nomPct": "9%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 9,
+          "filmSlug": "ink",
+          "subtitle": "James Graham",
+          "nomPct": "11%",
+          "winPct": "0%"
+        },
+        {
+          "rank": 10,
+          "filmSlug": "dune-part-three",
+          "subtitle": "Denis Villeneuve, Brian K. Vaughan",
+          "nomPct": "9%",
+          "winPct": "0%"
+        }
+      ]
+    }
+  }
+}
