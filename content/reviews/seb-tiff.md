@@ -3,8 +3,9 @@ type: discussion
 title: What to Look Out for at TIFF '26
 stance: ""
 posterSlug: seb-tiff
-writer: Sebastian Ochoa
-writers: []
+writer: ""
+writers:
+  - "sebastian-ochoa "
 publishedDate: July 21, 2026
 deck: A quick guide to which potential Oscar hopefuls will be premiering at the
   Toronto International Film Festival this September.
