@@ -10,8 +10,9 @@ rating: ""
 stance: ""
 stanceLabel: ""
 posterSlug: seb-summer
-writer: Sebastian Ochoa
-writers: []
+writer: ""
+writers:
+  - "sebastian-ochoa "
 publishedDate: June 28, 2026
 deck: From Nolan’s frontrunner to Ridley Scott’s latest, these are all the films
   releasing between July and August that could be vying for an Oscar nomination
