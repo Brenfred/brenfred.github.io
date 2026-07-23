@@ -9,7 +9,7 @@ genre: ""
 rating: ""
 stance: ""
 stanceLabel: ""
-posterSlug: the-odyssey
+posterSlug: staff-odyssey
 writer: ""
 writers:
   - dylan-mckercher
@@ -20,8 +20,12 @@ contributors:
   - ray-siddiqi
   - sean-malloy
   - terence-peterson
-publishedDate: July 22, 2026
-deck: "After seeing Christopher Nolan's latest epic during opening weekend, the Filmball writing staff breaks down the performances, unforgettable sequences, technical achievements, criticisms, Nolan ranking, and Oscar prospects. While opinions varied, one thing remained clear: The Odyssey is already one of the biggest cinematic conversations of the year."
+publishedDate: July 23, 2026
+deck: "After seeing Christopher Nolan's latest epic during opening weekend, the
+  Filmball writing staff breaks down the performances, unforgettable sequences,
+  technical achievements, criticisms, Nolan ranking, and Oscar prospects. While
+  opinions varied, one thing remained clear: The Odyssey is already one of the
+  biggest cinematic conversations of the year."
 excerpt: Eight writers. One epic. Our staff breaks down Christopher Nolan's The Odyssey.
 heroImage: /posters/the-odyssey-hero.jpg
 verdictNote: ""
