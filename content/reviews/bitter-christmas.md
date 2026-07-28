@@ -1,27 +1,30 @@
 ---
 type: review
-title: "Bitter Christmas is Almodóvar's most self-referential film yet"
+title: Bitter Christmas is Almodóvar's most self-referential film yet
 film: Bitter Christmas
 director: Pedro Almodóvar
-studio: Warner Bros. Pictures
+studio: Sony Picture Classics
 runtime: 111 minutes
 genre: Tragicomedy
 rating: 3
 stance: hold
-stanceLabel: "Don't see this happening"
+stanceLabel: Don't see this happening
 posterSlug: bitter-christmas
 writer: ""
 writers:
   - sebastian-ochoa
 publishedDate: July 27, 2026
-deck: More compelling as an insight into the auteur's creative process than as an actual narrative, this meta tragicomedy might leave audiences new to his work scratching their heads.
+deck: More compelling as an insight into the auteur's creative process than as
+  an actual narrative, this meta tragicomedy might leave audiences new to his
+  work scratching their heads.
 excerpt: This one's for the Almodóvar stans.
 heroImage: /posters/bitter-christmas-hero.jpg
-verdictNote: "There are more acclaimed international contenders this year, and La Bola Negra will probably be Spain's submission anyway."
+verdictNote: There are more acclaimed international contenders this year, and La
+  Bola Negra will probably be Spain's submission anyway.
+prospects: []
 isHero: false
 tags: []
 categoryTags: []
-prospects: []
 ---
 
 Pedro Almodóvar isn't one to shy away from inserting himself into his films; his last universally acclaimed film, *Pain and Glory*, is mostly autobiographical. But in *Bitter Christmas*, the Spanish auteur takes it one step further, essentially making a film about himself writing the very film we're watching. And though the themes of inspiration and the ethics of "writing what you know" only really click into gear in the film's last act, they are undoubtedly fascinating.
