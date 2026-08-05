@@ -11,7 +11,9 @@ rating: 3.5
 stance: hold
 stanceLabel: Indie Spirits player
 posterSlug: leviticus
-writer: Vitor C.
+writer: ""
+writers:
+  - vitor-cecchinato
 publishedDate: June 25, 2026
 deck: While Neon’s newest horror brings some excellent filmmaking, Leviticus
   holds itself back from being great.
