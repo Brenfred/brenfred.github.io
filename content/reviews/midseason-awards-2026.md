@@ -14,6 +14,13 @@ posterSlug: mid-season-poster-1
 writer: ""
 writers:
   - dylan-mckercher
+contributors:
+  - terence-peterson
+  - brad-derfner
+  - andy-funke
+  - sean-malloy
+  - ray-siddiqi
+  - vitor-cecchinato
 publishedDate: July 1, 2026
 deck: With the first half of the year behind us, our staff voted across 11
   categories to celebrate the year's standout achievements. See which movies,
@@ -36,13 +43,6 @@ tags:
   - wild-horse-nine
 categoryTags:
   - best picture
-contributors:
-  - terence-peterson
-  - matt-downs
-  - brad-derfner
-  - andy-funke
-  - sean-malloy
-  - ray-siddiqi
 ---
 
 With the launch of the Fantasy Filmball website, a platform dedicated to reviewing, discussing, and forecasting films in the Oscar conversation, it felt only right for our staff to come together and celebrate some of our favorite works of the year so far. Eight Fantasy Filmball writers submitted ballots across 11 categories, voting for the films, performances, and craftspeople that have impressed them most through the first half of 2026.
