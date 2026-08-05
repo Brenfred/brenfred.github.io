@@ -1,6 +1,6 @@
 ---
 type: discussion
-title: "Breaking Down Our Pre-Fest Community Predictions"
+title: Breaking Down Our Pre-Fest Community Predictions
 film: ""
 director: ""
 studio: ""
@@ -13,15 +13,20 @@ posterSlug: breaking-down-our-pre-fest-community-predictions
 writer: ""
 writers:
   - brad-derfner
+contributors:
+  - vitor-cecchinato
 publishedDate: August 2, 2026
-deck: Obsession crashes the Best Picture top ten, The Odyssey tightens its grip on a record haul, and the gaps between us and the Awards Expert community keep widening.
-excerpt: Obsession crashes the top ten, The Odyssey tightens its grip, and our gaps with Awards Expert keep widening.
+deck: Obsession crashes the Best Picture top ten, The Odyssey tightens its grip
+  on a record haul, and the gaps between us and the Awards Expert community keep
+  widening.
+excerpt: Obsession crashes the top ten, The Odyssey tightens its grip, and our
+  gaps with Awards Expert keep widening.
 heroImage: /posters/pre-fest-hero.jpg
 verdictNote: ""
+prospects: []
 isHero: true
 tags: []
 categoryTags: []
-prospects: []
 ---
 
 In the official Fantasy Filmball Discord server, our members pull their Oscar predictions from the Awards Expert app and we tally them up to see what we're predicting as a community. Our last update landed on June 1st, just after Cannes. Two months later, with the fall festival lineups taking shape, we've updated again — and a few things have moved a long way.
