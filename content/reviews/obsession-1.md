@@ -11,8 +11,10 @@ rating: ""
 stance: ""
 stanceLabel: ""
 posterSlug: obsession
-writer: Vitor C.
-publishedDate: Jun 7, 2026
+writer: ""
+writers:
+  - vitor-cecchinato
+publishedDate: June 7, 2026
 deck: From record-breaking box office holds to early Oscar buzz for Inde
   Navarrette, Curry Barker's debut horror film has become one of the most
   surprising success stories of the decade.
