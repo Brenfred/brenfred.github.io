@@ -10,7 +10,9 @@ rating: 0.5
 stance: sell
 stanceLabel: No Award Chances
 posterSlug: young-washington
-writer: Vitor C.
+writer: ""
+writers:
+  - vitor-cecchinato
 publishedDate: July 7, 2026
 deck: "The 250th Birthday of America, the World Cup, and the worst possible
   celebration of it all. "
