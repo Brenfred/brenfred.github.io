@@ -24,7 +24,7 @@ excerpt: Obsession crashes the top ten, The Odyssey tightens its grip, and our
 heroImage: /posters/pre-fest-hero.jpg
 verdictNote: ""
 prospects: []
-isHero: true
+isHero: false
 tags: []
 categoryTags: []
 ---
