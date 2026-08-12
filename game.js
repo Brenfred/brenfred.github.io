@@ -51,34 +51,20 @@
   function posterUrl(posterSlug) { return 'posters/' + posterSlug + '.jpg'; }
 
   // ---- league directory ---------------------------------------------------
-  // Same pattern as ranking snapshots: list the folder via the GitHub
-  // Contents API, then fetch each league file.
-
-  function fetchLeagueList() {
-    var cfg = repoConfig();
-    var apiUrl = 'https://api.github.com/repos/' + cfg.repo
-               + '/contents/content/game/leagues?ref=' + cfg.branch;
-    return fetch(apiUrl, { cache: 'no-cache' }).then(function (r) {
-      if (!r.ok) throw new Error('Failed to list leagues: ' + r.status);
-      return r.json();
-    }).then(function (items) {
-      return items.filter(function (f) {
-        return f.name && /\.json$/.test(f.name);
-      }).map(function (f) {
-        return { slug: f.name.replace(/\.json$/, ''), downloadUrl: f.download_url };
-      });
-    });
-  }
+  // Leagues are listed in a static index (content/game/leagues.json) rather
+  // than via the GitHub Contents API — the API's 60 req/hr unauthenticated
+  // rate limit is shared with content.js and hard-fails the whole page when
+  // exceeded. Add a new league = add its slug to the index.
 
   function fetchAllLeagues() {
-    return fetchLeagueList().then(function (list) {
-      return Promise.all(list.map(function (item) {
-        return fetchText(item.downloadUrl).then(function (txt) {
-          var d = JSON.parse(txt);
-          if (!d.slug) d.slug = item.slug;
+    return fetchJSON('game/leagues.json').then(function (index) {
+      var slugs = index.leagues || [];
+      return Promise.all(slugs.map(function (slug) {
+        return fetchJSON('game/leagues/' + slug + '.json').then(function (d) {
+          if (!d.slug) d.slug = slug;
           return d;
         }).catch(function (err) {
-          if (window.console) console.error('[game] failed league ' + item.slug + ':', err);
+          if (window.console) console.error('[game] failed league ' + slug + ':', err);
           return null;
         });
       })).then(function (arr) {
