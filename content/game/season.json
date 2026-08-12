@@ -2,44 +2,303 @@
   "season": "2026–2027",
   "label": "The 2026–2027 Season",
   "pointSources": [
-    { "id": "critics", "name": "Critics Score", "short": "CRITICS", "color": "#695D4E", "logo": "" },
-    { "id": "money",   "name": "Box Office",    "short": "MONEY",   "color": "#2E6B4F", "logo": "" },
-    { "id": "misc",    "name": "Miscellaneous", "short": "MISC",    "color": "#9B8E79", "logo": "" }
+    {
+      "id": "critics",
+      "name": "Critics Score",
+      "short": "CRITICS",
+      "color": "#695D4E",
+      "logo": ""
+    },
+    {
+      "id": "money",
+      "name": "Box Office",
+      "short": "MONEY",
+      "color": "#2E6B4F",
+      "logo": ""
+    },
+    {
+      "id": "misc",
+      "name": "Miscellaneous",
+      "short": "MISC",
+      "color": "#9B8E79",
+      "logo": ""
+    }
   ],
   "shows": [
-    { "id": "sundance",       "name": "Sundance Film Festival",        "short": "SUNDANCE",  "category": 4, "color": "#8C7B2A", "logo": "" },
-    { "id": "berlinale",      "name": "Berlin Film Festival",          "short": "BERLIN",    "category": 4, "color": "#6D6F2E", "logo": "" },
-    { "id": "cannes",         "name": "Cannes Film Festival",          "short": "CANNES",    "category": 3, "color": "#C1A14B", "logo": "" },
-    { "id": "venice",         "name": "Venice Film Festival",          "short": "VENICE",    "category": 3, "color": "#A3453B", "logo": "" },
-    { "id": "tiff",           "name": "TIFF / Telluride",              "short": "TIFF",      "category": 3, "color": "#B5542F", "logo": "" },
-    { "id": "annecy",         "name": "Annecy",                        "short": "ANNECY",    "category": 4, "color": "#3F8FA3", "logo": "" },
-    { "id": "nyfcc",          "name": "New York Film Critics Circle",  "short": "NYFCC",     "category": 3, "color": "#56626B", "logo": "" },
-    { "id": "lafca",          "name": "Los Angeles Film Critics Assn", "short": "LAFCA",     "category": 3, "color": "#7A8450", "logo": "" },
-    { "id": "nsfc",           "name": "National Society of Film Critics", "short": "NSFC",   "category": 3, "color": "#6B4E71", "logo": "" },
-    { "id": "agg-critics",    "name": "Aggregate Regional Critics",    "short": "REG CRIT",  "category": 3, "color": "#8A8069", "logo": "" },
-    { "id": "gotham",         "name": "Gotham Awards",                 "short": "GOTHAM",    "category": 4, "color": "#444B54", "logo": "" },
-    { "id": "hmm",            "name": "Hollywood Music in Media",      "short": "HMM",       "category": 2, "color": "#B0692F", "logo": "" },
-    { "id": "nbr",            "name": "National Board of Review",      "short": "NBR",       "category": 4, "color": "#705C3A", "logo": "" },
-    { "id": "astras",         "name": "Astra Awards",                  "short": "ASTRAS",    "category": 4, "color": "#7E6CA8", "logo": "" },
-    { "id": "ida",            "name": "IDA Documentary Awards",        "short": "IDA",       "category": 4, "color": "#4E7D7B", "logo": "" },
-    { "id": "afi",            "name": "AFI Awards",                    "short": "AFI",       "category": 4, "color": "#9A3E4F", "logo": "" },
-    { "id": "golden-globes",  "name": "Golden Globes",                 "short": "GLOBES",    "category": 2, "color": "#C9A227", "logo": "" },
-    { "id": "aacta",          "name": "AACTA International Awards",    "short": "AACTA",     "category": 4, "color": "#3C7A6E", "logo": "" },
-    { "id": "efa",            "name": "European Film Awards",          "short": "EFA",       "category": 3, "color": "#33658A", "logo": "" },
-    { "id": "critics-choice", "name": "Critics Choice Awards",         "short": "CRITICS CH","category": 3, "color": "#2F6F8F", "logo": "" },
-    { "id": "bifa",           "name": "BIFA Awards",                   "short": "BIFA",      "category": 4, "color": "#5F5FA3", "logo": "" },
-    { "id": "wga",            "name": "WGA Awards",                    "short": "WGA",       "category": 2, "color": "#3E5C76", "logo": "" },
-    { "id": "pga",            "name": "PGA Awards",                    "short": "PGA",       "category": 2, "color": "#2D5167", "logo": "" },
-    { "id": "sag",            "name": "SAG Awards",                    "short": "SAG",       "category": 2, "color": "#8E2F3C", "logo": "" },
-    { "id": "adg",            "name": "Art Directors Guild Awards",    "short": "ADG",       "category": 2, "color": "#6E8B5E", "logo": "" },
-    { "id": "dga",            "name": "DGA Awards",                    "short": "DGA",       "category": 2, "color": "#4A6B8A", "logo": "" },
-    { "id": "bafta",          "name": "BAFTA Awards",                  "short": "BAFTA",     "category": 2, "color": "#8C6A1F", "logo": "" },
-    { "id": "cdg",            "name": "Costume Designers Guild",       "short": "CDG",       "category": 2, "color": "#9E5A88", "logo": "" },
-    { "id": "muahs",          "name": "Make-Up & Hair Stylists Guild", "short": "MUAHS",     "category": 2, "color": "#C77B54", "logo": "" },
-    { "id": "annies",         "name": "Annie Awards",                  "short": "ANNIES",    "category": 2, "color": "#7C5B9E", "logo": "" },
-    { "id": "asc",            "name": "ASC Awards",                    "short": "ASC",       "category": 2, "color": "#46748C", "logo": "" },
-    { "id": "ace",            "name": "ACE Eddie Awards",              "short": "ACE",       "category": 2, "color": "#5B7A99", "logo": "" },
-    { "id": "indie-spirits",  "name": "Independent Spirit Awards",     "short": "SPIRITS",   "category": 3, "color": "#7BA05B", "logo": "" },
-    { "id": "oscars",         "name": "Academy Awards",                "short": "OSCARS",    "category": 1, "color": "#BD8428", "logo": "" }
-  ]
+    {
+      "id": "sundance",
+      "name": "Sundance Film Festival",
+      "short": "SUNDANCE",
+      "category": 4,
+      "color": "#8C7B2A",
+      "logo": ""
+    },
+    {
+      "id": "berlinale",
+      "name": "Berlin Film Festival",
+      "short": "BERLIN",
+      "category": 4,
+      "color": "#6D6F2E",
+      "logo": ""
+    },
+    {
+      "id": "cannes",
+      "name": "Cannes Film Festival",
+      "short": "CANNES",
+      "category": 3,
+      "color": "#C1A14B",
+      "logo": ""
+    },
+    {
+      "id": "venice",
+      "name": "Venice Film Festival",
+      "short": "VENICE",
+      "category": 3,
+      "color": "#A3453B",
+      "logo": ""
+    },
+    {
+      "id": "tiff",
+      "name": "TIFF / Telluride",
+      "short": "TIFF",
+      "category": 3,
+      "color": "#B5542F",
+      "logo": ""
+    },
+    {
+      "id": "annecy",
+      "name": "Annecy",
+      "short": "ANNECY",
+      "category": 4,
+      "color": "#3F8FA3",
+      "logo": ""
+    },
+    {
+      "id": "nyfcc",
+      "name": "New York Film Critics Circle",
+      "short": "NYFCC",
+      "category": 3,
+      "color": "#56626B",
+      "logo": ""
+    },
+    {
+      "id": "lafca",
+      "name": "Los Angeles Film Critics Assn",
+      "short": "LAFCA",
+      "category": 3,
+      "color": "#7A8450",
+      "logo": ""
+    },
+    {
+      "id": "nsfc",
+      "name": "National Society of Film Critics",
+      "short": "NSFC",
+      "category": 3,
+      "color": "#6B4E71",
+      "logo": ""
+    },
+    {
+      "id": "agg-critics",
+      "name": "Aggregate Regional Critics",
+      "short": "REG CRIT",
+      "category": 3,
+      "color": "#8A8069",
+      "logo": ""
+    },
+    {
+      "id": "gotham",
+      "name": "Gotham Awards",
+      "short": "GOTHAM",
+      "category": 4,
+      "color": "#444B54",
+      "logo": ""
+    },
+    {
+      "id": "hmm",
+      "name": "Hollywood Music in Media",
+      "short": "HMM",
+      "category": 2,
+      "color": "#B0692F",
+      "logo": ""
+    },
+    {
+      "id": "nbr",
+      "name": "National Board of Review",
+      "short": "NBR",
+      "category": 4,
+      "color": "#705C3A",
+      "logo": ""
+    },
+    {
+      "id": "astras",
+      "name": "Astra Awards",
+      "short": "ASTRAS",
+      "category": 4,
+      "color": "#7E6CA8",
+      "logo": ""
+    },
+    {
+      "id": "ida",
+      "name": "IDA Documentary Awards",
+      "short": "IDA",
+      "category": 4,
+      "color": "#4E7D7B",
+      "logo": ""
+    },
+    {
+      "id": "afi",
+      "name": "AFI Awards",
+      "short": "AFI",
+      "category": 4,
+      "color": "#9A3E4F",
+      "logo": ""
+    },
+    {
+      "id": "golden-globes",
+      "name": "Golden Globes",
+      "short": "GLOBES",
+      "category": 2,
+      "color": "#C9A227",
+      "logo": ""
+    },
+    {
+      "id": "aacta",
+      "name": "AACTA International Awards",
+      "short": "AACTA",
+      "category": 4,
+      "color": "#3C7A6E",
+      "logo": ""
+    },
+    {
+      "id": "efa",
+      "name": "European Film Awards",
+      "short": "EFA",
+      "category": 3,
+      "color": "#33658A",
+      "logo": ""
+    },
+    {
+      "id": "critics-choice",
+      "name": "Critics Choice Awards",
+      "short": "CRITICS CH",
+      "category": 3,
+      "color": "#2F6F8F",
+      "logo": ""
+    },
+    {
+      "id": "bifa",
+      "name": "BIFA Awards",
+      "short": "BIFA",
+      "category": 4,
+      "color": "#5F5FA3",
+      "logo": ""
+    },
+    {
+      "id": "wga",
+      "name": "WGA Awards",
+      "short": "WGA",
+      "category": 2,
+      "color": "#3E5C76",
+      "logo": ""
+    },
+    {
+      "id": "pga",
+      "name": "PGA Awards",
+      "short": "PGA",
+      "category": 2,
+      "color": "#2D5167",
+      "logo": ""
+    },
+    {
+      "id": "sag",
+      "name": "SAG Awards",
+      "short": "SAG",
+      "category": 2,
+      "color": "#8E2F3C",
+      "logo": ""
+    },
+    {
+      "id": "adg",
+      "name": "Art Directors Guild Awards",
+      "short": "ADG",
+      "category": 2,
+      "color": "#6E8B5E",
+      "logo": ""
+    },
+    {
+      "id": "dga",
+      "name": "DGA Awards",
+      "short": "DGA",
+      "category": 2,
+      "color": "#4A6B8A",
+      "logo": ""
+    },
+    {
+      "id": "bafta",
+      "name": "BAFTA Awards",
+      "short": "BAFTA",
+      "category": 2,
+      "color": "#8C6A1F",
+      "logo": ""
+    },
+    {
+      "id": "cdg",
+      "name": "Costume Designers Guild",
+      "short": "CDG",
+      "category": 2,
+      "color": "#9E5A88",
+      "logo": ""
+    },
+    {
+      "id": "muahs",
+      "name": "Make-Up & Hair Stylists Guild",
+      "short": "MUAHS",
+      "category": 2,
+      "color": "#C77B54",
+      "logo": ""
+    },
+    {
+      "id": "annies",
+      "name": "Annie Awards",
+      "short": "ANNIES",
+      "category": 2,
+      "color": "#7C5B9E",
+      "logo": ""
+    },
+    {
+      "id": "asc",
+      "name": "ASC Awards",
+      "short": "ASC",
+      "category": 2,
+      "color": "#46748C",
+      "logo": ""
+    },
+    {
+      "id": "ace",
+      "name": "ACE Eddie Awards",
+      "short": "ACE",
+      "category": 2,
+      "color": "#5B7A99",
+      "logo": ""
+    },
+    {
+      "id": "indie-spirits",
+      "name": "Independent Spirit Awards",
+      "short": "SPIRITS",
+      "category": 3,
+      "color": "#7BA05B",
+      "logo": ""
+    },
+    {
+      "id": "oscars",
+      "name": "Academy Awards",
+      "short": "OSCARS",
+      "category": 1,
+      "color": "#BD8428",
+      "logo": ""
+    }
+  ],
+  "results": {
+    "bestPicture": ""
+  }
 }
