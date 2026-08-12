@@ -179,6 +179,3171 @@
       "money": 0,
       "misc": 0,
       "points": []
+    },
+    {
+      "filmSlug": "sinners",
+      "title": "Sinners",
+      "posterSlug": "sinners",
+      "pool": false,
+      "critics": 84.0,
+      "money": 14.0,
+      "misc": 40.0,
+      "points": [
+        {
+          "show": "nyfcc",
+          "points": 20.0,
+          "note": "CINE"
+        },
+        {
+          "show": "lafca",
+          "points": 45.0,
+          "note": "Dir; Cine; Score; PROD"
+        },
+        {
+          "show": "nsfc",
+          "points": 110.0,
+          "note": "Picture; Actor; Supp Actress; Supp Actor; CINE"
+        },
+        {
+          "show": "gotham",
+          "points": 40.0,
+          "note": "Sup"
+        },
+        {
+          "show": "nbr",
+          "points": 50.0,
+          "note": "O SCREEN; Picture"
+        },
+        {
+          "show": "astras",
+          "points": 157.0,
+          "note": "PICTURE; DIRECTOR; SCREENPLAY; ACTOR; Sup Act x2; Sup Actr x2; ENSEMBLE; SCORE; SONG"
+        },
+        {
+          "show": "afi",
+          "points": 25.0,
+          "note": "Film"
+        },
+        {
+          "show": "golden-globes",
+          "points": 315.0,
+          "note": "Picture; Dir; Screen; Act; BOX OFFICE; SCORE; Song"
+        },
+        {
+          "show": "aacta",
+          "points": 35.0,
+          "note": "Film; Dir"
+        },
+        {
+          "show": "critics-choice",
+          "points": 218.0,
+          "note": "Pict; Dir; SCREENPLAY; Act; Sup Actr; CASTING; Cine; Edit; SCORE; Sound; Prod; Cost; Makeup; Vfx; Stunt; Song; YOUNG ACTOR"
+        },
+        {
+          "show": "wga",
+          "points": 100.0,
+          "note": "SCREENPLAY"
+        },
+        {
+          "show": "pga",
+          "points": 100.0,
+          "note": "Picture"
+        },
+        {
+          "show": "sag",
+          "points": 245.0,
+          "note": "ENSEMBLE; ACTOR; Supp Actor; Supp Actress; Stunts"
+        },
+        {
+          "show": "adg",
+          "points": 10.0,
+          "note": "Prod"
+        },
+        {
+          "show": "dga",
+          "points": 50.0,
+          "note": "Director"
+        },
+        {
+          "show": "bafta",
+          "points": 455.0,
+          "note": "Picture; Director; Actor; SUPP ACTRESS; SCREENPLAY; Casting; Cine; Costume; Edit; Makeup; SCORE; Prod; Sound"
+        },
+        {
+          "show": "cdg",
+          "points": 10.0,
+          "note": "Cost"
+        },
+        {
+          "show": "muahs",
+          "points": 25.0,
+          "note": "MAKEUP; HAIR; Fx"
+        },
+        {
+          "show": "asc",
+          "points": 20.0,
+          "note": "Cine"
+        },
+        {
+          "show": "ace",
+          "points": 40.0,
+          "note": "EDIT"
+        },
+        {
+          "show": "oscars",
+          "points": 1130.0,
+          "note": "Picture; Director; ACTOR; Supp Actress; Supp Actor; SCREENPLAY; Casting; CINE; Edit; Prod; Costume; Makeup; Vfx; Sound; SCORE; Song"
+        },
+        {
+          "show": "misc",
+          "points": 8.0,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "bugonia",
+      "title": "Bugonia",
+      "posterSlug": "bugonia",
+      "pool": false,
+      "critics": 72.0,
+      "money": 1.0,
+      "misc": 37.5,
+      "points": [
+        {
+          "show": "gotham",
+          "points": 35.0,
+          "note": "Film"
+        },
+        {
+          "show": "astras",
+          "points": 56.0,
+          "note": "Picture; A Scre; Act; Actr; Youth"
+        },
+        {
+          "show": "afi",
+          "points": 25.0,
+          "note": "Film"
+        },
+        {
+          "show": "golden-globes",
+          "points": 200.0,
+          "note": "Picture; Actor; Actress"
+        },
+        {
+          "show": "efa",
+          "points": 50.0,
+          "note": "Dir; Edit; Score; Prod; Sound; HMU"
+        },
+        {
+          "show": "critics-choice",
+          "points": 90.0,
+          "note": "Pict; Actr; A Screen"
+        },
+        {
+          "show": "wga",
+          "points": 50.0,
+          "note": "Screenplay"
+        },
+        {
+          "show": "pga",
+          "points": 100.0,
+          "note": "Picture"
+        },
+        {
+          "show": "sag",
+          "points": 100.0,
+          "note": "Actor; Actress"
+        },
+        {
+          "show": "adg",
+          "points": 10.0,
+          "note": "Prod"
+        },
+        {
+          "show": "bafta",
+          "points": 210.0,
+          "note": "Director; Actor; Actress; Screenplay; Score"
+        },
+        {
+          "show": "cdg",
+          "points": 10.0,
+          "note": "Cost"
+        },
+        {
+          "show": "muahs",
+          "points": 10.0,
+          "note": "Makeup; Hair"
+        },
+        {
+          "show": "ace",
+          "points": 20.0,
+          "note": "Edit"
+        },
+        {
+          "show": "oscars",
+          "points": 420.0,
+          "note": "Picture; Actress; Screenplay; Score"
+        },
+        {
+          "show": "misc",
+          "points": 7.5,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "avatar-fire-and-ash",
+      "title": "Avatar: Fire and Ash",
+      "posterSlug": "avatar-fire-and-ash",
+      "pool": false,
+      "critics": 61.0,
+      "money": 5.0,
+      "misc": 32.0,
+      "points": [
+        {
+          "show": "gotham",
+          "points": 25.0,
+          "note": ""
+        },
+        {
+          "show": "nbr",
+          "points": 25.0,
+          "note": "Picture"
+        },
+        {
+          "show": "afi",
+          "points": 25.0,
+          "note": "Film"
+        },
+        {
+          "show": "golden-globes",
+          "points": 25.0,
+          "note": "Song; Box Office"
+        },
+        {
+          "show": "critics-choice",
+          "points": 5.0,
+          "note": "VFX"
+        },
+        {
+          "show": "adg",
+          "points": 10.0,
+          "note": "Prod"
+        },
+        {
+          "show": "bafta",
+          "points": 10.0,
+          "note": "VFX"
+        },
+        {
+          "show": "cdg",
+          "points": 10.0,
+          "note": "Cost"
+        },
+        {
+          "show": "oscars",
+          "points": 40.0,
+          "note": "Costume; VFX"
+        },
+        {
+          "show": "misc",
+          "points": 8.0,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "warfare",
+      "title": "Warfare",
+      "posterSlug": "warfare",
+      "pool": false,
+      "critics": 78.0,
+      "money": 6.0,
+      "misc": 30.4,
+      "points": [
+        {
+          "show": "critics-choice",
+          "points": 7.0,
+          "note": "Sound; Stunt"
+        },
+        {
+          "show": "bifa",
+          "points": 44.0,
+          "note": "ENSEMBLE; Casting; EDIT; Prod; Sound; VFX; HMU"
+        },
+        {
+          "show": "bafta",
+          "points": 10.0,
+          "note": "Sound"
+        },
+        {
+          "show": "indie-spirits",
+          "points": 20.0,
+          "note": "Edit; Cine"
+        },
+        {
+          "show": "misc",
+          "points": 7.6,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-perfect-neighbor",
+      "title": "The Perfect Neighbor",
+      "posterSlug": "the-perfect-neighbor",
+      "pool": false,
+      "critics": 87.0,
+      "money": 0.0,
+      "misc": 36.67,
+      "points": [
+        {
+          "show": "sundance",
+          "points": 5.0,
+          "note": "DIRECTOR"
+        },
+        {
+          "show": "lafca",
+          "points": 10.0,
+          "note": "Doc"
+        },
+        {
+          "show": "nsfc",
+          "points": 10.0,
+          "note": "Documentary"
+        },
+        {
+          "show": "gotham",
+          "points": 5.0,
+          "note": "Doc"
+        },
+        {
+          "show": "astras",
+          "points": 10.0,
+          "note": "DOC"
+        },
+        {
+          "show": "critics-choice",
+          "points": 25.0,
+          "note": "Documentary; Doc Director; Edit"
+        },
+        {
+          "show": "pga",
+          "points": 20.0,
+          "note": "Doc"
+        },
+        {
+          "show": "dga",
+          "points": 10.0,
+          "note": "Doc"
+        },
+        {
+          "show": "bafta",
+          "points": 20.0,
+          "note": "Documentary"
+        },
+        {
+          "show": "ace",
+          "points": 20.0,
+          "note": "Doc"
+        },
+        {
+          "show": "indie-spirits",
+          "points": 20.0,
+          "note": "DOC"
+        },
+        {
+          "show": "oscars",
+          "points": 50.0,
+          "note": "Doc"
+        },
+        {
+          "show": "misc",
+          "points": 7.33,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-life-of-chuck",
+      "title": "The Life of Chuck",
+      "posterSlug": "the-life-of-chuck",
+      "pool": false,
+      "critics": 68.0,
+      "money": 0.0,
+      "misc": 31.67,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 100.0,
+          "note": "PCA WINNER"
+        },
+        {
+          "show": "misc",
+          "points": 6.33,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "2000-meters-to-andriivka",
+      "title": "2000 Meters to Andriivka",
+      "posterSlug": "2000-meters-to-andriivka",
+      "pool": false,
+      "critics": 88.0,
+      "money": 0.0,
+      "misc": 23.0,
+      "points": [
+        {
+          "show": "sundance",
+          "points": 5.0,
+          "note": "DIRECTOR"
+        },
+        {
+          "show": "gotham",
+          "points": 5.0,
+          "note": "Doc"
+        },
+        {
+          "show": "nbr",
+          "points": 5.0,
+          "note": "Doc"
+        },
+        {
+          "show": "critics-choice",
+          "points": 15.0,
+          "note": "Documentary; Doc Director"
+        },
+        {
+          "show": "wga",
+          "points": 20.0,
+          "note": "Doc"
+        },
+        {
+          "show": "dga",
+          "points": 20.0,
+          "note": "DOC"
+        },
+        {
+          "show": "bafta",
+          "points": 20.0,
+          "note": "Documentary"
+        },
+        {
+          "show": "asc",
+          "points": 10.0,
+          "note": "Doc"
+        }
+      ]
+    },
+    {
+      "filmSlug": "put-your-soul-in-your-hand-and-walk",
+      "title": "Put Your Soul In Your Hand and Walk",
+      "posterSlug": "put-your-soul-in-your-hand-and-walk",
+      "pool": false,
+      "critics": 84.0,
+      "money": 0.0,
+      "misc": 24.0,
+      "points": [
+        {
+          "show": "gotham",
+          "points": 5.0,
+          "note": "Doc"
+        }
+      ]
+    },
+    {
+      "filmSlug": "sound-of-falling",
+      "title": "Sound of Falling",
+      "posterSlug": "sound-of-falling",
+      "pool": false,
+      "critics": 89.0,
+      "money": 0.0,
+      "misc": 24.0,
+      "points": [
+        {
+          "show": "cannes",
+          "points": 40.0,
+          "note": "JURY"
+        },
+        {
+          "show": "gotham",
+          "points": 15.0,
+          "note": "Screen; Int'l"
+        },
+        {
+          "show": "efa",
+          "points": 127.0,
+          "note": "Pict; Dir; Scre; Cast; Cine; COST; Score; HMU"
+        },
+        {
+          "show": "bifa",
+          "points": 5.0,
+          "note": "Int'l"
+        },
+        {
+          "show": "misc",
+          "points": 8.0,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "nuremberg",
+      "title": "Nuremberg",
+      "posterSlug": "nuremberg",
+      "pool": false,
+      "critics": 61.0,
+      "money": 0.0,
+      "misc": 13.5,
+      "points": [
+        {
+          "show": "aacta",
+          "points": 35.0,
+          "note": "Film; Act"
+        },
+        {
+          "show": "misc",
+          "points": 4.5,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "marty-supreme",
+      "title": "Marty Supreme",
+      "posterSlug": "marty-supreme",
+      "pool": false,
+      "critics": 89.0,
+      "money": 6.0,
+      "misc": 44.17,
+      "points": [
+        {
+          "show": "nyfcc",
+          "points": 40.0,
+          "note": "SCRE"
+        },
+        {
+          "show": "lafca",
+          "points": 40.0,
+          "note": "Lead; EDIT"
+        },
+        {
+          "show": "gotham",
+          "points": 10.0,
+          "note": ""
+        },
+        {
+          "show": "nbr",
+          "points": 25.0,
+          "note": "Picture"
+        },
+        {
+          "show": "astras",
+          "points": 75.0,
+          "note": "Pic; Dir; O Scre; ACTOR; Sup Actr x2"
+        },
+        {
+          "show": "afi",
+          "points": 25.0,
+          "note": "Film"
+        },
+        {
+          "show": "golden-globes",
+          "points": 250.0,
+          "note": "Picture; Screen; ACTOR"
+        },
+        {
+          "show": "aacta",
+          "points": 65.0,
+          "note": "Film; Dir; Screen; ACTOR"
+        },
+        {
+          "show": "critics-choice",
+          "points": 160.0,
+          "note": "Pict; Dir; O Screen; ACTOR; Casting; Edit; Prod; Score"
+        },
+        {
+          "show": "wga",
+          "points": 50.0,
+          "note": "Screenplay"
+        },
+        {
+          "show": "pga",
+          "points": 100.0,
+          "note": "Picture"
+        },
+        {
+          "show": "sag",
+          "points": 125.0,
+          "note": "Ensemble; Actor; Supp Actress"
+        },
+        {
+          "show": "adg",
+          "points": 10.0,
+          "note": "Prod"
+        },
+        {
+          "show": "dga",
+          "points": 50.0,
+          "note": "Director"
+        },
+        {
+          "show": "bafta",
+          "points": 355.0,
+          "note": "Picture; Director; Actor; Supp Actress; Screenplay; Casting; Cine; Costume; Editing; Makeup; Prod"
+        },
+        {
+          "show": "muahs",
+          "points": 5.0,
+          "note": "Hair"
+        },
+        {
+          "show": "asc",
+          "points": 20.0,
+          "note": "Cine"
+        },
+        {
+          "show": "ace",
+          "points": 20.0,
+          "note": "Edit"
+        },
+        {
+          "show": "oscars",
+          "points": 690.0,
+          "note": "Picture; Director; Actor; Screenplay; Casting; Cine; Edit; Prod; Costume"
+        },
+        {
+          "show": "misc",
+          "points": 8.83,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "springsteen-deliver-me-from-nowhere",
+      "title": "Springsteen: Deliver Me From Nowhere",
+      "posterSlug": "springsteen-deliver-me-from-nowhere",
+      "pool": false,
+      "critics": 59.0,
+      "money": 2.0,
+      "misc": 19.2,
+      "points": [
+        {
+          "show": "astras",
+          "points": 10.0,
+          "note": "Act"
+        },
+        {
+          "show": "golden-globes",
+          "points": 50.0,
+          "note": "Act"
+        },
+        {
+          "show": "misc",
+          "points": 4.8,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "no-other-choice",
+      "title": "No Other Choice",
+      "posterSlug": "no-other-choice",
+      "pool": false,
+      "critics": 86.0,
+      "money": 3.0,
+      "misc": 44.17,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 45.0,
+          "note": "PCA International, MISC Award"
+        },
+        {
+          "show": "gotham",
+          "points": 25.0,
+          "note": "Screen; Lead; Int'l"
+        },
+        {
+          "show": "astras",
+          "points": 50.0,
+          "note": "Pic; Act; A Scre; Int"
+        },
+        {
+          "show": "golden-globes",
+          "points": 170.0,
+          "note": "Picture; Actor; Int'l"
+        },
+        {
+          "show": "critics-choice",
+          "points": 30.0,
+          "note": "A Screen; Int'l"
+        },
+        {
+          "show": "misc",
+          "points": 13.83,
+          "note": "Thanks Obama; No Other Choice ⭑"
+        }
+      ]
+    },
+    {
+      "filmSlug": "if-i-had-legs-id-kick-you",
+      "title": "If I Had Legs I'd Kick You",
+      "posterSlug": "if-i-had-legs-id-kick-you",
+      "pool": false,
+      "critics": 78.0,
+      "money": 0.0,
+      "misc": 37.5,
+      "points": [
+        {
+          "show": "berlinale",
+          "points": 20.0,
+          "note": "ACTRESS"
+        },
+        {
+          "show": "nyfcc",
+          "points": 40.0,
+          "note": "ACTRESS"
+        },
+        {
+          "show": "lafca",
+          "points": 40.0,
+          "note": "LEAD"
+        },
+        {
+          "show": "nsfc",
+          "points": 20.0,
+          "note": "Actress"
+        },
+        {
+          "show": "gotham",
+          "points": 55.0,
+          "note": "Film; Dir; Screenplay; Lead"
+        },
+        {
+          "show": "nbr",
+          "points": 25.0,
+          "note": "ACTRESS"
+        },
+        {
+          "show": "astras",
+          "points": 10.0,
+          "note": "Actr"
+        },
+        {
+          "show": "golden-globes",
+          "points": 100.0,
+          "note": "ACTRESS"
+        },
+        {
+          "show": "aacta",
+          "points": 20.0,
+          "note": "ACTRESS"
+        },
+        {
+          "show": "critics-choice",
+          "points": 20.0,
+          "note": "Actress"
+        },
+        {
+          "show": "wga",
+          "points": 50.0,
+          "note": "Screenplay"
+        },
+        {
+          "show": "sag",
+          "points": 50.0,
+          "note": "Actress"
+        },
+        {
+          "show": "bafta",
+          "points": 50.0,
+          "note": "Actress"
+        },
+        {
+          "show": "indie-spirits",
+          "points": 60.0,
+          "note": "Dir; ACTRESS"
+        },
+        {
+          "show": "oscars",
+          "points": 100.0,
+          "note": "Actress"
+        },
+        {
+          "show": "misc",
+          "points": 7.5,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "i-swear",
+      "title": "I Swear",
+      "posterSlug": "i-swear",
+      "pool": false,
+      "critics": 71.0,
+      "money": 0.0,
+      "misc": 14.0,
+      "points": [
+        {
+          "show": "bifa",
+          "points": 90.0,
+          "note": "Picture; Dir; Screen; LEAD; Sup x3; CASTING"
+        },
+        {
+          "show": "bafta",
+          "points": 230.0,
+          "note": "ACTOR; Supp Actor; Screenplay; CASTING; British"
+        }
+      ]
+    },
+    {
+      "filmSlug": "sirat",
+      "title": "Sirât",
+      "posterSlug": "sirat",
+      "pool": false,
+      "critics": 85.0,
+      "money": 0.0,
+      "misc": 39.17,
+      "points": [
+        {
+          "show": "cannes",
+          "points": 40.0,
+          "note": "JURY"
+        },
+        {
+          "show": "lafca",
+          "points": 10.0,
+          "note": "SCORE"
+        },
+        {
+          "show": "gotham",
+          "points": 10.0,
+          "note": "Dir"
+        },
+        {
+          "show": "nbr",
+          "points": 5.0,
+          "note": "Int'l"
+        },
+        {
+          "show": "astras",
+          "points": 5.0,
+          "note": "Int"
+        },
+        {
+          "show": "golden-globes",
+          "points": 30.0,
+          "note": "Int'l; Score"
+        },
+        {
+          "show": "efa",
+          "points": 190.0,
+          "note": "Pict; Dir; Scre; Act; CAST; CINE; EDIT; PROD; SOUND"
+        },
+        {
+          "show": "critics-choice",
+          "points": 15.0,
+          "note": "Int'l; Sound"
+        },
+        {
+          "show": "bifa",
+          "points": 5.0,
+          "note": "Int'l"
+        },
+        {
+          "show": "bafta",
+          "points": 20.0,
+          "note": "International"
+        },
+        {
+          "show": "indie-spirits",
+          "points": 10.0,
+          "note": "Int'l"
+        },
+        {
+          "show": "oscars",
+          "points": 70.0,
+          "note": "International; Sound"
+        },
+        {
+          "show": "misc",
+          "points": 7.83,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "splitsville",
+      "title": "Splitsville",
+      "posterSlug": "splitsville",
+      "pool": false,
+      "critics": 74.0,
+      "money": 0.0,
+      "misc": 33.6,
+      "points": [
+        {
+          "show": "indie-spirits",
+          "points": 30.0,
+          "note": "Screen; Edit"
+        },
+        {
+          "show": "misc",
+          "points": 8.4,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-presidents-cake",
+      "title": "The President's Cake",
+      "posterSlug": "the-presidents-cake",
+      "pool": false,
+      "critics": 88.0,
+      "money": 0.0,
+      "misc": 14.0,
+      "points": [
+        {
+          "show": "cannes",
+          "points": 5.0,
+          "note": "GOLDEN CAMERA"
+        },
+        {
+          "show": "dga",
+          "points": 5.0,
+          "note": "Debut"
+        }
+      ]
+    },
+    {
+      "filmSlug": "cover-up",
+      "title": "Cover-Up",
+      "posterSlug": "cover-up",
+      "pool": false,
+      "critics": 83.0,
+      "money": 0.0,
+      "misc": 20.0,
+      "points": [
+        {
+          "show": "nbr",
+          "points": 10.0,
+          "note": "DOC"
+        },
+        {
+          "show": "astras",
+          "points": 5.0,
+          "note": "Doc"
+        },
+        {
+          "show": "critics-choice",
+          "points": 10.0,
+          "note": "Documentary"
+        },
+        {
+          "show": "pga",
+          "points": 20.0,
+          "note": "Doc"
+        },
+        {
+          "show": "dga",
+          "points": 10.0,
+          "note": "Doc"
+        },
+        {
+          "show": "bafta",
+          "points": 20.0,
+          "note": "Documentary"
+        }
+      ]
+    },
+    {
+      "filmSlug": "christy",
+      "title": "Christy",
+      "posterSlug": "christy",
+      "pool": false,
+      "critics": 60.0,
+      "money": 0.0,
+      "misc": 13.5,
+      "points": [
+        {
+          "show": "astras",
+          "points": 10.0,
+          "note": "Actr"
+        },
+        {
+          "show": "misc",
+          "points": 4.5,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "sentimental-value",
+      "title": "Sentimental Value",
+      "posterSlug": "sentimental-value",
+      "pool": false,
+      "critics": 86.0,
+      "money": 0.0,
+      "misc": 40.83,
+      "points": [
+        {
+          "show": "cannes",
+          "points": 50.0,
+          "note": "GRAND PRIX"
+        },
+        {
+          "show": "tiff",
+          "points": 20.0,
+          "note": "PCA International runner-up"
+        },
+        {
+          "show": "lafca",
+          "points": 30.0,
+          "note": "SUP; Sup"
+        },
+        {
+          "show": "nsfc",
+          "points": 50.0,
+          "note": "Actress; Supp Actress; Supp Actor; International"
+        },
+        {
+          "show": "gotham",
+          "points": 10.0,
+          "note": "Sup Act x2"
+        },
+        {
+          "show": "nbr",
+          "points": 15.0,
+          "note": "SUP ACTR; Int'l"
+        },
+        {
+          "show": "astras",
+          "points": 95.0,
+          "note": "Pic; Dir; A Scre; Actr; SUPP ACTOR; Sup Actr x2; Ensemble; INTERNATIONAL"
+        },
+        {
+          "show": "golden-globes",
+          "points": 350.0,
+          "note": "Picture; Dir; Screen; Actr; SUPP ACTOR; Sup Actr x2; Int'l"
+        },
+        {
+          "show": "aacta",
+          "points": 35.0,
+          "note": "SCREENPLAY; Actr; Sup Actr"
+        },
+        {
+          "show": "efa",
+          "points": 290.0,
+          "note": "PICT; DIR; SCREN; ACT; ACTR Cast; Prod; SCORE"
+        },
+        {
+          "show": "critics-choice",
+          "points": 140.0,
+          "note": "Pict; Dir; O Screen; Actr; Sup Act; Sup Actr x2"
+        },
+        {
+          "show": "bifa",
+          "points": 10.0,
+          "note": "INT'L"
+        },
+        {
+          "show": "pga",
+          "points": 100.0,
+          "note": "Picture"
+        },
+        {
+          "show": "bafta",
+          "points": 350.0,
+          "note": "Picture; Director; Actress; Supp Actor; Supp Actress; Screenplay; INTERNATIONAL; Casting"
+        },
+        {
+          "show": "ace",
+          "points": 20.0,
+          "note": "Edit"
+        },
+        {
+          "show": "oscars",
+          "points": 800.0,
+          "note": "Picture; Director; Actress; Supp Actress x2; Supp Actor; Screenplay; INTERNATIONAL; Edit"
+        },
+        {
+          "show": "misc",
+          "points": 13.17,
+          "note": "Thanks Obama; Sentimental Value ⭑"
+        }
+      ]
+    },
+    {
+      "filmSlug": "wicked-for-good",
+      "title": "Wicked: For Good",
+      "posterSlug": "wicked-for-good",
+      "pool": false,
+      "critics": 58.0,
+      "money": 8.0,
+      "misc": 21.6,
+      "points": [
+        {
+          "show": "gotham",
+          "points": 20.0,
+          "note": ""
+        },
+        {
+          "show": "nbr",
+          "points": 25.0,
+          "note": "Picture"
+        },
+        {
+          "show": "astras",
+          "points": 61.0,
+          "note": "Pic; Actr; Sup Act; SUPP ACTRESS; Ensemble; Youth"
+        },
+        {
+          "show": "afi",
+          "points": 25.0,
+          "note": "Film"
+        },
+        {
+          "show": "golden-globes",
+          "points": 100.0,
+          "note": "Actr; Sup Actr; Box Office; Song x2"
+        },
+        {
+          "show": "critics-choice",
+          "points": 84.0,
+          "note": "Pict; Sup Actr; Casting; Cost; Prod; Makeup; Song"
+        },
+        {
+          "show": "sag",
+          "points": 20.0,
+          "note": "Supp Actress"
+        },
+        {
+          "show": "adg",
+          "points": 10.0,
+          "note": "Prod"
+        },
+        {
+          "show": "bafta",
+          "points": 15.0,
+          "note": "Costume; Makeup"
+        },
+        {
+          "show": "cdg",
+          "points": 20.0,
+          "note": "COSTUME"
+        },
+        {
+          "show": "muahs",
+          "points": 15.0,
+          "note": "Makeup; Hair; Fx"
+        },
+        {
+          "show": "ace",
+          "points": 20.0,
+          "note": "Edit"
+        },
+        {
+          "show": "misc",
+          "points": 5.4,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "one-battle-after-another",
+      "title": "One Battle After Another",
+      "posterSlug": "one-battle-after-another",
+      "pool": false,
+      "critics": 95.0,
+      "money": 2.0,
+      "misc": 46.67,
+      "points": [
+        {
+          "show": "nyfcc",
+          "points": 120.0,
+          "note": "FILM; SUP ACT"
+        },
+        {
+          "show": "lafca",
+          "points": 180.0,
+          "note": "FILM; DIR; SUP; Edit"
+        },
+        {
+          "show": "nsfc",
+          "points": 170.0,
+          "note": "PICTURE; DIRECTOR; SUPP ACTRESS; Cine"
+        },
+        {
+          "show": "gotham",
+          "points": 91.0,
+          "note": "FILM; Dir; Screen; Sup x2; Debut Act"
+        },
+        {
+          "show": "nbr",
+          "points": 115.0,
+          "note": "PICTURE; DIR; ACTOR; SUP ACT; BREAK"
+        },
+        {
+          "show": "astras",
+          "points": 130.0,
+          "note": "PICTURE; Dir; SCREENPLAY; Act; Actr; Sup Act x2; Sup Actr x2; Ensemble"
+        },
+        {
+          "show": "afi",
+          "points": 25.0,
+          "note": "Film"
+        },
+        {
+          "show": "golden-globes",
+          "points": 590.0,
+          "note": "PICTURE; DIRECTOR; SCREENPLAY; Act; Actr; Sup Act x2; SUPP ACTRESS; Score"
+        },
+        {
+          "show": "aacta",
+          "points": 110.0,
+          "note": "FILM; DIRECTOR; Screen; Act; Actr; Sup Act x2"
+        },
+        {
+          "show": "critics-choice",
+          "points": 292.0,
+          "note": "PICTURE; DIRECTOR; SCREENPLAY; Act; Actr; Sup Act x2; Sup Actr; Casting; Cine; Edit; Score; Sound; Stunt"
+        },
+        {
+          "show": "wga",
+          "points": 100.0,
+          "note": "SCREENPLAY"
+        },
+        {
+          "show": "pga",
+          "points": 200.0,
+          "note": "PICTURE"
+        },
+        {
+          "show": "sag",
+          "points": 235.0,
+          "note": "Ensemble; Actor; Actress; SUPP ACTOR x2; Supp Actress; Stunts"
+        },
+        {
+          "show": "adg",
+          "points": 20.0,
+          "note": "PROD"
+        },
+        {
+          "show": "dga",
+          "points": 100.0,
+          "note": "DIRECTOR"
+        },
+        {
+          "show": "bafta",
+          "points": 670.0,
+          "note": "PICTURE; DIRECTOR; Actor; Actress; SUPP ACTOR x2; Supp Actress; SCREENPLAY; Casting; CINE; Score; Prod; Sound"
+        },
+        {
+          "show": "cdg",
+          "points": 20.0,
+          "note": "COSTUME"
+        },
+        {
+          "show": "muahs",
+          "points": 25.0,
+          "note": "MAKEUP; HAIR; Fx"
+        },
+        {
+          "show": "asc",
+          "points": 40.0,
+          "note": "CINE"
+        },
+        {
+          "show": "ace",
+          "points": 40.0,
+          "note": "EDIT"
+        },
+        {
+          "show": "oscars",
+          "points": 1610.0,
+          "note": "PICTURE; DIRECTOR; Actor; Supp Actress; SUPP ACTOR x2; SCREENPLAY; CASTING; Cine; EDIT; Prod; Sound; Score"
+        },
+        {
+          "show": "misc",
+          "points": 14.33,
+          "note": "Thanks Obama; One Battle After Another"
+        }
+      ]
+    },
+    {
+      "filmSlug": "is-this-thing-on",
+      "title": "Is This Thing On?",
+      "posterSlug": "is-this-thing-on",
+      "pool": false,
+      "critics": 74.0,
+      "money": 0.0,
+      "misc": 27.2,
+      "points": [
+        {
+          "show": "misc",
+          "points": 6.8,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "weapons",
+      "title": "Weapons",
+      "posterSlug": "weapons",
+      "pool": false,
+      "critics": 81.0,
+      "money": 19.0,
+      "misc": 43.33,
+      "points": [
+        {
+          "show": "nyfcc",
+          "points": 20.0,
+          "note": "SUP ACTR"
+        },
+        {
+          "show": "astras",
+          "points": 30.0,
+          "note": "Actr; O Scre; SUPP ACTRESS"
+        },
+        {
+          "show": "golden-globes",
+          "points": 40.0,
+          "note": "Sup Actr; Box Office"
+        },
+        {
+          "show": "aacta",
+          "points": 10.0,
+          "note": "SUPP ACTRESS"
+        },
+        {
+          "show": "critics-choice",
+          "points": 44.0,
+          "note": "O Screen; SUPP ACTRESS; Youth; Makeup"
+        },
+        {
+          "show": "wga",
+          "points": 50.0,
+          "note": "Screenplay"
+        },
+        {
+          "show": "pga",
+          "points": 100.0,
+          "note": "Picture"
+        },
+        {
+          "show": "sag",
+          "points": 40.0,
+          "note": "SUPP ACTRESS"
+        },
+        {
+          "show": "cdg",
+          "points": 10.0,
+          "note": "Cost"
+        },
+        {
+          "show": "muahs",
+          "points": 15.0,
+          "note": "Makeup; Hair; Fx"
+        },
+        {
+          "show": "ace",
+          "points": 20.0,
+          "note": "Edit"
+        },
+        {
+          "show": "oscars",
+          "points": 100.0,
+          "note": "SUPP ACTRESS"
+        },
+        {
+          "show": "misc",
+          "points": 8.67,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "zootopia-2",
+      "title": "Zootopia 2",
+      "posterSlug": "zootopia-2",
+      "pool": false,
+      "critics": 73.0,
+      "money": 13.0,
+      "misc": 21.75,
+      "points": [
+        {
+          "show": "gotham",
+          "points": 5.0,
+          "note": ""
+        },
+        {
+          "show": "astras",
+          "points": 5.0,
+          "note": "Anim"
+        },
+        {
+          "show": "golden-globes",
+          "points": 40.0,
+          "note": "Anim; Box Office"
+        },
+        {
+          "show": "critics-choice",
+          "points": 10.0,
+          "note": "Anim"
+        },
+        {
+          "show": "pga",
+          "points": 20.0,
+          "note": "Animated"
+        },
+        {
+          "show": "adg",
+          "points": 10.0,
+          "note": "Animated"
+        },
+        {
+          "show": "bafta",
+          "points": 40.0,
+          "note": "ANIMATED"
+        },
+        {
+          "show": "annies",
+          "points": 10.0,
+          "note": "Animated"
+        },
+        {
+          "show": "ace",
+          "points": 20.0,
+          "note": "Edit"
+        },
+        {
+          "show": "oscars",
+          "points": 50.0,
+          "note": "Animated"
+        },
+        {
+          "show": "misc",
+          "points": 7.25,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "father-mother-sister-brother",
+      "title": "Father Mother Sister Brother",
+      "posterSlug": "father-mother-sister-brother",
+      "pool": false,
+      "critics": 76.0,
+      "money": 0.0,
+      "misc": 8.0,
+      "points": [
+        {
+          "show": "venice",
+          "points": 100.0,
+          "note": "GOLDEN LION"
+        },
+        {
+          "show": "gotham",
+          "points": 5.0,
+          "note": "Sup"
+        }
+      ]
+    },
+    {
+      "filmSlug": "come-see-me-in-the-good-light",
+      "title": "Come See Me in the Good Light",
+      "posterSlug": "come-see-me-in-the-good-light",
+      "pool": false,
+      "critics": 81.0,
+      "money": 0.0,
+      "misc": 6.0,
+      "points": [
+        {
+          "show": "gotham",
+          "points": 5.0,
+          "note": ""
+        },
+        {
+          "show": "nbr",
+          "points": 5.0,
+          "note": "Doc"
+        },
+        {
+          "show": "asc",
+          "points": 10.0,
+          "note": "Doc"
+        },
+        {
+          "show": "indie-spirits",
+          "points": 10.0,
+          "note": "Doc"
+        },
+        {
+          "show": "oscars",
+          "points": 50.0,
+          "note": "Documentary"
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-mastermind",
+      "title": "The Mastermind",
+      "posterSlug": "the-mastermind",
+      "pool": false,
+      "critics": 80.0,
+      "money": 0.0,
+      "misc": 23.0,
+      "points": [
+        {
+          "show": "gotham",
+          "points": 20.0,
+          "note": "Lead; Dir"
+        }
+      ]
+    },
+    {
+      "filmSlug": "my-undesirable-friends-part-i-last-air-in-moscow",
+      "title": "My Undesirable Friends: Part I - Last Air in Moscow",
+      "posterSlug": "my-undesirable-friends-part-i-last-air-in-moscow",
+      "pool": false,
+      "critics": 94.0,
+      "money": 0.0,
+      "misc": 15.0,
+      "points": [
+        {
+          "show": "nyfcc",
+          "points": 20.0,
+          "note": "DOC"
+        },
+        {
+          "show": "lafca",
+          "points": 20.0,
+          "note": "DOC"
+        },
+        {
+          "show": "nsfc",
+          "points": 20.0,
+          "note": "DOC"
+        },
+        {
+          "show": "gotham",
+          "points": 10.0,
+          "note": "DOC"
+        },
+        {
+          "show": "indie-spirits",
+          "points": 10.0,
+          "note": "Doc"
+        }
+      ]
+    },
+    {
+      "filmSlug": "jay-kelly",
+      "title": "Jay Kelly",
+      "posterSlug": "jay-kelly",
+      "pool": false,
+      "critics": 67.0,
+      "money": 0.0,
+      "misc": 28.8,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 20.0,
+          "note": "Silver Medallion"
+        },
+        {
+          "show": "gotham",
+          "points": 5.0,
+          "note": "Sup"
+        },
+        {
+          "show": "nbr",
+          "points": 25.0,
+          "note": "Picture"
+        },
+        {
+          "show": "astras",
+          "points": 65.0,
+          "note": "Pict; O Scre; Act; SUPP ACTOR; Ensemble"
+        },
+        {
+          "show": "afi",
+          "points": 25.0,
+          "note": "Film"
+        },
+        {
+          "show": "golden-globes",
+          "points": 70.0,
+          "note": "Act; Sup Act"
+        },
+        {
+          "show": "critics-choice",
+          "points": 90.0,
+          "note": "Pict; O Screen; Sup Act; Casting"
+        },
+        {
+          "show": "misc",
+          "points": 12.2,
+          "note": "Thanks Obama; Jay Kelly"
+        }
+      ]
+    },
+    {
+      "filmSlug": "frankenstein",
+      "title": "Frankenstein",
+      "posterSlug": "frankenstein",
+      "pool": false,
+      "critics": 77.0,
+      "money": 0.0,
+      "misc": 40.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 70.0,
+          "note": "DIRECTOR / PCA runner-up"
+        },
+        {
+          "show": "lafca",
+          "points": 5.0,
+          "note": "Prod"
+        },
+        {
+          "show": "gotham",
+          "points": 15.0,
+          "note": "Sup"
+        },
+        {
+          "show": "nbr",
+          "points": 25.0,
+          "note": "Picture"
+        },
+        {
+          "show": "astras",
+          "points": 50.0,
+          "note": "Pict; Dir; A Scre; Sup Act"
+        },
+        {
+          "show": "afi",
+          "points": 25.0,
+          "note": "Film"
+        },
+        {
+          "show": "golden-globes",
+          "points": 230.0,
+          "note": "Picture; Dir; Actor; Sup Act; Score"
+        },
+        {
+          "show": "aacta",
+          "points": 25.0,
+          "note": "Dir; SUP ACTOR; Sup Actr"
+        },
+        {
+          "show": "critics-choice",
+          "points": 157.0,
+          "note": "Pict; Dir; A Screen; SUPP ACTOR; Cine; Score; PROD; COSTUME; Sound; MAKEUP; Vfx"
+        },
+        {
+          "show": "wga",
+          "points": 50.0,
+          "note": "Screenplay"
+        },
+        {
+          "show": "pga",
+          "points": 100.0,
+          "note": "Picture"
+        },
+        {
+          "show": "sag",
+          "points": 75.0,
+          "note": "Ensemble; Supp Actor; Stunts"
+        },
+        {
+          "show": "adg",
+          "points": 20.0,
+          "note": "PROD"
+        },
+        {
+          "show": "dga",
+          "points": 50.0,
+          "note": "Director"
+        },
+        {
+          "show": "bafta",
+          "points": 115.0,
+          "note": "Supp Actor; Cine; COSTUME; MAKEUP; PROD; Score; Sound; Vfx"
+        },
+        {
+          "show": "cdg",
+          "points": 20.0,
+          "note": "COSTUME"
+        },
+        {
+          "show": "muahs",
+          "points": 20.0,
+          "note": "MAKEUP; Hair; Fx"
+        },
+        {
+          "show": "asc",
+          "points": 20.0,
+          "note": "Cine"
+        },
+        {
+          "show": "oscars",
+          "points": 590.0,
+          "note": "Picture; Supp Actor; Screenplay; Cine; PROD; COSTUME; MAKEUP; Sound; Score"
+        },
+        {
+          "show": "misc",
+          "points": 8.0,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "it-was-just-an-accident",
+      "title": "It Was Just an Accident",
+      "posterSlug": "it-was-just-an-accident",
+      "pool": false,
+      "critics": 91.0,
+      "money": 0.0,
+      "misc": 40.83,
+      "points": [
+        {
+          "show": "cannes",
+          "points": 100.0,
+          "note": "PALME D'OR"
+        },
+        {
+          "show": "tiff",
+          "points": 25.0,
+          "note": "MISC Award / Silver Medallion"
+        },
+        {
+          "show": "nyfcc",
+          "points": 40.0,
+          "note": "DIR"
+        },
+        {
+          "show": "lafca",
+          "points": 50.0,
+          "note": "SCREEN; Int'l"
+        },
+        {
+          "show": "nsfc",
+          "points": 70.0,
+          "note": "Director; SCREENPLAY; International"
+        },
+        {
+          "show": "gotham",
+          "points": 50.0,
+          "note": "DIR; SCRE; INT'L"
+        },
+        {
+          "show": "nbr",
+          "points": 10.0,
+          "note": "INT'L"
+        },
+        {
+          "show": "astras",
+          "points": 30.0,
+          "note": "Pic; Int"
+        },
+        {
+          "show": "afi",
+          "points": 25.0,
+          "note": "Special"
+        },
+        {
+          "show": "golden-globes",
+          "points": 220.0,
+          "note": "Picture; Dir; Scren; Int'l"
+        },
+        {
+          "show": "efa",
+          "points": 90.0,
+          "note": "Pict; Dir; Scre"
+        },
+        {
+          "show": "critics-choice",
+          "points": 10.0,
+          "note": "Int'l"
+        },
+        {
+          "show": "bifa",
+          "points": 5.0,
+          "note": "Int'l"
+        },
+        {
+          "show": "bafta",
+          "points": 20.0,
+          "note": "International"
+        },
+        {
+          "show": "oscars",
+          "points": 150.0,
+          "note": "Screenplay; International"
+        },
+        {
+          "show": "misc",
+          "points": 13.17,
+          "note": "Thanks Obama; It Was Just an Accident ⭑"
+        }
+      ]
+    },
+    {
+      "filmSlug": "f1",
+      "title": "F1",
+      "posterSlug": "f1",
+      "pool": false,
+      "critics": 68.0,
+      "money": 3.0,
+      "misc": 31.2,
+      "points": [
+        {
+          "show": "gotham",
+          "points": 20.0,
+          "note": ""
+        },
+        {
+          "show": "nbr",
+          "points": 25.0,
+          "note": "Picture"
+        },
+        {
+          "show": "golden-globes",
+          "points": 35.0,
+          "note": "Box Office; Score; Song"
+        },
+        {
+          "show": "critics-choice",
+          "points": 51.0,
+          "note": "Cine; EDIT; Score; SOUND; Song; Vfx; Stunt"
+        },
+        {
+          "show": "pga",
+          "points": 100.0,
+          "note": "Picture"
+        },
+        {
+          "show": "sag",
+          "points": 5.0,
+          "note": "Stunts"
+        },
+        {
+          "show": "adg",
+          "points": 10.0,
+          "note": "Prod"
+        },
+        {
+          "show": "bafta",
+          "points": 45.0,
+          "note": "Editing; SOUND; Vfx"
+        },
+        {
+          "show": "cdg",
+          "points": 10.0,
+          "note": "Cost"
+        },
+        {
+          "show": "ace",
+          "points": 20.0,
+          "note": "Edit"
+        },
+        {
+          "show": "oscars",
+          "points": 300.0,
+          "note": "Picture; Editing; SOUND; Vfx"
+        },
+        {
+          "show": "misc",
+          "points": 7.8,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "sorry-baby",
+      "title": "Sorry, Baby",
+      "posterSlug": "sorry-baby",
+      "pool": false,
+      "critics": 90.0,
+      "money": 0.0,
+      "misc": 39.17,
+      "points": [
+        {
+          "show": "sundance",
+          "points": 20.0,
+          "note": "SCREENPLAY"
+        },
+        {
+          "show": "lafca",
+          "points": 20.0,
+          "note": "Screen"
+        },
+        {
+          "show": "gotham",
+          "points": 35.0,
+          "note": "Film; Screen"
+        },
+        {
+          "show": "nbr",
+          "points": 5.0,
+          "note": "DEBUT"
+        },
+        {
+          "show": "astras",
+          "points": 13.0,
+          "note": "Actr; Indie; DEBUT"
+        },
+        {
+          "show": "golden-globes",
+          "points": 50.0,
+          "note": "Actr"
+        },
+        {
+          "show": "critics-choice",
+          "points": 20.0,
+          "note": "O Screen"
+        },
+        {
+          "show": "bifa",
+          "points": 5.0,
+          "note": "Int'l"
+        },
+        {
+          "show": "dga",
+          "points": 5.0,
+          "note": "Debut"
+        },
+        {
+          "show": "indie-spirits",
+          "points": 130.0,
+          "note": "Pict; Dir; SCREENPLAY; SUPP ACTRESS"
+        },
+        {
+          "show": "misc",
+          "points": 12.83,
+          "note": "Armond White Approved; Sorry, Baby"
+        }
+      ]
+    },
+    {
+      "filmSlug": "little-amelie-and-the-character-of-rain",
+      "title": "Little Amélie and the Character of Rain",
+      "posterSlug": "little-amelie-and-the-character-of-rain",
+      "pool": false,
+      "critics": 80.0,
+      "money": 0.0,
+      "misc": 29.6,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 5.0,
+          "note": ""
+        },
+        {
+          "show": "lafca",
+          "points": 20.0,
+          "note": "ANIM"
+        },
+        {
+          "show": "astras",
+          "points": 5.0,
+          "note": "Anim"
+        },
+        {
+          "show": "golden-globes",
+          "points": 20.0,
+          "note": "Anim"
+        },
+        {
+          "show": "efa",
+          "points": 10.0,
+          "note": "Anim"
+        },
+        {
+          "show": "critics-choice",
+          "points": 10.0,
+          "note": "Anim"
+        },
+        {
+          "show": "bafta",
+          "points": 20.0,
+          "note": "Animated"
+        },
+        {
+          "show": "annies",
+          "points": 10.0,
+          "note": "Animated"
+        },
+        {
+          "show": "oscars",
+          "points": 50.0,
+          "note": "Animated"
+        },
+        {
+          "show": "misc",
+          "points": 7.4,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "pillion",
+      "title": "Pillion",
+      "posterSlug": "pillion",
+      "pool": false,
+      "critics": 86.0,
+      "money": 0.0,
+      "misc": 21.0,
+      "points": [
+        {
+          "show": "cannes",
+          "points": 10.0,
+          "note": "UCR SCREENPLAY"
+        },
+        {
+          "show": "gotham",
+          "points": 20.0,
+          "note": "SCRE"
+        },
+        {
+          "show": "bifa",
+          "points": 98.0,
+          "note": "PICTURE; Dir; Screen; Lead; Edit; Sup; COST; HMU; Debut"
+        },
+        {
+          "show": "dga",
+          "points": 5.0,
+          "note": "Debut"
+        },
+        {
+          "show": "bafta",
+          "points": 75.0,
+          "note": "Screenplay; British; Debut"
+        },
+        {
+          "show": "misc",
+          "points": 7.0,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "superman",
+      "title": "Superman",
+      "posterSlug": "superman",
+      "pool": false,
+      "critics": 68.0,
+      "money": 7.0,
+      "misc": 25.6,
+      "points": [
+        {
+          "show": "adg",
+          "points": 10.0,
+          "note": "Prod"
+        },
+        {
+          "show": "muahs",
+          "points": 10.0,
+          "note": "Makeup; Hair"
+        },
+        {
+          "show": "misc",
+          "points": 6.4,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "urchin",
+      "title": "Urchin",
+      "posterSlug": "urchin",
+      "pool": false,
+      "critics": 78.0,
+      "money": 0.0,
+      "misc": 21.0,
+      "points": [
+        {
+          "show": "gotham",
+          "points": 1.0,
+          "note": "Break Dir"
+        },
+        {
+          "show": "astras",
+          "points": 1.0,
+          "note": "Indie"
+        },
+        {
+          "show": "bifa",
+          "points": 41.0,
+          "note": "Picture; Lead; Casting; Debut"
+        },
+        {
+          "show": "misc",
+          "points": 7.0,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "twinless",
+      "title": "Twinless",
+      "posterSlug": "twinless",
+      "pool": false,
+      "critics": 80.0,
+      "money": 0.0,
+      "misc": 22.5,
+      "points": [
+        {
+          "show": "sundance",
+          "points": 20.0,
+          "note": "Jury, Audience"
+        },
+        {
+          "show": "astras",
+          "points": 12.0,
+          "note": "Act; INDIE"
+        },
+        {
+          "show": "indie-spirits",
+          "points": 90.0,
+          "note": "Pict; Screen; Lead"
+        },
+        {
+          "show": "misc",
+          "points": 12.5,
+          "note": "Armond White Approved; Twinless"
+        }
+      ]
+    },
+    {
+      "filmSlug": "rental-family",
+      "title": "Rental Family",
+      "posterSlug": "rental-family",
+      "pool": false,
+      "critics": 68.0,
+      "money": 4.0,
+      "misc": 28.8,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 5.0,
+          "note": "MISC Award"
+        },
+        {
+          "show": "gotham",
+          "points": 10.0,
+          "note": ""
+        },
+        {
+          "show": "nbr",
+          "points": 25.0,
+          "note": "Picture"
+        },
+        {
+          "show": "astras",
+          "points": 21.0,
+          "note": "O Scre; Act; Youth"
+        },
+        {
+          "show": "critics-choice",
+          "points": 2.0,
+          "note": "Young Actor"
+        },
+        {
+          "show": "misc",
+          "points": 7.2,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "hamnet",
+      "title": "Hamnet",
+      "posterSlug": "hamnet",
+      "pool": false,
+      "critics": 83.0,
+      "money": 2.0,
+      "misc": 40.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 100.0,
+          "note": "PCA"
+        },
+        {
+          "show": "gotham",
+          "points": 45.0,
+          "note": "Film; Lead"
+        },
+        {
+          "show": "astras",
+          "points": 72.0,
+          "note": "Pict; Dir; A Scre; ACTRESS; Sup Act; YOUNG"
+        },
+        {
+          "show": "afi",
+          "points": 25.0,
+          "note": "Film"
+        },
+        {
+          "show": "golden-globes",
+          "points": 430.0,
+          "note": "PICTURE; Dir; Screen; ACTRESS; Sup Act; Score"
+        },
+        {
+          "show": "aacta",
+          "points": 65.0,
+          "note": "Film; Dir; Screen; Actr; Sup Act; Sup Actr"
+        },
+        {
+          "show": "critics-choice",
+          "points": 177.0,
+          "note": "Pict; Dir; A Screen; ACTRESS; Sup Act; Casting; Cine; Cost; Prod; Score; Young"
+        },
+        {
+          "show": "wga",
+          "points": 50.0,
+          "note": "Screenplay"
+        },
+        {
+          "show": "pga",
+          "points": 100.0,
+          "note": "Picture"
+        },
+        {
+          "show": "sag",
+          "points": 175.0,
+          "note": "Ensemble; ACTRESS; Supp Actor"
+        },
+        {
+          "show": "adg",
+          "points": 10.0,
+          "note": "Prod"
+        },
+        {
+          "show": "dga",
+          "points": 50.0,
+          "note": "Director"
+        },
+        {
+          "show": "bafta",
+          "points": 415.0,
+          "note": "Picture; Director; ACTRESS; Supp Actor; Supp Actress; Screenplay; Costume; Makeup; Score; Prod; BRITISH"
+        },
+        {
+          "show": "cdg",
+          "points": 10.0,
+          "note": "Cost"
+        },
+        {
+          "show": "ace",
+          "points": 20.0,
+          "note": "Edit"
+        },
+        {
+          "show": "oscars",
+          "points": 710.0,
+          "note": "Picture; Director; ACTRESS; Screenplay; Casting; Prod; Costume; Score"
+        },
+        {
+          "show": "misc",
+          "points": 13.0,
+          "note": "Thanks Obama; Hamnet"
+        }
+      ]
+    },
+    {
+      "filmSlug": "a-house-of-dynamite",
+      "title": "A House of Dynamite",
+      "posterSlug": "a-house-of-dynamite",
+      "pool": false,
+      "critics": 76.0,
+      "money": 0.0,
+      "misc": 30.4,
+      "points": [
+        {
+          "show": "gotham",
+          "points": 10.0,
+          "note": ""
+        },
+        {
+          "show": "aacta",
+          "points": 10.0,
+          "note": "Screen"
+        },
+        {
+          "show": "critics-choice",
+          "points": 10.0,
+          "note": "Edit"
+        },
+        {
+          "show": "bafta",
+          "points": 20.0,
+          "note": "Editing"
+        },
+        {
+          "show": "misc",
+          "points": 7.6,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "kpop-demon-hunters",
+      "title": "KPop Demon Hunters",
+      "posterSlug": "kpop-demon-hunters",
+      "pool": false,
+      "critics": 76.0,
+      "money": 0.0,
+      "misc": 32.5,
+      "points": [
+        {
+          "show": "nyfcc",
+          "points": 20.0,
+          "note": "ANIM"
+        },
+        {
+          "show": "lafca",
+          "points": 10.0,
+          "note": "Anim"
+        },
+        {
+          "show": "gotham",
+          "points": 10.0,
+          "note": ""
+        },
+        {
+          "show": "astras",
+          "points": 10.0,
+          "note": "ANIMATED"
+        },
+        {
+          "show": "golden-globes",
+          "points": 50.0,
+          "note": "ANIMATED; SONG"
+        },
+        {
+          "show": "critics-choice",
+          "points": 25.0,
+          "note": "ANIMATED; SONG"
+        },
+        {
+          "show": "pga",
+          "points": 40.0,
+          "note": "ANIMATED"
+        },
+        {
+          "show": "adg",
+          "points": 20.0,
+          "note": "ANIMATED"
+        },
+        {
+          "show": "annies",
+          "points": 20.0,
+          "note": "ANIMATED"
+        },
+        {
+          "show": "ace",
+          "points": 20.0,
+          "note": "Animated"
+        },
+        {
+          "show": "oscars",
+          "points": 120.0,
+          "note": "ANIMATED; SONG"
+        },
+        {
+          "show": "misc",
+          "points": 6.5,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "my-fathers-shadow",
+      "title": "My Father's Shadow",
+      "posterSlug": "my-fathers-shadow",
+      "pool": false,
+      "critics": 84.0,
+      "money": 0.0,
+      "misc": 22.5,
+      "points": [
+        {
+          "show": "cannes",
+          "points": 5.0,
+          "note": "Special Mention Golden Camera"
+        },
+        {
+          "show": "gotham",
+          "points": 22.0,
+          "note": "LEAD; BREAK DIR"
+        },
+        {
+          "show": "efa",
+          "points": 2.0,
+          "note": "First Film"
+        },
+        {
+          "show": "bifa",
+          "points": 74.0,
+          "note": "Picture; DIR; Screen; Cine; Edit; Cost; Prod; Score; Sound; HMU; Debut"
+        },
+        {
+          "show": "bafta",
+          "points": 10.0,
+          "note": "DEBUT"
+        },
+        {
+          "show": "misc",
+          "points": 7.5,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "song-sung-blue",
+      "title": "Song Sung Blue",
+      "posterSlug": "song-sung-blue",
+      "pool": false,
+      "critics": 61.0,
+      "money": 3.0,
+      "misc": 17.6,
+      "points": [
+        {
+          "show": "golden-globes",
+          "points": 50.0,
+          "note": "Act"
+        },
+        {
+          "show": "aacta",
+          "points": 20.0,
+          "note": "Act; Actr"
+        },
+        {
+          "show": "sag",
+          "points": 50.0,
+          "note": "Actress"
+        },
+        {
+          "show": "bafta",
+          "points": 50.0,
+          "note": "Actress"
+        },
+        {
+          "show": "oscars",
+          "points": 100.0,
+          "note": "Actress"
+        },
+        {
+          "show": "misc",
+          "points": 9.4,
+          "note": "Armond White Approved; Song Sung Blue"
+        }
+      ]
+    },
+    {
+      "filmSlug": "die-my-love",
+      "title": "Die, My Love",
+      "posterSlug": "die-my-love",
+      "pool": false,
+      "critics": 72.0,
+      "money": 1.0,
+      "misc": 24.8,
+      "points": [
+        {
+          "show": "gotham",
+          "points": 10.0,
+          "note": "Lead"
+        },
+        {
+          "show": "astras",
+          "points": 11.0,
+          "note": "Actr; Indie"
+        },
+        {
+          "show": "golden-globes",
+          "points": 50.0,
+          "note": "Actr"
+        },
+        {
+          "show": "efa",
+          "points": 10.0,
+          "note": "Edit"
+        },
+        {
+          "show": "bifa",
+          "points": 36.0,
+          "note": "Dir; Lead; CINE; Prod; HMU; Sound; VFX"
+        },
+        {
+          "show": "bafta",
+          "points": 20.0,
+          "note": "British"
+        },
+        {
+          "show": "misc",
+          "points": 6.2,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "mr-nobody-against-putin",
+      "title": "Mr. Nobody Against Putin",
+      "posterSlug": "mr-nobody-against-putin",
+      "pool": false,
+      "critics": 80.0,
+      "money": 0.0,
+      "misc": 13.0,
+      "points": [
+        {
+          "show": "sundance",
+          "points": 5.0,
+          "note": "Jury"
+        },
+        {
+          "show": "pga",
+          "points": 20.0,
+          "note": "Doc"
+        },
+        {
+          "show": "bafta",
+          "points": 40.0,
+          "note": "DOCUMENTARY"
+        },
+        {
+          "show": "oscars",
+          "points": 100.0,
+          "note": "DOCUMENTARY"
+        }
+      ]
+    },
+    {
+      "filmSlug": "hedda",
+      "title": "Hedda",
+      "posterSlug": "hedda",
+      "pool": false,
+      "critics": 70.0,
+      "money": 0.0,
+      "misc": 23.2,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 20.0,
+          "note": "ACTRESS"
+        },
+        {
+          "show": "gotham",
+          "points": 10.0,
+          "note": "Lead"
+        },
+        {
+          "show": "astras",
+          "points": 15.0,
+          "note": "Actr; Sup Actr"
+        },
+        {
+          "show": "golden-globes",
+          "points": 50.0,
+          "note": "Actr"
+        },
+        {
+          "show": "critics-choice",
+          "points": 5.0,
+          "note": "Costume"
+        },
+        {
+          "show": "cdg",
+          "points": 10.0,
+          "note": "Cost"
+        },
+        {
+          "show": "indie-spirits",
+          "points": 30.0,
+          "note": "Lead; Sup"
+        },
+        {
+          "show": "misc",
+          "points": 5.8,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "left-handed-girl",
+      "title": "Left-Handed Girl",
+      "posterSlug": "left-handed-girl",
+      "pool": false,
+      "critics": 77.0,
+      "money": 0.0,
+      "misc": 22.5,
+      "points": [
+        {
+          "show": "nbr",
+          "points": 5.0,
+          "note": "Int'l"
+        },
+        {
+          "show": "critics-choice",
+          "points": 10.0,
+          "note": "Int'l"
+        },
+        {
+          "show": "misc",
+          "points": 7.5,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-secret-agent",
+      "title": "The Secret Agent",
+      "posterSlug": "the-secret-agent",
+      "pool": false,
+      "critics": 92.0,
+      "money": 0.0,
+      "misc": 33.33,
+      "points": [
+        {
+          "show": "cannes",
+          "points": 80.0,
+          "note": "DIRECTOR; ACTOR"
+        },
+        {
+          "show": "nyfcc",
+          "points": 60.0,
+          "note": "ACTOR; INT'L"
+        },
+        {
+          "show": "lafca",
+          "points": 90.0,
+          "note": "Film; Lead; INT'L"
+        },
+        {
+          "show": "nsfc",
+          "points": 110.0,
+          "note": "Picture; Actor; Screenplay; INTERNATIONAL"
+        },
+        {
+          "show": "gotham",
+          "points": 20.0,
+          "note": "Screen; Lead"
+        },
+        {
+          "show": "nbr",
+          "points": 5.0,
+          "note": "Int'l"
+        },
+        {
+          "show": "astras",
+          "points": 15.0,
+          "note": "Act; Int"
+        },
+        {
+          "show": "golden-globes",
+          "points": 240.0,
+          "note": "Picture; ACTOR; INTERNATIONAL"
+        },
+        {
+          "show": "critics-choice",
+          "points": 40.0,
+          "note": "Act; INTERNATIONAL"
+        },
+        {
+          "show": "bafta",
+          "points": 70.0,
+          "note": "Screenplay; International"
+        },
+        {
+          "show": "indie-spirits",
+          "points": 20.0,
+          "note": "INTERNATIONAL"
+        },
+        {
+          "show": "oscars",
+          "points": 400.0,
+          "note": "Picture; Actor; Casting; International"
+        },
+        {
+          "show": "misc",
+          "points": 11.67,
+          "note": "Thanks Obama; Secret Agent, the ⭑"
+        }
+      ]
+    },
+    {
+      "filmSlug": "train-dreams",
+      "title": "Train Dreams",
+      "posterSlug": "train-dreams",
+      "pool": false,
+      "critics": 88.0,
+      "money": 0.0,
+      "misc": 42.5,
+      "points": [
+        {
+          "show": "lafca",
+          "points": 20.0,
+          "note": "CINE"
+        },
+        {
+          "show": "nsfc",
+          "points": 10.0,
+          "note": "Cinematography"
+        },
+        {
+          "show": "gotham",
+          "points": 35.0,
+          "note": "Film; Screen"
+        },
+        {
+          "show": "nbr",
+          "points": 50.0,
+          "note": "A SCREEN; Picture"
+        },
+        {
+          "show": "astras",
+          "points": 45.0,
+          "note": "Pic; A Scre; Act"
+        },
+        {
+          "show": "afi",
+          "points": 25.0,
+          "note": "Film"
+        },
+        {
+          "show": "golden-globes",
+          "points": 55.0,
+          "note": "Act; Song"
+        },
+        {
+          "show": "aacta",
+          "points": 10.0,
+          "note": "Act"
+        },
+        {
+          "show": "critics-choice",
+          "points": 112.0,
+          "note": "Pict; A Screen; Act; CINEMATOGRAPHY; Song"
+        },
+        {
+          "show": "wga",
+          "points": 50.0,
+          "note": "Screenplay"
+        },
+        {
+          "show": "pga",
+          "points": 100.0,
+          "note": "Picture"
+        },
+        {
+          "show": "bafta",
+          "points": 20.0,
+          "note": "Cine"
+        },
+        {
+          "show": "asc",
+          "points": 20.0,
+          "note": "Cine"
+        },
+        {
+          "show": "indie-spirits",
+          "points": 180.0,
+          "note": "PICTURE; DIRECTOR; Lead; CINEMATOGRAPHY"
+        },
+        {
+          "show": "oscars",
+          "points": 360.0,
+          "note": "Picture; Screenplay; Cine; Song"
+        },
+        {
+          "show": "misc",
+          "points": 13.5,
+          "note": "Thanks Obama; Train Dreams"
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-smashing-machine",
+      "title": "The Smashing Machine",
+      "posterSlug": "the-smashing-machine",
+      "pool": false,
+      "critics": 66.0,
+      "money": 0.0,
+      "misc": 32.5,
+      "points": [
+        {
+          "show": "venice",
+          "points": 40.0,
+          "note": "DIRECTOR"
+        },
+        {
+          "show": "tiff",
+          "points": 10.0,
+          "note": "Artisan Award"
+        },
+        {
+          "show": "astras",
+          "points": 10.0,
+          "note": "Act"
+        },
+        {
+          "show": "golden-globes",
+          "points": 70.0,
+          "note": "Act; Sup Actr"
+        },
+        {
+          "show": "muahs",
+          "points": 5.0,
+          "note": "Makeup"
+        },
+        {
+          "show": "oscars",
+          "points": 10.0,
+          "note": "Makeup"
+        },
+        {
+          "show": "misc",
+          "points": 6.5,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "wake-up-dead-man-a-knives-out-mystery",
+      "title": "Wake Up Dead Man: A Knives Out Mystery",
+      "posterSlug": "wake-up-dead-man-a-knives-out-mystery",
+      "pool": false,
+      "critics": 81.0,
+      "money": 0.0,
+      "misc": 35.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 50.0,
+          "note": "PCA runner-up"
+        },
+        {
+          "show": "nbr",
+          "points": 25.0,
+          "note": "Picture"
+        },
+        {
+          "show": "astras",
+          "points": 20.0,
+          "note": "Ensemble; Sup Act; Sup Actr"
+        },
+        {
+          "show": "aacta",
+          "points": 5.0,
+          "note": "Sup Actr"
+        },
+        {
+          "show": "adg",
+          "points": 10.0,
+          "note": "Prod"
+        },
+        {
+          "show": "cdg",
+          "points": 10.0,
+          "note": "Cost"
+        },
+        {
+          "show": "ace",
+          "points": 20.0,
+          "note": "Edit"
+        },
+        {
+          "show": "misc",
+          "points": 7.0,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "arco",
+      "title": "Arco",
+      "posterSlug": "arco",
+      "pool": false,
+      "critics": 73.0,
+      "money": 0.0,
+      "misc": 21.75,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 10.0,
+          "note": ""
+        },
+        {
+          "show": "gotham",
+          "points": 10.0,
+          "note": ""
+        },
+        {
+          "show": "nbr",
+          "points": 10.0,
+          "note": "ANIM"
+        },
+        {
+          "show": "astras",
+          "points": 5.0,
+          "note": "Anim"
+        },
+        {
+          "show": "golden-globes",
+          "points": 20.0,
+          "note": "Anim"
+        },
+        {
+          "show": "efa",
+          "points": 20.0,
+          "note": "ANIM"
+        },
+        {
+          "show": "critics-choice",
+          "points": 10.0,
+          "note": "Anim"
+        },
+        {
+          "show": "annies",
+          "points": 10.0,
+          "note": "Animated"
+        },
+        {
+          "show": "oscars",
+          "points": 50.0,
+          "note": "Animated"
+        },
+        {
+          "show": "misc",
+          "points": 7.25,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-voice-of-hind-rajab",
+      "title": "The Voice of Hind Rajab",
+      "posterSlug": "the-voice-of-hind-rajab",
+      "pool": false,
+      "critics": 81.0,
+      "money": 0.0,
+      "misc": 40.83,
+      "points": [
+        {
+          "show": "venice",
+          "points": 50.0,
+          "note": "GRAND JURY PRIZE"
+        },
+        {
+          "show": "golden-globes",
+          "points": 20.0,
+          "note": "Int'l"
+        },
+        {
+          "show": "efa",
+          "points": 55.0,
+          "note": "Pict; Sound"
+        },
+        {
+          "show": "bafta",
+          "points": 20.0,
+          "note": "International"
+        },
+        {
+          "show": "oscars",
+          "points": 50.0,
+          "note": "International"
+        },
+        {
+          "show": "misc",
+          "points": 8.17,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-testament-of-ann-lee",
+      "title": "The Testament of Ann Lee",
+      "posterSlug": "the-testament-of-ann-lee",
+      "pool": false,
+      "critics": 79.0,
+      "money": 0.0,
+      "misc": 32.5,
+      "points": [
+        {
+          "show": "gotham",
+          "points": 35.0,
+          "note": "Film; Lead"
+        },
+        {
+          "show": "astras",
+          "points": 20.0,
+          "note": "ACTRESS"
+        },
+        {
+          "show": "golden-globes",
+          "points": 50.0,
+          "note": "Actr"
+        },
+        {
+          "show": "critics-choice",
+          "points": 22.0,
+          "note": "Actr; Song"
+        },
+        {
+          "show": "indie-spirits",
+          "points": 20.0,
+          "note": "EDITING"
+        },
+        {
+          "show": "misc",
+          "points": 6.5,
+          "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "blue-moon",
+      "title": "Blue Moon",
+      "posterSlug": "blue-moon",
+      "pool": false,
+      "critics": 78.0,
+      "money": 0.0,
+      "misc": 47.0,
+      "points": [
+        {
+          "show": "berlinale",
+          "points": 10.0,
+          "note": "Supp ACTOR"
+        },
+        {
+          "show": "tiff",
+          "points": 20.0,
+          "note": "Silver Medallion"
+        },
+        {
+          "show": "lafca",
+          "points": 50.0,
+          "note": "LEAD; Sup"
+        },
+        {
+          "show": "nsfc",
+          "points": 80.0,
+          "note": "Director; ACTOR; Screenplay"
+        },
+        {
+          "show": "gotham",
+          "points": 15.0,
+          "note": "Lead; Sup"
+        },
+        {
+          "show": "golden-globes",
+          "points": 150.0,
+          "note": "Picture; Actor"
+        },
+        {
+          "show": "critics-choice",
+          "points": 20.0,
+          "note": "Actor"
+        },
+        {
+          "show": "sag",
+          "points": 50.0,
+          "note": "Actor"
+        },
+        {
+          "show": "bafta",
+          "points": 50.0,
+          "note": "Actor"
+        },
+        {
+          "show": "oscars",
+          "points": 200.0,
+          "note": "Actor; Screenplay"
+        }
+      ]
+    },
+    {
+      "filmSlug": "nouvelle-vague",
+      "title": "Nouvelle Vague",
+      "posterSlug": "nouvelle-vague",
+      "pool": false,
+      "critics": 76.0,
+      "money": 0.0,
+      "misc": 37.5,
+      "points": [
+        {
+          "show": "nsfc",
+          "points": 20.0,
+          "note": "Director"
+        },
+        {
+          "show": "gotham",
+          "points": 5.0,
+          "note": "Int'l"
+        },
+        {
+          "show": "golden-globes",
+          "points": 100.0,
+          "note": "Picture"
+        },
+        {
+          "show": "indie-spirits",
+          "points": 10.0,
+          "note": "Sup"
+        },
+        {
+          "show": "misc",
+          "points": 12.5,
+          "note": "Armond White Approved; Nouvelle Vague"
+        }
+      ]
+    },
+    {
+      "filmSlug": "mission-impossible-the-final-reckoning",
+      "title": "Mission Impossible: The Final Reckoning",
+      "posterSlug": "mission-impossible-the-final-reckoning",
+      "pool": false,
+      "critics": 67.0,
+      "money": 2.0,
+      "misc": 25.6,
+      "points": [
+        {
+          "show": "nbr",
+          "points": 5.0,
+          "note": "STUNT"
+        },
+        {
+          "show": "golden-globes",
+          "points": 20.0,
+          "note": "Box Office"
+        },
+        {
+          "show": "critics-choice",
+          "points": 7.0,
+          "note": "Vfx; STUNTS"
+        },
+        {
+          "show": "sag",
+          "points": 10.0,
+          "note": "STUNTS"
+        },
+        {
+          "show": "adg",
+          "points": 10.0,
+          "note": "Prod"
+        },
+        {
+          "show": "misc",
+          "points": 6.4,
+          "note": ""
+        }
+      ]
     }
   ]
 }
