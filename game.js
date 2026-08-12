@@ -123,6 +123,12 @@
         perSource[s.id] = (perSource[s.id] || 0) + s.points;
       });
     });
+    // Prediction/bonus points live on the player, not a film.
+    var bonus = Number(player.bonus) || 0;
+    if (bonus !== 0) {
+      total += bonus;
+      perSource.misc = (perSource.misc || 0) + bonus;
+    }
     return { total: total, perSource: perSource };
   }
 
@@ -235,7 +241,8 @@
     var el = $('[data-game-pool]');
     if (!el || !state.films) return;
 
-    var films = state.films.films.slice();
+    // Archive films (pool: false) score on rosters but stay out of the pool.
+    var films = state.films.films.filter(function (f) { return f.pool !== false; });
     films.sort(function (a, b) { return filmBreakdown(b).total - filmBreakdown(a).total; });
 
     el.innerHTML = films.map(function (f) {
