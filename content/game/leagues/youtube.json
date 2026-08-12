@@ -1,0 +1,284 @@
+{
+  "slug": "youtube",
+  "name": "YouTube (2025–26)",
+  "season": "2025–2026",
+  "note": "Last season’s YouTube league, imported as a sample.",
+  "players": [
+    {
+      "name": "Dylan",
+      "bonus": 50,
+      "roster": [
+        {
+          "pick": "1",
+          "filmSlug": "sinners"
+        },
+        {
+          "pick": "10",
+          "filmSlug": "bugonia"
+        },
+        {
+          "pick": "11",
+          "filmSlug": "avatar-fire-and-ash"
+        },
+        {
+          "pick": "63",
+          "filmSlug": "warfare"
+        },
+        {
+          "pick": "31",
+          "filmSlug": "the-perfect-neighbor"
+        },
+        {
+          "pick": "R6",
+          "filmSlug": "the-life-of-chuck"
+        },
+        {
+          "pick": "R7",
+          "filmSlug": "2000-meters-to-andriivka"
+        },
+        {
+          "pick": "R8",
+          "filmSlug": "put-your-soul-in-your-hand-and-walk"
+        },
+        {
+          "pick": "R9",
+          "filmSlug": "sound-of-falling"
+        },
+        {
+          "pick": "R7",
+          "filmSlug": "nuremberg"
+        }
+      ]
+    },
+    {
+      "name": "Arnaud",
+      "bonus": 20,
+      "roster": [
+        {
+          "pick": "3",
+          "filmSlug": "marty-supreme"
+        },
+        {
+          "pick": "8",
+          "filmSlug": "springsteen-deliver-me-from-nowhere"
+        },
+        {
+          "pick": "12",
+          "filmSlug": "no-other-choice"
+        },
+        {
+          "pick": "32",
+          "filmSlug": "if-i-had-legs-id-kick-you"
+        },
+        {
+          "pick": "61",
+          "filmSlug": "i-swear"
+        },
+        {
+          "pick": "R6",
+          "filmSlug": "sirat"
+        },
+        {
+          "pick": "R10",
+          "filmSlug": "splitsville"
+        },
+        {
+          "pick": "R8",
+          "filmSlug": "the-presidents-cake"
+        },
+        {
+          "pick": "R9",
+          "filmSlug": "cover-up"
+        },
+        {
+          "pick": "R10",
+          "filmSlug": "christy"
+        }
+      ]
+    },
+    {
+      "name": "Matt",
+      "bonus": 110,
+      "roster": [
+        {
+          "pick": "2",
+          "filmSlug": "sentimental-value"
+        },
+        {
+          "pick": "9",
+          "filmSlug": "wicked-for-good"
+        },
+        {
+          "pick": "13",
+          "filmSlug": "one-battle-after-another"
+        },
+        {
+          "pick": "18",
+          "filmSlug": "is-this-thing-on"
+        },
+        {
+          "pick": "23",
+          "filmSlug": "weapons"
+        },
+        {
+          "pick": "R6",
+          "filmSlug": "zootopia-2"
+        },
+        {
+          "pick": "R7",
+          "filmSlug": "father-mother-sister-brother"
+        },
+        {
+          "pick": "R8",
+          "filmSlug": "come-see-me-in-the-good-light"
+        },
+        {
+          "pick": "R9",
+          "filmSlug": "the-mastermind"
+        },
+        {
+          "pick": "64",
+          "filmSlug": "my-undesirable-friends-part-i-last-air-in-moscow"
+        }
+      ]
+    },
+    {
+      "name": "Jonathan",
+      "bonus": 75,
+      "roster": [
+        {
+          "pick": "4",
+          "filmSlug": "jay-kelly"
+        },
+        {
+          "pick": "7",
+          "filmSlug": "frankenstein"
+        },
+        {
+          "pick": "14",
+          "filmSlug": "it-was-just-an-accident"
+        },
+        {
+          "pick": "17",
+          "filmSlug": "f1"
+        },
+        {
+          "pick": "27",
+          "filmSlug": "sorry-baby"
+        },
+        {
+          "pick": "R6",
+          "filmSlug": "little-amelie-and-the-character-of-rain"
+        },
+        {
+          "pick": "65",
+          "filmSlug": "pillion"
+        },
+        {
+          "pick": "R8",
+          "filmSlug": "superman"
+        },
+        {
+          "pick": "R9",
+          "filmSlug": "urchin"
+        },
+        {
+          "pick": "R10",
+          "filmSlug": "twinless"
+        }
+      ]
+    },
+    {
+      "name": "Jack",
+      "bonus": 105,
+      "roster": [
+        {
+          "pick": "5",
+          "filmSlug": "rental-family"
+        },
+        {
+          "pick": "6",
+          "filmSlug": "hamnet"
+        },
+        {
+          "pick": "16",
+          "filmSlug": "a-house-of-dynamite"
+        },
+        {
+          "pick": "25",
+          "filmSlug": "kpop-demon-hunters"
+        },
+        {
+          "pick": "62",
+          "filmSlug": "my-fathers-shadow"
+        },
+        {
+          "pick": "R6",
+          "filmSlug": "song-sung-blue"
+        },
+        {
+          "pick": "R7",
+          "filmSlug": "die-my-love"
+        },
+        {
+          "pick": "R8",
+          "filmSlug": "mr-nobody-against-putin"
+        },
+        {
+          "pick": "R9",
+          "filmSlug": "hedda"
+        },
+        {
+          "pick": "R10",
+          "filmSlug": "left-handed-girl"
+        }
+      ]
+    },
+    {
+      "name": "Ryan",
+      "bonus": 60,
+      "roster": [
+        {
+          "pick": "S1",
+          "filmSlug": "the-secret-agent"
+        },
+        {
+          "pick": "S2",
+          "filmSlug": "train-dreams"
+        },
+        {
+          "pick": "S3",
+          "filmSlug": "the-smashing-machine"
+        },
+        {
+          "pick": "S4",
+          "filmSlug": "wake-up-dead-man-a-knives-out-mystery"
+        },
+        {
+          "pick": "S5",
+          "filmSlug": "arco"
+        },
+        {
+          "pick": "R6",
+          "filmSlug": "the-voice-of-hind-rajab"
+        },
+        {
+          "pick": "R7",
+          "filmSlug": "the-testament-of-ann-lee"
+        },
+        {
+          "pick": "R8",
+          "filmSlug": "blue-moon"
+        },
+        {
+          "pick": "R9",
+          "filmSlug": "nouvelle-vague"
+        },
+        {
+          "pick": "R10",
+          "filmSlug": "mission-impossible-the-final-reckoning"
+        }
+      ]
+    }
+  ]
+}
