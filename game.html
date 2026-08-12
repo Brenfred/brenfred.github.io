@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Game — Fantasy Filmball</title>
+  <meta name="description" content="Live standings, rosters, and scoring for the Fantasy Filmball game — the film awards season fantasy draft." />
+  <meta property="og:title" content="The Game · Fantasy Filmball" />
+  <meta property="og:description" content="Live standings, rosters, and scoring for the Fantasy Filmball game — the film awards season fantasy draft." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Fantasy Filmball" />
+  <meta property="og:image" content="https://brenfred.github.io/og-default.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Game · Fantasy Filmball" />
+  <meta name="twitter:description" content="Live standings, rosters, and scoring for the Fantasy Filmball game." />
+  <meta name="twitter:image" content="https://brenfred.github.io/og-default.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,300..700&family=Oswald:wght@400..700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+
+<div class="ticker" aria-label="Filmball Discord Top 20">
+  <div class="ticker__inner">
+    <span class="ticker__label">FILMBALL INDEX</span>
+    <span class="ticker__item"><span class="ticker__name">THE ODYSSEY</span><span class="ticker__price">95%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">DIGGER</span><span class="ticker__price">93%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">WILD HORSE NINE</span><span class="ticker__price">91%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">PROJECT HAIL MARY</span><span class="ticker__price">89%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">FJORD</span><span class="ticker__price">87%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">NARNIA</span><span class="ticker__price">71%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">FATHERLAND</span><span class="ticker__price">56%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">EISENBERG MUSICAL COMEDY</span><span class="ticker__price">42%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">DUNE: PART THREE</span><span class="ticker__price">40%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">CRY TO HEAVEN</span><span class="ticker__price">44%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">MICHAEL</span><span class="ticker__price">42%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">ALL OF A SUDDEN</span><span class="ticker__price">42%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">THE SOCIAL RECKONING</span><span class="ticker__price">33%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">SENSE AND SENSIBILITY</span><span class="ticker__price">29%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">JACK OF SPADES</span><span class="ticker__price">24%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">DISCLOSURE DAY</span><span class="ticker__price">18%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">JOSEPHINE</span><span class="ticker__price">13%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">BEHEMOTH!</span><span class="ticker__price">11%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">ENTERTAINMENT SYSTEM IS DOWN</span><span class="ticker__price">9%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">SATURN RETURN</span><span class="ticker__price">7%</span><span class="ticker__flat">—</span></span>
+    <!-- duplicated for seamless marquee loop -->
+    <span class="ticker__item"><span class="ticker__name">THE ODYSSEY</span><span class="ticker__price">95%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">DIGGER</span><span class="ticker__price">93%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">WILD HORSE NINE</span><span class="ticker__price">91%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">PROJECT HAIL MARY</span><span class="ticker__price">89%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">FJORD</span><span class="ticker__price">87%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">NARNIA</span><span class="ticker__price">71%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">FATHERLAND</span><span class="ticker__price">56%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">EISENBERG MUSICAL COMEDY</span><span class="ticker__price">42%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">DUNE: PART THREE</span><span class="ticker__price">40%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">CRY TO HEAVEN</span><span class="ticker__price">44%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">MICHAEL</span><span class="ticker__price">42%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">ALL OF A SUDDEN</span><span class="ticker__price">42%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">THE SOCIAL RECKONING</span><span class="ticker__price">33%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">SENSE AND SENSIBILITY</span><span class="ticker__price">29%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">JACK OF SPADES</span><span class="ticker__price">24%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">DISCLOSURE DAY</span><span class="ticker__price">18%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">JOSEPHINE</span><span class="ticker__price">13%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">BEHEMOTH!</span><span class="ticker__price">11%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">ENTERTAINMENT SYSTEM IS DOWN</span><span class="ticker__price">9%</span><span class="ticker__flat">—</span></span>
+    <span class="ticker__item"><span class="ticker__name">SATURN RETURN</span><span class="ticker__price">7%</span><span class="ticker__flat">—</span></span>
+  </div>
+</div>
+
+<header class="masthead">
+  <div class="container">
+    <div class="masthead__meta">
+
+      <span class="masthead__meta-right">
+        <a href="https://discord.gg/TUpBkHwhNm" class="masthead__discord">★ Join the Discord</a>
+        <span class="masthead__sep">·</span>
+        <a href="https://www.youtube.com/@fantasyfilmball">YouTube</a>
+      </span>
+    </div>
+    <a href="index.html" class="logo">Fantasy Filmball</a>
+    <div class="logo__sub">We Turn Movies Into Sports</div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="Primary">
+  <div class="container">
+    <div class="nav__inner">
+      <button class="nav__toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <div class="nav__links" id="primary-nav">
+        <a href="index.html">Home</a>
+        <a href="reviews.html">Articles</a>
+        <a href="oscar-race.html">Oscar Race</a>
+        <a href="game.html" class="is-active">The Game</a>
+        <a href="filmball-awards.html">Filmball Awards</a>
+        <a href="writers.html">Writers</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- GAME HEADER -->
+<section class="section game-header">
+  <div class="container">
+    <div class="kicker kicker--gold">★ Fantasy Filmball · <span data-game-season>The 2026–2027 Season</span> ★</div>
+    <h1 class="game-header__title">The <em>Game.</em></h1>
+    <div class="game-header__picker">
+      <label class="game-header__picker-label" for="league-select">League</label>
+      <select id="league-select" class="game-header__select" data-game-league-select></select>
+    </div>
+  </div>
+</section>
+
+<!-- STANDINGS -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="kicker kicker--gold" style="margin-bottom: 1rem;">★ Standings ★</div>
+    <div class="game-standings" data-game-standings>
+      <!-- Populated by game.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ROSTERS -->
+<section class="section">
+  <div class="container">
+    <div class="kicker kicker--gold" style="margin-bottom: 1rem;">★ The Rosters ★</div>
+    <div class="game-rosters" data-game-rosters>
+      <!-- Populated by game.js -->
+    </div>
+  </div>
+</section>
+
+<!-- SCORING CHART -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="kicker kicker--gold" style="margin-bottom: 1rem;">★ The Scoring Chart ★</div>
+    <p class="game-chart__note">Each bar breaks a team's points down by award show. Hover a segment for the show and point total.</p>
+    <div class="game-chart" data-game-chart>
+      <!-- Populated by game.js -->
+    </div>
+    <div class="game-legend" data-game-legend>
+      <!-- Populated by game.js -->
+    </div>
+  </div>
+</section>
+
+<!-- FILM POOL -->
+<section class="section">
+  <div class="container">
+    <div class="kicker kicker--gold" style="margin-bottom: 1rem;">★ The Film Pool ★</div>
+    <div class="game-pool" data-game-pool>
+      <!-- Populated by game.js -->
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand">Fantasy<br/>Filmball</div>
+        <div class="footer__col-title">Follow Along</div>
+        <ul>
+          <li><a href="https://discord.gg/TUpBkHwhNm">Discord Community</a></li>
+          <li><a href="https://www.youtube.com/@fantasyfilmball">YouTube</a></li>
+          <li><a href="https://x.com/FFilmball">Twitter / X</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+                <div class="footer__col-title">Read</div>
+        <ul>
+          <li><a href="reviews.html">All Articles</a></li>
+          <li><a href="oscar-race.html">Oscar Race</a></li>
+          <li><a href="filmball-awards.html">Filmball Awards</a></li>
+          </ul>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col-title">The Show</div>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="writers.html">Writers</a></li>
+          <li><a href="https://www.youtube.com/@fantasyfilmball/videos">Episode Archive</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <div class="footer__col-title">Contact</div>
+        <ul>
+          <li><a href="mailto:fantasyfilmball@gmail.com">fantasyfilmball@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 FANTASY FILMBALL · ALL RIGHTS RESERVED</span>
+      <span>NO ACTUAL WAGERING. PURELY FOR THE LOVE OF THE GAME.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="game.js"></script>
+<script src="main.js" defer></script>
+</body>
+</html>
