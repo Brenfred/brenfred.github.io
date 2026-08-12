@@ -141,11 +141,18 @@
     });
     rows.sort(function (a, b) { return b.totals.total - a.totals.total; });
 
+    var hasFaab = rows.some(function (r) { return r.player.faab != null; });
+
     var html = rows.map(function (r, i) {
-      return '<div class="game-standings__row">'
+      var faab = hasFaab
+        ? '<span class="game-standings__faab">' + (r.player.faab != null
+            ? 'FAAB ' + Number(r.player.faab).toLocaleString() : '') + '</span>'
+        : '';
+      return '<div class="game-standings__row' + (hasFaab ? ' game-standings__row--faab' : '') + '">'
         + '<span class="game-standings__rank">' + (i + 1) + '</span>'
         + '<span class="game-standings__name">' + esc(r.player.name) + '</span>'
         + '<span class="game-standings__films">' + (r.player.roster || []).length + ' films</span>'
+        + faab
         + '<span class="game-standings__pts">' + r.totals.total.toLocaleString() + '</span>'
         + '</div>';
     }).join('');
@@ -207,8 +214,8 @@
           var pts = r.totals.perSource[id];
           var w = (pts / max) * 100;
           segs += '<span class="game-chart__seg" style="width:' + w.toFixed(2)
-            + '%;background:' + esc(meta.color) + '" title="'
-            + esc(meta.name + ' — ' + pts.toLocaleString() + ' pts') + '"></span>';
+            + '%;background:' + esc(meta.color) + '" data-tip-name="' + esc(meta.name)
+            + '" data-tip-pts="' + esc(pts.toLocaleString()) + '"></span>';
         });
       } else {
         segs = '<span class="game-chart__seg game-chart__seg--empty"></span>';
@@ -221,20 +228,6 @@
     }).join('');
 
     el.innerHTML = html || '<p class="game-empty">Nothing to chart yet.</p>';
-  }
-
-  function renderLegend() {
-    var el = $('[data-game-legend]');
-    if (!el || !state.season) return;
-
-    var all = (state.season.pointSources || []).concat(state.season.shows || []);
-    el.innerHTML = all.map(function (s) {
-      var logo = s.logo
-        ? '<img class="game-legend__logo" src="' + esc(s.logo) + '" alt="" loading="lazy">'
-        : '<span class="game-legend__chip" style="background:' + esc(s.color) + '"></span>';
-      return '<span class="game-legend__item">' + logo
-        + '<span class="game-legend__label">' + esc(s.short || s.name) + '</span></span>';
-    }).join('');
   }
 
   function renderFilmPool() {
@@ -253,6 +246,195 @@
         + '<span class="game-pool__title">' + esc(f.title) + '</span>'
         + '<span class="game-pool__pts">' + bd.total.toLocaleString() + ' PTS</span>'
         + '</a>';
+    }).join('');
+  }
+
+  // ---- chart tooltip -------------------------------------------------------
+
+  var tipEl = null;
+
+  function ensureTip() {
+    if (tipEl) return tipEl;
+    tipEl = document.createElement('div');
+    tipEl.className = 'game-tip';
+    tipEl.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(tipEl);
+    return tipEl;
+  }
+
+  function wireChartTooltip() {
+    var chart = $('[data-game-chart]');
+    if (!chart || chart.__tipWired) return;
+    chart.__tipWired = true;
+    var tip = ensureTip();
+
+    function move(e) {
+      var pad = 14;
+      var x = e.clientX + pad;
+      var y = e.clientY - tip.offsetHeight - pad;
+      if (x + tip.offsetWidth > window.innerWidth - 8) x = e.clientX - tip.offsetWidth - pad;
+      if (y < 8) y = e.clientY + pad;
+      tip.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+    }
+
+    chart.addEventListener('mouseover', function (e) {
+      var seg = e.target.closest('.game-chart__seg[data-tip-name]');
+      if (!seg) return;
+      tip.innerHTML = '<span class="game-tip__chip" style="background:'
+        + seg.style.background + '"></span>'
+        + '<span class="game-tip__name">' + esc(seg.getAttribute('data-tip-name')) + '</span>'
+        + '<span class="game-tip__pts">' + esc(seg.getAttribute('data-tip-pts')) + ' PTS</span>';
+      tip.classList.add('is-visible');
+      move(e);
+    });
+    chart.addEventListener('mousemove', function (e) {
+      if (tip.classList.contains('is-visible')) move(e);
+    });
+    chart.addEventListener('mouseout', function (e) {
+      if (!e.relatedTarget || !e.relatedTarget.closest('.game-chart__seg')) {
+        tip.classList.remove('is-visible');
+      }
+    });
+  }
+
+  // ---- victory conditions --------------------------------------------------
+  // Five categories from the 2026-27 playbook. Highest Points and Most
+  // Undervalued Prospect compute from live data; the other three wait on
+  // Oscar fields (season.results.bestPicture, film.oscarWins, film.bpNom).
+
+  // Draft round from a pick label. "R6"/"S6" -> 6; numeric picks map by league
+  // size; picks past 10 rounds are waiver adds (round null).
+  function pickRound(pick, numPlayers) {
+    if (pick == null || pick === '') return null;
+    var s = String(pick).trim();
+    var m = s.match(/^[RS](\d+)$/i);
+    if (m) return parseInt(m[1], 10);
+    if (/^\d+$/.test(s)) {
+      var n = parseInt(s, 10);
+      if (n > numPlayers * 10) return null; // waiver add
+      return Math.ceil(n / numPlayers);
+    }
+    return null;
+  }
+
+  function computeConditions(league) {
+    var players = league.players || [];
+    var numPlayers = players.length || 1;
+    var rows = players.map(function (p) { return { player: p, totals: playerTotals(p) }; });
+
+    function leaderCard(title, desc, leader, value, tbd) {
+      return { title: title, desc: desc, leader: leader, value: value, tbd: tbd || '' };
+    }
+
+    // 1. Highest Points
+    var byPts = rows.slice().sort(function (a, b) { return b.totals.total - a.totals.total; });
+    var c1 = leaderCard('Highest Points', 'The team with the highest overall point total.',
+      byPts[0] ? byPts[0].player.name : '', byPts[0] ? byPts[0].totals.total.toLocaleString() + ' PTS' : '');
+
+    // 2. Best Picture
+    var bpSlug = (state.season.results && state.season.results.bestPicture) || '';
+    var c2;
+    if (!bpSlug) {
+      c2 = leaderCard('Best Picture', 'The team holding the Best Picture winner.',
+        '', '', 'Decided on Oscar night');
+    } else {
+      var holder = '';
+      players.forEach(function (p) {
+        (p.roster || []).forEach(function (slot) {
+          if (slot.filmSlug === bpSlug) holder = p.name;
+        });
+      });
+      var bpFilm = state.filmMap[bpSlug];
+      c2 = holder
+        ? leaderCard('Best Picture', 'The team holding the Best Picture winner.',
+            holder, bpFilm ? bpFilm.title : bpSlug)
+        : leaderCard('Best Picture', 'The team holding the Best Picture winner.',
+            '', '', 'No team holds the winner');
+    }
+
+    // 3. Most Variety — most individual films winning Academy Awards
+    var anyWins = Object.keys(state.filmMap).some(function (k) {
+      return (state.filmMap[k].oscarWins || 0) > 0;
+    });
+    var c3;
+    if (!anyWins) {
+      c3 = leaderCard('Most Variety', 'The team with the most individual films to win Academy Awards.',
+        '', '', 'Decided on Oscar night');
+    } else {
+      var best = null;
+      rows.forEach(function (r) {
+        var count = 0;
+        (r.player.roster || []).forEach(function (slot) {
+          var f = state.filmMap[slot.filmSlug];
+          if (f && (f.oscarWins || 0) > 0) count++;
+        });
+        if (!best || count > best.count) best = { name: r.player.name, count: count };
+      });
+      c3 = leaderCard('Most Variety', 'The team with the most individual films to win Academy Awards.',
+        best.name, best.count + ' winning films');
+    }
+
+    // 4. Bench Performance — highest average among films NOT BP-nominated
+    var anyNoms = Object.keys(state.filmMap).some(function (k) {
+      return state.filmMap[k].bpNom === true;
+    });
+    var c4;
+    if (!anyNoms) {
+      c4 = leaderCard('Bench Performance', 'The team with the highest average score among films not nominated for Best Picture.',
+        '', '', 'Waits on the Oscar nominations');
+    } else {
+      var bestBench = null;
+      rows.forEach(function (r) {
+        var sum = 0, n = 0;
+        (r.player.roster || []).forEach(function (slot) {
+          var f = state.filmMap[slot.filmSlug];
+          if (f && f.bpNom !== true) { sum += filmBreakdown(f).total; n++; }
+        });
+        var avg = n ? sum / n : 0;
+        if (!bestBench || avg > bestBench.avg) bestBench = { name: r.player.name, avg: avg };
+      });
+      c4 = leaderCard('Bench Performance', 'The team with the highest average score among films not nominated for Best Picture.',
+        bestBench.name, Math.round(bestBench.avg).toLocaleString() + ' AVG');
+    }
+
+    // 5. Most Undervalued Prospect — highest-scoring film drafted rounds 6-10
+    var bestProspect = null;
+    rows.forEach(function (r) {
+      (r.player.roster || []).forEach(function (slot) {
+        var round = pickRound(slot.pick, numPlayers);
+        if (round == null || round < 6 || round > 10) return;
+        var f = state.filmMap[slot.filmSlug];
+        if (!f) return;
+        var total = filmBreakdown(f).total;
+        if (!bestProspect || total > bestProspect.total) {
+          bestProspect = { name: r.player.name, film: f.title, total: total };
+        }
+      });
+    });
+    var c5 = bestProspect
+      ? leaderCard('Most Undervalued Prospect', 'The team with the highest-scoring film drafted between rounds 6\u201310 (waiver adds excluded).',
+          bestProspect.name, bestProspect.film + ' \u2014 ' + bestProspect.total.toLocaleString() + ' PTS')
+      : leaderCard('Most Undervalued Prospect', 'The team with the highest-scoring film drafted between rounds 6\u201310 (waiver adds excluded).',
+          '', '', 'No round 6\u201310 picks yet');
+
+    return [c1, c2, c3, c4, c5];
+  }
+
+  function renderVictoryConditions(league) {
+    var el = $('[data-game-vc]');
+    if (!el) return;
+
+    el.innerHTML = computeConditions(league).map(function (c, i) {
+      var status = c.leader
+        ? '<span class="game-vc__leader">' + esc(c.leader) + '</span>'
+          + '<span class="game-vc__value">' + esc(c.value) + '</span>'
+        : '<span class="game-vc__tbd">' + esc(c.tbd) + '</span>';
+      return '<article class="game-vc__card">'
+        + '<span class="game-vc__num">' + (i + 1) + '</span>'
+        + '<h3 class="game-vc__title">' + esc(c.title) + '</h3>'
+        + '<p class="game-vc__desc">' + esc(c.desc) + '</p>'
+        + status
+        + '</article>';
     }).join('');
   }
 
@@ -295,8 +477,10 @@
     var nameEl = $('[data-game-league-name]');
     if (nameEl) nameEl.textContent = league.name;
     renderStandings(league);
+    renderVictoryConditions(league);
     renderRosters(league);
     renderScoringChart(league);
+    wireChartTooltip();
   }
 
   // ---- boot ---------------------------------------------------------------
@@ -325,7 +509,6 @@
       if (seasonEl) seasonEl.textContent = state.season.label || state.season.season;
 
       renderLeaguePicker();
-      renderLegend();
       renderFilmPool();
       renderLeague();
     }).catch(function (err) {

@@ -89,6 +89,141 @@
   text-align: right;
 }
 
+.game-standings__row--faab {
+  grid-template-columns: 2.4rem 1fr auto auto auto;
+}
+
+.game-standings__faab {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  border: 1px solid var(--gold-pale);
+  padding: 0.15rem 0.45rem;
+  border-radius: 2px;
+}
+
+/* ---- victory conditions ---------------------------------------------------- */
+
+.game-vc__note {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+  margin: 0 0 1.4rem;
+  max-width: 640px;
+}
+
+.game-vc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.2rem;
+}
+
+.game-vc__card {
+  position: relative;
+  background: var(--paper);
+  border: 1px solid var(--rule-strong);
+  border-top: 3px solid var(--gold);
+  border-radius: 2px;
+  padding: 1rem 1.1rem 1.1rem;
+  box-shadow: 3px 3px 0 var(--shadow);
+}
+
+.game-vc__num {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-faded);
+}
+
+.game-vc__title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 1.2rem 0.4rem 0;
+  line-height: 1.15;
+}
+
+.game-vc__desc {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--ink-muted);
+  margin: 0 0 0.8rem;
+}
+
+.game-vc__leader {
+  display: block;
+  font-family: var(--font-sport);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--crimson);
+  letter-spacing: 0.03em;
+}
+
+.game-vc__value {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  margin-top: 0.2rem;
+}
+
+.game-vc__tbd {
+  display: block;
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--ink-faded);
+}
+
+/* ---- chart tooltip --------------------------------------------------------- */
+
+.game-tip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--ink);
+  color: var(--paper);
+  padding: 0.45rem 0.7rem;
+  border-radius: 2px;
+  box-shadow: 3px 3px 0 var(--shadow);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  white-space: nowrap;
+}
+.game-tip.is-visible { opacity: 1; }
+
+.game-tip__chip {
+  width: 10px;
+  height: 10px;
+  border-radius: 1px;
+  border: 1px solid rgba(252, 250, 241, 0.4);
+  flex-shrink: 0;
+}
+
+.game-tip__name {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.game-tip__pts {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--gold-bright);
+}
+
 /* ---- rosters -------------------------------------------------------------- */
 
 .game-rosters {
@@ -217,7 +352,10 @@
   display: block;
   height: 100%;
   min-width: 2px;
+  cursor: pointer;
+  transition: filter 0.1s ease;
 }
+.game-chart__seg:hover { filter: brightness(1.15); }
 .game-chart__seg--empty {
   width: 100%;
   min-width: 0;
@@ -236,44 +374,6 @@
   font-weight: 600;
   color: var(--ink);
   text-align: right;
-}
-
-/* ---- legend --------------------------------------------------------------- */
-
-.game-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.1rem;
-  margin-top: 1.5rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--rule);
-}
-
-.game-legend__item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-.game-legend__chip {
-  width: 11px;
-  height: 11px;
-  display: inline-block;
-  border-radius: 1px;
-}
-
-.game-legend__logo {
-  width: 16px;
-  height: 16px;
-  object-fit: contain;
-  display: inline-block;
-}
-
-.game-legend__label {
-  font-family: var(--font-mono);
-  font-size: 0.66rem;
-  letter-spacing: 0.1em;
-  color: var(--ink-muted);
 }
 
 /* ---- film pool ------------------------------------------------------------ */
