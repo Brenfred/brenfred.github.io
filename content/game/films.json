@@ -1,0 +1,184 @@
+{
+  "films": [
+    {
+      "filmSlug": "the-odyssey",
+      "title": "The Odyssey",
+      "posterSlug": "the-odyssey",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-black-ball",
+      "title": "La Bola Negra",
+      "posterSlug": "the-black-ball",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "wild-horse-nine",
+      "title": "Wild Horse Nine",
+      "posterSlug": "wild-horse-nine",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "project-hail-mary",
+      "title": "Project Hail Mary",
+      "posterSlug": "project-hail-mary",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "digger",
+      "title": "Digger",
+      "posterSlug": "digger",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "behemoth",
+      "title": "Behemoth!",
+      "posterSlug": "behemoth",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "fjord",
+      "title": "Fjord",
+      "posterSlug": "fjord",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "dune-part-three",
+      "title": "Dune: Part Three",
+      "posterSlug": "dune-part-three",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "obsession",
+      "title": "Obsession",
+      "posterSlug": "obsession",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "eisenberg-musical-comedy",
+      "title": "The Debut",
+      "posterSlug": "the-debut",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-invite",
+      "title": "The Invite",
+      "posterSlug": "the-invite",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "all-of-a-sudden",
+      "title": "All of a Sudden",
+      "posterSlug": "all-of-a-sudden",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "club-kid",
+      "title": "Club Kid",
+      "posterSlug": "club-kid",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "elsinore",
+      "title": "Elsinore",
+      "posterSlug": "elsinore",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "cry-to-heaven",
+      "title": "Cry to Heaven",
+      "posterSlug": "cry-to-heaven",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-social-reckoning",
+      "title": "The Social Reckoning",
+      "posterSlug": "the-social-reckoning",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "ink",
+      "title": "Ink",
+      "posterSlug": "ink",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "fatherland",
+      "title": "Fatherland",
+      "posterSlug": "fatherland",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "sense-and-sensibility",
+      "title": "Sense and Sensibility",
+      "posterSlug": "sense-and-sensibility",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    },
+    {
+      "filmSlug": "michael",
+      "title": "Michael",
+      "posterSlug": "michael",
+      "critics": 0,
+      "money": 0,
+      "misc": 0,
+      "points": []
+    }
+  ]
+}
