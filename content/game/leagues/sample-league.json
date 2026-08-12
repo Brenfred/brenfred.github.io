@@ -1,8 +1,8 @@
 {
   "slug": "sample-league",
   "name": "Sample League",
-  "season": "2026\u20132027",
-  "note": "Demo rosters \u2014 replace with real draft results.",
+  "season": "2026–2027",
+  "note": "Demo rosters — replace with real draft results.",
   "players": [
     {
       "name": "Player One",
@@ -23,7 +23,8 @@
           "pick": 20,
           "filmSlug": "michael"
         }
-      ]
+      ],
+      "faab": 300
     },
     {
       "name": "Player Two",
@@ -44,7 +45,8 @@
           "pick": 19,
           "filmSlug": "sense-and-sensibility"
         }
-      ]
+      ],
+      "faab": 300
     },
     {
       "name": "Player Three",
@@ -65,7 +67,8 @@
           "pick": 18,
           "filmSlug": "fatherland"
         }
-      ]
+      ],
+      "faab": 300
     },
     {
       "name": "Player Four",
@@ -86,7 +89,8 @@
           "pick": 17,
           "filmSlug": "ink"
         }
-      ]
+      ],
+      "faab": 300
     },
     {
       "name": "Player Five",
@@ -107,7 +111,8 @@
           "pick": 16,
           "filmSlug": "the-social-reckoning"
         }
-      ]
+      ],
+      "faab": 300
     }
   ]
 }
