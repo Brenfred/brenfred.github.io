@@ -1,0 +1,113 @@
+{
+  "slug": "sample-league",
+  "name": "Sample League",
+  "season": "2026\u20132027",
+  "note": "Demo rosters \u2014 replace with real draft results.",
+  "players": [
+    {
+      "name": "Player One",
+      "roster": [
+        {
+          "pick": 1,
+          "filmSlug": "the-odyssey"
+        },
+        {
+          "pick": 10,
+          "filmSlug": "eisenberg-musical-comedy"
+        },
+        {
+          "pick": 11,
+          "filmSlug": "the-invite"
+        },
+        {
+          "pick": 20,
+          "filmSlug": "michael"
+        }
+      ]
+    },
+    {
+      "name": "Player Two",
+      "roster": [
+        {
+          "pick": 2,
+          "filmSlug": "the-black-ball"
+        },
+        {
+          "pick": 9,
+          "filmSlug": "obsession"
+        },
+        {
+          "pick": 12,
+          "filmSlug": "all-of-a-sudden"
+        },
+        {
+          "pick": 19,
+          "filmSlug": "sense-and-sensibility"
+        }
+      ]
+    },
+    {
+      "name": "Player Three",
+      "roster": [
+        {
+          "pick": 3,
+          "filmSlug": "wild-horse-nine"
+        },
+        {
+          "pick": 8,
+          "filmSlug": "dune-part-three"
+        },
+        {
+          "pick": 13,
+          "filmSlug": "club-kid"
+        },
+        {
+          "pick": 18,
+          "filmSlug": "fatherland"
+        }
+      ]
+    },
+    {
+      "name": "Player Four",
+      "roster": [
+        {
+          "pick": 4,
+          "filmSlug": "project-hail-mary"
+        },
+        {
+          "pick": 7,
+          "filmSlug": "fjord"
+        },
+        {
+          "pick": 14,
+          "filmSlug": "elsinore"
+        },
+        {
+          "pick": 17,
+          "filmSlug": "ink"
+        }
+      ]
+    },
+    {
+      "name": "Player Five",
+      "roster": [
+        {
+          "pick": 5,
+          "filmSlug": "digger"
+        },
+        {
+          "pick": 6,
+          "filmSlug": "behemoth"
+        },
+        {
+          "pick": 15,
+          "filmSlug": "cry-to-heaven"
+        },
+        {
+          "pick": 16,
+          "filmSlug": "the-social-reckoning"
+        }
+      ]
+    }
+  ]
+}
