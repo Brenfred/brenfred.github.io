@@ -152,7 +152,7 @@ Two additional films are doing the big three (meaning all but NYFF). This is ano
 
 Not the big three per se, but still a great bunch for these fall world premieres. Playing these three festivals and being selected at the NYFF Main Slate shows promise for these art-house British titles, although don't necessarily expect this popularity to translate to awards success.
 
-<h3>Minotaur and&#8230; Cannes losers? The Unknown / The Man I Love</h3>
+<h3>Minotaur and… Cannes losers? The Unknown / The Man I Love</h3>
 
 Three Cannes films are doing Telluride, TIFF, and NYFF Main Slate this year. *Minotaur* was an expected choice being the Grand Prix winner and a critic favourite, but *The Unknown* and *The Man I Love* really surprised in their festival presence. It goes to show that winning a prize at Cannes isn't a be-all end-all and that festival programmers really want to champion these more subdued and divisive films. *All of a Sudden* and *The Dreamed Adventure* also had a good showing with TIFF and NYFF selections, given that both filmmakers have never gone to Telluride.
 
@@ -160,11 +160,11 @@ Three Cannes films are doing Telluride, TIFF, and NYFF Main Slate this year. *Mi
 
 After its incredible reception in the Un Certain Regard (UCR) section at Cannes, *Club Kid* all but confirmed that it's a festival programmer favourite. It's the only film from UCR to make it to the high-profile TIFF Special Presentations program (which bodes well for its chances for the PCA), and it managed to snag an NYFF Spotlight slot despite not being a highbrow favourite.
 
-<h3>Iron Boy&#8230; and (most) indie animation</h3>
+<h3>Iron Boy… and (most) indie animation</h3>
 
 What a showing for *Iron Boy*. What is quickly becoming the clear favourite indie animated film of the year popped up as expected in the TIFF Centrepiece program, but also at NYFF. This festival routinely snubs non-Eastern animated films, making the selection all the more impressive.
 
-TIFF went all in on animated films this year too, with Cannes titles *In Waves*, *Tangles*, and *Viva Carmen* popping up (while *Lucy Lost* was snubbed). Same goes with Annecy world premieres with *Muyi*, *Juli&#225;n*, *Rogue Trooper*, and Crystal winner *The Violinist*. Clearly the success of *Flow* has pushed festivals to strongly consider programming animated films.
+TIFF went all in on animated films this year too, with Cannes titles *In Waves*, *Tangles*, and *Viva Carmen* popping up (while *Lucy Lost* was snubbed). Same goes with Annecy world premieres with *Muyi*, *Julián*, *Rogue Trooper*, and Crystal winner *The Violinist*. Clearly the success of *Flow* has pushed festivals to strongly consider programming animated films.
 
 <h3>The Only Living Pickpocket in New York</h3>
 
@@ -194,11 +194,11 @@ Two of the most surprising festival programming decisions were for big East Asia
 
 <h3>Fjord / La Bola Negra</h3>
 
-Arguably the two stand-out titles at Cannes this year fell a bit short of what we expected of them. *Fjord* is making every stop, but is the first Palme d'Or winner to miss the NYFF Main Slate selection since 2015, settling for the Spotlight section instead. On the other hand, *La Bola Negra* is doing Telluride and TIFF, but failed to make it to NYFF. We knew it wouldn't be a favourite of the programming team there, but we could've expected it to settle for a Spotlight slot the way Netflix's *Emilia P&#233;rez* did two years ago.
+Arguably the two stand-out titles at Cannes this year fell a bit short of what we expected of them. *Fjord* is making every stop, but is the first Palme d'Or winner to miss the NYFF Main Slate selection since 2015, settling for the Spotlight section instead. On the other hand, *La Bola Negra* is doing Telluride and TIFF, but failed to make it to NYFF. We knew it wouldn't be a favourite of the programming team there, but we could've expected it to settle for a Spotlight slot the way Netflix's *Emilia Pérez* did two years ago.
 
-<h3>Sandra H&#252;ller: Fatherland and Rose</h3>
+<h3>Sandra Hüller: Fatherland and Rose</h3>
 
-Is it strange that both Sandra H&#252;ller films are skipping TIFF this year? Yes, absolutely. However, both *Fatherland* and *Rose* are making stops at NYFF Main Slate, and perhaps more interestingly, at Telluride. A puzzling no-show at TIFF but both films at Telluride? Could this be an arrangement for H&#252;ller to receive the Telluride Silver Medallion for performance? That could explain the exclusion.
+Is it strange that both Sandra Hüller films are skipping TIFF this year? Yes, absolutely. However, both *Fatherland* and *Rose* are making stops at NYFF Main Slate, and perhaps more interestingly, at Telluride. A puzzling no-show at TIFF but both films at Telluride? Could this be an arrangement for Hüller to receive the Telluride Silver Medallion for performance? That could explain the exclusion.
 
 <h3>Once Upon a Time in Harlem</h3>
 
@@ -228,7 +228,7 @@ Many UCR titles were given new life, especially through the TIFF Centrepiece pro
 
 <h3>Coward</h3>
 
-*Coward* did make it to TIFF&#8230; but that's it. Dhont has some trouble finding passion among the major fall festivals, this time unable to return to Telluride where *Close* played. Among the Cannes Competition prize-winners, it has the least desirable festival trajectory at the moment.
+*Coward* did make it to TIFF… but that's it. Dhont has some trouble finding passion among the major fall festivals, this time unable to return to Telluride where *Close* played. Among the Cannes Competition prize-winners, it has the least desirable festival trajectory at the moment.
 
 <h3>Sense and Sensibility / Wildwood</h3>
 
