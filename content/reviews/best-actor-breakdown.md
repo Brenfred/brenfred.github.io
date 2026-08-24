@@ -1,6 +1,6 @@
 ---
 type: discussion
-title: "A breakdown of this year's stacked Best Actor lineup"
+title: A Breakdown of This Year's Stacked Best Actor Lineup
 film: ""
 director: ""
 studio: ""
@@ -15,8 +15,8 @@ writers:
   - sebastian-ochoa
 publishedDate: August 19, 2026
 deck: As the fall festival slates are being revealed, Best Actor looks poised to
-  be the most competitive lineup at next year's Academy Awards. Let's take a look
-  at the contenders.
+  be the most competitive lineup at next year's Academy Awards. Let's take a
+  look at the contenders.
 excerpt: Let's meet our contenders.
 heroImage: /posters/best-actor-breakdown-hero.jpg
 verdictNote: ""
