@@ -161,70 +161,70 @@
           "rank": 1,
           "filmSlug": "the-odyssey",
           "subtitle": "",
-          "nomPct": "99%",
-          "winPct": "55%"
+          "nomPct": "100%",
+          "winPct": "77%"
         },
         {
           "rank": 2,
           "filmSlug": "the-black-ball",
           "subtitle": "",
-          "nomPct": "99%",
-          "winPct": "28%"
+          "nomPct": "95%",
+          "winPct": "12%"
         },
         {
           "rank": 3,
           "filmSlug": "wild-horse-nine",
           "subtitle": "",
-          "nomPct": "96%",
-          "winPct": "11%"
+          "nomPct": "88%",
+          "winPct": "7%"
         },
         {
           "rank": 4,
           "filmSlug": "digger",
           "subtitle": "",
-          "nomPct": "80%",
-          "winPct": "0%"
+          "nomPct": "66%",
+          "winPct": "1%"
         },
         {
           "rank": 5,
           "filmSlug": "fjord",
           "subtitle": "",
-          "nomPct": "68%",
+          "nomPct": "51%",
           "winPct": "0%"
         },
         {
           "rank": 6,
           "filmSlug": "the-invite",
           "subtitle": "",
-          "nomPct": "62%",
+          "nomPct": "32%",
           "winPct": "0%"
         },
         {
           "rank": 7,
           "filmSlug": "dune-part-three",
           "subtitle": "",
-          "nomPct": "76%",
-          "winPct": "1%"
+          "nomPct": "14%",
+          "winPct": "3%"
         },
         {
           "rank": 8,
           "filmSlug": "all-of-a-sudden",
           "subtitle": "",
-          "nomPct": "33%",
+          "nomPct": "15%",
           "winPct": "0%"
         },
         {
           "rank": 9,
-          "filmSlug": "behemoth",
+          "filmSlug": "ink",
           "subtitle": "",
-          "nomPct": "46%",
-          "winPct": "1%"
+          "nomPct": "11%",
+          "winPct": "0%"
         },
         {
           "rank": 10,
-          "filmSlug": "ink",
+          "filmSlug": "behemoth",
           "subtitle": "",
-          "nomPct": "42%",
+          "nomPct": "12%",
           "winPct": "0%"
         }
       ]
