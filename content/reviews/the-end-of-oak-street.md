@@ -8,7 +8,7 @@ runtime: 100 min
 genre: Sc-Fi Action
 rating: 4
 stance: sell
-stanceLabel: Shortlist
+stanceLabel: A less-than-stellar box office eats up any awards potential.
 posterSlug: the-end-of-oak-street
 writer: "[ Writer ]"
 writers:
@@ -19,7 +19,7 @@ deck: "David Robert Mitchell takes a surprising detour from the eerie mysteries
   throwback to the Amblin adventures of the 1980s. "
 excerpt: What If Your Neighborhood Got Transported to the Jurassic?
 heroImage: /posters/oak-street.jpg
-verdictNote: A less-than-stellar box office eats up any awards potential.
+verdictNote: Shortlist contender only.
 prospects:
   - tier: long-shot
     category: sound
