@@ -8,7 +8,7 @@ runtime: 107 min
 genre: Drama
 rating: 1
 stance: buy
-stanceLabel: Locked for Best Original Song.
+stanceLabel: Locked for Best Original Song
 posterSlug: by-any-means
 writer: "[ Writer ]"
 writers:
@@ -21,7 +21,7 @@ deck: A forgettable future Oscar-nominated song leads to a film that is somehow
 excerpt: Boring at best and problematic at worst, but Mark Wahlberg is a sight
   to behold.
 heroImage: /posters/byanymeans.jpg
-verdictNote: Another Diane Warren Song Nomination.
+verdictNote: Another Diane Warren Song Nomination
 prospects:
   - tier: predicted
     category: song
