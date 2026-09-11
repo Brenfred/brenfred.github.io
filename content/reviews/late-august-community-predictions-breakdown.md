@@ -13,9 +13,12 @@ posterSlug: breaking-down-our-pre-fest-community-predictions
 writer: ""
 writers:
   - ray-siddiqi
-publishedDate: September 6, 2026
-deck: "One last look at where Filmball stands before Venice, Telluride, TIFF and NYFF: Ink gains steam, the categories calcify, and both Supporting races rest on four films."
-excerpt: "Ink gains steam, the categories calcify, and both Supporting races rest on four films."
+publishedDate: August 26, 2026
+deck: "One last look at where Filmball stands before Venice, Telluride, TIFF and
+  NYFF: Ink gains steam, the categories calcify, and both Supporting races rest
+  on four films."
+excerpt: Ink gains steam, the categories calcify, and both Supporting races rest
+  on four films.
 heroImage: /posters/late-august-hero.jpg
 verdictNote: ""
 prospects: []
