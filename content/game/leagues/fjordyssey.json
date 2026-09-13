@@ -1,0 +1,296 @@
+{
+  "slug": "fjordyssey",
+  "name": "Fjordyssey",
+  "season": "2026–2027",
+  "players": [
+    {
+      "name": "Barristan",
+      "roster": [
+        {
+          "pick": "1",
+          "filmSlug": "the-odyssey",
+          "extra": 61.0
+        },
+        {
+          "pick": "12",
+          "filmSlug": "club-kid"
+        },
+        {
+          "pick": "13",
+          "filmSlug": "elsinore"
+        },
+        {
+          "pick": "24",
+          "filmSlug": "minotaur"
+        },
+        {
+          "pick": "25",
+          "filmSlug": "hoppers",
+          "extra": 39.0
+        },
+        {
+          "pick": "36",
+          "filmSlug": "teenage-sex-and-death-at-camp-miasma",
+          "extra": 26.0
+        },
+        {
+          "pick": "37",
+          "filmSlug": "coward"
+        },
+        {
+          "pick": "48",
+          "filmSlug": "a-statement"
+        },
+        {
+          "pick": "49",
+          "filmSlug": "forgotten-island"
+        },
+        {
+          "pick": "60",
+          "filmSlug": "prima-facie"
+        }
+      ]
+    },
+    {
+      "name": "Kf",
+      "roster": [
+        {
+          "pick": "2",
+          "filmSlug": "the-black-ball"
+        },
+        {
+          "pick": "11",
+          "filmSlug": "behemoth"
+        },
+        {
+          "pick": "14",
+          "filmSlug": "eisenberg-musical-comedy"
+        },
+        {
+          "pick": "23",
+          "filmSlug": "ray-gunn"
+        },
+        {
+          "pick": "26",
+          "filmSlug": "possible-love"
+        },
+        {
+          "pick": "35",
+          "filmSlug": "once-upon-a-time-in-harlem",
+          "extra": 8.0
+        },
+        {
+          "pick": "38",
+          "filmSlug": "artificial"
+        },
+        {
+          "pick": "47",
+          "filmSlug": "one-in-a-million",
+          "extra": 6.0
+        },
+        {
+          "pick": "50",
+          "filmSlug": "look-back"
+        },
+        {
+          "pick": "59",
+          "filmSlug": "avengers-doomsday"
+        }
+      ]
+    },
+    {
+      "name": "Moppy",
+      "roster": [
+        {
+          "pick": "3",
+          "filmSlug": "wild-horse-nine",
+          "extra": 6.0
+        },
+        {
+          "pick": "10",
+          "filmSlug": "all-of-a-sudden"
+        },
+        {
+          "pick": "15",
+          "filmSlug": "ink"
+        },
+        {
+          "pick": "22",
+          "filmSlug": "wildwood"
+        },
+        {
+          "pick": "27",
+          "filmSlug": "a-long-winter"
+        },
+        {
+          "pick": "34",
+          "filmSlug": "being-heumann"
+        },
+        {
+          "pick": "39",
+          "filmSlug": "rose"
+        },
+        {
+          "pick": "46",
+          "filmSlug": "14th"
+        },
+        {
+          "pick": "51",
+          "filmSlug": "tender-loving-care"
+        },
+        {
+          "pick": "58",
+          "filmSlug": "wuthering-heights",
+          "extra": 8.0
+        }
+      ]
+    },
+    {
+      "name": "Lman8Bsa",
+      "roster": [
+        {
+          "pick": "4",
+          "filmSlug": "project-hail-mary",
+          "extra": 46.0
+        },
+        {
+          "pick": "9",
+          "filmSlug": "the-invite",
+          "extra": 38.0
+        },
+        {
+          "pick": "16",
+          "filmSlug": "fatherland"
+        },
+        {
+          "pick": "21",
+          "filmSlug": "toy-story-5",
+          "extra": 41.0
+        },
+        {
+          "pick": "28",
+          "filmSlug": "american-doctor",
+          "extra": 10.0
+        },
+        {
+          "pick": "33",
+          "filmSlug": "sense-and-sensibility"
+        },
+        {
+          "pick": "40",
+          "filmSlug": "the-drama",
+          "extra": 30.0
+        },
+        {
+          "pick": "45",
+          "filmSlug": "bucking-fastard"
+        },
+        {
+          "pick": "52",
+          "filmSlug": "backrooms",
+          "extra": 30.0
+        },
+        {
+          "pick": "57",
+          "filmSlug": "the-devil-wears-prada-2",
+          "extra": 10.0
+        }
+      ]
+    },
+    {
+      "name": "Dreams",
+      "roster": [
+        {
+          "pick": "5",
+          "filmSlug": "dune-part-three"
+        },
+        {
+          "pick": "8",
+          "filmSlug": "fjord"
+        },
+        {
+          "pick": "17",
+          "filmSlug": "the-social-reckoning"
+        },
+        {
+          "pick": "20",
+          "filmSlug": "josephine",
+          "extra": 12.0
+        },
+        {
+          "pick": "29",
+          "filmSlug": "iron-boy"
+        },
+        {
+          "pick": "32",
+          "filmSlug": "the-adventures-of-cliff-booth"
+        },
+        {
+          "pick": "41",
+          "filmSlug": "godzilla-minus-zero"
+        },
+        {
+          "pick": "44",
+          "filmSlug": "your-mother-your-mother-your-mother"
+        },
+        {
+          "pick": "53",
+          "filmSlug": "the-only-living-pickpocket-in-new-york"
+        },
+        {
+          "pick": "56",
+          "filmSlug": "paper-tiger"
+        }
+      ]
+    },
+    {
+      "name": "Nazreid",
+      "roster": [
+        {
+          "pick": "6",
+          "filmSlug": "digger"
+        },
+        {
+          "pick": "7",
+          "filmSlug": "obsession",
+          "extra": 36.0
+        },
+        {
+          "pick": "18",
+          "filmSlug": "primetime"
+        },
+        {
+          "pick": "19",
+          "filmSlug": "werwulf"
+        },
+        {
+          "pick": "30",
+          "filmSlug": "michael",
+          "extra": 7.0
+        },
+        {
+          "pick": "31",
+          "filmSlug": "misty-green"
+        },
+        {
+          "pick": "42",
+          "filmSlug": "disclosure-day",
+          "extra": 23.0
+        },
+        {
+          "pick": "43",
+          "filmSlug": "bunker"
+        },
+        {
+          "pick": "54",
+          "filmSlug": "to-hold-a-mountain"
+        },
+        {
+          "pick": "55",
+          "filmSlug": "nuisance-bear",
+          "extra": 8.0
+        }
+      ]
+    }
+  ]
+}

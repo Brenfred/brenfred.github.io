@@ -1,0 +1,300 @@
+{
+  "slug": "here-comes-the-beggars",
+  "name": "Here Comes the Beggars!",
+  "season": "2026–2027",
+  "players": [
+    {
+      "name": "Audio",
+      "roster": [
+        {
+          "pick": "1",
+          "filmSlug": "the-odyssey",
+          "extra": 44.0
+        },
+        {
+          "pick": "12",
+          "filmSlug": "elsinore"
+        },
+        {
+          "pick": "13",
+          "filmSlug": "behemoth"
+        },
+        {
+          "pick": "24",
+          "filmSlug": "disclosure-day",
+          "extra": 33.0
+        },
+        {
+          "pick": "25",
+          "filmSlug": "once-upon-a-time-in-harlem",
+          "extra": 23.0
+        },
+        {
+          "pick": "36",
+          "filmSlug": "bunker"
+        },
+        {
+          "pick": "37",
+          "filmSlug": "the-housewife"
+        },
+        {
+          "pick": "48",
+          "filmSlug": "tender-loving-care"
+        },
+        {
+          "pick": "49",
+          "filmSlug": "the-devil-wears-prada-2",
+          "extra": 19.0
+        },
+        {
+          "pick": "60",
+          "filmSlug": "daisys-life"
+        }
+      ]
+    },
+    {
+      "name": "Myrtle",
+      "roster": [
+        {
+          "pick": "2",
+          "filmSlug": "project-hail-mary",
+          "extra": 39.0
+        },
+        {
+          "pick": "11",
+          "filmSlug": "fjord",
+          "extra": 22.0
+        },
+        {
+          "pick": "14",
+          "filmSlug": "eisenberg-musical-comedy"
+        },
+        {
+          "pick": "23",
+          "filmSlug": "josephine",
+          "extra": 8.0
+        },
+        {
+          "pick": "26",
+          "filmSlug": "michael",
+          "extra": 5.0
+        },
+        {
+          "pick": "35",
+          "filmSlug": "to-hold-a-mountain"
+        },
+        {
+          "pick": "38",
+          "filmSlug": "fatherland",
+          "extra": 12.0
+        },
+        {
+          "pick": "47",
+          "filmSlug": "shaun-the-sheep-the-beast-of-mossy-bottom"
+        },
+        {
+          "pick": "50",
+          "filmSlug": "avengers-doomsday"
+        },
+        {
+          "pick": "59",
+          "filmSlug": "the-adventures-of-cliff-booth"
+        }
+      ]
+    },
+    {
+      "name": "Lachy",
+      "roster": [
+        {
+          "pick": "3",
+          "filmSlug": "the-black-ball",
+          "extra": 34.0
+        },
+        {
+          "pick": "10",
+          "filmSlug": "digger"
+        },
+        {
+          "pick": "15",
+          "filmSlug": "club-kid"
+        },
+        {
+          "pick": "22",
+          "filmSlug": "the-social-reckoning"
+        },
+        {
+          "pick": "27",
+          "filmSlug": "hoppers",
+          "extra": 30.0
+        },
+        {
+          "pick": "34",
+          "filmSlug": "one-in-a-million"
+        },
+        {
+          "pick": "39",
+          "filmSlug": "minotaur",
+          "extra": 18.0
+        },
+        {
+          "pick": "46",
+          "filmSlug": "i-see-buildings-fall-like-lightning"
+        },
+        {
+          "pick": "51",
+          "filmSlug": "if-i-go-will-they-miss-me"
+        },
+        {
+          "pick": "58",
+          "filmSlug": "14th"
+        }
+      ]
+    },
+    {
+      "name": "Boon",
+      "roster": [
+        {
+          "pick": "4",
+          "filmSlug": "obsession",
+          "extra": 40.0
+        },
+        {
+          "pick": "9",
+          "filmSlug": "the-invite",
+          "extra": 35.0
+        },
+        {
+          "pick": "16",
+          "filmSlug": "primetime"
+        },
+        {
+          "pick": "21",
+          "filmSlug": "werwulf"
+        },
+        {
+          "pick": "28",
+          "filmSlug": "wicker",
+          "extra": 13.0
+        },
+        {
+          "pick": "33",
+          "filmSlug": "american-doctor",
+          "extra": 7.0
+        },
+        {
+          "pick": "40",
+          "filmSlug": "sense-and-sensibility"
+        },
+        {
+          "pick": "45",
+          "filmSlug": "forgotten-island"
+        },
+        {
+          "pick": "52",
+          "filmSlug": "resident-evil"
+        },
+        {
+          "pick": "57",
+          "filmSlug": "a-long-winter"
+        }
+      ]
+    },
+    {
+      "name": "Cordelia",
+      "roster": [
+        {
+          "pick": "5",
+          "filmSlug": "wild-horse-nine"
+        },
+        {
+          "pick": "8",
+          "filmSlug": "ink"
+        },
+        {
+          "pick": "17",
+          "filmSlug": "wildwood"
+        },
+        {
+          "pick": "20",
+          "filmSlug": "teenage-sex-and-death-at-camp-miasma",
+          "extra": 38.0
+        },
+        {
+          "pick": "29",
+          "filmSlug": "iron-boy"
+        },
+        {
+          "pick": "32",
+          "filmSlug": "possible-love"
+        },
+        {
+          "pick": "41",
+          "filmSlug": "bucking-fastard"
+        },
+        {
+          "pick": "44",
+          "filmSlug": "look-back"
+        },
+        {
+          "pick": "53",
+          "filmSlug": "prima-facie"
+        },
+        {
+          "pick": "56",
+          "filmSlug": "clarissa"
+        }
+      ]
+    },
+    {
+      "name": "Bee",
+      "roster": [
+        {
+          "pick": "6",
+          "filmSlug": "dune-part-three"
+        },
+        {
+          "pick": "7",
+          "filmSlug": "all-of-a-sudden",
+          "extra": 34.0
+        },
+        {
+          "pick": "18",
+          "filmSlug": "misty-green"
+        },
+        {
+          "pick": "19",
+          "filmSlug": "toy-story-5",
+          "extra": 18.0
+        },
+        {
+          "pick": "30",
+          "filmSlug": "artificial"
+        },
+        {
+          "pick": "31",
+          "filmSlug": "nuisance-bear",
+          "extra": 16.0
+        },
+        {
+          "pick": "42",
+          "filmSlug": "the-drama",
+          "extra": 30.0
+        },
+        {
+          "pick": "43",
+          "filmSlug": "rose",
+          "extra": 19.0
+        },
+        {
+          "pick": "54",
+          "filmSlug": "being-heumann"
+        },
+        {
+          "pick": "55",
+          "filmSlug": "the-sheep-detectives",
+          "extra": 22.0
+        }
+      ]
+    }
+  ]
+}

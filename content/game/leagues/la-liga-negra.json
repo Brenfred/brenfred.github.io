@@ -1,0 +1,298 @@
+{
+  "slug": "la-liga-negra",
+  "name": "La Liga Negra",
+  "season": "2026–2027",
+  "players": [
+    {
+      "name": "Bear",
+      "roster": [
+        {
+          "pick": "1",
+          "filmSlug": "the-odyssey",
+          "extra": 56.0
+        },
+        {
+          "pick": "12",
+          "filmSlug": "primetime"
+        },
+        {
+          "pick": "13",
+          "filmSlug": "werwulf"
+        },
+        {
+          "pick": "24",
+          "filmSlug": "toy-story-5",
+          "extra": 37.0
+        },
+        {
+          "pick": "25",
+          "filmSlug": "teenage-sex-and-death-at-camp-miasma",
+          "extra": 18.0
+        },
+        {
+          "pick": "36",
+          "filmSlug": "minotaur",
+          "extra": 16.0
+        },
+        {
+          "pick": "37",
+          "filmSlug": "nuisance-bear"
+        },
+        {
+          "pick": "48",
+          "filmSlug": "tony",
+          "extra": 24.0
+        },
+        {
+          "pick": "49",
+          "filmSlug": "the-drama",
+          "extra": 49.0
+        },
+        {
+          "pick": "59",
+          "filmSlug": "brand-new-day",
+          "extra": 46.0
+        }
+      ]
+    },
+    {
+      "name": "Rafa",
+      "roster": [
+        {
+          "pick": "2",
+          "filmSlug": "wild-horse-nine"
+        },
+        {
+          "pick": "11",
+          "filmSlug": "all-of-a-sudden",
+          "extra": 10.0
+        },
+        {
+          "pick": "14",
+          "filmSlug": "behemoth"
+        },
+        {
+          "pick": "23",
+          "filmSlug": "iron-boy"
+        },
+        {
+          "pick": "26",
+          "filmSlug": "fatherland"
+        },
+        {
+          "pick": "35",
+          "filmSlug": "godzilla-minus-zero"
+        },
+        {
+          "pick": "38",
+          "filmSlug": "once-upon-a-time-in-harlem"
+        },
+        {
+          "pick": "47",
+          "filmSlug": "the-adventures-of-cliff-booth"
+        },
+        {
+          "pick": "50",
+          "filmSlug": "i-swear",
+          "extra": 29.0
+        },
+        {
+          "pick": "60",
+          "filmSlug": "clayface"
+        }
+      ]
+    },
+    {
+      "name": "Diego",
+      "roster": [
+        {
+          "pick": "3",
+          "filmSlug": "the-black-ball"
+        },
+        {
+          "pick": "10",
+          "filmSlug": "ink"
+        },
+        {
+          "pick": "15",
+          "filmSlug": "elsinore"
+        },
+        {
+          "pick": "22",
+          "filmSlug": "your-mother-your-mother-your-mother"
+        },
+        {
+          "pick": "27",
+          "filmSlug": "josephine",
+          "extra": 8.0
+        },
+        {
+          "pick": "34",
+          "filmSlug": "bunker"
+        },
+        {
+          "pick": "39",
+          "filmSlug": "a-statement"
+        },
+        {
+          "pick": "46",
+          "filmSlug": "whalefall"
+        },
+        {
+          "pick": "51",
+          "filmSlug": "backrooms",
+          "extra": 26.0
+        },
+        {
+          "pick": "58",
+          "filmSlug": "tangles",
+          "extra": 6.0
+        }
+      ]
+    },
+    {
+      "name": "Joy",
+      "roster": [
+        {
+          "pick": "4",
+          "filmSlug": "digger"
+        },
+        {
+          "pick": "9",
+          "filmSlug": "fjord",
+          "extra": 9.0
+        },
+        {
+          "pick": "16",
+          "filmSlug": "eisenberg-musical-comedy"
+        },
+        {
+          "pick": "21",
+          "filmSlug": "artificial"
+        },
+        {
+          "pick": "28",
+          "filmSlug": "being-heumann"
+        },
+        {
+          "pick": "33",
+          "filmSlug": "sense-and-sensibility"
+        },
+        {
+          "pick": "40",
+          "filmSlug": "prima-facie"
+        },
+        {
+          "pick": "45",
+          "filmSlug": "ray-gunn"
+        },
+        {
+          "pick": "52",
+          "filmSlug": "coward",
+          "extra": 9.0
+        },
+        {
+          "pick": "57",
+          "filmSlug": "look-back"
+        }
+      ]
+    },
+    {
+      "name": "Bren",
+      "roster": [
+        {
+          "pick": "5",
+          "filmSlug": "project-hail-mary",
+          "extra": 45.0
+        },
+        {
+          "pick": "8",
+          "filmSlug": "the-invite",
+          "extra": 41.0
+        },
+        {
+          "pick": "17",
+          "filmSlug": "club-kid",
+          "extra": 8.0
+        },
+        {
+          "pick": "20",
+          "filmSlug": "the-social-reckoning"
+        },
+        {
+          "pick": "29",
+          "filmSlug": "american-doctor"
+        },
+        {
+          "pick": "32",
+          "filmSlug": "rose"
+        },
+        {
+          "pick": "41",
+          "filmSlug": "michael",
+          "extra": 18.0
+        },
+        {
+          "pick": "44",
+          "filmSlug": "hoppers",
+          "extra": 41.0
+        },
+        {
+          "pick": "53",
+          "filmSlug": "disclosure-day",
+          "extra": 31.0
+        },
+        {
+          "pick": "56",
+          "filmSlug": "forgotten-island"
+        }
+      ]
+    },
+    {
+      "name": "Leo",
+      "roster": [
+        {
+          "pick": "6",
+          "filmSlug": "dune-part-three"
+        },
+        {
+          "pick": "7",
+          "filmSlug": "obsession",
+          "extra": 47.0
+        },
+        {
+          "pick": "18",
+          "filmSlug": "misty-green"
+        },
+        {
+          "pick": "19",
+          "filmSlug": "wildwood"
+        },
+        {
+          "pick": "30",
+          "filmSlug": "possible-love"
+        },
+        {
+          "pick": "31",
+          "filmSlug": "to-hold-a-mountain"
+        },
+        {
+          "pick": "42",
+          "filmSlug": "a-long-winter"
+        },
+        {
+          "pick": "43",
+          "filmSlug": "the-only-living-pickpocket-in-new-york"
+        },
+        {
+          "pick": "54",
+          "filmSlug": "wicker"
+        },
+        {
+          "pick": "55",
+          "filmSlug": "ha-chan-shake-your-booty"
+        }
+      ]
+    }
+  ]
+}

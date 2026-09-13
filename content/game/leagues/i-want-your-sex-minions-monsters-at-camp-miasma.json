@@ -1,0 +1,281 @@
+{
+  "slug": "i-want-your-sex-minions-monsters-at-camp-miasma",
+  "name": "I Want Your Sex & Minions & Monsters at Camp Miasma",
+  "season": "2026–2027",
+  "players": [
+    {
+      "name": "Aaron",
+      "roster": [
+        {
+          "pick": "1",
+          "filmSlug": "the-odyssey",
+          "extra": 14.0
+        },
+        {
+          "pick": "12",
+          "filmSlug": "fjord"
+        },
+        {
+          "pick": "13",
+          "filmSlug": "toy-story-5"
+        },
+        {
+          "pick": "24",
+          "filmSlug": "american-doctor"
+        },
+        {
+          "pick": "25",
+          "filmSlug": "rose"
+        },
+        {
+          "pick": "36",
+          "filmSlug": "tender-loving-care"
+        },
+        {
+          "pick": "37",
+          "filmSlug": "backrooms"
+        },
+        {
+          "pick": "48",
+          "filmSlug": "godzilla-minus-zero"
+        },
+        {
+          "pick": "49",
+          "filmSlug": "iron-boy"
+        },
+        {
+          "pick": "60",
+          "filmSlug": "union-town"
+        }
+      ]
+    },
+    {
+      "name": "Carsonyep",
+      "roster": [
+        {
+          "pick": "2",
+          "filmSlug": "the-black-ball"
+        },
+        {
+          "pick": "11",
+          "filmSlug": "all-of-a-sudden"
+        },
+        {
+          "pick": "14",
+          "filmSlug": "eisenberg-musical-comedy"
+        },
+        {
+          "pick": "23",
+          "filmSlug": "josephine"
+        },
+        {
+          "pick": "26",
+          "filmSlug": "michael"
+        },
+        {
+          "pick": "35",
+          "filmSlug": "look-back"
+        },
+        {
+          "pick": "38",
+          "filmSlug": "disclosure-day"
+        },
+        {
+          "pick": "47",
+          "filmSlug": "artificial"
+        },
+        {
+          "pick": "50",
+          "filmSlug": "the-only-living-pickpocket-in-new-york"
+        },
+        {
+          "pick": "59",
+          "filmSlug": "maserati-the-brothers"
+        }
+      ]
+    },
+    {
+      "name": "Generic",
+      "roster": [
+        {
+          "pick": "3",
+          "filmSlug": "wild-horse-nine"
+        },
+        {
+          "pick": "10",
+          "filmSlug": "ink"
+        },
+        {
+          "pick": "15",
+          "filmSlug": "behemoth"
+        },
+        {
+          "pick": "22",
+          "filmSlug": "clarissa"
+        },
+        {
+          "pick": "27",
+          "filmSlug": "once-upon-a-time-in-harlem"
+        },
+        {
+          "pick": "34",
+          "filmSlug": "teenage-sex-and-death-at-camp-miasma",
+          "extra": 10.0
+        },
+        {
+          "pick": "39",
+          "filmSlug": "on-behalf-of-my-sun"
+        },
+        {
+          "pick": "46",
+          "filmSlug": "wicker"
+        },
+        {
+          "pick": "51",
+          "filmSlug": "bucking-fastard"
+        },
+        {
+          "pick": "58",
+          "filmSlug": "mr-nelson-did-you-kill-people"
+        }
+      ]
+    },
+    {
+      "name": "Stephen",
+      "roster": [
+        {
+          "pick": "4",
+          "filmSlug": "project-hail-mary"
+        },
+        {
+          "pick": "9",
+          "filmSlug": "primetime"
+        },
+        {
+          "pick": "16",
+          "filmSlug": "elsinore"
+        },
+        {
+          "pick": "21",
+          "filmSlug": "being-heumann"
+        },
+        {
+          "pick": "28",
+          "filmSlug": "minotaur"
+        },
+        {
+          "pick": "33",
+          "filmSlug": "a-long-winter"
+        },
+        {
+          "pick": "40",
+          "filmSlug": "sense-and-sensibility"
+        },
+        {
+          "pick": "45",
+          "filmSlug": "hoppers"
+        },
+        {
+          "pick": "52",
+          "filmSlug": "nuisance-bear"
+        },
+        {
+          "pick": "57",
+          "filmSlug": "prima-facie"
+        }
+      ]
+    },
+    {
+      "name": "Gladys",
+      "roster": [
+        {
+          "pick": "5",
+          "filmSlug": "obsession",
+          "extra": 8.0
+        },
+        {
+          "pick": "8",
+          "filmSlug": "the-invite"
+        },
+        {
+          "pick": "17",
+          "filmSlug": "wildwood"
+        },
+        {
+          "pick": "20",
+          "filmSlug": "fatherland"
+        },
+        {
+          "pick": "29",
+          "filmSlug": "bunker"
+        },
+        {
+          "pick": "32",
+          "filmSlug": "misty-green"
+        },
+        {
+          "pick": "41",
+          "filmSlug": "your-mother-your-mother-your-mother"
+        },
+        {
+          "pick": "44",
+          "filmSlug": "avengers-doomsday"
+        },
+        {
+          "pick": "53",
+          "filmSlug": "rehearsals-for-a-revolution"
+        },
+        {
+          "pick": "56",
+          "filmSlug": "brand-new-day"
+        }
+      ]
+    },
+    {
+      "name": "Cody",
+      "roster": [
+        {
+          "pick": "6",
+          "filmSlug": "dune-part-three"
+        },
+        {
+          "pick": "7",
+          "filmSlug": "digger"
+        },
+        {
+          "pick": "18",
+          "filmSlug": "werwulf"
+        },
+        {
+          "pick": "19",
+          "filmSlug": "possible-love"
+        },
+        {
+          "pick": "30",
+          "filmSlug": "club-kid"
+        },
+        {
+          "pick": "31",
+          "filmSlug": "the-social-reckoning"
+        },
+        {
+          "pick": "42",
+          "filmSlug": "forgotten-island"
+        },
+        {
+          "pick": "43",
+          "filmSlug": "the-drama",
+          "extra": 8.0
+        },
+        {
+          "pick": "54",
+          "filmSlug": "to-hold-a-mountain"
+        },
+        {
+          "pick": "55",
+          "filmSlug": "the-adventures-of-cliff-booth"
+        }
+      ]
+    }
+  ]
+}

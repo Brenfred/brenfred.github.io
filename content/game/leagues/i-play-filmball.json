@@ -1,0 +1,289 @@
+{
+  "slug": "i-play-filmball",
+  "name": "I Play Filmball",
+  "season": "2026–2027",
+  "players": [
+    {
+      "name": "Andy",
+      "roster": [
+        {
+          "pick": "1",
+          "filmSlug": "the-odyssey",
+          "extra": 59.0
+        },
+        {
+          "pick": "12",
+          "filmSlug": "the-social-reckoning"
+        },
+        {
+          "pick": "13",
+          "filmSlug": "elsinore"
+        },
+        {
+          "pick": "24",
+          "filmSlug": "once-upon-a-time-in-harlem"
+        },
+        {
+          "pick": "25",
+          "filmSlug": "ray-gunn"
+        },
+        {
+          "pick": "36",
+          "filmSlug": "disclosure-day",
+          "extra": 25.0
+        },
+        {
+          "pick": "37",
+          "filmSlug": "godzilla-minus-zero"
+        },
+        {
+          "pick": "48",
+          "filmSlug": "i-play-rocky"
+        },
+        {
+          "pick": "49",
+          "filmSlug": "i-swear",
+          "extra": 14.0
+        },
+        {
+          "pick": "60",
+          "filmSlug": "resident-evil"
+        }
+      ]
+    },
+    {
+      "name": "Leaves312",
+      "roster": [
+        {
+          "pick": "2",
+          "filmSlug": "wild-horse-nine"
+        },
+        {
+          "pick": "11",
+          "filmSlug": "behemoth"
+        },
+        {
+          "pick": "14",
+          "filmSlug": "all-of-a-sudden"
+        },
+        {
+          "pick": "23",
+          "filmSlug": "michael",
+          "extra": 12.0
+        },
+        {
+          "pick": "26",
+          "filmSlug": "club-kid"
+        },
+        {
+          "pick": "35",
+          "filmSlug": "possible-love"
+        },
+        {
+          "pick": "38",
+          "filmSlug": "14th"
+        },
+        {
+          "pick": "47",
+          "filmSlug": "iron-boy"
+        },
+        {
+          "pick": "50",
+          "filmSlug": "tender-loving-care"
+        },
+        {
+          "pick": "59",
+          "filmSlug": "the-drama",
+          "extra": 27.0
+        }
+      ]
+    },
+    {
+      "name": "Chief117",
+      "roster": [
+        {
+          "pick": "3",
+          "filmSlug": "the-black-ball"
+        },
+        {
+          "pick": "10",
+          "filmSlug": "fjord"
+        },
+        {
+          "pick": "15",
+          "filmSlug": "ink"
+        },
+        {
+          "pick": "22",
+          "filmSlug": "sense-and-sensibility"
+        },
+        {
+          "pick": "27",
+          "filmSlug": "minotaur"
+        },
+        {
+          "pick": "34",
+          "filmSlug": "the-adventures-of-cliff-booth"
+        },
+        {
+          "pick": "39",
+          "filmSlug": "bucking-fastard"
+        },
+        {
+          "pick": "46",
+          "filmSlug": "nirvanna-the-band-the-show-the-movie",
+          "extra": 16.0
+        },
+        {
+          "pick": "51",
+          "filmSlug": "nuisance-bear"
+        },
+        {
+          "pick": "58",
+          "filmSlug": "hunger-games-sunrise-on-the-reaping"
+        }
+      ]
+    },
+    {
+      "name": "Geoffrey",
+      "roster": [
+        {
+          "pick": "4",
+          "filmSlug": "project-hail-mary",
+          "extra": 42.0
+        },
+        {
+          "pick": "9",
+          "filmSlug": "obsession",
+          "extra": 40.0
+        },
+        {
+          "pick": "16",
+          "filmSlug": "werwulf"
+        },
+        {
+          "pick": "21",
+          "filmSlug": "toy-story-5",
+          "extra": 23.0
+        },
+        {
+          "pick": "28",
+          "filmSlug": "american-doctor"
+        },
+        {
+          "pick": "33",
+          "filmSlug": "your-mother-your-mother-your-mother"
+        },
+        {
+          "pick": "40",
+          "filmSlug": "josephine",
+          "extra": 7.0
+        },
+        {
+          "pick": "45",
+          "filmSlug": "wicker"
+        },
+        {
+          "pick": "52",
+          "filmSlug": "hoppers",
+          "extra": 27.0
+        },
+        {
+          "pick": "57",
+          "filmSlug": "avengers-doomsday"
+        }
+      ]
+    },
+    {
+      "name": "Luke",
+      "roster": [
+        {
+          "pick": "5",
+          "filmSlug": "dune-part-three"
+        },
+        {
+          "pick": "8",
+          "filmSlug": "eisenberg-musical-comedy"
+        },
+        {
+          "pick": "17",
+          "filmSlug": "fatherland"
+        },
+        {
+          "pick": "20",
+          "filmSlug": "primetime"
+        },
+        {
+          "pick": "29",
+          "filmSlug": "being-heumann"
+        },
+        {
+          "pick": "32",
+          "filmSlug": "artificial"
+        },
+        {
+          "pick": "41",
+          "filmSlug": "prima-facie"
+        },
+        {
+          "pick": "44",
+          "filmSlug": "a-statement"
+        },
+        {
+          "pick": "53",
+          "filmSlug": "bunker"
+        },
+        {
+          "pick": "56",
+          "filmSlug": "one-in-a-million"
+        }
+      ]
+    },
+    {
+      "name": "Stephen",
+      "roster": [
+        {
+          "pick": "6",
+          "filmSlug": "digger"
+        },
+        {
+          "pick": "7",
+          "filmSlug": "the-invite",
+          "extra": 24.0
+        },
+        {
+          "pick": "18",
+          "filmSlug": "wildwood"
+        },
+        {
+          "pick": "19",
+          "filmSlug": "misty-green"
+        },
+        {
+          "pick": "30",
+          "filmSlug": "rose"
+        },
+        {
+          "pick": "31",
+          "filmSlug": "to-hold-a-mountain"
+        },
+        {
+          "pick": "42",
+          "filmSlug": "paper-tiger"
+        },
+        {
+          "pick": "43",
+          "filmSlug": "if-i-go-will-they-miss-me"
+        },
+        {
+          "pick": "54",
+          "filmSlug": "whalefall"
+        },
+        {
+          "pick": "55",
+          "filmSlug": "the-meltdown"
+        }
+      ]
+    }
+  ]
+}

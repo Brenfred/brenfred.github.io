@@ -1,0 +1,301 @@
+{
+  "slug": "bucking-draftstards",
+  "name": "Bucking Draftstards",
+  "season": "2026–2027",
+  "players": [
+    {
+      "name": "Alexei",
+      "roster": [
+        {
+          "pick": "1",
+          "filmSlug": "the-odyssey",
+          "extra": 39.0
+        },
+        {
+          "pick": "12",
+          "filmSlug": "elsinore"
+        },
+        {
+          "pick": "13",
+          "filmSlug": "behemoth"
+        },
+        {
+          "pick": "24",
+          "filmSlug": "toy-story-5",
+          "extra": 33.0
+        },
+        {
+          "pick": "25",
+          "filmSlug": "josephine"
+        },
+        {
+          "pick": "36",
+          "filmSlug": "minotaur",
+          "extra": 14.0
+        },
+        {
+          "pick": "37",
+          "filmSlug": "i-swear",
+          "extra": 26.0
+        },
+        {
+          "pick": "48",
+          "filmSlug": "to-hold-a-mountain"
+        },
+        {
+          "pick": "49",
+          "filmSlug": "disclosure-day",
+          "extra": 39.0
+        },
+        {
+          "pick": "60",
+          "filmSlug": "the-adventures-of-cliff-booth"
+        }
+      ]
+    },
+    {
+      "name": "Cameron",
+      "roster": [
+        {
+          "pick": "2",
+          "filmSlug": "project-hail-mary",
+          "extra": 34.0
+        },
+        {
+          "pick": "11",
+          "filmSlug": "the-invite",
+          "extra": 32.0
+        },
+        {
+          "pick": "14",
+          "filmSlug": "primetime"
+        },
+        {
+          "pick": "23",
+          "filmSlug": "fatherland",
+          "extra": 7.0
+        },
+        {
+          "pick": "26",
+          "filmSlug": "artificial"
+        },
+        {
+          "pick": "35",
+          "filmSlug": "misty-green"
+        },
+        {
+          "pick": "38",
+          "filmSlug": "being-heumann"
+        },
+        {
+          "pick": "47",
+          "filmSlug": "once-upon-a-time-in-harlem",
+          "extra": 8.0
+        },
+        {
+          "pick": "50",
+          "filmSlug": "a-statement"
+        },
+        {
+          "pick": "59",
+          "filmSlug": "coward",
+          "extra": 3.0
+        }
+      ]
+    },
+    {
+      "name": "Harbere",
+      "roster": [
+        {
+          "pick": "3",
+          "filmSlug": "the-black-ball",
+          "extra": 9.0
+        },
+        {
+          "pick": "10",
+          "filmSlug": "ink"
+        },
+        {
+          "pick": "15",
+          "filmSlug": "all-of-a-sudden",
+          "extra": 10.0
+        },
+        {
+          "pick": "22",
+          "filmSlug": "werwulf"
+        },
+        {
+          "pick": "27",
+          "filmSlug": "american-doctor"
+        },
+        {
+          "pick": "34",
+          "filmSlug": "teenage-sex-and-death-at-camp-miasma",
+          "extra": 14.0
+        },
+        {
+          "pick": "39",
+          "filmSlug": "your-mother-your-mother-your-mother"
+        },
+        {
+          "pick": "46",
+          "filmSlug": "godzilla-minus-zero"
+        },
+        {
+          "pick": "51",
+          "filmSlug": "shaun-the-sheep-the-beast-of-mossy-bottom"
+        },
+        {
+          "pick": "58",
+          "filmSlug": "michael",
+          "extra": 10.0
+        }
+      ]
+    },
+    {
+      "name": "Vinci",
+      "roster": [
+        {
+          "pick": "4",
+          "filmSlug": "wild-horse-nine"
+        },
+        {
+          "pick": "9",
+          "filmSlug": "fjord",
+          "extra": 8.0
+        },
+        {
+          "pick": "16",
+          "filmSlug": "club-kid",
+          "extra": 8.0
+        },
+        {
+          "pick": "21",
+          "filmSlug": "iron-boy"
+        },
+        {
+          "pick": "28",
+          "filmSlug": "bunker"
+        },
+        {
+          "pick": "33",
+          "filmSlug": "rose"
+        },
+        {
+          "pick": "40",
+          "filmSlug": "one-in-a-million"
+        },
+        {
+          "pick": "45",
+          "filmSlug": "the-only-living-pickpocket-in-new-york"
+        },
+        {
+          "pick": "52",
+          "filmSlug": "wicker"
+        },
+        {
+          "pick": "57",
+          "filmSlug": "clarissa",
+          "extra": 6.0
+        }
+      ]
+    },
+    {
+      "name": "Pa",
+      "roster": [
+        {
+          "pick": "5",
+          "filmSlug": "dune-part-three"
+        },
+        {
+          "pick": "8",
+          "filmSlug": "eisenberg-musical-comedy"
+        },
+        {
+          "pick": "17",
+          "filmSlug": "a-long-winter"
+        },
+        {
+          "pick": "20",
+          "filmSlug": "wildwood"
+        },
+        {
+          "pick": "29",
+          "filmSlug": "the-drama",
+          "extra": 32.0
+        },
+        {
+          "pick": "32",
+          "filmSlug": "union-town",
+          "extra": 7.0
+        },
+        {
+          "pick": "41",
+          "filmSlug": "tender-loving-care"
+        },
+        {
+          "pick": "44",
+          "filmSlug": "woman-unknown"
+        },
+        {
+          "pick": "53",
+          "filmSlug": "blue-heron",
+          "extra": 9.0
+        },
+        {
+          "pick": "56",
+          "filmSlug": "i-see-buildings-fall-like-lightning",
+          "extra": 8.0
+        }
+      ]
+    },
+    {
+      "name": "Morri",
+      "roster": [
+        {
+          "pick": "6",
+          "filmSlug": "digger"
+        },
+        {
+          "pick": "7",
+          "filmSlug": "obsession",
+          "extra": 32.0
+        },
+        {
+          "pick": "18",
+          "filmSlug": "possible-love"
+        },
+        {
+          "pick": "19",
+          "filmSlug": "the-social-reckoning"
+        },
+        {
+          "pick": "30",
+          "filmSlug": "bucking-fastard"
+        },
+        {
+          "pick": "31",
+          "filmSlug": "hoppers",
+          "extra": 28.0
+        },
+        {
+          "pick": "42",
+          "filmSlug": "sense-and-sensibility"
+        },
+        {
+          "pick": "43",
+          "filmSlug": "14th"
+        },
+        {
+          "pick": "54",
+          "filmSlug": "ray-gunn"
+        },
+        {
+          "pick": "55",
+          "filmSlug": "nirvanna-the-band-the-show-the-movie",
+          "extra": 16.0
+        }
+      ]
+    }
+  ]
+}

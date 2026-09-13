@@ -1,0 +1,292 @@
+{
+  "slug": "bucking-morbtards",
+  "name": "Bucking Morbtards",
+  "season": "2026–2027",
+  "players": [
+    {
+      "name": "J",
+      "roster": [
+        {
+          "pick": "1",
+          "filmSlug": "the-odyssey",
+          "extra": 56.0
+        },
+        {
+          "pick": "12",
+          "filmSlug": "all-of-a-sudden"
+        },
+        {
+          "pick": "13",
+          "filmSlug": "ink"
+        },
+        {
+          "pick": "24",
+          "filmSlug": "teenage-sex-and-death-at-camp-miasma",
+          "extra": 32.0
+        },
+        {
+          "pick": "25",
+          "filmSlug": "iron-boy"
+        },
+        {
+          "pick": "36",
+          "filmSlug": "one-in-a-million"
+        },
+        {
+          "pick": "37",
+          "filmSlug": "rose"
+        },
+        {
+          "pick": "48",
+          "filmSlug": "the-only-living-pickpocket-in-new-york"
+        },
+        {
+          "pick": "49",
+          "filmSlug": "a-long-winter"
+        },
+        {
+          "pick": "60",
+          "filmSlug": "la-gradiva",
+          "extra": 16.0
+        }
+      ]
+    },
+    {
+      "name": "Lucas",
+      "roster": [
+        {
+          "pick": "2",
+          "filmSlug": "the-black-ball"
+        },
+        {
+          "pick": "11",
+          "filmSlug": "elsinore"
+        },
+        {
+          "pick": "14",
+          "filmSlug": "behemoth"
+        },
+        {
+          "pick": "23",
+          "filmSlug": "american-doctor",
+          "extra": 8.0
+        },
+        {
+          "pick": "26",
+          "filmSlug": "minotaur"
+        },
+        {
+          "pick": "35",
+          "filmSlug": "ray-gunn"
+        },
+        {
+          "pick": "38",
+          "filmSlug": "godzilla-minus-zero"
+        },
+        {
+          "pick": "47",
+          "filmSlug": "bucking-fastard"
+        },
+        {
+          "pick": "50",
+          "filmSlug": "i-swear",
+          "extra": 24.0
+        },
+        {
+          "pick": "59",
+          "filmSlug": "wuthering-heights",
+          "extra": 21.0
+        }
+      ]
+    },
+    {
+      "name": "Gus",
+      "roster": [
+        {
+          "pick": "3",
+          "filmSlug": "digger"
+        },
+        {
+          "pick": "10",
+          "filmSlug": "dune-part-three"
+        },
+        {
+          "pick": "15",
+          "filmSlug": "eisenberg-musical-comedy"
+        },
+        {
+          "pick": "22",
+          "filmSlug": "fatherland"
+        },
+        {
+          "pick": "27",
+          "filmSlug": "josephine",
+          "extra": 7.0
+        },
+        {
+          "pick": "34",
+          "filmSlug": "hoppers",
+          "extra": 33.0
+        },
+        {
+          "pick": "39",
+          "filmSlug": "brand-new-day",
+          "extra": 39.0
+        },
+        {
+          "pick": "46",
+          "filmSlug": "gentle-monster"
+        },
+        {
+          "pick": "51",
+          "filmSlug": "prima-facie"
+        },
+        {
+          "pick": "58",
+          "filmSlug": "avengers-doomsday"
+        }
+      ]
+    },
+    {
+      "name": "Gaslen",
+      "roster": [
+        {
+          "pick": "4",
+          "filmSlug": "wild-horse-nine"
+        },
+        {
+          "pick": "9",
+          "filmSlug": "fjord"
+        },
+        {
+          "pick": "16",
+          "filmSlug": "the-adventures-of-cliff-booth"
+        },
+        {
+          "pick": "21",
+          "filmSlug": "possible-love"
+        },
+        {
+          "pick": "28",
+          "filmSlug": "once-upon-a-time-in-harlem"
+        },
+        {
+          "pick": "33",
+          "filmSlug": "wildwood"
+        },
+        {
+          "pick": "40",
+          "filmSlug": "your-mother-your-mother-your-mother"
+        },
+        {
+          "pick": "45",
+          "filmSlug": "forgotten-island"
+        },
+        {
+          "pick": "52",
+          "filmSlug": "a-statement"
+        },
+        {
+          "pick": "57",
+          "filmSlug": "clarissa"
+        }
+      ]
+    },
+    {
+      "name": "Seth",
+      "roster": [
+        {
+          "pick": "5",
+          "filmSlug": "the-invite",
+          "extra": 33.0
+        },
+        {
+          "pick": "8",
+          "filmSlug": "the-social-reckoning"
+        },
+        {
+          "pick": "17",
+          "filmSlug": "bunker"
+        },
+        {
+          "pick": "20",
+          "filmSlug": "toy-story-5",
+          "extra": 39.0
+        },
+        {
+          "pick": "29",
+          "filmSlug": "misty-green"
+        },
+        {
+          "pick": "32",
+          "filmSlug": "being-heumann"
+        },
+        {
+          "pick": "41",
+          "filmSlug": "sense-and-sensibility"
+        },
+        {
+          "pick": "44",
+          "filmSlug": "i-play-rocky"
+        },
+        {
+          "pick": "53",
+          "filmSlug": "paper-tiger"
+        },
+        {
+          "pick": "56",
+          "filmSlug": "coward"
+        }
+      ]
+    },
+    {
+      "name": "Luciano",
+      "roster": [
+        {
+          "pick": "6",
+          "filmSlug": "project-hail-mary",
+          "extra": 41.0
+        },
+        {
+          "pick": "7",
+          "filmSlug": "obsession",
+          "extra": 42.0
+        },
+        {
+          "pick": "18",
+          "filmSlug": "werwulf"
+        },
+        {
+          "pick": "19",
+          "filmSlug": "club-kid"
+        },
+        {
+          "pick": "30",
+          "filmSlug": "primetime"
+        },
+        {
+          "pick": "31",
+          "filmSlug": "14th"
+        },
+        {
+          "pick": "42",
+          "filmSlug": "michael",
+          "extra": 17.0
+        },
+        {
+          "pick": "43",
+          "filmSlug": "disclosure-day",
+          "extra": 29.0
+        },
+        {
+          "pick": "54",
+          "filmSlug": "artificial"
+        },
+        {
+          "pick": "55",
+          "filmSlug": "madden"
+        }
+      ]
+    }
+  ]
+}

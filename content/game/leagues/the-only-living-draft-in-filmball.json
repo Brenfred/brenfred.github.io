@@ -1,0 +1,294 @@
+{
+  "slug": "the-only-living-draft-in-filmball",
+  "name": "The Only Living Draft in Filmball",
+  "season": "2026–2027",
+  "players": [
+    {
+      "name": "Alex",
+      "roster": [
+        {
+          "pick": "1",
+          "filmSlug": "the-odyssey",
+          "extra": 52.0
+        },
+        {
+          "pick": "12",
+          "filmSlug": "eisenberg-musical-comedy"
+        },
+        {
+          "pick": "13",
+          "filmSlug": "werwulf"
+        },
+        {
+          "pick": "24",
+          "filmSlug": "toy-story-5",
+          "extra": 24.0
+        },
+        {
+          "pick": "25",
+          "filmSlug": "american-doctor",
+          "extra": 16.0
+        },
+        {
+          "pick": "36",
+          "filmSlug": "minotaur"
+        },
+        {
+          "pick": "37",
+          "filmSlug": "godzilla-minus-zero"
+        },
+        {
+          "pick": "48",
+          "filmSlug": "the-drama",
+          "extra": 16.0
+        },
+        {
+          "pick": "49",
+          "filmSlug": "the-devil-wears-prada-2",
+          "extra": 18.0
+        },
+        {
+          "pick": "60",
+          "filmSlug": "tony",
+          "extra": 12.0
+        }
+      ]
+    },
+    {
+      "name": "Ashes",
+      "roster": [
+        {
+          "pick": "2",
+          "filmSlug": "wild-horse-nine"
+        },
+        {
+          "pick": "11",
+          "filmSlug": "elsinore"
+        },
+        {
+          "pick": "14",
+          "filmSlug": "primetime"
+        },
+        {
+          "pick": "23",
+          "filmSlug": "wildwood"
+        },
+        {
+          "pick": "26",
+          "filmSlug": "bunker"
+        },
+        {
+          "pick": "35",
+          "filmSlug": "sense-and-sensibility"
+        },
+        {
+          "pick": "38",
+          "filmSlug": "clayface"
+        },
+        {
+          "pick": "47",
+          "filmSlug": "gentle-monster"
+        },
+        {
+          "pick": "50",
+          "filmSlug": "the-only-living-pickpocket-in-new-york"
+        },
+        {
+          "pick": "59",
+          "filmSlug": "backrooms",
+          "extra": 16.0
+        }
+      ]
+    },
+    {
+      "name": "Ty",
+      "roster": [
+        {
+          "pick": "3",
+          "filmSlug": "project-hail-mary",
+          "extra": 42.0
+        },
+        {
+          "pick": "10",
+          "filmSlug": "fjord",
+          "extra": 8.0
+        },
+        {
+          "pick": "15",
+          "filmSlug": "club-kid"
+        },
+        {
+          "pick": "22",
+          "filmSlug": "teenage-sex-and-death-at-camp-miasma",
+          "extra": 16.0
+        },
+        {
+          "pick": "27",
+          "filmSlug": "forgotten-island"
+        },
+        {
+          "pick": "34",
+          "filmSlug": "shaun-the-sheep-the-beast-of-mossy-bottom"
+        },
+        {
+          "pick": "39",
+          "filmSlug": "hoppers",
+          "extra": 22.0
+        },
+        {
+          "pick": "46",
+          "filmSlug": "14th"
+        },
+        {
+          "pick": "51",
+          "filmSlug": "look-back"
+        },
+        {
+          "pick": "58",
+          "filmSlug": "tender-loving-care"
+        }
+      ]
+    },
+    {
+      "name": "Braedan",
+      "roster": [
+        {
+          "pick": "4",
+          "filmSlug": "digger"
+        },
+        {
+          "pick": "9",
+          "filmSlug": "behemoth"
+        },
+        {
+          "pick": "16",
+          "filmSlug": "ink"
+        },
+        {
+          "pick": "21",
+          "filmSlug": "josephine"
+        },
+        {
+          "pick": "28",
+          "filmSlug": "once-upon-a-time-in-harlem"
+        },
+        {
+          "pick": "33",
+          "filmSlug": "the-adventures-of-cliff-booth"
+        },
+        {
+          "pick": "40",
+          "filmSlug": "a-long-winter"
+        },
+        {
+          "pick": "45",
+          "filmSlug": "tangles"
+        },
+        {
+          "pick": "52",
+          "filmSlug": "everytime"
+        },
+        {
+          "pick": "57",
+          "filmSlug": "artificial"
+        }
+      ]
+    },
+    {
+      "name": "Tdx",
+      "roster": [
+        {
+          "pick": "5",
+          "filmSlug": "the-black-ball"
+        },
+        {
+          "pick": "8",
+          "filmSlug": "obsession",
+          "extra": 24.0
+        },
+        {
+          "pick": "17",
+          "filmSlug": "all-of-a-sudden"
+        },
+        {
+          "pick": "20",
+          "filmSlug": "misty-green"
+        },
+        {
+          "pick": "29",
+          "filmSlug": "possible-love"
+        },
+        {
+          "pick": "32",
+          "filmSlug": "being-heumann"
+        },
+        {
+          "pick": "41",
+          "filmSlug": "iron-boy"
+        },
+        {
+          "pick": "44",
+          "filmSlug": "prima-facie"
+        },
+        {
+          "pick": "53",
+          "filmSlug": "your-mother-your-mother-your-mother"
+        },
+        {
+          "pick": "56",
+          "filmSlug": "michael",
+          "extra": 1.0
+        }
+      ]
+    },
+    {
+      "name": "Aaron",
+      "roster": [
+        {
+          "pick": "6",
+          "filmSlug": "dune-part-three"
+        },
+        {
+          "pick": "7",
+          "filmSlug": "the-invite",
+          "extra": 29.0
+        },
+        {
+          "pick": "18",
+          "filmSlug": "the-social-reckoning"
+        },
+        {
+          "pick": "19",
+          "filmSlug": "fatherland"
+        },
+        {
+          "pick": "30",
+          "filmSlug": "disclosure-day",
+          "extra": 15.0
+        },
+        {
+          "pick": "31",
+          "filmSlug": "nuisance-bear"
+        },
+        {
+          "pick": "42",
+          "filmSlug": "a-statement"
+        },
+        {
+          "pick": "43",
+          "filmSlug": "rose"
+        },
+        {
+          "pick": "54",
+          "filmSlug": "brand-new-day",
+          "extra": 17.0
+        },
+        {
+          "pick": "55",
+          "filmSlug": "to-hold-a-mountain",
+          "extra": 7.0
+        }
+      ]
+    }
+  ]
+}

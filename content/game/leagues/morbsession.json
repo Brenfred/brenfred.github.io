@@ -1,0 +1,296 @@
+{
+  "slug": "morbsession",
+  "name": "Morbsession",
+  "season": "2026–2027",
+  "players": [
+    {
+      "name": "Jxmmed",
+      "roster": [
+        {
+          "pick": "1",
+          "filmSlug": "the-odyssey",
+          "extra": 64.0
+        },
+        {
+          "pick": "12",
+          "filmSlug": "all-of-a-sudden"
+        },
+        {
+          "pick": "13",
+          "filmSlug": "ink"
+        },
+        {
+          "pick": "24",
+          "filmSlug": "wildwood"
+        },
+        {
+          "pick": "25",
+          "filmSlug": "rose"
+        },
+        {
+          "pick": "36",
+          "filmSlug": "primetime",
+          "extra": 14.0
+        },
+        {
+          "pick": "37",
+          "filmSlug": "prima-facie"
+        },
+        {
+          "pick": "48",
+          "filmSlug": "clayface"
+        },
+        {
+          "pick": "49",
+          "filmSlug": "avengers-doomsday"
+        },
+        {
+          "pick": "59",
+          "filmSlug": "the-drama",
+          "extra": 48.0
+        }
+      ]
+    },
+    {
+      "name": "Banjo",
+      "roster": [
+        {
+          "pick": "2",
+          "filmSlug": "the-black-ball"
+        },
+        {
+          "pick": "11",
+          "filmSlug": "behemoth",
+          "extra": 23.0
+        },
+        {
+          "pick": "14",
+          "filmSlug": "the-social-reckoning"
+        },
+        {
+          "pick": "23",
+          "filmSlug": "american-doctor"
+        },
+        {
+          "pick": "26",
+          "filmSlug": "the-adventures-of-cliff-booth"
+        },
+        {
+          "pick": "35",
+          "filmSlug": "ray-gunn"
+        },
+        {
+          "pick": "38",
+          "filmSlug": "sense-and-sensibility"
+        },
+        {
+          "pick": "47",
+          "filmSlug": "wuthering-heights",
+          "extra": 14.0
+        },
+        {
+          "pick": "50",
+          "filmSlug": "forgotten-island"
+        },
+        {
+          "pick": "60",
+          "filmSlug": "teenage-sex-and-death-at-camp-miasma",
+          "extra": 37.0
+        }
+      ]
+    },
+    {
+      "name": "Sean",
+      "roster": [
+        {
+          "pick": "3",
+          "filmSlug": "wild-horse-nine",
+          "extra": 8.0
+        },
+        {
+          "pick": "10",
+          "filmSlug": "fjord"
+        },
+        {
+          "pick": "15",
+          "filmSlug": "werwulf"
+        },
+        {
+          "pick": "22",
+          "filmSlug": "toy-story-5",
+          "extra": 36.0
+        },
+        {
+          "pick": "27",
+          "filmSlug": "once-upon-a-time-in-harlem"
+        },
+        {
+          "pick": "34",
+          "filmSlug": "disclosure-day",
+          "extra": 40.0
+        },
+        {
+          "pick": "39",
+          "filmSlug": "hoppers",
+          "extra": 35.0
+        },
+        {
+          "pick": "46",
+          "filmSlug": "tender-loving-care"
+        },
+        {
+          "pick": "51",
+          "filmSlug": "wicker"
+        },
+        {
+          "pick": "58",
+          "filmSlug": "paper-tiger"
+        }
+      ]
+    },
+    {
+      "name": "Yaboy",
+      "roster": [
+        {
+          "pick": "4",
+          "filmSlug": "digger"
+        },
+        {
+          "pick": "9",
+          "filmSlug": "eisenberg-musical-comedy",
+          "extra": 8.0
+        },
+        {
+          "pick": "16",
+          "filmSlug": "club-kid",
+          "extra": 15.0
+        },
+        {
+          "pick": "21",
+          "filmSlug": "possible-love"
+        },
+        {
+          "pick": "28",
+          "filmSlug": "a-statement"
+        },
+        {
+          "pick": "33",
+          "filmSlug": "godzilla-minus-zero"
+        },
+        {
+          "pick": "40",
+          "filmSlug": "shaun-the-sheep-the-beast-of-mossy-bottom"
+        },
+        {
+          "pick": "45",
+          "filmSlug": "bucking-fastard"
+        },
+        {
+          "pick": "52",
+          "filmSlug": "union-town"
+        },
+        {
+          "pick": "57",
+          "filmSlug": "resident-evil"
+        }
+      ]
+    },
+    {
+      "name": "Dylan",
+      "roster": [
+        {
+          "pick": "5",
+          "filmSlug": "dune-part-three"
+        },
+        {
+          "pick": "8",
+          "filmSlug": "the-invite",
+          "extra": 41.0
+        },
+        {
+          "pick": "17",
+          "filmSlug": "misty-green"
+        },
+        {
+          "pick": "20",
+          "filmSlug": "iron-boy"
+        },
+        {
+          "pick": "29",
+          "filmSlug": "your-mother-your-mother-your-mother"
+        },
+        {
+          "pick": "32",
+          "filmSlug": "i-swear",
+          "extra": 28.0
+        },
+        {
+          "pick": "41",
+          "filmSlug": "one-in-a-million"
+        },
+        {
+          "pick": "44",
+          "filmSlug": "the-only-living-pickpocket-in-new-york"
+        },
+        {
+          "pick": "53",
+          "filmSlug": "blue-heron",
+          "extra": 22.0
+        },
+        {
+          "pick": "56",
+          "filmSlug": "i-play-rocky"
+        }
+      ]
+    },
+    {
+      "name": "Bren",
+      "roster": [
+        {
+          "pick": "6",
+          "filmSlug": "obsession",
+          "extra": 41.0
+        },
+        {
+          "pick": "7",
+          "filmSlug": "project-hail-mary",
+          "extra": 46.0
+        },
+        {
+          "pick": "18",
+          "filmSlug": "elsinore"
+        },
+        {
+          "pick": "19",
+          "filmSlug": "michael",
+          "extra": 38.0
+        },
+        {
+          "pick": "30",
+          "filmSlug": "fatherland"
+        },
+        {
+          "pick": "31",
+          "filmSlug": "josephine",
+          "extra": 8.0
+        },
+        {
+          "pick": "42",
+          "filmSlug": "minotaur"
+        },
+        {
+          "pick": "43",
+          "filmSlug": "a-long-winter"
+        },
+        {
+          "pick": "54",
+          "filmSlug": "being-heumann"
+        },
+        {
+          "pick": "55",
+          "filmSlug": "bunker"
+        }
+      ]
+    }
+  ]
+}
