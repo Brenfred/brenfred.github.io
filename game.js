@@ -73,6 +73,95 @@
     });
   }
 
+  // ---- TMDB poster fallback -----------------------------------------------
+  // When a repo poster 404s, look the film up on TMDB and use its poster.
+  // Requires a (free) TMDB API key in game.html: <body data-tmdb-key="...">.
+  // Repo posters always win; TMDB is only consulted on a missing jpg.
+  // Results cache in localStorage for 30 days.
+
+  var TMDB_KEY = document.body.getAttribute('data-tmdb-key') || '';
+  var TMDB_IMG = 'https://image.tmdb.org/t/p/w342';
+  var tmdbMemo = {};
+  var TMDB_CACHE_KEY = 'fb-tmdb-v1';
+  var tmdbCache = null;
+
+  function tmdbLoadCache() {
+    if (tmdbCache) return tmdbCache;
+    tmdbCache = {};
+    try {
+      var raw = window.localStorage.getItem(TMDB_CACHE_KEY);
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        if (parsed && parsed.ts && Date.now() - parsed.ts < 30 * 864e5) {
+          tmdbCache = parsed.map || {};
+        }
+      }
+    } catch (e) { /* private mode etc. */ }
+    return tmdbCache;
+  }
+
+  function tmdbSaveCache() {
+    try {
+      window.localStorage.setItem(TMDB_CACHE_KEY,
+        JSON.stringify({ ts: Date.now(), map: tmdbCache }));
+    } catch (e) { /* ignore */ }
+  }
+
+  function tmdbSearch(title, year) {
+    var url = 'https://api.themoviedb.org/3/search/movie?api_key=' + TMDB_KEY
+      + '&query=' + encodeURIComponent(title)
+      + (year ? '&primary_release_year=' + year : '');
+    return fetch(url).then(function (r) {
+      if (!r.ok) throw new Error('tmdb ' + r.status);
+      return r.json();
+    }).then(function (d) {
+      var hit = (d.results || []).filter(function (x) { return x.poster_path; })[0];
+      return hit ? hit.poster_path : null;
+    });
+  }
+
+  function tmdbPosterPath(slug, title, year) {
+    var cache = tmdbLoadCache();
+    if (slug in cache) return Promise.resolve(cache[slug]);
+    if (tmdbMemo[slug]) return tmdbMemo[slug];
+    tmdbMemo[slug] = tmdbSearch(title, year).then(function (path) {
+      if (!path && year) return tmdbSearch(title, null);
+      return path;
+    }).then(function (path) {
+      cache[slug] = path || null;
+      tmdbSaveCache();
+      return path;
+    }).catch(function () { return null; });
+    return tmdbMemo[slug];
+  }
+
+  // Global handler wired to <img onerror>.
+  window.fbPosterFallback = function (img) {
+    var wrap = img.parentNode;
+    img.onerror = null; // one shot — a failing TMDB URL must not loop
+    if (!TMDB_KEY) { wrap.classList.add('is-missing'); return; }
+    var slug = img.getAttribute('data-slug') || '';
+    var title = img.getAttribute('data-ttl') || '';
+    var year = img.getAttribute('data-yr') || '';
+    if (!title) { wrap.classList.add('is-missing'); return; }
+    tmdbPosterPath(slug, title, year).then(function (path) {
+      if (path) {
+        img.src = TMDB_IMG + path;
+        wrap.classList.remove('is-missing');
+      } else {
+        wrap.classList.add('is-missing');
+      }
+    });
+  };
+
+  function posterImgHTML(film) {
+    var year = film.pool === false ? '2025' : '2026';
+    return '<img src="' + esc(posterUrl(film.posterSlug))
+      + '" alt="" loading="lazy" data-slug="' + esc(film.filmSlug)
+      + '" data-ttl="' + esc(film.title) + '" data-yr="' + year
+      + '" onerror="fbPosterFallback(this)">';
+  }
+
   // ---- points math --------------------------------------------------------
 
   // Per-film breakdown: { total, sources: [{id, points}] } where id is a show
@@ -122,6 +211,12 @@
       bd.sources.forEach(function (s) {
         perSource[s.id] = (perSource[s.id] || 0) + s.points;
       });
+      // League-specific points for this film (ratings/views) live on the slot.
+      var extra = Number(slot.extra) || 0;
+      if (extra !== 0) {
+        total += extra;
+        perSource.misc = (perSource.misc || 0) + extra;
+      }
     });
     // Prediction/bonus points live on the player, not a film.
     var bonus = Number(player.bonus) || 0;
@@ -167,13 +262,12 @@
         + esc(pickLabel(slot.pick)) + '</span>'
         + '<span class="game-roster__title">' + esc(slot.filmSlug) + '</span></div>';
     }
-    var bd = filmBreakdown(film);
+    var pts = filmBreakdown(film).total + (Number(slot.extra) || 0);
     return '<div class="game-roster__film">'
       + '<span class="game-roster__pick">' + esc(pickLabel(slot.pick)) + '</span>'
-      + '<span class="game-roster__poster"><img src="' + esc(posterUrl(film.posterSlug))
-        + '" alt="" loading="lazy" onerror="this.parentNode.classList.add(\'is-missing\')"></span>'
+      + '<span class="game-roster__poster">' + posterImgHTML(film) + '</span>'
       + '<span class="game-roster__title">' + esc(film.title) + '</span>'
-      + '<span class="game-roster__pts">' + bd.total.toLocaleString() + '</span>'
+      + '<span class="game-roster__pts">' + pts.toLocaleString() + '</span>'
       + '</div>';
   }
 
@@ -241,8 +335,7 @@
     el.innerHTML = films.map(function (f) {
       var bd = filmBreakdown(f);
       return '<a class="game-pool__card" href="film.html?slug=' + esc(f.filmSlug) + '">'
-        + '<span class="game-pool__poster"><img src="' + esc(posterUrl(f.posterSlug))
-          + '" alt="" loading="lazy" onerror="this.parentNode.classList.add(\'is-missing\')"></span>'
+        + '<span class="game-pool__poster">' + posterImgHTML(f) + '</span>'
         + '<span class="game-pool__title">' + esc(f.title) + '</span>'
         + '<span class="game-pool__pts">' + bd.total.toLocaleString() + ' PTS</span>'
         + '</a>';
