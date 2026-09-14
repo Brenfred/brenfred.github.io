@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v25-prospects-polish)
+   FANTASY FILMBALL — content.js (v26-tmdb-poster-fallback)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -42,6 +42,93 @@
     var div = document.createElement('div');
     div.textContent = s == null ? '' : String(s);
     return div.innerHTML;
+  }
+
+  // ---- TMDB poster fallback -----------------------------------------------
+  // Ported from game.js. When a repo poster (posters/<slug>.jpg) 404s, look
+  // the film up on TMDB and swap in its poster. Repo posters always win —
+  // TMDB is only consulted on a missing jpg. Results cache in localStorage
+  // for 30 days. Key: <body data-tmdb-key="..."> overrides the default.
+
+  var TMDB_KEY = document.body.getAttribute('data-tmdb-key') || 'bf84fd9b1ce1629b4d4bdedd9781a5cb';
+  var TMDB_IMG = 'https://image.tmdb.org/t/p/w342';
+  var TMDB_CACHE_KEY = 'fb-tmdb-v1';
+  var tmdbMemo = {};
+  var tmdbCache = null;
+
+  function tmdbLoadCache() {
+    if (tmdbCache) return tmdbCache;
+    tmdbCache = {};
+    try {
+      var raw = window.localStorage.getItem(TMDB_CACHE_KEY);
+      if (raw) {
+        var parsed = JSON.parse(raw);
+        if (parsed && parsed.ts && Date.now() - parsed.ts < 30 * 864e5) {
+          tmdbCache = parsed.map || {};
+        }
+      }
+    } catch (e) { /* private mode etc. */ }
+    return tmdbCache;
+  }
+
+  function tmdbSaveCache() {
+    try {
+      window.localStorage.setItem(TMDB_CACHE_KEY,
+        JSON.stringify({ ts: Date.now(), map: tmdbCache }));
+    } catch (e) { /* ignore */ }
+  }
+
+  function tmdbSearch(title, year) {
+    var url = 'https://api.themoviedb.org/3/search/movie?api_key=' + TMDB_KEY
+      + '&query=' + encodeURIComponent(title)
+      + (year ? '&primary_release_year=' + year : '');
+    return fetch(url).then(function (r) {
+      if (!r.ok) throw new Error('tmdb ' + r.status);
+      return r.json();
+    }).then(function (d) {
+      var hit = (d.results || []).filter(function (x) { return x.poster_path; })[0];
+      return hit ? hit.poster_path : null;
+    });
+  }
+
+  function tmdbPosterPath(slug, title, year) {
+    var cache = tmdbLoadCache();
+    if (slug in cache) return Promise.resolve(cache[slug]);
+    if (tmdbMemo[slug]) return tmdbMemo[slug];
+    tmdbMemo[slug] = tmdbSearch(title, year).then(function (path) {
+      if (!path && year) return tmdbSearch(title, null);
+      return path;
+    }).then(function (path) {
+      cache[slug] = path || null;
+      tmdbSaveCache();
+      return path;
+    }).catch(function () { return null; });
+    return tmdbMemo[slug];
+  }
+
+  // Global handler wired to <img onerror>. Hides the img (previous
+  // behaviour) when TMDB has nothing either, so placeholders still show.
+  window.fbPosterFallback = function (img) {
+    img.onerror = null; // one shot — a failing TMDB URL must not loop
+    var slug = img.getAttribute('data-slug') || '';
+    var title = img.getAttribute('data-ttl') || '';
+    var year = img.getAttribute('data-yr') || '';
+    if (!TMDB_KEY || !title) { img.style.display = 'none'; return; }
+    tmdbPosterPath(slug, title, year).then(function (path) {
+      if (path) { img.src = TMDB_IMG + path; img.style.display = ''; }
+      else { img.style.display = 'none'; }
+    });
+  };
+
+  // Attribute string for poster <img> tags so fbPosterFallback can look
+  // the film up. Year comes from a film record's releaseDate when present.
+  function filmYear(rec) {
+    var m = String((rec && rec.releaseDate) || '').match(/\b(20\d\d)\b/);
+    return m ? m[1] : '2026';
+  }
+  function posterFallbackAttrs(slug, title, year) {
+    return ' data-slug="' + esc(slug || '') + '" data-ttl="' + esc(title || '')
+      + '" data-yr="' + esc(year || '2026') + '" onerror="fbPosterFallback(this)"';
   }
 
   /**
@@ -690,7 +777,7 @@
     var inner =
       '<a href="' + href + '" class="review-card__image"' + imgInlineStyle + '>' +
         imageBadgeHTML +
-        '<img src="' + esc(posterPath) + '" alt="' + esc(film) + ' poster" class="review-card__poster" loading="lazy" onerror="this.style.display=\'none\'">' +
+        '<img src="' + esc(posterPath) + '" alt="' + esc(film) + ' poster" class="review-card__poster" loading="lazy"' + posterFallbackAttrs(posterSlug, film) + '>' +
         '<div class="review-card__image-placeholder">' + esc(film) + '</div>' +
       '</a>' +
       '<div class="review-card__text"' + textInlineStyle + '>' +
@@ -816,7 +903,7 @@
         posterHTML =
           '<a href="' + href + '" class="archive-card__poster">' +
             badgeHTML +
-            '<img src="' + esc(posterPath) + '" alt="' + esc(film || headline) + ' poster" loading="lazy" onerror="this.style.display=\'none\'">' +
+            '<img src="' + esc(posterPath) + '" alt="' + esc(film || headline) + ' poster" loading="lazy"' + posterFallbackAttrs(r.posterSlug, film) + '>' +
             '<div class="archive-card__poster-fallback">' + esc(film || headline) + '</div>' +
           '</a>';
       } else {
@@ -964,6 +1051,10 @@
     var img = $('.hero__poster', heroBlock);
     if (img) {
       if (posterPath) {
+        img.setAttribute('data-slug', posterSlug);
+        img.setAttribute('data-ttl', film || '');
+        img.setAttribute('data-yr', '2026');
+        img.onerror = function () { fbPosterFallback(img); };
         img.src = posterPath;
         img.alt = (film || hero.title || '') + ' poster';
         img.style.display = '';
@@ -1709,7 +1800,7 @@
         var href = slug ? ('film.html?slug=' + encodeURIComponent(slug)) : '#';
         return '<a href="' + href + '" class="film-tile">' +
           '<div class="film-tile__image">' +
-            (poster ? '<img src="posters/' + esc(poster) + '.jpg" alt="' + esc(r.title) + ' poster" loading="lazy" onerror="this.style.display=\'none\'">' : '') +
+            (poster ? '<img src="posters/' + esc(poster) + '.jpg" alt="' + esc(r.title) + ' poster" loading="lazy"' + posterFallbackAttrs(poster, r.title, filmYear(film)) + '>' : '') +
             '<div class="film-tile__rank">' + r.rank + '</div>' +
           '</div>' +
           '<div class="film-tile__title">' + esc(r.title) + '</div>' +
@@ -1816,7 +1907,7 @@
         var filmTitle = film ? film.title : '';
         var posterPath = film ? ('posters/' + film.posterSlug + '.jpg') : '';
         var poster = posterPath
-          ? '<img src="' + esc(posterPath) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
+          ? '<img src="' + esc(posterPath) + '" alt="" loading="lazy"' + posterFallbackAttrs(film.posterSlug, filmTitle, filmYear(film)) + '>'
           : '';
         var nameHTML;
         if (f.subtitle && filmTitle) {
@@ -1875,7 +1966,7 @@
     profile.innerHTML =
       '<div class="film-profile__grid">' +
         '<div class="film-profile__poster">' +
-          '<img src="' + esc(posterPath) + '" alt="' + esc(film.title) + ' poster" onerror="this.style.display=\'none\'">' +
+          '<img src="' + esc(posterPath) + '" alt="' + esc(film.title) + ' poster"' + posterFallbackAttrs(film.posterSlug, film.title, filmYear(film)) + '>' +
         '</div>' +
         '<div class="film-profile__info">' +
           '<div class="kicker kicker--gold">★ Tracked Film ★</div>' +
