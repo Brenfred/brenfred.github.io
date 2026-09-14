@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v26-tmdb-poster-fallback)
+   FANTASY FILMBALL — content.js (v27-tmdb-no-cached-miss)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -52,7 +52,7 @@
 
   var TMDB_KEY = document.body.getAttribute('data-tmdb-key') || 'bf84fd9b1ce1629b4d4bdedd9781a5cb';
   var TMDB_IMG = 'https://image.tmdb.org/t/p/w342';
-  var TMDB_CACHE_KEY = 'fb-tmdb-v1';
+  var TMDB_CACHE_KEY = 'fb-tmdb-v2'; // v2: separate from game.js so its cached misses don't block us
   var tmdbMemo = {};
   var tmdbCache = null;
 
@@ -99,8 +99,9 @@
       if (!path && year) return tmdbSearch(title, null);
       return path;
     }).then(function (path) {
-      cache[slug] = path || null;
-      tmdbSaveCache();
+      // Only persist hits. A miss (film not on TMDB yet, or no poster yet)
+      // stays in-memory for this page load so it gets retried next visit.
+      if (path) { cache[slug] = path; tmdbSaveCache(); }
       return path;
     }).catch(function () { return null; });
     return tmdbMemo[slug];
