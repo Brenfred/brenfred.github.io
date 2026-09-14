@@ -16,7 +16,7 @@ writers:
 publishedDate: September 14, 2026
 deck: Chris Rock’s follow-up to Top Five has its moments, but it’s bogged down by a clichéd script, some messy editing, and a weak performance by the director himself.
 excerpt: This critique of the film industry doesn’t fully come together.
-heroImage: /posters/misty-green-eleazar.jpg
+heroImage: /posters/misty-green-hero.jpg
 verdictNote: Eleazar’s performance is worthy of a nomination, but the film’s lack of strength in other categories will hurt her chances.
 isHero: false
 tags:
