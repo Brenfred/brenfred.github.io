@@ -1,5 +1,5 @@
 /* ==========================================================================
-   FANTASY FILMBALL — content.js (v27-tmdb-no-cached-miss)
+   FANTASY FILMBALL — content.js (v28-tmdb-poster-sizes)
    Reads /content/*.json and Markdown reviews, then populates each page.
    This is the runtime that turns the static site into a CMS-editable one.
 
@@ -51,7 +51,7 @@
   // for 30 days. Key: <body data-tmdb-key="..."> overrides the default.
 
   var TMDB_KEY = document.body.getAttribute('data-tmdb-key') || 'bf84fd9b1ce1629b4d4bdedd9781a5cb';
-  var TMDB_IMG = 'https://image.tmdb.org/t/p/w342';
+  var TMDB_IMG = 'https://image.tmdb.org/t/p/'; // + size (w342/w500/w780/original) + path
   var TMDB_CACHE_KEY = 'fb-tmdb-v2'; // v2: separate from game.js so its cached misses don't block us
   var tmdbMemo = {};
   var tmdbCache = null;
@@ -114,9 +114,10 @@
     var slug = img.getAttribute('data-slug') || '';
     var title = img.getAttribute('data-ttl') || '';
     var year = img.getAttribute('data-yr') || '';
+    var size = img.getAttribute('data-size') || 'w500';
     if (!TMDB_KEY || !title) { img.style.display = 'none'; return; }
     tmdbPosterPath(slug, title, year).then(function (path) {
-      if (path) { img.src = TMDB_IMG + path; img.style.display = ''; }
+      if (path) { img.src = TMDB_IMG + size + path; img.style.display = ''; }
       else { img.style.display = 'none'; }
     });
   };
@@ -127,9 +128,12 @@
     var m = String((rec && rec.releaseDate) || '').match(/\b(20\d\d)\b/);
     return m ? m[1] : '2026';
   }
-  function posterFallbackAttrs(slug, title, year) {
+  // size: TMDB width bucket — w500 for cards/grids (default), w780 for the
+  // big film-profile and hero posters.
+  function posterFallbackAttrs(slug, title, year, size) {
     return ' data-slug="' + esc(slug || '') + '" data-ttl="' + esc(title || '')
-      + '" data-yr="' + esc(year || '2026') + '" onerror="fbPosterFallback(this)"';
+      + '" data-yr="' + esc(year || '2026') + '" data-size="' + esc(size || 'w500')
+      + '" onerror="fbPosterFallback(this)"';
   }
 
   /**
@@ -1055,6 +1059,7 @@
         img.setAttribute('data-slug', posterSlug);
         img.setAttribute('data-ttl', film || '');
         img.setAttribute('data-yr', '2026');
+        img.setAttribute('data-size', 'w780');
         img.onerror = function () { fbPosterFallback(img); };
         img.src = posterPath;
         img.alt = (film || hero.title || '') + ' poster';
@@ -1967,7 +1972,7 @@
     profile.innerHTML =
       '<div class="film-profile__grid">' +
         '<div class="film-profile__poster">' +
-          '<img src="' + esc(posterPath) + '" alt="' + esc(film.title) + ' poster"' + posterFallbackAttrs(film.posterSlug, film.title, filmYear(film)) + '>' +
+          '<img src="' + esc(posterPath) + '" alt="' + esc(film.title) + ' poster"' + posterFallbackAttrs(film.posterSlug, film.title, filmYear(film), 'w780') + '>' +
         '</div>' +
         '<div class="film-profile__info">' +
           '<div class="kicker kicker--gold">★ Tracked Film ★</div>' +
