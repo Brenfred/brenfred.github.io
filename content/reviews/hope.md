@@ -8,7 +8,7 @@ runtime: 156 min
 genre: Sci-Fi/Action
 rating: 3
 stance: sell
-stanceLabel: "Mixed Cannes reception sinks its International Feature case"
+stanceLabel: "Mixed Cannes reception sinks any International Feature case"
 posterSlug: hope
 writer: ""
 writers:
@@ -22,9 +22,6 @@ isHero: false
 tags: []
 categoryTags: []
 prospects:
-  - category: international
-    tier: long-shot
-    performer: ""
 ---
 
 In the months leading up to the 2026 Cannes Film Festival, I had heard rumors that Na Hong-jin's *Hope*, the highly anticipated follow-up to his cult classic *The Wailing*, would likely land a slot outside of the main competition. Being awarded any slot at such a prestigious festival, combined with the idea of an accomplished filmmaker taking on the challenge of a massive alien thriller, was enough to have me intrigued already. But when the final Cannes lineup arrived, *Hope* found itself inside the main competition, fighting for the famed Palme d'Or. The hype around the movie only continued to build from here, reaching a fever pitch around the film's May 17 premiere, where 23% of Awards Expert users were predicting it to take home the Palme. However, once people saw the film, the story changed. Unfortunately, after receiving mixed reviews, marked by a 66 [Metacritic](https://www.metacritic.com/movie/hope-2026/) average, *Hope* ultimately left the Cannes award ceremony empty-handed. After finally getting the chance to see the film, I can see why.
