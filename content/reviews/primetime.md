@@ -1,6 +1,7 @@
 ---
 type: review
-title: "You Know How This Looks, Right? Robert Pattinson & Skyler Gisondo Shine in Primetime"
+title: You Know How This Looks, Right? Robert Pattinson & Skyler Gisondo Shine
+  in Primetime
 film: Primetime
 director: Lance Oppenheim
 studio: A24
@@ -14,18 +15,22 @@ writer: ""
 writers:
   - dylan-mckercher
 publishedDate: September 21, 2026
-deck: "Lance Oppenheim’s Primetime brings the chaotic energy of To Catch a Predator to the big screen, with Robert Pattinson disappearing into Chris Hansen and Skyler Gisondo delivering a breakout performance. While the film loses some of its momentum in the back half, Oppenheim’s kinetic direction keeps Primetime buzzing even when the story starts to slow down."
+deck: Lance Oppenheim’s Primetime brings the chaotic energy of To Catch a
+  Predator to the big screen, with Robert Pattinson disappearing into Chris
+  Hansen and Skyler Gisondo delivering a breakout performance. While the film
+  loses some of its momentum in the back half, Oppenheim’s kinetic direction
+  keeps Primetime buzzing even when the story starts to slow down.
 excerpt: Should You Take A Seat and See Primetime?
 heroImage: /posters/primetime-pattinson.jpg
 verdictNote: Will The Academy Award Robert Pattinson?
-isHero: false
-tags:
-  - primetime
-categoryTags: []
 prospects:
   - category: actor
     tier: long-shot
     performer: Robert Pattinson
+isHero: false
+tags:
+  - primetime
+categoryTags: []
 ---
 Growing up, we all have our hyperfixations. Some people find a band that they absolutely adore; some people find a football team to ride or die with every Sunday; some people get lost in the world of a video game. However, growing up, my friends and I were obsessed with *To Catch a Predator* and would watch it every time we had a group hangout session. From late middle school until the end of college, whenever the boys and I got together, you could assure yourself someone was going to be asked to take a seat and another would be asked: “You know how this looks, right?” So when it was announced that A24 was going to release a Chris Hansen movie starring Robert Pattinson, I was ecstatic. From when the very first still leaked online of Pattinson walking in the suit with the blonde hair, to when the very first teaser trailer was released and we got to hear Pattinson do the iconic voice, my ticket was sold. My butt was going to be in that seat as soon as it could be.
 
@@ -37,4 +42,4 @@ However, one of the saving graces of *Primetime* is Skyler Gisondo as Decoy Dan.
 
 I touched on this before, but what kept me riveted by *Primetime* even when the story slowed down and lost me a little bit is Lance Oppenheim’s directorial vision. Coming from a background of documentary filmmaking, he has such a unique eye and creative identity that he brings to this movie. Whether it’s the incorporation of the hidden cameras reminiscent of *To Catch a Predator*, or the very comedic editing cuts when playing on a certain phrase or reference, or even competing anchor hosts… The energy that Oppenheim’s visuals bring to the table really helps you stay afloat when the pacing and the story of *Primetime* falter a little bit. While I was riveted by the opening and the conclusion, which I think work very well, as Chris Hansen starts to lose his confidence and become a shell of himself, I feel like the film at large really loses its edge — the draw of why you come to the theater to see the Chris Hansen movie. And while it may look good, while Pattinson and Gisondo may be acting their asses off, if you’re not really vibing with what you’re watching on screen, it’s hard to remain super into it throughout.
 
-Overall, I am a fan of *Primetime*. Whether it’s Robert Pattinson embodying Chris Hansen, dropping delicious one-liners and GIF material through the opening act; Skyler Gisondo submitting himself as a new name on the scene and someone to keep an eye out for in their future projects, stealing sequences even when paired up with Robert Pattinson, the chameleon himself; or if it’s Lance Oppenheim’s visual style and the kinetic energy of *Primetime* at large through its orchestral and grand score, its fast pace, editing, & its creative transition shots… I just wished the theme and story matched the energy and vibes that all the other elements came together to showcase.
+Overall, I am a fan of *Primetime*. Whether it’s Robert Pattinson embodying Chris Hansen, dropping delicious one-liners and GIF material through the opening act; Skyler Gisondo submitting himself as a new name on the scene and someone to keep an eye out for in their future projects, stealing sequences even when paired up with Robert Pattinson, the chameleon himself; or if it’s Lance Oppenheim’s visual style and the kinetic energy of *Primetime* at large through its orchestral and grand score, its fast pace editing, & its creative transition shots… I just wished the theme and story matched the energy and vibes that all the other elements came together to showcase.
