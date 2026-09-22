@@ -60,6 +60,24 @@
       "points": []
     },
     {
+      "filmSlug": "a-good-little-soldier",
+      "title": "A Good Little Soldier",
+      "posterSlug": "a-good-little-soldier",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "venice",
+          "points": 40.0,
+          "note": "SCREENPLAY"
+        }
+      ]
+    },
+    {
       "filmSlug": "a-long-winter",
       "title": "A Long Winter",
       "posterSlug": "a-long-winter",
@@ -69,7 +87,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "tiff",
+          "points": 20.0,
+          "note": "Silver Medallion"
+        }
+      ]
     },
     {
       "filmSlug": "a-man-of-his-time",
@@ -104,6 +128,24 @@
           "show": "bifa",
           "points": 7.0,
           "note": "Cine; Prod"
+        }
+      ]
+    },
+    {
+      "filmSlug": "a-place-to-heal",
+      "title": "A Place to Heal",
+      "posterSlug": "a-place-to-heal",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "venice",
+          "points": 20.0,
+          "note": "Marcello Mastroianni Award"
         }
       ]
     },
@@ -192,6 +234,24 @@
       ]
     },
     {
+      "filmSlug": "angh",
+      "title": "Angh",
+      "posterSlug": "angh",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 10.0,
+          "note": "Platform Prize"
+        }
+      ]
+    },
+    {
       "filmSlug": "animal-farm",
       "title": "Animal Farm",
       "posterSlug": "animal-farm",
@@ -202,6 +262,24 @@
       "money": 0.0,
       "misc": 0.0,
       "points": []
+    },
+    {
+      "filmSlug": "arrested-memory",
+      "title": "Arrested Memory",
+      "posterSlug": "arrested-memory",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 5.0,
+          "note": "PCA MM runner-up"
+        }
+      ]
     },
     {
       "filmSlug": "artificial",
@@ -321,7 +399,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "tiff",
+          "points": 40.0,
+          "note": "PCA runner-up"
+        }
+      ]
     },
     {
       "filmSlug": "benimana",
@@ -352,6 +436,24 @@
       "money": 0.0,
       "misc": 0.0,
       "points": []
+    },
+    {
+      "filmSlug": "black-sunflowers",
+      "title": "Black Sunflowers",
+      "posterSlug": "black-sunflowers",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 10.0,
+          "note": "PCA Doc Runner-Up"
+        }
+      ]
     },
     {
       "filmSlug": "blaise",
@@ -503,9 +605,9 @@
       "misc": 0.0,
       "points": [
         {
-          "show": "tiff",
+          "show": "annecy",
           "points": 5.0,
-          "note": ""
+          "note": "Jury Prize"
         }
       ]
     },
@@ -648,6 +750,24 @@
       "points": []
     },
     {
+      "filmSlug": "darlene-love-i-know-where-ive-been",
+      "title": "Darlene Love: I Know Where I’ve Been",
+      "posterSlug": "darlene-love-i-know-where-ive-been",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 20.0,
+          "note": "PCA Doc"
+        }
+      ]
+    },
+    {
       "filmSlug": "dau",
       "title": "DAU",
       "posterSlug": "dau",
@@ -657,7 +777,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "venice",
+          "points": 40.0,
+          "note": "DIRECTOR"
+        }
+      ]
     },
     {
       "filmSlug": "digger",
@@ -783,7 +909,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "tiff",
+          "points": 40.0,
+          "note": "PCA International"
+        }
+      ]
     },
     {
       "filmSlug": "epic-elvis-presley-in-concert",
@@ -1231,7 +1363,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "tiff",
+          "points": 40.0,
+          "note": "PCA runner-up"
+        }
+      ]
     },
     {
       "filmSlug": "i-see-buildings-fall-like-lightning",
@@ -1357,9 +1495,9 @@
           "note": "UCR Jury"
         },
         {
-          "show": "tiff",
+          "show": "annecy",
           "points": 10.0,
-          "note": ""
+          "note": "JURY; AUDIENCE"
         }
       ]
     },
@@ -1482,6 +1620,24 @@
       "money": 0.0,
       "misc": 0.0,
       "points": []
+    },
+    {
+      "filmSlug": "ladies-and-gentlemen-brian-mulroney",
+      "title": "Ladies and Gentlemen, Brian Mulroney",
+      "posterSlug": "ladies-and-gentlemen-brian-mulroney",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 10.0,
+          "note": "PCA MM"
+        }
+      ]
     },
     {
       "filmSlug": "lady",
@@ -1799,7 +1955,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "venice",
+          "points": 25.0,
+          "note": "Special Jury Prize"
+        }
+      ]
     },
     {
       "filmSlug": "nina-roza",
@@ -1979,7 +2141,18 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "venice",
+          "points": 50.0,
+          "note": "GRAND JURY PRIZE"
+        },
+        {
+          "show": "tiff",
+          "points": 40.0,
+          "note": "PCA International runner-up"
+        }
+      ]
     },
     {
       "filmSlug": "power-ballad",
@@ -2056,7 +2229,7 @@
       "oscarWins": 0,
       "critics": 0.0,
       "money": 0.0,
-      "misc": -30.0,
+      "misc": 0.0,
       "points": [
         {
           "show": "berlinale",
@@ -2134,6 +2307,11 @@
           "show": "berlinale",
           "points": 20.0,
           "note": "ACTOR"
+        },
+        {
+          "show": "tiff",
+          "points": 20.0,
+          "note": "Silver Medallion"
         }
       ]
     },
@@ -2330,6 +2508,24 @@
       "points": []
     },
     {
+      "filmSlug": "sunburn",
+      "title": "Sunburn",
+      "posterSlug": "sunburn",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 10.0,
+          "note": "Best Canadian Feature Film"
+        }
+      ]
+    },
+    {
       "filmSlug": "supergirl",
       "title": "Supergirl",
       "posterSlug": "supergirl",
@@ -2408,6 +2604,18 @@
       "points": []
     },
     {
+      "filmSlug": "the-adventures-of-cliff-booth",
+      "title": "The Further Mis-Adventures of Cliff Booth",
+      "posterSlug": "the-adventures-of-cliff-booth",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
       "filmSlug": "the-ai-doc",
       "title": "The AI Doc",
       "posterSlug": "the-ai-doc",
@@ -2418,6 +2626,24 @@
       "money": 0.0,
       "misc": 0.0,
       "points": []
+    },
+    {
+      "filmSlug": "the-assassins",
+      "title": "The Assassins",
+      "posterSlug": "the-assassins",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 40.0,
+          "note": "PCA International runner-up"
+        }
+      ]
     },
     {
       "filmSlug": "the-beloved",
@@ -2446,6 +2672,11 @@
           "show": "cannes",
           "points": 40.0,
           "note": "DIRECTOR"
+        },
+        {
+          "show": "tiff",
+          "points": 100.0,
+          "note": "PCA"
         }
       ]
     },
@@ -2610,18 +2841,6 @@
           "note": "PCA MM runner-up"
         }
       ]
-    },
-    {
-      "filmSlug": "the-adventures-of-cliff-booth",
-      "title": "The Further Mis-Adventures of Cliff Booth",
-      "posterSlug": "the-adventures-of-cliff-booth",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
     },
     {
       "filmSlug": "the-gallerist",
@@ -2810,7 +3029,7 @@
       "points": [
         {
           "show": "venice",
-          "points": 50.0,
+          "points": 40.0,
           "note": "ACTOR"
         }
       ]
@@ -2876,6 +3095,24 @@
       "points": []
     },
     {
+      "filmSlug": "the-spiral",
+      "title": "The Spiral",
+      "posterSlug": "the-spiral",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 5.0,
+          "note": "PCA MM runner-up"
+        }
+      ]
+    },
+    {
       "filmSlug": "the-stranger",
       "title": "The Stranger",
       "posterSlug": "the-stranger",
@@ -2924,6 +3161,24 @@
       "points": []
     },
     {
+      "filmSlug": "the-ultra-runner",
+      "title": "The Ultra Runner",
+      "posterSlug": "the-ultra-runner",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 10.0,
+          "note": "PCA Doc Runner-Up"
+        }
+      ]
+    },
+    {
       "filmSlug": "the-unknown",
       "title": "The Unknown",
       "posterSlug": "the-unknown",
@@ -2959,9 +3214,9 @@
       "misc": 0.0,
       "points": [
         {
-          "show": "tiff",
+          "show": "annecy",
           "points": 10.0,
-          "note": ""
+          "note": "CRYSTAL"
         }
       ]
     },
@@ -3280,7 +3535,18 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "venice",
+          "points": 40.0,
+          "note": "ACTOR"
+        },
+        {
+          "show": "tiff",
+          "points": 20.0,
+          "note": "Silver Medallion"
+        }
+      ]
     },
     {
       "filmSlug": "wildwood",
@@ -3304,7 +3570,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "venice",
+          "points": 140.0,
+          "note": "GOLDEN LION; ACTRESS"
+        }
+      ]
     },
     {
       "filmSlug": "wuthering-heights",
@@ -3340,6 +3612,18 @@
       "filmSlug": "yes",
       "title": "Yes",
       "posterSlug": "yes",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "you-can-see-everything",
+      "title": "You Can See Everything",
+      "posterSlug": "you-can-see-everything",
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
