@@ -48,7 +48,9 @@
           "pick": "60",
           "filmSlug": "paper-tiger"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Dormtoons",
@@ -95,7 +97,9 @@
           "pick": "59",
           "filmSlug": "a-statement"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Zaexplorer",
@@ -140,7 +144,9 @@
           "pick": "58",
           "filmSlug": "artificial"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Benpaz",
@@ -189,7 +195,9 @@
           "pick": "57",
           "filmSlug": "clayface"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Scott",
@@ -284,7 +292,9 @@
           "pick": "55",
           "filmSlug": "to-hold-a-mountain"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     }
   ]
 }

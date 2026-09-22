@@ -51,7 +51,9 @@
           "pick": "60",
           "filmSlug": "the-adventures-of-cliff-booth"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Cameron",
@@ -101,7 +103,9 @@
           "filmSlug": "coward",
           "extra": 3.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Harbere",
@@ -150,7 +154,9 @@
           "filmSlug": "michael",
           "extra": 10.0
         }
-      ]
+      ],
+      "bonus": 325.0,
+      "faab": 300.0
     },
     {
       "name": "Vinci",
@@ -198,7 +204,9 @@
           "filmSlug": "clarissa",
           "extra": 6.0
         }
-      ]
+      ],
+      "bonus": 350.0,
+      "faab": 300.0
     },
     {
       "name": "Pa",
@@ -295,7 +303,9 @@
           "filmSlug": "nirvanna-the-band-the-show-the-movie",
           "extra": 16.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     }
   ]
 }

@@ -48,7 +48,9 @@
           "pick": "59",
           "filmSlug": "avengers-doomsday"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Moonlight",
@@ -95,7 +97,9 @@
           "pick": "60",
           "filmSlug": "ha-chan-shake-your-booty"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Noah",
@@ -143,7 +147,9 @@
           "filmSlug": "the-drama",
           "extra": 23.0
         }
-      ]
+      ],
+      "bonus": 400.0,
+      "faab": 300.0
     },
     {
       "name": "Si",
@@ -191,7 +197,9 @@
           "filmSlug": "i-love-boosters",
           "extra": 15.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Faultline",
@@ -237,7 +245,8 @@
           "pick": "56",
           "filmSlug": "the-history-of-concrete"
         }
-      ]
+      ],
+      "bonus": 50.0
     },
     {
       "name": "Argonisi",
@@ -283,7 +292,9 @@
           "pick": "55",
           "filmSlug": "clarissa"
         }
-      ]
+      ],
+      "bonus": 375.0,
+      "faab": 300.0
     }
   ]
 }

@@ -49,7 +49,9 @@
           "filmSlug": "la-gradiva",
           "extra": 16.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Lucas",
@@ -97,7 +99,9 @@
           "filmSlug": "wuthering-heights",
           "extra": 21.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Gus",
@@ -145,7 +149,9 @@
           "pick": "58",
           "filmSlug": "avengers-doomsday"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Gaslen",
@@ -190,7 +196,9 @@
           "pick": "57",
           "filmSlug": "clarissa"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Seth",
@@ -286,7 +294,9 @@
           "pick": "55",
           "filmSlug": "madden"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     }
   ]
 }

@@ -52,7 +52,9 @@
           "filmSlug": "i-love-boosters",
           "extra": 36.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "George",
@@ -100,7 +102,9 @@
           "filmSlug": "la-gradiva",
           "extra": 8.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Jack",
@@ -147,7 +151,9 @@
           "pick": "58",
           "filmSlug": "nuisance-bear"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Nate",
@@ -193,7 +199,9 @@
           "pick": "57",
           "filmSlug": "the-gallerist"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Brett",
@@ -287,7 +295,9 @@
           "pick": "55",
           "filmSlug": "whalefall"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     }
   ]
 }

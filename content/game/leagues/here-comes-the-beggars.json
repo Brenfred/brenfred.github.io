@@ -50,7 +50,9 @@
           "pick": "60",
           "filmSlug": "daisys-life"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Myrtle",
@@ -100,7 +102,9 @@
           "pick": "59",
           "filmSlug": "the-adventures-of-cliff-booth"
         }
-      ]
+      ],
+      "bonus": 325.0,
+      "faab": 300.0
     },
     {
       "name": "Lachy",
@@ -148,7 +152,9 @@
           "pick": "58",
           "filmSlug": "14th"
         }
-      ]
+      ],
+      "bonus": 350.0,
+      "faab": 300.0
     },
     {
       "name": "Boon",
@@ -197,7 +203,9 @@
           "pick": "57",
           "filmSlug": "a-long-winter"
         }
-      ]
+      ],
+      "bonus": 317.0,
+      "faab": 300.0
     },
     {
       "name": "Cordelia",
@@ -243,7 +251,8 @@
           "pick": "56",
           "filmSlug": "clarissa"
         }
-      ]
+      ],
+      "bonus": 17.0
     },
     {
       "name": "Bee",
@@ -294,7 +303,9 @@
           "filmSlug": "the-sheep-detectives",
           "extra": 22.0
         }
-      ]
+      ],
+      "bonus": 400.0,
+      "faab": 300.0
     }
   ]
 }

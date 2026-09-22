@@ -49,7 +49,9 @@
           "pick": "60",
           "filmSlug": "prima-facie"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Kf",
@@ -96,7 +98,9 @@
           "pick": "59",
           "filmSlug": "avengers-doomsday"
         }
-      ]
+      ],
+      "bonus": 325.0,
+      "faab": 300.0
     },
     {
       "name": "Moppy",
@@ -143,7 +147,9 @@
           "filmSlug": "wuthering-heights",
           "extra": 8.0
         }
-      ]
+      ],
+      "bonus": 350.0,
+      "faab": 300.0
     },
     {
       "name": "Lman8Bsa",
@@ -195,7 +201,9 @@
           "filmSlug": "the-devil-wears-prada-2",
           "extra": 10.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Dreams",
@@ -290,7 +298,9 @@
           "filmSlug": "nuisance-bear",
           "extra": 8.0
         }
-      ]
+      ],
+      "bonus": 310.0,
+      "faab": 300.0
     }
   ]
 }

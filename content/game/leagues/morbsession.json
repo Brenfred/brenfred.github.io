@@ -49,7 +49,9 @@
           "filmSlug": "the-drama",
           "extra": 48.0
         }
-      ]
+      ],
+      "bonus": 290.0,
+      "faab": 280.0
     },
     {
       "name": "Banjo",
@@ -97,7 +99,9 @@
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
           "extra": 37.0
         }
-      ]
+      ],
+      "bonus": 320.0,
+      "faab": 320.0
     },
     {
       "name": "Sean",
@@ -146,7 +150,9 @@
           "pick": "58",
           "filmSlug": "paper-tiger"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Yaboy",
@@ -193,7 +199,9 @@
           "pick": "57",
           "filmSlug": "resident-evil"
         }
-      ]
+      ],
+      "bonus": 325.0,
+      "faab": 300.0
     },
     {
       "name": "Dylan",
@@ -290,7 +298,9 @@
           "pick": "55",
           "filmSlug": "bunker"
         }
-      ]
+      ],
+      "bonus": 350.0,
+      "faab": 300.0
     }
   ]
 }

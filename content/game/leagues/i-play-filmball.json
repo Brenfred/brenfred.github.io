@@ -49,7 +49,9 @@
           "pick": "60",
           "filmSlug": "resident-evil"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Leaves312",
@@ -96,7 +98,9 @@
           "filmSlug": "the-drama",
           "extra": 27.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Chief117",
@@ -142,7 +146,9 @@
           "pick": "58",
           "filmSlug": "hunger-games-sunrise-on-the-reaping"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Geoffrey",
@@ -192,7 +198,9 @@
           "pick": "57",
           "filmSlug": "avengers-doomsday"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Luke",
@@ -283,7 +291,9 @@
           "pick": "55",
           "filmSlug": "the-meltdown"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     }
   ]
 }

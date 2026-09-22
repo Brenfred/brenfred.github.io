@@ -14,12 +14,12 @@
         {
           "pick": "12",
           "filmSlug": "fjord",
-          "extra": 8.0
+          "extra": 16.0
         },
         {
           "pick": "13",
           "filmSlug": "all-of-a-sudden",
-          "extra": 9.0
+          "extra": 17.0
         },
         {
           "pick": "24",
@@ -54,7 +54,9 @@
           "filmSlug": "everytime",
           "extra": 9.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Jack",
@@ -71,7 +73,8 @@
         },
         {
           "pick": "14",
-          "filmSlug": "misty-green"
+          "filmSlug": "misty-green",
+          "extra": 4.0
         },
         {
           "pick": "23",
@@ -104,7 +107,9 @@
           "filmSlug": "clarissa",
           "extra": 6.0
         }
-      ]
+      ],
+      "bonus": 305.0,
+      "faab": 300.0
     },
     {
       "name": "Ryan",
@@ -112,7 +117,7 @@
         {
           "pick": "3",
           "filmSlug": "wild-horse-nine",
-          "extra": 8.0
+          "extra": 16.0
         },
         {
           "pick": "10",
@@ -121,7 +126,8 @@
         },
         {
           "pick": "15",
-          "filmSlug": "elsinore"
+          "filmSlug": "elsinore",
+          "extra": 5.0
         },
         {
           "pick": "22",
@@ -143,7 +149,7 @@
         {
           "pick": "46",
           "filmSlug": "the-beloved",
-          "extra": 7.0
+          "extra": 15.0
         },
         {
           "pick": "51",
@@ -152,10 +158,11 @@
         {
           "pick": "58",
           "filmSlug": "tangles",
-          "extra": 8.0
+          "extra": 15.0
         }
       ],
-      "bonus": 20.0
+      "bonus": 325.0,
+      "faab": 300.0
     },
     {
       "name": "Matt",
@@ -172,7 +179,7 @@
         {
           "pick": "16",
           "filmSlug": "club-kid",
-          "extra": 10.0
+          "extra": 20.0
         },
         {
           "pick": "21",
@@ -186,11 +193,13 @@
         },
         {
           "pick": "33",
-          "filmSlug": "your-mother-your-mother-your-mother"
+          "filmSlug": "your-mother-your-mother-your-mother",
+          "extra": 7.0
         },
         {
           "pick": "40",
-          "filmSlug": "i-play-rocky"
+          "filmSlug": "i-play-rocky",
+          "extra": 6.0
         },
         {
           "pick": "45",
@@ -205,7 +214,9 @@
           "filmSlug": "is-god-is",
           "extra": 16.0
         }
-      ]
+      ],
+      "bonus": 325.0,
+      "faab": 300.0
     },
     {
       "name": "Jon",
@@ -231,7 +242,7 @@
         {
           "pick": "29",
           "filmSlug": "a-long-winter",
-          "extra": 5.0
+          "extra": 11.0
         },
         {
           "pick": "32",
@@ -271,7 +282,7 @@
         {
           "pick": "7",
           "filmSlug": "eisenberg-musical-comedy",
-          "extra": 7.0
+          "extra": 14.0
         },
         {
           "pick": "18",
@@ -280,7 +291,8 @@
         },
         {
           "pick": "19",
-          "filmSlug": "possible-love"
+          "filmSlug": "possible-love",
+          "extra": 8.0
         },
         {
           "pick": "30",
@@ -309,7 +321,9 @@
           "pick": "55",
           "filmSlug": "artificial"
         }
-      ]
+      ],
+      "bonus": 350.0,
+      "faab": 300.0
     }
   ]
 }

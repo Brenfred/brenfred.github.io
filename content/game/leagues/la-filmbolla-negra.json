@@ -52,7 +52,9 @@
           "pick": "60",
           "filmSlug": "to-hold-a-mountain"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Jack",
@@ -100,7 +102,9 @@
           "pick": "59",
           "filmSlug": "a-statement"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Skyla",
@@ -147,7 +151,9 @@
           "pick": "58",
           "filmSlug": "look-back"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Choekaas",
@@ -193,7 +199,9 @@
           "pick": "57",
           "filmSlug": "tony"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Hoster",
@@ -291,7 +299,9 @@
           "pick": "55",
           "filmSlug": "artificial"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     }
   ]
 }

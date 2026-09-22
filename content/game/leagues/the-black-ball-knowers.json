@@ -46,7 +46,9 @@
           "pick": "60",
           "filmSlug": "the-wizard-of-the-kremlin"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Skyler",
@@ -91,7 +93,9 @@
           "pick": "59",
           "filmSlug": "once-upon-a-time-in-harlem"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Callum",
@@ -136,7 +140,9 @@
           "pick": "58",
           "filmSlug": "a-long-winter"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Judestar",
@@ -181,7 +187,9 @@
           "pick": "57",
           "filmSlug": "tender-loving-care"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Lucky",
@@ -224,8 +232,7 @@
         },
         {
           "pick": "56",
-          "filmSlug": "queen-at-sea",
-          "extra": 30.0
+          "filmSlug": "queen-at-sea"
         }
       ]
     },
@@ -272,7 +279,9 @@
           "pick": "55",
           "filmSlug": "resident-evil"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     }
   ]
 }

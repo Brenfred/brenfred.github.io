@@ -49,7 +49,9 @@
           "filmSlug": "paper-tiger",
           "extra": 12.0
         }
-      ]
+      ],
+      "bonus": 325.0,
+      "faab": 300.0
     },
     {
       "name": "Em J",
@@ -99,7 +101,9 @@
           "pick": "59",
           "filmSlug": "avengers-doomsday"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Woke",
@@ -148,7 +152,9 @@
           "filmSlug": "everybody-to-kenmure-street",
           "extra": 7.0
         }
-      ]
+      ],
+      "bonus": 350.0,
+      "faab": 300.0
     },
     {
       "name": "Balt",
@@ -196,7 +202,9 @@
           "pick": "57",
           "filmSlug": "being-heumann"
         }
-      ]
+      ],
+      "bonus": 325.0,
+      "faab": 300.0
     },
     {
       "name": "Vinci",
@@ -249,7 +257,8 @@
           "pick": "56",
           "filmSlug": "godzilla-minus-zero"
         }
-      ]
+      ],
+      "bonus": 50.0
     },
     {
       "name": "Ele",
@@ -297,7 +306,9 @@
           "pick": "55",
           "filmSlug": "clarissa"
         }
-      ]
+      ],
+      "bonus": 320.0,
+      "faab": 300.0
     }
   ]
 }

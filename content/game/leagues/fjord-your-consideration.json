@@ -4,7 +4,7 @@
   "season": "2026–2027",
   "players": [
     {
-      "name": "[Player 1]",
+      "name": "Y2K",
       "roster": [
         {
           "pick": "1",
@@ -47,7 +47,9 @@
           "pick": "60",
           "filmSlug": "la-gradiva"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Troy Story 5",
@@ -95,10 +97,12 @@
           "pick": "59",
           "filmSlug": "avengers-doomsday"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
-      "name": "[Player 3]",
+      "name": "Jordan",
       "roster": [
         {
           "pick": "3",
@@ -141,7 +145,9 @@
           "pick": "58",
           "filmSlug": "godzilla-minus-zero"
         }
-      ]
+      ],
+      "bonus": 350.0,
+      "faab": 300.0
     },
     {
       "name": "Tom",
@@ -189,7 +195,9 @@
           "pick": "57",
           "filmSlug": "bucking-fastard"
         }
-      ]
+      ],
+      "bonus": 328.0,
+      "faab": 300.0
     },
     {
       "name": "Willowdsteele",
@@ -237,7 +245,8 @@
           "pick": "56",
           "filmSlug": "madden"
         }
-      ]
+      ],
+      "bonus": 43.0
     },
     {
       "name": "La Bola Tandem",
@@ -284,7 +293,9 @@
           "pick": "55",
           "filmSlug": "the-uprising"
         }
-      ]
+      ],
+      "bonus": 310.0,
+      "faab": 300.0
     }
   ]
 }

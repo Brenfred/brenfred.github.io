@@ -53,7 +53,9 @@
           "filmSlug": "brand-new-day",
           "extra": 46.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Rafa",
@@ -100,7 +102,9 @@
           "pick": "60",
           "filmSlug": "clayface"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Diego",
@@ -148,7 +152,9 @@
           "filmSlug": "tangles",
           "extra": 6.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Joy",
@@ -195,7 +201,9 @@
           "pick": "57",
           "filmSlug": "look-back"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Bren",
@@ -292,7 +300,9 @@
           "pick": "55",
           "filmSlug": "ha-chan-shake-your-booty"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     }
   ]
 }

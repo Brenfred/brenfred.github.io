@@ -49,7 +49,9 @@
           "pick": "60",
           "filmSlug": "to-hold-a-mountain"
         }
-      ]
+      ],
+      "bonus": 335.0,
+      "faab": 300.0
     },
     {
       "name": "Jesse",
@@ -95,7 +97,9 @@
           "filmSlug": "blue-heron",
           "extra": 6.0
         }
-      ]
+      ],
+      "bonus": 375.0,
+      "faab": 300.0
     },
     {
       "name": "Tyler",
@@ -142,7 +146,9 @@
           "pick": "58",
           "filmSlug": "14th"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Nate",
@@ -189,7 +195,9 @@
           "filmSlug": "the-drama",
           "extra": 29.0
         }
-      ]
+      ],
+      "bonus": 330.0,
+      "faab": 300.0
     },
     {
       "name": "Kevin",
@@ -282,7 +290,9 @@
           "pick": "55",
           "filmSlug": "rehearsals-for-a-revolution"
         }
-      ]
+      ],
+      "bonus": 305.0,
+      "faab": 300.0
     }
   ]
 }

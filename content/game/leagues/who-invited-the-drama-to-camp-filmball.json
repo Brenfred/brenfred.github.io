@@ -47,7 +47,9 @@
           "pick": "60",
           "filmSlug": "wicker"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Jussy",
@@ -95,7 +97,9 @@
           "filmSlug": "the-sheep-detectives",
           "extra": 26.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Ghost",
@@ -144,7 +148,9 @@
           "pick": "58",
           "filmSlug": "14th"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Ray",
@@ -191,7 +197,9 @@
           "pick": "57",
           "filmSlug": "by-any-means"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Belle",
@@ -290,7 +298,9 @@
           "filmSlug": "tony",
           "extra": 10.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     }
   ]
 }

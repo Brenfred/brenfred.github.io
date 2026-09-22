@@ -54,7 +54,9 @@
           "filmSlug": "citizen-vigilante",
           "extra": 3.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Gaslen",
@@ -102,7 +104,9 @@
           "pick": "59",
           "filmSlug": "artificial"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Chris",
@@ -149,7 +153,9 @@
           "pick": "58",
           "filmSlug": "the-only-living-pickpocket-in-new-york"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Zinc",
@@ -197,7 +203,9 @@
           "filmSlug": "brand-new-day",
           "extra": 32.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Lucas",
@@ -296,7 +304,9 @@
           "pick": "55",
           "filmSlug": "bunker"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     }
   ]
 }

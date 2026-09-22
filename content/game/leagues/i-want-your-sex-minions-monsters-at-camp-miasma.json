@@ -47,7 +47,9 @@
           "pick": "60",
           "filmSlug": "union-town"
         }
-      ]
+      ],
+      "bonus": 310.0,
+      "faab": 300.0
     },
     {
       "name": "Carsonyep",
@@ -81,8 +83,8 @@
           "filmSlug": "disclosure-day"
         },
         {
-          "pick": "47",
-          "filmSlug": "artificial"
+          "pick": "30",
+          "filmSlug": "club-kid"
         },
         {
           "pick": "50",
@@ -92,7 +94,9 @@
           "pick": "59",
           "filmSlug": "maserati-the-brothers"
         }
-      ]
+      ],
+      "bonus": 336.0,
+      "faab": 300.0
     },
     {
       "name": "Generic",
@@ -138,7 +142,9 @@
           "pick": "58",
           "filmSlug": "mr-nelson-did-you-kill-people"
         }
-      ]
+      ],
+      "bonus": 361.0,
+      "faab": 300.0
     },
     {
       "name": "Stephen",
@@ -183,7 +189,9 @@
           "pick": "57",
           "filmSlug": "prima-facie"
         }
-      ]
+      ],
+      "bonus": 311.0,
+      "faab": 300.0
     },
     {
       "name": "Gladys",
@@ -251,8 +259,8 @@
           "filmSlug": "possible-love"
         },
         {
-          "pick": "30",
-          "filmSlug": "club-kid"
+          "pick": "47",
+          "filmSlug": "artificial"
         },
         {
           "pick": "31",
@@ -275,7 +283,9 @@
           "pick": "55",
           "filmSlug": "the-adventures-of-cliff-booth"
         }
-      ]
+      ],
+      "bonus": 350.0,
+      "faab": 300.0
     }
   ]
 }

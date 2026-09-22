@@ -48,7 +48,9 @@
           "pick": "60",
           "filmSlug": "once-upon-a-time-in-harlem"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Don",
@@ -98,7 +100,9 @@
           "filmSlug": "backrooms",
           "extra": 14.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "How",
@@ -143,7 +147,9 @@
           "pick": "58",
           "filmSlug": "resident-evil"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Joe",
@@ -188,7 +194,9 @@
           "pick": "57",
           "filmSlug": "prima-facie"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Roz",
@@ -286,7 +294,9 @@
           "pick": "55",
           "filmSlug": "whalefall"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     }
   ]
 }

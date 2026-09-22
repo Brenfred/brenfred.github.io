@@ -46,7 +46,9 @@
           "pick": "60",
           "filmSlug": "a-statement"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Jxmmed",
@@ -91,7 +93,9 @@
           "pick": "59",
           "filmSlug": "tender-loving-care"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Adam",
@@ -136,7 +140,9 @@
           "pick": "58",
           "filmSlug": "i-play-rocky"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Shani",
@@ -181,7 +187,9 @@
           "pick": "57",
           "filmSlug": "the-devil-wears-prada-2"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Morri",
@@ -271,7 +279,9 @@
           "pick": "55",
           "filmSlug": "tuner"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     }
   ]
 }

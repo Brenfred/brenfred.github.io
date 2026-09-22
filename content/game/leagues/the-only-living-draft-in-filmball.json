@@ -52,7 +52,9 @@
           "filmSlug": "tony",
           "extra": 12.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Ashes",
@@ -98,7 +100,9 @@
           "filmSlug": "backrooms",
           "extra": 16.0
         }
-      ]
+      ],
+      "bonus": 325.0,
+      "faab": 300.0
     },
     {
       "name": "Ty",
@@ -147,7 +151,9 @@
           "pick": "58",
           "filmSlug": "tender-loving-care"
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     },
     {
       "name": "Braedan",
@@ -192,7 +198,9 @@
           "pick": "57",
           "filmSlug": "artificial"
         }
-      ]
+      ],
+      "bonus": 350.0,
+      "faab": 300.0
     },
     {
       "name": "Tdx",
@@ -288,7 +296,9 @@
           "filmSlug": "to-hold-a-mountain",
           "extra": 7.0
         }
-      ]
+      ],
+      "bonus": 300.0,
+      "faab": 300.0
     }
   ]
 }
