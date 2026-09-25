@@ -246,8 +246,8 @@ collections:
               - { label: "Best Supporting Actor",     value: "supp-actor" }
               - { label: "Best Original Screenplay",  value: "orig-screenplay" }
               - { label: "Best Adapted Screenplay",   value: "adapt-screenplay" }
-              # Craft and other categories — not tracked in the Oscar Race
-              # tables but writers can still flag them in their prospects.
+              # Craft and other categories — tracked in Oscar Race snapshots
+              # from Post-TIFF 2026 onward (shorts are not).
               - { label: "Best Cinematography",       value: "cinematography" }
               - { label: "Best Film Editing",         value: "editing" }
               - { label: "Best Production Design",    value: "production-design" }
@@ -345,9 +345,9 @@ collections:
       - { name: "description", label: "Short Description", widget: "text", required: false,
           hint: "1-2 sentence summary of what changed in this snapshot. Shown on the Oscar Race page when this snapshot is selected." }
       - name: "categories"
-        label: "Categories (all 8)"
+        label: "Categories"
         widget: "object"
-        hint: "All 8 categories in one place. Each has its own rankings list."
+        hint: "All tracked categories in one place. The 8 majors are required; the rest are optional (older snapshots don't have them)."
         fields:
           - { name: "picture", label: "🏆 Best Picture", widget: "object", fields: &cat_fields [
               { name: "label", label: "Full Label", widget: "string", default: "Best Picture" },
@@ -373,3 +373,16 @@ collections:
           - { name: "supp-actor", label: "🥈 Supp. Actor", widget: "object", fields: *cat_fields }
           - { name: "orig-screenplay", label: "✍️ Original Screenplay", widget: "object", fields: *cat_fields }
           - { name: "adapt-screenplay", label: "📜 Adapted Screenplay", widget: "object", fields: *cat_fields }
+          - { name: "international", label: "🌍 International Feature", widget: "object", required: false, fields: *cat_fields }
+          - { name: "animated", label: "🎨 Animated Feature", widget: "object", required: false, fields: *cat_fields }
+          - { name: "documentary", label: "📹 Documentary Feature", widget: "object", required: false, fields: *cat_fields }
+          - { name: "casting", label: "🎭 Casting", widget: "object", required: false, fields: *cat_fields }
+          - { name: "cinematography", label: "🎥 Cinematography", widget: "object", required: false, fields: *cat_fields }
+          - { name: "editing", label: "✂️ Film Editing", widget: "object", required: false, fields: *cat_fields }
+          - { name: "production-design", label: "🏛️ Production Design", widget: "object", required: false, fields: *cat_fields }
+          - { name: "costume-design", label: "👗 Costume Design", widget: "object", required: false, fields: *cat_fields }
+          - { name: "makeup-hair", label: "💄 Makeup & Hair", widget: "object", required: false, fields: *cat_fields }
+          - { name: "sound", label: "🔊 Sound", widget: "object", required: false, fields: *cat_fields }
+          - { name: "vfx", label: "✨ Visual Effects", widget: "object", required: false, fields: *cat_fields }
+          - { name: "score", label: "🎼 Original Score", widget: "object", required: false, fields: *cat_fields }
+          - { name: "song", label: "🎤 Original Song", widget: "object", required: false, fields: *cat_fields }
