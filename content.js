@@ -1016,7 +1016,20 @@
       'supp-actor':        'Supp. Actor',
       'supp-actress':      'Supp. Actress',
       'orig-screenplay':   'Original Screenplay',
-      'adapt-screenplay':  'Adapted Screenplay'
+      'adapt-screenplay':  'Adapted Screenplay',
+      'international':     'International Feature',
+      'animated':          'Animated Feature',
+      'documentary':       'Documentary Feature',
+      'casting':           'Casting',
+      'cinematography':    'Cinematography',
+      'editing':           'Film Editing',
+      'production-design': 'Production Design',
+      'costume-design':    'Costume Design',
+      'makeup-hair':       'Makeup & Hair',
+      'sound':             'Sound',
+      'vfx':               'Visual Effects',
+      'score':             'Original Score',
+      'song':              'Original Song'
     };
     return map[slug] || slug;
   }
@@ -1503,17 +1516,25 @@
   //  CATEGORIES + FILMS — the Oscar Race system
   // ============================================================
 
-  // List of category slugs (each snapshot file is expected to contain all 8)
+  // List of category slugs, in display order. Snapshots don't need every
+  // category — missing ones are skipped (older snapshots only have the 8 majors).
   var CATEGORY_SLUGS = [
     'picture', 'director',
     'actress', 'actor',
     'supp-actress', 'supp-actor',
-    'orig-screenplay', 'adapt-screenplay'
+    'orig-screenplay', 'adapt-screenplay',
+    'international', 'animated',
+    'documentary', 'casting',
+    'cinematography', 'editing',
+    'production-design', 'costume-design',
+    'makeup-hair', 'sound',
+    'vfx', 'score',
+    'song'
   ];
 
   // ---- snapshot fetching ------------------------------------------------
   // Snapshots live in /content/ranking-snapshots/*.json. Each one contains
-  // all 8 categories for one moment in time. We fetch the directory listing
+  // every tracked category for one moment in time. We fetch the directory listing
   // via the GitHub API, then load every snapshot in parallel.
 
   function fetchSnapshotList() {
@@ -1566,7 +1587,7 @@
   }
 
   // Convert one snapshot into the {slug, current, previous} shape that the
-  // rest of the rendering code expects — for ALL 8 categories.
+  // rest of the rendering code expects — for every category it contains.
   function snapshotToCategoryArray(snapshot, previousSnapshot) {
     var out = [];
     CATEGORY_SLUGS.forEach(function (slug) {
@@ -1635,10 +1656,10 @@
     // "NEW" flags when minor text changes (different ellipsis characters,
     // an added co-writer, capitalization) between snapshots.
     //
-    // Acting categories CAN have the same film twice (different performers)
-    // so we include a normalized version of the subtitle in the key.
+    // Acting categories (and Song) CAN have the same film twice (different
+    // performers / songs) so we include a normalized subtitle in the key.
     var slug = (categorySlug || '').toLowerCase();
-    var isPersonCat = /^actor$|^actress$|^supp-actor$|^supp-actress$/.test(slug);
+    var isPersonCat = /^actor$|^actress$|^supp-actor$|^supp-actress$|^song$/.test(slug);
 
     function normSub(s) {
       return (s || '')
