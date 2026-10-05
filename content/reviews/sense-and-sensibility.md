@@ -16,7 +16,7 @@ writers:
 publishedDate: October 5, 2026
 deck: Georgia Oakley brings a gorgeous visual identity to this new adaptation of
   Jane Austen’s classic. While the story doesn’t always match the creativity
-  behind the camera, Esme Creed-Miles is a breath of fresh air.
+  behind the camera, Esmé Creed-Miles is a breath of fresh air.
 excerpt: A gorgeous adaptation with a visual identity that shines brighter than
   its story.
 heroImage: https://static0.srcdn.com/wordpress/wp-content/uploads/2026/06/the-dashwood-sisters-stare-out-their-front-window-in-sense-and-sensibility-2026.jpg?w=1200&h=628&fit=crop
@@ -28,7 +28,7 @@ prospects:
     category: production-design
   - tier: long-shot
     category: supp-actress
-    performer: Esme Creed-Miles
+    performer: Esmé Creed-Miles
   - tier: long-shot
     category: cinematography
 isHero: false
@@ -55,7 +55,7 @@ And Oakley’s retelling basically falls in line with the story you would assume
 
 Beyond the beauty of *Sense and Sensibility*, the costumes and sets are fantastic showcases. They transport you back to this time, and when working in tandem with Arnaud Poitier’s cinematography, you are having a ball and dazzled by the spectacle. It’s the kind of movie where you can almost forget how you feel about the story because you're so absorbed in watching it.
 
-Then there’s Marianne Dashwood, portrayed by Esme Creed-Miles. She really is a breath of fresh air in the story. In every scene she graces, she commands your attention and shows why she is one of the most buzzy up-and-coming actors. Her performance has an energy that feels completely different from everything happening around her.
+Then there’s Marianne Dashwood, portrayed by Esmé Creed-Miles. She really is a breath of fresh air in the story. In every scene she graces, she commands your attention and shows why she is one of the most buzzy up-and-coming actors. Her performance has an energy that feels completely different from everything happening around her.
 
 That’s kind of odd to say when she’s starring alongside Daisy Edgar-Jones, someone whose name is essentially what this film is being billed around. But I really gravitated more toward Creed-Miles’ portrayal of Marianne, which is filled with life, both the highs and the lows, and found the story to be more focused on her and her journey.
 
