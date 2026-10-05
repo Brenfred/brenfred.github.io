@@ -6,7 +6,7 @@ director: Georgia Oakley
 studio: Focus Features
 runtime: 132 min
 genre: Drama
-rating: 0
+rating: 3
 stance: hold
 stanceLabel: Craft Contender
 posterSlug: sense-and-sensibility
