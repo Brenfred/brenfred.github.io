@@ -8,7 +8,8 @@ runtime: 129 mins
 genre: Satire
 rating: 4
 stance: sell
-stanceLabel: Not dead in the water, but the waters are looking shaky.
+stanceLabel: Its dreadful box office numbers and divisive nature means it has
+  probably dropped out of several major categories.
 posterSlug: Digger
 writer: "[ Writer ]"
 writers:
@@ -18,8 +19,7 @@ deck: "Digger doesn’t really work as a movie; at least not in any conventional
   sense. But does this even matter? "
 excerpt: Digger is one of the biggest swings by a major studio you’ll see… maybe ever.
 heroImage: https://www.indiewire.com/wp-content/uploads/2026/09/MCDDIGG_WB026.jpg?w=600&h=337&crop=1
-verdictNote: Its dreadful box office numbers and divisive nature means it has
-  probably dropped out of several major categories.
+verdictNote: "Not dead in the water, but the waters are looking shaky. "
 prospects:
   - tier: predicted
     category: makeup-hair
