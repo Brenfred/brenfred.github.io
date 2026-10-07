@@ -14,13 +14,19 @@ writer: ""
 writers:
   - dylan-mckercher
 publishedDate: October 7, 2026
-deck: "A spiritual successor to *The Social Network* on paper, a man yelling at Facebook in practice. Jeremy Strong plays one note, Mikey Madison misses, and the room laughed in the wrong places."
+deck: A spiritual successor to *The Social Network* on paper, a man yelling at
+  Facebook in practice. Jeremy Strong plays one note, Mikey Madison misses, and
+  the room laughed in the wrong places.
 excerpt: Unc, you are washed.
 heroImage: /posters/the-social-reckoning-hero.jpg
 verdictNote: Is Sorkin THAT Strong?
-prospects: []
+prospects:
+  - tier: long-shot
+    category: adapt-screenplay
+    performer: Aaron Sorkin
 isHero: false
-tags: []
+tags:
+  - the-social-reckoning
 categoryTags: []
 ---
 Aaron Sorkin, I am what you call a fan. *The Trial of the Chicago 7* came out during COVID, no problem, I went to see it at a drive-in. The box office was still recovering when you released a streamer movie with *Being the Ricardos*, and I went to a local indie cinema to see it opening weekend. So I don't say this lightly...
