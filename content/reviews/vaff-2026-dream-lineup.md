@@ -13,15 +13,20 @@ posterSlug: vaff-2026
 writer: ""
 writers:
   - dylan-mckercher
-publishedDate: October 7, 2026
-deck: "For eight years, the Virginia Film Festival has been one of my favorite weeks of the year, bringing world-class cinema, major filmmakers, and unforgettable festival moments to Charlottesville. I may not be able to attend this year, but if I could build my perfect VAFF schedule, these are the 15 films and events I’d be seated for."
-excerpt: "I may not be able to attend this year, but if I could build my perfect VAFF schedule, these are the 15 films and events I’d want to catch."
+publishedDate: October 6, 2026
+deck: For eight years, the Virginia Film Festival has been one of my favorite
+  weeks of the year, bringing world-class cinema, major filmmakers, and
+  unforgettable festival moments to Charlottesville. I may not be able to attend
+  this year, but if I could build my perfect VAFF schedule, these are the 15
+  films and events I’d be seated for.
+excerpt: I may not be able to attend this year, but if I could build my perfect
+  VAFF schedule, these are the 15 films and events I’d want to catch.
 heroImage: /posters/vaff-2026-hero.jpg
 verdictNote: ""
+prospects: []
 isHero: false
 tags: []
 categoryTags: []
-prospects: []
 ---
 
 Since 2019, the end of October has marked one of my favorite weeks of the year because the Virginia Film Festival (VAFF) kicks off in historic Charlottesville. Over the last seven years, VAFF has showcased an array of cinema from around the world for every type of movie fan. Want to see the next Best Picture winner? They played *Parasite* and *Nomadland*. Want to see a film with some of Hollywood’s biggest stars? They have you covered, with Mikey Madison attached to a Q&A for *Anora* or Miles Caton performing his hit songs from *Sinners*. Want to see some of the world’s most acclaimed films at a festival? They’ve got you with Cannes Award Winners like *The Worst Person in the World* or Venice winners like *All the Beauty and the Bloodshed*. And guess what? The Virginia Film Festival even gets some U.S. premieres, as it did in 2023 with Ava DuVernay’s *Origin*.
