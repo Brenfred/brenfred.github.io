@@ -14,7 +14,7 @@ posterSlug: Digger
 writer: "[ Writer ]"
 writers:
   - sebastian-ochoa
-publishedDate: October 6, 2026
+publishedDate: October 5, 2026
 deck: "Digger doesn’t really work as a movie; at least not in any conventional
   sense. But does this even matter? "
 excerpt: Digger is one of the biggest swings by a major studio you’ll see… maybe ever.
