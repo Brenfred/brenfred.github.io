@@ -9,7 +9,7 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 32.0
+          "extra": 60.0
         },
         {
           "pick": "12",
@@ -26,7 +26,7 @@
         {
           "pick": "25",
           "filmSlug": "toy-story-5",
-          "extra": 23.0
+          "extra": 36.0
         },
         {
           "pick": "36",
@@ -58,7 +58,7 @@
         {
           "pick": "2",
           "filmSlug": "project-hail-mary",
-          "extra": 23.0
+          "extra": 47.0
         },
         {
           "pick": "11",
@@ -74,7 +74,8 @@
         },
         {
           "pick": "26",
-          "filmSlug": "hope"
+          "filmSlug": "hope",
+          "extra": 19.0
         },
         {
           "pick": "35",
@@ -83,22 +84,22 @@
         {
           "pick": "38",
           "filmSlug": "hoppers",
-          "extra": 11.0
+          "extra": 18.0
         },
         {
           "pick": "47",
           "filmSlug": "wuthering-heights",
-          "extra": 17.0
+          "extra": 30.0
         },
         {
           "pick": "50",
           "filmSlug": "tony",
-          "extra": 15.0
+          "extra": 29.0
         },
         {
           "pick": "59",
           "filmSlug": "backrooms",
-          "extra": 14.0
+          "extra": 26.0
         }
       ],
       "bonus": 300.0,
@@ -145,7 +146,8 @@
         },
         {
           "pick": "58",
-          "filmSlug": "resident-evil"
+          "filmSlug": "resident-evil",
+          "extra": 31.0
         }
       ],
       "bonus": 300.0,
@@ -208,16 +210,17 @@
         {
           "pick": "8",
           "filmSlug": "obsession",
-          "extra": 9.0
+          "extra": 26.0
         },
         {
           "pick": "17",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 9.0
         },
         {
           "pick": "20",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 20.0
+          "extra": 40.0
         },
         {
           "pick": "29",
@@ -230,24 +233,25 @@
         {
           "pick": "41",
           "filmSlug": "i-love-boosters",
-          "extra": 24.0
+          "extra": 39.0
         },
         {
           "pick": "44",
           "filmSlug": "nirvanna-the-band-the-show-the-movie",
-          "extra": 18.0
+          "extra": 42.0
         },
         {
           "pick": "53",
           "filmSlug": "the-sheep-detectives",
-          "extra": 13.0
+          "extra": 22.0
         },
         {
           "pick": "56",
           "filmSlug": "leviticus",
-          "extra": 7.0
+          "extra": 24.0
         }
       ],
+      "bonus": 300.0,
       "faab": 300.0
     },
     {
@@ -256,7 +260,7 @@
         {
           "pick": "6",
           "filmSlug": "the-invite",
-          "extra": 26.0
+          "extra": 45.0
         },
         {
           "pick": "7",
@@ -289,7 +293,7 @@
         {
           "pick": "54",
           "filmSlug": "disclosure-day",
-          "extra": 15.0
+          "extra": 23.0
         },
         {
           "pick": "55",

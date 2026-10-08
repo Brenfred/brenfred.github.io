@@ -18,7 +18,7 @@
         {
           "pick": "13",
           "filmSlug": "all-of-a-sudden",
-          "extra": 12.0
+          "extra": 20.0
         },
         {
           "pick": "24",
@@ -59,7 +59,7 @@
         {
           "pick": "2",
           "filmSlug": "fjord",
-          "extra": 7.0
+          "extra": 12.0
         },
         {
           "pick": "11",
@@ -77,7 +77,7 @@
         {
           "pick": "26",
           "filmSlug": "hoppers",
-          "extra": 10.0
+          "extra": 18.0
         },
         {
           "pick": "35",
@@ -95,7 +95,7 @@
         {
           "pick": "50",
           "filmSlug": "brand-new-day",
-          "extra": 13.0
+          "extra": 20.0
         },
         {
           "pick": "59",
@@ -115,7 +115,7 @@
         {
           "pick": "10",
           "filmSlug": "obsession",
-          "extra": 37.0
+          "extra": 36.0
         },
         {
           "pick": "15",
@@ -236,7 +236,7 @@
         {
           "pick": "32",
           "filmSlug": "rose",
-          "extra": 7.0
+          "extra": 14.0
         },
         {
           "pick": "41",
@@ -251,14 +251,14 @@
         {
           "pick": "53",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 15.0
+          "extra": 26.0
         },
         {
           "pick": "56",
           "filmSlug": "godzilla-minus-zero"
         }
       ],
-      "bonus": 50.0,
+      "bonus": 350.0,
       "faab": 300.0
     },
     {

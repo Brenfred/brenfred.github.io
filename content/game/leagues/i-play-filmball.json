@@ -9,7 +9,7 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 59.0
+          "extra": 69.0
         },
         {
           "pick": "12",
@@ -30,7 +30,7 @@
         {
           "pick": "36",
           "filmSlug": "disclosure-day",
-          "extra": 25.0
+          "extra": 33.0
         },
         {
           "pick": "37",
@@ -96,7 +96,7 @@
         {
           "pick": "59",
           "filmSlug": "the-drama",
-          "extra": 27.0
+          "extra": 34.0
         }
       ],
       "bonus": 300.0,
@@ -156,12 +156,12 @@
         {
           "pick": "4",
           "filmSlug": "project-hail-mary",
-          "extra": 42.0
+          "extra": 52.0
         },
         {
           "pick": "9",
           "filmSlug": "obsession",
-          "extra": 40.0
+          "extra": 49.0
         },
         {
           "pick": "16",
@@ -170,7 +170,7 @@
         {
           "pick": "21",
           "filmSlug": "toy-story-5",
-          "extra": 23.0
+          "extra": 31.0
         },
         {
           "pick": "28",
@@ -246,6 +246,7 @@
           "filmSlug": "one-in-a-million"
         }
       ],
+      "bonus": 300.0,
       "faab": 300.0
     },
     {
@@ -258,7 +259,7 @@
         {
           "pick": "7",
           "filmSlug": "the-invite",
-          "extra": 24.0
+          "extra": 33.0
         },
         {
           "pick": "18",

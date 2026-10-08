@@ -13,11 +13,13 @@
         },
         {
           "pick": "12",
-          "filmSlug": "club-kid"
+          "filmSlug": "club-kid",
+          "extra": 12.0
         },
         {
           "pick": "13",
-          "filmSlug": "elsinore"
+          "filmSlug": "elsinore",
+          "extra": 8.0
         },
         {
           "pick": "24",
@@ -31,7 +33,7 @@
         {
           "pick": "36",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 26.0
+          "extra": 32.0
         },
         {
           "pick": "37",
@@ -58,7 +60,8 @@
       "roster": [
         {
           "pick": "2",
-          "filmSlug": "the-black-ball"
+          "filmSlug": "the-black-ball",
+          "extra": 5.0
         },
         {
           "pick": "11",
@@ -74,7 +77,8 @@
         },
         {
           "pick": "26",
-          "filmSlug": "possible-love"
+          "filmSlug": "possible-love",
+          "extra": 7.0
         },
         {
           "pick": "35",
@@ -92,7 +96,8 @@
         },
         {
           "pick": "50",
-          "filmSlug": "look-back"
+          "filmSlug": "look-back",
+          "extra": 5.0
         },
         {
           "pick": "59",
@@ -112,11 +117,13 @@
         },
         {
           "pick": "10",
-          "filmSlug": "all-of-a-sudden"
+          "filmSlug": "all-of-a-sudden",
+          "extra": 9.0
         },
         {
           "pick": "15",
-          "filmSlug": "ink"
+          "filmSlug": "ink",
+          "extra": 6.0
         },
         {
           "pick": "22",
@@ -140,7 +147,8 @@
         },
         {
           "pick": "51",
-          "filmSlug": "tender-loving-care"
+          "filmSlug": "tender-loving-care",
+          "extra": 8.0
         },
         {
           "pick": "58",
@@ -176,7 +184,7 @@
         {
           "pick": "28",
           "filmSlug": "american-doctor",
-          "extra": 10.0
+          "extra": 17.0
         },
         {
           "pick": "33",
@@ -189,7 +197,8 @@
         },
         {
           "pick": "45",
-          "filmSlug": "bucking-fastard"
+          "filmSlug": "bucking-fastard",
+          "extra": 7.0
         },
         {
           "pick": "52",
@@ -243,13 +252,15 @@
         },
         {
           "pick": "53",
-          "filmSlug": "the-only-living-pickpocket-in-new-york"
+          "filmSlug": "the-only-living-pickpocket-in-new-york",
+          "extra": 5.0
         },
         {
           "pick": "56",
           "filmSlug": "paper-tiger"
         }
       ],
+      "bonus": 300.0,
       "faab": 300.0
     },
     {
@@ -270,7 +281,8 @@
         },
         {
           "pick": "19",
-          "filmSlug": "werwulf"
+          "filmSlug": "werwulf",
+          "extra": 6.0
         },
         {
           "pick": "30",
@@ -279,7 +291,8 @@
         },
         {
           "pick": "31",
-          "filmSlug": "misty-green"
+          "filmSlug": "misty-green",
+          "extra": 6.0
         },
         {
           "pick": "42",
@@ -288,7 +301,8 @@
         },
         {
           "pick": "43",
-          "filmSlug": "bunker"
+          "filmSlug": "bunker",
+          "extra": 2.0
         },
         {
           "pick": "54",

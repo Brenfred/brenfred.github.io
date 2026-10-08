@@ -43,7 +43,7 @@
         {
           "pick": "49",
           "filmSlug": "brand-new-day",
-          "extra": 43.0
+          "extra": 46.0
         },
         {
           "pick": "60",
@@ -111,7 +111,7 @@
         {
           "pick": "10",
           "filmSlug": "the-invite",
-          "extra": 29.0
+          "extra": 34.0
         },
         {
           "pick": "15",
@@ -208,7 +208,8 @@
         },
         {
           "pick": "8",
-          "filmSlug": "all-of-a-sudden"
+          "filmSlug": "all-of-a-sudden",
+          "extra": 6.0
         },
         {
           "pick": "17",
@@ -243,6 +244,7 @@
           "filmSlug": "la-gradiva"
         }
       ],
+      "bonus": 300.0,
       "faab": 300.0
     },
     {
@@ -268,7 +270,8 @@
         },
         {
           "pick": "30",
-          "filmSlug": "bucking-fastard"
+          "filmSlug": "bucking-fastard",
+          "extra": 7.0
         },
         {
           "pick": "31",
@@ -281,7 +284,8 @@
         },
         {
           "pick": "43",
-          "filmSlug": "everytime"
+          "filmSlug": "everytime",
+          "extra": 6.0
         },
         {
           "pick": "54",

@@ -214,7 +214,8 @@
         },
         {
           "pick": "17",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 8.0
         },
         {
           "pick": "20",
@@ -246,7 +247,7 @@
           "filmSlug": "the-history-of-concrete"
         }
       ],
-      "bonus": 50.0,
+      "bonus": 350.0,
       "faab": 300.0
     },
     {

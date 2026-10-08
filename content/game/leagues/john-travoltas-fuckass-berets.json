@@ -8,7 +8,8 @@
       "roster": [
         {
           "pick": "1",
-          "filmSlug": "the-odyssey"
+          "filmSlug": "the-odyssey",
+          "extra": 65.0
         },
         {
           "pick": "12",
@@ -16,7 +17,8 @@
         },
         {
           "pick": "13",
-          "filmSlug": "ink"
+          "filmSlug": "ink",
+          "extra": 16.0
         },
         {
           "pick": "24",
@@ -24,7 +26,8 @@
         },
         {
           "pick": "25",
-          "filmSlug": "bucking-fastard"
+          "filmSlug": "bucking-fastard",
+          "extra": 10.0
         },
         {
           "pick": "36",
@@ -32,11 +35,13 @@
         },
         {
           "pick": "37",
-          "filmSlug": "minotaur"
+          "filmSlug": "minotaur",
+          "extra": 16.0
         },
         {
           "pick": "48",
-          "filmSlug": "forgotten-island"
+          "filmSlug": "forgotten-island",
+          "extra": 16.0
         },
         {
           "pick": "49",
@@ -55,7 +60,8 @@
       "roster": [
         {
           "pick": "2",
-          "filmSlug": "the-black-ball"
+          "filmSlug": "the-black-ball",
+          "extra": 10.0
         },
         {
           "pick": "11",
@@ -63,7 +69,8 @@
         },
         {
           "pick": "14",
-          "filmSlug": "all-of-a-sudden"
+          "filmSlug": "all-of-a-sudden",
+          "extra": 9.0
         },
         {
           "pick": "23",
@@ -106,7 +113,8 @@
         },
         {
           "pick": "10",
-          "filmSlug": "the-invite"
+          "filmSlug": "the-invite",
+          "extra": 35.0
         },
         {
           "pick": "15",
@@ -118,15 +126,18 @@
         },
         {
           "pick": "27",
-          "filmSlug": "toy-story-5"
+          "filmSlug": "toy-story-5",
+          "extra": 25.0
         },
         {
           "pick": "34",
-          "filmSlug": "rose"
+          "filmSlug": "rose",
+          "extra": 8.0
         },
         {
           "pick": "39",
-          "filmSlug": "wicker"
+          "filmSlug": "wicker",
+          "extra": 9.0
         },
         {
           "pick": "46",
@@ -149,19 +160,23 @@
       "roster": [
         {
           "pick": "4",
-          "filmSlug": "project-hail-mary"
+          "filmSlug": "project-hail-mary",
+          "extra": 44.0
         },
         {
           "pick": "9",
-          "filmSlug": "obsession"
+          "filmSlug": "obsession",
+          "extra": 42.0
         },
         {
           "pick": "16",
-          "filmSlug": "coward"
+          "filmSlug": "coward",
+          "extra": 9.0
         },
         {
           "pick": "21",
-          "filmSlug": "teenage-sex-and-death-at-camp-miasma"
+          "filmSlug": "teenage-sex-and-death-at-camp-miasma",
+          "extra": 51.0
         },
         {
           "pick": "28",
@@ -169,11 +184,13 @@
         },
         {
           "pick": "33",
-          "filmSlug": "hoppers"
+          "filmSlug": "hoppers",
+          "extra": 35.0
         },
         {
           "pick": "40",
-          "filmSlug": "being-heumann"
+          "filmSlug": "being-heumann",
+          "extra": 5.0
         },
         {
           "pick": "45",
@@ -181,11 +198,13 @@
         },
         {
           "pick": "52",
-          "filmSlug": "the-sheep-detectives"
+          "filmSlug": "the-sheep-detectives",
+          "extra": 33.0
         },
         {
           "pick": "57",
-          "filmSlug": "the-devil-wears-prada-2"
+          "filmSlug": "the-devil-wears-prada-2",
+          "extra": 31.0
         }
       ],
       "bonus": 300.0,
@@ -196,11 +215,13 @@
       "roster": [
         {
           "pick": "5",
-          "filmSlug": "wild-horse-nine"
+          "filmSlug": "wild-horse-nine",
+          "extra": 9.0
         },
         {
           "pick": "8",
-          "filmSlug": "fjord"
+          "filmSlug": "fjord",
+          "extra": 9.0
         },
         {
           "pick": "17",
@@ -220,7 +241,8 @@
         },
         {
           "pick": "41",
-          "filmSlug": "shaun-the-sheep-the-beast-of-mossy-bottom"
+          "filmSlug": "shaun-the-sheep-the-beast-of-mossy-bottom",
+          "extra": 6.0
         },
         {
           "pick": "44",
@@ -232,9 +254,11 @@
         },
         {
           "pick": "56",
-          "filmSlug": "nirvanna-the-band-the-show-the-movie"
+          "filmSlug": "nirvanna-the-band-the-show-the-movie",
+          "extra": 33.0
         }
       ],
+      "bonus": 300.0,
       "faab": 300.0
     },
     {
@@ -250,35 +274,43 @@
         },
         {
           "pick": "18",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 6.0
         },
         {
           "pick": "19",
-          "filmSlug": "michael"
+          "filmSlug": "michael",
+          "extra": 14.0
         },
         {
           "pick": "30",
-          "filmSlug": "josephine"
+          "filmSlug": "josephine",
+          "extra": 9.0
         },
         {
           "pick": "31",
-          "filmSlug": "the-drama"
+          "filmSlug": "the-drama",
+          "extra": 41.0
         },
         {
           "pick": "42",
-          "filmSlug": "mother-mary"
+          "filmSlug": "mother-mary",
+          "extra": 31.0
         },
         {
           "pick": "43",
-          "filmSlug": "look-back"
+          "filmSlug": "look-back",
+          "extra": 8.0
         },
         {
           "pick": "54",
-          "filmSlug": "tony"
+          "filmSlug": "tony",
+          "extra": 29.0
         },
         {
           "pick": "55",
-          "filmSlug": "tuner"
+          "filmSlug": "tuner",
+          "extra": 30.0
         }
       ],
       "bonus": 300.0,

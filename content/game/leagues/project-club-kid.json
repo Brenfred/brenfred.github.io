@@ -9,7 +9,7 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 27.0
+          "extra": 36.0
         },
         {
           "pick": "12",
@@ -46,7 +46,7 @@
         {
           "pick": "60",
           "filmSlug": "i-love-boosters",
-          "extra": 16.0
+          "extra": 24.0
         }
       ],
       "bonus": 300.0,
@@ -122,7 +122,7 @@
         {
           "pick": "27",
           "filmSlug": "the-drama",
-          "extra": 17.0
+          "extra": 25.0
         },
         {
           "pick": "34",
@@ -155,7 +155,7 @@
         {
           "pick": "4",
           "filmSlug": "project-hail-mary",
-          "extra": 16.0
+          "extra": 24.0
         },
         {
           "pick": "9",
@@ -243,6 +243,7 @@
           "filmSlug": "hunger-games-sunrise-on-the-reaping"
         }
       ],
+      "bonus": 300.0,
       "faab": 300.0
     },
     {
@@ -251,12 +252,12 @@
         {
           "pick": "6",
           "filmSlug": "obsession",
-          "extra": 10.0
+          "extra": 20.0
         },
         {
           "pick": "7",
           "filmSlug": "the-invite",
-          "extra": 8.0
+          "extra": 17.0
         },
         {
           "pick": "18",
@@ -265,7 +266,7 @@
         {
           "pick": "19",
           "filmSlug": "michael",
-          "extra": 7.0
+          "extra": 12.0
         },
         {
           "pick": "30",
@@ -279,7 +280,7 @@
         {
           "pick": "42",
           "filmSlug": "disclosure-day",
-          "extra": 8.0
+          "extra": 16.0
         },
         {
           "pick": "43",
@@ -287,7 +288,8 @@
         },
         {
           "pick": "54",
-          "filmSlug": "the-devil-wears-prada-2"
+          "filmSlug": "the-devil-wears-prada-2",
+          "extra": 7.0
         },
         {
           "pick": "55",

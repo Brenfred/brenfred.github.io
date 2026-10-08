@@ -8,7 +8,8 @@
       "roster": [
         {
           "pick": "1",
-          "filmSlug": "the-odyssey"
+          "filmSlug": "the-odyssey",
+          "extra": 12.0
         },
         {
           "pick": "12",
@@ -20,7 +21,8 @@
         },
         {
           "pick": "24",
-          "filmSlug": "disclosure-day"
+          "filmSlug": "disclosure-day",
+          "extra": 4.0
         },
         {
           "pick": "25",
@@ -235,6 +237,7 @@
           "filmSlug": "queen-at-sea"
         }
       ],
+      "bonus": 300.0,
       "faab": 300.0
     },
     {

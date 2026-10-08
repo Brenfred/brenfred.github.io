@@ -13,7 +13,8 @@
         },
         {
           "pick": "12",
-          "filmSlug": "eisenberg-musical-comedy"
+          "filmSlug": "eisenberg-musical-comedy",
+          "extra": 16.0
         },
         {
           "pick": "13",
@@ -61,7 +62,8 @@
       "roster": [
         {
           "pick": "2",
-          "filmSlug": "wild-horse-nine"
+          "filmSlug": "wild-horse-nine",
+          "extra": 8.0
         },
         {
           "pick": "11",
@@ -89,7 +91,8 @@
         },
         {
           "pick": "47",
-          "filmSlug": "gentle-monster"
+          "filmSlug": "gentle-monster",
+          "extra": 7.0
         },
         {
           "pick": "50",
@@ -149,7 +152,8 @@
         },
         {
           "pick": "58",
-          "filmSlug": "tender-loving-care"
+          "filmSlug": "tender-loving-care",
+          "extra": 8.0
         }
       ],
       "bonus": 300.0,
@@ -172,7 +176,8 @@
         },
         {
           "pick": "21",
-          "filmSlug": "josephine"
+          "filmSlug": "josephine",
+          "extra": 10.0
         },
         {
           "pick": "28",
@@ -184,15 +189,18 @@
         },
         {
           "pick": "40",
-          "filmSlug": "a-long-winter"
+          "filmSlug": "a-long-winter",
+          "extra": 7.0
         },
         {
           "pick": "45",
-          "filmSlug": "tangles"
+          "filmSlug": "tangles",
+          "extra": 8.0
         },
         {
           "pick": "52",
-          "filmSlug": "everytime"
+          "filmSlug": "everytime",
+          "extra": 7.0
         },
         {
           "pick": "57",
@@ -224,7 +232,8 @@
         },
         {
           "pick": "29",
-          "filmSlug": "possible-love"
+          "filmSlug": "possible-love",
+          "extra": 8.0
         },
         {
           "pick": "32",
@@ -248,6 +257,7 @@
           "extra": 1.0
         }
       ],
+      "bonus": 300.0,
       "faab": 300.0
     },
     {

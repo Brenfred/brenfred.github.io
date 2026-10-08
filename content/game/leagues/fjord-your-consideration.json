@@ -13,11 +13,13 @@
         },
         {
           "pick": "12",
-          "filmSlug": "fjord"
+          "filmSlug": "fjord",
+          "extra": 16.0
         },
         {
           "pick": "13",
-          "filmSlug": "elsinore"
+          "filmSlug": "elsinore",
+          "extra": 14.0
         },
         {
           "pick": "24",
@@ -29,11 +31,13 @@
         },
         {
           "pick": "36",
-          "filmSlug": "bunker"
+          "filmSlug": "bunker",
+          "extra": 10.0
         },
         {
           "pick": "37",
-          "filmSlug": "i-play-rocky"
+          "filmSlug": "i-play-rocky",
+          "extra": 12.0
         },
         {
           "pick": "48",
@@ -52,11 +56,12 @@
       "faab": 300.0
     },
     {
-      "name": "Troy Story 5",
+      "name": "Troy",
       "roster": [
         {
           "pick": "2",
-          "filmSlug": "the-black-ball"
+          "filmSlug": "the-black-ball",
+          "extra": 8.0
         },
         {
           "pick": "11",
@@ -87,7 +92,7 @@
         {
           "pick": "47",
           "filmSlug": "wuthering-heights",
-          "extra": 12.0
+          "extra": 18.0
         },
         {
           "pick": "50",
@@ -110,7 +115,8 @@
         },
         {
           "pick": "10",
-          "filmSlug": "eisenberg-musical-comedy"
+          "filmSlug": "eisenberg-musical-comedy",
+          "extra": 10.0
         },
         {
           "pick": "15",
@@ -154,7 +160,8 @@
       "roster": [
         {
           "pick": "4",
-          "filmSlug": "wild-horse-nine"
+          "filmSlug": "wild-horse-nine",
+          "extra": 8.0
         },
         {
           "pick": "9",
@@ -172,7 +179,7 @@
         {
           "pick": "28",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 16.0
+          "extra": 26.0
         },
         {
           "pick": "33",
@@ -205,15 +212,17 @@
         {
           "pick": "5",
           "filmSlug": "the-invite",
-          "extra": 33.0
+          "extra": 34.0
         },
         {
           "pick": "8",
-          "filmSlug": "ink"
+          "filmSlug": "ink",
+          "extra": 7.0
         },
         {
           "pick": "17",
-          "filmSlug": "your-mother-your-mother-your-mother"
+          "filmSlug": "your-mother-your-mother-your-mother",
+          "extra": 10.0
         },
         {
           "pick": "20",
@@ -222,7 +231,8 @@
         },
         {
           "pick": "29",
-          "filmSlug": "coward"
+          "filmSlug": "coward",
+          "extra": 8.0
         },
         {
           "pick": "32",
@@ -246,11 +256,11 @@
           "filmSlug": "madden"
         }
       ],
-      "bonus": 43.0,
+      "bonus": 343.0,
       "faab": 300.0
     },
     {
-      "name": "La Bola Tandem",
+      "name": "Austin",
       "roster": [
         {
           "pick": "6",

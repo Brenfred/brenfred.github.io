@@ -34,7 +34,8 @@
         },
         {
           "pick": "37",
-          "filmSlug": "rose"
+          "filmSlug": "rose",
+          "extra": 18.0
         },
         {
           "pick": "48",
@@ -47,10 +48,10 @@
         {
           "pick": "60",
           "filmSlug": "la-gradiva",
-          "extra": 16.0
+          "extra": 24.0
         }
       ],
-      "bonus": 300.0,
+      "bonus": 350.0,
       "faab": 300.0
     },
     {
@@ -97,7 +98,7 @@
         {
           "pick": "59",
           "filmSlug": "wuthering-heights",
-          "extra": 21.0
+          "extra": 26.0
         }
       ],
       "bonus": 300.0,
@@ -150,7 +151,7 @@
           "filmSlug": "avengers-doomsday"
         }
       ],
-      "bonus": 300.0,
+      "bonus": 310.0,
       "faab": 300.0
     },
     {
@@ -197,7 +198,7 @@
           "filmSlug": "clarissa"
         }
       ],
-      "bonus": 300.0,
+      "bonus": 325.0,
       "faab": 300.0
     },
     {
@@ -246,6 +247,7 @@
           "filmSlug": "coward"
         }
       ],
+      "bonus": 360.0,
       "faab": 300.0
     },
     {
@@ -296,7 +298,7 @@
           "filmSlug": "madden"
         }
       ],
-      "bonus": 300.0,
+      "bonus": 325.0,
       "faab": 300.0
     }
   ]

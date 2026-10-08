@@ -37,7 +37,7 @@
         {
           "pick": "37",
           "filmSlug": "the-devil-wears-prada-2",
-          "extra": 17.0
+          "extra": 14.0
         },
         {
           "pick": "48",
@@ -98,7 +98,8 @@
         },
         {
           "pick": "50",
-          "filmSlug": "shaun-the-sheep-the-beast-of-mossy-bottom"
+          "filmSlug": "shaun-the-sheep-the-beast-of-mossy-bottom",
+          "extra": 7.0
         },
         {
           "pick": "59",
@@ -192,7 +193,8 @@
         },
         {
           "pick": "45",
-          "filmSlug": "rose"
+          "filmSlug": "rose",
+          "extra": 7.0
         },
         {
           "pick": "52",
@@ -249,13 +251,15 @@
         {
           "pick": "53",
           "filmSlug": "hoppers",
-          "extra": 25.0
+          "extra": 33.0
         },
         {
           "pick": "56",
-          "filmSlug": "one-in-a-million"
+          "filmSlug": "one-in-a-million",
+          "extra": 8.0
         }
       ],
+      "bonus": 300.0,
       "faab": 300.0
     },
     {
@@ -283,7 +287,7 @@
         {
           "pick": "30",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 23.0
+          "extra": 33.0
         },
         {
           "pick": "31",

@@ -14,7 +14,7 @@
         {
           "pick": "12",
           "filmSlug": "fjord",
-          "extra": 16.0
+          "extra": 23.0
         },
         {
           "pick": "13",
@@ -29,7 +29,7 @@
         {
           "pick": "25",
           "filmSlug": "toy-story-5",
-          "extra": 6.0
+          "extra": 17.0
         },
         {
           "pick": "36",
@@ -79,12 +79,12 @@
         {
           "pick": "26",
           "filmSlug": "rose",
-          "extra": 7.0
+          "extra": 15.0
         },
         {
           "pick": "35",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 13.0
+          "extra": 22.0
         },
         {
           "pick": "38",
@@ -214,7 +214,7 @@
         {
           "pick": "8",
           "filmSlug": "the-invite",
-          "extra": 4.0
+          "extra": 13.0
         },
         {
           "pick": "17",
@@ -251,6 +251,7 @@
           "extra": 24.0
         }
       ],
+      "bonus": 300.0,
       "faab": 300.0
     },
     {

@@ -71,7 +71,8 @@
         },
         {
           "pick": "23",
-          "filmSlug": "american-doctor"
+          "filmSlug": "american-doctor",
+          "extra": 17.0
         },
         {
           "pick": "26",
@@ -83,25 +84,26 @@
         },
         {
           "pick": "38",
-          "filmSlug": "sense-and-sensibility"
+          "filmSlug": "sense-and-sensibility",
+          "extra": 6.0
         },
         {
-          "pick": "47",
-          "filmSlug": "wuthering-heights",
-          "extra": 14.0
+          "pick": "61",
+          "filmSlug": "you-can-see-everything"
         },
         {
           "pick": "50",
-          "filmSlug": "forgotten-island"
+          "filmSlug": "forgotten-island",
+          "extra": 22.0
         },
         {
           "pick": "60",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 37.0
+          "extra": 44.0
         }
       ],
-      "bonus": 320.0,
-      "faab": 320.0
+      "bonus": 10.0,
+      "faab": 10.0
     },
     {
       "name": "Sean",
@@ -147,12 +149,12 @@
           "filmSlug": "wicker"
         },
         {
-          "pick": "58",
-          "filmSlug": "paper-tiger"
+          "pick": "64",
+          "filmSlug": "woman-unknown"
         }
       ],
-      "bonus": 300.0,
-      "faab": 300.0
+      "bonus": 200.0,
+      "faab": 200.0
     },
     {
       "name": "Yaboy",
@@ -188,8 +190,8 @@
           "filmSlug": "shaun-the-sheep-the-beast-of-mossy-bottom"
         },
         {
-          "pick": "45",
-          "filmSlug": "bucking-fastard"
+          "pick": "62",
+          "filmSlug": "everytime"
         },
         {
           "pick": "52",
@@ -197,11 +199,12 @@
         },
         {
           "pick": "57",
-          "filmSlug": "resident-evil"
+          "filmSlug": "resident-evil",
+          "extra": 25.0
         }
       ],
-      "bonus": 325.0,
-      "faab": 300.0
+      "bonus": 295.0,
+      "faab": 270.0
     },
     {
       "name": "Dylan",
@@ -213,11 +216,11 @@
         {
           "pick": "8",
           "filmSlug": "the-invite",
-          "extra": 41.0
+          "extra": 42.0
         },
         {
-          "pick": "17",
-          "filmSlug": "misty-green"
+          "pick": "63",
+          "filmSlug": "naza"
         },
         {
           "pick": "20",
@@ -225,7 +228,8 @@
         },
         {
           "pick": "29",
-          "filmSlug": "your-mother-your-mother-your-mother"
+          "filmSlug": "your-mother-your-mother-your-mother",
+          "extra": 7.0
         },
         {
           "pick": "32",
@@ -250,7 +254,8 @@
           "filmSlug": "i-play-rocky"
         }
       ],
-      "faab": 300.0
+      "bonus": 0.0,
+      "faab": 0.0
     },
     {
       "name": "Bren",
@@ -293,15 +298,17 @@
         },
         {
           "pick": "54",
-          "filmSlug": "being-heumann"
+          "filmSlug": "being-heumann",
+          "extra": 5.0
         },
         {
-          "pick": "55",
-          "filmSlug": "bunker"
+          "pick": "65",
+          "filmSlug": "backrooms",
+          "extra": 8.0
         }
       ],
-      "bonus": 350.0,
-      "faab": 300.0
+      "bonus": 340.0,
+      "faab": 290.0
     }
   ]
 }

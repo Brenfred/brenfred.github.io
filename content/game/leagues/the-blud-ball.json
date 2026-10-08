@@ -33,16 +33,17 @@
         {
           "pick": "37",
           "filmSlug": "blue-heron",
-          "extra": 16.0
+          "extra": 35.0
         },
         {
           "pick": "48",
           "filmSlug": "the-drama",
-          "extra": 24.0
+          "extra": 41.0
         },
         {
           "pick": "49",
-          "filmSlug": "resident-evil"
+          "filmSlug": "resident-evil",
+          "extra": 16.0
         },
         {
           "pick": "60",
@@ -58,7 +59,7 @@
         {
           "pick": "2",
           "filmSlug": "project-hail-mary",
-          "extra": 7.0
+          "extra": 18.0
         },
         {
           "pick": "11",
@@ -94,7 +95,8 @@
         },
         {
           "pick": "59",
-          "filmSlug": "hoppers"
+          "filmSlug": "hoppers",
+          "extra": 6.0
         }
       ],
       "bonus": 375.0,
@@ -106,7 +108,7 @@
         {
           "pick": "3",
           "filmSlug": "obsession",
-          "extra": 11.0
+          "extra": 24.0
         },
         {
           "pick": "10",
@@ -127,7 +129,7 @@
         {
           "pick": "34",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 10.0
+          "extra": 28.0
         },
         {
           "pick": "39",
@@ -136,7 +138,7 @@
         {
           "pick": "46",
           "filmSlug": "the-devil-wears-prada-2",
-          "extra": 5.0
+          "extra": 12.0
         },
         {
           "pick": "51",
@@ -144,7 +146,8 @@
         },
         {
           "pick": "58",
-          "filmSlug": "the-end-of-oak-street"
+          "filmSlug": "the-end-of-oak-street",
+          "extra": 15.0
         }
       ],
       "bonus": 300.0,
@@ -160,15 +163,17 @@
         {
           "pick": "9",
           "filmSlug": "the-invite",
-          "extra": 17.0
+          "extra": 35.0
         },
         {
           "pick": "16",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 8.0
         },
         {
           "pick": "21",
-          "filmSlug": "toy-story-5"
+          "filmSlug": "toy-story-5",
+          "extra": 6.0
         },
         {
           "pick": "28",
@@ -215,7 +220,8 @@
         },
         {
           "pick": "20",
-          "filmSlug": "michael"
+          "filmSlug": "michael",
+          "extra": 1.0
         },
         {
           "pick": "29",
@@ -236,13 +242,15 @@
         {
           "pick": "53",
           "filmSlug": "i-love-boosters",
-          "extra": 16.0
+          "extra": 25.0
         },
         {
           "pick": "56",
-          "filmSlug": "brand-new-day"
+          "filmSlug": "brand-new-day",
+          "extra": 14.0
         }
       ],
+      "bonus": 300.0,
       "faab": 300.0
     },
     {
@@ -279,7 +287,7 @@
         {
           "pick": "43",
           "filmSlug": "disclosure-day",
-          "extra": 6.0
+          "extra": 23.0
         },
         {
           "pick": "54",

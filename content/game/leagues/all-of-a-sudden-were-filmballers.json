@@ -26,7 +26,7 @@
         {
           "pick": "25",
           "filmSlug": "toy-story-5",
-          "extra": 34.0
+          "extra": 35.0
         },
         {
           "pick": "36",
@@ -46,7 +46,8 @@
         },
         {
           "pick": "60",
-          "filmSlug": "paper-tiger"
+          "filmSlug": "paper-tiger",
+          "extra": 12.0
         }
       ],
       "bonus": 300.0,
@@ -134,7 +135,8 @@
         },
         {
           "pick": "46",
-          "filmSlug": "forgotten-island"
+          "filmSlug": "forgotten-island",
+          "extra": 8.0
         },
         {
           "pick": "51",
@@ -238,7 +240,8 @@
         },
         {
           "pick": "53",
-          "filmSlug": "shaun-the-sheep-the-beast-of-mossy-bottom"
+          "filmSlug": "shaun-the-sheep-the-beast-of-mossy-bottom",
+          "extra": 7.0
         },
         {
           "pick": "56",
@@ -246,6 +249,7 @@
           "extra": 13.0
         }
       ],
+      "bonus": 300.0,
       "faab": 300.0
     },
     {
@@ -262,7 +266,8 @@
         },
         {
           "pick": "18",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 8.0
         },
         {
           "pick": "19",
@@ -274,7 +279,8 @@
         },
         {
           "pick": "31",
-          "filmSlug": "iron-boy"
+          "filmSlug": "iron-boy",
+          "extra": 8.0
         },
         {
           "pick": "42",

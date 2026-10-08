@@ -197,7 +197,8 @@
         },
         {
           "pick": "52",
-          "filmSlug": "resident-evil"
+          "filmSlug": "resident-evil",
+          "extra": 23.0
         },
         {
           "pick": "57",
@@ -252,7 +253,7 @@
           "filmSlug": "clarissa"
         }
       ],
-      "bonus": 17.0,
+      "bonus": 317.0,
       "faab": 300.0
     },
     {
@@ -274,7 +275,7 @@
         {
           "pick": "19",
           "filmSlug": "toy-story-5",
-          "extra": 18.0
+          "extra": 24.0
         },
         {
           "pick": "30",

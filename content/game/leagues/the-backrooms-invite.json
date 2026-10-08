@@ -9,7 +9,7 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 37.0
+          "extra": 46.0
         },
         {
           "pick": "12",
@@ -18,7 +18,8 @@
         },
         {
           "pick": "13",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 16.0
         },
         {
           "pick": "24",
@@ -27,11 +28,13 @@
         },
         {
           "pick": "25",
-          "filmSlug": "forgotten-island"
+          "filmSlug": "forgotten-island",
+          "extra": 14.0
         },
         {
           "pick": "36",
-          "filmSlug": "i-play-rocky"
+          "filmSlug": "i-play-rocky",
+          "extra": 14.0
         },
         {
           "pick": "37",
@@ -61,7 +64,8 @@
       "roster": [
         {
           "pick": "2",
-          "filmSlug": "the-black-ball"
+          "filmSlug": "the-black-ball",
+          "extra": 6.0
         },
         {
           "pick": "11",
@@ -70,24 +74,28 @@
         },
         {
           "pick": "14",
-          "filmSlug": "all-of-a-sudden"
+          "filmSlug": "all-of-a-sudden",
+          "extra": 9.0
         },
         {
           "pick": "23",
-          "filmSlug": "possible-love"
+          "filmSlug": "possible-love",
+          "extra": 8.0
         },
         {
           "pick": "26",
-          "filmSlug": "iron-boy"
+          "filmSlug": "iron-boy",
+          "extra": 7.0
         },
         {
           "pick": "35",
-          "filmSlug": "minotaur"
+          "filmSlug": "minotaur",
+          "extra": 5.0
         },
         {
           "pick": "38",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 15.0
+          "extra": 22.0
         },
         {
           "pick": "47",
@@ -111,7 +119,8 @@
       "roster": [
         {
           "pick": "3",
-          "filmSlug": "wild-horse-nine"
+          "filmSlug": "wild-horse-nine",
+          "extra": 9.0
         },
         {
           "pick": "10",
@@ -128,7 +137,8 @@
         },
         {
           "pick": "27",
-          "filmSlug": "club-kid"
+          "filmSlug": "club-kid",
+          "extra": 9.0
         },
         {
           "pick": "34",
@@ -160,11 +170,13 @@
       "roster": [
         {
           "pick": "4",
-          "filmSlug": "eisenberg-musical-comedy"
+          "filmSlug": "eisenberg-musical-comedy",
+          "extra": 8.0
         },
         {
           "pick": "9",
-          "filmSlug": "ink"
+          "filmSlug": "ink",
+          "extra": 6.0
         },
         {
           "pick": "16",
@@ -213,11 +225,13 @@
         },
         {
           "pick": "8",
-          "filmSlug": "fjord"
+          "filmSlug": "fjord",
+          "extra": 7.0
         },
         {
           "pick": "17",
-          "filmSlug": "elsinore"
+          "filmSlug": "elsinore",
+          "extra": 4.0
         },
         {
           "pick": "20",
@@ -234,7 +248,8 @@
         },
         {
           "pick": "41",
-          "filmSlug": "bunker"
+          "filmSlug": "bunker",
+          "extra": 3.0
         },
         {
           "pick": "44",
@@ -243,13 +258,15 @@
         },
         {
           "pick": "53",
-          "filmSlug": "resident-evil"
+          "filmSlug": "resident-evil",
+          "extra": 4.0
         },
         {
           "pick": "56",
           "filmSlug": "artificial"
         }
       ],
+      "bonus": 300.0,
       "faab": 300.0
     },
     {
@@ -274,19 +291,23 @@
         },
         {
           "pick": "30",
-          "filmSlug": "prima-facie"
+          "filmSlug": "prima-facie",
+          "extra": 4.0
         },
         {
           "pick": "31",
-          "filmSlug": "misty-green"
+          "filmSlug": "misty-green",
+          "extra": 3.0
         },
         {
           "pick": "42",
-          "filmSlug": "being-heumann"
+          "filmSlug": "being-heumann",
+          "extra": 7.0
         },
         {
           "pick": "43",
-          "filmSlug": "tender-loving-care"
+          "filmSlug": "tender-loving-care",
+          "extra": 8.0
         },
         {
           "pick": "54",

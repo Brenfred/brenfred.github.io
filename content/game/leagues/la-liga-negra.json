@@ -22,12 +22,12 @@
         {
           "pick": "24",
           "filmSlug": "toy-story-5",
-          "extra": 37.0
+          "extra": 42.0
         },
         {
           "pick": "25",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 18.0
+          "extra": 43.0
         },
         {
           "pick": "36",
@@ -41,7 +41,7 @@
         {
           "pick": "48",
           "filmSlug": "tony",
-          "extra": 24.0
+          "extra": 32.0
         },
         {
           "pick": "49",
@@ -96,7 +96,7 @@
         {
           "pick": "50",
           "filmSlug": "i-swear",
-          "extra": 29.0
+          "extra": 35.0
         },
         {
           "pick": "60",
@@ -145,7 +145,7 @@
         {
           "pick": "51",
           "filmSlug": "backrooms",
-          "extra": 26.0
+          "extra": 30.0
         },
         {
           "pick": "58",
@@ -182,7 +182,8 @@
         },
         {
           "pick": "33",
-          "filmSlug": "sense-and-sensibility"
+          "filmSlug": "sense-and-sensibility",
+          "extra": 9.0
         },
         {
           "pick": "40",
@@ -216,7 +217,7 @@
         {
           "pick": "8",
           "filmSlug": "the-invite",
-          "extra": 41.0
+          "extra": 47.0
         },
         {
           "pick": "17",
@@ -233,7 +234,8 @@
         },
         {
           "pick": "32",
-          "filmSlug": "rose"
+          "filmSlug": "rose",
+          "extra": 13.0
         },
         {
           "pick": "41",
@@ -252,9 +254,11 @@
         },
         {
           "pick": "56",
-          "filmSlug": "forgotten-island"
+          "filmSlug": "forgotten-island",
+          "extra": 4.0
         }
       ],
+      "bonus": 300.0,
       "faab": 300.0
     },
     {

@@ -9,7 +9,7 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 14.0
+          "extra": 31.0
         },
         {
           "pick": "12",
@@ -17,7 +17,8 @@
         },
         {
           "pick": "13",
-          "filmSlug": "toy-story-5"
+          "filmSlug": "toy-story-5",
+          "extra": 23.0
         },
         {
           "pick": "24",
@@ -33,7 +34,8 @@
         },
         {
           "pick": "37",
-          "filmSlug": "backrooms"
+          "filmSlug": "backrooms",
+          "extra": 21.0
         },
         {
           "pick": "48",
@@ -72,7 +74,8 @@
         },
         {
           "pick": "26",
-          "filmSlug": "michael"
+          "filmSlug": "michael",
+          "extra": 7.0
         },
         {
           "pick": "35",
@@ -80,7 +83,8 @@
         },
         {
           "pick": "38",
-          "filmSlug": "disclosure-day"
+          "filmSlug": "disclosure-day",
+          "extra": 11.0
         },
         {
           "pick": "30",
@@ -124,7 +128,7 @@
         {
           "pick": "34",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 10.0
+          "extra": 18.0
         },
         {
           "pick": "39",
@@ -151,11 +155,13 @@
       "roster": [
         {
           "pick": "4",
-          "filmSlug": "project-hail-mary"
+          "filmSlug": "project-hail-mary",
+          "extra": 16.0
         },
         {
           "pick": "9",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 17.0
         },
         {
           "pick": "16",
@@ -179,7 +185,8 @@
         },
         {
           "pick": "45",
-          "filmSlug": "hoppers"
+          "filmSlug": "hoppers",
+          "extra": 14.0
         },
         {
           "pick": "52",
@@ -199,11 +206,12 @@
         {
           "pick": "5",
           "filmSlug": "obsession",
-          "extra": 8.0
+          "extra": 24.0
         },
         {
           "pick": "8",
-          "filmSlug": "the-invite"
+          "filmSlug": "the-invite",
+          "extra": 20.0
         },
         {
           "pick": "17",
@@ -235,9 +243,11 @@
         },
         {
           "pick": "56",
-          "filmSlug": "brand-new-day"
+          "filmSlug": "brand-new-day",
+          "extra": 14.0
         }
       ],
+      "bonus": 300.0,
       "faab": 300.0
     },
     {
@@ -269,12 +279,13 @@
         },
         {
           "pick": "42",
-          "filmSlug": "forgotten-island"
+          "filmSlug": "forgotten-island",
+          "extra": 9.0
         },
         {
           "pick": "43",
           "filmSlug": "the-drama",
-          "extra": 8.0
+          "extra": 24.0
         },
         {
           "pick": "54",
