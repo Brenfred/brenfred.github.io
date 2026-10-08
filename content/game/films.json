@@ -1,9 +1,9 @@
 {
   "films": [
     {
-      "filmSlug": "",
-      "title": "---",
-      "posterSlug": "",
+      "filmSlug": "sons",
+      "title": "& Sons",
+      "posterSlug": "sons",
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
@@ -48,115 +48,13 @@
       ]
     },
     {
-      "filmSlug": "a-girl-unknown",
-      "title": "A Girl Unknown",
-      "posterSlug": "a-girl-unknown",
+      "filmSlug": "the-ai-doc",
+      "title": "The AI Doc",
+      "posterSlug": "the-ai-doc",
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "a-good-little-soldier",
-      "title": "A Good Little Soldier",
-      "posterSlug": "a-good-little-soldier",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "venice",
-          "points": 40.0,
-          "note": "SCREENPLAY"
-        }
-      ]
-    },
-    {
-      "filmSlug": "a-long-winter",
-      "title": "A Long Winter",
-      "posterSlug": "a-long-winter",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "tiff",
-          "points": 20.0,
-          "note": "Silver Medallion"
-        }
-      ]
-    },
-    {
-      "filmSlug": "a-man-of-his-time",
-      "title": "A Man of His Time",
-      "posterSlug": "a-man-of-his-time",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "cannes",
-          "points": 40.0,
-          "note": "SCREENPLAY"
-        }
-      ]
-    },
-    {
-      "filmSlug": "a-pale-view-of-hills",
-      "title": "A Pale View of Hills",
-      "posterSlug": "a-pale-view-of-hills",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "bifa",
-          "points": 7.0,
-          "note": "Cine; Prod"
-        }
-      ]
-    },
-    {
-      "filmSlug": "a-place-to-heal",
-      "title": "A Place to Heal",
-      "posterSlug": "a-place-to-heal",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "venice",
-          "points": 20.0,
-          "note": "Marcello Mastroianni Award"
-        }
-      ]
-    },
-    {
-      "filmSlug": "a-statement",
-      "title": "A Statement",
-      "posterSlug": "a-statement",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 65.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -186,7 +84,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 56.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -234,24 +132,6 @@
       ]
     },
     {
-      "filmSlug": "angh",
-      "title": "Angh",
-      "posterSlug": "angh",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "tiff",
-          "points": 10.0,
-          "note": "Platform Prize"
-        }
-      ]
-    },
-    {
       "filmSlug": "animal-farm",
       "title": "Animal Farm",
       "posterSlug": "animal-farm",
@@ -262,24 +142,6 @@
       "money": 0.0,
       "misc": 0.0,
       "points": []
-    },
-    {
-      "filmSlug": "arrested-memory",
-      "title": "Arrested Memory",
-      "posterSlug": "arrested-memory",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "tiff",
-          "points": 5.0,
-          "note": "PCA MM runner-up"
-        }
-      ]
     },
     {
       "filmSlug": "artificial",
@@ -336,7 +198,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 63.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -402,10 +264,22 @@
       "points": [
         {
           "show": "tiff",
-          "points": 40.0,
+          "points": 50.0,
           "note": "PCA runner-up"
         }
       ]
+    },
+    {
+      "filmSlug": "the-beloved",
+      "title": "The Beloved",
+      "posterSlug": "the-beloved",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
     },
     {
       "filmSlug": "benimana",
@@ -438,24 +312,6 @@
       "points": []
     },
     {
-      "filmSlug": "black-sunflowers",
-      "title": "Black Sunflowers",
-      "posterSlug": "black-sunflowers",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "tiff",
-          "points": 10.0,
-          "note": "PCA Doc Runner-Up"
-        }
-      ]
-    },
-    {
       "filmSlug": "blaise",
       "title": "Blaise",
       "posterSlug": "blaise",
@@ -480,13 +336,31 @@
       "points": []
     },
     {
-      "filmSlug": "brand-new-day",
-      "title": "Spider-Man: Brand New Day",
-      "posterSlug": "brand-new-day",
+      "filmSlug": "the-blue-trail",
+      "title": "The Blue Trail",
+      "posterSlug": "the-blue-trail",
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 66.0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "berlinale",
+          "points": 25.0,
+          "note": "GRAND PRIX"
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-bride",
+      "title": "The Bride",
+      "posterSlug": "the-bride",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 55.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -510,8 +384,8 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
+      "critics": 67.0,
+      "money": 43.0,
       "misc": 0.0,
       "points": []
     },
@@ -546,8 +420,8 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
+      "critics": 50.0,
+      "money": 2.0,
       "misc": 0.0,
       "points": []
     },
@@ -612,6 +486,18 @@
       ]
     },
     {
+      "filmSlug": "the-christophers",
+      "title": "The Christophers",
+      "posterSlug": "the-christophers",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
       "filmSlug": "citizen-vigilante",
       "title": "Citizen Vigilante",
       "posterSlug": "citizen-vigilante",
@@ -663,6 +549,18 @@
       "filmSlug": "club-kid",
       "title": "Club Kid",
       "posterSlug": "club-kid",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-collaboration",
+      "title": "The Collaboration",
+      "posterSlug": "the-collaboration",
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
@@ -750,40 +648,52 @@
       "points": []
     },
     {
-      "filmSlug": "darlene-love-i-know-where-ive-been",
-      "title": "Darlene Love: I Know Where I’ve Been",
-      "posterSlug": "darlene-love-i-know-where-ive-been",
+      "filmSlug": "the-death-of-robin-hood",
+      "title": "The Death of Robin Hood",
+      "posterSlug": "the-death-of-robin-hood",
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 60.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": [
-        {
-          "show": "tiff",
-          "points": 20.0,
-          "note": "PCA Doc"
-        }
-      ]
+      "points": []
     },
     {
-      "filmSlug": "dau",
-      "title": "DAU",
-      "posterSlug": "dau",
+      "filmSlug": "eisenberg-musical-comedy",
+      "title": "The Debut",
+      "posterSlug": "the-debut",
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": [
-        {
-          "show": "venice",
-          "points": 40.0,
-          "note": "DIRECTOR"
-        }
-      ]
+      "points": []
+    },
+    {
+      "filmSlug": "the-devil-wears-prada-2",
+      "title": "The Devil Wears Prada 2",
+      "posterSlug": "the-devil-wears-prada-2",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 63.0,
+      "money": 11.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-diary-of-a-chambermaid",
+      "title": "The Diary of a Chambermaid",
+      "posterSlug": "the-diary-of-a-chambermaid",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
     },
     {
       "filmSlug": "digger",
@@ -808,6 +718,48 @@
       "money": 5.0,
       "misc": 0.0,
       "points": []
+    },
+    {
+      "filmSlug": "the-dog-stars",
+      "title": "The Dog Stars",
+      "posterSlug": "the-dog-stars",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 49.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-drama",
+      "title": "The Drama",
+      "posterSlug": "the-drama",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 59.0,
+      "money": 8.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-dreamed-adventure",
+      "title": "The Dreamed Adventure",
+      "posterSlug": "the-dreamed-adventure",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "cannes",
+          "points": 40.0,
+          "note": "JURY"
+        }
+      ]
     },
     {
       "filmSlug": "dreams",
@@ -847,7 +799,7 @@
     },
     {
       "filmSlug": "edenezer",
-      "title": "Edenezer",
+      "title": "Ebenezer",
       "posterSlug": "edenezer",
       "pool": true,
       "bpNom": false,
@@ -861,18 +813,6 @@
       "filmSlug": "edward-said-between-words",
       "title": "Edward Said: Between Words",
       "posterSlug": "edward-said-between-words",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "eisenberg-musical-comedy",
-      "title": "The Debut",
-      "posterSlug": "the-debut",
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
@@ -916,6 +856,18 @@
           "note": "PCA International"
         }
       ]
+    },
+    {
+      "filmSlug": "the-end-of-oak-street",
+      "title": "The End of Oak Street",
+      "posterSlug": "the-end-of-oak-street",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 69.0,
+      "money": 3.0,
+      "misc": 0.0,
+      "points": []
     },
     {
       "filmSlug": "epic-elvis-presley-in-concert",
@@ -1057,6 +1009,11 @@
           "show": "cannes",
           "points": 40.0,
           "note": "DIRECTOR"
+        },
+        {
+          "show": "tiff",
+          "points": 20.0,
+          "note": "Silver Medallion"
         }
       ]
     },
@@ -1139,7 +1096,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 79.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -1148,6 +1105,36 @@
       "filmSlug": "fucktoys",
       "title": "Fucktoys",
       "posterSlug": "fucktoys",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-furious",
+      "title": "The Furious",
+      "posterSlug": "the-furious",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 85.0,
+      "money": 1.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 5.0,
+          "note": "PCA MM runner-up"
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-adventures-of-cliff-booth",
+      "title": "The Further Mis-Adventures of Cliff Booth",
+      "posterSlug": "the-adventures-of-cliff-booth",
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
@@ -1169,9 +1156,33 @@
       "points": []
     },
     {
+      "filmSlug": "the-gallerist",
+      "title": "The Gallerist",
+      "posterSlug": "the-gallerist",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
       "filmSlug": "gentle-monster",
       "title": "Gentle Monster",
       "posterSlug": "gentle-monster",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "a-girl-unknown",
+      "title": "A Girl Unknown",
+      "posterSlug": "a-girl-unknown",
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
@@ -1188,7 +1199,7 @@
       "bpNom": false,
       "oscarWins": 0,
       "critics": 60.0,
-      "money": 0.0,
+      "money": 6.0,
       "misc": 0.0,
       "points": []
     },
@@ -1246,7 +1257,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 72.0,
       "money": 0.0,
       "misc": 0.0,
       "points": [
@@ -1288,13 +1299,25 @@
       "points": []
     },
     {
+      "filmSlug": "the-history-of-concrete",
+      "title": "The History of Concrete",
+      "posterSlug": "the-history-of-concrete",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 81.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
       "filmSlug": "hope",
       "title": "Hope",
       "posterSlug": "hope",
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 67.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -1308,6 +1331,18 @@
       "oscarWins": 0,
       "critics": 73.0,
       "money": 5.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-housewife",
+      "title": "The Housewife",
+      "posterSlug": "the-housewife",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
       "misc": 0.0,
       "points": []
     },
@@ -1349,7 +1384,7 @@
       "bpNom": false,
       "oscarWins": 0,
       "critics": 71.0,
-      "money": 0.0,
+      "money": 1.0,
       "misc": 0.0,
       "points": []
     },
@@ -1366,7 +1401,7 @@
       "points": [
         {
           "show": "tiff",
-          "points": 40.0,
+          "points": 50.0,
           "note": "PCA runner-up"
         }
       ]
@@ -1391,7 +1426,7 @@
       "bpNom": false,
       "oscarWins": 0,
       "critics": 71.0,
-      "money": 0.0,
+      "money": 1.0,
       "misc": 0.0,
       "points": [
         {
@@ -1467,6 +1502,24 @@
       "points": []
     },
     {
+      "filmSlug": "the-incomer",
+      "title": "The Incomer",
+      "posterSlug": "the-incomer",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "sundance",
+          "points": 5.0,
+          "note": "NEXT"
+        }
+      ]
+    },
+    {
       "filmSlug": "ink",
       "title": "Ink",
       "posterSlug": "ink",
@@ -1475,6 +1528,18 @@
       "oscarWins": 0,
       "critics": 0.0,
       "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-invite",
+      "title": "The Invite",
+      "posterSlug": "the-invite",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 82.0,
+      "money": 20.0,
       "misc": 0.0,
       "points": []
     },
@@ -1520,7 +1585,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 75.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -1610,6 +1675,29 @@
       "points": []
     },
     {
+      "filmSlug": "the-black-ball",
+      "title": "La Bola Negra",
+      "posterSlug": "la-bola-negra",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "cannes",
+          "points": 40.0,
+          "note": "DIRECTOR"
+        },
+        {
+          "show": "tiff",
+          "points": 100.0,
+          "note": "PCA"
+        }
+      ]
+    },
+    {
       "filmSlug": "la-gradiva",
       "title": "La Gradiva",
       "posterSlug": "la-gradiva",
@@ -1620,24 +1708,6 @@
       "money": 0.0,
       "misc": 0.0,
       "points": []
-    },
-    {
-      "filmSlug": "ladies-and-gentlemen-brian-mulroney",
-      "title": "Ladies and Gentlemen, Brian Mulroney",
-      "posterSlug": "ladies-and-gentlemen-brian-mulroney",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "tiff",
-          "points": 10.0,
-          "note": "PCA MM"
-        }
-      ]
     },
     {
       "filmSlug": "lady",
@@ -1676,7 +1746,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 77.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -1694,6 +1764,18 @@
       "points": []
     },
     {
+      "filmSlug": "the-loneliest-man-in-town",
+      "title": "The Loneliest Man in Town",
+      "posterSlug": "the-loneliest-man-in-town",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
       "filmSlug": "long-days-journey-into-night",
       "title": "Long Day's Journey Into Night",
       "posterSlug": "long-days-journey-into-night",
@@ -1706,6 +1788,24 @@
       "points": []
     },
     {
+      "filmSlug": "a-long-winter",
+      "title": "A Long Winter",
+      "posterSlug": "a-long-winter",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 20.0,
+          "note": "Silver Medallion"
+        }
+      ]
+    },
+    {
       "filmSlug": "look-back",
       "title": "Look Back",
       "posterSlug": "look-back",
@@ -1713,6 +1813,18 @@
       "bpNom": false,
       "oscarWins": 0,
       "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-luckiest-man-in-america",
+      "title": "The Luckiest Man in America",
+      "posterSlug": "the-luckiest-man-in-america",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 68.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -1766,9 +1878,63 @@
       "points": []
     },
     {
+      "filmSlug": "the-magic-faraway-tree",
+      "title": "The Magic Faraway Tree",
+      "posterSlug": "the-magic-faraway-tree",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 59.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-man-i-love",
+      "title": "The Man I Love",
+      "posterSlug": "the-man-i-love",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "a-man-of-his-time",
+      "title": "A Man of His Time",
+      "posterSlug": "a-man-of-his-time",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "cannes",
+          "points": 40.0,
+          "note": "SCREENPLAY"
+        }
+      ]
+    },
+    {
       "filmSlug": "maserati-the-brothers",
       "title": "Maserati: The Brothers",
       "posterSlug": "maserati-the-brothers",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-meltdown",
+      "title": "The Meltdown",
+      "posterSlug": "the-meltdown",
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
@@ -1857,7 +2023,19 @@
       "bpNom": false,
       "oscarWins": 0,
       "critics": 42.0,
-      "money": 0.0,
+      "money": 2.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-moment",
+      "title": "The Moment",
+      "posterSlug": "the-moment",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 53.0,
+      "money": 5.0,
       "misc": 0.0,
       "points": []
     },
@@ -1983,7 +2161,7 @@
       "bpNom": false,
       "oscarWins": 0,
       "critics": 80.0,
-      "money": 0.0,
+      "money": 10.0,
       "misc": 0.0,
       "points": [
         {
@@ -2042,6 +2220,30 @@
       ]
     },
     {
+      "filmSlug": "the-odyssey",
+      "title": "The Odyssey",
+      "posterSlug": "the-odyssey",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 88.0,
+      "money": 12.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-oldest-person-in-the-world",
+      "title": "The Oldest Person in the World",
+      "posterSlug": "the-oldest-person-in-the-world",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
       "filmSlug": "on-behalf-of-my-sun",
       "title": "On Behalf Of My Sun",
       "posterSlug": "on-behalf-of-my-sun",
@@ -2084,9 +2286,9 @@
       ]
     },
     {
-      "filmSlug": "onslaught",
-      "title": "Onslaught",
-      "posterSlug": "onslaught",
+      "filmSlug": "the-only-living-pickpocket-in-new-york",
+      "title": "The Only Living Pickpocket in New York",
+      "posterSlug": "the-only-living-pickpocket-in-new-york",
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
@@ -2094,6 +2296,36 @@
       "money": 0.0,
       "misc": 0.0,
       "points": []
+    },
+    {
+      "filmSlug": "onslaught",
+      "title": "Onslaught",
+      "posterSlug": "onslaught",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 57.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "a-pale-view-of-hills",
+      "title": "A Pale View of Hills",
+      "posterSlug": "a-pale-view-of-hills",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "bifa",
+          "points": 7.0,
+          "note": "Cine; Prod"
+        }
+      ]
     },
     {
       "filmSlug": "paper-tiger",
@@ -2149,7 +2381,7 @@
         },
         {
           "show": "tiff",
-          "points": 40.0,
+          "points": 20.0,
           "note": "PCA International runner-up"
         }
       ]
@@ -2162,7 +2394,7 @@
       "bpNom": false,
       "oscarWins": 0,
       "critics": 67.0,
-      "money": 0.0,
+      "money": 1.0,
       "misc": 0.0,
       "points": [
         {
@@ -2203,7 +2435,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 67.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -2235,6 +2467,24 @@
           "show": "berlinale",
           "points": 30.0,
           "note": "SUP ACT; JURY"
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-quiet-son",
+      "title": "The Quiet Son",
+      "posterSlug": "the-quiet-son",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "venice",
+          "points": 40.0,
+          "note": "ACTOR"
         }
       ]
     },
@@ -2275,7 +2525,19 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 79.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-rivals-of-amziah-king",
+      "title": "The Rivals of Amziah King",
+      "posterSlug": "the-rivals-of-amziah-king",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 74.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -2358,6 +2620,18 @@
       ]
     },
     {
+      "filmSlug": "the-samurai-and-the-prisoner",
+      "title": "The Samurai and the Prisoner",
+      "posterSlug": "the-samurai-and-the-prisoner",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 84.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
       "filmSlug": "see-you-when-i-see-you",
       "title": "See You When I See You",
       "posterSlug": "see-you-when-i-see-you",
@@ -2418,8 +2692,20 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 80.0,
       "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-sheep-detectives",
+      "title": "The Sheep Detectives",
+      "posterSlug": "the-sheep-detectives",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 72.0,
+      "money": 4.0,
       "misc": 0.0,
       "points": []
     },
@@ -2442,9 +2728,21 @@
       ]
     },
     {
-      "filmSlug": "sons",
-      "title": "& Sons",
-      "posterSlug": "sons",
+      "filmSlug": "the-six-billion-dollat-man",
+      "title": "The Six Billion Dollat Man",
+      "posterSlug": "the-six-billion-dollat-man",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-social-reckoning",
+      "title": "The Social Reckoning",
+      "posterSlug": "the-social-reckoning",
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
@@ -2484,6 +2782,18 @@
       "points": []
     },
     {
+      "filmSlug": "brand-new-day",
+      "title": "Spider-Man: Brand New Day",
+      "posterSlug": "brand-new-day",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 66.0,
+      "money": 21.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
       "filmSlug": "star-wars-the-mandalorian-and-grogu",
       "title": "Star Wars: The Mandalorian and Grogu",
       "posterSlug": "star-wars-the-mandalorian-and-grogu",
@@ -2494,6 +2804,36 @@
       "money": 5.0,
       "misc": 0.0,
       "points": []
+    },
+    {
+      "filmSlug": "a-statement",
+      "title": "A Statement",
+      "posterSlug": "a-statement",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-stranger",
+      "title": "The Stranger",
+      "posterSlug": "the-stranger",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "efa",
+          "points": 10.0,
+          "note": "Cine"
+        }
+      ]
     },
     {
       "filmSlug": "sukkwan-island",
@@ -2508,9 +2848,9 @@
       "points": []
     },
     {
-      "filmSlug": "sunburn",
-      "title": "Sunburn",
-      "posterSlug": "sunburn",
+      "filmSlug": "the-sun-rises-on-us-all",
+      "title": "The Sun Rises on Us All",
+      "posterSlug": "the-sun-rises-on-us-all",
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
@@ -2519,11 +2859,23 @@
       "misc": 0.0,
       "points": [
         {
-          "show": "tiff",
-          "points": 10.0,
-          "note": "Best Canadian Feature Film"
+          "show": "venice",
+          "points": 40.0,
+          "note": "ACTRESS"
         }
       ]
+    },
+    {
+      "filmSlug": "the-super-mario-galaxy-movie",
+      "title": "The Super Mario Galaxy Movie",
+      "posterSlug": "the-super-mario-galaxy-movie",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 37.0,
+      "money": 19.0,
+      "misc": 0.0,
+      "points": []
     },
     {
       "filmSlug": "supergirl",
@@ -2533,7 +2885,7 @@
       "bpNom": false,
       "oscarWins": 0,
       "critics": 50.0,
-      "money": 0.0,
+      "money": 2.0,
       "misc": 0.0,
       "points": []
     },
@@ -2575,7 +2927,7 @@
       "bpNom": false,
       "oscarWins": 0,
       "critics": 89.0,
-      "money": 0.0,
+      "money": 3.0,
       "misc": 0.0,
       "points": []
     },
@@ -2599,659 +2951,6 @@
       "bpNom": false,
       "oscarWins": 0,
       "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-adventures-of-cliff-booth",
-      "title": "The Further Mis-Adventures of Cliff Booth",
-      "posterSlug": "the-adventures-of-cliff-booth",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-ai-doc",
-      "title": "The AI Doc",
-      "posterSlug": "the-ai-doc",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-assassins",
-      "title": "The Assassins",
-      "posterSlug": "the-assassins",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "tiff",
-          "points": 40.0,
-          "note": "PCA International runner-up"
-        }
-      ]
-    },
-    {
-      "filmSlug": "the-beloved",
-      "title": "The Beloved",
-      "posterSlug": "the-beloved",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-black-ball",
-      "title": "La Bola Negra",
-      "posterSlug": "la-bola-negra",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "cannes",
-          "points": 40.0,
-          "note": "DIRECTOR"
-        },
-        {
-          "show": "tiff",
-          "points": 100.0,
-          "note": "PCA"
-        }
-      ]
-    },
-    {
-      "filmSlug": "the-blue-trail",
-      "title": "The Blue Trail",
-      "posterSlug": "the-blue-trail",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "berlinale",
-          "points": 25.0,
-          "note": "GRAND PRIX"
-        }
-      ]
-    },
-    {
-      "filmSlug": "the-bride",
-      "title": "The Bride",
-      "posterSlug": "the-bride",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 55.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-christophers",
-      "title": "The Christophers",
-      "posterSlug": "the-christophers",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-collaboration",
-      "title": "The Collaboration",
-      "posterSlug": "the-collaboration",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-death-of-robin-hood",
-      "title": "The Death of Robin Hood",
-      "posterSlug": "the-death-of-robin-hood",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 60.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-devil-wears-prada-2",
-      "title": "The Devil Wears Prada 2",
-      "posterSlug": "the-devil-wears-prada-2",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 63.0,
-      "money": 11.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-diary-of-a-chambermaid",
-      "title": "The Diary of a Chambermaid",
-      "posterSlug": "the-diary-of-a-chambermaid",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-dog-stars",
-      "title": "The Dog Stars",
-      "posterSlug": "the-dog-stars",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-drama",
-      "title": "The Drama",
-      "posterSlug": "the-drama",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 59.0,
-      "money": 8.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-dreamed-adventure",
-      "title": "The Dreamed Adventure",
-      "posterSlug": "the-dreamed-adventure",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "cannes",
-          "points": 40.0,
-          "note": "JURY"
-        }
-      ]
-    },
-    {
-      "filmSlug": "the-end-of-oak-street",
-      "title": "The End of Oak Street",
-      "posterSlug": "the-end-of-oak-street",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 69.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-furious",
-      "title": "The Furious",
-      "posterSlug": "the-furious",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "tiff",
-          "points": 5.0,
-          "note": "PCA MM runner-up"
-        }
-      ]
-    },
-    {
-      "filmSlug": "the-gallerist",
-      "title": "The Gallerist",
-      "posterSlug": "the-gallerist",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-history-of-concrete",
-      "title": "The History of Concrete",
-      "posterSlug": "the-history-of-concrete",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-housewife",
-      "title": "The Housewife",
-      "posterSlug": "the-housewife",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-incomer",
-      "title": "The Incomer",
-      "posterSlug": "the-incomer",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "sundance",
-          "points": 5.0,
-          "note": "NEXT"
-        }
-      ]
-    },
-    {
-      "filmSlug": "the-invite",
-      "title": "The Invite",
-      "posterSlug": "the-invite",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 82.0,
-      "money": 20.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-loneliest-man-in-town",
-      "title": "The Loneliest Man in Town",
-      "posterSlug": "the-loneliest-man-in-town",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-luckiest-man-in-america",
-      "title": "The Luckiest Man in America",
-      "posterSlug": "the-luckiest-man-in-america",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 68.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-magic-faraway-tree",
-      "title": "The Magic Faraway Tree",
-      "posterSlug": "the-magic-faraway-tree",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 59.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-man-i-love",
-      "title": "The Man I Love",
-      "posterSlug": "the-man-i-love",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-meltdown",
-      "title": "The Meltdown",
-      "posterSlug": "the-meltdown",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-moment",
-      "title": "The Moment",
-      "posterSlug": "the-moment",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-odyssey",
-      "title": "The Odyssey",
-      "posterSlug": "the-odyssey",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 88.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-oldest-person-in-the-world",
-      "title": "The Oldest Person in the World",
-      "posterSlug": "the-oldest-person-in-the-world",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-only-living-pickpocket-in-new-york",
-      "title": "The Only Living Pickpocket in New York",
-      "posterSlug": "the-only-living-pickpocket-in-new-york",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-quiet-son",
-      "title": "The Quiet Son",
-      "posterSlug": "the-quiet-son",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "venice",
-          "points": 40.0,
-          "note": "ACTOR"
-        }
-      ]
-    },
-    {
-      "filmSlug": "the-rivals-of-amziah-king",
-      "title": "The Rivals of Amziah King",
-      "posterSlug": "the-rivals-of-amziah-king",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 74.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-samurai-and-the-prisoner",
-      "title": "The Samurai and the Prisoner",
-      "posterSlug": "the-samurai-and-the-prisoner",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-sheep-detectives",
-      "title": "The Sheep Detectives",
-      "posterSlug": "the-sheep-detectives",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 72.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-six-billion-dollat-man",
-      "title": "The Six Billion Dollat Man",
-      "posterSlug": "the-six-billion-dollat-man",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-social-reckoning",
-      "title": "The Social Reckoning",
-      "posterSlug": "the-social-reckoning",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-spiral",
-      "title": "The Spiral",
-      "posterSlug": "the-spiral",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "tiff",
-          "points": 5.0,
-          "note": "PCA MM runner-up"
-        }
-      ]
-    },
-    {
-      "filmSlug": "the-stranger",
-      "title": "The Stranger",
-      "posterSlug": "the-stranger",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "efa",
-          "points": 10.0,
-          "note": "Cine"
-        }
-      ]
-    },
-    {
-      "filmSlug": "the-sun-rises-on-us-all",
-      "title": "The Sun Rises on Us All",
-      "posterSlug": "the-sun-rises-on-us-all",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "venice",
-          "points": 40.0,
-          "note": "ACTRESS"
-        }
-      ]
-    },
-    {
-      "filmSlug": "the-super-mario-galaxy-movie",
-      "title": "The Super Mario Galaxy Movie",
-      "posterSlug": "the-super-mario-galaxy-movie",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 37.0,
-      "money": 19.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-ultra-runner",
-      "title": "The Ultra Runner",
-      "posterSlug": "the-ultra-runner",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "tiff",
-          "points": 10.0,
-          "note": "PCA Doc Runner-Up"
-        }
-      ]
-    },
-    {
-      "filmSlug": "the-unknown",
-      "title": "The Unknown",
-      "posterSlug": "the-unknown",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-uprising",
-      "title": "The Uprising",
-      "posterSlug": "the-uprising",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-violinist",
-      "title": "The Violinist",
-      "posterSlug": "the-violinist",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": [
-        {
-          "show": "annecy",
-          "points": 10.0,
-          "note": "CRYSTAL"
-        }
-      ]
-    },
-    {
-      "filmSlug": "the-way-of-the-wind",
-      "title": "The Way of the Wind",
-      "posterSlug": "the-way-of-the-wind",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-weight",
-      "title": "The Weight",
-      "posterSlug": "the-weight",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 0.0,
-      "money": 0.0,
-      "misc": 0.0,
-      "points": []
-    },
-    {
-      "filmSlug": "the-wizard-of-the-kremlin",
-      "title": "The Wizard of the Kremlin",
-      "posterSlug": "the-wizard-of-the-kremlin",
-      "pool": true,
-      "bpNom": false,
-      "oscarWins": 0,
-      "critics": 56.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -3317,7 +3016,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 75.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -3329,7 +3028,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 85.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -3359,7 +3058,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 64.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -3371,7 +3070,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 77.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -3383,7 +3082,31 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
+      "critics": 83.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-unknown",
+      "title": "The Unknown",
+      "posterSlug": "the-unknown",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
       "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-uprising",
+      "title": "The Uprising",
+      "posterSlug": "the-uprising",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 57.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -3399,6 +3122,24 @@
       "money": 0.0,
       "misc": 0.0,
       "points": []
+    },
+    {
+      "filmSlug": "the-violinist",
+      "title": "The Violinist",
+      "posterSlug": "the-violinist",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "annecy",
+          "points": 10.0,
+          "note": "CRYSTAL"
+        }
+      ]
     },
     {
       "filmSlug": "viva-carmen",
@@ -3436,6 +3177,18 @@
       ]
     },
     {
+      "filmSlug": "the-way-of-the-wind",
+      "title": "The Way of the Wind",
+      "posterSlug": "the-way-of-the-wind",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
       "filmSlug": "we-are-all-strangers",
       "title": "We Are All Strangers",
       "posterSlug": "we-are-all-strangers",
@@ -3443,6 +3196,18 @@
       "bpNom": false,
       "oscarWins": 0,
       "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
+      "filmSlug": "the-weight",
+      "title": "The Weight",
+      "posterSlug": "the-weight",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 70.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -3561,6 +3326,18 @@
       "points": []
     },
     {
+      "filmSlug": "the-wizard-of-the-kremlin",
+      "title": "The Wizard of the Kremlin",
+      "posterSlug": "the-wizard-of-the-kremlin",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 56.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": []
+    },
+    {
       "filmSlug": "woman-unknown",
       "title": "Woman Unknown",
       "posterSlug": "woman-unknown",
@@ -3639,7 +3416,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 83.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -3655,6 +3432,222 @@
       "money": 0.0,
       "misc": 0.0,
       "points": []
+    },
+    {
+      "filmSlug": "a-good-little-soldier",
+      "title": "A Good Little Soldier",
+      "posterSlug": "a-good-little-soldier",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "venice",
+          "points": 40.0,
+          "note": "SCREENPLAY"
+        }
+      ]
+    },
+    {
+      "filmSlug": "a-place-to-heal",
+      "title": "A Place to Heal",
+      "posterSlug": "a-place-to-heal",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "venice",
+          "points": 20.0,
+          "note": "Marcello Mastroianni Award"
+        }
+      ]
+    },
+    {
+      "filmSlug": "dau",
+      "title": "DAU",
+      "posterSlug": "dau",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "venice",
+          "points": 40.0,
+          "note": "DIRECTOR"
+        }
+      ]
+    },
+    {
+      "filmSlug": "angh",
+      "title": "Angh",
+      "posterSlug": "angh",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 10.0,
+          "note": "Platform Prize"
+        }
+      ]
+    },
+    {
+      "filmSlug": "sunburn",
+      "title": "Sunburn",
+      "posterSlug": "sunburn",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 10.0,
+          "note": "Best Canadian Feature Film"
+        }
+      ]
+    },
+    {
+      "filmSlug": "darlene-love-i-know-where-ive-been",
+      "title": "Darlene Love: I Know Where I’ve Been",
+      "posterSlug": "darlene-love-i-know-where-ive-been",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 20.0,
+          "note": "PCA Doc"
+        }
+      ]
+    },
+    {
+      "filmSlug": "black-sunflowers",
+      "title": "Black Sunflowers",
+      "posterSlug": "black-sunflowers",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 10.0,
+          "note": "PCA Doc Runner-Up"
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-ultra-runner",
+      "title": "The Ultra Runner",
+      "posterSlug": "the-ultra-runner",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 10.0,
+          "note": "PCA Doc Runner-Up"
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-assassins",
+      "title": "The Assassins",
+      "posterSlug": "the-assassins",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 20.0,
+          "note": "PCA International runner-up"
+        }
+      ]
+    },
+    {
+      "filmSlug": "arrested-memory",
+      "title": "Arrested Memory",
+      "posterSlug": "arrested-memory",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 5.0,
+          "note": "PCA MM runner-up"
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-spiral",
+      "title": "The Spiral",
+      "posterSlug": "the-spiral",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 5.0,
+          "note": "PCA MM runner-up"
+        }
+      ]
+    },
+    {
+      "filmSlug": "ladies-and-gentlemen-brian-mulroney",
+      "title": "Ladies and Gentlemen, Brian Mulroney",
+      "posterSlug": "ladies-and-gentlemen-brian-mulroney",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "tiff",
+          "points": 10.0,
+          "note": "PCA MM"
+        }
+      ]
     },
     {
       "filmSlug": "sinners",
