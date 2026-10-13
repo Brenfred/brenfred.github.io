@@ -19,6 +19,7 @@ deck: Cristian Mungiu presents a boldly provocative thinkpiece on the nuances of
   the food for thought it provides is undeniably fascinating.
 excerpt: One of the most thought-provoking discussion pieces of the year.
 heroImage: https://m.media-amazon.com/images/M/MV5BZTViM2I4ZjEtMzM4YS00OWIyLWE5OTYtYTgxNDgzNTkzOTZjXkEyXkFqcGc@._V1_.jpg
+verdictNote: If NEON gives it the push, Fjord can be a top five contender.
 prospects:
   - tier: predicted
     category: picture
