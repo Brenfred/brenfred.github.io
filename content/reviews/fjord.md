@@ -19,7 +19,7 @@ deck: Cristian Mungiu presents a boldly provocative thinkpiece on the nuances of
   the food for thought it provides is undeniably fascinating.
 excerpt: One of the most thought-provoking discussion pieces of the year.
 heroImage: https://m.media-amazon.com/images/M/MV5BZTViM2I4ZjEtMzM4YS00OWIyLWE5OTYtYTgxNDgzNTkzOTZjXkEyXkFqcGc@._V1_.jpg
-verdictNote: If NEON gives it the push, Fjord can be a top five contender.
+verdictNote: If NEON gives it the push, Fjord can be locked.
 prospects:
   - tier: predicted
     category: picture
@@ -32,14 +32,14 @@ prospects:
   - tier: predicted
     category: actress
     performer: Renate Reinsve
-  - tier: in-the-mix
+  - tier: long-shot
     category: actor
     performer: Sebastian Stan
   - tier: predicted
     category: international
   - tier: in-the-mix
     category: editing
-  - tier: long-shot
+  - tier: in-the-mix
     category: casting
 isHero: false
 tags:
@@ -54,7 +54,7 @@ What I will say is that I think my own background coming into this film proved m
 
 *Fjord* is a legal drama about parents battling to get their kids back from protective custody. It feels almost straightforward when I describe the basic premise of what this film is about, and if you’re unfamiliar with how the story and characters unfold, you might almost be bored by the concept. What Mungiu is far more interested in here, though, is portraying a variety of complicated, problematic, and scarily sympathetic characters on both ends of the spectrum. This is a film written to provoke thought and to get a rise out of the viewer such that the viewer sits and wonders why a rise is being gotten out of them in the first place.
 
-To dismiss this as conservative propaganda is an overzealous eschewal of the clearly complex intent in this screenplay and in the directorial choices being made. Mungiu isn’t encouraging everyone to root for a specific political side here; he wants you to consider what lies at the heart of oppression and what causes it fundamentally. This film argues that a lack of communication and a refusal towards understanding the mindset of those that think differently have led to complete polarization of ideologies, which has broken our ability to connect with others. *Fjord* is a film about how humans are still human, even if they do things you find abhorrent; this is a dismantling of the cartoonish villainization that *actual*propaganda does in favor of insisting that people be looked at with nuance.
+To dismiss this as conservative propaganda is an overzealous eschewal of the clearly complex intent in this screenplay and in the directorial choices being made. Mungiu isn’t encouraging everyone to root for a specific political side here; he wants you to consider what lies at the heart of oppression and what causes it fundamentally. This film argues that a lack of communication and a refusal towards understanding the mindset of those that think differently have led to complete polarization of ideologies, which has broken our ability to connect with others. *Fjord* is a film about how humans are still human, even if they do things you find abhorrent; this is a dismantling of the cartoonish villainization that *actual* propaganda does in favor of insisting that people be looked at with nuance.
 
 This film would’ve fallen apart immediately if it was cast worse, and so credit must be given to the strength of the ensemble here. Stan and Reinsve are both doing solid work in their lead roles here; Reinsve is given a bit more to do and brings a bit more soul to the character that I found easier to engage with. I was pleasantly surprised to discover that I greatly enjoyed the performances of the children. I especially felt that the entire thematic conceit of this film’s impartiality relied on Henrikke Lund Olsen and Vanessa Ceban selling their characters in the first act; the fact that they succeed in this endeavor connects us with their characters, leaving us at a permanent limbo between frustration and feeling for the adults.
 
