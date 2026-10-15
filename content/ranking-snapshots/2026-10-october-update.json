@@ -1,0 +1,1640 @@
+{
+  "snapshotSlug": "2026-10-october-update",
+  "label": "October Update",
+  "sortKey": "2026-10",
+  "publishedDate": "October 15, 2026",
+  "description": "October 2026 — the community consensus heading into the fall release corridor.",
+  "categories": {
+    "picture": {
+      "cutoffRank": 10,
+      "films": [
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "100%",
+          "rank": 1,
+          "subtitle": "",
+          "winPct": "47%"
+        },
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "100%",
+          "rank": 2,
+          "subtitle": "",
+          "winPct": "47%"
+        },
+        {
+          "filmSlug": "wild-horse-nine",
+          "nomPct": "100%",
+          "rank": 3,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "the-debut",
+          "nomPct": "97%",
+          "rank": 4,
+          "subtitle": "",
+          "winPct": "3%"
+        },
+        {
+          "filmSlug": "project-hail-mary",
+          "nomPct": "96%",
+          "rank": 5,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "dune-part-three",
+          "nomPct": "85%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "1%"
+        },
+        {
+          "filmSlug": "the-invite",
+          "nomPct": "81%",
+          "rank": 7,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "obsession",
+          "nomPct": "84%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "all-of-a-sudden",
+          "nomPct": "52%",
+          "rank": 9,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "fjord",
+          "nomPct": "41%",
+          "rank": 10,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "i-play-rocky",
+          "nomPct": "41%",
+          "rank": 11,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "artificial",
+          "nomPct": "14%",
+          "rank": 12,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "possible-love",
+          "nomPct": "23%",
+          "rank": 13,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "digger",
+          "nomPct": "13%",
+          "rank": 14,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "you-can-see-everything",
+          "nomPct": "13%",
+          "rank": 15,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "being-heumann",
+          "nomPct": "14%",
+          "rank": 16,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "club-kid",
+          "nomPct": "9%",
+          "rank": 17,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "elsinore",
+          "nomPct": "8%",
+          "rank": 18,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "behemoth",
+          "nomPct": "11%",
+          "rank": 19,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "ink",
+          "nomPct": "3%",
+          "rank": 20,
+          "subtitle": "",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Picture",
+      "shortLabel": "Picture"
+    },
+    "director": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "100%",
+          "rank": 1,
+          "subtitle": "",
+          "winPct": "67%"
+        },
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "97%",
+          "rank": 2,
+          "subtitle": "",
+          "winPct": "25%"
+        },
+        {
+          "filmSlug": "wild-horse-nine",
+          "nomPct": "87%",
+          "rank": 3,
+          "subtitle": "",
+          "winPct": "1%"
+        },
+        {
+          "filmSlug": "the-invite",
+          "nomPct": "41%",
+          "rank": 4,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "the-debut",
+          "nomPct": "33%",
+          "rank": 5,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "fjord",
+          "nomPct": "30%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "all-of-a-sudden",
+          "nomPct": "32%",
+          "rank": 7,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "dune-part-three",
+          "nomPct": "21%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "3%"
+        },
+        {
+          "filmSlug": "digger",
+          "nomPct": "9%",
+          "rank": 9,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "possible-love",
+          "nomPct": "14%",
+          "rank": 10,
+          "subtitle": "",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Director",
+      "shortLabel": "Director"
+    },
+    "actress": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "the-debut",
+          "nomPct": "100%",
+          "rank": 1,
+          "subtitle": "Julianne Moore",
+          "winPct": "85%"
+        },
+        {
+          "filmSlug": "obsession",
+          "nomPct": "96%",
+          "rank": 2,
+          "subtitle": "Inde Navarrette",
+          "winPct": "12%"
+        },
+        {
+          "filmSlug": "the-invite",
+          "nomPct": "91%",
+          "rank": 3,
+          "subtitle": "Olivia Wilde",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "being-heumann",
+          "nomPct": "63%",
+          "rank": 4,
+          "subtitle": "Ruth Madeley",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "all-of-a-sudden",
+          "nomPct": "51%",
+          "rank": 5,
+          "subtitle": "Virginie Efira",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "rose",
+          "nomPct": "41%",
+          "rank": 6,
+          "subtitle": "Sandra Hüller",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "fjord",
+          "nomPct": "29%",
+          "rank": 7,
+          "subtitle": "Renate Reinsve",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "disclosure-day",
+          "nomPct": "5%",
+          "rank": 8,
+          "subtitle": "Emily Blunt",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "possible-love",
+          "nomPct": "5%",
+          "rank": 9,
+          "subtitle": "Jeon Do-yeon",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "fatherland",
+          "nomPct": "3%",
+          "rank": 10,
+          "subtitle": "Sandra Hüller",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Actress",
+      "shortLabel": "Actress"
+    },
+    "actor": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "wild-horse-nine",
+          "nomPct": "99%",
+          "rank": 1,
+          "subtitle": "John Malkovich",
+          "winPct": "71%"
+        },
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "99%",
+          "rank": 2,
+          "subtitle": "Matt Damon",
+          "winPct": "24%"
+        },
+        {
+          "filmSlug": "elsinore",
+          "nomPct": "92%",
+          "rank": 3,
+          "subtitle": "Andrew Scott",
+          "winPct": "1%"
+        },
+        {
+          "filmSlug": "project-hail-mary",
+          "nomPct": "77%",
+          "rank": 4,
+          "subtitle": "Ryan Gosling",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "digger",
+          "nomPct": "35%",
+          "rank": 5,
+          "subtitle": "Tom Cruise",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "i-play-rocky",
+          "nomPct": "33%",
+          "rank": 6,
+          "subtitle": "Anthony Ippolito",
+          "winPct": "1%"
+        },
+        {
+          "filmSlug": "primetime",
+          "nomPct": "17%",
+          "rank": 7,
+          "subtitle": "Robert Pattinson",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "behemoth",
+          "nomPct": "19%",
+          "rank": 8,
+          "subtitle": "Pedro Pascal",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "the-only-living-pickpocket-in-new-york",
+          "nomPct": "9%",
+          "rank": 9,
+          "subtitle": "John Turturro",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "the-invite",
+          "nomPct": "5%",
+          "rank": 10,
+          "subtitle": "Seth Rogen",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Actor",
+      "shortLabel": "Actor"
+    },
+    "supp-actress": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "99%",
+          "rank": 1,
+          "subtitle": "Anne Hathaway",
+          "winPct": "77%"
+        },
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "81%",
+          "rank": 2,
+          "subtitle": "Samantha Morton",
+          "winPct": "1%"
+        },
+        {
+          "filmSlug": "the-invite",
+          "nomPct": "62%",
+          "rank": 3,
+          "subtitle": "Penélope Cruz",
+          "winPct": "5%"
+        },
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "66%",
+          "rank": 4,
+          "subtitle": "Penélope Cruz",
+          "winPct": "3%"
+        },
+        {
+          "filmSlug": "all-of-a-sudden",
+          "nomPct": "51%",
+          "rank": 5,
+          "subtitle": "Tao Okamoto",
+          "winPct": "7%"
+        },
+        {
+          "filmSlug": "wild-horse-nine",
+          "nomPct": "50%",
+          "rank": 6,
+          "subtitle": "Mariana di Girolamo",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "project-hail-mary",
+          "nomPct": "28%",
+          "rank": 7,
+          "subtitle": "Sandra Hüller",
+          "winPct": "1%"
+        },
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "9%",
+          "rank": 8,
+          "subtitle": "Lola Dueñas",
+          "winPct": "1%"
+        },
+        {
+          "filmSlug": "elsinore",
+          "nomPct": "7%",
+          "rank": 9,
+          "subtitle": "Olivia Colman",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Supporting Actress",
+      "shortLabel": "Supp. Actress"
+    },
+    "supp-actor": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "the-debut",
+          "nomPct": "97%",
+          "rank": 1,
+          "subtitle": "Paul Giamatti",
+          "winPct": "70%"
+        },
+        {
+          "filmSlug": "wild-horse-nine",
+          "nomPct": "88%",
+          "rank": 2,
+          "subtitle": "Sam Rockwell",
+          "winPct": "4%"
+        },
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "78%",
+          "rank": 3,
+          "subtitle": "Guitarricadelafuente",
+          "winPct": "7%"
+        },
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "79%",
+          "rank": 4,
+          "subtitle": "John Leguizamo",
+          "winPct": "10%"
+        },
+        {
+          "filmSlug": "the-invite",
+          "nomPct": "63%",
+          "rank": 5,
+          "subtitle": "Edward Norton",
+          "winPct": "1%"
+        },
+        {
+          "filmSlug": "artificial",
+          "nomPct": "38%",
+          "rank": 6,
+          "subtitle": "Andrew Garfield",
+          "winPct": "3%"
+        },
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "12%",
+          "rank": 7,
+          "subtitle": "Robert Pattinson",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "digger",
+          "nomPct": "10%",
+          "rank": 8,
+          "subtitle": "John Goodman",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "wild-horse-nine",
+          "nomPct": "5%",
+          "rank": 9,
+          "subtitle": "Steve Buscemi",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Supporting Actor",
+      "shortLabel": "Supp. Actor"
+    },
+    "orig-screenplay": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "wild-horse-nine",
+          "nomPct": "100%",
+          "rank": 1,
+          "subtitle": "",
+          "winPct": "78%"
+        },
+        {
+          "filmSlug": "the-debut",
+          "nomPct": "100%",
+          "rank": 2,
+          "subtitle": "",
+          "winPct": "15%"
+        },
+        {
+          "filmSlug": "obsession",
+          "nomPct": "84%",
+          "rank": 3,
+          "subtitle": "",
+          "winPct": "3%"
+        },
+        {
+          "filmSlug": "fjord",
+          "nomPct": "62%",
+          "rank": 4,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "club-kid",
+          "nomPct": "44%",
+          "rank": 5,
+          "subtitle": "",
+          "winPct": "1%"
+        },
+        {
+          "filmSlug": "i-play-rocky",
+          "nomPct": "30%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "digger",
+          "nomPct": "16%",
+          "rank": 7,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "artificial",
+          "nomPct": "18%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "possible-love",
+          "nomPct": "16%",
+          "rank": 9,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "behemoth",
+          "nomPct": "14%",
+          "rank": 10,
+          "subtitle": "",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Original Screenplay",
+      "shortLabel": "Original Screenplay"
+    },
+    "adapt-screenplay": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "100%",
+          "rank": 1,
+          "subtitle": "",
+          "winPct": "72%"
+        },
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "100%",
+          "rank": 2,
+          "subtitle": "",
+          "winPct": "14%"
+        },
+        {
+          "filmSlug": "the-invite",
+          "nomPct": "94%",
+          "rank": 3,
+          "subtitle": "",
+          "winPct": "6%"
+        },
+        {
+          "filmSlug": "project-hail-mary",
+          "nomPct": "87%",
+          "rank": 4,
+          "subtitle": "",
+          "winPct": "3%"
+        },
+        {
+          "filmSlug": "all-of-a-sudden",
+          "nomPct": "62%",
+          "rank": 5,
+          "subtitle": "",
+          "winPct": "1%"
+        },
+        {
+          "filmSlug": "being-heumann",
+          "nomPct": "20%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "dune-part-three",
+          "nomPct": "13%",
+          "rank": 7,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "ink",
+          "nomPct": "4%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "possible-love",
+          "nomPct": "4%",
+          "rank": 9,
+          "subtitle": "",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Adapted Screenplay",
+      "shortLabel": "Adapted Screenplay"
+    },
+    "casting": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "98%",
+          "rank": 1,
+          "subtitle": "",
+          "winPct": "42%"
+        },
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "100%",
+          "rank": 2,
+          "subtitle": "",
+          "winPct": "50%"
+        },
+        {
+          "filmSlug": "wild-horse-nine",
+          "nomPct": "85%",
+          "rank": 3,
+          "subtitle": "",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "the-debut",
+          "nomPct": "56%",
+          "rank": 4,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "obsession",
+          "nomPct": "47%",
+          "rank": 5,
+          "subtitle": "",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "being-heumann",
+          "nomPct": "27%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "i-play-rocky",
+          "nomPct": "23%",
+          "rank": 7,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "all-of-a-sudden",
+          "nomPct": "12%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "the-invite",
+          "nomPct": "11%",
+          "rank": 9,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "club-kid",
+          "nomPct": "11%",
+          "rank": 9,
+          "subtitle": "",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Casting",
+      "shortLabel": "Casting"
+    },
+    "international": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "100%",
+          "rank": 1,
+          "subtitle": "Spain",
+          "winPct": "95%"
+        },
+        {
+          "filmSlug": "all-of-a-sudden",
+          "nomPct": "97%",
+          "rank": 2,
+          "subtitle": "Japan",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "fjord",
+          "nomPct": "97%",
+          "rank": 3,
+          "subtitle": "Romania",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "possible-love",
+          "nomPct": "92%",
+          "rank": 4,
+          "subtitle": "South Korea",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "minotaur",
+          "nomPct": "42%",
+          "rank": 5,
+          "subtitle": "France",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "fatherland",
+          "nomPct": "23%",
+          "rank": 6,
+          "subtitle": "Poland",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "rose",
+          "nomPct": "27%",
+          "rank": 7,
+          "subtitle": "Austria",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "everytime",
+          "nomPct": "9%",
+          "rank": 8,
+          "subtitle": "Germany",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "coward",
+          "nomPct": "3%",
+          "rank": 9,
+          "subtitle": "Belgium",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "silent-friend",
+          "nomPct": "2%",
+          "rank": 10,
+          "subtitle": "",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best International Feature",
+      "shortLabel": "International"
+    },
+    "documentary": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "american-doctor",
+          "nomPct": "88%",
+          "rank": 1,
+          "subtitle": "",
+          "winPct": "23%"
+        },
+        {
+          "filmSlug": "you-can-see-everything",
+          "nomPct": "66%",
+          "rank": 2,
+          "subtitle": "",
+          "winPct": "43%"
+        },
+        {
+          "filmSlug": "naza",
+          "nomPct": "75%",
+          "rank": 3,
+          "subtitle": "",
+          "winPct": "17%"
+        },
+        {
+          "filmSlug": "once-upon-a-time-in-harlem",
+          "nomPct": "77%",
+          "rank": 4,
+          "subtitle": "",
+          "winPct": "11%"
+        },
+        {
+          "filmSlug": "to-hold-a-mountain",
+          "nomPct": "42%",
+          "rank": 5,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "rehearsals-for-a-revolution",
+          "nomPct": "37%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "nuisance-bear",
+          "nomPct": "35%",
+          "rank": 7,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "14th",
+          "nomPct": "26%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "one-in-a-million",
+          "nomPct": "23%",
+          "rank": 9,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "musk",
+          "nomPct": "5%",
+          "rank": 10,
+          "subtitle": "",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Documentary Feature",
+      "shortLabel": "Documentary"
+    },
+    "animated": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "wildwood",
+          "nomPct": "98%",
+          "rank": 1,
+          "subtitle": "",
+          "winPct": "84%"
+        },
+        {
+          "filmSlug": "toy-story-5",
+          "nomPct": "98%",
+          "rank": 2,
+          "subtitle": "",
+          "winPct": "8%"
+        },
+        {
+          "filmSlug": "iron-boy",
+          "nomPct": "82%",
+          "rank": 3,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "ray-gunn",
+          "nomPct": "69%",
+          "rank": 4,
+          "subtitle": "",
+          "winPct": "3%"
+        },
+        {
+          "filmSlug": "hoppers",
+          "nomPct": "61%",
+          "rank": 5,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "tangles",
+          "nomPct": "42%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "forgotten-island",
+          "nomPct": "27%",
+          "rank": 7,
+          "subtitle": "",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "shaun-the-sheep-the-beast-of-mossy-bottom",
+          "nomPct": "18%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "the-super-mario-galaxy-movie",
+          "nomPct": "2%",
+          "rank": 9,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "hexed",
+          "nomPct": "2%",
+          "rank": 10,
+          "subtitle": "",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Animated Feature",
+      "shortLabel": "Animated"
+    },
+    "cinematography": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "100%",
+          "rank": 1,
+          "subtitle": "",
+          "winPct": "81%"
+        },
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "95%",
+          "rank": 2,
+          "subtitle": "",
+          "winPct": "11%"
+        },
+        {
+          "filmSlug": "project-hail-mary",
+          "nomPct": "94%",
+          "rank": 3,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "dune-part-three",
+          "nomPct": "77%",
+          "rank": 4,
+          "subtitle": "",
+          "winPct": "3%"
+        },
+        {
+          "filmSlug": "werwulf",
+          "nomPct": "76%",
+          "rank": 5,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "digger",
+          "nomPct": "34%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "fatherland",
+          "nomPct": "15%",
+          "rank": 7,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "you-can-see-everything",
+          "nomPct": "3%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "primetime",
+          "nomPct": "3%",
+          "rank": 9,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "wild-horse-nine",
+          "nomPct": "2%",
+          "rank": 10,
+          "subtitle": "",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Cinematography",
+      "shortLabel": "Cinematography"
+    },
+    "editing": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "100%",
+          "rank": 1,
+          "subtitle": "",
+          "winPct": "66%"
+        },
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "97%",
+          "rank": 2,
+          "subtitle": "",
+          "winPct": "26%"
+        },
+        {
+          "filmSlug": "wild-horse-nine",
+          "nomPct": "85%",
+          "rank": 3,
+          "subtitle": "",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "project-hail-mary",
+          "nomPct": "74%",
+          "rank": 4,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "dune-part-three",
+          "nomPct": "42%",
+          "rank": 5,
+          "subtitle": "",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "the-debut",
+          "nomPct": "40%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "the-invite",
+          "nomPct": "15%",
+          "rank": 7,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "you-can-see-everything",
+          "nomPct": "11%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "digger",
+          "nomPct": "5%",
+          "rank": 9,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "josephine",
+          "nomPct": "2%",
+          "rank": 10,
+          "subtitle": "",
+          "winPct": "2%"
+        }
+      ],
+      "label": "Best Film Editing",
+      "shortLabel": "Editing"
+    },
+    "production-design": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "98%",
+          "rank": 1,
+          "subtitle": "",
+          "winPct": "86%"
+        },
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "91%",
+          "rank": 2,
+          "subtitle": "",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "project-hail-mary",
+          "nomPct": "90%",
+          "rank": 3,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "dune-part-three",
+          "nomPct": "84%",
+          "rank": 4,
+          "subtitle": "",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "digger",
+          "nomPct": "53%",
+          "rank": 5,
+          "subtitle": "",
+          "winPct": "5%"
+        },
+        {
+          "filmSlug": "werwulf",
+          "nomPct": "43%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "backrooms",
+          "nomPct": "12%",
+          "rank": 7,
+          "subtitle": "",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "sense-and-sensibility",
+          "nomPct": "14%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "the-adventures-of-cliff-booth",
+          "nomPct": "3%",
+          "rank": 9,
+          "subtitle": "",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Production Design",
+      "shortLabel": "Production Design"
+    },
+    "costume-design": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "100%",
+          "rank": 1,
+          "subtitle": "",
+          "winPct": "85%"
+        },
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "96%",
+          "rank": 2,
+          "subtitle": "",
+          "winPct": "8%"
+        },
+        {
+          "filmSlug": "werwulf",
+          "nomPct": "66%",
+          "rank": 3,
+          "subtitle": "",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "dune-part-three",
+          "nomPct": "64%",
+          "rank": 4,
+          "subtitle": "",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "sense-and-sensibility",
+          "nomPct": "74%",
+          "rank": 5,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "michael",
+          "nomPct": "34%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "wild-horse-nine",
+          "nomPct": "17%",
+          "rank": 7,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "wuthering-heights",
+          "nomPct": "11%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "the-devil-wears-prada-2",
+          "nomPct": "13%",
+          "rank": 9,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "i-love-boosters",
+          "nomPct": "6%",
+          "rank": 10,
+          "subtitle": "",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Costume Design",
+      "shortLabel": "Costume Design"
+    },
+    "makeup-hair": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "werwulf",
+          "nomPct": "98%",
+          "rank": 1,
+          "subtitle": "",
+          "winPct": "43%"
+        },
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "93%",
+          "rank": 2,
+          "subtitle": "",
+          "winPct": "29%"
+        },
+        {
+          "filmSlug": "digger",
+          "nomPct": "93%",
+          "rank": 3,
+          "subtitle": "",
+          "winPct": "17%"
+        },
+        {
+          "filmSlug": "wicker",
+          "nomPct": "76%",
+          "rank": 4,
+          "subtitle": "",
+          "winPct": "3%"
+        },
+        {
+          "filmSlug": "clayface",
+          "nomPct": "52%",
+          "rank": 5,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "dune-part-three",
+          "nomPct": "29%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "3%"
+        },
+        {
+          "filmSlug": "michael",
+          "nomPct": "28%",
+          "rank": 7,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "rose",
+          "nomPct": "19%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "artificial",
+          "nomPct": "3%",
+          "rank": 9,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "3%",
+          "rank": 10,
+          "subtitle": "",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Makeup and Hairstyling",
+      "shortLabel": "Makeup & Hair"
+    },
+    "vfx": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "dune-part-three",
+          "nomPct": "100%",
+          "rank": 1,
+          "subtitle": "",
+          "winPct": "73%"
+        },
+        {
+          "filmSlug": "project-hail-mary",
+          "nomPct": "100%",
+          "rank": 2,
+          "subtitle": "",
+          "winPct": "19%"
+        },
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "85%",
+          "rank": 3,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "godzilla-minus-zero",
+          "nomPct": "75%",
+          "rank": 4,
+          "subtitle": "",
+          "winPct": "4%"
+        },
+        {
+          "filmSlug": "avengers-doomsday",
+          "nomPct": "38%",
+          "rank": 5,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "spider-man-brand-new-day",
+          "nomPct": "35%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "whalefall",
+          "nomPct": "27%",
+          "rank": 7,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "the-mandalorian-and-grogu",
+          "nomPct": "21%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "wildwood",
+          "nomPct": "15%",
+          "rank": 9,
+          "subtitle": "",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Visual Effects",
+      "shortLabel": "Visual Effects"
+    },
+    "sound": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "100%",
+          "rank": 1,
+          "subtitle": "",
+          "winPct": "60%"
+        },
+        {
+          "filmSlug": "dune-part-three",
+          "nomPct": "100%",
+          "rank": 2,
+          "subtitle": "",
+          "winPct": "31%"
+        },
+        {
+          "filmSlug": "project-hail-mary",
+          "nomPct": "98%",
+          "rank": 3,
+          "subtitle": "",
+          "winPct": "5%"
+        },
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "98%",
+          "rank": 4,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "behemoth",
+          "nomPct": "36%",
+          "rank": 5,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "godzilla-minus-zero",
+          "nomPct": "13%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "the-mosquito-bowl",
+          "nomPct": "13%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "michael",
+          "nomPct": "11%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "disclosure-day",
+          "nomPct": "11%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "whalefall",
+          "nomPct": "9%",
+          "rank": 10,
+          "subtitle": "",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Sound",
+      "shortLabel": "Sound"
+    },
+    "score": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "100%",
+          "rank": 1,
+          "subtitle": "",
+          "winPct": "70%"
+        },
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "100%",
+          "rank": 2,
+          "subtitle": "",
+          "winPct": "9%"
+        },
+        {
+          "filmSlug": "disclosure-day",
+          "nomPct": "89%",
+          "rank": 3,
+          "subtitle": "",
+          "winPct": "4%"
+        },
+        {
+          "filmSlug": "project-hail-mary",
+          "nomPct": "65%",
+          "rank": 4,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "behemoth",
+          "nomPct": "42%",
+          "rank": 5,
+          "subtitle": "",
+          "winPct": "12%"
+        },
+        {
+          "filmSlug": "wild-horse-nine",
+          "nomPct": "46%",
+          "rank": 6,
+          "subtitle": "",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "dune-part-three",
+          "nomPct": "23%",
+          "rank": 7,
+          "subtitle": "",
+          "winPct": "2%"
+        },
+        {
+          "filmSlug": "the-debut",
+          "nomPct": "25%",
+          "rank": 8,
+          "subtitle": "",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Original Score",
+      "shortLabel": "Score"
+    },
+    "song": {
+      "cutoffRank": 5,
+      "films": [
+        {
+          "filmSlug": "the-black-ball",
+          "nomPct": "100%",
+          "rank": 1,
+          "subtitle": "“La Nieve”",
+          "winPct": "68%"
+        },
+        {
+          "filmSlug": "the-debut",
+          "nomPct": "100%",
+          "rank": 2,
+          "subtitle": "“This City May Have Chewed Me Up (But It Hasn’t Spit Me Out)”",
+          "winPct": "5%"
+        },
+        {
+          "filmSlug": "toy-story-5",
+          "nomPct": "90%",
+          "rank": 3,
+          "subtitle": "“I Knew It, I Knew You”",
+          "winPct": "19%"
+        },
+        {
+          "filmSlug": "by-any-means",
+          "nomPct": "90%",
+          "rank": 4,
+          "subtitle": "“By Any Means”",
+          "winPct": "5%"
+        },
+        {
+          "filmSlug": "the-odyssey",
+          "nomPct": "22%",
+          "rank": 5,
+          "subtitle": "“When I’m Home”",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "musk",
+          "nomPct": "15%",
+          "rank": 6,
+          "subtitle": "“Let Me Sell You a Dream”",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "behemoth",
+          "nomPct": "10%",
+          "rank": 7,
+          "subtitle": "“Your God Is Sleeping”",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "maserati-the-brothers",
+          "nomPct": "7%",
+          "rank": 8,
+          "subtitle": "“One Right Here”",
+          "winPct": "0%"
+        },
+        {
+          "filmSlug": "wildwood",
+          "nomPct": "12%",
+          "rank": 9,
+          "subtitle": "“The Better Part of Bravery”",
+          "winPct": "0%"
+        }
+      ],
+      "label": "Best Original Song",
+      "shortLabel": "Song"
+    }
+  }
+}
