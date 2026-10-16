@@ -22,7 +22,7 @@ heroImage: https://nextbestpicture-com.b-cdn.net/wp-content/uploads/2026/09/YoU-
 verdictNote: A24 Can See All the Awards.
 prospects:
   - tier: predicted
-    category: animated
+    category: documentary
   - tier: in-the-mix
     category: picture
   - tier: in-the-mix
