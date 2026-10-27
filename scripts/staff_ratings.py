@@ -34,6 +34,7 @@ Output shape (content/staff-ratings.json):
 """
 
 import datetime as dt
+import difflib
 import glob
 import json
 import os
@@ -202,6 +203,7 @@ def main():
     writers = load_json_dir(WRITERS_DIR)
     films = load_json_dir(FILMS_DIR)
     matcher = Matcher(films)
+    _FILM_TITLES[:] = [(norm_title(rec.get('title')), slug) for slug, rec in films if rec.get('title')]
     log(f'{len(writers)} writer records, {len(films)} film records '
         f'({len(matcher.by_tmdb)} with tmdbId)')
 
@@ -291,6 +293,21 @@ def main():
     return 0
 
 
+_FILM_TITLES = []  # [(normalized title, slug)] — filled in main() for hints
+
+
+def closest_record(title):
+    """Fuzzy hint for the summary: the tracked film whose title looks most
+    like this one, if it's reasonably close. Never used for matching."""
+    key = norm_title(title)
+    best, score = None, 0.0
+    for nt, slug in _FILM_TITLES:
+        r = difflib.SequenceMatcher(None, key, nt).ratio()
+        if r > score:
+            best, score = slug, r
+    return f'`{best}`?' if best and score >= 0.6 else ''
+
+
 def write_summary(per_writer, unmatched, feeds_ok, feeds_tried, wrote):
     path = os.environ.get('GITHUB_STEP_SUMMARY')
     lines = [
@@ -304,13 +321,23 @@ def write_summary(per_writer, unmatched, feeds_ok, feeds_tried, wrote):
     ]
     for wslug, handle, status, matched, changed in per_writer:
         lines.append(f'| {wslug} | `{handle}` | {status} | {matched} | {changed} |')
-    if unmatched:
-        lines += ['', '### Logged but not matched to a film record', '',
-                  'Add `"tmdbId": <id>` to the right `content/films/<slug>.json` '
-                  '(or create the record) and these will attach on the next run.', '',
-                  '| Title | Year | TMDB id | Logged by |', '|---|---|---|---|']
-        for (title, year, tmdb), handles in sorted(unmatched.items(), key=lambda kv: (kv[0][0] or '').lower()):
-            lines.append(f'| {title} | {year or ""} | {tmdb or ""} | {", ".join(sorted(handles))} |')
+    # Unmatched entries are informational only — the sync never creates film
+    # records. Older films are ignored outright; current-season titles are
+    # listed (most-logged first) so a tracked film hiding under a different
+    # Letterboxd title (e.g. "The Black Ball" for La Bola Negra) is easy to
+    # spot and pin with a tmdbId.
+    recent = {k: v for k, v in unmatched.items() if (k[1] or SEASON_MIN_YEAR) >= SEASON_MIN_YEAR}
+    older = len(unmatched) - len(recent)
+    if recent:
+        lines += ['', f'### Current-season logs with no film record ({len(recent)})', '',
+                  'Ignored unless one of these is actually a tracked film under another title — '
+                  'then add `"tmdbId": <id>` to that `content/films/<slug>.json` and it attaches on the next run.', '',
+                  '| Title | Year | TMDB id | Logged by | Closest record |', '|---|---|---|---|---|']
+        for (title, year, tmdb), handles in sorted(recent.items(), key=lambda kv: (-len(kv[1]), (kv[0][0] or '').lower())):
+            hint = closest_record(title)
+            lines.append(f'| {title} | {year or ""} | {tmdb or ""} | {", ".join(sorted(handles))} | {hint} |')
+    if older:
+        lines += ['', f'_{older} older films logged by staff were ignored (pre-{SEASON_MIN_YEAR})._']
     text = '\n'.join(lines) + '\n'
     if path:
         with open(path, 'a', encoding='utf-8') as fh:
