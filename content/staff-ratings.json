@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T01:39:18Z",
+  "updated": "2026-10-27T06:49:54Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -32,12 +32,51 @@
       },
       "tmdbId": 1476614
     },
+    "american-doctor": {
+      "ratings": {
+        "sean-malloy": {
+          "rating": 4.5,
+          "watched": "2026-09-05",
+          "url": "https://boxd.it/ZsXm"
+        }
+      }
+    },
     "backrooms": {
       "ratings": {
+        "andy-funke": {
+          "rating": 1.0,
+          "watched": "2026-06-17",
+          "url": "https://boxd.it/EY6W"
+        },
+        "brad-derfner": {
+          "rating": 3.0,
+          "watched": "2026-06-21",
+          "url": "https://boxd.it/EY6W"
+        },
+        "ray-siddiqi": {
+          "rating": 3.5,
+          "watched": "2026-06-01",
+          "url": "https://boxd.it/EY6W"
+        },
+        "sean-malloy": {
+          "rating": 3.5,
+          "watched": "2026-05-31",
+          "url": "https://boxd.it/EY6W"
+        },
         "sebastian-ochoa": {
           "rating": 3.5,
           "watched": "2026-10-22",
           "url": "https://letterboxd.com/monkeykong84/film/backrooms-2026/"
+        },
+        "terence-peterson": {
+          "rating": 3.5,
+          "watched": "2026-05-29",
+          "url": "https://boxd.it/EY6W"
+        },
+        "vitor-cecchinato": {
+          "rating": 4.5,
+          "watched": "2026-06-22",
+          "url": "https://boxd.it/EY6W"
         }
       },
       "tmdbId": 1083381
@@ -81,6 +120,35 @@
         }
       },
       "tmdbId": 1088548
+    },
+    "brand-new-day": {
+      "ratings": {
+        "andy-funke": {
+          "rating": 4.0,
+          "watched": "2026-08-01",
+          "url": "https://boxd.it/ACJE"
+        },
+        "brad-derfner": {
+          "rating": 3.5,
+          "watched": "2026-08-01",
+          "url": "https://boxd.it/ACJE"
+        },
+        "ray-siddiqi": {
+          "rating": 4.0,
+          "watched": "2026-08-02",
+          "url": "https://boxd.it/ACJE"
+        },
+        "sean-malloy": {
+          "rating": 4.0,
+          "watched": "2026-07-31",
+          "url": "https://boxd.it/ACJE"
+        },
+        "vitor-cecchinato": {
+          "rating": 3.0,
+          "watched": "2026-08-11",
+          "url": "https://boxd.it/ACJE"
+        }
+      }
     },
     "by-any-means": {
       "ratings": {
@@ -174,10 +242,20 @@
           "watched": "2026-09-05",
           "url": "https://letterboxd.com/banjosudswater/film/coyote-vs-acme/"
         },
+        "sean-malloy": {
+          "rating": 3.5,
+          "watched": "2026-09-01",
+          "url": "https://boxd.it/JHdm"
+        },
         "sebastian-ochoa": {
           "rating": 3.5,
           "watched": "2026-09-01",
           "url": "https://letterboxd.com/monkeykong84/film/coyote-vs-acme/"
+        },
+        "vitor-cecchinato": {
+          "rating": 5.0,
+          "watched": "2026-09-11",
+          "url": "https://boxd.it/JHdm"
         }
       },
       "tmdbId": 1204680
@@ -231,6 +309,35 @@
         }
       },
       "tmdbId": 1248832
+    },
+    "disclosure-day": {
+      "ratings": {
+        "andy-funke": {
+          "rating": 3.5,
+          "watched": "2026-06-12",
+          "url": "https://boxd.it/MDJY"
+        },
+        "brad-derfner": {
+          "rating": 3.5,
+          "watched": "2026-06-12",
+          "url": "https://boxd.it/MDJY"
+        },
+        "ray-siddiqi": {
+          "rating": 4.5,
+          "watched": "2026-06-13",
+          "url": "https://boxd.it/MDJY"
+        },
+        "sean-malloy": {
+          "rating": 5.0,
+          "watched": "2026-06-13",
+          "url": "https://boxd.it/MDJY"
+        },
+        "vitor-cecchinato": {
+          "rating": 4.0,
+          "watched": "2026-06-16",
+          "url": "https://boxd.it/MDJY"
+        }
+      }
     },
     "eisenberg-musical-comedy": {
       "ratings": {
@@ -339,6 +446,11 @@
           "watched": "2026-09-14",
           "url": "https://letterboxd.com/banjosudswater/film/forgotten-island-2026/"
         },
+        "sean-malloy": {
+          "rating": 3.5,
+          "watched": "2026-09-15",
+          "url": "https://boxd.it/Uitc"
+        },
         "vitor-cecchinato": {
           "rating": 4.0,
           "watched": "2026-10-05",
@@ -359,6 +471,11 @@
           "watched": "2026-09-17",
           "url": "https://letterboxd.com/banjosudswater/film/hope-2026/"
         },
+        "sean-malloy": {
+          "rating": 4.0,
+          "watched": "2026-09-10",
+          "url": "https://boxd.it/E3vU"
+        },
         "terence-peterson": {
           "rating": 3.0,
           "watched": "2026-09-07",
@@ -366,6 +483,69 @@
         }
       },
       "tmdbId": 1058424
+    },
+    "hoppers": {
+      "ratings": {
+        "andy-funke": {
+          "rating": 4.0,
+          "watched": "2026-04-11",
+          "url": "https://boxd.it/OFpg"
+        },
+        "brad-derfner": {
+          "rating": 3.5,
+          "watched": "2026-03-11",
+          "url": "https://boxd.it/OFpg"
+        },
+        "ray-siddiqi": {
+          "rating": 4.0,
+          "watched": "2026-04-09",
+          "url": "https://boxd.it/OFpg"
+        },
+        "sean-malloy": {
+          "rating": 3.0,
+          "watched": "2026-03-06",
+          "url": "https://boxd.it/OFpg"
+        },
+        "vitor-cecchinato": {
+          "rating": 5.0,
+          "watched": "2026-03-01",
+          "url": "https://boxd.it/OFpg"
+        }
+      }
+    },
+    "i-love-boosters": {
+      "ratings": {
+        "andy-funke": {
+          "rating": 3.5,
+          "watched": "2026-05-23",
+          "url": "https://boxd.it/KBIU"
+        },
+        "brad-derfner": {
+          "rating": 3.5,
+          "watched": "2026-05-22",
+          "url": "https://boxd.it/KBIU"
+        },
+        "ray-siddiqi": {
+          "rating": 4.0,
+          "watched": "2026-07-19",
+          "url": "https://boxd.it/KBIU"
+        },
+        "sean-malloy": {
+          "rating": 4.0,
+          "watched": "2026-05-23",
+          "url": "https://boxd.it/KBIU"
+        },
+        "terence-peterson": {
+          "rating": 3.0,
+          "watched": "2026-06-01",
+          "url": "https://boxd.it/KBIU"
+        },
+        "vitor-cecchinato": {
+          "rating": 4.0,
+          "watched": "2026-05-24",
+          "url": "https://boxd.it/KBIU"
+        }
+      }
     },
     "i-play-rocky": {
       "ratings": {
@@ -424,16 +604,31 @@
           "watched": "2026-09-07",
           "url": "https://letterboxd.com/mattydraps/film/it-ends/"
         },
+        "sean-malloy": {
+          "rating": 4.0,
+          "watched": "2026-08-30",
+          "url": "https://boxd.it/SBUi"
+        },
         "terence-peterson": {
           "rating": 3.0,
           "watched": "2026-09-02",
           "url": "https://letterboxd.com/jxmmedout/film/it-ends/"
+        },
+        "vitor-cecchinato": {
+          "rating": 4.0,
+          "watched": "2025-12-23",
+          "url": "https://boxd.it/SBUi"
         }
       },
       "tmdbId": 1422011
     },
     "josephine": {
       "ratings": {
+        "andy-funke": {
+          "rating": 4.5,
+          "watched": "2026-01-30",
+          "url": "https://boxd.it/NzPA"
+        },
         "brad-derfner": {
           "rating": 4.0,
           "watched": "2026-08-03",
@@ -448,9 +643,43 @@
           "rating": 5.0,
           "watched": "2026-10-18",
           "url": "https://letterboxd.com/mattydraps/film/josephine-2026/1/"
+        },
+        "vitor-cecchinato": {
+          "rating": 5.0,
+          "watched": "2026-01-31",
+          "url": "https://boxd.it/NzPA"
         }
       },
       "tmdbId": 1299329
+    },
+    "michael": {
+      "ratings": {
+        "andy-funke": {
+          "rating": 1.5,
+          "watched": "2026-04-28",
+          "url": "https://boxd.it/zi5M"
+        },
+        "brad-derfner": {
+          "rating": 3.0,
+          "watched": "2026-04-24",
+          "url": "https://boxd.it/zi5M"
+        },
+        "ray-siddiqi": {
+          "rating": 4.0,
+          "watched": "2026-04-16",
+          "url": "https://boxd.it/zi5M"
+        },
+        "sean-malloy": {
+          "rating": 3.5,
+          "watched": "2026-05-04",
+          "url": "https://boxd.it/zi5M"
+        },
+        "vitor-cecchinato": {
+          "rating": 2.5,
+          "watched": "2026-05-08",
+          "url": "https://boxd.it/zi5M"
+        }
+      }
     },
     "minotaur": {
       "ratings": {
@@ -507,6 +736,35 @@
       },
       "tmdbId": 1755291
     },
+    "obsession": {
+      "ratings": {
+        "andy-funke": {
+          "rating": 3.5,
+          "watched": "2026-06-17",
+          "url": "https://boxd.it/PNqo"
+        },
+        "brad-derfner": {
+          "rating": 4.0,
+          "watched": "2026-05-15",
+          "url": "https://boxd.it/PNqo"
+        },
+        "ray-siddiqi": {
+          "rating": 4.0,
+          "watched": "2026-05-19",
+          "url": "https://boxd.it/PNqo"
+        },
+        "sean-malloy": {
+          "rating": 4.0,
+          "watched": "2026-05-15",
+          "url": "https://boxd.it/PNqo"
+        },
+        "vitor-cecchinato": {
+          "rating": 5.0,
+          "watched": "2026-05-25",
+          "url": "https://boxd.it/PNqo"
+        }
+      }
+    },
     "once-upon-a-time-in-harlem": {
       "ratings": {
         "dylan-mckercher": {
@@ -532,6 +790,25 @@
       },
       "tmdbId": 1483525
     },
+    "power-ballad": {
+      "ratings": {
+        "andy-funke": {
+          "rating": 3.0,
+          "watched": "2026-06-09",
+          "url": "https://boxd.it/MZy4"
+        },
+        "ray-siddiqi": {
+          "rating": 4.5,
+          "watched": "2026-06-10",
+          "url": "https://boxd.it/MZy4"
+        },
+        "sean-malloy": {
+          "rating": 3.0,
+          "watched": "2026-06-24",
+          "url": "https://boxd.it/MZy4"
+        }
+      }
+    },
     "primetime": {
       "ratings": {
         "andy-funke": {
@@ -554,6 +831,11 @@
           "watched": "2026-09-24",
           "url": "https://letterboxd.com/banjosudswater/film/primetime-2026/"
         },
+        "sean-malloy": {
+          "rating": 4.0,
+          "watched": "2026-09-25",
+          "url": "https://boxd.it/QX5s"
+        },
         "terence-peterson": {
           "rating": 3.0,
           "watched": "2026-10-14",
@@ -573,6 +855,31 @@
           "rating": 5.0,
           "watched": "2026-08-09",
           "url": "https://letterboxd.com/andyfunke/film/project-hail-mary/2/"
+        },
+        "brad-derfner": {
+          "rating": 4.0,
+          "watched": "2026-03-20",
+          "url": "https://boxd.it/pEeQ"
+        },
+        "ray-siddiqi": {
+          "rating": 4.0,
+          "watched": "2026-03-26",
+          "url": "https://boxd.it/pEeQ"
+        },
+        "sean-malloy": {
+          "rating": 5.0,
+          "watched": "2026-03-21",
+          "url": "https://boxd.it/pEeQ"
+        },
+        "terence-peterson": {
+          "rating": 2.5,
+          "watched": "2026-08-26",
+          "url": "https://boxd.it/pEeQ"
+        },
+        "vitor-cecchinato": {
+          "rating": 4.5,
+          "watched": "2026-03-24",
+          "url": "https://boxd.it/pEeQ"
         }
       },
       "tmdbId": 687163
@@ -608,6 +915,11 @@
           "rating": 4.5,
           "watched": "2026-09-18",
           "url": "https://letterboxd.com/banjosudswater/film/resident-evil-2026/1/"
+        },
+        "sean-malloy": {
+          "rating": 4.0,
+          "watched": "2026-09-18",
+          "url": "https://boxd.it/SEXE"
         },
         "vitor-cecchinato": {
           "rating": 4.5,
@@ -657,6 +969,15 @@
       },
       "tmdbId": 1477104
     },
+    "silent-friend": {
+      "ratings": {
+        "vitor-cecchinato": {
+          "rating": 3.0,
+          "watched": "2026-04-20",
+          "url": "https://boxd.it/IiEg"
+        }
+      }
+    },
     "tangles": {
       "ratings": {
         "brad-derfner": {
@@ -694,6 +1015,16 @@
           "watched": "2026-08-14",
           "url": "https://letterboxd.com/dyl_/film/teenage-sex-and-death-at-camp-miasma/"
         },
+        "ray-siddiqi": {
+          "rating": 4.5,
+          "watched": "2026-08-15",
+          "url": "https://boxd.it/L9GS"
+        },
+        "sean-malloy": {
+          "rating": 4.5,
+          "watched": "2026-08-14",
+          "url": "https://boxd.it/L9GS"
+        },
         "sebastian-ochoa": {
           "rating": 4.0,
           "watched": "2026-08-14",
@@ -703,6 +1034,11 @@
           "rating": 4.0,
           "watched": "2026-08-23",
           "url": "https://letterboxd.com/jxmmedout/film/teenage-sex-and-death-at-camp-miasma/"
+        },
+        "vitor-cecchinato": {
+          "rating": 4.5,
+          "watched": "2026-08-24",
+          "url": "https://boxd.it/L9GS"
         }
       },
       "tmdbId": 1240889
@@ -722,6 +1058,30 @@
       },
       "tmdbId": 1422041
     },
+    "the-devil-wears-prada-2": {
+      "ratings": {
+        "andy-funke": {
+          "rating": 3.5,
+          "watched": "2026-05-01",
+          "url": "https://boxd.it/Oags"
+        },
+        "brad-derfner": {
+          "rating": 3.0,
+          "watched": "2026-05-17",
+          "url": "https://boxd.it/Oags"
+        },
+        "ray-siddiqi": {
+          "rating": 2.0,
+          "watched": "2026-05-09",
+          "url": "https://boxd.it/Oags"
+        },
+        "sean-malloy": {
+          "rating": 3.0,
+          "watched": "2026-05-04",
+          "url": "https://boxd.it/Oags"
+        }
+      }
+    },
     "the-end-of-oak-street": {
       "ratings": {
         "andy-funke": {
@@ -729,16 +1089,36 @@
           "watched": "2026-08-21",
           "url": "https://letterboxd.com/andyfunke/film/the-end-of-oak-street/"
         },
+        "ray-siddiqi": {
+          "rating": 4.0,
+          "watched": "2026-08-16",
+          "url": "https://boxd.it/FF9a"
+        },
+        "sean-malloy": {
+          "rating": 4.0,
+          "watched": "2026-08-14",
+          "url": "https://boxd.it/FF9a"
+        },
         "sebastian-ochoa": {
           "rating": 4.0,
           "watched": "2026-08-27",
           "url": "https://letterboxd.com/monkeykong84/film/the-end-of-oak-street/"
+        },
+        "vitor-cecchinato": {
+          "rating": 2.0,
+          "watched": "2026-10-26",
+          "url": "https://letterboxd.com/developing_film/film/the-end-of-oak-street/"
         }
       },
       "tmdbId": 1101383
     },
     "the-invite": {
       "ratings": {
+        "andy-funke": {
+          "rating": 5.0,
+          "watched": "2026-07-12",
+          "url": "https://boxd.it/zRNY"
+        },
         "brad-derfner": {
           "rating": 3.5,
           "watched": "2026-09-05",
@@ -748,6 +1128,21 @@
           "rating": 4.0,
           "watched": "2026-10-17",
           "url": "https://letterboxd.com/banjosudswater/film/the-invite-2026/3/"
+        },
+        "sean-malloy": {
+          "rating": 4.5,
+          "watched": "2026-09-20",
+          "url": "https://boxd.it/zRNY"
+        },
+        "terence-peterson": {
+          "rating": 4.0,
+          "watched": "2026-07-13",
+          "url": "https://boxd.it/zRNY"
+        },
+        "vitor-cecchinato": {
+          "rating": 4.0,
+          "watched": "2026-07-10",
+          "url": "https://boxd.it/zRNY"
         }
       },
       "tmdbId": 950028
@@ -762,8 +1157,32 @@
       },
       "tmdbId": 487802
     },
+    "the-mandalorian-and-grogu": {
+      "ratings": {
+        "brad-derfner": {
+          "rating": 2.5,
+          "watched": "2026-06-10",
+          "url": "https://boxd.it/KCpk"
+        },
+        "sean-malloy": {
+          "rating": 3.5,
+          "watched": "2026-05-27",
+          "url": "https://boxd.it/KCpk"
+        },
+        "vitor-cecchinato": {
+          "rating": 1.0,
+          "watched": "2026-05-31",
+          "url": "https://boxd.it/KCpk"
+        }
+      }
+    },
     "the-odyssey": {
       "ratings": {
+        "andy-funke": {
+          "rating": 4.5,
+          "watched": "2026-07-19",
+          "url": "https://boxd.it/QFQU"
+        },
         "brad-derfner": {
           "rating": 4.0,
           "watched": "2026-08-26",
@@ -774,10 +1193,25 @@
           "watched": "2026-09-05",
           "url": "https://letterboxd.com/dyl_/film/the-odyssey-2026/5/"
         },
+        "ray-siddiqi": {
+          "rating": 5.0,
+          "watched": "2026-07-20",
+          "url": "https://boxd.it/QFQU"
+        },
+        "sean-malloy": {
+          "rating": 5.0,
+          "watched": "2026-07-18",
+          "url": "https://boxd.it/QFQU"
+        },
         "sebastian-ochoa": {
           "rating": 4.0,
           "watched": "2026-07-17",
           "url": "https://letterboxd.com/monkeykong84/film/the-odyssey-2026/"
+        },
+        "vitor-cecchinato": {
+          "rating": 5.0,
+          "watched": "2026-07-17",
+          "url": "https://boxd.it/QFQU"
         }
       },
       "tmdbId": 1368337
@@ -837,6 +1271,54 @@
       },
       "tmdbId": 1281331
     },
+    "the-super-mario-galaxy-movie": {
+      "ratings": {
+        "brad-derfner": {
+          "rating": 2.5,
+          "watched": "2026-04-04",
+          "url": "https://boxd.it/KzPa"
+        },
+        "ray-siddiqi": {
+          "rating": 1.5,
+          "watched": "2026-04-09",
+          "url": "https://boxd.it/KzPa"
+        },
+        "sean-malloy": {
+          "rating": 2.0,
+          "watched": "2026-05-26",
+          "url": "https://boxd.it/KzPa"
+        }
+      }
+    },
+    "toy-story-5": {
+      "ratings": {
+        "andy-funke": {
+          "rating": 4.0,
+          "watched": "2026-06-19",
+          "url": "https://boxd.it/F06E"
+        },
+        "brad-derfner": {
+          "rating": 3.5,
+          "watched": "2026-06-24",
+          "url": "https://boxd.it/F06E"
+        },
+        "ray-siddiqi": {
+          "rating": 4.0,
+          "watched": "2026-06-19",
+          "url": "https://boxd.it/F06E"
+        },
+        "sean-malloy": {
+          "rating": 4.0,
+          "watched": "2026-06-19",
+          "url": "https://boxd.it/F06E"
+        },
+        "vitor-cecchinato": {
+          "rating": 3.0,
+          "watched": "2026-07-01",
+          "url": "https://boxd.it/F06E"
+        }
+      }
+    },
     "whalefall": {
       "ratings": {
         "andy-funke": {
@@ -894,6 +1376,11 @@
           "watched": "2026-10-22",
           "url": "https://letterboxd.com/andyfunke/film/wildwood-2026/"
         },
+        "ray-siddiqi": {
+          "rating": 4.0,
+          "watched": "2026-10-25",
+          "url": "https://letterboxd.com/banjosudswater/film/wildwood-2026/"
+        },
         "sean-malloy": {
           "rating": 3.5,
           "watched": "2026-10-19",
@@ -911,6 +1398,30 @@
         }
       },
       "tmdbId": 791523
+    },
+    "wuthering-heights": {
+      "ratings": {
+        "andy-funke": {
+          "rating": 1.5,
+          "watched": "2026-07-01",
+          "url": "https://boxd.it/OdIa"
+        },
+        "ray-siddiqi": {
+          "rating": 3.0,
+          "watched": "2026-02-14",
+          "url": "https://boxd.it/OdIa"
+        },
+        "sean-malloy": {
+          "rating": 1.0,
+          "watched": "2026-02-23",
+          "url": "https://boxd.it/OdIa"
+        },
+        "vitor-cecchinato": {
+          "rating": 2.5,
+          "watched": "2026-02-15",
+          "url": "https://boxd.it/OdIa"
+        }
+      }
     },
     "you-can-see-everything": {
       "ratings": {
