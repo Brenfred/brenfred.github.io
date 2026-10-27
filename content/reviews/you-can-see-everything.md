@@ -30,8 +30,6 @@ prospects:
   - tier: in-the-mix
     category: director
     performer: Nathan Fielder & Lance Oppenheim
-  - tier: long-shot
-    category: supp-actress
 isHero: false
 tags:
   - you-can-see-everything
