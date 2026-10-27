@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T01:34:54Z",
+  "updated": "2026-10-27T01:39:18Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -14,6 +14,11 @@
     },
     "all-of-a-sudden": {
       "ratings": {
+        "brad-derfner": {
+          "rating": 3.5,
+          "watched": "2026-10-02",
+          "url": "https://letterboxd.com/brenfred/film/all-of-a-sudden-2026/"
+        },
         "dylan-mckercher": {
           "rating": 3.5,
           "watched": "2026-10-02",
@@ -104,6 +109,11 @@
     },
     "clayface": {
       "ratings": {
+        "brad-derfner": {
+          "rating": 4.0,
+          "watched": "2026-10-25",
+          "url": "https://letterboxd.com/brenfred/film/clayface/"
+        },
         "ray-siddiqi": {
           "rating": 2.0,
           "watched": "2026-10-22",
@@ -119,6 +129,11 @@
     },
     "club-kid": {
       "ratings": {
+        "brad-derfner": {
+          "rating": 4.0,
+          "watched": "2026-10-12",
+          "url": "https://letterboxd.com/brenfred/film/club-kid/1/"
+        },
         "dylan-mckercher": {
           "rating": 4.5,
           "watched": "2026-10-16",
@@ -144,6 +159,11 @@
           "watched": "2026-09-27",
           "url": "https://letterboxd.com/andyfunke/film/coyote-vs-acme/"
         },
+        "brad-derfner": {
+          "rating": 4.5,
+          "watched": "2026-08-29",
+          "url": "https://letterboxd.com/brenfred/film/coyote-vs-acme/1/"
+        },
         "dylan-mckercher": {
           "rating": 4.0,
           "watched": "2026-09-12",
@@ -168,6 +188,11 @@
           "rating": 3.0,
           "watched": "2026-10-02",
           "url": "https://letterboxd.com/andyfunke/film/digger-2026/1/"
+        },
+        "brad-derfner": {
+          "rating": 4.5,
+          "watched": "2026-10-16",
+          "url": "https://letterboxd.com/brenfred/film/digger-2026/2/"
         },
         "dylan-mckercher": {
           "rating": 4.5,
@@ -209,6 +234,11 @@
     },
     "eisenberg-musical-comedy": {
       "ratings": {
+        "brad-derfner": {
+          "rating": 4.0,
+          "watched": "2026-10-25",
+          "url": "https://letterboxd.com/brenfred/film/the-debut-2026/"
+        },
         "dylan-mckercher": {
           "rating": 4.0,
           "watched": "2026-10-25",
@@ -231,6 +261,16 @@
         }
       },
       "tmdbId": 1599230
+    },
+    "everytime": {
+      "ratings": {
+        "brad-derfner": {
+          "rating": 3.5,
+          "watched": "2026-10-11",
+          "url": "https://letterboxd.com/brenfred/film/everytime/"
+        }
+      },
+      "tmdbId": 1655419
     },
     "fatherland": {
       "ratings": {
@@ -309,6 +349,11 @@
     },
     "hope": {
       "ratings": {
+        "brad-derfner": {
+          "rating": 3.0,
+          "watched": "2026-09-10",
+          "url": "https://letterboxd.com/brenfred/film/hope-2026/"
+        },
         "ray-siddiqi": {
           "rating": 3.5,
           "watched": "2026-09-17",
@@ -334,6 +379,11 @@
     },
     "ink": {
       "ratings": {
+        "brad-derfner": {
+          "rating": 4.0,
+          "watched": "2026-10-24",
+          "url": "https://letterboxd.com/brenfred/film/ink-2026/"
+        },
         "vitor-cecchinato": {
           "rating": 4.0,
           "watched": "2026-09-15",
@@ -364,6 +414,11 @@
     },
     "it-ends": {
       "ratings": {
+        "brad-derfner": {
+          "rating": 4.0,
+          "watched": "2026-08-30",
+          "url": "https://letterboxd.com/brenfred/film/it-ends/2/"
+        },
         "matt-downs": {
           "rating": 4.0,
           "watched": "2026-09-07",
@@ -379,6 +434,11 @@
     },
     "josephine": {
       "ratings": {
+        "brad-derfner": {
+          "rating": 4.0,
+          "watched": "2026-08-03",
+          "url": "https://letterboxd.com/brenfred/film/josephine-2026/1/"
+        },
         "dylan-mckercher": {
           "rating": 5.0,
           "watched": "2026-10-18",
@@ -479,6 +539,11 @@
           "watched": "2026-09-30",
           "url": "https://letterboxd.com/andyfunke/film/primetime-2026/"
         },
+        "brad-derfner": {
+          "rating": 3.5,
+          "watched": "2026-09-25",
+          "url": "https://letterboxd.com/brenfred/film/primetime-2026/"
+        },
         "dylan-mckercher": {
           "rating": 3.5,
           "watched": "2026-09-21",
@@ -524,6 +589,11 @@
     },
     "resident-evil": {
       "ratings": {
+        "brad-derfner": {
+          "rating": 4.0,
+          "watched": "2026-09-23",
+          "url": "https://letterboxd.com/brenfred/film/resident-evil-2026/1/"
+        },
         "dylan-mckercher": {
           "rating": 4.0,
           "watched": "2026-09-22",
@@ -589,6 +659,11 @@
     },
     "tangles": {
       "ratings": {
+        "brad-derfner": {
+          "rating": 3.0,
+          "watched": "2026-07-10",
+          "url": "https://letterboxd.com/brenfred/film/tangles/"
+        },
         "sebastian-ochoa": {
           "rating": 4.0,
           "watched": "2026-09-16",
@@ -608,6 +683,11 @@
           "rating": 4.5,
           "watched": "2026-08-22",
           "url": "https://letterboxd.com/andyfunke/film/teenage-sex-and-death-at-camp-miasma/"
+        },
+        "brad-derfner": {
+          "rating": 3.5,
+          "watched": "2026-08-09",
+          "url": "https://letterboxd.com/brenfred/film/teenage-sex-and-death-at-camp-miasma/"
         },
         "dylan-mckercher": {
           "rating": 2.0,
@@ -659,6 +739,11 @@
     },
     "the-invite": {
       "ratings": {
+        "brad-derfner": {
+          "rating": 3.5,
+          "watched": "2026-09-05",
+          "url": "https://letterboxd.com/brenfred/film/the-invite-2026/1/"
+        },
         "ray-siddiqi": {
           "rating": 4.0,
           "watched": "2026-10-17",
@@ -679,6 +764,11 @@
     },
     "the-odyssey": {
       "ratings": {
+        "brad-derfner": {
+          "rating": 4.0,
+          "watched": "2026-08-26",
+          "url": "https://letterboxd.com/brenfred/film/the-odyssey-2026/2/"
+        },
         "dylan-mckercher": {
           "rating": 5.0,
           "watched": "2026-09-05",
@@ -779,6 +869,11 @@
     },
     "wild-horse-nine": {
       "ratings": {
+        "brad-derfner": {
+          "rating": 4.0,
+          "watched": "2026-10-23",
+          "url": "https://letterboxd.com/brenfred/film/wild-horse-nine/"
+        },
         "dylan-mckercher": {
           "rating": 4.5,
           "watched": "2026-10-23",
@@ -824,6 +919,11 @@
           "watched": "2026-10-17",
           "url": "https://letterboxd.com/andyfunke/film/you-can-see-everything/"
         },
+        "brad-derfner": {
+          "rating": 4.5,
+          "watched": "2026-10-21",
+          "url": "https://letterboxd.com/brenfred/film/you-can-see-everything/"
+        },
         "dylan-mckercher": {
           "rating": 4.5,
           "watched": "2026-10-14",
@@ -863,6 +963,11 @@
           "rating": 3.5,
           "watched": "2026-10-18",
           "url": "https://letterboxd.com/andyfunke/film/your-mother-your-mother-your-mother/"
+        },
+        "brad-derfner": {
+          "rating": 3.5,
+          "watched": "2026-09-14",
+          "url": "https://letterboxd.com/brenfred/film/your-mother-your-mother-your-mother/"
         },
         "matt-downs": {
           "rating": 2.5,
