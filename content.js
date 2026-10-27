@@ -1125,7 +1125,7 @@
 
   // ---- single review page -----------------------------------------------
 
-  function renderSingleReview(reviews, siteSettings, writersBySlug, categories, films) {
+  function renderSingleReview(reviews, siteSettings, writersBySlug, categories, films, staffRatings) {
     var body = $('[data-review-body]');
     if (!body) return;
 
@@ -1442,6 +1442,24 @@
           (hasCommunityStats
             ? '<p class="aside-block__footnote">Nom %, Win % &amp; FFB Rank are aggregated from the Filmball Discord community consensus.</p>'
             : '');
+      }
+    }
+
+    // ---- Staff Consensus (Letterboxd) -----------------------------------
+    // Keyed on the review's posterSlug only — never the article slug, so a
+    // discussion piece with a typographic poster can't pick up ratings.
+    var staffEl = $('[data-review-staff]');
+    if (staffEl) {
+      var staffC = (film && review.posterSlug)
+        ? staffConsensus(staffRatings, review.posterSlug, writersBySlug)
+        : null;
+      if (!staffC) {
+        staffEl.style.display = 'none';
+      } else {
+        staffEl.style.display = '';
+        staffEl.innerHTML =
+          '<h3 class="aside-block__title">Staff Consensus</h3>' +
+          staffConsensusHTML(staffC, 'aside');
       }
     }
 
@@ -1970,7 +1988,7 @@
 
   // ---- Film detail page (film.html?slug=...) ----------------------------
 
-  function renderFilmDetail(categories, films, reviews, writersBySlug) {
+  function renderFilmDetail(categories, films, reviews, writersBySlug, staffRatings) {
     var profile = $('[data-film-profile]');
     if (!profile) return;
 
@@ -2002,6 +2020,9 @@
           (film.studio   ? '<div class="film-profile__meta"><strong>Distributed by</strong> ' + esc(film.studio) + '</div>' : '') +
           (film.releaseDate ? '<div class="film-profile__meta"><strong>Release</strong> ' + esc(film.releaseDate) + '</div>' : '') +
           (film.runtime ? '<div class="film-profile__meta"><strong>Runtime</strong> ' + esc(film.runtime) + '</div>' : '') +
+          // Staff Consensus (Letterboxd). Hidden entirely when nobody has
+          // logged the film — most tracked films won't have one yet.
+          staffConsensusHTML(staffConsensus(staffRatings, film.slug, writersBySlug), 'profile') +
         '</div>' +
       '</div>';
 
@@ -2054,6 +2075,138 @@
         }).join('\n');
       }
     }
+  }
+
+  // ============================================================
+  //  STAFF RATINGS — Letterboxd consensus per film
+  // ============================================================
+  // content/staff-ratings.json is written by the staff-ratings GitHub
+  // Action (scripts/staff_ratings.py), which pulls every writer's public
+  // Letterboxd diary feed and merges their ratings per film slug. We read it
+  // as a plain static file (no Contents API) and render:
+  //   - a Staff Consensus block on film.html (inside the profile header)
+  //   - a Staff Consensus aside on review.html for film reviews
+
+  // Average is hidden until this many staff have logged the film — one
+  // person's 1.5 shouldn't read as "the staff consensus".
+  var STAFF_MIN_FOR_AVG = 3;
+
+  function fetchStaffRatings() {
+    return fetchJSON('staff-ratings.json').then(function (d) {
+      return (d && d.films) ? d : { films: {} };
+    }).catch(function () { return { films: {} }; });
+  }
+
+  // Count of writers who could contribute (have a Letterboxd handle). Used
+  // for the "N of M logged" readout.
+  function staffPoolSize(writersBySlug) {
+    var n = 0;
+    Object.keys(writersBySlug || {}).forEach(function (s) {
+      var w = writersBySlug[s];
+      if (w && String(w.letterboxd || '').trim()) n++;
+    });
+    return n;
+  }
+
+  // Resolve a film's entry in staff-ratings.json into something renderable.
+  // Returns null when nobody on staff has rated it.
+  function staffConsensus(staffRatings, filmSlug, writersBySlug) {
+    var entry = staffRatings && staffRatings.films && filmSlug
+      ? staffRatings.films[filmSlug] : null;
+    if (!entry || !entry.ratings) return null;
+
+    var rows = Object.keys(entry.ratings).map(function (wslug) {
+      var r = entry.ratings[wslug] || {};
+      var w = (writersBySlug && writersBySlug[wslug]) || null;
+      return {
+        slug: wslug,
+        writer: w,
+        name: w && w.name ? w.name : wslug.replace(/-/g, ' ').replace(/\b\w/g, function (c) { return c.toUpperCase(); }),
+        rating: Number(r.rating),
+        watched: r.watched || '',
+        url: r.url || ''
+      };
+    }).filter(function (x) { return isFinite(x.rating) && x.rating > 0; });
+    if (rows.length === 0) return null;
+
+    rows.sort(function (a, b) {
+      if (b.rating !== a.rating) return b.rating - a.rating;
+      return a.name.localeCompare(b.name);
+    });
+    var sum = rows.reduce(function (acc, x) { return acc + x.rating; }, 0);
+    var avg = Math.round((sum / rows.length) * 10) / 10;
+    var pool = staffPoolSize(writersBySlug);
+    return {
+      avg: avg,
+      count: rows.length,
+      pool: Math.max(pool, rows.length),
+      rows: rows,
+      showAvg: rows.length >= STAFF_MIN_FOR_AVG
+    };
+  }
+
+  // Stars for a decimal average: snap to the nearest half-star for the
+  // glyphs, keep the exact number alongside.
+  function staffStarsHTML(value) {
+    var snapped = Math.round(value * 2) / 2;
+    return renderStars(snapped);
+  }
+
+  function staffRatingLabel(value) {
+    // 4 -> "4.0", 3.5 -> "3.5", 3.8 -> "3.8"
+    return (Math.round(value * 10) / 10).toFixed(1);
+  }
+
+  // Shared markup for both placements. `variant` is 'profile' (film page)
+  // or 'aside' (review sidebar); the aside already has its own title.
+  function staffConsensusHTML(c, variant) {
+    if (!c) return '';
+    var isAside = variant === 'aside';
+    var countText = c.count + ' of ' + c.pool + ' staff logged';
+
+    var scoreHTML;
+    if (c.showAvg) {
+      scoreHTML =
+        '<div class="staff-rating__score">' +
+          '<span class="staff-rating__stars">' + staffStarsHTML(c.avg) + '</span>' +
+          '<span class="staff-rating__num">' + staffRatingLabel(c.avg) +
+            '<span class="staff-rating__den">/ 5</span></span>' +
+        '</div>';
+    } else {
+      var need = STAFF_MIN_FOR_AVG - c.count;
+      scoreHTML =
+        '<div class="staff-rating__score staff-rating__score--pending">' +
+          '<span class="staff-rating__pending">Average unlocks after ' +
+            (need === 1 ? 'one more log' : need + ' more logs') + '</span>' +
+        '</div>';
+    }
+
+    // The review sidebar is ~230px wide inside its padding, so the aside
+    // variant drops the avatar and the numeric column — name + stars only.
+    var listHTML = '<ul class="staff-rating__list">' + c.rows.map(function (r) {
+      var inner =
+        (!isAside && r.writer ? writerAvatarHTML(r.writer, 'staff-rating__avatar') : '') +
+        '<span class="staff-rating__name">' + esc(r.name) + '</span>' +
+        '<span class="staff-rating__row-stars">' + renderStars(r.rating) + '</span>' +
+        (isAside ? '' : '<span class="staff-rating__row-num">' + staffRatingLabel(r.rating) + '</span>');
+      return '<li class="staff-rating__row">' +
+        (r.url
+          ? '<a href="' + esc(r.url) + '" target="_blank" rel="noopener" class="staff-rating__link" title="' + esc(r.name) + ' on Letterboxd">' + inner + '</a>'
+          : '<span class="staff-rating__link">' + inner + '</span>') +
+      '</li>';
+    }).join('') + '</ul>';
+
+    return '<div class="staff-rating staff-rating--' + (isAside ? 'aside' : 'profile') + '">' +
+      (isAside
+        ? '<div class="staff-rating__count">' + esc(countText) + '</div>'
+        : '<div class="staff-rating__head">' +
+            '<span class="kicker kicker--gold staff-rating__kicker">Staff Consensus</span>' +
+            '<span class="staff-rating__count">' + esc(countText) + '</span>' +
+          '</div>') +
+      scoreHTML +
+      listHTML +
+      '<p class="staff-rating__foot">From each writer&rsquo;s Letterboxd diary &middot; updates automatically</p>' +
+    '</div>';
   }
 
   // ============================================================
@@ -2393,7 +2546,7 @@
 
   // Version marker — change when you ship a new content.js so you can spot
   // stale-cache issues in the browser console.
-  if (window.console) console.log('[content.js] v26-snapshot-unified loaded');
+  if (window.console) console.log('[content.js] v28-staff-ratings loaded');
 
   Promise.all([
     fetchJSON('site.json').catch(function () { return null; })
@@ -2465,13 +2618,21 @@
         ])
       : Promise.resolve([{ categoryArray: [], allSnapshots: [], activeSnapshot: null, previousSnapshot: null, activeIndex: -1 }, []]);
 
+    // Staff Letterboxd consensus — only the film profile and the single
+    // review page show it. One small static JSON, never fails the page.
+    var needsStaff =
+      document.querySelector('[data-film-profile]') ||
+      document.querySelector('[data-review-staff]');
+    var staffPromise = needsStaff ? fetchStaffRatings() : Promise.resolve({ films: {} });
+
     // ---- Once we have everything, render every dependent page region -----
-    Promise.all([reviewsPromise, writersPromise, racePromise]).then(function (data) {
+    Promise.all([reviewsPromise, writersPromise, racePromise, staffPromise]).then(function (data) {
       var reviews = data[0];
       var writers = data[1];
       var snapshotData = data[2][0];
       var categories = snapshotData.categoryArray;
       var films = data[2][1];
+      var staffRatings = data[3];
 
       var writersBySlug = {};
       writers.forEach(function (w) { writersBySlug[w.slug] = w; });
@@ -2489,7 +2650,7 @@
         safeRender('renderHero',          function () { renderHero(reviews, site, writersBySlug); });
         safeRender('renderReviewGrids',   function () { renderReviewGrids(reviews, writersBySlug); });
         safeRender('renderReviewsArchive',function () { renderReviewsArchive(reviews, writersBySlug); });
-        safeRender('renderSingleReview',  function () { renderSingleReview(reviews, site, writersBySlug, categories, films); });
+        safeRender('renderSingleReview',  function () { renderSingleReview(reviews, site, writersBySlug, categories, films, staffRatings); });
       }
 
       // Writers-driven regions
@@ -2523,7 +2684,7 @@
           safeRender('renderFilmsSection', function () { renderFilmsSection(rankingsCurrent, rankingsCurrent, categories, films); });
         }
         safeRender('renderCategoryDetail', function () { renderCategoryDetail(categories, films, reviews); });
-        safeRender('renderFilmDetail',     function () { renderFilmDetail(categories, films, reviews, writersBySlug); });
+        safeRender('renderFilmDetail',     function () { renderFilmDetail(categories, films, reviews, writersBySlug, staffRatings); });
       }
     });
   }).catch(function (err) {
