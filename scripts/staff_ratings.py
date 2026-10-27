@@ -33,6 +33,7 @@ Output shape (content/staff-ratings.json):
 }
 """
 
+import csv
 import datetime as dt
 import difflib
 import glob
@@ -50,11 +51,15 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 WRITERS_DIR = os.path.join(ROOT, 'content', 'writers')
 FILMS_DIR = os.path.join(ROOT, 'content', 'films')
 OUT_PATH = os.path.join(ROOT, 'content', 'staff-ratings.json')
+IMPORT_DIR = os.path.join(ROOT, 'content', 'staff-ratings-import')
 
 # Title-only matches are only trusted for films from this year onward, so a
 # writer logging an older film with the same title as a contender doesn't
 # leak into the consensus.
 SEASON_MIN_YEAR = 2025
+# The run summary only lists unmatched films from this year on — the tracked
+# pool is the 2026–27 season, so last season's films are pure noise there.
+REPORT_MIN_YEAR = 2026
 # When our film record has a release year, the feed's year must be within
 # this many years of it (festival year vs. release year drift).
 YEAR_TOLERANCE = 1
@@ -160,6 +165,64 @@ def parse_feed(xml_bytes):
         }
 
 
+def parse_rating(raw):
+    """'4', '4.5', '3.5/5', '★★★½' -> float, or None."""
+    raw = str(raw or '').strip()
+    if not raw:
+        return None
+    if '★' in raw or '½' in raw:
+        return raw.count('★') + (0.5 if '½' in raw else 0)
+    raw = raw.split('/')[0].strip()
+    try:
+        v = float(raw)
+    except ValueError:
+        return None
+    return v if 0 < v <= 5 else None
+
+
+def parse_import_csv(path):
+    """Yield feed-shaped entries from a one-off import file.
+
+    Accepts either a Letterboxd data export (ratings.csv: Date, Name, Year,
+    Letterboxd URI, Rating) or a minimal hand-typed file with a header of
+    title,year,rating (optional date, url columns). Header names are matched
+    case-insensitively.
+    """
+    with open(path, encoding='utf-8-sig', newline='') as fh:
+        reader = csv.DictReader(fh)
+        if not reader.fieldnames:
+            raise ValueError('empty file')
+        cols = {c.strip().lower(): c for c in reader.fieldnames if c}
+        if 'name' in cols:            # Letterboxd export
+            t, y, r = cols['name'], cols.get('year'), cols.get('rating')
+            d, u = cols.get('date'), cols.get('letterboxd uri')
+        elif 'title' in cols:         # hand-typed
+            t, y, r = cols['title'], cols.get('year'), cols.get('rating')
+            d, u = cols.get('date') or cols.get('watched'), cols.get('url')
+        else:
+            raise ValueError('header must include "Name" (Letterboxd export) or "title"')
+        if not r:
+            raise ValueError('no rating column')
+        for row in reader:
+            rating = parse_rating(row.get(r))
+            title = (row.get(t) or '').strip()
+            if not title or rating is None:
+                continue
+            try:
+                year = int(str(row.get(y) or '').strip()[:4]) or None
+            except ValueError:
+                year = None
+            yield {
+                'title': title,
+                'year': year,
+                'tmdbId': None,
+                'rating': rating,
+                'watched': (row.get(d) or '').strip()[:10] if d else '',
+                'url': (row.get(u) or '').strip() if u else '',
+                'rewatch': False,
+            }
+
+
 # ---------------------------------------------------------------------------
 # matching
 
@@ -263,6 +326,42 @@ def main():
         per_writer.append((wslug, handle, f'{len(entries)} rated entries', matched, changed))
         log(f'  {wslug:24s} {handle:20s} entries={len(entries):3d} matched={matched:3d} changed={changed:3d}')
 
+    # ---- one-off imports: content/staff-ratings-import/<writer-slug>.csv ----
+    # Backfill for films logged before the feed window. Either a Letterboxd
+    # data export (ratings.csv, renamed to the writer's slug) or a hand-typed
+    # title,year,rating file. Imports only ADD — they never override a rating
+    # the feed has already given us — so leaving the files in place is safe.
+    writer_slugs = {(w.get('slug') or s): handle_of(w) or '' for s, w in writers}
+    for fp in sorted(glob.glob(os.path.join(IMPORT_DIR, '*.csv'))):
+        wslug = os.path.splitext(os.path.basename(fp))[0]
+        if wslug not in writer_slugs:
+            log(f'  ! import {os.path.basename(fp)}: no writer with slug "{wslug}" — skipped')
+            per_writer.append((wslug, '(import)', 'unknown writer slug', 0, 0))
+            continue
+        try:
+            rows = list(parse_import_csv(fp))
+        except Exception as exc:  # noqa: BLE001
+            log(f'  ! import {os.path.basename(fp)}: {exc}')
+            per_writer.append((wslug, '(import)', f'unreadable: {exc}', 0, 0))
+            continue
+        handle = writer_slugs[wslug] or wslug
+        matched = 0
+        added = 0
+        for e in rows:
+            slug, how = matcher.match(e)
+            if not slug:
+                unmatched.setdefault((e['title'], e['year'], None), set()).add(handle)
+                continue
+            matched += 1
+            film = films_out.setdefault(slug, {'ratings': {}})
+            film.setdefault('ratings', {})
+            if wslug in film['ratings']:
+                continue  # feed already has it; feed wins
+            film['ratings'][wslug] = {'rating': e['rating'], 'watched': e['watched'], 'url': e['url']}
+            added += 1
+        per_writer.append((wslug, '(import)', f'{len(rows)} rows in {os.path.basename(fp)}', matched, added))
+        log(f'  {wslug:24s} {"(import)":20s} rows={len(rows):3d} matched={matched:3d} added={added:3d}')
+
     if feeds_tried and not feeds_ok:
         log('All feeds failed — leaving staff-ratings.json untouched.')
         write_summary(per_writer, unmatched, feeds_ok, feeds_tried, wrote=False)
@@ -305,7 +404,7 @@ def closest_record(title):
         r = difflib.SequenceMatcher(None, key, nt).ratio()
         if r > score:
             best, score = slug, r
-    return f'`{best}`?' if best and score >= 0.6 else ''
+    return f'`{best}`?' if best and score >= 0.8 else ''
 
 
 def write_summary(per_writer, unmatched, feeds_ok, feeds_tried, wrote):
@@ -326,7 +425,7 @@ def write_summary(per_writer, unmatched, feeds_ok, feeds_tried, wrote):
     # listed (most-logged first) so a tracked film hiding under a different
     # Letterboxd title (e.g. "The Black Ball" for La Bola Negra) is easy to
     # spot and pin with a tmdbId.
-    recent = {k: v for k, v in unmatched.items() if (k[1] or SEASON_MIN_YEAR) >= SEASON_MIN_YEAR}
+    recent = {k: v for k, v in unmatched.items() if (k[1] or REPORT_MIN_YEAR) >= REPORT_MIN_YEAR}
     older = len(unmatched) - len(recent)
     if recent:
         lines += ['', f'### Current-season logs with no film record ({len(recent)})', '',
@@ -337,7 +436,7 @@ def write_summary(per_writer, unmatched, feeds_ok, feeds_tried, wrote):
             hint = closest_record(title)
             lines.append(f'| {title} | {year or ""} | {tmdb or ""} | {", ".join(sorted(handles))} | {hint} |')
     if older:
-        lines += ['', f'_{older} older films logged by staff were ignored (pre-{SEASON_MIN_YEAR})._']
+        lines += ['', f'_{older} older films logged by staff were ignored (pre-{REPORT_MIN_YEAR})._']
     text = '\n'.join(lines) + '\n'
     if path:
         with open(path, 'a', encoding='utf-8') as fh:
