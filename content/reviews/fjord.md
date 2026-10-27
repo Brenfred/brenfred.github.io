@@ -9,7 +9,7 @@ genre: Drama
 rating: 4
 stance: buy
 stanceLabel: Academy core
-posterSlug: Fjord
+posterSlug: fjord
 writer: "[ Writer ]"
 writers:
   - ray-siddiqi

@@ -10,7 +10,7 @@ rating: 4
 stance: sell
 stanceLabel: Its dreadful box office numbers and divisive nature means it has
   probably dropped out of several major categories.
-posterSlug: Digger
+posterSlug: digger
 writer: "[ Writer ]"
 writers:
   - sebastian-ochoa
