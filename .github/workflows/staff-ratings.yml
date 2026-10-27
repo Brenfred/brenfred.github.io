@@ -1,0 +1,44 @@
+name: Staff ratings (Letterboxd)
+
+# Pulls every writer's public Letterboxd diary feed and merges their ratings
+# into content/staff-ratings.json. See scripts/staff_ratings.py.
+#
+# Runs every 6 hours. Trigger by hand from the Actions tab ("Run workflow")
+# to test or to force a refresh.
+
+on:
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: staff-ratings
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Pull ratings from Letterboxd
+        run: python3 scripts/staff_ratings.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- content/staff-ratings.json; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name  "filmball-bot"
+          git config user.email "filmball-bot@users.noreply.github.com"
+          git add content/staff-ratings.json
+          git commit -m "staff ratings: sync from Letterboxd"
+          git push
