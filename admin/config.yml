@@ -317,6 +317,8 @@ collections:
           hint: "e.g. 'the-odyssey' — must match a file in /posters/" }
       - { name: "releaseDate", label: "Release Date", widget: "string", required: false }
       - { name: "runtime",     label: "Runtime", widget: "string", required: false }
+      - { name: "tmdbId",      label: "TMDB id", widget: "number", value_type: "int", required: false,
+          hint: "Numeric id from themoviedb.org (the number in the film's URL). Lets the Staff Consensus sync match Letterboxd logs exactly — only needed when the title alone doesn't match (e.g. La Bola Negra vs. The Black Ball)." }
 
   # ─── Ranking Snapshots ──────────────────────────────────────────────────────
   # One file per snapshot in time (Pre-Cannes, Post-Cannes, Pre-Fall, etc).
