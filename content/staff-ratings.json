@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28T18:29:49Z",
+  "updated": "2026-10-29T06:37:02Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -1380,6 +1380,11 @@
           "rating": 5.0,
           "watched": "2026-10-22",
           "url": "https://letterboxd.com/andyfunke/film/wildwood-2026/"
+        },
+        "dylan-mckercher": {
+          "rating": 3.0,
+          "watched": "2026-10-28",
+          "url": "https://letterboxd.com/dyl_/film/wildwood-2026/"
         },
         "ray-siddiqi": {
           "rating": 4.0,
