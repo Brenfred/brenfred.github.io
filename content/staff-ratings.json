@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29T18:30:07Z",
+  "updated": "2026-10-30T06:37:07Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -177,6 +177,11 @@
     },
     "clayface": {
       "ratings": {
+        "andy-funke": {
+          "rating": 3.0,
+          "watched": "2026-10-29",
+          "url": "https://letterboxd.com/andyfunke/film/clayface/"
+        },
         "brad-derfner": {
           "rating": 4.0,
           "watched": "2026-10-25",
