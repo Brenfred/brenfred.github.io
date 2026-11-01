@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T06:29:03Z",
+  "updated": "2026-11-01T00:48:46Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -390,6 +390,11 @@
           "rating": 3.5,
           "watched": "2026-10-11",
           "url": "https://letterboxd.com/brenfred/film/everytime/"
+        },
+        "vitor-cecchinato": {
+          "rating": 3.0,
+          "watched": "2026-10-31",
+          "url": "https://letterboxd.com/developing_film/film/everytime/"
         }
       },
       "tmdbId": 1655419
@@ -956,6 +961,11 @@
           "rating": 4.0,
           "watched": "2026-09-26",
           "url": "https://letterboxd.com/jxmmedout/film/rose-2026/"
+        },
+        "vitor-cecchinato": {
+          "rating": 2.5,
+          "watched": "2026-10-31",
+          "url": "https://letterboxd.com/developing_film/film/rose-2026/"
         }
       },
       "tmdbId": 1176962
@@ -1066,6 +1076,11 @@
     },
     "the-black-ball": {
       "ratings": {
+        "brad-derfner": {
+          "rating": 4.0,
+          "watched": "2026-10-30",
+          "url": "https://letterboxd.com/brenfred/film/la-bola-negra/"
+        },
         "dylan-mckercher": {
           "rating": 3.5,
           "watched": "2026-10-17",
