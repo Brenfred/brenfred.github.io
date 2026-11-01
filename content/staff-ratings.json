@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01T00:48:46Z",
+  "updated": "2026-11-01T22:07:59Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -982,6 +982,11 @@
           "watched": "2026-09-30",
           "url": "https://letterboxd.com/dyl_/film/sense-and-sensibility-2026/"
         },
+        "ray-siddiqi": {
+          "rating": 4.0,
+          "watched": "2026-10-30",
+          "url": "https://letterboxd.com/banjosudswater/film/sense-and-sensibility-2026/"
+        },
         "sean-malloy": {
           "rating": 4.0,
           "watched": "2026-10-22",
@@ -1361,6 +1366,11 @@
           "rating": 2.0,
           "watched": "2026-10-16",
           "url": "https://letterboxd.com/andyfunke/film/whalefall/"
+        },
+        "ray-siddiqi": {
+          "rating": 3.5,
+          "watched": "2026-10-31",
+          "url": "https://letterboxd.com/banjosudswater/film/whalefall/"
         },
         "sean-malloy": {
           "rating": 4.0,
