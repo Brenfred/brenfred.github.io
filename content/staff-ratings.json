@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T06:18:02Z",
+  "updated": "2026-11-03T14:26:00Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -196,6 +196,11 @@
           "rating": 2.0,
           "watched": "2026-10-22",
           "url": "https://letterboxd.com/banjosudswater/film/clayface/"
+        },
+        "sean-malloy": {
+          "rating": 3.5,
+          "watched": "2026-11-02",
+          "url": "https://letterboxd.com/seanmalloy/film/clayface/"
         },
         "vitor-cecchinato": {
           "rating": 4.0,
