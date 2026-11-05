@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04T19:50:28Z",
+  "updated": "2026-11-05T06:56:09Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -493,6 +493,16 @@
         }
       },
       "tmdbId": 1465063
+    },
+    "godzilla-minus-zero": {
+      "ratings": {
+        "dylan-mckercher": {
+          "rating": 3.0,
+          "watched": "2026-11-03",
+          "url": "https://letterboxd.com/dyl_/film/godzilla-minus-zero/"
+        }
+      },
+      "tmdbId": 1381071
     },
     "hope": {
       "ratings": {
@@ -1407,6 +1417,11 @@
           "watched": "2026-10-16",
           "url": "https://letterboxd.com/andyfunke/film/whalefall/"
         },
+        "dylan-mckercher": {
+          "rating": 2.0,
+          "watched": "2026-11-04",
+          "url": "https://letterboxd.com/dyl_/film/whalefall/"
+        },
         "ray-siddiqi": {
           "rating": 3.5,
           "watched": "2026-10-31",
@@ -1431,6 +1446,11 @@
           "rating": 3.0,
           "watched": "2026-10-22",
           "url": "https://letterboxd.com/andyfunke/film/wicker/"
+        },
+        "sean-malloy": {
+          "rating": 3.5,
+          "watched": "2026-11-04",
+          "url": "https://letterboxd.com/seanmalloy/film/wicker/"
         }
       },
       "tmdbId": 1195803
