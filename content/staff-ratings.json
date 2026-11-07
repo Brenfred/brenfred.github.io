@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T06:07:29Z",
+  "updated": "2026-11-07T21:56:15Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -1531,6 +1531,11 @@
           "rating": 3.5,
           "watched": "2026-10-19",
           "url": "https://letterboxd.com/seanmalloy/film/wildwood-2026/"
+        },
+        "sebastian-ochoa": {
+          "rating": 3.5,
+          "watched": "2026-11-01",
+          "url": "https://letterboxd.com/monkeykong84/film/wildwood-2026/"
         },
         "terence-peterson": {
           "rating": 3.5,
