@@ -21,7 +21,7 @@ deck: Jordan Firstman's directorial debut is a hilarious, neon-soaked
   Club Kid brought the house down at the Philadelphia Film Festival.
 excerpt: A hilarious, heartfelt, and wildly entertaining crowd-pleaser that
   demands to be seen with an audience.
-heroImage: https://www.wsj.com/arts-culture/film/club-kid-review-a-playboys-surprise-son-745197ad
+heroImage: https://opinion-images.wsj.net/im-32436625?width=1200&size=1.843
 verdictNote: A stacked A24 lineup has to see one contender be under represented
 prospects:
   - tier: in-the-mix
