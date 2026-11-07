@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06T19:28:42Z",
+  "updated": "2026-11-07T06:07:29Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -1131,6 +1131,11 @@
     },
     "the-black-ball": {
       "ratings": {
+        "andy-funke": {
+          "rating": 5.0,
+          "watched": "2026-11-06",
+          "url": "https://letterboxd.com/andyfunke/film/la-bola-negra/"
+        },
         "brad-derfner": {
           "rating": 4.0,
           "watched": "2026-10-30",
@@ -1595,6 +1600,11 @@
           "rating": 5.0,
           "watched": "2026-10-15",
           "url": "https://letterboxd.com/seanmalloy/film/you-can-see-everything/"
+        },
+        "sebastian-ochoa": {
+          "rating": 4.0,
+          "watched": "2026-11-04",
+          "url": "https://letterboxd.com/monkeykong84/film/you-can-see-everything/"
         },
         "terence-peterson": {
           "rating": 4.0,
