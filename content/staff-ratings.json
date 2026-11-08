@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T13:33:52Z",
+  "updated": "2026-11-08T22:13:14Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -511,6 +511,11 @@
           "watched": "2026-11-03",
           "url": "https://letterboxd.com/dyl_/film/godzilla-minus-zero/"
         },
+        "matt-downs": {
+          "rating": 3.5,
+          "watched": "2026-11-08",
+          "url": "https://letterboxd.com/mattydraps/film/godzilla-minus-zero/"
+        },
         "vitor-cecchinato": {
           "rating": 5.0,
           "watched": "2026-11-07",
@@ -803,8 +808,13 @@
           "watched": "2026-10-13",
           "url": "https://letterboxd.com/seanmalloy/film/naza/"
         },
-        "vitor-cecchinato": {
+        "sebastian-ochoa": {
           "rating": 4.0,
+          "watched": "2026-10-30",
+          "url": "https://letterboxd.com/monkeykong84/film/naza/"
+        },
+        "vitor-cecchinato": {
+          "rating": 3.5,
           "watched": "2026-11-08",
           "url": "https://letterboxd.com/developing_film/film/naza/"
         }
@@ -853,6 +863,11 @@
     },
     "possible-love": {
       "ratings": {
+        "andy-funke": {
+          "rating": 2.5,
+          "watched": "2026-11-08",
+          "url": "https://letterboxd.com/andyfunke/film/possible-love/"
+        },
         "dylan-mckercher": {
           "rating": 3.5,
           "watched": "2026-11-05",
@@ -1047,6 +1062,11 @@
           "watched": "2026-09-30",
           "url": "https://letterboxd.com/dyl_/film/sense-and-sensibility-2026/"
         },
+        "matt-downs": {
+          "rating": 4.0,
+          "watched": "2026-11-08",
+          "url": "https://letterboxd.com/mattydraps/film/sense-and-sensibility-2026/"
+        },
         "ray-siddiqi": {
           "rating": 4.0,
           "watched": "2026-10-30",
@@ -1160,6 +1180,16 @@
           "rating": 3.5,
           "watched": "2026-10-17",
           "url": "https://letterboxd.com/dyl_/film/la-bola-negra/"
+        },
+        "ray-siddiqi": {
+          "rating": 4.5,
+          "watched": "2026-11-07",
+          "url": "https://letterboxd.com/banjosudswater/film/la-bola-negra/"
+        },
+        "sean-malloy": {
+          "rating": 3.5,
+          "watched": "2026-11-07",
+          "url": "https://letterboxd.com/seanmalloy/film/la-bola-negra/"
         },
         "vitor-cecchinato": {
           "rating": 4.5,
