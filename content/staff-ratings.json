@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07T21:56:15Z",
+  "updated": "2026-11-08T06:12:24Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -231,6 +231,11 @@
           "rating": 3.5,
           "watched": "2026-10-03",
           "url": "https://letterboxd.com/jxmmedout/film/club-kid/"
+        },
+        "vitor-cecchinato": {
+          "rating": 4.5,
+          "watched": "2026-11-05",
+          "url": "https://letterboxd.com/developing_film/film/club-kid/"
         }
       },
       "tmdbId": 1585239
@@ -1499,8 +1504,8 @@
         },
         "vitor-cecchinato": {
           "rating": 5.0,
-          "watched": "2026-09-14",
-          "url": "https://letterboxd.com/developing_film/film/wild-horse-nine/"
+          "watched": "2026-11-07",
+          "url": "https://letterboxd.com/developing_film/film/wild-horse-nine/1/"
         }
       },
       "tmdbId": 891621
@@ -1588,8 +1593,8 @@
         },
         "dylan-mckercher": {
           "rating": 4.5,
-          "watched": "2026-10-14",
-          "url": "https://letterboxd.com/dyl_/film/you-can-see-everything/"
+          "watched": "2026-11-07",
+          "url": "https://letterboxd.com/dyl_/film/you-can-see-everything/1/"
         },
         "matt-downs": {
           "rating": 5.0,
