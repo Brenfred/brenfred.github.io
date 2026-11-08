@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T06:12:24Z",
+  "updated": "2026-11-08T13:33:52Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -510,6 +510,11 @@
           "rating": 3.0,
           "watched": "2026-11-03",
           "url": "https://letterboxd.com/dyl_/film/godzilla-minus-zero/"
+        },
+        "vitor-cecchinato": {
+          "rating": 5.0,
+          "watched": "2026-11-07",
+          "url": "https://letterboxd.com/developing_film/film/godzilla-minus-zero/"
         }
       },
       "tmdbId": 1381071
@@ -797,6 +802,11 @@
           "rating": 3.5,
           "watched": "2026-10-13",
           "url": "https://letterboxd.com/seanmalloy/film/naza/"
+        },
+        "vitor-cecchinato": {
+          "rating": 4.0,
+          "watched": "2026-11-08",
+          "url": "https://letterboxd.com/developing_film/film/naza/"
         }
       },
       "tmdbId": 1755291
