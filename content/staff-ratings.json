@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08T22:13:14Z",
+  "updated": "2026-11-09T06:45:52Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -783,6 +783,11 @@
           "watched": "2026-10-16",
           "url": "https://letterboxd.com/banjosudswater/film/misty-green/"
         },
+        "sean-malloy": {
+          "rating": 2.5,
+          "watched": "2026-11-08",
+          "url": "https://letterboxd.com/seanmalloy/film/misty-green/"
+        },
         "sebastian-ochoa": {
           "rating": 2.5,
           "watched": "2026-09-13",
@@ -1181,6 +1186,11 @@
           "watched": "2026-10-17",
           "url": "https://letterboxd.com/dyl_/film/la-bola-negra/"
         },
+        "matt-downs": {
+          "rating": 4.0,
+          "watched": "2026-11-08",
+          "url": "https://letterboxd.com/mattydraps/film/la-bola-negra/1/"
+        },
         "ray-siddiqi": {
           "rating": 4.5,
           "watched": "2026-11-07",
@@ -1531,6 +1541,11 @@
           "rating": 4.5,
           "watched": "2026-10-23",
           "url": "https://letterboxd.com/dyl_/film/wild-horse-nine/1/"
+        },
+        "matt-downs": {
+          "rating": 4.5,
+          "watched": "2026-11-08",
+          "url": "https://letterboxd.com/mattydraps/film/wild-horse-nine/"
         },
         "ray-siddiqi": {
           "rating": 4.0,
