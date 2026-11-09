@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T06:45:52Z",
+  "updated": "2026-11-09T22:27:20Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -191,6 +191,11 @@
           "rating": 4.0,
           "watched": "2026-10-25",
           "url": "https://letterboxd.com/brenfred/film/clayface/"
+        },
+        "dylan-mckercher": {
+          "rating": 2.5,
+          "watched": "2026-11-09",
+          "url": "https://letterboxd.com/dyl_/film/clayface/"
         },
         "ray-siddiqi": {
           "rating": 2.0,
