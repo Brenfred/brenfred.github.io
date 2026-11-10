@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T22:27:20Z",
+  "updated": "2026-11-10T19:49:15Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -520,6 +520,11 @@
           "rating": 3.5,
           "watched": "2026-11-08",
           "url": "https://letterboxd.com/mattydraps/film/godzilla-minus-zero/"
+        },
+        "sean-malloy": {
+          "rating": 4.0,
+          "watched": "2026-11-09",
+          "url": "https://letterboxd.com/seanmalloy/film/godzilla-minus-zero/"
         },
         "vitor-cecchinato": {
           "rating": 5.0,
