@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-10T19:49:15Z",
+  "updated": "2026-11-12T07:20:05Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -1393,6 +1393,11 @@
           "rating": 2.5,
           "watched": "2026-08-12",
           "url": "https://letterboxd.com/mattydraps/film/the-only-living-pickpocket-in-new-york/"
+        },
+        "sean-malloy": {
+          "rating": 4.0,
+          "watched": "2026-11-11",
+          "url": "https://letterboxd.com/seanmalloy/film/the-only-living-pickpocket-in-new-york/"
         }
       },
       "tmdbId": 1458099
