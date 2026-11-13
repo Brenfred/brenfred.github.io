@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T06:52:55Z",
+  "updated": "2026-11-13T19:48:06Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -117,6 +117,11 @@
           "rating": 4.0,
           "watched": "2026-10-24",
           "url": "https://letterboxd.com/dyl_/film/being-heumann/"
+        },
+        "sean-malloy": {
+          "rating": 2.0,
+          "watched": "2026-11-13",
+          "url": "https://letterboxd.com/seanmalloy/film/being-heumann/"
         }
       },
       "tmdbId": 1050981
@@ -236,6 +241,11 @@
           "rating": 5.0,
           "watched": "2026-10-17",
           "url": "https://letterboxd.com/mattydraps/film/club-kid/1/"
+        },
+        "ray-siddiqi": {
+          "rating": 4.5,
+          "watched": "2026-11-12",
+          "url": "https://letterboxd.com/banjosudswater/film/club-kid/"
         },
         "terence-peterson": {
           "rating": 3.5,
