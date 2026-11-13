@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12T07:20:05Z",
+  "updated": "2026-11-13T06:52:55Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -14,6 +14,11 @@
     },
     "all-of-a-sudden": {
       "ratings": {
+        "andy-funke": {
+          "rating": 4.5,
+          "watched": "2026-11-12",
+          "url": "https://letterboxd.com/andyfunke/film/all-of-a-sudden-2026/"
+        },
         "brad-derfner": {
           "rating": 3.5,
           "watched": "2026-10-02",
@@ -401,6 +406,11 @@
     },
     "everytime": {
       "ratings": {
+        "andy-funke": {
+          "rating": 4.0,
+          "watched": "2026-11-12",
+          "url": "https://letterboxd.com/andyfunke/film/everytime/"
+        },
         "brad-derfner": {
           "rating": 3.5,
           "watched": "2026-10-11",
