@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13T19:48:06Z",
+  "updated": "2026-11-14T06:35:40Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -113,6 +113,11 @@
     },
     "being-heumann": {
       "ratings": {
+        "andy-funke": {
+          "rating": 3.5,
+          "watched": "2026-11-13",
+          "url": "https://letterboxd.com/andyfunke/film/being-heumann/"
+        },
         "dylan-mckercher": {
           "rating": 4.0,
           "watched": "2026-10-24",
@@ -1591,6 +1596,11 @@
           "rating": 4.5,
           "watched": "2026-10-30",
           "url": "https://letterboxd.com/seanmalloy/film/wild-horse-nine/"
+        },
+        "sebastian-ochoa": {
+          "rating": 3.5,
+          "watched": "2026-11-13",
+          "url": "https://letterboxd.com/monkeykong84/film/wild-horse-nine/"
         },
         "vitor-cecchinato": {
           "rating": 5.0,
