@@ -9,7 +9,7 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 48.0
+          "extra": 40.0
         },
         {
           "pick": "12",
@@ -18,11 +18,12 @@
         {
           "pick": "13",
           "filmSlug": "toy-story-5",
-          "extra": 32.0
+          "extra": 23.0
         },
         {
           "pick": "24",
-          "filmSlug": "being-heumann"
+          "filmSlug": "being-heumann",
+          "extra": 6.0
         },
         {
           "pick": "25",
@@ -37,13 +38,13 @@
           "filmSlug": "i-play-rocky"
         },
         {
-          "pick": "48",
-          "filmSlug": "clarissa"
+          "pick": "65",
+          "filmSlug": "by-any-means"
         },
         {
           "pick": "49",
           "filmSlug": "brand-new-day",
-          "extra": 46.0
+          "extra": 39.0
         },
         {
           "pick": "60",
@@ -62,7 +63,8 @@
         },
         {
           "pick": "11",
-          "filmSlug": "eisenberg-musical-comedy"
+          "filmSlug": "eisenberg-musical-comedy",
+          "extra": 5.0
         },
         {
           "pick": "14",
@@ -70,19 +72,21 @@
         },
         {
           "pick": "23",
-          "filmSlug": "wildwood"
+          "filmSlug": "wildwood",
+          "extra": 8.0
         },
         {
           "pick": "26",
           "filmSlug": "a-statement"
         },
         {
-          "pick": "35",
-          "filmSlug": "bunker"
+          "pick": "62",
+          "filmSlug": "long-days-journey-into-night"
         },
         {
           "pick": "38",
-          "filmSlug": "once-upon-a-time-in-harlem"
+          "filmSlug": "once-upon-a-time-in-harlem",
+          "extra": 6.0
         },
         {
           "pick": "47",
@@ -106,7 +110,8 @@
       "roster": [
         {
           "pick": "3",
-          "filmSlug": "wild-horse-nine"
+          "filmSlug": "wild-horse-nine",
+          "extra": 9.0
         },
         {
           "pick": "10",
@@ -139,8 +144,8 @@
           "filmSlug": "shaun-the-sheep-the-beast-of-mossy-bottom"
         },
         {
-          "pick": "51",
-          "filmSlug": "gentle-monster"
+          "pick": "63",
+          "filmSlug": "the-adventures-of-cliff-booth"
         },
         {
           "pick": "58",
@@ -163,11 +168,13 @@
         },
         {
           "pick": "16",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 29.0
         },
         {
           "pick": "21",
-          "filmSlug": "the-social-reckoning"
+          "filmSlug": "the-social-reckoning",
+          "extra": 9.0
         },
         {
           "pick": "28",
@@ -203,8 +210,9 @@
       "name": "Kevin",
       "roster": [
         {
-          "pick": "5",
-          "filmSlug": "digger"
+          "pick": "18",
+          "filmSlug": "possible-love",
+          "extra": 8.0
         },
         {
           "pick": "8",
@@ -216,8 +224,9 @@
           "filmSlug": "club-kid"
         },
         {
-          "pick": "20",
-          "filmSlug": "a-long-winter"
+          "pick": "6",
+          "filmSlug": "project-hail-mary",
+          "extra": 33.0
         },
         {
           "pick": "29",
@@ -225,7 +234,8 @@
         },
         {
           "pick": "32",
-          "filmSlug": "josephine"
+          "filmSlug": "josephine",
+          "extra": 7.0
         },
         {
           "pick": "41",
@@ -251,27 +261,27 @@
       "name": "Finn",
       "roster": [
         {
-          "pick": "6",
-          "filmSlug": "project-hail-mary",
-          "extra": 33.0
+          "pick": "61",
+          "filmSlug": "you-can-see-everything",
+          "extra": 29.0
         },
         {
           "pick": "7",
           "filmSlug": "obsession",
-          "extra": 22.0
+          "extra": 26.0
         },
         {
-          "pick": "18",
-          "filmSlug": "possible-love"
+          "pick": "5",
+          "filmSlug": "digger",
+          "extra": 25.0
         },
         {
-          "pick": "19",
-          "filmSlug": "misty-green"
+          "pick": "66",
+          "filmSlug": "tangles"
         },
         {
-          "pick": "30",
-          "filmSlug": "bucking-fastard",
-          "extra": 7.0
+          "pick": "64",
+          "filmSlug": "naza"
         },
         {
           "pick": "31",
@@ -289,7 +299,8 @@
         },
         {
           "pick": "54",
-          "filmSlug": "i-swear"
+          "filmSlug": "i-swear",
+          "extra": 7.0
         },
         {
           "pick": "55",

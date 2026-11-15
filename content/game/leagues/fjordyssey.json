@@ -9,31 +9,32 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 61.0
+          "extra": 52.0
         },
         {
           "pick": "12",
           "filmSlug": "club-kid",
-          "extra": 12.0
+          "extra": 6.0
         },
         {
           "pick": "13",
           "filmSlug": "elsinore",
-          "extra": 8.0
+          "extra": 4.0
         },
         {
           "pick": "24",
-          "filmSlug": "minotaur"
+          "filmSlug": "minotaur",
+          "extra": 9.0
         },
         {
           "pick": "25",
           "filmSlug": "hoppers",
-          "extra": 39.0
+          "extra": 31.0
         },
         {
           "pick": "36",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 32.0
+          "extra": 30.0
         },
         {
           "pick": "37",
@@ -49,7 +50,8 @@
         },
         {
           "pick": "60",
-          "filmSlug": "prima-facie"
+          "filmSlug": "prima-facie",
+          "extra": 4.0
         }
       ],
       "bonus": 300.0,
@@ -61,7 +63,7 @@
         {
           "pick": "2",
           "filmSlug": "the-black-ball",
-          "extra": 5.0
+          "extra": 15.0
         },
         {
           "pick": "11",
@@ -78,7 +80,7 @@
         {
           "pick": "26",
           "filmSlug": "possible-love",
-          "extra": 7.0
+          "extra": 14.0
         },
         {
           "pick": "35",
@@ -127,7 +129,8 @@
         },
         {
           "pick": "22",
-          "filmSlug": "wildwood"
+          "filmSlug": "wildwood",
+          "extra": 7.0
         },
         {
           "pick": "27",
@@ -139,7 +142,8 @@
         },
         {
           "pick": "39",
-          "filmSlug": "rose"
+          "filmSlug": "rose",
+          "extra": 7.0
         },
         {
           "pick": "46",
@@ -174,7 +178,8 @@
         },
         {
           "pick": "16",
-          "filmSlug": "fatherland"
+          "filmSlug": "fatherland",
+          "extra": 5.0
         },
         {
           "pick": "21",
@@ -223,11 +228,13 @@
         },
         {
           "pick": "8",
-          "filmSlug": "fjord"
+          "filmSlug": "fjord",
+          "extra": 10.0
         },
         {
           "pick": "17",
-          "filmSlug": "the-social-reckoning"
+          "filmSlug": "the-social-reckoning",
+          "extra": 5.0
         },
         {
           "pick": "20",
@@ -248,12 +255,13 @@
         },
         {
           "pick": "44",
-          "filmSlug": "your-mother-your-mother-your-mother"
+          "filmSlug": "your-mother-your-mother-your-mother",
+          "extra": 9.0
         },
         {
           "pick": "53",
           "filmSlug": "the-only-living-pickpocket-in-new-york",
-          "extra": 5.0
+          "extra": 11.0
         },
         {
           "pick": "56",
@@ -268,7 +276,8 @@
       "roster": [
         {
           "pick": "6",
-          "filmSlug": "digger"
+          "filmSlug": "digger",
+          "extra": 16.0
         },
         {
           "pick": "7",
@@ -277,7 +286,8 @@
         },
         {
           "pick": "18",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 13.0
         },
         {
           "pick": "19",

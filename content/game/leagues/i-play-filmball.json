@@ -9,7 +9,7 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 69.0
+          "extra": 59.0
         },
         {
           "pick": "12",
@@ -30,7 +30,7 @@
         {
           "pick": "36",
           "filmSlug": "disclosure-day",
-          "extra": 33.0
+          "extra": 26.0
         },
         {
           "pick": "37",
@@ -43,7 +43,7 @@
         {
           "pick": "49",
           "filmSlug": "i-swear",
-          "extra": 14.0
+          "extra": 7.0
         },
         {
           "pick": "60",
@@ -219,7 +219,8 @@
         },
         {
           "pick": "20",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 7.0
         },
         {
           "pick": "29",

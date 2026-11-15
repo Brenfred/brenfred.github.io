@@ -9,7 +9,7 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 65.0
+          "extra": 56.0
         },
         {
           "pick": "12",
@@ -18,30 +18,32 @@
         {
           "pick": "13",
           "filmSlug": "ink",
-          "extra": 16.0
+          "extra": 8.0
         },
         {
           "pick": "24",
-          "filmSlug": "sense-and-sensibility"
+          "filmSlug": "sense-and-sensibility",
+          "extra": 22.0
         },
         {
           "pick": "25",
           "filmSlug": "bucking-fastard",
-          "extra": 10.0
+          "extra": 11.0
         },
         {
           "pick": "36",
-          "filmSlug": "godzilla-minus-zero"
+          "filmSlug": "godzilla-minus-zero",
+          "extra": 9.0
         },
         {
           "pick": "37",
           "filmSlug": "minotaur",
-          "extra": 16.0
+          "extra": 8.0
         },
         {
           "pick": "48",
           "filmSlug": "forgotten-island",
-          "extra": 16.0
+          "extra": 8.0
         },
         {
           "pick": "49",
@@ -61,20 +63,22 @@
         {
           "pick": "2",
           "filmSlug": "the-black-ball",
-          "extra": 10.0
+          "extra": 19.0
         },
         {
           "pick": "11",
-          "filmSlug": "behemoth"
+          "filmSlug": "behemoth",
+          "extra": 8.0
         },
         {
           "pick": "14",
           "filmSlug": "all-of-a-sudden",
-          "extra": 9.0
+          "extra": 19.0
         },
         {
           "pick": "23",
-          "filmSlug": "possible-love"
+          "filmSlug": "possible-love",
+          "extra": 8.0
         },
         {
           "pick": "26",
@@ -86,7 +90,8 @@
         },
         {
           "pick": "38",
-          "filmSlug": "iron-boy"
+          "filmSlug": "iron-boy",
+          "extra": 8.0
         },
         {
           "pick": "47",
@@ -94,11 +99,13 @@
         },
         {
           "pick": "50",
-          "filmSlug": "once-upon-a-time-in-harlem"
+          "filmSlug": "once-upon-a-time-in-harlem",
+          "extra": 6.0
         },
         {
           "pick": "59",
-          "filmSlug": "tender-loving-care"
+          "filmSlug": "tender-loving-care",
+          "extra": 8.0
         }
       ],
       "bonus": 300.0,
@@ -122,7 +129,8 @@
         },
         {
           "pick": "22",
-          "filmSlug": "wildwood"
+          "filmSlug": "wildwood",
+          "extra": 7.0
         },
         {
           "pick": "27",
@@ -132,7 +140,7 @@
         {
           "pick": "34",
           "filmSlug": "rose",
-          "extra": 8.0
+          "extra": 16.0
         },
         {
           "pick": "39",
@@ -141,7 +149,8 @@
         },
         {
           "pick": "46",
-          "filmSlug": "artificial"
+          "filmSlug": "artificial",
+          "extra": 7.0
         },
         {
           "pick": "51",
@@ -180,7 +189,8 @@
         },
         {
           "pick": "28",
-          "filmSlug": "fatherland"
+          "filmSlug": "fatherland",
+          "extra": 9.0
         },
         {
           "pick": "33",
@@ -216,16 +226,17 @@
         {
           "pick": "5",
           "filmSlug": "wild-horse-nine",
-          "extra": 9.0
+          "extra": 18.0
         },
         {
           "pick": "8",
           "filmSlug": "fjord",
-          "extra": 9.0
+          "extra": 17.0
         },
         {
           "pick": "17",
-          "filmSlug": "the-social-reckoning"
+          "filmSlug": "the-social-reckoning",
+          "extra": 7.0
         },
         {
           "pick": "20",
@@ -233,7 +244,8 @@
         },
         {
           "pick": "29",
-          "filmSlug": "misty-green"
+          "filmSlug": "misty-green",
+          "extra": 5.0
         },
         {
           "pick": "32",
@@ -242,7 +254,7 @@
         {
           "pick": "41",
           "filmSlug": "shaun-the-sheep-the-beast-of-mossy-bottom",
-          "extra": 6.0
+          "extra": 14.0
         },
         {
           "pick": "44",
@@ -266,7 +278,8 @@
       "roster": [
         {
           "pick": "6",
-          "filmSlug": "digger"
+          "filmSlug": "digger",
+          "extra": 13.0
         },
         {
           "pick": "7",
@@ -285,7 +298,7 @@
         {
           "pick": "30",
           "filmSlug": "josephine",
-          "extra": 9.0
+          "extra": 18.0
         },
         {
           "pick": "31",
@@ -300,7 +313,7 @@
         {
           "pick": "43",
           "filmSlug": "look-back",
-          "extra": 8.0
+          "extra": 15.0
         },
         {
           "pick": "54",

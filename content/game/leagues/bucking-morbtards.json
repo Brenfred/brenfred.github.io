@@ -13,7 +13,8 @@
         },
         {
           "pick": "12",
-          "filmSlug": "all-of-a-sudden"
+          "filmSlug": "all-of-a-sudden",
+          "extra": 17.0
         },
         {
           "pick": "13",
@@ -22,7 +23,7 @@
         {
           "pick": "24",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 32.0
+          "extra": 39.0
         },
         {
           "pick": "25",
@@ -35,20 +36,21 @@
         {
           "pick": "37",
           "filmSlug": "rose",
-          "extra": 18.0
+          "extra": 23.0
         },
         {
           "pick": "48",
           "filmSlug": "the-only-living-pickpocket-in-new-york"
         },
         {
-          "pick": "49",
-          "filmSlug": "a-long-winter"
+          "pick": "64",
+          "filmSlug": "blue-heron",
+          "extra": 11.0
         },
         {
           "pick": "60",
           "filmSlug": "la-gradiva",
-          "extra": 24.0
+          "extra": 23.0
         }
       ],
       "bonus": 350.0,
@@ -59,7 +61,8 @@
       "roster": [
         {
           "pick": "2",
-          "filmSlug": "the-black-ball"
+          "filmSlug": "the-black-ball",
+          "extra": 17.0
         },
         {
           "pick": "11",
@@ -76,15 +79,18 @@
         },
         {
           "pick": "26",
-          "filmSlug": "minotaur"
+          "filmSlug": "minotaur",
+          "extra": 6.0
         },
         {
           "pick": "35",
-          "filmSlug": "ray-gunn"
+          "filmSlug": "ray-gunn",
+          "extra": 5.0
         },
         {
           "pick": "38",
-          "filmSlug": "godzilla-minus-zero"
+          "filmSlug": "godzilla-minus-zero",
+          "extra": 9.0
         },
         {
           "pick": "47",
@@ -98,7 +104,7 @@
         {
           "pick": "59",
           "filmSlug": "wuthering-heights",
-          "extra": 26.0
+          "extra": 31.0
         }
       ],
       "bonus": 300.0,
@@ -109,7 +115,8 @@
       "roster": [
         {
           "pick": "3",
-          "filmSlug": "digger"
+          "filmSlug": "digger",
+          "extra": 37.5
         },
         {
           "pick": "10",
@@ -121,7 +128,8 @@
         },
         {
           "pick": "22",
-          "filmSlug": "fatherland"
+          "filmSlug": "fatherland",
+          "extra": 16.0
         },
         {
           "pick": "27",
@@ -131,20 +139,21 @@
         {
           "pick": "34",
           "filmSlug": "hoppers",
-          "extra": 33.0
+          "extra": 39.0
         },
         {
           "pick": "39",
           "filmSlug": "brand-new-day",
-          "extra": 39.0
+          "extra": 46.0
         },
         {
           "pick": "46",
           "filmSlug": "gentle-monster"
         },
         {
-          "pick": "51",
-          "filmSlug": "prima-facie"
+          "pick": "61",
+          "filmSlug": "you-can-see-everything",
+          "extra": 20.0
         },
         {
           "pick": "58",
@@ -163,7 +172,8 @@
         },
         {
           "pick": "9",
-          "filmSlug": "fjord"
+          "filmSlug": "fjord",
+          "extra": 17.0
         },
         {
           "pick": "16",
@@ -171,7 +181,8 @@
         },
         {
           "pick": "21",
-          "filmSlug": "possible-love"
+          "filmSlug": "possible-love",
+          "extra": 8.0
         },
         {
           "pick": "28",
@@ -179,7 +190,8 @@
         },
         {
           "pick": "33",
-          "filmSlug": "wildwood"
+          "filmSlug": "wildwood",
+          "extra": 10.0
         },
         {
           "pick": "40",
@@ -187,15 +199,17 @@
         },
         {
           "pick": "45",
-          "filmSlug": "forgotten-island"
+          "filmSlug": "forgotten-island",
+          "extra": 9.0
         },
         {
-          "pick": "52",
-          "filmSlug": "a-statement"
+          "pick": "62",
+          "filmSlug": "naza",
+          "extra": 8.0
         },
         {
-          "pick": "57",
-          "filmSlug": "clarissa"
+          "pick": "17",
+          "filmSlug": "bunker"
         }
       ],
       "bonus": 325.0,
@@ -207,24 +221,27 @@
         {
           "pick": "5",
           "filmSlug": "the-invite",
-          "extra": 33.0
+          "extra": 41.0
         },
         {
           "pick": "8",
-          "filmSlug": "the-social-reckoning"
+          "filmSlug": "the-social-reckoning",
+          "extra": 11.0
         },
         {
-          "pick": "17",
-          "filmSlug": "bunker"
+          "pick": "57",
+          "filmSlug": "clarissa",
+          "extra": 7.0
         },
         {
           "pick": "20",
           "filmSlug": "toy-story-5",
-          "extra": 39.0
+          "extra": 43.0
         },
         {
           "pick": "29",
-          "filmSlug": "misty-green"
+          "filmSlug": "misty-green",
+          "extra": 6.5
         },
         {
           "pick": "32",
@@ -239,8 +256,8 @@
           "filmSlug": "i-play-rocky"
         },
         {
-          "pick": "53",
-          "filmSlug": "paper-tiger"
+          "pick": "63",
+          "filmSlug": "tender-loving-care"
         },
         {
           "pick": "56",
@@ -256,12 +273,12 @@
         {
           "pick": "6",
           "filmSlug": "project-hail-mary",
-          "extra": 41.0
+          "extra": 49.0
         },
         {
           "pick": "7",
           "filmSlug": "obsession",
-          "extra": 42.0
+          "extra": 50.0
         },
         {
           "pick": "18",
@@ -273,7 +290,8 @@
         },
         {
           "pick": "30",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 23.0
         },
         {
           "pick": "31",
@@ -282,20 +300,21 @@
         {
           "pick": "42",
           "filmSlug": "michael",
-          "extra": 17.0
+          "extra": 22.0
         },
         {
           "pick": "43",
           "filmSlug": "disclosure-day",
-          "extra": 29.0
+          "extra": 42.0
         },
         {
           "pick": "54",
           "filmSlug": "artificial"
         },
         {
-          "pick": "55",
-          "filmSlug": "madden"
+          "pick": "65",
+          "filmSlug": "everytime",
+          "extra": 8.0
         }
       ],
       "bonus": 325.0,

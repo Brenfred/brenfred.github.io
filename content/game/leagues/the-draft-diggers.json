@@ -9,7 +9,7 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 39.0
+          "extra": 31.0
         },
         {
           "pick": "12",
@@ -18,11 +18,12 @@
         {
           "pick": "13",
           "filmSlug": "all-of-a-sudden",
-          "extra": 20.0
+          "extra": 23.0
         },
         {
           "pick": "24",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 16.0
         },
         {
           "pick": "25",
@@ -47,7 +48,7 @@
         {
           "pick": "60",
           "filmSlug": "paper-tiger",
-          "extra": 12.0
+          "extra": 6.0
         }
       ],
       "bonus": 325.0,
@@ -63,7 +64,8 @@
         },
         {
           "pick": "11",
-          "filmSlug": "sense-and-sensibility"
+          "filmSlug": "sense-and-sensibility",
+          "extra": 7.0
         },
         {
           "pick": "14",
@@ -162,7 +164,7 @@
         {
           "pick": "4",
           "filmSlug": "the-black-ball",
-          "extra": 8.0
+          "extra": 24.0
         },
         {
           "pick": "9",
@@ -174,7 +176,8 @@
         },
         {
           "pick": "21",
-          "filmSlug": "wildwood"
+          "filmSlug": "wildwood",
+          "extra": 9.0
         },
         {
           "pick": "28",
@@ -211,7 +214,8 @@
       "roster": [
         {
           "pick": "5",
-          "filmSlug": "digger"
+          "filmSlug": "digger",
+          "extra": 14.0
         },
         {
           "pick": "8",
@@ -221,7 +225,7 @@
         {
           "pick": "17",
           "filmSlug": "club-kid",
-          "extra": 8.0
+          "extra": 16.0
         },
         {
           "pick": "20",
@@ -251,7 +255,7 @@
         {
           "pick": "53",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 26.0
+          "extra": 34.0
         },
         {
           "pick": "56",
@@ -275,7 +279,8 @@
         },
         {
           "pick": "18",
-          "filmSlug": "eisenberg-musical-comedy"
+          "filmSlug": "eisenberg-musical-comedy",
+          "extra": 10.0
         },
         {
           "pick": "19",
@@ -284,7 +289,7 @@
         {
           "pick": "30",
           "filmSlug": "minotaur",
-          "extra": 8.0
+          "extra": 17.0
         },
         {
           "pick": "31",

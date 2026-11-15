@@ -9,7 +9,7 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 36.0
+          "extra": 27.0
         },
         {
           "pick": "12",
@@ -46,7 +46,7 @@
         {
           "pick": "60",
           "filmSlug": "i-love-boosters",
-          "extra": 24.0
+          "extra": 16.0
         }
       ],
       "bonus": 300.0,
@@ -61,7 +61,8 @@
         },
         {
           "pick": "11",
-          "filmSlug": "the-social-reckoning"
+          "filmSlug": "the-social-reckoning",
+          "extra": 5.0
         },
         {
           "pick": "14",
@@ -69,7 +70,8 @@
         },
         {
           "pick": "23",
-          "filmSlug": "fatherland"
+          "filmSlug": "fatherland",
+          "extra": 8.0
         },
         {
           "pick": "26",
@@ -109,7 +111,8 @@
         },
         {
           "pick": "10",
-          "filmSlug": "behemoth"
+          "filmSlug": "behemoth",
+          "extra": 9.0
         },
         {
           "pick": "15",
@@ -122,7 +125,7 @@
         {
           "pick": "27",
           "filmSlug": "the-drama",
-          "extra": 25.0
+          "extra": 26.0
         },
         {
           "pick": "34",
@@ -159,7 +162,8 @@
         },
         {
           "pick": "9",
-          "filmSlug": "fjord"
+          "filmSlug": "fjord",
+          "extra": 8.0
         },
         {
           "pick": "16",
@@ -208,11 +212,13 @@
         },
         {
           "pick": "8",
-          "filmSlug": "digger"
+          "filmSlug": "digger",
+          "extra": 9.0
         },
         {
           "pick": "17",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 9.0
         },
         {
           "pick": "20",
@@ -284,7 +290,8 @@
         },
         {
           "pick": "43",
-          "filmSlug": "a-statement"
+          "filmSlug": "a-statement",
+          "extra": 5.0
         },
         {
           "pick": "54",

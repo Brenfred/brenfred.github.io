@@ -14,26 +14,26 @@
         {
           "pick": "12",
           "filmSlug": "fjord",
-          "extra": 23.0
+          "extra": 15.0
         },
         {
           "pick": "13",
           "filmSlug": "all-of-a-sudden",
-          "extra": 29.0
+          "extra": 19.0
         },
         {
           "pick": "24",
           "filmSlug": "michael",
-          "extra": 16.0
+          "extra": 17.0
         },
         {
           "pick": "25",
           "filmSlug": "toy-story-5",
-          "extra": 17.0
+          "extra": 24.0
         },
         {
-          "pick": "36",
-          "filmSlug": "american-doctor"
+          "pick": "21",
+          "filmSlug": "the-adventures-of-cliff-booth"
         },
         {
           "pick": "37",
@@ -42,39 +42,43 @@
         {
           "pick": "48",
           "filmSlug": "hoppers",
-          "extra": 29.0
+          "extra": 30.0
         },
         {
           "pick": "49",
-          "filmSlug": "i-see-buildings-fall-like-lightning"
+          "filmSlug": "i-see-buildings-fall-like-lightning",
+          "extra": 5.0
         },
         {
           "pick": "60",
           "filmSlug": "to-hold-a-mountain"
         }
       ],
-      "bonus": 300.0,
-      "faab": 300.0
+      "bonus": 350.0,
+      "faab": 350.0
     },
     {
       "name": "Jack",
       "roster": [
         {
           "pick": "2",
-          "filmSlug": "the-black-ball"
+          "filmSlug": "the-black-ball",
+          "extra": 18.0
         },
         {
           "pick": "11",
-          "filmSlug": "digger"
+          "filmSlug": "digger",
+          "extra": 24.0
         },
         {
           "pick": "14",
-          "filmSlug": "club-kid"
+          "filmSlug": "club-kid",
+          "extra": 9.0
         },
         {
           "pick": "23",
           "filmSlug": "fatherland",
-          "extra": 16.0
+          "extra": 24.0
         },
         {
           "pick": "26",
@@ -84,7 +88,7 @@
         {
           "pick": "35",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 22.0
+          "extra": 29.0
         },
         {
           "pick": "38",
@@ -92,7 +96,8 @@
         },
         {
           "pick": "47",
-          "filmSlug": "godzilla-minus-zero"
+          "filmSlug": "godzilla-minus-zero",
+          "extra": 8.0
         },
         {
           "pick": "50",
@@ -111,11 +116,13 @@
       "roster": [
         {
           "pick": "3",
-          "filmSlug": "wild-horse-nine"
+          "filmSlug": "wild-horse-nine",
+          "extra": 8.0
         },
         {
           "pick": "10",
-          "filmSlug": "eisenberg-musical-comedy"
+          "filmSlug": "eisenberg-musical-comedy",
+          "extra": 9.0
         },
         {
           "pick": "15",
@@ -124,16 +131,17 @@
         {
           "pick": "22",
           "filmSlug": "iron-boy",
-          "extra": 9.0
+          "extra": 18.0
         },
         {
           "pick": "27",
           "filmSlug": "disclosure-day",
-          "extra": 21.0
+          "extra": 23.0
         },
         {
           "pick": "34",
-          "filmSlug": "nuisance-bear"
+          "filmSlug": "nuisance-bear",
+          "extra": 7.0
         },
         {
           "pick": "39",
@@ -168,11 +176,13 @@
         },
         {
           "pick": "16",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 25.0
         },
         {
-          "pick": "21",
-          "filmSlug": "the-adventures-of-cliff-booth"
+          "pick": "36",
+          "filmSlug": "american-doctor",
+          "extra": 8.0
         },
         {
           "pick": "28",
@@ -197,11 +207,12 @@
         },
         {
           "pick": "57",
-          "filmSlug": "tony"
+          "filmSlug": "tony",
+          "extra": 6.0
         }
       ],
-      "bonus": 300.0,
-      "faab": 300.0
+      "bonus": 250.0,
+      "faab": 250.0
     },
     {
       "name": "Hoster",
@@ -209,12 +220,12 @@
         {
           "pick": "5",
           "filmSlug": "project-hail-mary",
-          "extra": 25.0
+          "extra": 35.0
         },
         {
           "pick": "8",
           "filmSlug": "the-invite",
-          "extra": 13.0
+          "extra": 28.0
         },
         {
           "pick": "17",
@@ -227,11 +238,13 @@
         },
         {
           "pick": "29",
-          "filmSlug": "wildwood"
+          "filmSlug": "wildwood",
+          "extra": 7.0
         },
         {
           "pick": "32",
-          "filmSlug": "possible-love"
+          "filmSlug": "possible-love",
+          "extra": 18.0
         },
         {
           "pick": "41",
@@ -248,7 +261,7 @@
         {
           "pick": "56",
           "filmSlug": "the-drama",
-          "extra": 24.0
+          "extra": 32.0
         }
       ],
       "bonus": 300.0,
@@ -260,7 +273,7 @@
         {
           "pick": "6",
           "filmSlug": "obsession",
-          "extra": 24.0
+          "extra": 33.0
         },
         {
           "pick": "7",
@@ -285,12 +298,12 @@
         {
           "pick": "42",
           "filmSlug": "backrooms",
-          "extra": 19.0
+          "extra": 26.0
         },
         {
           "pick": "43",
           "filmSlug": "brand-new-day",
-          "extra": 17.0
+          "extra": 31.0
         },
         {
           "pick": "54",

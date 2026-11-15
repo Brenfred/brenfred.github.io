@@ -9,7 +9,7 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 44.0
+          "extra": 35.0
         },
         {
           "pick": "12",
@@ -22,12 +22,12 @@
         {
           "pick": "24",
           "filmSlug": "disclosure-day",
-          "extra": 33.0
+          "extra": 26.0
         },
         {
           "pick": "25",
           "filmSlug": "once-upon-a-time-in-harlem",
-          "extra": 23.0
+          "extra": 15.0
         },
         {
           "pick": "36",
@@ -39,12 +39,13 @@
         },
         {
           "pick": "48",
-          "filmSlug": "tender-loving-care"
+          "filmSlug": "tender-loving-care",
+          "extra": 8.0
         },
         {
           "pick": "49",
           "filmSlug": "the-devil-wears-prada-2",
-          "extra": 19.0
+          "extra": 14.0
         },
         {
           "pick": "60",
@@ -99,12 +100,12 @@
           "filmSlug": "avengers-doomsday"
         },
         {
-          "pick": "59",
-          "filmSlug": "the-adventures-of-cliff-booth"
+          "pick": "62",
+          "filmSlug": "you-can-see-everything"
         }
       ],
-      "bonus": 325.0,
-      "faab": 300.0
+      "bonus": 95.0,
+      "faab": 70.0
     },
     {
       "name": "Lachy",
@@ -116,15 +117,17 @@
         },
         {
           "pick": "10",
-          "filmSlug": "digger"
+          "filmSlug": "digger",
+          "extra": 9.0
         },
         {
           "pick": "15",
           "filmSlug": "club-kid"
         },
         {
-          "pick": "22",
-          "filmSlug": "the-social-reckoning"
+          "pick": "61",
+          "filmSlug": "naza",
+          "extra": 9.0
         },
         {
           "pick": "27",
@@ -153,8 +156,8 @@
           "filmSlug": "14th"
         }
       ],
-      "bonus": 350.0,
-      "faab": 300.0
+      "bonus": 175.0,
+      "faab": 125.0
     },
     {
       "name": "Boon",
@@ -171,7 +174,8 @@
         },
         {
           "pick": "16",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 15.0
         },
         {
           "pick": "21",
@@ -189,7 +193,8 @@
         },
         {
           "pick": "40",
-          "filmSlug": "sense-and-sensibility"
+          "filmSlug": "sense-and-sensibility",
+          "extra": 8.0
         },
         {
           "pick": "45",
@@ -198,7 +203,7 @@
         {
           "pick": "52",
           "filmSlug": "resident-evil",
-          "extra": 23.0
+          "extra": 31.0
         },
         {
           "pick": "57",
@@ -217,11 +222,13 @@
         },
         {
           "pick": "8",
-          "filmSlug": "ink"
+          "filmSlug": "ink",
+          "extra": 6.0
         },
         {
           "pick": "17",
-          "filmSlug": "wildwood"
+          "filmSlug": "wildwood",
+          "extra": 9.0
         },
         {
           "pick": "20",
@@ -241,8 +248,8 @@
           "filmSlug": "bucking-fastard"
         },
         {
-          "pick": "44",
-          "filmSlug": "look-back"
+          "pick": "63",
+          "filmSlug": "i-play-rocky"
         },
         {
           "pick": "53",

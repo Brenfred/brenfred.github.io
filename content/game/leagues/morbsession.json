@@ -9,11 +9,12 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 64.0
+          "extra": 55.0
         },
         {
           "pick": "12",
-          "filmSlug": "all-of-a-sudden"
+          "filmSlug": "all-of-a-sudden",
+          "extra": 7.0
         },
         {
           "pick": "13",
@@ -30,7 +31,7 @@
         {
           "pick": "36",
           "filmSlug": "primetime",
-          "extra": 14.0
+          "extra": 7.0
         },
         {
           "pick": "37",
@@ -47,7 +48,7 @@
         {
           "pick": "59",
           "filmSlug": "the-drama",
-          "extra": 48.0
+          "extra": 40.0
         }
       ],
       "bonus": 290.0,
@@ -58,7 +59,8 @@
       "roster": [
         {
           "pick": "2",
-          "filmSlug": "the-black-ball"
+          "filmSlug": "the-black-ball",
+          "extra": 7.0
         },
         {
           "pick": "11",
@@ -67,7 +69,8 @@
         },
         {
           "pick": "14",
-          "filmSlug": "the-social-reckoning"
+          "filmSlug": "the-social-reckoning",
+          "extra": 3.0
         },
         {
           "pick": "23",
@@ -89,7 +92,8 @@
         },
         {
           "pick": "61",
-          "filmSlug": "you-can-see-everything"
+          "filmSlug": "you-can-see-everything",
+          "extra": 9.0
         },
         {
           "pick": "50",
@@ -115,7 +119,8 @@
         },
         {
           "pick": "10",
-          "filmSlug": "fjord"
+          "filmSlug": "fjord",
+          "extra": 9.0
         },
         {
           "pick": "15",
@@ -128,7 +133,8 @@
         },
         {
           "pick": "27",
-          "filmSlug": "once-upon-a-time-in-harlem"
+          "filmSlug": "once-upon-a-time-in-harlem",
+          "extra": 5.0
         },
         {
           "pick": "34",
@@ -142,7 +148,8 @@
         },
         {
           "pick": "46",
-          "filmSlug": "tender-loving-care"
+          "filmSlug": "tender-loving-care",
+          "extra": 6.0
         },
         {
           "pick": "51",
@@ -161,7 +168,8 @@
       "roster": [
         {
           "pick": "4",
-          "filmSlug": "digger"
+          "filmSlug": "digger",
+          "extra": 9.0
         },
         {
           "pick": "9",
@@ -171,7 +179,7 @@
         {
           "pick": "16",
           "filmSlug": "club-kid",
-          "extra": 15.0
+          "extra": 24.0
         },
         {
           "pick": "21",
@@ -242,7 +250,8 @@
         },
         {
           "pick": "44",
-          "filmSlug": "the-only-living-pickpocket-in-new-york"
+          "filmSlug": "the-only-living-pickpocket-in-new-york",
+          "extra": 6.0
         },
         {
           "pick": "53",
@@ -281,12 +290,13 @@
         },
         {
           "pick": "30",
-          "filmSlug": "fatherland"
+          "filmSlug": "fatherland",
+          "extra": 8.0
         },
         {
           "pick": "31",
           "filmSlug": "josephine",
-          "extra": 8.0
+          "extra": 18.0
         },
         {
           "pick": "42",

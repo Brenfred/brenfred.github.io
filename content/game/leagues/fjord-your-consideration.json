@@ -14,12 +14,12 @@
         {
           "pick": "12",
           "filmSlug": "fjord",
-          "extra": 16.0
+          "extra": 21.0
         },
         {
           "pick": "13",
           "filmSlug": "elsinore",
-          "extra": 14.0
+          "extra": 7.0
         },
         {
           "pick": "24",
@@ -30,14 +30,14 @@
           "filmSlug": "fatherland"
         },
         {
-          "pick": "36",
-          "filmSlug": "bunker",
-          "extra": 10.0
+          "pick": "OCT",
+          "filmSlug": "i-swear",
+          "extra": 16.0
         },
         {
           "pick": "37",
           "filmSlug": "i-play-rocky",
-          "extra": 12.0
+          "extra": 6.0
         },
         {
           "pick": "48",
@@ -61,7 +61,7 @@
         {
           "pick": "2",
           "filmSlug": "the-black-ball",
-          "extra": 8.0
+          "extra": 17.0
         },
         {
           "pick": "11",
@@ -69,30 +69,32 @@
         },
         {
           "pick": "14",
-          "filmSlug": "club-kid"
+          "filmSlug": "club-kid",
+          "extra": 10.0
         },
         {
           "pick": "23",
           "filmSlug": "disclosure-day",
-          "extra": 25.0
+          "extra": 30.0
         },
         {
           "pick": "26",
           "filmSlug": "hoppers",
-          "extra": 6.0
+          "extra": 13.0
         },
         {
           "pick": "35",
           "filmSlug": "sense-and-sensibility"
         },
         {
-          "pick": "38",
-          "filmSlug": "prima-facie"
+          "pick": "OCT",
+          "filmSlug": "naza",
+          "extra": 10.0
         },
         {
           "pick": "47",
           "filmSlug": "wuthering-heights",
-          "extra": 18.0
+          "extra": 23.0
         },
         {
           "pick": "50",
@@ -110,8 +112,9 @@
       "name": "Jordan",
       "roster": [
         {
-          "pick": "3",
-          "filmSlug": "digger"
+          "pick": "OCT",
+          "filmSlug": "you-can-see-everything",
+          "extra": 37.0
         },
         {
           "pick": "10",
@@ -120,15 +123,18 @@
         },
         {
           "pick": "15",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 15.0
         },
         {
           "pick": "22",
-          "filmSlug": "wildwood"
+          "filmSlug": "wildwood",
+          "extra": 19.0
         },
         {
           "pick": "27",
-          "filmSlug": "josephine"
+          "filmSlug": "josephine",
+          "extra": 10.0
         },
         {
           "pick": "34",
@@ -141,7 +147,7 @@
         {
           "pick": "46",
           "filmSlug": "backrooms",
-          "extra": 17.0
+          "extra": 29.0
         },
         {
           "pick": "51",
@@ -161,16 +167,16 @@
         {
           "pick": "4",
           "filmSlug": "wild-horse-nine",
-          "extra": 8.0
+          "extra": 21.0
         },
         {
           "pick": "9",
           "filmSlug": "obsession",
-          "extra": 35.0
+          "extra": 43.0
         },
         {
           "pick": "16",
-          "filmSlug": "all-of-a-sudden"
+          "filmSlug": "possible-love"
         },
         {
           "pick": "21",
@@ -179,7 +185,7 @@
         {
           "pick": "28",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 26.0
+          "extra": 43.0
         },
         {
           "pick": "33",
@@ -187,7 +193,8 @@
         },
         {
           "pick": "40",
-          "filmSlug": "rose"
+          "filmSlug": "rose",
+          "extra": 7.0
         },
         {
           "pick": "45",
@@ -196,11 +203,12 @@
         },
         {
           "pick": "52",
-          "filmSlug": "nuisance-bear"
+          "filmSlug": "nuisance-bear",
+          "extra": 7.0
         },
         {
-          "pick": "57",
-          "filmSlug": "bucking-fastard"
+          "pick": "OCT",
+          "filmSlug": "tender-loving-care"
         }
       ],
       "bonus": 328.0,
@@ -212,7 +220,7 @@
         {
           "pick": "5",
           "filmSlug": "the-invite",
-          "extra": 34.0
+          "extra": 43.0
         },
         {
           "pick": "8",
@@ -227,7 +235,7 @@
         {
           "pick": "20",
           "filmSlug": "toy-story-5",
-          "extra": 6.0
+          "extra": 14.0
         },
         {
           "pick": "29",
@@ -244,12 +252,13 @@
           "filmSlug": "to-hold-a-mountain"
         },
         {
-          "pick": "44",
-          "filmSlug": "a-long-winter"
+          "pick": "OCT",
+          "filmSlug": "union-town"
         },
         {
           "pick": "53",
-          "filmSlug": "wicker"
+          "filmSlug": "wicker",
+          "extra": 7.0
         },
         {
           "pick": "56",
@@ -269,20 +278,22 @@
         {
           "pick": "7",
           "filmSlug": "project-hail-mary",
-          "extra": 33.0
+          "extra": 42.0
         },
         {
           "pick": "18",
-          "filmSlug": "the-social-reckoning"
+          "filmSlug": "the-social-reckoning",
+          "extra": 4.0
         },
         {
           "pick": "19",
           "filmSlug": "michael",
-          "extra": 16.0
+          "extra": 19.0
         },
         {
           "pick": "30",
-          "filmSlug": "american-doctor"
+          "filmSlug": "american-doctor",
+          "extra": 8.0
         },
         {
           "pick": "31",
@@ -294,15 +305,16 @@
         },
         {
           "pick": "43",
-          "filmSlug": "possible-love"
+          "filmSlug": "all-of-a-sudden"
         },
         {
-          "pick": "54",
-          "filmSlug": "look-back"
+          "pick": "OCT",
+          "filmSlug": "woman-unknown"
         },
         {
           "pick": "55",
-          "filmSlug": "the-uprising"
+          "filmSlug": "digger",
+          "extra": 22.0
         }
       ],
       "bonus": 310.0,

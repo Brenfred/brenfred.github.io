@@ -9,17 +9,17 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 63.0
+          "extra": 54.0
         },
         {
           "pick": "12",
           "filmSlug": "ink",
-          "extra": 16.0
+          "extra": 8.0
         },
         {
           "pick": "13",
           "filmSlug": "all-of-a-sudden",
-          "extra": 20.0
+          "extra": 10.0
         },
         {
           "pick": "24",
@@ -28,15 +28,16 @@
         {
           "pick": "25",
           "filmSlug": "iron-boy",
-          "extra": 18.0
+          "extra": 9.0
         },
         {
           "pick": "36",
           "filmSlug": "once-upon-a-time-in-harlem"
         },
         {
-          "pick": "37",
-          "filmSlug": "misty-green"
+          "pick": "61",
+          "filmSlug": "you-can-see-everything",
+          "extra": 30.0
         },
         {
           "pick": "48",
@@ -51,8 +52,8 @@
           "filmSlug": "wicker"
         }
       ],
-      "bonus": 350.0,
-      "faab": 300.0
+      "bonus": 250.0,
+      "faab": 200.0
     },
     {
       "name": "Jussy",
@@ -67,7 +68,8 @@
         },
         {
           "pick": "14",
-          "filmSlug": "wildwood"
+          "filmSlug": "wildwood",
+          "extra": 14.0
         },
         {
           "pick": "23",
@@ -85,7 +87,7 @@
         {
           "pick": "38",
           "filmSlug": "resident-evil",
-          "extra": 9.0
+          "extra": 36.0
         },
         {
           "pick": "47",
@@ -98,13 +100,12 @@
           "extra": 13.0
         },
         {
-          "pick": "59",
-          "filmSlug": "the-sheep-detectives",
-          "extra": 35.0
+          "pick": "64",
+          "filmSlug": "the-history-of-concrete"
         }
       ],
-      "bonus": 300.0,
-      "faab": 300.0
+      "bonus": 200.0,
+      "faab": 200.0
     },
     {
       "name": "Ghost",
@@ -132,7 +133,7 @@
         {
           "pick": "27",
           "filmSlug": "toy-story-5",
-          "extra": 26.0
+          "extra": 34.0
         },
         {
           "pick": "34",
@@ -154,12 +155,12 @@
           "filmSlug": "tender-loving-care"
         },
         {
-          "pick": "58",
-          "filmSlug": "14th"
+          "pick": "65",
+          "filmSlug": "tangles"
         }
       ],
-      "bonus": 310.0,
-      "faab": 300.0
+      "bonus": 210.0,
+      "faab": 200.0
     },
     {
       "name": "Ray",
@@ -167,7 +168,7 @@
         {
           "pick": "4",
           "filmSlug": "the-black-ball",
-          "extra": 10.0
+          "extra": 17.0
         },
         {
           "pick": "9",
@@ -176,17 +177,18 @@
         },
         {
           "pick": "16",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 17.0
         },
         {
           "pick": "21",
           "filmSlug": "club-kid",
-          "extra": 10.0
+          "extra": 19.0
         },
         {
           "pick": "28",
           "filmSlug": "your-mother-your-mother-your-mother",
-          "extra": 8.0
+          "extra": 5.0
         },
         {
           "pick": "33",
@@ -205,12 +207,12 @@
           "filmSlug": "avengers-doomsday"
         },
         {
-          "pick": "57",
-          "filmSlug": "by-any-means"
+          "pick": "63",
+          "filmSlug": "being-heumann"
         }
       ],
-      "bonus": 325.0,
-      "faab": 300.0
+      "bonus": 225.0,
+      "faab": 200.0
     },
     {
       "name": "Belle",
@@ -248,31 +250,32 @@
         {
           "pick": "44",
           "filmSlug": "shaun-the-sheep-the-beast-of-mossy-bottom",
-          "extra": 7.0
+          "extra": 15.0
         },
         {
           "pick": "53",
           "filmSlug": "clayface"
         },
         {
-          "pick": "56",
-          "filmSlug": "i-love-boosters",
-          "extra": 29.0
+          "pick": "62",
+          "filmSlug": "naza"
         }
       ],
-      "bonus": 300.0,
-      "faab": 300.0
+      "bonus": 200.0,
+      "faab": 200.0
     },
     {
       "name": "Mythical",
       "roster": [
         {
           "pick": "6",
-          "filmSlug": "behemoth"
+          "filmSlug": "behemoth",
+          "extra": 10.0
         },
         {
           "pick": "7",
-          "filmSlug": "digger"
+          "filmSlug": "digger",
+          "extra": 14.0
         },
         {
           "pick": "18",
@@ -282,7 +285,7 @@
         {
           "pick": "19",
           "filmSlug": "disclosure-day",
-          "extra": 27.0
+          "extra": 34.0
         },
         {
           "pick": "30",
@@ -297,7 +300,7 @@
         {
           "pick": "42",
           "filmSlug": "hoppers",
-          "extra": 40.0
+          "extra": 41.0
         },
         {
           "pick": "43",
@@ -306,7 +309,7 @@
         {
           "pick": "54",
           "filmSlug": "28-years-later-the-bone-temple",
-          "extra": 34.0
+          "extra": 41.0
         },
         {
           "pick": "55",

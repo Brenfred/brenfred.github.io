@@ -9,16 +9,17 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 31.0
+          "extra": 40.0
         },
         {
           "pick": "12",
-          "filmSlug": "fjord"
+          "filmSlug": "fjord",
+          "extra": 7.0
         },
         {
           "pick": "13",
           "filmSlug": "toy-story-5",
-          "extra": 23.0
+          "extra": 21.0
         },
         {
           "pick": "24",
@@ -35,7 +36,7 @@
         {
           "pick": "37",
           "filmSlug": "backrooms",
-          "extra": 21.0
+          "extra": 21.5
         },
         {
           "pick": "48",
@@ -84,7 +85,7 @@
         {
           "pick": "38",
           "filmSlug": "disclosure-day",
-          "extra": 11.0
+          "extra": 17.0
         },
         {
           "pick": "30",
@@ -95,12 +96,13 @@
           "filmSlug": "the-only-living-pickpocket-in-new-york"
         },
         {
-          "pick": "59",
-          "filmSlug": "maserati-the-brothers"
+          "pick": "62",
+          "filmSlug": "you-can-see-everything",
+          "extra": 19.0
         }
       ],
-      "bonus": 336.0,
-      "faab": 300.0
+      "bonus": 36.0,
+      "faab": 0.0
     },
     {
       "name": "Generic",
@@ -122,33 +124,34 @@
           "filmSlug": "clarissa"
         },
         {
-          "pick": "27",
-          "filmSlug": "once-upon-a-time-in-harlem"
+          "pick": "53",
+          "filmSlug": "rehearsals-for-a-revolution"
         },
         {
           "pick": "34",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 18.0
+          "extra": 27.0
         },
         {
-          "pick": "39",
-          "filmSlug": "on-behalf-of-my-sun"
+          "pick": "64",
+          "filmSlug": "naza"
         },
         {
           "pick": "46",
           "filmSlug": "wicker"
         },
         {
-          "pick": "51",
-          "filmSlug": "bucking-fastard"
+          "pick": "65",
+          "filmSlug": "musk"
         },
         {
-          "pick": "58",
-          "filmSlug": "mr-nelson-did-you-kill-people"
+          "pick": "61",
+          "filmSlug": "i-swear",
+          "extra": 7.0
         }
       ],
-      "bonus": 361.0,
-      "faab": 300.0
+      "bonus": 226.0,
+      "faab": 165.0
     },
     {
       "name": "Stephen",
@@ -156,12 +159,12 @@
         {
           "pick": "4",
           "filmSlug": "project-hail-mary",
-          "extra": 16.0
+          "extra": 33.0
         },
         {
           "pick": "9",
           "filmSlug": "primetime",
-          "extra": 17.0
+          "extra": 33.0
         },
         {
           "pick": "16",
@@ -186,7 +189,7 @@
         {
           "pick": "45",
           "filmSlug": "hoppers",
-          "extra": 14.0
+          "extra": 27.5
         },
         {
           "pick": "52",
@@ -206,7 +209,7 @@
         {
           "pick": "5",
           "filmSlug": "obsession",
-          "extra": 24.0
+          "extra": 23.0
         },
         {
           "pick": "8",
@@ -215,7 +218,8 @@
         },
         {
           "pick": "17",
-          "filmSlug": "wildwood"
+          "filmSlug": "wildwood",
+          "extra": 19.0
         },
         {
           "pick": "20",
@@ -230,16 +234,16 @@
           "filmSlug": "misty-green"
         },
         {
-          "pick": "41",
-          "filmSlug": "your-mother-your-mother-your-mother"
+          "pick": "18",
+          "filmSlug": "werwulf"
         },
         {
           "pick": "44",
           "filmSlug": "avengers-doomsday"
         },
         {
-          "pick": "53",
-          "filmSlug": "rehearsals-for-a-revolution"
+          "pick": "27",
+          "filmSlug": "once-upon-a-time-in-harlem"
         },
         {
           "pick": "56",
@@ -259,33 +263,35 @@
         },
         {
           "pick": "7",
-          "filmSlug": "digger"
+          "filmSlug": "digger",
+          "extra": 23.0
         },
         {
-          "pick": "18",
-          "filmSlug": "werwulf"
+          "pick": "41",
+          "filmSlug": "your-mother-your-mother-your-mother"
         },
         {
           "pick": "19",
-          "filmSlug": "possible-love"
+          "filmSlug": "possible-love",
+          "extra": 18.0
         },
         {
           "pick": "47",
           "filmSlug": "artificial"
         },
         {
-          "pick": "31",
-          "filmSlug": "the-social-reckoning"
+          "pick": "63",
+          "filmSlug": "i-play-rocky"
         },
         {
           "pick": "42",
           "filmSlug": "forgotten-island",
-          "extra": 9.0
+          "extra": 8.0
         },
         {
           "pick": "43",
           "filmSlug": "the-drama",
-          "extra": 24.0
+          "extra": 30.0
         },
         {
           "pick": "54",
@@ -296,8 +302,8 @@
           "filmSlug": "the-adventures-of-cliff-booth"
         }
       ],
-      "bonus": 350.0,
-      "faab": 300.0
+      "bonus": 35.0,
+      "faab": -15.0
     }
   ]
 }

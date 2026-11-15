@@ -8,7 +8,8 @@
       "roster": [
         {
           "pick": "1",
-          "filmSlug": "the-black-ball"
+          "filmSlug": "the-black-ball",
+          "extra": 8.0
         },
         {
           "pick": "12",
@@ -33,21 +34,21 @@
         {
           "pick": "37",
           "filmSlug": "blue-heron",
-          "extra": 35.0
+          "extra": 26.0
         },
         {
           "pick": "48",
           "filmSlug": "the-drama",
-          "extra": 41.0
+          "extra": 33.0
         },
         {
           "pick": "49",
           "filmSlug": "resident-evil",
-          "extra": 16.0
+          "extra": 8.0
         },
         {
-          "pick": "60",
-          "filmSlug": "if-i-go-will-they-miss-me"
+          "pick": "OCT",
+          "filmSlug": "woman-unknown"
         }
       ],
       "bonus": 300.0,
@@ -82,8 +83,8 @@
           "filmSlug": "the-only-living-pickpocket-in-new-york"
         },
         {
-          "pick": "38",
-          "filmSlug": "misty-green"
+          "pick": "OCT",
+          "filmSlug": "i-swear"
         },
         {
           "pick": "47",
@@ -145,9 +146,8 @@
           "filmSlug": "godzilla-minus-zero"
         },
         {
-          "pick": "58",
-          "filmSlug": "the-end-of-oak-street",
-          "extra": 15.0
+          "pick": "OCT",
+          "filmSlug": "ray-gunn"
         }
       ],
       "bonus": 300.0,
@@ -158,7 +158,8 @@
       "roster": [
         {
           "pick": "4",
-          "filmSlug": "wild-horse-nine"
+          "filmSlug": "wild-horse-nine",
+          "extra": 8.0
         },
         {
           "pick": "9",
@@ -168,7 +169,7 @@
         {
           "pick": "16",
           "filmSlug": "primetime",
-          "extra": 8.0
+          "extra": 15.0
         },
         {
           "pick": "21",
@@ -188,8 +189,8 @@
           "filmSlug": "bucking-fastard"
         },
         {
-          "pick": "45",
-          "filmSlug": "14th"
+          "pick": "OCT",
+          "filmSlug": "naza"
         },
         {
           "pick": "52",
@@ -236,8 +237,8 @@
           "filmSlug": "your-mother-your-mother-your-mother"
         },
         {
-          "pick": "44",
-          "filmSlug": "dau"
+          "pick": "OCT",
+          "filmSlug": "tender-loving-care"
         },
         {
           "pick": "53",
@@ -247,7 +248,7 @@
         {
           "pick": "56",
           "filmSlug": "brand-new-day",
-          "extra": 14.0
+          "extra": 18.0
         }
       ],
       "bonus": 300.0,
@@ -258,7 +259,8 @@
       "roster": [
         {
           "pick": "6",
-          "filmSlug": "digger"
+          "filmSlug": "digger",
+          "extra": 15.0
         },
         {
           "pick": "7",
@@ -273,8 +275,8 @@
           "filmSlug": "werwulf"
         },
         {
-          "pick": "30",
-          "filmSlug": "prima-facie"
+          "pick": "OCT",
+          "filmSlug": "you-can-see-everything"
         },
         {
           "pick": "31",

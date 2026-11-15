@@ -9,11 +9,12 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 56.0
+          "extra": 48.0
         },
         {
           "pick": "12",
-          "filmSlug": "primetime"
+          "filmSlug": "primetime",
+          "extra": 14.0
         },
         {
           "pick": "13",
@@ -22,17 +23,17 @@
         {
           "pick": "24",
           "filmSlug": "toy-story-5",
-          "extra": 42.0
+          "extra": 36.0
         },
         {
           "pick": "25",
           "filmSlug": "teenage-sex-and-death-at-camp-miasma",
-          "extra": 43.0
+          "extra": 36.0
         },
         {
           "pick": "36",
           "filmSlug": "minotaur",
-          "extra": 16.0
+          "extra": 14.0
         },
         {
           "pick": "37",
@@ -41,17 +42,17 @@
         {
           "pick": "48",
           "filmSlug": "tony",
-          "extra": 32.0
+          "extra": 24.0
         },
         {
           "pick": "49",
           "filmSlug": "the-drama",
-          "extra": 49.0
+          "extra": 42.0
         },
         {
           "pick": "59",
           "filmSlug": "brand-new-day",
-          "extra": 46.0
+          "extra": 39.0
         }
       ],
       "bonus": 300.0,
@@ -62,12 +63,13 @@
       "roster": [
         {
           "pick": "2",
-          "filmSlug": "wild-horse-nine"
+          "filmSlug": "wild-horse-nine",
+          "extra": 8.0
         },
         {
           "pick": "11",
           "filmSlug": "all-of-a-sudden",
-          "extra": 10.0
+          "extra": 18.0
         },
         {
           "pick": "14",
@@ -75,7 +77,8 @@
         },
         {
           "pick": "23",
-          "filmSlug": "iron-boy"
+          "filmSlug": "iron-boy",
+          "extra": 6.0
         },
         {
           "pick": "26",
@@ -83,7 +86,8 @@
         },
         {
           "pick": "35",
-          "filmSlug": "godzilla-minus-zero"
+          "filmSlug": "godzilla-minus-zero",
+          "extra": 5.0
         },
         {
           "pick": "38",
@@ -111,7 +115,8 @@
       "roster": [
         {
           "pick": "3",
-          "filmSlug": "the-black-ball"
+          "filmSlug": "the-black-ball",
+          "extra": 10.0
         },
         {
           "pick": "10",
@@ -123,7 +128,8 @@
         },
         {
           "pick": "22",
-          "filmSlug": "your-mother-your-mother-your-mother"
+          "filmSlug": "your-mother-your-mother-your-mother",
+          "extra": 7.0
         },
         {
           "pick": "27",
@@ -161,12 +167,13 @@
       "roster": [
         {
           "pick": "4",
-          "filmSlug": "digger"
+          "filmSlug": "digger",
+          "extra": 15.0
         },
         {
           "pick": "9",
           "filmSlug": "fjord",
-          "extra": 9.0
+          "extra": 15.0
         },
         {
           "pick": "16",
@@ -183,7 +190,7 @@
         {
           "pick": "33",
           "filmSlug": "sense-and-sensibility",
-          "extra": 9.0
+          "extra": 14.0
         },
         {
           "pick": "40",
@@ -222,11 +229,12 @@
         {
           "pick": "17",
           "filmSlug": "club-kid",
-          "extra": 8.0
+          "extra": 16.0
         },
         {
           "pick": "20",
-          "filmSlug": "the-social-reckoning"
+          "filmSlug": "the-social-reckoning",
+          "extra": 5.0
         },
         {
           "pick": "29",
@@ -275,15 +283,18 @@
         },
         {
           "pick": "18",
-          "filmSlug": "misty-green"
+          "filmSlug": "misty-green",
+          "extra": 6.0
         },
         {
           "pick": "19",
-          "filmSlug": "wildwood"
+          "filmSlug": "wildwood",
+          "extra": 6.0
         },
         {
           "pick": "30",
-          "filmSlug": "possible-love"
+          "filmSlug": "possible-love",
+          "extra": 19.0
         },
         {
           "pick": "31",

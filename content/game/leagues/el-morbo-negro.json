@@ -9,7 +9,7 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 48.0
+          "extra": 38.0
         },
         {
           "pick": "12",
@@ -22,37 +22,37 @@
         {
           "pick": "24",
           "filmSlug": "josephine",
-          "extra": 25.0
+          "extra": 19.0
         },
         {
           "pick": "25",
           "filmSlug": "coward",
-          "extra": 14.0
+          "extra": 7.0
         },
         {
           "pick": "36",
           "filmSlug": "toy-story-5",
-          "extra": 29.0
+          "extra": 22.0
         },
         {
           "pick": "37",
           "filmSlug": "the-devil-wears-prada-2",
-          "extra": 14.0
+          "extra": 9.0
         },
         {
           "pick": "48",
           "filmSlug": "nuisance-bear",
-          "extra": 14.0
+          "extra": 7.0
         },
         {
           "pick": "49",
           "filmSlug": "the-drama",
-          "extra": 38.0
+          "extra": 30.0
         },
         {
           "pick": "60",
           "filmSlug": "citizen-vigilante",
-          "extra": 3.0
+          "extra": 2.0
         }
       ],
       "bonus": 300.0,

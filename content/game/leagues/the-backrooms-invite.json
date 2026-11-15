@@ -9,37 +9,37 @@
         {
           "pick": "1",
           "filmSlug": "the-odyssey",
-          "extra": 46.0
+          "extra": 37.0
         },
         {
           "pick": "12",
           "filmSlug": "obsession",
-          "extra": 41.0
+          "extra": 33.0
         },
         {
           "pick": "13",
           "filmSlug": "primetime",
-          "extra": 16.0
+          "extra": 8.0
         },
         {
           "pick": "24",
           "filmSlug": "michael",
-          "extra": 9.0
+          "extra": 6.0
         },
         {
           "pick": "25",
           "filmSlug": "forgotten-island",
-          "extra": 14.0
+          "extra": 7.0
         },
         {
           "pick": "36",
           "filmSlug": "i-play-rocky",
-          "extra": 14.0
+          "extra": 7.0
         },
         {
           "pick": "37",
           "filmSlug": "backrooms",
-          "extra": 39.0
+          "extra": 31.0
         },
         {
           "pick": "48",
@@ -48,12 +48,12 @@
         {
           "pick": "49",
           "filmSlug": "the-sheep-detectives",
-          "extra": 31.0
+          "extra": 23.0
         },
         {
           "pick": "60",
           "filmSlug": "i-love-boosters",
-          "extra": 36.0
+          "extra": 29.0
         }
       ],
       "bonus": 300.0,
