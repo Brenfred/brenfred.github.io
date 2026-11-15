@@ -22,7 +22,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "critics-choice",
+          "points": 20.0,
+          "note": "Documentary; Doc Director"
+        }
+      ]
     },
     {
       "filmSlug": "28-years-later-the-bone-temple",
@@ -35,11 +41,6 @@
       "money": 4.0,
       "misc": 0.0,
       "points": [
-        {
-          "show": "critics-choice",
-          "points": 2.0,
-          "note": "Makeup"
-        },
         {
           "show": "bafta",
           "points": 20.0,
@@ -74,6 +75,11 @@
           "show": "cannes",
           "points": 40.0,
           "note": "ACTRESS"
+        },
+        {
+          "show": "gotham",
+          "points": 14.0,
+          "note": "International; Director; Adapted; Supporting"
         }
       ]
     },
@@ -120,7 +126,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 78.0,
       "money": 0.0,
       "misc": 0.0,
       "points": [
@@ -138,7 +144,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 27.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -153,7 +159,18 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 2.0,
+          "note": "Supporting"
+        },
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "atonement",
@@ -162,7 +179,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 76.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -189,7 +206,18 @@
       "critics": 76.0,
       "money": 49.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 2.0,
+          "note": "Audience"
+        },
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "bad-apples",
@@ -210,7 +238,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 91.0,
       "money": 0.0,
       "misc": 0.0,
       "points": [
@@ -249,7 +277,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 3.0,
+          "note": "Score; Song"
+        }
+      ]
     },
     {
       "filmSlug": "being-heumann",
@@ -296,6 +330,11 @@
           "show": "cannes",
           "points": 5.0,
           "note": "CAMERA D'OR"
+        },
+        {
+          "show": "gotham",
+          "points": 2.0,
+          "note": "International"
         }
       ]
     },
@@ -333,7 +372,13 @@
       "critics": 92.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 3.0,
+          "note": "International; Debut"
+        }
+      ]
     },
     {
       "filmSlug": "the-blue-trail",
@@ -342,7 +387,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 78.0,
       "money": 0.0,
       "misc": 0.0,
       "points": [
@@ -444,7 +489,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 65.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -492,10 +537,16 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 79.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 5.0,
+          "note": "Lead"
+        }
+      ]
     },
     {
       "filmSlug": "citizen-vigilante",
@@ -519,7 +570,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 21.0,
+          "note": "Picture; Adapted; Lead; Breakthrough"
+        }
+      ]
     },
     {
       "filmSlug": "clayface",
@@ -531,7 +588,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "closure",
@@ -543,7 +606,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 2.0,
+          "note": "Documentary"
+        }
+      ]
     },
     {
       "filmSlug": "club-kid",
@@ -555,7 +624,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 11.0,
+          "note": "Picture; Debut"
+        }
+      ]
     },
     {
       "filmSlug": "the-collaboration",
@@ -588,7 +663,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 70.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -600,7 +675,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 53.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -669,7 +744,18 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 15.0,
+          "note": "Picture; Lead"
+        },
+        {
+          "show": "hmm",
+          "points": 1.0,
+          "note": "Song"
+        }
+      ]
     },
     {
       "filmSlug": "the-devil-wears-prada-2",
@@ -702,7 +788,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 46.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -717,7 +803,13 @@
       "critics": 74.0,
       "money": 5.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "the-dog-stars",
@@ -741,7 +833,18 @@
       "critics": 59.0,
       "money": 8.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 2.0,
+          "note": "Audience"
+        },
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "the-dreamed-adventure",
@@ -768,7 +871,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 81.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -795,7 +898,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "edenezer",
@@ -854,6 +963,11 @@
           "show": "tiff",
           "points": 40.0,
           "note": "PCA International"
+        },
+        {
+          "show": "gotham",
+          "points": 5.0,
+          "note": "Lead"
         }
       ]
     },
@@ -914,7 +1028,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "critics-choice",
+          "points": 15.0,
+          "note": "Documentary"
+        }
+      ]
     },
     {
       "filmSlug": "everybody-digs-bill-evans",
@@ -941,7 +1061,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 83.0,
       "money": 0.0,
       "misc": 0.0,
       "points": [
@@ -949,6 +1069,11 @@
           "show": "sundance",
           "points": 5.0,
           "note": "Jury"
+        },
+        {
+          "show": "critics-choice",
+          "points": 20.0,
+          "note": "Documentary; Doc Director"
         }
       ]
     },
@@ -967,6 +1092,11 @@
           "show": "cannes",
           "points": 20.0,
           "note": "UCR PRIZE"
+        },
+        {
+          "show": "gotham",
+          "points": 12.0,
+          "note": "International; Director; Original"
         }
       ]
     },
@@ -1014,6 +1144,11 @@
           "show": "tiff",
           "points": 20.0,
           "note": "Silver Medallion"
+        },
+        {
+          "show": "gotham",
+          "points": 4.0,
+          "note": "International; Supporting"
         }
       ]
     },
@@ -1024,7 +1159,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 82.0,
       "money": 0.0,
       "misc": 0.0,
       "points": [
@@ -1032,6 +1167,11 @@
           "show": "sundance",
           "points": 5.0,
           "note": "Jury"
+        },
+        {
+          "show": "gotham",
+          "points": 2.0,
+          "note": "International"
         }
       ]
     },
@@ -1042,7 +1182,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 78.0,
       "money": 0.0,
       "misc": 0.0,
       "points": [
@@ -1099,7 +1239,13 @@
       "critics": 79.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 1.0,
+          "note": "Song"
+        }
+      ]
     },
     {
       "filmSlug": "fucktoys",
@@ -1234,7 +1380,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 63.0,
       "money": 0.0,
       "misc": 0.0,
       "points": [
@@ -1265,6 +1411,11 @@
           "show": "sundance",
           "points": 20.0,
           "note": "DIRECTOR"
+        },
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
         }
       ]
     },
@@ -1296,7 +1447,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "the-history-of-concrete",
@@ -1308,7 +1465,13 @@
       "critics": 81.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "critics-choice",
+          "points": 15.0,
+          "note": "Documentary"
+        }
+      ]
     },
     {
       "filmSlug": "hope",
@@ -1320,7 +1483,13 @@
       "critics": 67.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "hoppers",
@@ -1353,7 +1522,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 74.0,
       "money": 0.0,
       "misc": 0.0,
       "points": [
@@ -1374,7 +1543,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 3.0,
+          "note": "Score; Song"
+        }
+      ]
     },
     {
       "filmSlug": "i-love-boosters",
@@ -1460,7 +1635,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 62.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -1472,7 +1647,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 86.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -1508,7 +1683,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 62.0,
       "money": 0.0,
       "misc": 0.0,
       "points": [
@@ -1516,6 +1691,11 @@
           "show": "sundance",
           "points": 5.0,
           "note": "NEXT"
+        },
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
         }
       ]
     },
@@ -1541,7 +1721,18 @@
       "critics": 82.0,
       "money": 20.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 19.0,
+          "note": "Picture; Adapted; Supporting; Audience"
+        },
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "iron-boy",
@@ -1576,7 +1767,13 @@
       "critics": 83.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 1.0,
+          "note": "Debut"
+        }
+      ]
     },
     {
       "filmSlug": "it-ends",
@@ -1647,6 +1844,11 @@
           "show": "sundance",
           "points": 60.0,
           "note": "GRAND JURY PRIZE; AUDIENCE"
+        },
+        {
+          "show": "gotham",
+          "points": 13.0,
+          "note": "Picture; Supporting; Breakthrough"
         }
       ]
     },
@@ -1694,6 +1896,16 @@
           "show": "tiff",
           "points": 100.0,
           "note": "PCA"
+        },
+        {
+          "show": "gotham",
+          "points": 3.0,
+          "note": "Breakthrough; Audience"
+        },
+        {
+          "show": "hmm",
+          "points": 3.0,
+          "note": "Song; Score"
         }
       ]
     },
@@ -1707,7 +1919,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 9.0,
+          "note": "International; Debut; Breakthrough; Original"
+        }
+      ]
     },
     {
       "filmSlug": "lady",
@@ -1860,10 +2078,16 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 80.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 1.0,
+          "note": "Debut"
+        }
+      ]
     },
     {
       "filmSlug": "madden",
@@ -1929,7 +2153,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 1.0,
+          "note": "Song"
+        }
+      ]
     },
     {
       "filmSlug": "the-meltdown",
@@ -1954,6 +2184,11 @@
       "money": 12.0,
       "misc": 0.0,
       "points": [
+        {
+          "show": "gotham",
+          "points": 2.0,
+          "note": "Audience"
+        },
         {
           "show": "misc",
           "points": 5.0,
@@ -2000,6 +2235,11 @@
           "show": "cannes",
           "points": 50.0,
           "note": "GRAND PRIX"
+        },
+        {
+          "show": "gotham",
+          "points": 12.0,
+          "note": "International; Director; Adapted"
         }
       ]
     },
@@ -2010,7 +2250,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 68.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -2061,7 +2301,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 10.0,
+          "note": "Picture"
+        }
+      ]
     },
     {
       "filmSlug": "mr-irrelevant",
@@ -2094,10 +2340,21 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 77.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 1.0,
+          "note": "Song"
+        },
+        {
+          "show": "critics-choice",
+          "points": 15.0,
+          "note": "Documentary"
+        }
+      ]
     },
     {
       "filmSlug": "my-undesirable-friends-part-ii-exile",
@@ -2106,7 +2363,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 92.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -2130,7 +2387,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 93.0,
       "money": 0.0,
       "misc": 0.0,
       "points": [
@@ -2138,6 +2395,16 @@
           "show": "venice",
           "points": 25.0,
           "note": "Special Jury Prize"
+        },
+        {
+          "show": "gotham",
+          "points": 2.0,
+          "note": "Doc"
+        },
+        {
+          "show": "critics-choice",
+          "points": 20.0,
+          "note": "Documentary; Doc Director"
         }
       ]
     },
@@ -2178,7 +2445,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 63.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -2216,6 +2483,16 @@
           "show": "tiff",
           "points": 5.0,
           "note": "PCA MM runner-up"
+        },
+        {
+          "show": "gotham",
+          "points": 2.0,
+          "note": "Audience"
+        },
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
         }
       ]
     },
@@ -2229,7 +2506,13 @@
       "critics": 88.0,
       "money": 12.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 3.0,
+          "note": "Song; Score"
+        }
+      ]
     },
     {
       "filmSlug": "the-oldest-person-in-the-world",
@@ -2238,7 +2521,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 75.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -2265,7 +2548,23 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 2.0,
+          "note": "Doc"
+        },
+        {
+          "show": "critics-choice",
+          "points": 15.0,
+          "note": "Documentary"
+        },
+        {
+          "show": "misc",
+          "points": 5.0,
+          "note": "Armond White Approved"
+        }
+      ]
     },
     {
       "filmSlug": "one-in-a-million",
@@ -2295,7 +2594,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 5.0,
+          "note": "Lead"
+        }
+      ]
     },
     {
       "filmSlug": "onslaught",
@@ -2337,7 +2642,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 12.0,
+          "note": "Picture; Supporting"
+        }
+      ]
     },
     {
       "filmSlug": "peak-everything",
@@ -2383,6 +2694,11 @@
           "show": "tiff",
           "points": 20.0,
           "note": "PCA International runner-up"
+        },
+        {
+          "show": "gotham",
+          "points": 12.0,
+          "note": "International; Screenplay; Lead"
         }
       ]
     },
@@ -2438,7 +2754,18 @@
       "critics": 67.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 17.0,
+          "note": "Picture; Adapted; Supporting"
+        },
+        {
+          "show": "hmm",
+          "points": 3.0,
+          "note": "Song; Score"
+        }
+      ]
     },
     {
       "filmSlug": "project-hail-mary",
@@ -2450,7 +2777,18 @@
       "critics": 77.0,
       "money": 8.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 2.0,
+          "note": "Audience"
+        },
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "queen-at-sea",
@@ -2467,6 +2805,11 @@
           "show": "berlinale",
           "points": 30.0,
           "note": "SUP ACT; JURY"
+        },
+        {
+          "show": "gotham",
+          "points": 2.0,
+          "note": "Supporting"
         }
       ]
     },
@@ -2498,7 +2841,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "rehearsals-for-a-revolution",
@@ -2515,6 +2864,11 @@
           "show": "cannes",
           "points": 5.0,
           "note": "GOLDEN EYE"
+        },
+        {
+          "show": "critics-choice",
+          "points": 15.0,
+          "note": "Documentary"
         }
       ]
     },
@@ -2528,7 +2882,13 @@
       "critics": 79.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "the-rivals-of-amziah-king",
@@ -2665,7 +3025,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 2.0,
+          "note": ""
+        }
+      ]
     },
     {
       "filmSlug": "shame-and-money",
@@ -2746,7 +3112,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 52.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -2758,7 +3124,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 76.0,
       "money": 0.0,
       "misc": 0.0,
       "points": [
@@ -2791,7 +3157,13 @@
       "critics": 66.0,
       "money": 21.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "star-wars-the-mandalorian-and-grogu",
@@ -2824,7 +3196,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 82.0,
       "money": 0.0,
       "misc": 0.0,
       "points": [
@@ -2875,7 +3247,13 @@
       "critics": 37.0,
       "money": 19.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "supergirl",
@@ -2929,7 +3307,13 @@
       "critics": 89.0,
       "money": 3.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 20.0,
+          "note": "Picture; Director; Lead"
+        }
+      ]
     },
     {
       "filmSlug": "tender-loving-care",
@@ -2941,7 +3325,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 14.0,
+          "note": "International; Director; Screenplay; Supporting"
+        }
+      ]
     },
     {
       "filmSlug": "tenzing",
@@ -2950,10 +3340,16 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 67.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "time-and-water",
@@ -2962,7 +3358,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 76.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -3007,7 +3403,13 @@
       "critics": 73.0,
       "money": 9.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 3.0,
+          "note": "Song; Score"
+        }
+      ]
     },
     {
       "filmSlug": "tuner",
@@ -3040,7 +3442,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 61.0,
       "money": 0.0,
       "misc": 0.0,
       "points": [
@@ -3118,7 +3520,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 52.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -3138,6 +3540,11 @@
           "show": "annecy",
           "points": 10.0,
           "note": "CRYSTAL"
+        },
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
         }
       ]
     },
@@ -3160,7 +3567,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 76.0,
       "money": 0.0,
       "misc": 0.0,
       "points": [
@@ -3234,7 +3641,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "when-a-witness-recants",
@@ -3288,7 +3701,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "wild-horse-nine",
@@ -3310,6 +3729,16 @@
           "show": "tiff",
           "points": 20.0,
           "note": "Silver Medallion"
+        },
+        {
+          "show": "gotham",
+          "points": 10.0,
+          "note": "Screenplay; Lead"
+        },
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
         }
       ]
     },
@@ -3323,7 +3752,13 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 3.0,
+          "note": "Song; Score"
+        }
+      ]
     },
     {
       "filmSlug": "the-wizard-of-the-kremlin",
@@ -3365,7 +3800,13 @@
       "critics": 55.0,
       "money": 5.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "hmm",
+          "points": 1.0,
+          "note": "Song"
+        }
+      ]
     },
     {
       "filmSlug": "yellow-letters",
@@ -3392,7 +3833,7 @@
       "pool": true,
       "bpNom": false,
       "oscarWins": 0,
-      "critics": 0.0,
+      "critics": 85.0,
       "money": 0.0,
       "misc": 0.0,
       "points": []
@@ -3407,7 +3848,23 @@
       "critics": 0.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 4.0,
+          "note": "Doc; Audience"
+        },
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        },
+        {
+          "show": "critics-choice",
+          "points": 20.0,
+          "note": "Documentary; Doc Director"
+        }
+      ]
     },
     {
       "filmSlug": "your-mother-your-mother-your-mother",
@@ -3419,7 +3876,18 @@
       "critics": 83.0,
       "money": 0.0,
       "misc": 0.0,
-      "points": []
+      "points": [
+        {
+          "show": "gotham",
+          "points": 16.0,
+          "note": "Picture; Lead; Breakthrough"
+        },
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
     },
     {
       "filmSlug": "zi",
@@ -6811,6 +7279,497 @@
           "show": "misc",
           "points": 6.4,
           "note": ""
+        }
+      ]
+    },
+    {
+      "filmSlug": "avedon",
+      "title": "Avedon",
+      "posterSlug": "avedon",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
+    },
+    {
+      "filmSlug": "billy-knight",
+      "title": "Billy Knight",
+      "posterSlug": "billy-knight",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 3.0,
+          "note": "Song; Score"
+        }
+      ]
+    },
+    {
+      "filmSlug": "bloom",
+      "title": "Bloom",
+      "posterSlug": "bloom",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 1.0,
+          "note": "Song"
+        }
+      ]
+    },
+    {
+      "filmSlug": "brother-verses-brother",
+      "title": "Brother Verses Brother",
+      "posterSlug": "brother-verses-brother",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 1.0,
+          "note": "Song"
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-cauliflower-of-destiny",
+      "title": "The Cauliflower of Destiny",
+      "posterSlug": "the-cauliflower-of-destiny",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
+    },
+    {
+      "filmSlug": "coyote-v-acme",
+      "title": "Coyote v. Acme",
+      "posterSlug": "coyote-v-acme",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-cycle-of-love",
+      "title": "The Cycle of Love",
+      "posterSlug": "the-cycle-of-love",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        },
+        {
+          "show": "critics-choice",
+          "points": 5.0,
+          "note": "Doc Director"
+        }
+      ]
+    },
+    {
+      "filmSlug": "dreams-in-nightmares",
+      "title": "Dreams in Nightmares",
+      "posterSlug": "dreams-in-nightmares",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 86.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "gotham",
+          "points": 10.0,
+          "note": "Picture"
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-eyes-of-ghana",
+      "title": "The Eyes of Ghana",
+      "posterSlug": "the-eyes-of-ghana",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
+    },
+    {
+      "filmSlug": "ezma",
+      "title": "Ezma",
+      "posterSlug": "ezma",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
+    },
+    {
+      "filmSlug": "fadia",
+      "title": "Fadia",
+      "posterSlug": "fadia",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
+    },
+    {
+      "filmSlug": "a-fox-under-a-pink-moon",
+      "title": "A Fox Under a Pink Moon",
+      "posterSlug": "a-fox-under-a-pink-moon",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "gotham",
+          "points": 2.0,
+          "note": "Doc"
+        }
+      ]
+    },
+    {
+      "filmSlug": "girl-and-wolf",
+      "title": "Girl and Wolf",
+      "posterSlug": "girl-and-wolf",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
+    },
+    {
+      "filmSlug": "heads-up",
+      "title": "Heads Up",
+      "posterSlug": "heads-up",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
+    },
+    {
+      "filmSlug": "heart-of-the-beast",
+      "title": "Heart of the Beast",
+      "posterSlug": "heart-of-the-beast",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
+    },
+    {
+      "filmSlug": "kylie",
+      "title": "Kylie",
+      "posterSlug": "kylie",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 1.0,
+          "note": "Song"
+        }
+      ]
+    },
+    {
+      "filmSlug": "linda-perry-let-it-die-here",
+      "title": "Linda Perry: Let It Die Here",
+      "posterSlug": "linda-perry-let-it-die-here",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 1.0,
+          "note": "Song"
+        }
+      ]
+    },
+    {
+      "filmSlug": "maddies-secret",
+      "title": "Maddie's Secret",
+      "posterSlug": "maddies-secret",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 76.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "gotham",
+          "points": 6.0,
+          "note": "Debut; Lead"
+        }
+      ]
+    },
+    {
+      "filmSlug": "nothing-to-see-here-watts",
+      "title": "Nothing to See Here: Watts",
+      "posterSlug": "nothing-to-see-here-watts",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 1.0,
+          "note": "Song"
+        }
+      ]
+    },
+    {
+      "filmSlug": "paw-patrol-the-dino-movie",
+      "title": "Paw Patrol: The Dino Movie",
+      "posterSlug": "paw-patrol-the-dino-movie",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 1.0,
+          "note": "Song"
+        }
+      ]
+    },
+    {
+      "filmSlug": "remake",
+      "title": "Remake",
+      "posterSlug": "remake",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 94.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "critics-choice",
+          "points": 20.0,
+          "note": "Documentary; Doc Director"
+        }
+      ]
+    },
+    {
+      "filmSlug": "reminders-of-him",
+      "title": "Reminders of Him",
+      "posterSlug": "reminders-of-him",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 1.0,
+          "note": "Song"
+        }
+      ]
+    },
+    {
+      "filmSlug": "running-wild-return-to-the-river",
+      "title": "Running Wild: Return to the River",
+      "posterSlug": "running-wild-return-to-the-river",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
+    },
+    {
+      "filmSlug": "scream-7",
+      "title": "Scream 7",
+      "posterSlug": "scream-7",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
+    },
+    {
+      "filmSlug": "send-help",
+      "title": "Send Help",
+      "posterSlug": "send-help",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
+        }
+      ]
+    },
+    {
+      "filmSlug": "steps",
+      "title": "Steps",
+      "posterSlug": "steps",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 1.0,
+          "note": "Song"
+        }
+      ]
+    },
+    {
+      "filmSlug": "the-truth-and-tragedy-of-moriah-wilson",
+      "title": "The Truth and Tragedy of Moriah Wilson",
+      "posterSlug": "the-truth-and-tragedy-of-moriah-wilson",
+      "pool": true,
+      "bpNom": false,
+      "oscarWins": 0,
+      "critics": 0.0,
+      "money": 0.0,
+      "misc": 0.0,
+      "points": [
+        {
+          "show": "hmm",
+          "points": 2.0,
+          "note": "Score"
         }
       ]
     }
