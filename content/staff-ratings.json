@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T06:35:40Z",
+  "updated": "2026-11-15T06:42:41Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -1557,6 +1557,11 @@
           "watched": "2026-10-22",
           "url": "https://letterboxd.com/andyfunke/film/wicker/"
         },
+        "dylan-mckercher": {
+          "rating": 2.0,
+          "watched": "2026-11-14",
+          "url": "https://letterboxd.com/dyl_/film/wicker/"
+        },
         "sean-malloy": {
           "rating": 3.5,
           "watched": "2026-11-04",
@@ -1688,8 +1693,8 @@
         },
         "brad-derfner": {
           "rating": 4.5,
-          "watched": "2026-10-21",
-          "url": "https://letterboxd.com/brenfred/film/you-can-see-everything/"
+          "watched": "2026-11-14",
+          "url": "https://letterboxd.com/brenfred/film/you-can-see-everything/1/"
         },
         "dylan-mckercher": {
           "rating": 4.5,
