@@ -21,7 +21,7 @@ deck: Jesse Eisenberg follows up A Real Pain with an offbeat comedy starring
 excerpt: Julianne Moore shines in Jesse Eisenberg’s hilarious but uneven
   celebration of self-discovery through performance.
 heroImage: https://m.media-amazon.com/images/M/MV5BMWI5MmM0Y2ItZWFmOS00ZGI4LWExZDUtMDA1YjAzZmU1YTBlXkEyXkFqcGdeQWFybm8@._V1_.jpg
-verdictNote: How far can julianne Moore push the film through awards season
+verdictNote: How far can Julianne Moore push the film through awards season.
 prospects:
   - tier: predicted
     category: picture
