@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T06:42:41Z",
+  "updated": "2026-11-17T21:00:16Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -612,6 +612,16 @@
           "url": "https://boxd.it/OFpg"
         }
       }
+    },
+    "hunger-games-sunrise-on-the-reaping": {
+      "ratings": {
+        "dylan-mckercher": {
+          "rating": 4.0,
+          "watched": "2026-11-16",
+          "url": "https://letterboxd.com/dyl_/film/the-hunger-games-sunrise-on-the-reaping/1/"
+        }
+      },
+      "tmdbId": 1300968
     },
     "i-love-boosters": {
       "ratings": {
