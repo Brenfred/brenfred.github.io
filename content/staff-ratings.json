@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T07:38:25Z",
+  "updated": "2026-11-19T20:44:21Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -763,6 +763,11 @@
           "rating": 5.0,
           "watched": "2026-10-18",
           "url": "https://letterboxd.com/mattydraps/film/josephine-2026/1/"
+        },
+        "ray-siddiqi": {
+          "rating": 5.0,
+          "watched": "2026-11-17",
+          "url": "https://letterboxd.com/banjosudswater/film/josephine-2026/"
         },
         "vitor-cecchinato": {
           "rating": 5.0,
