@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T19:23:13Z",
+  "updated": "2026-11-22T06:59:09Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -237,15 +237,20 @@
     },
     "club-kid": {
       "ratings": {
+        "andy-funke": {
+          "rating": 5.0,
+          "watched": "2026-11-21",
+          "url": "https://letterboxd.com/andyfunke/film/club-kid/"
+        },
         "brad-derfner": {
           "rating": 4.0,
           "watched": "2026-10-12",
           "url": "https://letterboxd.com/brenfred/film/club-kid/1/"
         },
         "dylan-mckercher": {
-          "rating": 4.5,
-          "watched": "2026-10-16",
-          "url": "https://letterboxd.com/dyl_/film/club-kid/"
+          "rating": 4.0,
+          "watched": "2026-11-21",
+          "url": "https://letterboxd.com/dyl_/film/club-kid/1/"
         },
         "matt-downs": {
           "rating": 5.0,
