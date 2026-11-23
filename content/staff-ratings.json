@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T19:46:37Z",
+  "updated": "2026-11-23T07:48:07Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -674,6 +674,11 @@
     },
     "i-play-rocky": {
       "ratings": {
+        "andy-funke": {
+          "rating": 3.0,
+          "watched": "2026-11-22",
+          "url": "https://letterboxd.com/andyfunke/film/i-play-rocky/"
+        },
         "dylan-mckercher": {
           "rating": 3.5,
           "watched": "2026-11-20",
@@ -1476,6 +1481,35 @@
         }
       },
       "tmdbId": 1458099
+    },
+    "the-sheep-detectives": {
+      "ratings": {
+        "andy-funke": {
+          "rating": 4.5,
+          "watched": "2026-05-09",
+          "url": "https://boxd.it/NDSe"
+        },
+        "brad-derfner": {
+          "rating": 4.0,
+          "watched": "2026-05-24",
+          "url": "https://boxd.it/NDSe"
+        },
+        "ray-siddiqi": {
+          "rating": 4.0,
+          "watched": "2026-05-19",
+          "url": "https://boxd.it/NDSe"
+        },
+        "sean-malloy": {
+          "rating": 3.5,
+          "watched": "2026-05-11",
+          "url": "https://boxd.it/NDSe"
+        },
+        "vitor-cecchinato": {
+          "rating": 4.0,
+          "watched": "2026-05-08",
+          "url": "https://boxd.it/NDSe"
+        }
+      }
     },
     "the-social-reckoning": {
       "ratings": {
