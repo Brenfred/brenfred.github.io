@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T10:00:23Z",
+  "updated": "2026-11-24T22:31:41Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -568,6 +568,16 @@
         }
       },
       "tmdbId": 1381071
+    },
+    "hexed": {
+      "ratings": {
+        "brad-derfner": {
+          "rating": 2.5,
+          "watched": "2026-11-24",
+          "url": "https://letterboxd.com/brenfred/film/hexed-2026/"
+        }
+      },
+      "tmdbId": 1538497
     },
     "hope": {
       "ratings": {
