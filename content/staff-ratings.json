@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26T08:30:18Z",
+  "updated": "2026-11-26T21:40:14Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -580,6 +580,11 @@
           "rating": 2.5,
           "watched": "2026-11-24",
           "url": "https://letterboxd.com/brenfred/film/hexed-2026/"
+        },
+        "dylan-mckercher": {
+          "rating": 2.5,
+          "watched": "2026-11-26",
+          "url": "https://letterboxd.com/dyl_/film/hexed-2026/"
         }
       },
       "tmdbId": 1538497
