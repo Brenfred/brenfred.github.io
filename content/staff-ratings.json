@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24T22:31:41Z",
+  "updated": "2026-11-26T08:30:18Z",
   "source": "letterboxd",
   "films": {
     "14th": {
@@ -421,6 +421,11 @@
     },
     "elsinore": {
       "ratings": {
+        "ray-siddiqi": {
+          "rating": 2.5,
+          "watched": "2026-11-24",
+          "url": "https://letterboxd.com/banjosudswater/film/elsinore/"
+        },
         "vitor-cecchinato": {
           "rating": 3.0,
           "watched": "2026-09-14",
