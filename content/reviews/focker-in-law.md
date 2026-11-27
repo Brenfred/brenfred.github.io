@@ -1,7 +1,7 @@
 ---
 type: review
 title: FOCKER-IN-LAW Is Watchable
-film: Focker-In-Lae
+film: Focker-In-Law
 director: John Hamburg
 studio: Universal
 runtime: 106 minutes
