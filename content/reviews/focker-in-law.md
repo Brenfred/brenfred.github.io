@@ -1,6 +1,6 @@
 ---
 type: review
-title: FOCKER-IN-LAW Is Watchable
+title: Focker In-Law Is Watchable
 film: Focker-In-Law
 director: John Hamburg
 studio: Universal
